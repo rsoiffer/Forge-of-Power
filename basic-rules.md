@@ -11,11 +11,40 @@ Following are some common rules for the game.
 
 When you attempt a task that has a chance of failing, you roll dice to determine if your attempt succeeds or fails. All die rolls are associated one stat, called the **bonus** of the die roll. This stat is usually an attribute or a skill, but can be any number. The die roll is usually referred to by this bonus: if you make a die roll where the bonus is your Strength attribute, then it's called a Strength roll, or if you make a die roll where the bonus is your Stealth skill, then it's called a Stealth roll.
 
-To make the die roll, roll 1d20 and add the bonus, and note the result. Your result measures how effectively you attempt the task. Compare this value to the DC (Difficulty Class) set by the GM. If your result equals or beats the DC, then you **succeed** at the task. Otherwise, you **fail** at the task.
+To make the die roll, roll 1d20 and add the bonus, and note the result. Your result measures how effectively you attempt the task. Compare this value to the DC set by the GM, using the table below. If you roll a 20 on the die, then your result is one level of success higher than it would normally be. If you roll a 1 on the die, then your result is one level of success lower than it would normally be.
 
-If your result equals or beats the DC + 10, then your roll is a **critial success** instead of a **success**, which represents an especially good result. If your result it lower than the DC - 10, then your roll is a **critical failure** instead of a **failure**, which represents an especially bad result. These four categories are known as the **levels of success**. They are ordered, from best to worst, as **critical success > success > failure > critical failure**. If you roll a 20 on the die, then your result is one level of success higher than it would normally be. If you roll a 1 on the die, then your result is one level of success lower than it would normally be.
+### Levels of Success
+<table>
+  <tr>
+    <th>Result</th>
+    <th>Values</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Critical Success</td>
+    <td>DC + 10 or more</td>
+    <td>An exceptionally good result, with bonus positive effects</td>
+  </tr>
+  <tr>
+    <td>Success</td>
+    <td>DC + 0 ... DC + 9</td>
+    <td>You succeed at the task you were attempting</td>
+  </tr>
+  <tr>
+    <td>Failure</td>
+    <td>DC - 10 ... DC - 1</td>
+    <td>You fail at the task you were attempting</td>
+  </tr>
+  <tr>
+    <td>Critical Failure</td>
+    <td>DC - 11 or less</td>
+    <td>An exceptionally bad result, with bonus negative effects</td>
+  </tr>
+</table>
 
-The DC of a die roll is usually determined by the GM based on how hard the task seems. The GM is encouraged to used the table below to help them decide the DC. Some abilities call for a die roll against a specific DC. For example, the Strike action calls for a die roll where the DC is your target's AC.
+## Difficulty Classes
+
+The DC (Difficulty Class) of a die roll is usually determined by the GM based on how hard the task seems. The GM is encouraged to used the table below to help them decide the DC. Some abilities call for a die roll against a specific DC. For example, the Strike action calls for a die roll where the DC is your target's AC.
 
 ### Sample Difficulties
 <table>

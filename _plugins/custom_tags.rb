@@ -107,6 +107,13 @@ class Jekyll::Converters::Markdown::LinkerProcessor
         print("Warning: could not resolve link to text \"#{text}\"\n")
         "***#{text}***"
       end
+    }.gsub(/\[\[[^\[\]]*\]\]/) { |s|
+      text = s[2..-3].strip
+      if !Jekyll::sites[0].data["traits"].key?(text)
+        print("Warning: unknown trait \"#{text}\"\n")
+      end
+      url = "traits.html##{Jekyll::Utils.slugify(text)}"
+      "<span class=\"trait\"><a href=\"#{url}\">#{text}</a></span>"
     }
     @converter.convert(new_content)
   end
