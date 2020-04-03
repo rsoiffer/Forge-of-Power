@@ -1,4 +1,4 @@
-Agile: The MAP you take with this weapon on an attack roll on your turn is -4 instead of -5 for each {% trait Attack %} power you've used so far this turn.
+Agile: The MAP you take with this weapon on an attack roll on your turn is -4 instead of -5 for each [[Attack]] power you've used so far this turn.
 
 Anti-shield: Bonus damage on shields, less on people
 
@@ -21,7 +21,7 @@ Finesse: You can use your Agility score instead of your Strength score on attack
 
 Forceful: This weapon becomes more dangerous as you continue to attack with it. When you Strike with this weapon, you gain a bonus to the damage roll equal to the number of times you've attacked with it so far this turn.
 
-Free-hand: This weapon doesn't take up your hand, usually because it is built into your body or your armor. A free-hand weapon can't be affected by {Disarm}. You can treat the hand covered by your free-hand weapon either as free or as wielding the weapon, whichever is more beneficial. For example, if you choose to treat the hand as free, you can wield other items, perform {% trait Manipulate %} actions, and so on, but you can't attack with the free-hand weapon while doing so.
+Free-hand: This weapon doesn't take up your hand, usually because it is built into your body or your armor. A free-hand weapon can't be affected by {Disarm}. You can treat the hand covered by your free-hand weapon either as free or as wielding the weapon, whichever is more beneficial. For example, if you choose to treat the hand as free, you can wield other items, perform [[Manipulate]] actions, and so on, but you can't attack with the free-hand weapon while doing so.
 
 Messy: On a critical miss, the weapon hits a random inanimate target near the intended target. The GM chooses the new target.
 

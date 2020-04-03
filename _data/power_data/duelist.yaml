@@ -2,9 +2,9 @@ Attack of Opportunity:
   tier: Novice
   type: Reaction
   tags:
-    trigger: A creature within your reach uses a {% trait Manipulate %} power or a {% trait Move %} power, makes a ranged attack, or leaves a square during a {% trait Move %} power it's using
+    trigger: A creature within your reach uses a [[Manipulate]] power or a [[Move]] power, makes a ranged attack, or leaves a square during a [[Move]] power it's using
   effect:
-    You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger is a {% trait Manipulate %} power, your disrupt that power. This Strike doesn't count toward MAP, and MAP doesn't apply to this Strike.
+    You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger is a [[Manipulate]] power, your disrupt that power. This Strike doesn't count toward MAP, and MAP doesn't apply to this Strike.
 
 Deflect Bullet:
   tier: Novice

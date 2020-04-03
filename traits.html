@@ -7,7 +7,7 @@ sidebar:
 
 {% for trait in site.data.traits %}
   <h3 id={{ trait[0] | slugify }}>
-    {% trait {{ trait[0] }} %}
+    {% trait {{ trait[0] }}%}
   </h3>
   {{ trait[1] | process }}
 

@@ -25,7 +25,7 @@ Illusory Disguise:
     You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height and weight as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, but held items are unaffected, and any worn item you remove returns to its true appearance.
 
     Heightened (total 2 Mana)
-    : The spell also disguises your voice and scent, and it gains the {% trait Auditory %} trait
+    : The spell also disguises your voice and scent, and it gains the [[Auditory]] trait
     
     Heightened (total 3 Mana)
     : You can appear as any creature of the same size, even a specific individual as long as you've seen them before
@@ -46,7 +46,7 @@ Illusory Object:
     You create an illusory visual image of a stationary object. The entire image must fit within the spell's area. The object appears to animate naturally, but it doesn't make sounds or generate smells. Any creature that touches the image or uses the Seek action to examine it can attempt to disbelieve your illusion.
 
     Heightened (total 2 Mana)
-    : Your image makes appropriate sounds, generates normal smells, and feels right to the touch. The spell gains the {% trait Auditory %} trait. The duration increases to 1 hour.
+    : Your image makes appropriate sounds, generates normal smells, and feels right to the touch. The spell gains the [[Auditory]] trait. The duration increases to 1 hour.
 
     Heightened (total 5 Mana)
     : The duration is unlimited.

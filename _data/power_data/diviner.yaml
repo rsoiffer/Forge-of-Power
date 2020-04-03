@@ -95,4 +95,4 @@ Foresight:
     : You defend against a hostile creature or other danger
 
     ---
-    If the hostile creature or danger forces you to roll dice, you roll twice and uses the higher result, and this power gains the {% trait Fortune %} trait. But if the hostile creature or danger is rolling against you, that hostile creature or danger rolls twice and uses the lower result, and this power gains the {% trait Misfortune %} trait.
+    If the hostile creature or danger forces you to roll dice, you roll twice and uses the higher result, and this power gains the [[Fortune]] trait. But if the hostile creature or danger is rolling against you, that hostile creature or danger rolls twice and uses the lower result, and this power gains the [[Misfortune]] trait.

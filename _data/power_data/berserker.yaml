@@ -43,7 +43,7 @@ Rage:
     You tap into your inner fury and begin raging. You gain temporary HP equal to Level + Strength. While raging, you gain the following benefits:
     * You deal 2 additional damage with melee or thrown weapon Strikes. This additional damage is halved if your weapon or unarmed attack is agile.
     * You take a -1 penalty to AC
-    * You can't use {% trait Concentrate %} powers
+    * You can't use [[Concentrate]] powers
 
 Sudden Charge:
   tier: Novice

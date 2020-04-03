@@ -39,7 +39,7 @@ Disarm:
   effect:
     You try to knock something out of an opponent's grasp. Attempt a {Brawling} check against the opponent's {Reflex} DC.
   critical-success: You knock the item out of the opponent's grasp. It falls to the ground in the opponent's space.
-  success: You weaken your opponent's grasp on the item. Until the start of that creature's turn, attempts to Disarm the opponent of that item gain a +2 bonus, and the target takes a -2 penalty to {% trait Attack %} powers with the item or other rolls requiring a firm grasp on the item.
+  success: You weaken your opponent's grasp on the item. Until the start of that creature's turn, attempts to Disarm the opponent of that item gain a +2 bonus, and the target takes a -2 penalty to [[Attack]] powers with the item or other rolls requiring a firm grasp on the item.
   critical-failure: You lose your balance and become {flat-footed} until the start of your next turn
 
 Draw Item:
@@ -112,7 +112,7 @@ Ready:
   effect: |
     You prepare to use an action that will occur outside your turn. Choose a single {% icon 1-Action %} power you can use, and designate a trigger. If the trigger occurs before the start of your turn, you can use the chosen power as a reaction.
 
-    If you have MAP and your readied power is an {% trait Attack %}, your readied power takes the MAP you had at the end of your turn.
+    If you have MAP and your readied power is an [[Attack]], your readied power takes the MAP you had at the end of your turn.
 
 Release:
   type: Free
@@ -152,7 +152,7 @@ Step:
   tags:
     requirements: Your Speed is at least 10 feet
   effect:
-    You carefully move 5 feet. Unlike most types of movement, Step doesn't trigger reactions that are triggered by {% trait Move %} actions or upon leaving or entering a square. You can't Step into difficult terrain.
+    You carefully move 5 feet. Unlike most types of movement, Step doesn't trigger reactions that are triggered by [[Move]] actions or upon leaving or entering a square. You can't Step into difficult terrain.
 
 Stride:
   type: 1-Action
@@ -190,7 +190,7 @@ Take Cover:
   tags:
     requirements: You are benefitting from cover or are prone
   effect:
-    If you are benefitting from [cover](combat-rules.html#taking-cover), the cover's bonus is doubled. Alternatively, if you are {prone}, you gain the benefits of standard cover against enemies at least 15 feet away from you. This lasts until you move from your current space, use an {% trait Attack %} power, become {unconscious}, or end this effect as a {% icon Free %} power.
+    If you are benefitting from [cover](combat-rules.html#taking-cover), the cover's bonus is doubled. Alternatively, if you are {prone}, you gain the benefits of standard cover against enemies at least 15 feet away from you. This lasts until you move from your current space, use an [[Attack]] power, become {unconscious}, or end this effect as a {% icon Free %} power.
 
 Talk:
   type: Free

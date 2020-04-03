@@ -27,7 +27,7 @@ Skimmer Discs:
   effect: |
     You gain a fly speed equal to your land speed plus 10 feet. You can only fly up to 10 feet above a solid surface that can support your weight; if you go above this limit you fall at the end of your movement.
 
-    As an {% icon Free %} {% trait Encounter %} power, you can increase this speed by 30 feet for 1 round.
+    As an {% icon Free %} [[Encounter]] power, you can increase this speed by 30 feet for 1 round.
 
 Cyberblade Slash:
   tier: Veteran

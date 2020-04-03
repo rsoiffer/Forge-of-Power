@@ -30,7 +30,7 @@ Inspire Courage:
     duration: 1 round
   effect: |
     You inspire your allies with words or tunes of encouragement. You and all allies in the area gain one of the following benefits:
-    * +1 bonus to attack rolls, damage rolls, and saves against {% trait Fear %} effects
+    * +1 bonus to attack rolls, damage rolls, and saves against [[Fear]] effects
     * +1 bonus to AC and saving throws, as well as resistance to physical damage equal to your Envoy level
     * +10-foot bonus to Speed
 
@@ -62,7 +62,7 @@ Soothing Ballad:
     targets: You and up to 9 allies
   effect: |
     You draw upon your muse to soothe your allies. Choose one of the following three effects:
-    * Disrupt all {% trait Fear %} effects on the targets
+    * Disrupt all [[Fear]] effects on the targets
     * Disrupt all effects causing the {paralyzed} condition on the targets
     * Restore 7d8 HP to the targets
 
