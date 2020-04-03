@@ -1,0 +1,119 @@
+# Fighter
+
+Berserker:
+  brief: You smash enemies with aggressive bursts of murderous rage
+  description:
+    A strong melee dude, who likes being strong and fighting in melee. The dude
+    part is optional, and doesn't signify gender or anything. Strong melee dudes
+    are often found punching things or hitting things, especially when those
+    things are enemies or are getting in the way.
+
+Duelist:
+  brief: You parry enemy attacks and respond with well-timed ripostes
+  description: ""
+
+Guardian:
+  brief: TODO
+  description: ""
+
+Warblade:
+  brief: You develop a unique fighting style full of flashy weapon maneuvers
+  description: ""
+
+# Striker
+
+Acrobat:
+  brief:
+    You dodge and weave across the battlefield, moving with incredible speed
+  description: ""
+
+Hunter:
+  brief: You fire with care and precision to take out enemies at incredible distances
+  description: ""
+
+Rogue:
+  brief: You chance your way into victory, consistently getting lucky hits or dodges
+  description: ""
+
+Swordsage:
+  brief: TODO
+  description: ""
+
+# Expert
+
+Alchemist:
+  brief: TODO
+  description: ""
+
+Bard:
+  brief: TODO
+  description: ""
+
+Gadgeteer:
+  brief: You invent novel technological devices for a variety of purposes
+  description: ""
+
+Mastermind:
+  brief:
+    You support your party both in and out of battle, with a plan for every
+    situation
+  description: ""
+
+# Thaumaturge
+
+Diviner:
+  brief:
+    You predict the future, see distant events, and track creatures with magic
+  description: ""
+
+Elementalist:
+  brief: You harness elemental spirits to precisely control the natural world
+  description: ""
+
+Shapeshifter:
+  brief: You transform yourself or other creatures into animals or monsters
+  description: ""
+
+Wizard:
+  brief:
+    You manipulate the fundamental laws of reality to control space, time, and
+    magic
+  description: ""
+
+# Sorcerer
+
+Blaster:
+  brief: You blast enemies away with devastating evocations of elemental energy
+  description: ""
+
+Illusionist:
+  brief: You conjure illusions to deceive or confuse your opponents' senses
+  description: ""
+
+Necromancer:
+  brief:
+    You channel necrotic energy to slay the living, then raise the spirits of
+    the dead
+  description: ""
+
+Telekinetic:
+  brief: You move objects with your mind to protect yourself or hurl boulders at foes
+  description: ""
+
+# Mystic
+
+Druid:
+  brief: You command the spirits of nature, manipulating wild animals and plants
+  description: ""
+
+Enhancer:
+  brief: TODO
+  description: ""
+
+Invoker:
+  brief: TODO
+  description: ""
+
+Occultist:
+  brief: TODO
+  description: ""

@@ -1,0 +1,50 @@
+---
+layout: single
+title: All Powers
+sidebar:
+  nav: system
+---
+
+<h2>Basic Powers</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+  </tr>
+  {% for power in site.data.basic-powers %}
+    <tr>
+      <td>
+          <a href="basic-powers.html#{{ power[0] | slugify }}"">{{ power[0] }}</a>
+      </td>
+      <td>{% unless power[1].type == "Passive" %}
+          <img title="{{ power[1].type }}" class="inline-icon"
+            src="{% link assets/svg/{{ power[1].type | downcase }}.svg %}">
+        {% endunless %}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+<h2>Learned Powers</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>School</th>
+    <th>Tier</th>
+    <th>Type</th>
+  </tr>
+  {% for power in site.data.powers %}
+    <tr>
+      <td>
+          <a href="{{ power[1].school | slugify }}.html#{{ power[0] | slugify }}">{{ power[0] }}</a>
+      </td>
+      <td><a href="{{ power[1].school | slugify }}.html">{{ power[1].school }}</td>
+      <td>{{ power[1].tier }}</td>
+      <td>{% unless power[1].type == "Passive" %}
+          <img title="{{ power[1].type }}" class="inline-icon"
+            src="{% link assets/svg/{{ power[1].type | downcase }}.svg %}">
+        {% endunless %}</td>
+    </tr>
+  {% endfor %}
+</table>

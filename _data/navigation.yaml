@@ -1,0 +1,51 @@
+main:
+  - title: Game System
+    url: /system.html
+  - title: Equipment
+    url: /equipment.html
+  - title: Setting
+    url: /setting.html
+
+system:
+  - title: Game Rules
+    children:
+      - title: Basic Rules
+        url: /basic-rules.html
+      - title: Combat Rules
+        url: /combat-rules.html
+
+  - title: Character Options
+    children:
+      - title: Character Creation
+        url: /character-creation.html
+      - title: Ancestries
+        url: /ancestries.html
+      - title: Skills
+        url: /skills.html
+      - title: Feats
+        url: /feats.html
+      - title: Power Schools
+        url: /power-schools.html
+
+  - title: Indices
+    children:
+      - title: All Powers
+        url: /all-powers.html
+      - title: Power Counts
+        url: /power-counts.html
+      - title: Conditions
+        url: /conditions.html
+
+equipment:
+  - title: Weapons
+    url: /weapons.html
+  - title: Armor
+    url: /armor.html
+
+setting:
+  - title: Factions
+    url: /factions.html
+  - title: Thematic Conflicts
+    url: /thematic-conflicts.html
+  - title: Technology
+    url: /technology.html

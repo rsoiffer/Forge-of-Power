@@ -1,0 +1,35 @@
+Fighter:
+  - Berserker
+  - Duelist
+  - Guardian
+  - Warblade
+
+Ranger:
+  - Acrobat
+  - Hunter
+  - Rogue
+  - Swordsage
+
+Expert:
+  - Alchemist
+  - Bard
+  - Gadgeteer
+  - Mastermind
+
+Thaumaturger:
+  - Diviner
+  - Elementalist
+  - Shapeshifter
+  - Wizard
+
+Sorcerer:
+  - Blaster
+  - Illusionist
+  - Necromancer
+  - Telekinetic
+
+Mystic:
+  - Druid
+  - Enhancer
+  - Invoker
+  - Occultist

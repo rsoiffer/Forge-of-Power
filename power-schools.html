@@ -1,0 +1,25 @@
+---
+layout: single
+title: Power Schools
+sidebar:
+  nav: system
+---
+
+{% for category in site.data.categories %}
+  <h2>{{ category[0] }}</h2>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  {% for school in category[1] %}
+    <tr>
+      <td>
+        <a href="{% link {{ school | slugify }}.html %}">{{ school }}</a>
+      </td>
+      <td>{{ site.data.schools[school].brief }}</td>
+    </tr>
+  {% endfor %}
+  </table>
+{% endfor %}
