@@ -23,8 +23,7 @@ Warblade:
 # Striker
 
 Acrobat:
-  brief:
-    You dodge and weave across the battlefield, moving with incredible speed
+  brief: You dodge and weave across the battlefield, moving with incredible speed
   description: ""
 
 Hunter:
@@ -36,17 +35,17 @@ Rogue:
   description: ""
 
 Swordsage:
-  brief: TODO
+  brief: You unlock your inner ki to surpass your limits and devastate your foes
   description: ""
 
 # Expert
 
 Alchemist:
-  brief: TODO
+  brief: You concoct mysterious potions and craft explosive bombs
   description: ""
 
 Bard:
-  brief: TODO
+  brief: You perform magical songs to bolster your allies and scare your enemies
   description: ""
 
 Gadgeteer:
@@ -54,20 +53,17 @@ Gadgeteer:
   description: ""
 
 Mastermind:
-  brief:
-    You support your party both in and out of battle, with a plan for every
-    situation
+  brief: You support your party both in and out of battle, with a plan for every situation
   description: ""
 
-# Thaumaturge
+# Sage
 
 Diviner:
-  brief:
-    You predict the future, see distant events, and track creatures with magic
+  brief: You predict the future, see distant events, and track creatures with magic
   description: ""
 
 Elementalist:
-  brief: You harness elemental spirits to precisely control the natural world
+  brief: You harness elemental magic to precisely control the natural world
   description: ""
 
 Shapeshifter:
@@ -75,9 +71,7 @@ Shapeshifter:
   description: ""
 
 Wizard:
-  brief:
-    You manipulate the fundamental laws of reality to control space, time, and
-    magic
+  brief: You manipulate the fundamental laws of reality to control space, time, and magic
   description: ""
 
 # Sorcerer
@@ -91,9 +85,7 @@ Illusionist:
   description: ""
 
 Necromancer:
-  brief:
-    You channel necrotic energy to slay the living, then raise the spirits of
-    the dead
+  brief: You channel necrotic energy to slay the living, then raise the dead to serve you
   description: ""
 
 Telekinetic:
@@ -103,17 +95,17 @@ Telekinetic:
 # Mystic
 
 Druid:
-  brief: You command the spirits of nature, manipulating wild animals and plants
+  brief: You command nature itself, manipulating wild animals and plants
   description: ""
 
 Enhancer:
-  brief: TODO
+  brief: You protect your allies with a variety of beneficial blessings and enhancements
   description: ""
 
 Invoker:
-  brief: TODO
+  brief: You call down radiant light from the heavens to heal your friends and smite your foes
   description: ""
 
 Occultist:
-  brief: TODO
+  brief: You curse enemies with strange and persistent afflictions or misfortune
   description: ""

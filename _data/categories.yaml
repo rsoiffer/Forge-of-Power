@@ -4,7 +4,7 @@ Fighter:
   - Guardian
   - Warblade
 
-Ranger:
+Striker:
   - Acrobat
   - Hunter
   - Rogue
@@ -16,7 +16,7 @@ Expert:
   - Gadgeteer
   - Mastermind
 
-Thaumaturger:
+Sage:
   - Diviner
   - Elementalist
   - Shapeshifter

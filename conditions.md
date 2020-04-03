@@ -2,10 +2,10 @@
 layout: single
 title: Conditions
 sidebar:
-  nav: system
+  nav: rules
 ---
 
 {% for condition in site.data.conditions %}
 ### {{ condition[0] }}
-{{ condition[1] }}
+{{ condition[1] | process }}
 {% endfor %}

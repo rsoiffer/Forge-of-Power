@@ -2,7 +2,7 @@
 layout: single
 title: Feats
 sidebar:
-  nav: system
+  nav: character
 ---
 
 {% for feat in site.data.feats %}

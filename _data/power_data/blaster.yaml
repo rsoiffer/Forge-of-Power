@@ -20,7 +20,7 @@ Dangerous Sorcery:
 Magic Missile:
   tier: Novice
   type: 1-Action
-  traits: [Attack, Force, Spell]
+  traits: [Force, Spell]
   tags:
     cost: 1 Mana
     range: 30 feet
@@ -59,7 +59,7 @@ Spell Shaper:
   tier: Veteran
   type: Passive
   effect:
-    When you use a Blaster <span class="trait">attack</span> power with a range of at least 30 feet, you can decrease the range to Touch to get a +2 bonus to the attack roll.
+    When you use a Blaster {% trait Attack %} power with a range of at least 30 feet, you can decrease the range to Touch to get a +2 bonus to the attack roll.
 
 Cone of Cold:
   tier: Veteran
@@ -151,7 +151,7 @@ Implosion:
     save: Fortitude
     duration: Sustained, up to 1 minute
   effect:
-    You crush the target by causing it to collapse in on itself, dealing 75 damage. Each time you Sustain the spell, you must choose a new target to be subject to the same effect. You can't target the same creature twice during a single casting of this spell, you can't Sustain this spell multiple times per turn, and you can't target a creature that lacks a solid form.
+    You crush the target by causing it to collapse in on itself, dealing 75 damage. Each time you {Sustain} the spell, you must choose a new target to be subject to the same effect. You can't target the same creature twice during a single casting of this spell, you can't Sustain this spell multiple times per turn, and you can't target a creature that lacks a solid form.
 
 Meteor Swarm:
   tier: Epic

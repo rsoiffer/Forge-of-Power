@@ -2,7 +2,7 @@
 layout: single
 title: Ancestries
 sidebar:
-  nav: system
+  nav: character
 ---
 
 Note that the stats below are incomplete. Eventually, all the races below will have multiple subraces.

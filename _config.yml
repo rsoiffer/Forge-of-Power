@@ -1,4 +1,4 @@
-title: Forge of Power
+title: Forge of Stars
 description: >-
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -24,3 +24,5 @@ page_gen:
 exclude:
   - .deploydest
   - deploy.rb
+
+markdown: LinkerProcessor
