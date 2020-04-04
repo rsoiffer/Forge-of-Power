@@ -97,7 +97,7 @@ When the group needs a precise map of an area, usually for combat, the GM divide
 
 ## Saving Throws
 
-The three skills {Fortitude Save}, {Reflex Save}, and {Will Save} represent your character's ability to avoid or resist various types of attacks. Skill rolls made with these skills are called **saves** or **saving throws**. Unless otherwise specified, a saving throw against a damaging effect does the following.
+The three skills {Fortitude}, {Reflex}, and {Will} represent your character's ability to avoid or resist various types of attacks. Die rolls made with these skills are called **saves** or **saving throws**. Unless otherwise specified, a saving throw against a damaging effect does the following.
 
 **Critical Success:** You take no damage from the effect
 

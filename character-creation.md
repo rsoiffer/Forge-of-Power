@@ -29,13 +29,13 @@ Your character is proficient in 4 combat skills, 4 general skills, and 2 + Intel
 
 Powers are a general term for all the special abilities your character has. They cover everything from basic actions to powerful spells. Most of character customizability comes from picking your character's powers.
 
-**Basic powers** are shared across all characters. Your character can use all the powers listed in the {% ref Basic Actions %} page. **Learned powers** are tied to particular power schools and must be learned before you can use them.
+**Basic powers** are shared across all characters. Your character can use all the powers listed in the {% ref Basic Powers %} page. **Learned powers** are tied to particular power schools and must be learned before you can use them.
 
-All Learned powers are part of a power school, which is a group of many thematically-similar powers. There are a total of 30 power schools in Forge of Power. See the [Power Schools](schools.html) page for a full list of all power schools and their descriptions. See the second half of this document for detailed information on each power school.
+All learned powers are part of a power school, which is a group of many thematically-similar powers. There are a total of 24 power schools in Forge of Power. See the {% ref Power Schools %} page for a full list of all power schools and their descriptions.
 
-Your character starts with 0 points in each power school. When you create your character, you split a number of points equal to your character level between the power schools. For example, if you have a level 5 character, you could choose to put 3 points in Telekinetic and 2 points in Duelist, or you could choose to put all 5 points in Battlesmith. The number of points you put into a power school is called your level in that school, and it determines how many powers you get from that school. Write your level in each power school on your character sheet.
+When you create your character, you split your character level between the power schools. For example, if you have a level 5 character, you could choose to put 3 levels in Telekinetic and 2 levels in Duelist, or you could choose to put all 5 levels in Alchemist. Write your level in each power school on your character sheet.
 
-Your character knows a number of powers from each power school equal to your level in that school. Some Learned powers are limited by your character's level and your level in the power's school. All Learned powers are listed as Novice, Veteran, Master, or Epic. To learn a power, you must meet the requirements in the table below:
+Your character knows a number of powers from each power school equal to your level in that school. Some learned powers are limited by your character's level and your level in the power's school. All learned powers are listed as Novice, Veteran, Master, or Epic. To learn a power, you must meet the requirements in the table below:
 
 <table>
   <tr>
@@ -51,23 +51,23 @@ Your character knows a number of powers from each power school equal to your lev
   <tr>
     <td>Veteran</td>
     <td>5</td>
-    <td>2</td>
+    <td>3</td>
   </tr>
   <tr>
     <td>Master</td>
     <td>11</td>
-    <td>4</td>
+    <td>5</td>
   </tr>
   <tr>
     <td>Epic</td>
     <td>17</td>
-    <td>6</td>
+    <td>7</td>
   </tr>
 </table>
 
-For example, if you have a level 7 character, you could choose to put 5 points in the Druid school and 2 points in the Healer school. You then learn 5 powers from the Druid school, all of which can be either Novice or Veteran. You also learn 2 powers from the Healer school, both of which must be Novice.
+For example, if you have a level 7 character, you could choose to put 5 levels in the Druid school and 2 levels in the Shapeshifter school. You then learn 5 powers from the Druid school, all of which can be either Novice or Veteran. You also learn 2 powers from the Shapeshifter school, both of which must be Novice.
 
-As another example, if you have a level 9 character, you could choose to put all 9 points in the Diviner school. You then learn 9 powers from the Diviner school, all of which must be Novice or Veteran.
+As another example, if you have a level 9 character, you could choose to put all 9 levels in the Diviner school. You then learn 9 powers from the Diviner school, all of which must be Novice or Veteran.
 
 ## Step 5. Choose your Ribbons
 
@@ -87,7 +87,7 @@ You're now almost finished making your character! The only difficult thing left 
 
 ***Level.*** Your character's level describes your overall strength. Most characters are between levels 1 and 20, but this isn't a hard limit. The GM determines what level your character is.
 
-***Prof.*** Your character has a proficiency bonus (abbreviated as Prof), which you add as a bonus to skill rolls for skills you are proficient in. Like D&D 5e, your proficiency bonus is equal to (Level / 4) + 1, rounded up.
+***Prof.*** Your character has a proficiency bonus (abbreviated as Prof), which you add as a bonus to die rolls for skills you are proficient in. Like D&D 5e, your proficiency bonus is equal to (Level / 4) + 1, rounded up.
 
 ***HP.*** Your hit points (abbreviated as HP) measure how much damage you can take before falling unconscious. Your HP is equal to Strength + Prof + 5 * Level.
 

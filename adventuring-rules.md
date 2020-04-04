@@ -15,7 +15,7 @@ If you take a 5-minute rest, you recover the ability to use any [[Encounter]] po
 
 ## Inspiration
 
-The GM is encouraged to reward players for good roleplaying with a mechanic called inspiration. Whenever the GM thinks a player did something cool or immersive, the GM should give that player a point of inspiration. You can spend a point of inspiration to reroll any skill roll or damage roll that your character makes. This is a [[Fortune]] effect.
+The GM is encouraged to reward players for good roleplaying with a mechanic called inspiration. Whenever the GM thinks a player did something cool or immersive, the GM should give that player a point of inspiration. You can spend a point of inspiration to reroll any die roll or damage roll that your character makes. This is a [[Fortune]] effect.
 
 ## NPC Attitude
 
@@ -37,13 +37,3 @@ Hostile
 : The creature actively wishes to harm you, and might attack you or otherwise try to get in your way
 
 Most NPCs start as indifferent towards the party. A creature you're fighting is almost always hostile towards you. Aggressive or hurtful actions towards an NPC will greatly worsen their attitude towards you, while generous or kind actions towards an NPC might improve their attitude towards you.
-
-## Currency
-
-The approximate total wealth of a character of level X should be roughly 4,000 cred * 1.5^X. Thus a level 1 character should start with approximately 6,000 cred, while a level 17 character should have approximately 4,000,000 cred worth of items.
-
-An item generally sells for half the cost of buying the item (factoring in taxes, the item being used, retailer markups, and so on). If the item is stolen, in terrible condition, or otherwise hard to sell, it sells for roughly one tenth of the cost of buying the item.
-
-## Hacking
-
-I'm the hackerman!

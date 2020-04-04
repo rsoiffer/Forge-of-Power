@@ -23,7 +23,7 @@ Guidance:
     range: 30 feet
     duration: Until the start of your next turn
   effect:
-    You see briefly into the future, granting the target a +1 bonus to one skill roll they attempt before the duration ends. The target chooses which roll to use the bonus on before rolling, after which the spell ends. The target is then temporarily immune for 1 hour.
+    You see briefly into the future, granting the target a +1 bonus to one die roll they attempt before the duration ends. The target chooses which roll to use the bonus on before rolling, after which the spell ends. The target is then temporarily immune for 1 hour.
 
 True Strike:
   tier: Novice
@@ -38,7 +38,7 @@ Portent:
   tier: Novice
   type: Passive
   effect: |
-    Glimpses of the future begin to press in on your awareness. When you finish an 8-hour rest, roll two d20s and record the numbers rolled. You can replace any skill roll made by you or a creature you can see with one of these foretelling rolls. You must choose to do so before the roll.
+    Glimpses of the future begin to press in on your awareness. When you finish an 8-hour rest, roll two d20s and record the numbers rolled. You can replace any die roll made by you or a creature you can see with one of these foretelling rolls. You must choose to do so before the roll.
 
     Each foretelling roll can be used only once. When you finish an 8-hour rest, you lose any unused foretelling rolls.
 

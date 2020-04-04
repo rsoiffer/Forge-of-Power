@@ -54,19 +54,19 @@ Innate Magic:
   brief: Casting spells through inherent magical ability
   description: ""
 
-Fortitude Save:
+Fortitude:
   attribute: Constitution
   type: Combat
   brief: Persevere through diseases, poison, or exhaustion
   description: ""
 
-Reflex Save:
+Reflex:
   attribute: Dexterity
   type: Combat
   brief: Dodge out of the way of dangerous explosions or spells
   description: ""
 
-Will Save:
+Will:
   attribute: Wisdom
   type: Combat
   brief: Resist fear or mind control effects with your force of will

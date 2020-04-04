@@ -2,11 +2,15 @@
 
 Berserker:
   brief: You smash enemies with aggressive bursts of murderous rage
-  description:
+  description: |
     A strong melee dude, who likes being strong and fighting in melee. The dude
     part is optional, and doesn't signify gender or anything. Strong melee dudes
     are often found punching things or hitting things, especially when those
     things are enemies or are getting in the way.
+  novice: You have +2 Proficiency in {Brawling}, {Martial Weapons}, {Great Weapons}, and {Fortitude}. Whenever you hit a creature with a melee {Strike} using Strength, you deal an extra 2 damage.
+  veteran: Both bonuses increase to +4
+  master: Both bonuses increase to +6
+  epic: Both bonuses increase to +8
 
 Duelist:
   brief: You parry enemy attacks and respond with well-timed ripostes

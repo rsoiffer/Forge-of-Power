@@ -1,6 +1,6 @@
 Acid: Effects with this trait deal acid damage.
 
-Attack: A power with this trait is called an attack. An ability with this trait makes a special skill roll called an attack roll.
+Attack: A power with this trait is called an attack. An ability with this trait makes a special die roll called an attack roll.
 
 Auditory: Auditory effects rely on sound. An [[Auditory]] effect can only affect creatures that can hear it.
 
@@ -62,7 +62,7 @@ Revelation: Effects with this trait see things as they truly are.
 
 Scrying: A scrying effect lets you see, hear, or otherwise get sensory information from a distance using a sensor or apparatus, rather than your own eyes and ears.
 
-Secret: The GM makes the skill roll for this ability in secret.
+Secret: The GM makes the die roll for this ability in secret.
 
 Shadow: This magic involves shadows.
 

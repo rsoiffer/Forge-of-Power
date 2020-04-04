@@ -38,7 +38,7 @@ Grapple:
   tags:
     requirements: You have at least one free hand, and your target is not more than one size larger than you
   effect:
-    You attempt to grab an opponent with your free hand. Attempt a {Brawling} roll against their {Fortitude Save}. You can also use this power to keep your hold a creature you already grabbed.
+    You attempt to grab an opponent with your free hand. Attempt a {Brawling} roll against their {Fortitude} save. You can also use this power to keep your hold a creature you already grabbed.
   critical-success: Your opponent is {restrained} until the end of your next turn, unless you move or your opponent succeeds on an {Escape}
   success: Your opponent is {grabbed} until the end of your next turn, unless you move or your opponent succeeds on an {Escape}
   failure: You fail to grab your opponent, and if you already had the opponent {grabbed} or {restrained} using Grapple, those conditions on that creature end
@@ -47,7 +47,7 @@ Grapple:
 Help:
   type: 1-Action
   effect:
-    You try to help your ally with a task. The task but be something you could reasonably help with, must involve a skill roll, and must be completed before the start of your next turn. You must explain to the GM exactly how you're trying to help, and they determine whether you can Aid your ally. Attempt a skill roll (of a type decided by the GM) against DC 20.
+    You try to help your ally with a task. The task but be something you could reasonably help with, must involve a die roll, and must be completed before the start of your next turn. You must explain to the GM exactly how you're trying to help, and they determine whether you can Aid your ally. Attempt a die roll (of a type decided by the GM) against DC 20.
   critical-success: You grant your ally a bonus to the roll equal to your Prof
   success: You grant your ally a +1 bonus to the roll
   critical-failure: Your ally takes a -1 penalty to the roll
@@ -56,7 +56,7 @@ Interact:
   type: Free
   traits: [Manipulate]
   effect:
-    You use your hand or hands to manipulate an object or the terrain. You can grab an unattended or stored object, open a door, or produce some similar effect. You might have to attempt a skill roll to determine if your Interact action was successful.
+    You use your hand or hands to manipulate an object or the terrain. You can grab an unattended or stored object, open a door, or produce some similar effect. You might have to attempt a die roll to determine if your Interact action was successful.
 
 Interrupt:
   type: Reaction
@@ -97,7 +97,7 @@ Shove:
   tags:
     requirements: You have at least one free hand, and your target is not more than one size larger than you
   effect:
-    You push an opponent away from you. Attempt a {Brawling} check against your opponent's {Fortitude Save}.
+    You push an opponent away from you. Attempt a {Brawling} check against your opponent's {Fortitude} save.
   critical-success: You push your opponent up to 10 feet away from you. You can {Stride} after it, but you must move the same distance and in the same direction.
   success: You push your opponent back 5 feet. You can {Stride} after it, but you must move the same distance and in the same direction.
   critical-failure: You lose your balance, fall, and land {prone}
@@ -106,7 +106,7 @@ Stride:
   type: Free
   traits: [Move]
   effect:
-    You move to an adjacent zone. If you're moving across especially difficult terrain, the GM might ask you make a skill roll to use this power.
+    You move to an adjacent zone. If you're moving across especially difficult terrain, the GM might ask you make a die roll to determine if your Stride action was successful.
 
 Strike:
   type: 1-Action

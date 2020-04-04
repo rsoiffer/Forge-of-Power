@@ -1,11 +1,3 @@
-Apprentice Berserker:
-  tier: Intro
-  type: Passive
-  effect: |
-    You have +2 Proficiency in {Brawling}, {Martial Weapons}, and {Great Weapons}. Whenever you hit a creature with a melee {Strike} using Strength, you deal an extra 2 damage.
-
-    When you reach Veteran tier in Berserker, both bonuses above increase to +4. The bonuses increase to +6 at Master tier, and to +8 at Epic tier.
-
 Brutish Shove:
   tier: Novice
   type: 1-Action
@@ -108,7 +100,7 @@ Awesome Blow:
   tags:
     requirements: Your last action was a successful {Strike}
   effect:
-    The weight of your swing drives your enemy back. Attempt an {Athletics} roll against your target's {Fortitude Save}.
+    The weight of your swing drives your enemy back. Attempt an {Athletics} roll against your target's {Fortitude} save.
   critical-success: You gain the critical success effect of a {Shove}, then the critical success effect of a {Trip} against the target
   success: You gain the success effect of a {Shove}, then the success effect of a {Trip} against the target
   failure: You gain the success effect of a {Shove} against the target

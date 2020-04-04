@@ -18,7 +18,7 @@ Dispiriting Taunt:
   effect:
     Make an Intimidate roll against the target's Will DC.
   critical-success: As success, and the target is stunned 1
-  success: The target has a -2 penalty to all skill rolls
+  success: The target has a -2 penalty to all die rolls
   failure: The target has a -2 penalty to attack rolls
 
 Inspire Courage:

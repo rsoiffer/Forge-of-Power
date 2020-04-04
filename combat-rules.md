@@ -21,15 +21,13 @@ Your HP can never go above your maximum HP, and your HP can never go below 0. Wh
 
 Some effects can give you temporary HP. When you take damage, subtract the damage from your temporary HP first, then subtract any remaining damage from your HP. Multiple sources of temporary HP **do not** stack, you only keep the highest.
 
-Some effects can give you shield HP. When you take damage, subtract the damage from your shield HP first, then subtract any remaining damage from your HP or temporary HP. Multiple sources of shield HP **do** stack. Some effects that give you shield HP also replace your AC with the shield's AC.
-
 ## Dying
 
 When you take damage that brings your HP to 0, you gain the {dying} 1 condition. If this damage was from an enemy's critical hit or a critical failure on your save, you instead gain the {dying} 2 condition. While you have the dying condition, you are bleeding out, and you must make a death save at the start of each of your turns.
 
 ### Death Save
 
-A death save is a {Fortitude Save} against DC 10.
+A death save is a {Fortitude} save against DC 10.
 
 Critical Success
 : Your dying condition decreases by 2
