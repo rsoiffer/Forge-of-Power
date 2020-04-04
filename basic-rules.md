@@ -85,6 +85,12 @@ The DC (Difficulty Class) of a die roll is usually determined by the GM based on
   </tr>
 </table>
 
+## Advantage, Disadvantage, and Rerolls
+
+Some effects can give you **advantage** or **disadvantage** on a die roll, representing a minor cicumstantial bonus or penalty. When you have advantage on a die roll, you roll the d20 twice and take the higher value. When you have disadvantage on a die roll, you roll the d20 twice and take the lower value. If you have both advantage and disadvantage on a die roll, you only roll the d20 once.
+
+Some effects let you **reroll** a die roll after it's made. When you do, repeat the exact same die roll, with the same bonuses, penalties, advantage, and disadvantage as the original. Then, you can pick whether to use the original die roll or the new one.
+
 ## Turns in Combat
 
 Characters take turns during combat, as who acts first can be very important. When a fight breaks out, everyone involved makes an Initiative roll. Whoever gets the highest result takes the first turn. On your turn, you can use one {% icon 1-Action %} power and any number of {% icon Free %} powers. After you use a {% icon Free %} power once, it counts as a {% icon 1-Action %} power for you for the rest of your turn.

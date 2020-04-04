@@ -2,22 +2,28 @@
 
 Berserker:
   brief: You smash enemies with aggressive bursts of murderous rage
-  description: |
+  description:
     A strong melee dude, who likes being strong and fighting in melee. The dude
     part is optional, and doesn't signify gender or anything. Strong melee dudes
     are often found punching things or hitting things, especially when those
     things are enemies or are getting in the way.
-  novice: You have +2 Proficiency in {Brawling}, {Martial Weapons}, {Great Weapons}, and {Fortitude}. Whenever you hit a creature with a melee {Strike} using Strength, you deal an extra 2 damage.
-  veteran: Both bonuses increase to +4
-  master: Both bonuses increase to +6
-  epic: Both bonuses increase to +8
+  tiers:
+    novice: You have +2 Proficiency in {Brawling}, {Martial Weapons}, {Great Weapons}, and {Fortitude}. Whenever you hit a creature with a melee {Strike} using Strength, you deal an extra 2 damage.
+    veteran: Both bonuses increase to +4
+    master: Both bonuses increase to +6
+    epic: Both bonuses increase to +8
 
 Duelist:
   brief: You parry enemy attacks and respond with well-timed ripostes
   description: ""
+  tiers:
+    novice: You have +2 Proficiency in {Simple Weapons}, {Martial Weapons}, {Great Weapons}, and {Finesse Weapons}. When a creature misses you with a melee {Strike}, you have a +2 bonus on your next melee {Strike} against that creature before the end of your next turn.
+    veteran: Both bonuses increase to +4
+    master: Both bonuses increase to +6
+    epic: Both bonuses increase to +8
 
 Guardian:
-  brief: TODO
+  brief: You guard yourself and allies from harm with shields and heavy armor
   description: ""
 
 Warblade:
@@ -59,6 +65,11 @@ Gadgeteer:
 Mastermind:
   brief: You support your party both in and out of battle, with a plan for every situation
   description: ""
+  tiers:
+    novice: You gain two skill boosts, one of which must be applied to {Deception}, {Diplomacy}, {Intimidation}, or {Performance}. You have a +2 bonus to all die rolls about any kind of tactics or strategy.
+    veteran: You gain two skill boosts, one of which must be applied to {Deception}, {Diplomacy}, {Intimidation}, or {Performance}. You have a +4 bonus to all die rolls about any kind of tactics or strategy.
+    master: You gain two skill boosts, one of which must be applied to {Deception}, {Diplomacy}, or {Intimidation}, {Performance}. You have a +6 bonus to all die rolls about any kind of tactics or strategy.
+    epic: You gain two skill boosts, one of which must be applied to {Deception}, {Diplomacy}, {Intimidation}, or {Performance}. You have a +8 bonus to all die rolls about any kind of tactics or strategy.
 
 # Sage
 
@@ -83,6 +94,11 @@ Wizard:
 Blaster:
   brief: You blast enemies away with devastating evocations of elemental energy
   description: ""
+  tiers:
+    novice: Choose either {Arcane Magic} or {Innate Magic} as your Magic Skill for this school. You have +2 Proficiency in your Magic Skill. When you cast a spell, if the spell deals damage and doesn't have a duration, the spell's damage increases by 2.
+    veteran: Both bonuses increase to +4
+    master: Both bonuses increase to +6
+    epic: Both bonuses increase to +8
 
 Illusionist:
   brief: You conjure illusions to deceive or confuse your opponents' senses
@@ -92,7 +108,7 @@ Necromancer:
   brief: You channel necrotic energy to slay the living, then raise the dead to serve you
   description: ""
 
-Telekinetic:
+Psion:
   brief: You move objects with your mind to protect yourself or hurl boulders at foes
   description: ""
 

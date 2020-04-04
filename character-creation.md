@@ -21,9 +21,34 @@ Your starting score in each attribute is a number between -1 and +3. You can cho
 
 ## Step 3. Choose your Skills
 
-You now choose what skills your character is proficient in. Skills are divided into three broad categories. Combat skills, which are always used during combat, represent your skill with types of weapons or magic. General skills represent your ability to perform non-combat tasks of all kinds. Lore skills represent in-depth knowledge of particular subjects. See the {% ref skills %} page for a full list of all skills and their purpose in the game.
+You now choose what skills your character specializes in. Skills are divided into two broad categories. Combat skills, which are always used during combat, represent your experience with types of weapons or magic. General skills represent your ability to perform non-combat tasks of all kinds. See the {% ref skills %} page for a full list of all skills and their purpose in the game.
 
-Your character is proficient in 4 combat skills, 4 general skills, and 2 + Intelligence lore skills. Write these skills on your character sheet.
+Your bonus to each skill is equal to your score in the skill's attribute + your Proficiency in that skill. You start with +0 Proficiency in each skill. Many power schools increase your Proficiency in various *combat skills*. If multiple power schools set your Proficiency in a combat skill, you only take the highest value. You can also get **skill boosts**, which you can apply to a *general skill* to increase your Proficiency in that skill by 2.
+
+You start with 4 skill boosts, which you must apply to different general skills. You gain another skill boost at every odd character level. This means that the total number of skill boosts you have is equal to 4 + half your character level, rounded up. No matter how many skill boosts you apply to a general skill, your Proficiency in that skill can't increase beyond the maximum given in the table below:
+
+<table>
+  <tr>
+    <th>Character Level</th>
+    <th>Max Proficiency</th>
+  </tr>
+  <tr>
+    <td>1 ... 4</td>
+    <td>+4</td>
+  </tr>
+  <tr>
+    <td>5 ... 10</td>
+    <td>+6</td>
+  </tr>
+  <tr>
+    <td>11 ... 16</td>
+    <td>+8</td>
+  </tr>
+  <tr>
+    <td>17 or more</td>
+    <td>+10</td>
+  </tr>
+</table>
 
 ## Step 4. Choose your Powers
 
@@ -71,41 +96,39 @@ As another example, if you have a level 9 character, you could choose to put all
 
 ## Step 5. Choose your Ribbons
 
-In addition to powers, your character has several abilities called ribbons. Ribbons are associated to categories of power schools, and are very similar to powers, except that they are generally not very useful in combat. Ribbons are a good way to give your character more theme and flavor without impacting your combat capabilities.
+In addition to powers, your character has several abilities called ribbons. Ribbons are associated to power schools, and are very similar to powers, except that they are generally not very useful in combat. Ribbons are a good way to give your character more theme and flavor without impacting your combat capabilities.
 
-You learn one ribbon at every odd character level. This means that the total number of ribbons you know is equal to half your character level, rounded up. You cannot have ribbons from a category if you have no points in any power schools in that category, but there are no other restrictions on which ribbons you can choose.
+You learn one ribbon at every odd character level. This means that the total number of ribbons you know is equal to half your character level, rounded up. You can't pick ribbons from a power school that you have no levels in, but there are no other restrictions on which ribbons you can choose.
 
 ## Step 6. Choose your ASIs/Feats
 
 Your character becomes stronger in other ways than simply learning more powers. At every even level, you can choose to either get an Attribute Score Improvement (ASI) or a feat. This means that the total number of ASIs or feats you get is equal to half your character level, rounded down. This represents your character becoming stronger generally, in a way that isn't tied to any specific power school.
 
-When you get an ASI, you increase your score in an attribute by 1 point, to a maximum of 5. When you get a feat, you choose any one feat from the list of feats. See Section 2 for the full list of feats and their descriptions.
+If you choose to get an ASI, you increase your score in one attribute by 1 point, to a maximum of +5.
+
+If you choose to get a feat, you learn one feat from the {% ref Feats %} page.
 
 ## Step 7. Compute Miscellaneous Stats
 
 You're now almost finished making your character! The only difficult thing left to do is to write down a few numbers describing various aspects of your character.
 
-***Level.*** Your character's level describes your overall strength. Most characters are between levels 1 and 20, but this isn't a hard limit. The GM determines what level your character is.
+***Character Level.*** Your character's level describes your overall strength. Most characters are between levels 1 and 20, but this isn't a hard limit. The GM determines what level your character is.
 
-***Prof.*** Your character has a proficiency bonus (abbreviated as Prof), which you add as a bonus to die rolls for skills you are proficient in. Like D&D 5e, your proficiency bonus is equal to (Level / 4) + 1, rounded up.
+***HP.*** Your hit points (abbreviated as HP) measure how much damage you can take before falling unconscious. Your HP is equal to 20 + Character Level + 2 * Constitution.
 
-***HP.*** Your hit points (abbreviated as HP) measure how much damage you can take before falling unconscious. Your HP is equal to Strength + Prof + 5 * Level.
+***AC.*** Your armor class (abbreviated as AC) measures how difficult you are to hit with physical attacks. Your AC is equal to 10 + Dexterity, though it can be increased by wearing armor.
 
-***AC.*** Your armor class (abbreviated as AC) measures how difficult you are to hit with physical attacks. Your AC is equal to 10 + Agility + Prof, though it can be increased by wearing armor.
+***Initiative.*** Your Initiative measures how quick you are to react to combat. Your Initiative is equal to Dexterity + Wisdom.
 
-***Initiative.*** Your Initiative measures how quick you are to react to combat. Your Initiative is equal to Precision + Prof.
+***Mana.*** Your Mana measures how many spells you can cast before running out of energy. Your Mana is equal to Character Level + 2 * Wisdom, to a minimum of 0 Mana.
 
-***Speed.*** Your Speed measures how many feet you can move in a single action. Your Speed is equal to 30 ft.
-
-***Mana.*** Your Mana measures how many spells you can cast before running out of energy. Your Mana is equal to Wisdom + Prof.
-
-***Spell DC.*** Your spell difficulty class (abbreviated as Spell DC) measures how difficult your spells are to resist. Your Spell DC is equal to 10 + Prof + one of Intelligence, Wisdom, or Charisma (whichever is highest).
+***Spell DC.*** Your spell difficulty class (abbreviated as Spell DC) measures how difficult your spells are to resist. Your Spell DC is equal to 10 + one of {Arcane Magic}, {Divine Magic}, or {Innate Magic}, whichever is highest.
 
 ## Step 8. Buy Equipment
 
 Don't forget to buy equipment to use in your adventures! You start with (2000 * your character level) credits. See the {% ref weapons %} and {% ref armor %} pages for stats. More tables for standard adventuring gear, as well as strange high-tech gadgets, are on the way.
 
-## Step 9. Choose your Personality
+## Step 9. Describe your Personality
 
 What your character will choose to do is as important as what your character has the power to do. You should write notes on your character sheet that give a general description of your character's personality, preferably at least one sentence for each topic below. The better you act out your character's personality, the more likely you are to get [Inspiration](basic-rules.html#inspiration).
 

@@ -42,7 +42,7 @@ Manipulate: You must physically manipulate an item or make gestures to use a pow
 
 Mental: An effect with this trait can alter the target's mind. It has no effect on an object or a mindless creature.
 
-Minion: A creature for this trait is controlled by another creature. Minion creatures can't take actions unless their master uses the {Command} power.
+Minion: A creature for this trait is controlled by another creature. Minion creatures can't uses powers unless their master uses the {Command} power.
 
 Misfortune: An effect with this trait detrimentally alters how you roll your dice. You can never have more than one [[Misfortune]] effect alter a single roll. If multiple [[Misfortune]] effects would apply, the GM decides which is worse and applies it. If a [[Fortune]] effect and [[Misfortune]] effect would apply to the same roll, the two cancel each other out, and you roll normally.
 

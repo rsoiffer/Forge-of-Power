@@ -14,6 +14,7 @@ sidebar:
     <th>Name</th>
     <th>Tier</th>
     <th>Type</th>
+    <th>Description</th>
   </tr>
   {% for power in site.data.powers %}
     {% if power[1].school == page.data[0] %}
@@ -27,6 +28,7 @@ sidebar:
             {% icon {{ power[1].type }} %}
           {% endunless %}
         </td>
+        <td>{{ power[1].brief | process_inline }}</td>
       </tr>
     {% endif %}
   {% endfor %}
@@ -34,10 +36,9 @@ sidebar:
 
 <h2>Tier Bonuses</h2>
 <dl>
-  <dt>Novice</dt><dd>{{ school.novice | process_inline }}</dd>
-  <dt>Veteran</dt><dd>{{ school.veteran | process_inline }}</dd>
-  <dt>Master</dt><dd>{{ school.master | process_inline }}</dd>
-  <dt>Epic</dt><dd>{{ school.epic | process_inline }}</dd>
+  {% for tier in school.tiers %}
+  <dt>{{ tier[0] | capitalize }}</dt><dd>{{ tier[1] | process_inline }}</dd>
+  {% endfor %}
 </dl>
 
 {% for power2 in site.data.powers %}

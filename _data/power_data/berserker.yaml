@@ -25,20 +25,18 @@ Power Attack:
   tier: Novice
   type: 1-Action
   effect:
-    You unleash a particularly powerful attack that clobbers your foe but
-    leaves you a bit unsteady. Make a melee {Strike} at -5 to hit. If this Strike hits, you deal an extra
-    die of weapon damage.
+    You unleash a particularly powerful attack that clobbers your foe but leaves you a bit unsteady. Make a melee {Strike} at -5 to hit. If this Strike hits, you deal an extra die of weapon damage.
 
 Rage:
   tier: Novice
   type: 1-Action
   brief: You enter a furious rage, gaining offensive power at the cost of defense
-  traits: [Concentrate, Emotion, Encounter, Mental]
+  traits: [Emotion, Encounter, Mental]
   tags:
     duration:
       1 minute, until you can't sense any enemies, or until you fall unconscious
   effect: |
-    You tap into your inner fury and begin raging. You gain temporary HP equal to Level + Strength. While raging, you gain the following benefits:
+    You tap into your inner fury and begin raging. You gain temporary HP equal to Berserker Level + Constitution. While raging, you gain the following benefits:
     * You deal 2 additional damage with melee or thrown weapon Strikes. This additional damage is halved if your weapon or unarmed attack is agile.
     * You take a -1 penalty to AC
     * You can't use [[Concentrate]] powers

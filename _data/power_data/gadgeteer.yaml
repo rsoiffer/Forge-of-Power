@@ -1,0 +1,21 @@
+Automatic Ballista:
+  tier: Novice
+  type: 1-Action
+  brief: Summon a turret that lasts for 1 minute
+  traits: [Manipulate]
+  tags:
+    duration: 10 minutes
+  effect: |
+    You set up an automatic turret on a flat surface you can reach. The turret is a creature with 10 * your Inventor level HP, 15 AC, 0 Speed, and the [[Minion]] trait. The turret can fire its cannon as a ranged {Strike}. This deals 2d8 damage, uses your Crafting score as the Weapon Skill, and has a range of 120 feet.
+
+Magitech Engine:
+  tier: Novice
+  type: 1-Action
+  brief: Craft a small engine with an elemental effect
+  traits: [Manipulate]
+  tags:
+    duration: 1 minute after the engine is attached to a weapon, or 1 hour otherwise
+  effect: |
+    You craft a small magic device that outputs a stream of elemental energy. Choose the engine's element to be one of acid, electricity, ice, fire, magic, or sound. With 1 minute of work, you can set up the engine to perform a single minor effect related to its element, at the GM's discretion.
+
+    When you craft the engine, or as an {% icon 1-Action %} power after you craft the engine, you can attach it to a weapon you touch. Strikes with that weapon deal an extra 1d6 damage. A weapon can only have one engine attached to it at a time.

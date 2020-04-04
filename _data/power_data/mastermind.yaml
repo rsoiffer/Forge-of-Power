@@ -1,15 +1,52 @@
+Chessmaster:
+  tier: Novice
+  type: 1-Action
+  brief: Reveal you planned this all along! (change the plot)
+  traits: [Daily]
+  effect: |
+    You announce that you planned this all along! You explain the details of your plan, which retroactively become fact. You cannot change any established events in the story, and your plan must be something that you could have reasonably prepared within the past 24 hours. Your plan cannot involve any actions that would require die rolls to succeed.
+    
+    For example, if you are investigating a dungeon, you could announce that you remembered to bring 100 feet of rope and a grappling hook, as you had anticipated that you might fall down a chasm. Alternatively, if you are in a meeting with the evil mayor, you could announce that you had arranged for the captain of the guard to be wandering by at just the right time, as you had predicted that the mayor would reveal his plan as this exact time. The GM has final say on whether any plan is reasonable.
+
+Inspiring Speech:
+  tier: Novice
+  type: 1-Action
+  brief: Increase allies’ AC and damage for 1 minute
+  traits: [Auditory, Linguistic]
+  tags:
+    area: 30-foot emanation
+    duration: 1 minute
+  effect:
+    Your target's AC increases by 2, and whenever they deal damage with an [[Attack]], then can add 1d8 to the damage against one target
+
 Order:
   tier: Novice
   type: 1-Action
+  brief: An ally acts instead of you
   traits: [Auditory, Linguistic]
   tags:
     range: 30 feet
+    requirements: Your target hasn't been affected by Order in the past minute
   effect:
-    You shout a brief order that spurs your ally into action. The target immediately uses a {% icon 1-Action %} power. If you use an extra action to activate this power, the target can use a {% icon 2-Action %} power instead. The target is then temporarily immune to this power for 1 minute.
+    You shout a brief order that spurs your ally into action. The target can immediately use a {% icon 1-Action %} power.
+
+Knight's Move:
+  tier: Veteran
+  type: Free
+  brief: Let an ally move instead of you
+  traits: [Auditory, Linguistic]
+  tags:
+    range: 60 feet
+    requirements: You haven't used the {Stride} power yet this turn
+  effect:
+    Your target can immediately use the {Stride} power. You can't use the {Stride} power for the rest of your turn.
 
 White Raven Tactics:
   tier: Veteran
   type: 1-Action
+  brief: Let an ally take an extra turn
   traits: [Auditory, Daily, Linguistic]
+  tags:
+    range: 30 feet
   effect:
-    Choose an ally within 30 feet. That ally immediately takes an extra turn.
+    Your target immediately takes an extra turn outside of the normal initiative order.
