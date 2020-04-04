@@ -38,13 +38,13 @@ To make the die roll, roll 1d20 and add the bonus, and note the result. Your res
   <tr>
     <td>Critical Failure</td>
     <td>DC - 11 or less</td>
-    <td>An exceptionally bad result, with bonus negative effects</td>
+    <td>An exceptionally bad result, with possible negative effects</td>
   </tr>
 </table>
 
 ## Difficulty Classes
 
-The DC (Difficulty Class) of a die roll is usually determined by the GM based on how hard the task seems. The GM is encouraged to used the table below to help them decide the DC. Some abilities call for a die roll against a specific DC. For example, the Strike action calls for a die roll where the DC is your target's AC.
+The DC (Difficulty Class) of a die roll is usually determined by the GM based on how hard the task seems. The GM is encouraged to used the table below to help them decide the DC. Some abilities call for a die roll against a specific DC. For example, the {Strike} power calls for a die roll where the DC is your target's AC.
 
 ### Sample Difficulties
 <table>
@@ -103,7 +103,7 @@ When you hit an attack, you deal damage to your target. Your attack's damage and
 
 ## Saving Throws
 
-The three skills {Fortitude}, {% ref Reflex %}, and {% ref Will %} represent your character's ability to avoid or resist various types of attacks. Skill rolls made with these skills are called **saves** or **saving throws**. Unless otherwise specified, a saving throw against a damaging effect does the following.
+The three skills {Fortitude Save}, {Reflex Save}, and {Will Save} represent your character's ability to avoid or resist various types of attacks. Skill rolls made with these skills are called **saves** or **saving throws**. Unless otherwise specified, a saving throw against a damaging effect does the following.
 
 **Critical Success:** You take no damage from the effect
 

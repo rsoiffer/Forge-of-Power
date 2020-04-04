@@ -5,7 +5,7 @@ sidebar:
   nav: character
 ---
 
-Every creature in Forge of Stars has 6 attributes: Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. Choosing your scores in each attribute is an important part of making your character. To help you know which attributes are important to your character, the list below gives all the common uses of each attribute.
+Every creature in Forge of Power has 6 attributes: Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. Choosing your scores in each attribute is an important part of making your character. To help you know which attributes are important to your character, the list below gives all the common uses of each attribute.
 
 ## Strength
 

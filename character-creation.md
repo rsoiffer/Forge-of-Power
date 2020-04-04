@@ -15,7 +15,7 @@ In this step, you should develop these ideas more, working out the details of wh
 
 ## Step 2. Determine Attribute Scores
 
-The next step is to determine your character's attributes. Characters in Forge of Stars have 6 attributes: Strength, Agility, Precision, Intelligence, Wisdom, and Charisma. Your score in each attribute is a single number, which generally ranges from -1 to +5. The average value of an attribute for a normal human is +0. See the {% ref Attributes %} page for a description of each attribute.
+The next step is to determine your character's attributes. Characters in Forge of Power have 6 attributes: Strength, Agility, Precision, Intelligence, Wisdom, and Charisma. Your score in each attribute is a single number, which generally ranges from -1 to +5. The average value of an attribute for a normal human is +0. See the {% ref Attributes %} page for a description of each attribute.
 
 Your starting score in each attribute is a number between -1 and +3. You can choose any starting scores you want such that your scores sum to a total to 6. Write the final values of your attributes on your character sheet.
 
@@ -31,7 +31,7 @@ Powers are a general term for all the special abilities your character has. They
 
 **Basic powers** are shared across all characters. Your character can use all the powers listed in the {% ref Basic Actions %} page. **Learned powers** are tied to particular power schools and must be learned before you can use them.
 
-All Learned powers are part of a power school, which is a group of many thematically-similar powers. There are a total of 30 power schools in Forge of Stars. See the [Power Schools](schools.html) page for a full list of all power schools and their descriptions. See the second half of this document for detailed information on each power school.
+All Learned powers are part of a power school, which is a group of many thematically-similar powers. There are a total of 30 power schools in Forge of Power. See the [Power Schools](schools.html) page for a full list of all power schools and their descriptions. See the second half of this document for detailed information on each power school.
 
 Your character starts with 0 points in each power school. When you create your character, you split a number of points equal to your character level between the power schools. For example, if you have a level 5 character, you could choose to put 3 points in Telekinetic and 2 points in Duelist, or you could choose to put all 5 points in Battlesmith. The number of points you put into a power school is called your level in that school, and it determines how many powers you get from that school. Write your level in each power school on your character sheet.
 

@@ -25,12 +25,16 @@ character:
     url: /character-creation.html
   - title: Ancestries
     url: /ancestries.html
+  - title: Attributes
+    url: /attributes.html
   - title: Skills
     url: /skills.html
   - title: Feats
     url: /feats.html
 
-powers: []
+powers:
+  - title: Basic Powers
+    url: /basic-powers.html
 # powers:
 #   - title: Power Schools
 #     url: /power-schools.html

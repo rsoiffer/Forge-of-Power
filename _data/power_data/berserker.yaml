@@ -1,3 +1,12 @@
+Novice Berserker:
+  tier: Intro
+  type: Passive
+  effect: |
+    You gain a +1 bonus to the following skills:
+    * Brawling
+    * Martial Weapons
+    * Great Weapons
+
 Brutish Shove:
   tier: Novice
   type: 1-Action
@@ -102,7 +111,7 @@ Awesome Blow:
   tags:
     requirements: Your last action was a successful {Strike}
   effect:
-    The weight of your swing drives your enemy back. Attempt an {Athletics} roll against your target's {Fortitude} DC.
+    The weight of your swing drives your enemy back. Attempt an {Athletics} roll against your target's {Fortitude Save}.
   critical-success: You gain the critical success effect of a {Shove}, then the critical success effect of a {Trip} against the target
   success: You gain the success effect of a {Shove}, then the success effect of a {Trip} against the target
   failure: You gain the success effect of a {Shove} against the target

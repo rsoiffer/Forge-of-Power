@@ -3,55 +3,73 @@
 Brawling:
   attribute: Strength
   type: Combat
-  brief: "Unarmed strikes and grappling"
+  brief: Unarmed strikes, grappling, and maneuvers
   description: ""
 
-Melee Weapons:
+Simple Weapons:
   attribute: Strength
   type: Combat
-  brief: "Melee weapons, such as blades or clubs"
+  brief: Everyday weapons, such as daggers, clubs, and staves
   description: ""
 
-Light Weapons:
-  attribute: Precision
+Martial Weapons:
+  attribute: Strength
   type: Combat
-  brief: "Small handheld guns, such as pistols or carbines"
+  brief: Weapons of war, such as swords, spears, and axes
   description: ""
 
-Heavy Weapons:
-  attribute: Precision
+Great Weapons:
+  attribute: Strength
   type: Combat
-  brief: "Large two-handed guns, such as rifles or grenade launchers"
+  brief: Large two-handed weapons, such as polearms and greatswords
   description: ""
 
-Sorcery:
+Finesse Weapons:
+  attribute: Dexterity
+  type: Combat
+  brief: Precision weapons, such as rapiers and short swords
+  description: ""
+
+Ranged Weapons:
+  attribute: Dexterity
+  type: Combat
+  brief: Projectile weapons, such as bows, slings, and throwing knives
+  description: ""
+
+Arcane Magic:
   attribute: Intelligence
   type: Combat
-  brief: "Wielding arcane magic and casting spells"
+  brief: Casting spells through study and knowledge
   description: ""
 
-Conjuring:
-  attribute: Charisma
-  type: Combat
-  brief: "Summoning, binding, and banishing spirits"
-  description: ""
-
-Fortitude:
-  attribute: Strength
-  type: Combat
-  brief: "Persevere through diseases, poison, or exhausting"
-  description: ""
-
-Reflex:
-  attribute: Agility
-  type: Combat
-  brief: "Dodge out of the way of dangerous explosions or spells"
-  description: ""
-
-Will:
+Divine Magic:
   attribute: Wisdom
   type: Combat
-  brief: "Resist fear or mind control effects with your force of will"
+  brief: Casting spells through a connection to the divine
+  description: ""
+
+Innate Magic:
+  attribute: Charisma
+  type: Combat
+  brief: Casting spells through inherent magical ability
+  description: ""
+
+Fortitude Save:
+  attribute: Constitution
+  type: Combat
+  brief: Persevere through diseases, poison, or exhaustion
+  description: ""
+
+Reflex Save:
+  attribute: Dexterity
+  type: Combat
+  brief: Dodge out of the way of dangerous explosions or spells
+  description: ""
+
+Will Save:
+  attribute: Wisdom
+  type: Combat
+  brief: Resist fear or mind control effects with your force of will
   description: ""
 
 # General
@@ -59,89 +77,107 @@ Will:
 Athletics:
   attribute: Strength
   type: General
-  brief: "Perform deeds of physical prowess"
+  brief: Perform deeds of physical prowess
   description: ""
 
 Acrobatics:
-  attribute: Agility
+  attribute: Dexterity
   type: General
-  brief: "Perform tasks requiring concentration and grace"
+  brief: Perform tasks requiring concentration and grace
   description: ""
 
 Stealth:
-  attribute: Agility
+  attribute: Dexterity
   type: General
-  brief: "Avoid detection, slip past foes, hide, or conceal an item"
+  brief: Avoid detection, slip past foes, hide, or conceal an item
   description: ""
 
-Piloting:
-  attribute: Precision
+Thievery:
+  attribute: Dexterity
   type: General
-  brief: "Maneuver vehicles through difficult terrain and dodge enemy fire"
+  brief: Maneuver vehicles through difficult terrain and dodge enemy fire
   description: ""
 
-Computers:
+Arcana:
   attribute: Intelligence
   type: General
-  brief: "Use, program, or hack into computer systems"
+  brief: How much you know about arcane magic and creatures
   description: ""
 
-Engineering:
+Crafting:
   attribute: Intelligence
   type: General
-  brief: "Build or repair mechanical items, such as weapons, armor, and vehicles"
+  brief: Create, understand, and repair items or structures
   description: ""
 
-Medicine:
+Investigation:
   attribute: Intelligence
   type: General
-  brief: "Patch up wounds and hlep people recover from diseases and poisons"
+  brief: Look for clues and make deductions makes on them
+  description: ""
+
+Religion:
+  attribute: Intelligence
+  type: General
+  brief: Know secrets of deities, dogma, faith, and the realms of the divine
+  description: ""
+
+Society:
+  attribute: Intelligence
+  type: General
+  brief: Understand the people and systems that make civilization run
   description: ""
 
 Insight:
   attribute: Wisdom
   type: General
-  brief: "Determine the true intentions of a creature"
+  brief: Determine the true intentions of a creature
+  description: ""
+
+Medicine:
+  attribute: Wisdom
+  type: General
+  brief: Patch up wounds and help people recover from diseases and poisons
   description: ""
 
 Nature:
   attribute: Wisdom
   type: General
-  brief: "Grow plants, train animals, and predict an animal's behavior"
+  brief: Know about the natural world, and train animals and magical beasts
   description: ""
 
 Perception:
   attribute: Wisdom
   type: General
-  brief: "Spot, hear, or otherwise detect the prescence of something"
+  brief: Spot, hear, or otherwise detect the presence of something
   description: ""
 
 Survival:
   attribute: Wisdom
   type: General
-  brief: "Live in harsh environments, forage for food, track, and hide your trail"
-  description: ""
-
-Contacts:
-  attribute: Charisma
-  type: General
-  brief: "Know useful people in the right places"
+  brief: Live in the wilderness, forage for food, track, and hide your trail
   description: ""
 
 Deception:
   attribute: Charisma
   type: General
-  brief: "Trick and mislead others using disguises, lies, and subterfuge"
+  brief: Trick and mislead others using disguises, lies, and subterfuge
   description: ""
 
 Diplomacy:
   attribute: Charisma
   type: General
-  brief: "Influence others through negotiation and flattery"
+  brief: Influence others through negotiation and flattery
   description: ""
 
-Intimidate:
+Intimidation:
   attribute: Charisma
   type: General
-  brief: "Bend other to your will using threats"
+  brief: Bend other to your will using threats
+  description: ""
+
+Performance:
+  attribute: Charisma
+  type: General
+  brief: Use your talents to impress a crowd or make a living
   description: ""
