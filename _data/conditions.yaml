@@ -14,11 +14,11 @@ Immobilized: You can't use any power with the [[Move]] trait. If you're immobili
 
 Paralyzed: Your body is frozen in place. You have the {flat-footed} condition and can't use any powers. Your senses still function, but only in the areas you can perceive without moving your body.
 
-Prone: You're lying on the ground. You are {flat-footed} and take a -2 penalty to attack rolls. The only [[Move]] power you can use while you're prone are {Stand} and {Stride}, and you can only move by crawling. You can {Stand} up to end the prone condition.
+Prone: You're lying on the ground. You are {flat-footed} and take a -2 penalty to attack rolls. The only [[Move]] power you can use while you're prone is {Stride}, and you can only move by crawling.
 
 Quickened: You have more actions. You gain 1 additional action at the start of your turn each round.
 
-Restrained: You're tied up and can barely move, or a creature has you pinned. You have the {flat-footed} and {immobilized} conditions, and you can't use any powers with the [[Attack]] or [[Manipulate]] traits except to attempt to {Escape} or {Force Open} your bonds.
+Restrained: You're tied up and can barely move, or a creature has you pinned. You have the {flat-footed} and {immobilized} conditions, and you can't use any powers with the [[Attack]] or [[Manipulate]] traits except to attempt to {Escape} your bonds.
 
 Slowed: You have fewer actions. The slowed condition is always associated with a value X. When you regain your actions at the start of your turn, reduce the number of actions you regain by X.
 

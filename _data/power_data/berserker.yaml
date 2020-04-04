@@ -1,11 +1,10 @@
-Novice Berserker:
+Apprentice Berserker:
   tier: Intro
   type: Passive
   effect: |
-    You gain a +1 bonus to the following skills:
-    * Brawling
-    * Martial Weapons
-    * Great Weapons
+    You have +2 Proficiency in {Brawling}, {Martial Weapons}, and {Great Weapons}. Whenever you hit a creature with a melee {Strike} using Strength, you deal an extra 2 damage.
+
+    When you reach Veteran tier in Berserker, both bonuses above increase to +4. The bonuses increase to +6 at Master tier, and to +8 at Epic tier.
 
 Brutish Shove:
   tier: Novice
@@ -21,23 +20,21 @@ Brutish Shove:
 
 Mountain Stance:
   tier: Novice
-  type: 1-Action
+  type: Free
   traits: [Stance]
   tags:
     requirements: You are unarmored and touching the ground
   effect: |
-    You end the stance of an implacable mountain and strike with the weight of an avalanche. The only Strikes you can make are falling stone unarmed attacks. These deal 1d8 bludgeoning damage and have the forceful and unarmed traits.
+    You end the stance of an implacable mountain and strike with the weight of an avalanche. The only Strikes you can make are **falling stone** unarmed attacks. These deal 1d8 bludgeoning damage and have the forceful and unarmed traits.
 
-    While in Mountain Stance, you gain a +4 bonus to AC and a +2 bonus to any defenses against being Shoved or Tripped. However, you don't add your Agility to your AC, and your Speed is reduced by 5 feet.
+    While in Mountain Stance, you gain a +4 bonus to AC and a +2 bonus to any defenses against being Shoved or Tripped. However, you don't add your Dexterity to your AC, and your Speed is reduced by 5 feet.
 
 Power Attack:
   tier: Novice
-  type: 2-Action
-  traits: [Flourish]
+  type: 1-Action
   effect:
     You unleash a particularly powerful attack that clobbers your foe but
-    leaves you a bit unsteady. Make a melee {Strike} (which counts as two
-    attacks when calculating your MAP). If this Strike hits, you deal an extra
+    leaves you a bit unsteady. Make a melee {Strike} at -5 to hit. If this Strike hits, you deal an extra
     die of weapon damage.
 
 Rage:

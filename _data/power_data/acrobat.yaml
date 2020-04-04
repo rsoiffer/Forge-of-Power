@@ -13,7 +13,7 @@ Fantastic Leap:
   tier: Novice
   type: 2-Action
   effect:
-    You launch yourself through the air at a foe. Make a {Leap} or attempt a High Jump or Long Jump. At the end of your jump, you can make a melee {Strike}, even if you're in mid-air. You fall to the ground after the Strike. If the distance of your fall is no more than the height of your jump, you take no damage and land upright.
+    You launch yourself through the air at a foe. Make a {Stride} by jumping. At the end of your jump, you can make a melee {Strike}, even if you're in mid-air. You fall to the ground after the Strike. If the distance of your fall is no more than the height of your jump, you take no damage and land upright.
 
 Flurry of Blows:
   tier: Novice
@@ -75,14 +75,6 @@ Water Step:
   effect:
     You can {Stride} across liquid and surfaces that don't support your weight. This benefit only lasts during your movement. If you end your movement on a surface that can't support you, you fall in or it collapses as normal.
 
-Winding Flow:
-  tier: Veteran
-  type: 1-Action
-  tags:
-    frequency: Once per round
-  effect:
-    "Any journey consists of more than simply reaching your destination. You use two of the following powers in any order: {Stand}, {Step}, and {Stride}. You can't use the same power twice."
-
 Whirlwind Strike:
   tier: Master
   type: 3-Action
@@ -94,7 +86,7 @@ Enduring Quickness:
   tier: Epic
   type: Passive
   effect:
-    You move as fast and as high as the wind itself. You're permanently quickened. You can use your extra action only to {Stride} or {Leap}.
+    You move as fast and as high as the wind itself. You're permanently quickened. You can use your extra action only to {Stride}.
 
 Swift River:
   tier: Epic

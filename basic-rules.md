@@ -87,19 +87,13 @@ The DC (Difficulty Class) of a die roll is usually determined by the GM based on
 
 ## Turns in Combat
 
-Characters take turns during combat, as who acts first can be very important. When a fight breaks out, everyone involved makes an Initiative roll. Whoever gets the highest result takes the first turn. On your turn, you can use one Action power and any number of Free powers.
+Characters take turns during combat, as who acts first can be very important. When a fight breaks out, everyone involved makes an Initiative roll. Whoever gets the highest result takes the first turn. On your turn, you can use one {% icon 1-Action %} power and any number of {% icon Free %} powers. After you use a {% icon Free %} power once, it counts as a {% icon 1-Action %} power for you for the rest of your turn.
 
-At the end of your turn, you pick who takes the next turn, ally or enemy. If you attacked a creature, that creature can choose to overrule your choice and take the next turn instead. No matter what, no one can take multiple turns in the same round. The round ends once everyone has taken a turn. The person who took the last turn in the round chooses who starts the next round.
+At the end of your turn, you pick who takes the next turn, ally or enemy. If you attacked a creature, that creature can choose to {Interrupt} your choice and take the next turn instead. No matter what, no one can take multiple turns in the same round. The round ends once everyone has taken a turn. The person who took the last turn in the round chooses who starts the next round.
 
-## Attacking
+## Movement and Zones
 
-Player characters are often involved in armed combat against enemies. When any character wants to make an attack with a [weapon](weapons.html), they follow the rules below.
-
-### Attack Rolls
-Every weapon is associated with a particular skill, such as Melee Weapons for a laser sword or Heavy Weapons for a blaster rifle. When you attack, make a special skill roll (called an **attack roll**) with the skill associated with the weapon you're attacking with. The DC for this skill roll is your target's AC. On a failure or critical failure, your attack misses or is blocked, and has no effect on your target. On a success, your attack is a hit and deals damage. On a critical success, your attack is a critical hit and deals double damage.
-
-### Damage Rolls
-When you hit an attack, you deal damage to your target. Your attack's damage and damage type are listed in the weapon's stat block. If you're making a melee attack, note the attribute you added to the attack roll, and add this attribute as a bonus to the attack's damage. If you're making a ranged attack, **do not** add this attribute to the attack's damage. Compute the total damage, and subtract this value from your target's HP.
+When the group needs a precise map of an area, usually for combat, the GM divides the game world into **zones**. A zone is an abstract area, usually about 30 feet on a side. Every character is in a zone, and multiple character can be in the same zone. You can use the {Stride} power to move between zones.
 
 ## Saving Throws
 
