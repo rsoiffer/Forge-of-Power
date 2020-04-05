@@ -126,6 +126,17 @@ h3, h4, h5, h6 {
 	float: right;
 }
 
+button {
+  $background: #ebdeca;
+
+  background: $background;
+  border: 2px solid darken($color: $background, $amount: 15%);
+
+  &:hover {
+    background: lighten($color: $background, $amount: 5%);
+  }
+}
+
 // Roll me one
 .roll-me-one blockquote {
   margin-top: 0.5em;
