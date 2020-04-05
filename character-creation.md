@@ -5,7 +5,7 @@ sidebar:
   nav: character
 ---
 
-As in other tabletop RPGs, before beginning character creation, you should talk with your group about the general setting and style of your game. You should also grab a blank sheet of paper to act as a character sheet, where you can record all the choices you make. 
+As in other tabletop RPGs, before beginning character creation, you should talk with your group about the general setting and style of your game. Ask your GM what character level you're starting at, and if they're using any custom rules. Finally, grab a blank sheet of paper to act as a character sheet, where you can record all the choices you make. 
 
 ## Step 1. Choose your General Theme
 
@@ -15,13 +15,13 @@ In this step, you should develop these ideas more, working out the details of wh
 
 ## Step 2. Determine Attribute Scores
 
-The next step is to determine your character's attributes. Characters in Forge of Power have 6 attributes: Strength, Agility, Precision, Intelligence, Wisdom, and Charisma. Your score in each attribute is a single number, which generally ranges from -1 to +5. The average value of an attribute for a normal human is +0. See the {% ref Attributes %} page for a description of each attribute.
+The next step is to determine your character's attributes. Characters in Forge of Power have 6 attributes: Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. Your score in each attribute is a single number, which generally ranges from -1 to +5. The average value of an attribute for a normal human is +0. See the {% ref Attributes %} page for a description of each attribute.
 
 Your starting score in each attribute is a number between -1 and +3. You can choose any starting scores you want such that your scores sum to a total to 6. Write the final values of your attributes on your character sheet.
 
 ## Step 3. Choose your Skills
 
-You now choose what skills your character specializes in. Skills are divided into two broad categories. Combat skills, which are always used during combat, represent your experience with types of weapons or magic. General skills represent your ability to perform non-combat tasks of all kinds. See the {% ref skills %} page for a full list of all skills and their purpose in the game.
+You now choose what skills your character specializes in. Skills are divided into two broad categories. Combat skills, which are always used during combat, represent your experience with types of weapons or magic. General skills represent your ability to perform non-combat tasks of all kinds. See the {% ref Skills %} page for a full list of all skills and their purpose in the game.
 
 Your bonus to each skill is equal to your score in the skill's attribute + your Proficiency in that skill. You start with +0 Proficiency in each skill. Many power schools increase your Proficiency in various *combat skills*. If multiple power schools set your Proficiency in a combat skill, you only take the highest value. You can also get **skill boosts**, which you can apply to a *general skill* to increase your Proficiency in that skill by 2.
 
@@ -110,7 +110,7 @@ If you choose to get a feat, you learn one feat from the {% ref Feats %} page.
 
 ## Step 7. Compute Miscellaneous Stats
 
-You're now almost finished making your character! The only difficult thing left to do is to write down a few numbers describing various aspects of your character.
+You're now almost finished making your character! The only game mechanics task remaining is to write down a few numbers describing various aspects of your character.
 
 ***Character Level.*** Your character's level describes your overall strength. Most characters are between levels 1 and 20, but this isn't a hard limit. The GM determines what level your character is.
 
@@ -126,13 +126,13 @@ You're now almost finished making your character! The only difficult thing left 
 
 ## Step 8. Buy Equipment
 
-Don't forget to buy equipment to use in your adventures! You start with (2000 * your character level) credits. See the {% ref weapons %} and {% ref armor %} pages for stats. More tables for standard adventuring gear, as well as strange high-tech gadgets, are on the way.
+Don't forget to buy equipment to use in your adventures! You start with (100 * your character level) gold pieces (gp). See the {% ref weapons %} and {% ref armor %} pages for stats. More tables for standard adventuring gear and magic items are on the way.
 
 ## Step 9. Describe your Personality
 
 What your character will choose to do is as important as what your character has the power to do. Every player character has a list of **Quirks**, which are unique personality traits or flaws that define them. Your Quirks act as a guide to help you roleplay your character, and are useful for [Setbacks](narrative-rules.html#setbacks).
 
-When you make your character, you should write down at least three Quirks that make you stand out. Feel free to add, modify, or remove Quirks at any time as your understand of your character's personality changes. The categories and random generators below can help give you ideas for your character's Quirks.
+When you make your character, you should write down at least three Quirks that make you stand out. Feel free to add, modify, or remove Quirks at any time as your understanding of your character's personality changes. The categories and random generators below can help give you ideas for your character's Quirks.
 
 ***Habits.*** These describe the obvious character actions that makes your character stand out from the average adventurer.
 

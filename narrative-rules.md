@@ -17,9 +17,9 @@ The party can vote to spend 1 Challenge point to introduce a reasonable plot poi
 
 ## Inspiration
 
-Every player has a pool of **inspiration** points that they can spend to influence the story. You can spend a point of inspiration to reroll any die roll that any character makes. When you do, you must explain how your character influences the roll. This can be a very simple way, such as yelling a word of moral support, or 
+Every player has a pool of **inspiration** points that they can spend to influence the story. You can spend a point of inspiration to reroll any die roll that any character makes. When you do, you must explain how your character somehow influences the roll. Even just yelling a few words of moral support counts.
 
-You start every session with 1 inspiration point. Whenever the GM thinks a player did something cool or immersive, the GM should give that player a point of inspiration. You can also earn inspiration through Setbacks, see the section below. Unspent inspiration goes away at the end of a session.
+You start every session with 1 inspiration point. Whenever the GM thinks a player did something cool or immersive, the GM should give that player a point of inspiration. You can also earn inspiration through Setbacks (see below). Unspent inspiration goes away at the end of a session.
 
 ## Setbacks
 
