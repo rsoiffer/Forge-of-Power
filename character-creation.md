@@ -130,15 +130,19 @@ Don't forget to buy equipment to use in your adventures! You start with (2000 * 
 
 ## Step 9. Describe your Personality
 
-What your character will choose to do is as important as what your character has the power to do. You should write notes on your character sheet that give a general description of your character's personality, preferably at least one sentence for each topic below. The better you act out your character's personality, the more likely you are to get [Inspiration](basic-rules.html#inspiration).
+What your character will choose to do is as important as what your character has the power to do. Every player character has a list of **Quirks**, which are unique personality traits or flaws that define them. Your Quirks act as a guide to help you roleplay your character, and are useful for [Setbacks](narrative-rules.html#setbacks).
 
-Every important character has a list of **Quirks**, which are unique personality traits or flaws that define them. Your Quirks act as a guide to help you roleplay your character. Feel free to add, modify, or remove Quirks at any time as your understand of your character's personality changes.
+When you make your character, you should write down at least three Quirks that make you stand out. Feel free to add, modify, or remove Quirks at any time as your understand of your character's personality changes. The categories and random generators below can help give you ideas for your character's Quirks.
 
-***Personality Traits.*** These describe the obvious character traits that makes your character stand out from the average adventurer.
+***Habits.*** These describe the obvious character actions that makes your character stand out from the average adventurer.
 
-***Ideals.*** These describe the causes your character cares deeply about, the fundamental beliefs that drive you to act.
+{% roll_me_one habits %}
 
-***Bonds.*** These describe the personal connections your character has with family, close friends, loved ones, organizations, or even special items.
+***Weird Skills.*** These describe your character's unique skills in strangely specific tasks, things you do better than anyone else.
+
+{% roll_me_one weird-skills %}
+
+***Bonds.*** These describe the causes your character cares deeply about, the fundamental beliefs that drive you to act. They also describe the personal connections your character has with family, close friends, loved ones, organizations, or even special items.
 
 {% roll_me_one bonds %}
 
