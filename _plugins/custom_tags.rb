@@ -57,7 +57,7 @@ module CustomTags
 
     def render(context)
       @context = context
-      "<span class=\"roll-me-one\" data-table=\"#{@text}\"></span>"
+      "<div class=\"roll-me-one\" data-table=\"#{@text}\"></div>"
     end
   end
 

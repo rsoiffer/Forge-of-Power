@@ -136,12 +136,12 @@ What your character will choose to do is as important as what your character has
 
 ***Ideals.*** These describe the causes your character cares deeply about, the fundamental beliefs that drive you to act.
 
-***Bonds.***
-These describe the personal connections your character has with family, close friends, loved ones, organizations, or even special items.
+***Bonds.*** These describe the personal connections your character has with family, close friends, loved ones, organizations, or even special items.
+
 {% roll_me_one bonds %}
 
-***Flaws.***
-These describe character flaws that may impede your character and provide a source of narrative conflict.
+***Flaws.*** These describe character flaws that may impede your character and provide a source of narrative conflict.
+
 {% roll_me_one flaws %}
 
 ## Step 10. Write your Backstory
