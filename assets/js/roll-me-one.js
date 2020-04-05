@@ -5,10 +5,10 @@ function addRollButton(element) {
   const outcome = document.createElement("blockquote");
   const button = document.createElement("button");
   button.textContent = "Roll me one";
-  button.addEventListener(
-    "click",
-    () => outcome.textContent = table[Math.floor(Math.random() * table.length)]
-  );
+  button.addEventListener("click", () => {
+    outcome.textContent = table[Math.floor(Math.random() * table.length)];
+    button.textContent = "Reroll";
+  });
   element.appendChild(button);
   element.appendChild(outcome);
 }
