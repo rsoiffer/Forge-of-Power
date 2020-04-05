@@ -1,9 +1,9 @@
-import { randomTables } from "./data/random_tables.js";
+import { randomTables } from "./data/random-tables.js";
 
 function addRollButton(element) {
   const table = randomTables[element.dataset.table];
   const button = document.createElement("button");
-  button.textContent = "Roll";
+  button.textContent = "Roll me one";
   button.addEventListener(
     "click",
     () => window.alert(table[Math.floor(Math.random() * table.length)])
@@ -13,5 +13,5 @@ function addRollButton(element) {
 
 document.addEventListener(
   "DOMContentLoaded",
-  () => document.querySelectorAll(".roll").forEach(addRollButton)
+  () => document.querySelectorAll(".roll-me-one").forEach(addRollButton)
 );

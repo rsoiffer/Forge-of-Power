@@ -49,11 +49,24 @@ module CustomTags
     end
   end
 
+  class RollMeOneTag < Liquid::Tag
+    def initialize(tag_name, text, tokens)
+      super
+      @text = text.strip
+    end
+
+    def render(context)
+      @context = context
+      "<span class=\"roll-me-one\" data-table=\"#{@text}\"></span>"
+    end
+  end
+
 end
 
 Liquid::Template.register_tag("icon", CustomTags::IconTag)
 Liquid::Template.register_tag("ref", CustomTags::ReferenceTag)
 Liquid::Template.register_tag("trait", CustomTags::TraitTag)
+Liquid::Template.register_tag("roll_me_one", CustomTags::RollMeOneTag)
 
 
 module CustomFilters

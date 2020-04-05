@@ -138,15 +138,15 @@ What your character will choose to do is as important as what your character has
 
 ***Bonds.***
 These describe the personal connections your character has with family, close friends, loved ones, organizations, or even special items.
-<span class="roll" data-table="bonds"></span>
+{% roll_me_one bonds %}
 
 ***Flaws.***
 These describe character flaws that may impede your character and provide a source of narrative conflict.
-<span class="roll" data-table="flaws"></span>
+{% roll_me_one flaws %}
 
 ## Step 10. Write your Backstory
 
 The final step in making a character is figuring out how you reached the start of the adventure. You should write down some basic notes about where your character was raised, any previous jobs you've held, and how you met the rest of the party. Your backstory is also the perfect place to introduce the NPC contacts that your character knows. The more detail you write, the better your GM will be able to merge this detail with the campaign setting.
 
 
-<script type="module" src="{% link assets/js/roll.js %}"></script>
+<script type="module" src="{% link assets/js/roll-me-one.js %}"></script>
