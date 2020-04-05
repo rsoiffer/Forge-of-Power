@@ -13,6 +13,8 @@ rules:
     url: /adventuring-rules.html
   - title: Combat Rules
     url: /combat-rules.html
+  - title: Narrative Rules
+    url: /narrative-rules.html
   - title: Spell Rules
     url: /spell-rules.html
   - title: Conditions
