@@ -11,7 +11,7 @@ Following are more advanced rules related to combat. See the {% ref All Powers %
 
 If you start combat with a creature that isn't prepared for an imminent attack, that creature is surprised. A surprised creature cannot use actions during the first round of combat. Creatures that are surprised, that can't see you, or that otherwise aren't expecting you to attack are {flat-footed} against you.
 
-### Falling
+## Falling
 
 If there is nothing supporting your character, you fall. You fall up to 5 zones per round. When you fall one or more zones, you take 3d6 damage for each zone you fall, up to a cap of 30d6 damage. The number of dice is reduced by half if you fall onto a soft surface, such as a pile of hay or a pool of water. You land prone if you take any damage from a fall.
 
@@ -27,7 +27,7 @@ When you take damage that brings your HP to 0, you gain the {dying} 1 condition.
 
 ### Death Save
 
-A death save is a {Fortitude} save against DC 10.
+A death save is a Fortitude save against DC 10.
 
 Critical Success
 : Your dying condition decreases by 2

@@ -116,13 +116,21 @@ You're now almost finished making your character! The only game mechanics task r
 
 ***HP.*** Your hit points (abbreviated as HP) measure how much damage you can take before falling unconscious. Your HP is equal to 20 + Character Level + 2 * Constitution.
 
-***AC.*** Your armor class (abbreviated as AC) measures how difficult you are to hit with physical attacks. Your AC is equal to 10 + Dexterity, though it can be increased by wearing armor.
+***Mana.*** Your Mana measures how many spells you can cast before running out of energy. Your Mana is equal to Character Level + 2 * Intelligence, to a minimum of 0 Mana.
 
-***Initiative.*** Your Initiative measures how quick you are to react to combat. Your Initiative is equal to Dexterity + Wisdom.
+***Initiative.*** Your Initiative measures how quick you are to react to combat. Your Initiative is equal to your Dexterity.
 
-***Mana.*** Your Mana measures how many spells you can cast before running out of energy. Your Mana is equal to Character Level + 2 * Wisdom, to a minimum of 0 Mana.
+### Defenses
 
-***Spell DC.*** Your spell difficulty class (abbreviated as Spell DC) measures how difficult your spells are to resist. Your Spell DC is equal to 10 + one of {Arcane Magic}, {Divine Magic}, or {Innate Magic}, whichever is highest.
+Your character has several stats that describe how well you can defend yourself against all kinds of threats, physical, magical, or otherwise. These stats are called the four Defenses.
+
+- ***Agility.*** Your Agility measures how well you can dodge or avoid physical dangers. Your Agility is equal to 10 + max(Strength, Dexterity). Agility can be used to defend against [[Physical]] [[Attack]] powers.
+
+- ***Toughness.*** Your Toughness measures how well you can withstand physical trauma. Your Toughness is equal to 10 + max(Strength, Constitution). Toughness can be used to defend against [[Physical]] [[Attack]] powers.
+
+- ***Resilience.*** Your Resilience measures how well you can resist effects that corrupt your body. Your Resilience is equal to 10 + max(Constitution, Wisdom). Resilience can be used to defend against [[Corrupting]] [[Attack]] powers.
+
+- ***Willpower.*** Your Willpower measures how well you can resist effects that corrupt your mind. Your Willpower is equal to 10 + max(Wisdom, Charisma). Willpower can be used to defend against [[Corrupting]] [[Attack]] powers.
 
 ## Step 8. Buy Equipment
 

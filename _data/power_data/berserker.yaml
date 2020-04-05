@@ -98,7 +98,7 @@ Awesome Blow:
   tags:
     requirements: Your last action was a successful {Strike}
   effect:
-    The weight of your swing drives your enemy back. Attempt an {Athletics} roll against your target's {Fortitude} save.
+    The weight of your swing drives your enemy back. Attempt an {Athletics} roll against your target's Fortitude save.
   critical-success: You gain the critical success effect of a {Shove}, then the critical success effect of a {Trip} against the target
   success: You gain the success effect of a {Shove}, then the success effect of a {Trip} against the target
   failure: You gain the success effect of a {Shove} against the target

@@ -10,6 +10,8 @@ Composition: Powers with this trait involve a type of performance. Depending on 
 
 Concentrate: A power with this trait requires a degree of mental concentration and discipline.
 
+Corrupting: A power with this trait works by altering or corrupting the target's mind and body.
+
 Daily: Once you use a power with this trait, you cannot use that power again until you complete an 8-hour rest.
 
 Death: An effect with this trait kills you immediately if it reduces you to 0 HP.
@@ -49,6 +51,8 @@ Misfortune: An effect with this trait detrimentally alters how you roll your dic
 Move: A power with this trait involves moving from one space to another.
 
 Open: These maneuvers work only as the first salvo on your turn. You can use an [[Open]] power only if you haven't used a power with the [[Attack]] or [[Open]] trait yet this turn.
+
+Physical: A power with this trait works by attacking via physical effect in the world.
 
 Polymorph: These effects transform the target into a new form. A target can't be under the effect of more than one [[Polymorph]] effect at a time, later [[Polymorph]] effects disrupt existing ones. While you are polymorphed, your gear is absorbed into you; the passive abilities of your gear still function, but you can't activate or use any items.
 

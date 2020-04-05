@@ -100,15 +100,3 @@ At the end of your turn, you pick who takes the next turn, ally or enemy. If you
 ## Movement and Zones
 
 When the group needs a precise map of an area, usually for combat, the GM divides the game world into **zones**. A zone is an abstract area, usually about 30 feet on a side. Every character is in a zone, and multiple character can be in the same zone. You can use the {Stride} power to move between zones.
-
-## Saving Throws
-
-The three skills {Fortitude}, {Reflex}, and {Will} represent your character's ability to avoid or resist various types of attacks. Die rolls made with these skills are called **saves** or **saving throws**. Unless otherwise specified, a saving throw against a damaging effect does the following.
-
-**Critical Success:** You take no damage from the effect
-
-**Success:** You take half the listed damage from the effect
-
-**Failure:** You take the full damage listed from the effect
-
-**Critical Failure:** You take double the listed damage from the effect

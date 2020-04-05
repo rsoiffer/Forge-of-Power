@@ -8,7 +8,7 @@ Berserker:
     are often found punching things or hitting things, especially when those
     things are enemies or are getting in the way.
   tiers:
-    novice: You have +2 Proficiency in {Brawling}, {Martial Weapons}, {Great Weapons}, and {Fortitude}. Whenever you hit a creature with a melee {Strike} using Strength, you deal an extra 2 damage.
+    novice: You have +2 Proficiency in {Brawling}, {Martial Weapons}, {Great Weapons}, and Fortitude. Whenever you hit a creature with a melee {Strike} using Strength, you deal an extra 2 damage.
     veteran: Both bonuses increase to +4
     master: Both bonuses increase to +6
     epic: Both bonuses increase to +8
