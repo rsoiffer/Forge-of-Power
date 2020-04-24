@@ -1,14 +1,11 @@
 Brutish Shove:
   tier: Novice
-  type: 1-Action
-  traits: [Press]
+  type: Free
   tags:
-    requirements: You are wielding a two-handed melee weapon
-  effect: |
-    Throwing your weight behind your attack, you hit your opponent hard enough to make it stumble back. Make a {Strike} with a two-handed melee weapon. If you hit a target that is your size or smaller, that creature is {flat-footed} until the end of your current turn, and you can automatically apply the effects of the {Shove} action (including the critical success effect, if your Strike was a critical hit). If you move to follow the target, your movement doesn't trigger reactions.
-
-    This Strike has the following failure effect.
-  failure: The target becomes {flat-footed} until the end of your current turn
+    trigger: You hit a creature with a {Strike} with a two-handed melee weapon
+    requirements: The creature is your size or smaller
+  effect:
+    Throwing your weight behind your attack, you hit your opponent hard enough to make them stumble back. You can automatically apply the effects of the {Shove} action (including the critical success effect, if your Strike was a critical hit). If you move to follow the target, your movement doesn't trigger reactions.
 
 Mountain Stance:
   tier: Novice
@@ -19,13 +16,13 @@ Mountain Stance:
   effect: |
     You end the stance of an implacable mountain and strike with the weight of an avalanche. The only Strikes you can make are **falling stone** unarmed attacks. These deal 1d8 bludgeoning damage and have the forceful and unarmed traits.
 
-    While in Mountain Stance, you gain a +4 bonus to AC and a +2 bonus to any defenses against being Shoved or Tripped. However, you don't add your Dexterity to your AC, and your Speed is reduced by 5 feet.
+    While in Mountain Stance, you gain a +2 bonus to Toughness, but you take a -2 penalty to Agility.
 
 Power Attack:
   tier: Novice
   type: 1-Action
   effect:
-    You unleash a particularly powerful attack that clobbers your foe but leaves you a bit unsteady. Make a melee {Strike} at -5 to hit. If this Strike hits, you deal an extra die of weapon damage.
+    You unleash a particularly powerful attack that clobbers your foe but leaves you a bit unsteady. Make a melee {Strike} at -5 to the attack roll. If this Strike hits, you deal an extra die of weapon damage.
 
 Rage:
   tier: Novice
@@ -38,7 +35,7 @@ Rage:
   effect: |
     You tap into your inner fury and begin raging. You gain temporary HP equal to Berserker Level + Constitution. While raging, you gain the following benefits:
     * You deal 2 additional damage with melee or thrown weapon Strikes. This additional damage is halved if your weapon or unarmed attack is agile.
-    * You take a -1 penalty to AC
+    * You take a -2 penalty to Agility
     * You can't use [[Concentrate]] powers
 
 Sudden Charge:
@@ -61,7 +58,7 @@ Cleave:
   tier: Veteran
   type: Reaction
   tags:
-    trigger: Your melee {Strike} kills a creature or knocks it unconscious, and another foe is adjacent to that creature
+    trigger: Your melee {Strike} reduces a creature to 0 HP, and another foe is adjacent to that creature
   effect:
     You swing clear through one foe and into another. Make a melee {Strike} against the second foe.
 
@@ -80,7 +77,7 @@ Furious Focus:
   tags:
     prerequisites: Power Attack
   effect:
-    You've learned to maintain your balance even when swinging furiously. When you make a Power Attack with a melee weapon you're wielding in two hands, it counts as one attack toward MAP instead of two.
+    You've learned to maintain your balance even when swinging furiously. When you make a Power Attack with a melee weapon you're wielding in two hands, you only take a -2 penalty to the attack roll instead of -5.
 
 Giant's Stature:
   tier: Veteran

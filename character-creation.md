@@ -122,15 +122,15 @@ You're now almost finished making your character! The only game mechanics task r
 
 ### Defenses
 
-Your character has several stats that describe how well you can defend yourself against all kinds of threats, physical, magical, or otherwise. These stats are called the four Defenses.
+Your character has several stats that describe how well you can defend yourself against all kinds of [attacks](basic-rules.html#attacks), physical, magical, or otherwise. These stats are called the four Defenses.
 
-- ***Agility.*** Your Agility measures how well you can dodge or avoid physical dangers. Your Agility is equal to 10 + max(Strength, Dexterity). Agility can be used to defend against [[Physical]] [[Attack]] powers.
+***Agility.*** Your Agility measures how well you can dodge or avoid physical dangers. Your Agility is equal to 10 + max(Strength, Dexterity). Agility can be used to defend against [[Physical]] attacks.
 
-- ***Toughness.*** Your Toughness measures how well you can withstand physical trauma. Your Toughness is equal to 10 + max(Strength, Constitution). Toughness can be used to defend against [[Physical]] [[Attack]] powers.
+***Toughness.*** Your Toughness measures how well you can withstand physical trauma. Your Toughness is equal to 10 + max(Strength, Constitution). Toughness can be used to defend against [[Physical]] attacks.
 
-- ***Resilience.*** Your Resilience measures how well you can resist effects that corrupt your body. Your Resilience is equal to 10 + max(Constitution, Wisdom). Resilience can be used to defend against [[Corrupting]] [[Attack]] powers.
+***Resilience.*** Your Resilience measures how well you can resist effects that corrupt your body. Your Resilience is equal to 10 + max(Constitution, Wisdom). Resilience can be used to defend against [[Corrupting]] attacks.
 
-- ***Willpower.*** Your Willpower measures how well you can resist effects that corrupt your mind. Your Willpower is equal to 10 + max(Wisdom, Charisma). Willpower can be used to defend against [[Corrupting]] [[Attack]] powers.
+***Willpower.*** Your Willpower measures how well you can resist effects that corrupt your mind. Your Willpower is equal to 10 + max(Wisdom, Charisma). Willpower can be used to defend against [[Corrupting]] attacks.
 
 ## Step 8. Buy Equipment
 

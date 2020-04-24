@@ -1,0 +1,49 @@
+Cover Ally:
+  tier: Stunt
+  type: 1-Action
+  brief: You cover your ally with a shield, protecting them from attacks
+  tags:
+    duration: Until the start of your next turn
+  effect:
+    Choose an ally you can see. Attacks against your ally have disadvantage while you are wielding a shield and your ally is adjacent to you.
+
+Implacable Mark:
+  tier: Stunt
+  type: 1-Action
+  brief: You foil enemy attacks by menacing your foes
+  effect:
+    Make a melee {Strike}. If you hit, the target is **marked** until the end of your next turn. A marked target has disadvantage on any attack against a creature other than you.
+
+Polearm Master:
+  tier: Stunt
+  type: Reaction
+  brief: You hit any creature that enters your reach
+  tags:
+    trigger: A creature enters your reach
+  effect:
+    Make a melee {Strike} with a polearm or spear against the triggering creature.
+
+Pushing Strike:
+  tier: Stunt
+  type: 1-Action
+  brief: You reposition your enemies as you hit them with attacks
+  effect:
+    Make a melee {Strike} with a club, polearm, shield, or spear. If you hit, you can push your target up to 5 feet in a direction of your choice.
+
+Stand and Fight:
+  tier: Stunt
+  type: Reaction
+  brief: You stop creatures from running away from you
+  tags:
+    trigger: A creature you can reach uses a [[Move]] power
+  effect:
+    Make a melee {Strike} against the triggering creature. If you hit, you cancel your target's power, and your target can't use [[Move]] powers for the rest of its turn.
+
+Sentinel:
+  tier: Novice
+  type: Reaction
+  brief: You occupy your enemies' attention, protecting nearby allies
+  tags:
+    trigger: A creature you can reach attacks a target other than you
+  effect:
+    Make a melee {Strike} against the triggering creature.

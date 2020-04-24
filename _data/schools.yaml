@@ -8,7 +8,7 @@ Berserker:
     are often found punching things or hitting things, especially when those
     things are enemies or are getting in the way.
   tiers:
-    novice: You have +2 Proficiency in {Brawling}, {Martial Weapons}, {Great Weapons}, and Fortitude. Whenever you hit a creature with a melee {Strike} using Strength, you deal an extra 2 damage.
+    novice: You have +2 Proficiency in {Brawling}, {Martial Weapons}, and {Great Weapons}. Whenever you hit a creature with a melee {Strike} using Strength, you deal an extra 2 damage.
     veteran: Both bonuses increase to +4
     master: Both bonuses increase to +6
     epic: Both bonuses increase to +8
@@ -25,6 +25,11 @@ Duelist:
 Guardian:
   brief: You guard yourself and allies from harm with shields and heavy armor
   description: ""
+  tiers:
+    novice: You learn two Stunts of your choice.
+    veteran: You learn one Stunt of your choice.
+    master: You learn one Stunt of your choice.
+    epic: You learn one Stunt of your choice.
 
 Warblade:
   brief: You develop a unique fighting style full of flashy weapon maneuvers
