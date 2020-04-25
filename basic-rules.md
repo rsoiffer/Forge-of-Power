@@ -103,10 +103,6 @@ When the group needs a precise map of an area, usually for combat, the GM divide
 
 ## Attacks
 
-Some powers represent offensive effects designed to hurt or impede enemies. These are called [[Attack]] powers, or just **attacks** for short. The creature using the attack is called the **attacker**, and the (one or more) creatures they're targeting are called the **defenders**. Attacks always involve a die roll, usually with a combat skill, called the **attack roll**. The attacker makes this die roll only once, no matter how many defenders there are.
+Some powers represent offensive effects designed to hurt or impede enemies. These are called [[Attack]] powers, or just **attacks** for short. Attacks always involve a die roll, called the **attack roll**. The attack roll specifies which of the target's scores to use as the DC, usually Defense or an attribute. The attacker makes this die roll only once, no matter how many targets the attack has. Thus, an attack can hit one target but miss another.
 
-An attack always specifies one or more [defenses](character-creation.html#defenses) that it targets. Each defender chooses one of the targeted defenses, and uses their score in that defense as the DC of the attack roll. Since each defender picks their own defense, an attack might succeed against one target and fail against another.
-
-The two most common types of attacks are [[Physical]] attacks and [[Corrupting]] attacks. [[Physical]] attacks represent a physical effect in the world, and always target the Agility and Toughness defenses. [[Corrupting]] attacks represent an effect that corrupts the target's body and mind, and always target the Resilience and Willpower defenses.
-
-For example, the {Strike} power is a [[Physical]] attack. Imagine that Alice uses the {Strike} power, slashing at Bob with a longsword. Alice is the attacker and Bob is the defender. The attack targets Bob's Agility and Toughness defenses. Bob chooses which defense he wants to use against the attack (usually the defense he has a higher score in). If Alice's attack roll beats the DC set by Bob's defense, then Alice's attack is a success, and deals damage as described in the {Strike} power.
+For example, the {Strike} power is an attack. Imagine that Alice uses the {Strike} power, slashing at Bob with a longsword. Alice makes a Strength attack roll against Bob's Defense. If the result of Alice's attack roll is equal to or higher than Bob's Defense score, then Alice's attack is a success, and deals damage as described in the {Strike} power.

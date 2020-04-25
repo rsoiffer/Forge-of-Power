@@ -1,4 +1,4 @@
-# Fighter
+# Warrior
 
 Berserker:
   brief: You smash enemies with aggressive bursts of murderous rage
@@ -7,35 +7,24 @@ Berserker:
     part is optional, and doesn't signify gender or anything. Strong melee dudes
     are often found punching things or hitting things, especially when those
     things are enemies or are getting in the way.
-  tiers:
-    novice: You have +2 Proficiency in {Brawling}, {Martial Weapons}, and {Great Weapons}. Whenever you hit a creature with a melee {Strike} using Strength, you deal an extra 2 damage.
-    veteran: Both bonuses increase to +4
-    master: Both bonuses increase to +6
-    epic: Both bonuses increase to +8
 
 Duelist:
   brief: You parry enemy attacks and respond with well-timed ripostes
   description: ""
-  tiers:
-    novice: You have +2 Proficiency in {Simple Weapons}, {Martial Weapons}, {Great Weapons}, and {Finesse Weapons}. When a creature misses you with a melee {Strike}, you have a +2 bonus on your next melee {Strike} against that creature before the end of your next turn.
-    veteran: Both bonuses increase to +4
-    master: Both bonuses increase to +6
-    epic: Both bonuses increase to +8
 
 Guardian:
   brief: You guard yourself and allies from harm with shields and heavy armor
   description: ""
-  tiers:
-    novice: You learn two Stunts of your choice.
-    veteran: You learn one Stunt of your choice.
-    master: You learn one Stunt of your choice.
-    epic: You learn one Stunt of your choice.
+
+Swordsage:
+  brief: You unlock your inner ki to surpass your limits and devastate your foes
+  description: ""
 
 Warblade:
   brief: You develop a unique fighting style full of flashy weapon maneuvers
   description: ""
 
-# Striker
+# Rogue
 
 Acrobat:
   brief: You dodge and weave across the battlefield, moving with incredible speed
@@ -45,65 +34,27 @@ Hunter:
   brief: You fire with care and precision to take out enemies at incredible distances
   description: ""
 
-Rogue:
-  brief: You chance your way into victory, consistently getting lucky hits or dodges
-  description: ""
-
-Swordsage:
-  brief: You unlock your inner ki to surpass your limits and devastate your foes
-  description: ""
-
-# Expert
-
-Alchemist:
-  brief: You concoct mysterious potions and craft explosive bombs
-  description: ""
-
-Bard:
-  brief: You perform magical songs to bolster your allies and scare your enemies
-  description: ""
-
-Gadgeteer:
+Inventor:
   brief: You invent novel technological devices for a variety of purposes
   description: ""
 
 Mastermind:
   brief: You support your party both in and out of battle, with a plan for every situation
   description: ""
-  tiers:
-    novice: You gain two skill boosts, one of which must be applied to {Deception}, {Diplomacy}, {Intimidation}, or {Performance}. You have a +2 bonus to all die rolls about any kind of tactics or strategy.
-    veteran: You gain two skill boosts, one of which must be applied to {Deception}, {Diplomacy}, {Intimidation}, or {Performance}. You have a +4 bonus to all die rolls about any kind of tactics or strategy.
-    master: You gain two skill boosts, one of which must be applied to {Deception}, {Diplomacy}, or {Intimidation}, {Performance}. You have a +6 bonus to all die rolls about any kind of tactics or strategy.
-    epic: You gain two skill boosts, one of which must be applied to {Deception}, {Diplomacy}, {Intimidation}, or {Performance}. You have a +8 bonus to all die rolls about any kind of tactics or strategy.
 
-# Sage
-
-Diviner:
-  brief: You predict the future, see distant events, and track creatures with magic
+Scoundrel:
+  brief: You chance your way into victory, consistently getting lucky hits or dodges
   description: ""
 
-Elementalist:
-  brief: You harness elemental magic to precisely control the natural world
-  description: ""
+# Mage
 
-Shapeshifter:
-  brief: You transform yourself or other creatures into animals or monsters
+Arcanist:
+  brief: You manipulate magic and runes to create or dispel enchantments and wards
   description: ""
-
-Wizard:
-  brief: You manipulate the fundamental laws of reality to control space, time, and magic
-  description: ""
-
-# Sorcerer
 
 Blaster:
   brief: You blast enemies away with devastating evocations of elemental energy
   description: ""
-  tiers:
-    novice: Choose either {Arcane Magic} or {Innate Magic} as your Magic Skill for this school. You have +2 Proficiency in your Magic Skill. When you cast a spell, if the spell deals damage and doesn't have a duration, the spell's damage increases by 2.
-    veteran: Both bonuses increase to +4
-    master: Both bonuses increase to +6
-    epic: Both bonuses increase to +8
 
 Illusionist:
   brief: You conjure illusions to deceive or confuse your opponents' senses
@@ -113,11 +64,11 @@ Necromancer:
   brief: You channel necrotic energy to slay the living, then raise the dead to serve you
   description: ""
 
-Psion:
-  brief: You move objects with your mind to protect yourself or hurl boulders at foes
+Sorcerer:
+  brief: You alter the fundamental laws of reality, controlling space and time
   description: ""
 
-# Mystic
+# Priest
 
 Druid:
   brief: You command nature itself, manipulating wild animals and plants
@@ -127,10 +78,14 @@ Enhancer:
   brief: You protect your allies with a variety of beneficial blessings and enhancements
   description: ""
 
+Elementalist:
+  brief: You harness elemental magic to precisely control the natural world
+  description: ""
+
 Invoker:
   brief: You call down radiant light from the heavens to heal your friends and smite your foes
   description: ""
 
-Occultist:
-  brief: You curse enemies with strange and persistent afflictions or misfortune
+Shapeshifter:
+  brief: You transform yourself or other creatures into animals or monsters
   description: ""

@@ -6,42 +6,39 @@ Command:
 
 Disarm:
   type: 1-Action
-  traits: [Attack, Physical]
+  traits: [Attack]
   tags:
-    requirements: You have at least one free hand, and your target is not more than one size larger than you
+    target: One creature you can reach
   effect:
-    You try to knock something out of an opponent's grasp. Make a {Brawling} roll as the attack roll.
-  critical-success: You knock the item out of the opponent's grasp. It falls to the ground in the opponent's space.
-  success: You weaken your opponent's grasp on the item. Until the start of that creature's turn, attempts to Disarm the opponent of that item gain a +2 bonus, and the target takes a -2 penalty to [[Attack]] powers with the item or other rolls requiring a firm grasp on the item.
-  critical-failure: You lose your balance and become {flat-footed} until the start of your next turn
+    Make a Strength attack roll against the higher of your target's Strength DC or Agility DC.
+  critical-success: You knock the item out of the opponent's grasp. It falls to the ground in a space of your choice within 15 feet of your opponent.
+  success: You knock the item out of the opponent's grasp. It falls to the ground in the opponent's space.
 
-Draw Item:
+Draw Items:
   type: Free
   traits: [Manipulate]
   tags:
     trigger: Your turn begins
   effect:
-    You draw one item that is secured in an easily accessible location, such as a weapon in its holster or a potion in a belt pouch. Drawing items from a pack or picking them up from the ground requires the {Interact} power.
+    You draw or stow any number of items that are secured in easily accessible locations, such as a weapon in its holster or a potion in a belt pouch. Drawing items from a pack or picking them up from the ground requires the {Interact} power.
 
 Escape:
   type: 1-Action
+  traits: [Attack]
   effect:
-    You attempt to escape from being {grabbed}, {immobilized}, or {restrained}. Choose one effect imposing any of these conditions on you. Attempt a {Acrobatics}, {Athletics}, or {Brawling} roll against the DC of the effect (such as the {Brawling} DC of a creature grabbing you, or the Spell DC of a spell effect).
-  critical-success: As success, and you can then {Stride} up to 5 feet
+    You attempt to escape from being {grabbed}, {immobilized}, or {restrained}. Choose one effect imposing any of these conditions on you. Make a Strength or Agility attack roll against the DC of the effect (such as the Strength DC of a creature grabbing you, or the Magic DC of a spell effect).
   success: You get free and remove the {grabbed}, {immobilized}, and {restrained} conditions imposed by your chosen target
-  critical-failure: You don't get free, and you can't attempt to Escape again this turn
 
 Grapple:
   type: 1-Action
-  traits: [Attack, Physical]
+  traits: [Attack]
   tags:
-    requirements: You have at least one free hand, and your target is not more than one size larger than you
+    requirements: You have at least one free hand
+    target: One creature you can reach
   effect:
-    You attempt to grab an opponent with your free hand. Make a {Brawling} roll as the attack roll. You can also use this power to keep hold a creature you already grabbed.
+    Make a Strength attack roll against your target's Strength DC.
   critical-success: Your opponent is {restrained} until the end of your next turn, unless you move or your opponent succeeds on an {Escape}
   success: Your opponent is {grabbed} until the end of your next turn, unless you move or your opponent succeeds on an {Escape}
-  failure: You fail to grab your opponent, and if you already had the opponent {grabbed} or {restrained} using Grapple, those conditions on that creature end
-  critical-failure: As failure, and your target can either grab you (as if it had succeeded at using the Grapple power against you) or force you to fall and land {prone}
 
 Help:
   type: 1-Action
@@ -55,7 +52,7 @@ Interact:
   type: Free
   traits: [Manipulate]
   effect:
-    You use your hand or hands to manipulate an object or the terrain. You can grab an unattended or stored object, open a door, or produce some similar effect. You might have to attempt a die roll to determine if your Interact action was successful.
+    You use your hand or hands to manipulate an object or the terrain. You can grab an unattended or stored object, open a door, or produce some similar effect. You might have to attempt a die roll to determine if your Interact power was successful.
 
 Interrupt:
   type: Reaction
@@ -91,15 +88,13 @@ Seek:
 
 Shove:
   type: 1-Action
-  traits: [Attack, Physical]
+  traits: [Attack]
   tags:
-  tags:
-    requirements: You have at least one free hand, and your target is not more than one size larger than you
+    target: One creature you can reach
   effect:
-    You push an opponent away from you. Make a {Brawling} roll as the attack roll.
-  critical-success: You push your opponent up to 10 feet away from you. You can {Stride} after it, but you must move the same distance and in the same direction.
-  success: You push your opponent back 5 feet. You can {Stride} after it, but you must move the same distance and in the same direction.
-  critical-failure: You lose your balance, fall, and land {prone}
+    Make a Strength attack roll against your target's Strength DC.
+  critical-success: You push your opponent up to 10 feet away from you.
+  success: You push your opponent back 5 feet.
 
 Stride:
   type: Free
@@ -109,11 +104,13 @@ Stride:
 
 Strike:
   type: 1-Action
-  traits: [Attack, Physical]
+  traits: [Attack]
+  tags:
+    target: One creature within your reach (for a melee attack) or within your weapon's range (for a ranged attack)
   effect:
-    You attack with a weapon you're wielding, targeting one creature within your reach (for a melee attack) or within range (for a ranged attack). Note that the weapon you're using is associated with a skill (called the Weapon Skill) and a damage value (called the Damage Die). Make a Weapon Skill roll as the attack roll.
-  critical-success: You deal damage equal to 2 * Damage Die + the Weapon Skill's attribute
-  success: You deal damage equal to Damage Die + the Weapon Skill's attribute
+    Make an attack roll against the target's Defense. The attack roll is a Strength roll for melee weapons or an Agility roll for ranged weapons. Melee weapons with the finesse property let you use Agility instead of Strength for the attack roll.
+  critical-success: You deal damage equal to 2 * the weapon's Damage + the attack roll's attribute
+  success: You deal damage equal to the weapon's Damage + the attack roll's attribute
 
 Sustain:
   type: Free
@@ -125,11 +122,9 @@ Sustain:
 
 Trip:
   type: 1-Action
-  traits: [Attack, Physical]
+  traits: [Attack]
   tags:
-    requirements: You have at least one free hand, and your target is not more than one size larger than you
+    target: One creature you can reach
   effect:
-    You try to knock an opponent to the ground. Make a {Brawling} roll as the attack roll.
-  critical-success: The target falls and lands {prone} and takes 1d6 bludgeoning damage
+    Make a Strength attack roll against your target's Agility DC.
   success: The target falls and lands {prone}
-  critical-failure: You lose your balance and fall and land {prone}

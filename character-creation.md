@@ -15,9 +15,9 @@ In this step, you should develop these ideas more, working out the details of wh
 
 ## Step 2. Determine Attribute Scores
 
-The next step is to determine your character's attributes. Characters in Forge of Power have 6 attributes: Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. Your score in each attribute is a single number, which generally ranges from -1 to +5. The average value of an attribute for a normal human is +0. See the {% ref Attributes %} page for a description of each attribute.
+The next step is to determine your character's attributes. Characters in Forge of Power have 4 attributes: Strength, Agility, Intellect, and Spirit. Your score in each attribute is a single number, which generally ranges from -1 to +5. The average value of an attribute for a normal human is +0. See the {% ref Attributes %} page for a description of each attribute.
 
-Your starting score in each attribute is a number between -1 and +3. You can choose any starting scores you want such that your scores sum to a total to 6. Write the final values of your attributes on your character sheet.
+Your starting score in each attribute is a number between -1 and +3. You can choose any starting scores you want such that your scores sum to a total to 4. Write the final values of your attributes on your character sheet.
 
 ## Step 3. Choose your Skills
 
@@ -58,7 +58,7 @@ Powers are a general term for all the special abilities your character has. They
 
 All learned powers are part of a power school, which is a group of many thematically-similar powers. There are a total of 24 power schools in Forge of Power. See the {% ref Power Schools %} page for a full list of all power schools and their descriptions.
 
-When you create your character, you split your character level between the power schools. For example, if you have a level 5 character, you could choose to put 3 levels in Telekinetic and 2 levels in Duelist, or you could choose to put all 5 levels in Alchemist. Write your level in each power school on your character sheet.
+When you create your character, you split your character level between the power schools. For example, if you have a level 5 character, you could choose to put 3 levels in Blaster and 2 levels in Duelist, or you could choose to put all 5 levels in Invoker. Write your level in each power school on your character sheet.
 
 Your character knows a number of powers from each power school equal to your level in that school. Some learned powers are limited by your character's level and your level in the power's school. All learned powers are listed as Novice, Veteran, Master, or Epic. To learn a power, you must meet the requirements in the table below:
 
@@ -92,7 +92,9 @@ Your character knows a number of powers from each power school equal to your lev
 
 For example, if you have a level 7 character, you could choose to put 5 levels in the Druid school and 2 levels in the Shapeshifter school. You then learn 5 powers from the Druid school, all of which can be either Novice or Veteran. You also learn 2 powers from the Shapeshifter school, both of which must be Novice.
 
-As another example, if you have a level 9 character, you could choose to put all 9 levels in the Diviner school. You then learn 9 powers from the Diviner school, all of which must be Novice or Veteran.
+As another example, if you have a level 9 character, you could choose to put all 9 levels in the Arcanist school. You then learn 9 powers from the Arcanist school, all of which must be Novice or Veteran.
+
+In addition, power schools have a list of Tier Bonuses, which represent general competencies you gain from your line of study. As soon as you meet the requirements to learn powers of a given tier in a school, you gain the the school's Tier Bonuses for that tier.
 
 ## Step 5. Choose your Ribbons
 
@@ -114,23 +116,13 @@ You're now almost finished making your character! The only game mechanics task r
 
 ***Character Level.*** Your character's level describes your overall strength. Most characters are between levels 1 and 20, but this isn't a hard limit. The GM determines what level your character is.
 
-***HP.*** Your hit points (abbreviated as HP) measure how much damage you can take before falling unconscious. Your HP is equal to 20 + Character Level + 2 * Constitution.
+***Health.*** Your Health measures how much damage you can take before falling unconscious. Your Health is equal to 20 + Character Level + 4 * Strength.
 
-***Mana.*** Your Mana measures how many spells you can cast before running out of energy. Your Mana is equal to Character Level + 2 * Intelligence, to a minimum of 0 Mana.
+***Defense.*** Your Defense measures how well you can avoid, dodge, or parry physical attacks. Your Defense is equal to 8 + Agility.
 
-***Initiative.*** Your Initiative measures how quick you are to react to combat. Your Initiative is equal to your Dexterity.
+***Perception.*** Your Perception measures how well you can see, hear, or sense things. Your Perception is equal to your Intellect.
 
-### Defenses
-
-Your character has several stats that describe how well you can defend yourself against all kinds of [attacks](basic-rules.html#attacks), physical, magical, or otherwise. These stats are called the four Defenses.
-
-***Agility.*** Your Agility measures how well you can dodge or avoid physical dangers. Your Agility is equal to 10 + max(Strength, Dexterity). Agility can be used to defend against [[Physical]] attacks.
-
-***Toughness.*** Your Toughness measures how well you can withstand physical trauma. Your Toughness is equal to 10 + max(Strength, Constitution). Toughness can be used to defend against [[Physical]] attacks.
-
-***Resilience.*** Your Resilience measures how well you can resist effects that corrupt your body. Your Resilience is equal to 10 + max(Constitution, Wisdom). Resilience can be used to defend against [[Corrupting]] attacks.
-
-***Willpower.*** Your Willpower measures how well you can resist effects that corrupt your mind. Your Willpower is equal to 10 + max(Wisdom, Charisma). Willpower can be used to defend against [[Corrupting]] attacks.
+***Stat DC.*** You have a DC for each of your attributes and your Perception. This measures how well you can defend against effects targeting that stat. Your DC for a given stat is equal to 10 + the stat.
 
 ## Step 8. Buy Equipment
 

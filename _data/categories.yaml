@@ -1,35 +1,27 @@
-Fighter:
+Warrior:
   - Berserker
   - Duelist
   - Guardian
+  - Swordsage
   - Warblade
 
-Striker:
+Rogue:
   - Acrobat
   - Hunter
-  - Rogue
-  - Swordsage
-
-Expert:
-  - Alchemist
-  - Bard
-  - Gadgeteer
+  - Inventor
   - Mastermind
+  - Scoundrel
 
-Sage:
-  - Diviner
-  - Elementalist
-  - Shapeshifter
-  - Wizard
-
-Sorcerer:
+Mage:
+  - Arcanist
   - Blaster
   - Illusionist
   - Necromancer
-  - Psion
+  - Sorcerer
 
-Mystic:
+Priest:
   - Druid
+  - Elementalist
   - Enhancer
   - Invoker
-  - Occultist
+  - Shapeshifter
