@@ -139,3 +139,182 @@ Weird:
     prerequisites: Phantasmal Killer
   effect:
     When you spend at least 8 Mana on Phantasmal Killer, the spell targets any number of creatures within range.
+
+# Old Psion powers
+
+Charming Words:
+  tier: Novice
+  type: 1-Action
+  traits: [Auditory, Incapacitation, Linguistic, Mental, Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    save: Will
+    duration: Until the start of your next turn
+  effect:
+    You whisper enchanting words to deflect your foe's ire. The target must attempt a Will save.
+  critical-success: The target is unaffected
+  success: The target takes a -1 penalty to attack rolls and damage rolls against you
+  failure: The target can't use hostile actions against you
+  critical-failure: The target is stunned 1 and can't use hostile actions against you
+
+Command:
+  tier: Novice
+  type: 2-Action
+  traits: [Auditory, Linguistic, Mental, Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    save: Will
+    duration: Until the end of the target's next turn
+  effect: |
+    You shout a command that's hard to ignore. You can command the target to approach you, run away (as if it had the fleeing condition), release what it's holding, drop prone, or stand in place. It can't Delay or take any reactions until it has obeyed your command. The effects depend on the target's Will save.
+
+    Heightened (total 5 Mana)
+    : You can target up to 10 creatures
+  success: The creature is unaffected
+  failure: For the first action on its next turn, the creature must use a single action to do as you command
+  critical-failure: The target must use all its actions on its next turn to obey your command
+
+Fear:
+  tier: Novice
+  type: 2-Action
+  traits: [Emotion, Fear, Mental, Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    save: Will
+    duration: 1 minute
+  effect: |
+    You plant fear in the target; it must attempt a Will save.
+
+    Heightened (total 3 Mana)
+    : You can target up to five creatures
+  critical-success: The target is unaffected
+  success: The target is frightened 1
+  failure: The target is frightened 2
+  critical-failure: The target is frightened 3 for the duration, and is fleeing for 1 round
+
+Confusion:
+  tier: Veteran
+  type: 2-Action
+  traits: [Emotion, Mental, Spell]
+  tags:
+    cost: 4 Mana
+    range: 30 feet
+    save: Will
+  effect: |
+    You befuddle your target with strange impulses, causing it to act randomly. The effects are determined by the target's Will save. You can Dismiss the spell.
+
+    Heightened (total 8 Mana)
+    : You can target up to 10 creatures
+  critical-success: The target is unaffected
+  success: The target babbles incoherently and is stunned 1
+  failure: The target is confused for 1 minute, and can attempt a new save at the end of each of its turns to end the confusion
+  critical-failure: The target is confused for 1 minute, with no save to end the effect early
+
+Mind Reading:
+  tier: Veteran
+  type: 2-Action
+  traits: [Detection, Mental, Spell]
+  tags:
+    cost: 3 Mana
+    range: 30 feet
+    save: Will
+    duration: 1 round, or sustained up to 1 minute
+  effect:
+    With a cursory mental touch, you attempt to read the target's mind. It must attempt a Will save. The target then becomes temporarily immune to your Mind Reading power for 1 hour.
+  critical-success: The target perceives vague surface thoughts from you
+  success: You find out whether the target's Intelligence is higher than, equal to, or lower than yours
+  failure: You perceive vague surface thoughts from the target, and you find out whether its Intelligence is higher than, equal to, or lower than yours
+  critical-failure: As failure, and for the duration of the spell, you can Sustain to detect the target's surface throughts again
+
+Suggestion:
+  tier: Veteran
+  type: 2-Action
+  traits: [Incapacitation, Linguistic, Mental, Spell]
+  tags:
+    cost: 4 Mana
+    range: 30 feet
+    save: Will
+    duration: Varies
+  effect: |
+    Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.
+
+    Heightened (total 5 Mana)
+    : You can implant the suggestion in the target's subconscious, waiting for a trigger you specify. The first time the trigger occurs during the next 24 hours, the target immediately follows your suggestion.
+
+    Heightened (total 8 Mana)
+    : You can target up to 10 creatures
+  critical-success: The target is unaffected and knows you tried to control it
+  success: The target is unaffected and thinks you were talking to them normally, not casting a spell on them
+  failure: The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completeda a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.
+  critical-failure: As failure, but the base duration is 1 hour
+
+Synaptic Pulse:
+  tier: Veteran
+  type: 2-Action
+  traits: [Incapacitation, Mental, Spell]
+  tags:
+    cost: 5 Mana
+    range: 30 feet
+    area: 30-foot emanation
+    save: Will
+    duration: 1 round
+  effect:
+    You emit a pulsating mental blast that penetrates the minds of all enemies in the area. Each creature in the area must attempt a Will save.
+  critical-success: The creature is unaffected
+  success: The creature is stunned 1
+  failure: The creature is stunned 2
+  critical-failure: The creature is stunned for 1 round
+
+Dominate:
+  tier: Master
+  type: 2-Action
+  traits: [Incapacitation, Mental, Spell]
+  tags:
+    cost: 6 Mana
+    range: 30 feet
+    save: Will
+    duration: 24 hours
+  effect: |
+    You take command of the target, forcing it to obey your orders. If you issue an obviously self-destructive order, the target doesn't act until you issue a new order. The effect depends on its Will save.
+
+    Heightened (total 10 Mana)
+    : The duration is unlimited
+  critical-success: The target is unaffected
+  success: The target is stunned 1 as it fights off your commands
+  failure: The target follows your orders but can attempt a Will save at the end of each of its turns. On a success, the spell ends.
+  critical-failure: As a failure, but the target receives a new save only when you give it a new order that is against its nature, such as killing its allies.
+
+Warp Mind:
+  tier: Master
+  type: 2-Action
+  traits: [Emotion, Incapacitation, Mental, Spell]
+  tags:
+    cost: 7 Mana
+    range: 120 feet
+    save: Will
+  effect:
+    You scramble a creature's mental faculties and sensory input. The target must attempt a Will saving throw. Regardless of the result of that save, the target is then temporarily immune for 10 minutes.
+  critical-success: The target is unaffected
+  success: The target spends the first action on its next turn with the confused condition
+  failure: The target is confused for 1 minute
+  critical-failure: The target is confused permanently
+
+Fabricated Truth:
+  tier: Epic
+  type: 3-Action
+  traits: [Incapacitation, Mental, Spell]
+  tags:
+    cost: 10 Mana
+    range: 100 feet
+    targets: Up to 5 creatures
+    save: Will
+    duration: Varies
+  effect:
+    Choose a single statement you want the targets to believe. The fact can be narrow, wide-reaching, or conceptual, and can be completely unreasonable or ridiculous. If the statement changes what a target perceives, they treat the change as a sudden revelation. The effect of the spell depends on the targets' Will saves.
+  critical-success: The target doesn't believe the statement, and it knows you tried to trick it
+  success: The target doesn't believe the statement or realize you tried to trick it
+  failure: The target believes the statement for a duration of 1 week
+  critical-failure: The target believes the statement with unlimited duration

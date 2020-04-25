@@ -58,9 +58,7 @@ Powers are a general term for all the special abilities your character has. They
 
 All learned powers are part of a power school, which is a group of many thematically-similar powers. There are a total of 24 power schools in Forge of Power. See the {% ref Power Schools %} page for a full list of all power schools and their descriptions.
 
-When you create your character, you split your character level between the power schools. For example, if you have a level 5 character, you could choose to put 3 levels in Blaster and 2 levels in Duelist, or you could choose to put all 5 levels in Invoker. Write your level in each power school on your character sheet.
-
-Your character knows a number of powers from each power school equal to your level in that school. Some learned powers are limited by your character's level and your level in the power's school. All learned powers are listed as Novice, Veteran, Master, or Epic. To learn a power, you must meet the requirements in the table below:
+When you create your character, you split your character level between the power schools. Write your level in each power school on your character sheet. Your character level and your level in a school determine your tier in the school, as shown in the table below:
 
 <table>
   <tr>
@@ -90,11 +88,11 @@ Your character knows a number of powers from each power school equal to your lev
   </tr>
 </table>
 
-For example, if you have a level 7 character, you could choose to put 5 levels in the Druid school and 2 levels in the Shapeshifter school. You then learn 5 powers from the Druid school, all of which can be either Novice or Veteran. You also learn 2 powers from the Shapeshifter school, both of which must be Novice.
+Your character knows a number of powers from each power school equal to your level in that school. All learned powers have a tier, which is shown next to the power's name. To learn a power, you must be at least that tier in the power's school.
 
-As another example, if you have a level 9 character, you could choose to put all 9 levels in the Arcanist school. You then learn 9 powers from the Arcanist school, all of which must be Novice or Veteran.
+For example, imagine you are creating a level 5 character. You could choose to put 3 levels in Blaster and 2 levels in Duelist. This makes you a Veteran Blaster and a Novice Duelist. You then learn 3 powers from the Blaster school, all of which must be either Novice or Veteran. You also learn 2 powers from the Duelist school, both of which must be Novice.
 
-In addition, power schools have a list of Tier Bonuses, which represent general competencies you gain from your line of study. As soon as you meet the requirements to learn powers of a given tier in a school, you gain the the school's Tier Bonuses for that tier.
+As another example, imagine you are creating a level 11 character. You could choose to put all 11 levels in the Arcanist school. This makes you a Master Arcanist. You then learn 11 powers from the Arcanist school, all of which must be Novice, Veteran, or Master.
 
 ## Step 5. Choose your Ribbons
 

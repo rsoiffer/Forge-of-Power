@@ -34,13 +34,6 @@ sidebar:
   {% endfor %}
 </table>
 
-<h2>Tier Bonuses</h2>
-<dl>
-  {% for tier in school.tiers %}
-  <dt>{{ tier[0] | capitalize }}</dt><dd>{{ tier[1] | process_inline }}</dd>
-  {% endfor %}
-</dl>
-
 {% for power2 in site.data.powers %}
   {% if power2[1].school == page.data[0] %}
 
