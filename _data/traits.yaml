@@ -4,6 +4,8 @@ Attack: A power with this trait is called an attack. See [here](basic-rules.html
 
 Auditory: Auditory effects rely on sound. An [[Auditory]] effect can only affect creatures that can hear it.
 
+Cantrip: Spells with this trait can be cast for 0 Mana. Powers with this trait always have the [[Spell]] trait as well.
+
 Cold: Effects with this trait deal cold damage.
 
 Composition: Powers with this trait involve a type of performance. Depending on what kind of performance you make, the power gains the [[Auditory]] or [[Visual]] traits. You can only have one [[Composition]] power active at a time; if you use a new [[Composition]] power, the previous one ends immediately.

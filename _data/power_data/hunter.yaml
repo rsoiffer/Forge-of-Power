@@ -15,7 +15,7 @@ Hunt Prey:
 
 Hunter's Aim:
   tier: Novice
-  type: 2-Action
+  type: 1-Action
   traits: [Concentrate]
   effect:
     By spending a moment to focus, you can ensure your attack strikes true. Make a ranged weapon Strike. On this Strike, you gain a +2 bonus to the attack roll and ignore the target's concealed condition.
@@ -35,14 +35,14 @@ Deadly Aim:
 
 Debilitating Shot:
   tier: Veteran
-  type: 2-Action
+  type: 1-Action
   traits: [Flourish]
   effect:
     Aiming for a weak point, you impede your foe with a precise shot. Make a ranged weapon Strike. If it hits and deals damage, the target is slowed 1 until the end of its next turn.
 
 Incredible Ricochet:
   tier: Veteran
-  type: 2-Action
+  type: 1-Action
   traits: [Concentrate, Press]
   effect:
     After your first shot singles out your opponent's position, you direct another that ricochets around obstacles and strikes unerringly. Make a ranged weapon Strike. You ignore the target's concealed condition and all cover.

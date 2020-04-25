@@ -9,7 +9,7 @@ Counterspell:
 
 Dispel Magic:
   tier: Novice
-  type: 2-Action
+  type: 1-Action
   traits: [Spell]
   tags:
     cost: 2 Mana
@@ -46,7 +46,7 @@ Misty Step:
 
 Dimension Door:
   tier: Veteran
-  type: 2-Action
+  type: 1-Action
   traits: [Spell, Teleportation]
   tags:
     cost: 4 Mana
@@ -76,7 +76,7 @@ Greater Metamagic:
 
 Resilient Sphere:
   tier: Veteran
-  type: 2-Action
+  type: 1-Action
   traits: [Force, Spell]
   tags:
     cost: 4 Mana
@@ -90,7 +90,7 @@ Resilient Sphere:
 
 Redirect Gravity:
   tier: Master
-  type: 3-Action
+  type: 1-Action
   traits: [Spell]
   tags:
     cost: 7 Mana
@@ -118,7 +118,7 @@ Metamagic Mastery:
 
 Time Stop:
   tier: Epic
-  type: 3-Action
+  type: 1-Action
   traits: [Spell]
   tags:
     cost: 10 Mana
@@ -129,7 +129,7 @@ Time Stop:
 
 Augury:
   tier: Novice
-  type: 3-Action
+  type: 1-Action
   traits: [Prediction]
   effect: |
     You gain a vague glimpse of the future. When you cast this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveals the GM's best guess among the following outcomes:
@@ -173,7 +173,7 @@ Portent:
 
 Clairvoyance:
   tier: Veteran
-  type: 2-Action
+  type: 1-Action
   traits: [Scrying, Spell]
   tags:
     cost: 4 Mana
@@ -184,7 +184,7 @@ Clairvoyance:
 
 Read Omens:
   tier: Veteran
-  type: 3-Action
+  type: 1-Action
   traits: [Prediction, Spell]
   tags:
     cost: 4 Mana
@@ -201,7 +201,7 @@ Greater Portent:
 
 True Seeing:
   tier: Master
-  type: 2-Action
+  type: 1-Action
   traits: [Revelation, Spell]
   tags:
     duration: 10 minutes
@@ -210,7 +210,7 @@ True Seeing:
 
 Foresight:
   tier: Epic
-  type: 2-Action
+  type: 1-Action
   traits: [Mental, Prediction, Spell]
   tags:
     cost: 9 Mana

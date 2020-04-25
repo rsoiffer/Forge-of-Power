@@ -40,7 +40,7 @@ Rage:
 
 Sudden Charge:
   tier: Novice
-  type: 2-Action
+  type: 1-Action
   traits: [Flourish, Open]
   effect:
     With a quick sprint, you dash up to your foe and swing. {Stride} twice. If
@@ -49,7 +49,7 @@ Sudden Charge:
 
 Swipe:
   tier: Novice
-  type: 2-Action
+  type: 1-Action
   traits: [Flourish]
   effect:
     You make a wide, arcing swing. Make a single melee {Strike} and compare the attack roll result to the ACs of up to two foes, each of whom must be within your melee reach and adjacent to the other. Roll damage only once and apply it to each creature you hit. A Swipe counts a two attacks for MAP. If you're using a weapon with the sweep trait, its modifier applies to all your Swipe attacks.

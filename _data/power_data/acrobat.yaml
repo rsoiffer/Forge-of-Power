@@ -11,7 +11,7 @@ Crane Stance:
 
 Fantastic Leap:
   tier: Novice
-  type: 2-Action
+  type: 1-Action
   effect:
     You launch yourself through the air at a foe. Make a {Stride} by jumping. At the end of your jump, you can make a melee {Strike}, even if you're in mid-air. You fall to the ground after the Strike. If the distance of your fall is no more than the height of your jump, you take no damage and land upright.
 
@@ -77,7 +77,7 @@ Water Step:
 
 Whirlwind Strike:
   tier: Master
-  type: 3-Action
+  type: 1-Action
   traits: [Flourish, Open]
   effect:
     You attack all nearby adversaries. Make a melee {Strike} against each enemy within your melee reach. Each attack counts towards your MAP, but do not increase your penalty until you have made all your attacks.

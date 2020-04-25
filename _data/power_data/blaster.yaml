@@ -1,6 +1,6 @@
 Acid Arrow:
   tier: Novice
-  type: 2-Action
+  type: 1-Action
   traits: [Acid, Attack, Spell]
   tags:
     cost: 2 Mana
@@ -10,6 +10,19 @@ Acid Arrow:
 
     Heightened (per +2 Mana)
     : The intial damage increases by 2d8, and the persistant acid damage increases by 1d6
+
+Bolt:
+  tier: Novice
+  type: 1-Action
+  traits: [Attack, Cantrip, Spell]
+  tags:
+    range: 60 feet
+  effect: |
+    You fire a bolt of damaging magical energies that impacts with violent force. Make a Magic attack roll against the target's defense.
+
+    Heightened (per +1 Mana)
+    : The damage increases by 1d6
+  success: You deal 1d6 + Magic damage
 
 Dangerous Sorcery:
   tier: Novice
@@ -27,18 +40,9 @@ Magic Missile:
   effect:
     You fire an unerring dart of force from your fingertips. It automatically hits and deals 1d4+1 force damage to the target.
 
-Powerbolt:
-  tier: Novice
-  type: 2-Action
-  traits: [Attack, Spell]
-  tags:
-    range: 60 feet
-  effect:
-    You fire a bolt of damaging magical energies that impacts with violent force. Make a spell attack. If you hit, you deal 1d6 + Intelligence damage, or twice as much damage on a critical hit. The damage increases by 1d6 for every Blaster power you know other than this one.
-
 Sound Burst:
   tier: Novice
-  type: 2-Action
+  type: 1-Action
   traits: [Spell, Sonic]
   tags:
     cost: 2 Mana
@@ -63,7 +67,7 @@ Spell Shaper:
 
 Cone of Cold:
   tier: Veteran
-  type: 2-Action
+  type: 1-Action
   traits: [Cold, Spell]
   tags:
     cost: 5 Mana
@@ -77,7 +81,7 @@ Cone of Cold:
 
 Fireball:
   tier: Veteran
-  type: 2-Action
+  type: 1-Action
   traits: [Fire, Spell]
   tags:
     cost: 3 Mana
@@ -92,7 +96,7 @@ Fireball:
 
 Lightning Bolt:
   tier: Veteran
-  type: 2-Action
+  type: 1-Action
   traits: [Electricity, Spell]
   tags:
     cost: 3 Mana
@@ -106,7 +110,7 @@ Lightning Bolt:
 
 Chain Lightning:
   tier: Master
-  type: 2-Action
+  type: 1-Action
   traits: [Electricity, Spell]
   tags:
     cost: 6 Mana
@@ -120,7 +124,7 @@ Chain Lightning:
 
 Disintegrate:
   tier: Master
-  type: 2-Action
+  type: 1-Action
   traits: [Attack, Spell]
   tags:
     cost: 6 Mana
@@ -130,7 +134,7 @@ Disintegrate:
 
 Polar Ray:
   tier: Master
-  type: 2-Action
+  type: 1-Action
   traits: [Attack, Cold, Spell]
   tags:
     cost: 8 Mana
@@ -143,7 +147,7 @@ Polar Ray:
 
 Implosion:
   tier: Epic
-  type: 2-Action
+  type: 1-Action
   traits: [Spell]
   tags:
     cost: 9 Mana
@@ -155,7 +159,7 @@ Implosion:
 
 Meteor Swarm:
   tier: Epic
-  type: 2-Action
+  type: 1-Action
   traits: [Spell]
   tags: 
     cost: 9 Mana

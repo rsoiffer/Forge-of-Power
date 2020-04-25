@@ -84,7 +84,7 @@ Aura of Protection:
 
 Blade of Justice:
   tier: Master
-  type: 2-Action
+  type: 1-Action
   effect:
     You call upon divine power and make a weapon or unarmed Strike against a foe you have witnessed harming an ally or innocent. The Strike deals two extra weapon damage dice, and you can convert all the physical damage from the attack into radiant damage.
 

@@ -1,6 +1,6 @@
 Color Spray:
   tier: Novice
-  type: 2-Action
+  type: 1-Action
   traits: [Incapacitation, Spell, Visual]
   tags:
     cost: 1 Mana
@@ -16,7 +16,7 @@ Color Spray:
 
 Illusory Disguise:
   tier: Novice
-  type: 2-Action
+  type: 1-Action
   traits: [Spell, Visual]
   tags:
     cost: 1 Mana
@@ -35,7 +35,7 @@ Illusory Disguise:
 
 Illusory Object:
   tier: Novice
-  type: 2-Action
+  type: 1-Action
   traits: [Visual, Spell]
   tags:
     cost: 1 Mana
@@ -53,7 +53,7 @@ Illusory Object:
 
 Invisibility:
   tier: Novice
-  type: 2-Action
+  type: 1-Action
   traits: [Spell]
   tags:
     cost: 2 Mana
@@ -67,7 +67,7 @@ Invisibility:
 
 Phantom Pain:
   tier: Novice
-  type: 2-Action
+  type: 1-Action
   traits: [Mental, Spell]
   tags:
     cost: 1 Mana
@@ -91,7 +91,7 @@ Illusory Scene:
 
 Phantasmal Killer:
   tier: Veteran
-  type: 2-Action
+  type: 1-Action
   traits: [Death, Emotion, Fear, Mental, Spell]
   tags:
     cost: 4 Mana
@@ -120,7 +120,7 @@ Shadow Siphon:
 
 Project Image:
   tier: Master
-  type: 2-Action
+  type: 1-Action
   traits: [Mental, Spell]
   tags:
     cost: 7 Mana
@@ -160,7 +160,7 @@ Charming Words:
 
 Command:
   tier: Novice
-  type: 2-Action
+  type: 1-Action
   traits: [Auditory, Linguistic, Mental, Spell]
   tags:
     cost: 1 Mana
@@ -178,7 +178,7 @@ Command:
 
 Fear:
   tier: Novice
-  type: 2-Action
+  type: 1-Action
   traits: [Emotion, Fear, Mental, Spell]
   tags:
     cost: 1 Mana
@@ -197,7 +197,7 @@ Fear:
 
 Confusion:
   tier: Veteran
-  type: 2-Action
+  type: 1-Action
   traits: [Emotion, Mental, Spell]
   tags:
     cost: 4 Mana
@@ -215,7 +215,7 @@ Confusion:
 
 Mind Reading:
   tier: Veteran
-  type: 2-Action
+  type: 1-Action
   traits: [Detection, Mental, Spell]
   tags:
     cost: 3 Mana
@@ -231,7 +231,7 @@ Mind Reading:
 
 Suggestion:
   tier: Veteran
-  type: 2-Action
+  type: 1-Action
   traits: [Incapacitation, Linguistic, Mental, Spell]
   tags:
     cost: 4 Mana
@@ -253,7 +253,7 @@ Suggestion:
 
 Synaptic Pulse:
   tier: Veteran
-  type: 2-Action
+  type: 1-Action
   traits: [Incapacitation, Mental, Spell]
   tags:
     cost: 5 Mana
@@ -270,7 +270,7 @@ Synaptic Pulse:
 
 Dominate:
   tier: Master
-  type: 2-Action
+  type: 1-Action
   traits: [Incapacitation, Mental, Spell]
   tags:
     cost: 6 Mana
@@ -289,7 +289,7 @@ Dominate:
 
 Warp Mind:
   tier: Master
-  type: 2-Action
+  type: 1-Action
   traits: [Emotion, Incapacitation, Mental, Spell]
   tags:
     cost: 7 Mana
@@ -304,7 +304,7 @@ Warp Mind:
 
 Fabricated Truth:
   tier: Epic
-  type: 3-Action
+  type: 1-Action
   traits: [Incapacitation, Mental, Spell]
   tags:
     cost: 10 Mana

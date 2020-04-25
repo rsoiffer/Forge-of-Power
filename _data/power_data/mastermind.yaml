@@ -110,7 +110,7 @@ Unity:
 
 Soothing Ballad:
   tier: Master
-  type: 2-Action
+  type: 1-Action
   traits: [Composition, Emotion, Healing, Mental]
   tags:
     range: 30 feet
