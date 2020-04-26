@@ -40,7 +40,7 @@ Guiding Bolt:
     range: 120 feet
     duration: 1 minute
   effect: |
-    Make a Magic attack roll against your target's Defense. On a success, your target takes 1d6 damage. Whether or not your attack succeeds, your target shines with a dim glittering light, and the next attack roll against your target has advantage.
+    Make a Magic attack roll against your target's defense. On a success, your target takes 1d6 damage. Whether or not your attack succeeds, your target shines with a dim glittering light, and the next attack roll against your target has advantage.
 
     Heightened (per +1 Mana)
     : The damage increases by 1d6
@@ -93,7 +93,7 @@ Sanctuary:
   type: Passive
   brief: You're hard to hurt while you don't attack your enemies
   effect:
-    You have a +2 bonus to Defense and to your Spirit DC. If you use any [[Attack]] power, you lose this benefit for the next hour.
+    You have a +2 bonus to defense and to your Spirit DC. If you use any [[Attack]] power, you lose this benefit for the next hour.
 
 Shield of Faith:
   tier: Ribbon
@@ -105,7 +105,7 @@ Shield of Faith:
     range: 60 feet
     duration: 10 minutes
   effect:
-    Your target has a +2 bonus to Defense.
+    Your target has a +2 bonus to defense.
 
 Supreme Healer:
   tier: Ribbon
