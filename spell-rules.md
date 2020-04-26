@@ -7,11 +7,17 @@ sidebar:
 
 Following are more advanced rules related to spells.
 
+## Casting Spells
+
+A power with the [[Spell]] trait is called a **spell**. All spells implicitly have the [[Concentrate]] and [[Manipulate]] traits. Using such a power is called **casting** the spell. Casting a spell requires speaking a command phrase and making hand gestures, which usually make it obvious that you are casting a spell.
+
 ## Spell Properties
 
-Most spells have a **cost** in Mana. You must pay this amount of Mana when you cast the spell. If you run out of Mana, you can pay this cost from your HP instead; if you do, your current and maximum HP both decrease by the remaining cost. If this decreases your maximum HP to 0, you die. Your maximum HP returns to normal on an 8-hour rest.
+All spells have a **cost** in Mana. You must pay this amount of Mana when you cast the spell. If you don't have enough Mana, you can't cast the spell. Some effects reduce the cost of a spell. The cost of a spell can never be reduced below 1, or below 0 if the spell has the [[Cantrip]] trait.
 
-Most spells have a **range** in feet. If the spell doesn't list a target, it affects one creature you can see within range. If the spell lists an area, the area is centered on a point you can see within range.
+Some spells have a **range** in feet. If the spell doesn't list a target or an area, it targets one creature you can see within range.
+
+Some spells have an **area**. If the spell lists a range, the area is centered on a point you can see within range, otherwise the area is centered on you. If the spell doesn't list a target, it targets all creatures in the area.
 
 ## Heightening Spells
 
@@ -21,7 +27,7 @@ If a spell's description has an entry that reads **Heightened (per +X Mana)**, t
 
 ## Arcane Backgrounds
 
-When you first put a level in a Mage or Priest power school, you gain one arcane background from the list below. Your arcane background determines your Magic and Mana stats, and gives you unique extra bonuses.
+When you first reach Novice tier in any power school that has spells, you gain one arcane background from the list below. Your arcane background determines your Magic and Mana stats, and gives you unique extra bonuses.
 
 ### Cleric
 
@@ -31,7 +37,7 @@ You cast magic spells through faith and devotion to your religion.
 
 ***Mana.*** Your Mana stat equals 4 + 2 * the number of spells you know, not counting ribbons. Your Mana pool replenishes when you complete an 8-hour rest.
 
-***Bonuses.*** When you reach Novice tier in a Priest power school, choose one spell in that school as your **domain spell** in that school. The Mana cost to cast any of your domain spells is reduced by 1.
+***Bonuses.*** When you reach Novice tier in a Priest power school, choose one spell in that school as your **domain spell** in that school. The cost of your domain spell is reduced by 1.
 
 ### Psion
 

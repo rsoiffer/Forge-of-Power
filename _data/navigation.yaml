@@ -35,12 +35,11 @@ character:
     url: /feats.html
 
 powers:
+  - title: Power Schools
+    url: /power-schools.html
   - title: Basic Powers
     url: /basic-powers.html
-# powers:
-#   - title: Power Schools
-#     url: /power-schools.html
-#   - title: All Powers
-#     url: /all-powers.html
-#   - title: Power Counts
-#     url: /power-counts.html
+  - title: All Powers
+    url: /all-powers.html
+  - title: Power Counts
+    url: /power-counts.html

@@ -40,11 +40,11 @@ Incapacitation: An ability with this trait can take a character completely out o
 
 Linguistic: An effect with this trait depends on language comprehension. A [[Linguistic]] effect that targets a creature works only if the target understands the language you are using.
 
-Manipulate: You must physically manipulate an item or make gestures to use a power with this trait. Creatures with a suitable appendage can't use powers with this trait.
+Manipulate: You must physically manipulate an item or make gestures to use a power with this trait. Creatures without a suitable appendage can't use powers with this trait.
 
 Mental: An effect with this trait can alter the target's mind. It has no effect on an object or a mindless creature.
 
-Minion: A creature for this trait is controlled by another creature. Minion creatures can't uses powers unless their master uses the {Command} power.
+Minion: A creature with this trait is controlled by another creature. [[Minion]] creatures can't uses powers unless their master uses the {Command} power.
 
 Misfortune: An effect with this trait detrimentally alters how you roll your dice. You can never have more than one [[Misfortune]] effect alter a single roll. If multiple [[Misfortune]] effects would apply, the GM decides which is worse and applies it. If a [[Fortune]] effect and [[Misfortune]] effect would apply to the same roll, the two cancel each other out, and you roll normally.
 
@@ -62,6 +62,8 @@ Press: Powers with this trait allow you to follow up earlier attacks. A power wi
 
 Revelation: Effects with this trait see things as they truly are.
 
+Ritual: A ritual spell can be cast through a long, complex ritual to save mana. The Mana cost of the spell is reduced by 1 for every 10 minutes you spend performing the ritual. This can reduce the Mana cost of the spell to 0. Powers with this trait always have the [[Spell]] trait as well.
+
 Scrying: A scrying effect lets you see, hear, or otherwise get sensory information from a distance using a sensor or apparatus, rather than your own eyes and ears.
 
 Secret: The GM makes the die roll for this ability in secret.
@@ -70,7 +72,7 @@ Shadow: This magic involves shadows.
 
 Sonic: An effect with this trait functions only if it makes sound, meaning it has no effect in an area of silence or in a vacuum. A [[Sonic]] effect might deal sonic damage.
 
-Spell: A power with this trait is called a **spell**. All spells implicitly have the [[Concentrate]] and [[Manipulate]] traits. Using such a power is called **casting** the spell. Casting a spell requires speaking a command phrase and making hand gestures, which usually make it obvious that you are casting a spell.
+Spell: A power with this trait is called a spell. See [here](spell-rules.html) for more information.
 
 Stance: A stance is a general combat strategy that you enter by using a power with the [[Stance]] trait, and that you remain in for some time. A stance lasts until you fall {unconscious}, until its requirements (if any) are violated, until the encounter ends, or until you enter a new stance, whichever comes first. You can be in a stance only during combat.
 

@@ -78,6 +78,13 @@ Ready:
 
     If you have MAP and your readied power is an [[Attack]], your readied power takes the MAP you had at the end of your turn.
 
+Repeat:
+  type: 1-Action
+  effect: |
+    Use a {% icon Free %} power of your choice.
+
+    This lets you use the same {% icon Free %} power twice in one turn. For instance, you could {Stride} twice to move twice as far, {Interact} twice to interact with more objects, or {Sustain} twice to keep more spells active at once.
+
 Seek:
   type: 1-Action
   traits: [Concentrate, Secret]

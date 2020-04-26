@@ -1,0 +1,118 @@
+Aid:
+  tier: Novice
+  type: 1-Action
+  brief: Bolster your allies' toughness and resolve
+  traits: [Spell]
+  tags:
+    cost: 2 Mana
+    range: 30 feet
+    target: Up to three creatures you can see within range
+    duration: 8 hours
+  effect: |
+    Your targets' maximum and current health both increase by 5.
+
+    Heightened (per +1 Mana)
+    : You targets' health increases by an additional 5
+
+Bless:
+  tier: Novice
+  type: 1-Action
+  brief: Bless your allies with good fortune and protection
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    target: Up to three creatures you can see within range
+    duration: Sustained, up to 1 minute
+  effect: |
+    Whenever your target makes an attack roll, they can add 1d4 to their result. Whenever they are the target of an attack, they can add 1d4 to the DC of the attack against them.
+
+    Heightened (per +1 Mana)
+    : You target one additional creature
+
+Guiding Bolt:
+  tier: Novice
+  type: 1-Action
+  brief: Strike an enemy and open them up to further attacks
+  traits: [Attack, Cantrip, Spell]
+  tags:
+    cost: 0 Mana
+    range: 120 feet
+    duration: 1 minute
+  effect: |
+    Make a Magic attack roll against your target's Defense. On a success, your target takes 1d6 damage. Whether or not your attack succeeds, your target shines with a dim glittering light, and the next attack roll against your target has advantage.
+
+    Heightened (per +1 Mana)
+    : The damage increases by 1d6
+
+Healing Word:
+  tier: Novice
+  type: Free
+  brief: Quickly heal an ally to get them back on their feet
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    range: 60 feet
+  effect: |
+    Your target heals 1d6 health.
+
+    Heightened (per +1 Mana)
+    : Your target heals an additional 1d6 health
+
+Haste:
+  tier: Veteran
+  type: 1-Action
+  brief: Boost an ally's speed, letting them move and act quickly
+  traits: [Spell]
+  tags:
+    cost: 3 Mana
+    target: A creature you can reach
+    duration: Sustained, up to 1 minute
+  effect: |
+    Your target gains the **Hasted Action** power.
+
+    Hasted Action {% icon Free %}
+    : Use a {% icon 1-Action %} basic power of your choice.
+
+Blessed Healer:
+  tier: Ribbon
+  type: Passive
+  brief: Healing spells you cast on others heal you as well
+  effect:
+    When you spend at least 1 Mana on a spell that heals an ally, you heal health equal to the Mana you spent.
+
+Gentle Affect:
+  tier: Ribbon
+  type: Passive
+  brief: You appear generally peaceful and nonthreatening to others
+  effect:
+    Other people intially judge you as gentle, peaceful, and kindly. This usually makes people more likely to trust and like you, and less likely to believe you're capable of violence. This impression can be changed by your actions or by a conflicting reputation.
+
+Sanctuary:
+  tier: Ribbon
+  type: Passive
+  brief: You're hard to hurt while you don't attack your enemies
+  effect:
+    You have a +2 bonus to Defense and to your Spirit DC. If you use any [[Attack]] power, you lose this benefit for the next hour.
+
+Shield of Faith:
+  tier: Ribbon
+  type: 1-Action
+  brief: Conjure a magical field to protect your ally
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    range: 60 feet
+    duration: 10 minutes
+  effect:
+    Your target has a +2 bonus to Defense.
+
+Supreme Healer:
+  tier: Ribbon
+  type: Reaction
+  brief: Reroll the dice on one healing spell
+  traits: [Daily]
+  tags:
+    trigger: You heal a creature with a spell
+  effect:
+    Reroll the amount of healing. You pick whether to use the original result or the new one.

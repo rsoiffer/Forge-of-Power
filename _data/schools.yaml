@@ -39,7 +39,7 @@ Inventor:
   description: ""
 
 Mastermind:
-  brief: You support your party both in and out of battle, with a plan for every situation
+  brief: You guide your party both in and out of battle, with a plan for every situation
   description: ""
 
 Scoundrel:
@@ -57,7 +57,7 @@ Blaster:
   description: ""
 
 Illusionist:
-  brief: You conjure illusions to deceive or confuse your opponents' senses
+  brief: You deceive your opponents with conjured illusions and beguiling charms
   description: ""
 
 Necromancer:
@@ -65,25 +65,31 @@ Necromancer:
   description: ""
 
 Sorcerer:
-  brief: You alter the fundamental laws of reality, controlling space and time
+  brief: You alter the fundamental laws of reality, breaking through space and time
   description: ""
 
 # Priest
 
 Druid:
   brief: You command nature itself, manipulating wild animals and plants
-  description: ""
+  description: |
+    TODO - actually write a description.
+
+    When you reach Novice tier in this power school, you gain an [arcane background](spell-rules.html#arcane-backgrounds) if you don't have one already.
 
 Enhancer:
-  brief: You protect your allies with a variety of beneficial blessings and enhancements
-  description: ""
+  brief: You support your allies with a variety of beneficial blessings and enhancements
+  description: |
+    TODO - actually write a description.
+
+    When you reach Novice tier in this power school, you gain an [arcane background](spell-rules.html#arcane-backgrounds) if you don't have one already.
 
 Elementalist:
   brief: You harness elemental magic to precisely control the natural world
   description: ""
 
 Invoker:
-  brief: You call down radiant light from the heavens to heal your friends and smite your foes
+  brief: You call down heavenly magic to aid your friends and judge your foes
   description: ""
 
 Shapeshifter:
