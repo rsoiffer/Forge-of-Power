@@ -1,95 +1,77 @@
-Divine Grace:
-  tier: Novice
-  type: Reaction
-  tags:
-    trigger: You attempt a save against a spell, before you roll
-  effect:
-    You call upon your diety's grace, gaining a +2 circumstance bonus to the save.
-
-Glimpse of Redemption:
-  tier: Novice
-  type: Reaction
-  tags:
-    trigger: An enemy damages your ally, and both are within 15 feet of you
-  effect: |
-    Your foe hesitates under the weight of sin as visions of redemption play in their mind's eye. The foe must choose one of the following options:
-    * The ally is unharmed by the triggering damage
-    * The triggering damage is reduced by Prof + 2 * your Crusader level. After the damaging effect is applied, the enemy becomes enfeebled 2 until the end of its next turn.
-
-Lay on Hands:
+Denounce:
   tier: Novice
   type: 1-Action
-  traits: [Healing, Positive, Spell]
+  brief: You 
+
+Heal:
+  tier: Novice
+  type: 1-Action
+  brief: Restore a creature's health and cure diseases
+  traits: [Spell]
   tags:
     cost: 1 Mana
     range: Touch
   effect: |
-    Your hands become infused with positive energy, healing a living creature with a touch. You heal your target 6 HP, and they gain a +2 bonus to AC for 1 round. If you target an undead, they instead take 1d6 radiant damage and must attempt a Fortitude save; if they fail, they also take a -2 penalty to AC for 1 round.
-
-    If you spend a second action when using this ability, you also remove one [[Fear]] or one effect causing the {paralyzed} condition on the target, in addition to the other benefits.
+    Your target heals 5 health and is cured of any nonmagical diseases. If your target is an undead, they instead take 1d6 damage.
 
     Heightened (per +1 Mana)
-    : The amount of healing increases by 6, and the damage to an undead target increases by 1d6
+    : The healing increases by 5 and the damage increases by 1d6
 
-Slayer's Oath:
+Smite Evil:
   tier: Novice
-  type: Passive
-  effect: |
-    You've sworn to slay a specific type of creature or monster, such as dragons, undead, or evil humanoids. Whenever you hit your sworn foe with a weapon attack, the attack deals an extra Prof damage.
-
-    Whenever you encounter your sworn foe, you must attempt to kill it if you have a reasonable chance of success. If you fail to do so, you lose the benefit of this power until you have sufficiently atoned for your actions (as determined by the GM).
-
-Litany against Wrath:
-  tier: Veteran
-  type: 1-Action
+  type: Free
+  brief: Punish an evil target with powerful radiant energy
   traits: [Spell]
   tags:
-    cost: 3 Mana
-    range: 30 feet
-    save: Will
-    duration: 1 round
+    cost: 1 Mana
+    trigger: You hit a creature with a melee {Strike}
+    target: The creature you hit
   effect: |
-    You rail against the sin of wrath, punishing the target for attacking good creatures. The target must attempt a Will save. A particularly wrathful creature, such as a Sith Lord or an Angry Marine, has a -10 penalty to its saving throw. The target then becomes temporarily immune to this power for 1 minute.
+    Your target takes 1d6 damage. If your target is an undead or demon, this damage is doubled.
 
     Heightened (per +1 Mana)
     : The damage increases by 1d6
-  critical-success: The target is unaffected
-  success: The first time the target uses a power that deals damage to at least one creature, the target takes 3d6 radiant damage
-  failure: Each time the target uses a power that deals damage to at least one good creature, the target takes 3d6 radiant damage
-  critical-failure: As failure, and the target is enfeebled 2
 
-Persistent Smite:
+Sacred Spell:
   tier: Veteran
   type: Free
+  brief: Channel divine energy to greatly buff a spell you cast
+  traits: [Encounter]
   tags:
-    trigger: Your Strike hits a creature
+    trigger: You cast a spell
   effect:
-    You surround evil targets in a punishing halo. Your target takes persistent radiant damage equal to your Charisma modifier.
+    Reduce the cost of the spell by 2.
 
-Smite Evil:
-  tier: Veteran
+Holy Aura:
+  tier: Ribbon
+  type: Passive
+  brief: You passively emit an aura of divine magic
+  effect:
+    You constantly emit a strong magical aura. The nature of the aura matches your moral beliefs - if you follow good beliefs and constantly help others, you emit an aura of Good, and vice-versa for Evil. Some creatures, including undead, angels, and demons, can sense holy auras.
+
+Light:
+  tier: Ribbon
   type: 1-Action
+  brief: An object shines bright light like a torch
+  traits: [Cantrip, Spell]
   tags:
-    duration: Until the start of your next turn
+    cost: 0 Mana
+    target: An unattended object you can reach
+    duration: 1 hour
   effect: |
-    Your weapons become powerful tools against evildoers. Select one foe you can see. Your Strikes against that foe deal an extra 2 + Prof damage.
+    Your target shines bright light in all directions. The light is as bright as a torch, illuminating the area within 30 feet.
 
-    Whenever the foe attacks one of your allies, the duration extends to the end of that foe's next turn.
+    Heightened (per +1 Mana)
+    : The radius of illumination increases by 30 feet
 
-Aura of Protection:
-  tier: Master
-  type: Passive
-  effect:
-    You and all allies within 15 feet gain a +2 bonus to saves.
-
-Blade of Justice:
-  tier: Master
+Zone of Truth:
+  tier: Ribbon
   type: 1-Action
+  brief: Detect whenever anyone in an area tells a lie
+  traits: [Ritual, Spell]
+  tags:
+    cost: 2 Mana
+    area: 30-foot burst
+    duration: 10 minutes
   effect:
-    You call upon divine power and make a weapon or unarmed Strike against a foe you have witnessed harming an ally or innocent. The Strike deals two extra weapon damage dice, and you can convert all the physical damage from the attack into radiant damage.
-
-Celestial Form:
-  tier: Epic
-  type: Passive
-  effect:
-    You take on a celestial countenance; for example, as an angel with a halo and feathery wings. You gain a fly speed equal to your Speed. You gain darkvision and the celestial trait.
+    Whenever anyone in the area knowingly speaks a lie, the spell sends you a ping. When you cast the spell, you choose whether the ping is perceptible to only you or to everyone nearby.

@@ -45,6 +45,36 @@ Earth Spike:
     Heightened (total 5 Mana)
     : The damage increases to 5d6, and the area increases to a 20-foot burst
 
+Wind Blast:
+  tier: Novice
+  type: 1-Action
+  brief: A blast of wind damages and knocks back targets in an area
+  traits: [Attack, Spell]
+  tags:
+    cost: 1 Mana
+    range: 60 feet
+    area: 30-foot line
+  effect: |
+    Make a Magic attack roll against your target's Strength DC. You have advantage on the attack roll if your target is flying. On a success, your target takes 1d6 damage and is pushed back 10 feet.
+
+    Heightened (per +2 Mana)
+    : The damage increases by 1d6 and the knockback increases by 10 feet
+
+Fly:
+  tier: Veteran
+  type: 1-Action
+  brief: The air lifts your target into the air, letting them fly
+  traits: [Spell]
+  tags:
+    cost: 3 Mana
+    range: Touch
+    duration: 10 minutes
+  effect: |
+    Your target gains a fly speed of 60 feet.
+
+    Heightened (per +1 Mana)
+    : You target one additional creature
+
 Create Water:
   tier: Ribbon
   type: 1-Action
@@ -54,10 +84,27 @@ Create Water:
     cost: 0 Mana
     range: 5 feet
   effect: |
-    You conjure a jet of water that arcs towards your target. The water is pure and safe to drink. One casting of this spell creates a gallon of water.
+    You conjure a jet of water that arcs towards your target. The water is pure and safe to drink. This spell creates a total of 1 gallon of water.
 
     Heightened (per +1 Mana, up to a maximum of +6 Mana)
     : This power's range extends by 10 feet, and you create 10 times as much water
+
+Feather Fall:
+  tier: Ribbon
+  type: Reaction
+  brief: Slow down falling creatures before they hit the ground
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    trigger: You see a creature fall
+    range: 60 feet
+    target: Up to three falling creatures you can see within range
+    duration: 1 minute, or until a target stops falling
+  effect: |
+    Your target slows down in midair, falling only 60 feet each round, and they are immune to fall damage.
+
+    Heightened (per +1 Mana)
+    : You target one additional creature
 
 Freeze:
   tier: Ribbon
@@ -76,7 +123,7 @@ Freeze:
 Tinder:
   tier: Ribbon
   type: 1-Action
-  brief: You summon a small flame at your fingertip
+  brief: Summon a small flame at your fingertip
   traits: [Cantrip, Spell]
   tags:
     cost: 0 Mana
@@ -89,3 +136,12 @@ Tinder:
 
     Heightened (total 2 Mana)
     : This power gains a range of 60 feet, gains an area of a 20-foot burst, and targets all unattended objects in the area
+
+Tremorsense:
+  tier: Ribbon
+  type: Passive
+  brief: You can sense creatures and objects through solid earth
+  tags:
+    range: 30 feet
+  effect:
+    You perceive all creatures and objects within range that you are connected to by a path of a solid material. If this material is entirely hard earth or stone, then your sense is as accurate as vision or touch. Otherwise, your sense is less accurate, and you have disadvantage on rolls that depend on perceiving a target. Your sense doesn't work at all through soft materials, such as sand or water.
