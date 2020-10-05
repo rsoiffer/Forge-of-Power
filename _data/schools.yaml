@@ -77,20 +77,20 @@ Druid:
 
     When you reach Novice tier in this power school, you gain an [arcane background](spell-rules.html#arcane-backgrounds) if you don't have one already.
 
-Enhancer:
-  brief: You support your allies with a variety of beneficial blessings and enhancements
-  description: |
-    TODO - actually write a description.
-
-    When you reach Novice tier in this power school, you gain an [arcane background](spell-rules.html#arcane-backgrounds) if you don't have one already.
-
 Elementalist:
   brief: You harness elemental magic to precisely control the natural world
   description: ""
 
-Invoker:
+Healer:
   brief: You call down heavenly magic to aid your friends and judge your foes
   description: ""
+
+Occultist:
+  brief: You wield dark magic to curse enemies and peer outside of reality
+  description: |
+    TODO - actually write a description.
+
+    When you reach Novice tier in this power school, you gain an [arcane background](spell-rules.html#arcane-backgrounds) if you don't have one already.
 
 Shapeshifter:
   brief: You transform yourself or other creatures into animals or monsters

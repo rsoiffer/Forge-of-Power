@@ -9,13 +9,9 @@ Following are rules for interacting with the world.
 
 ## Resting
 
-The best way to recover from difficult combats is to spend some time resting. The benefits you gain from a rest depend on the length of the rest. You can perform light activity during a rest, such as standing guard, setting up camp, or eating a meal.
+The best way to recover from difficult combats is to spend some time resting. The benefits you gain from a rest depend on the length of the rest. You can perform light activity during a rest, such as standing guard, setting up camp, or eating a meal. Stressful activies, including combat or enduring harsh weather, interrupt a rest.
 
-If you take a 5-minute rest, you recover the ability to use any [[Encounter]] powers you have expended, and your recover all of your Mana. If you take a 1-hour rest, you heal HP equal to half of your maximum HP (this effect can only occur once per day). If you take an 8-hour rest, during which you get at least 5 hours of sleep, you heal to full HP, and you recover the ability to use any [[Daily]] powers you have expended.
-
-## Inspiration
-
-The GM is encouraged to reward players for good roleplaying with a mechanic called inspiration. Whenever the GM thinks a player did something cool or immersive, the GM should give that player a point of inspiration. You can spend a point of inspiration to reroll any die roll or damage roll that your character makes. This is a [[Fortune]] effect.
+If you take a 5-minute rest, you recover the ability to use any [[Encounter]] powers you have expended. If you take a 1-hour rest, you heal an amount equal to half of your Health stat (this effect cannot occur again until you take an 8-hour rest). If you take an 8-hour rest, during which you get at least 5 hours of sleep, you heal an amount equal to your Health stat, and you recover the ability to use any [[Daily]] powers you have expended.
 
 ## NPC Attitude
 

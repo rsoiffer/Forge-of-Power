@@ -1,9 +1,11 @@
 ---
 layout: single
-title: Basic Powers
+title: General Feats
 sidebar:
-  nav: rules
+  nav: feats
 ---
+
+{% assign feats = site.data.feats.general %}
 
 <table>
   <tr>
@@ -11,7 +13,7 @@ sidebar:
     <th>Type</th>
     <th>Description</th>
   </tr>
-  {% for power in site.data.basic-powers %}
+  {% for power in feats %}
     <tr>
       <td>
         <a href="basic-powers.html#{{ power[0] | slugify }}">{{ power[0] }}</a>
@@ -27,6 +29,6 @@ sidebar:
 </table>
 
 
-{% for power2 in site.data.basic-powers %}
+{% for power2 in feats %}
   {% include power.html power=power2 %}
 {% endfor %}

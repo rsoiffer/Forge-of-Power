@@ -24,9 +24,19 @@ sidebar:
       <dd>{{ powers_str | process_inline }}</dd>
     {% endif %}
 
-    {% assign my_powers = site.data.trait_to_powers[name] %}
+    {% assign my_powers = site.data.trait_to_talents[name] %}
     {% if my_powers %}
-      <dt>Learned Powers ({{ my_powers | size }})</dt>
+      <dt>Talents ({{ my_powers | size }})</dt>
+      {% assign br_start = "{" %}
+      {% assign br_end = "}" %}
+      {% assign separator = "}, {" %}
+      {% assign powers_str = my_powers | sort | join: separator | prepend: br_start | append: br_end %}
+      <dd>{{ powers_str | process_inline }}</dd>
+    {% endif %}
+
+    {% assign my_powers = site.data.trait_to_feats[name] %}
+    {% if my_powers %}
+      <dt>Feats ({{ my_powers | size }})</dt>
       {% assign br_start = "{" %}
       {% assign br_end = "}" %}
       {% assign separator = "}, {" %}

@@ -7,36 +7,32 @@ sidebar:
 
 Following are more advanced rules related to combat. See the {% ref All Powers %} page for a list of common actions you can take in combat.
 
+## Power Properties
+
+Some powers have a **range** in feet. If the power doesn't list a target or an area, it targets one creature you can see within range.
+
+Some powers have an **area**. If the power lists a range, the area is centered on a point you can see within range, otherwise the area is centered on you. If the power doesn't list a target, it targets all creatures in the area.
+
+Some powers have a **duration**. When the duration ends, the power's effect completely ends. The world returns to its normal state, as if the power hadn't been used. Any permanent changes the power made to the world, such as inflicting or healing damage, don't disappear when the power ends. You can't end an ongoing power early unless it specifies that in its duration.
+
 ## Surprise
 
-If you start combat with a creature that isn't prepared for an imminent attack, that creature is surprised. A surprised creature cannot use actions during the first round of combat. Creatures that are surprised, that can't see you, or that otherwise aren't expecting you to attack are {flat-footed} against you.
+If you start combat with a creature that isn't prepared for an imminent attack, that creature is surprised for the first round of combat. Creatures that are surprised, that can't see you, or that otherwise aren't expecting you to attack are {flat-footed} against you.
 
 ## Falling
 
-If there is nothing supporting your character, you fall. You fall up to 5 zones per round. When you fall one or more zones, you take 3d6 damage for each zone you fall, up to a cap of 30d6 damage. The number of dice is reduced by half if you fall onto a soft surface, such as a pile of hay or a pool of water. You land prone if you take any damage from a fall.
+If there is nothing supporting your character, you fall. You fall up to 500 feet each round. When you fall 10 or more feet, you take 1d6 damage for each 10 feet, up to a cap of 50d6 damage at 500 feet. The number of dice is reduced by half if you fall onto a soft surface, such as a pile of hay or a pool of water. You land {prone} if you take any damage from a fall.
+
+## Cover
+
+Some environmental features, such as battlements or arrow slits, make it much harder for creatures to hit you with attacks. At the GM's discretion, these environmental features may give you cover from enemies. In general, you have cover from an enemy if at least 3/4 of your body is blocked by a solid object. If you have cover from an enemy, you have a +5 bonus to Defense against their attacks.
 
 ## Health
 
-Your HP can never go above your maximum HP, and your HP can never go below 0. While your HP is exactly 0, you have the {downed} condition.
+All characters have a Health pool that represents how healthy they currently are. Your Health pool stores a number of points, up to a maximum of your Health stat. When you take damage, you must subtract the damage taken from your Health pool. When you heal, you add the points healed to your Health pool. Your Health pool can never go below 0. While your Health pool is 0, you have the {downed} condition.
 
-Some effects can give you temporary HP. When you take damage, subtract the damage from your temporary HP first, then subtract any remaining damage from your HP. Multiple sources of temporary HP **do not** stack, you only keep the highest.
+Some effects can give you a pool of temporary HP. When you take damage, subtract the damage from your temporary HP first, then subtract any remaining damage from your Health pool. Multiple sources of temporary HP **do not** stack, you only keep the highest.
 
 ## Dying
 
-When you take damage that brings your HP to 0, you gain the {dying} 1 condition. If this damage was from an enemy's critical hit or a critical failure on your save, you instead gain the {dying} 2 condition. While you have the dying condition, you are bleeding out, and you must make a death save at the start of each of your turns.
-
-### Death Save
-
-A death save is a Fortitude save against DC 10.
-
-Critical Success
-: Your dying condition decreases by 2
-
-Success
-: Your dying condition decreases by 1
-
-Failure
-: Your dying condition increases by 1
-
-Critical Failure
-: Your dying condition increases by 2
+TODO: Write this section

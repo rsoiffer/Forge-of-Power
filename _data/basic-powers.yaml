@@ -1,8 +1,9 @@
 Command:
   type: Free
+  brief: Command a Minion you control to take an action
   traits: [Auditory, Concentrate]
   effect:
-    You command a [[Minion]] creature you control to immediately take an action.
+    You command a [[Minion]] creature you control to immediately use a {% icon 1-Action %} power.
 
 Disarm:
   type: 1-Action
@@ -10,17 +11,9 @@ Disarm:
   tags:
     target: One creature you can reach
   effect:
-    Make a Strength attack roll against the higher of your target's Strength DC or Agility DC.
-  critical-success: You knock the item out of the opponent's grasp. It falls to the ground in a space of your choice within 15 feet of your opponent.
-  success: You knock the item out of the opponent's grasp. It falls to the ground in the opponent's space.
-
-Draw Items:
-  type: Free
-  traits: [Manipulate]
-  tags:
-    trigger: Your turn begins
-  effect:
-    You draw or stow any number of items that are secured in easily accessible locations, such as a weapon in its holster or a potion in a belt pouch. Drawing items from a pack or picking them up from the ground requires the {Interact} power.
+    Pick one item your target is holding. Make a Strength attack roll against the higher of your target's Strength DC or Agility DC.
+  critical-success: You knock the item out of the target's grasp. It falls to the ground in a space of your choice within 15 feet of your target.
+  success: You knock the item out of the target's grasp. It falls to the ground in the target's space.
 
 Escape:
   type: 1-Action
@@ -35,32 +28,32 @@ Grapple:
   tags:
     requirements: You have at least one free hand
     target: One creature you can reach
+    duration: Until the end of your next turn, you move, or your opponent succeeds on an {Escape}
   effect:
     Make a Strength attack roll against your target's Strength DC.
-  critical-success: Your opponent is {restrained} until the end of your next turn, unless you move or your opponent succeeds on an {Escape}
-  success: Your opponent is {grabbed} until the end of your next turn, unless you move or your opponent succeeds on an {Escape}
+  critical-success: Your target is {restrained}
+  success: Your target is {grabbed}
 
 Help:
   type: 1-Action
   effect:
     You try to help your ally with a task. The task but be something you could reasonably help with, must involve a die roll, and must be completed before the start of your next turn. You must explain to the GM exactly how you're trying to help, and they determine whether you can Aid your ally. Attempt a die roll (of a type decided by the GM) against DC 20.
-  critical-success: You grant your ally a bonus to the roll equal to your Prof
-  success: You grant your ally a +1 bonus to the roll
-  critical-failure: Your ally takes a -1 penalty to the roll
+  success: Your ally has advantage on the roll
+  critical-failure: Your ally has disadvantage on the roll
 
 Interact:
   type: Free
   traits: [Manipulate]
-  effect:
-    You use your hand or hands to manipulate an object or the terrain. You can grab an unattended or stored object, open a door, or produce some similar effect. You might have to attempt a die roll to determine if your Interact power was successful.
+  effect: |
+    You use your hand or hands to manipulate an object or the terrain. You draw or stow any number of items that are secured in easily accessible locations, such as a weapon in its holster or a potion in a belt pouch. Alternatively, you can grab an unattended or stored object, open a door, or produce some similar effect. If you're interacting with the external world, you might have to attempt a die roll to determine if your Interact power was successful.
 
 Interrupt:
   type: Reaction
   tags:
     trigger: A creature ends its turn
-    requirements: That creature used an [[Attack]] power against you on its turn, and you haven't taken a turn yet this round
+    requirements: That creature targeted you with an [[Attack]] power on its turn, you haven't taken a turn yet this round, and you are not surprised
   effect:
-    You interrupt the normal turn order. Instead of the other creature deciding who takes the next turn, you take the next turn.
+    You interrupt the normal turn order. Instead of the triggering creature deciding who takes the next turn, you take the next turn.
 
 Point Out:
   type: Free
@@ -69,14 +62,6 @@ Point Out:
     requirements: A creature you can see is hidden to one or more of your allies
   effect:
     You indicate a creature that you can see to one or more allies, gesturing in a direction and describing the distance verbally. The target is no longer hidden to your allies.
-
-Ready:
-  type: 1-Action
-  traits: [Concentrate]
-  effect: |
-    You prepare to use an action that will occur outside your turn. Choose a single {% icon 1-Action %} power you can use, and designate a trigger. If the trigger occurs before the start of your turn, you can use the chosen power as a reaction.
-
-    If you have MAP and your readied power is an [[Attack]], your readied power takes the MAP you had at the end of your turn.
 
 Repeat:
   type: 1-Action
@@ -87,11 +72,13 @@ Repeat:
 
 Seek:
   type: 1-Action
-  traits: [Concentrate, Secret]
+  traits: [Concentrate]
+  tags:
+    area: A 15-foot burst you can see
+    target: All hidden creatures or objects in the area
   effect:
-    You scan an area for signs of creatures or objects. If precision is necessary, select a 15-foot burst within line of sight. The GM attempts a single secret {Perception} roll for you can compares the result to the {Stealth} DCs of any hidden creatures or objects in the area.
-  success:
-    You observe the creature or object, making it no longer hidden to you
+    Make a {Perception} roll against your target's {Stealth} DC.
+  success: Your target is no longer hidden to you
 
 Shove:
   type: 1-Action
@@ -99,15 +86,15 @@ Shove:
   tags:
     target: One creature you can reach
   effect:
-    Make a Strength attack roll against your target's Strength DC.
-  critical-success: You push your opponent up to 10 feet away from you.
-  success: You push your opponent back 5 feet.
+    Make a Strength attack roll against the higher of your target's Strength DC or Agility DC.
+  critical-success: You push your target up to 10 feet away from you
+  success: You push your target back 5 feet
 
 Stride:
   type: Free
   traits: [Move]
   effect:
-    You move to an adjacent zone. If you're moving across especially difficult terrain, the GM might ask you make a die roll to determine if your Stride action was successful.
+    Move a distance up to your Speed. If you move across extremely difficult or hazardous terrain, the GM might ask you make a die roll to determine if your Stride power was successful.
 
 Strike:
   type: 1-Action
@@ -133,5 +120,5 @@ Trip:
   tags:
     target: One creature you can reach
   effect:
-    Make a Strength attack roll against your target's Agility DC.
+    Make a Strength attack roll against the higher of your target's Strength DC or Agility DC.
   success: The target falls and lands {prone}

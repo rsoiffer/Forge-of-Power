@@ -130,7 +130,7 @@ Time Stop:
 Augury:
   tier: Novice
   type: 1-Action
-  traits: [Prediction]
+  traits: [Divination]
   effect: |
     You gain a vague glimpse of the future. When you cast this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveals the GM's best guess among the following outcomes:
 
@@ -174,7 +174,7 @@ Portent:
 Clairvoyance:
   tier: Veteran
   type: 1-Action
-  traits: [Scrying, Spell]
+  traits: [Divination, Spell]
   tags:
     cost: 4 Mana
     range: 500 feet
@@ -185,7 +185,7 @@ Clairvoyance:
 Read Omens:
   tier: Veteran
   type: 1-Action
-  traits: [Prediction, Spell]
+  traits: [Divination, Spell]
   tags:
     cost: 4 Mana
   effect:
@@ -202,7 +202,7 @@ Greater Portent:
 True Seeing:
   tier: Master
   type: 1-Action
-  traits: [Revelation, Spell]
+  traits: [Divination, Spell]
   tags:
     duration: 10 minutes
   effect:
@@ -211,7 +211,7 @@ True Seeing:
 Foresight:
   tier: Epic
   type: 1-Action
-  traits: [Mental, Prediction, Spell]
+  traits: [Divination, Mental, Spell]
   tags:
     cost: 9 Mana
     duration: 1 hour

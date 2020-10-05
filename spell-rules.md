@@ -9,19 +9,15 @@ Following are more advanced rules related to spells.
 
 ## Casting Spells
 
-A power with the [[Spell]] trait is called a **spell**. All spells implicitly have the [[Concentrate]] and [[Manipulate]] traits. Using such a power is called **casting** the spell. Casting a spell requires speaking a command phrase and making hand gestures, which usually make it obvious that you are casting a spell.
+A power with the [[Spell]] trait is called a **spell**. Using such a power is called **casting** the spell. Casting a spell requires speaking a command phrase and making hand gestures, which usually make it obvious that you are casting a spell. All spells implicitly have the [[Concentrate]] and [[Manipulate]] traits.
 
 Casting spells requires an **arcane focus**, which is a handheld item you use to channel your magic. You can meditate or focus for 1 hour to designate an item as your arcane focus. Bonding to a new arcane focus severs your connection with your previous focus. You can pick any item as your arcane focus - a staff, a book, a crystal gem, a sword, or so on. You must hold your arcane focus in one hand while casting a spell or using the {Sustain} power.
 
-## Spell Properties
+## Mana
+
+All characters that can cast spells have a Mana pool that represents how much magical energy they have available. Your Mana pool stores a number of points, up to a maximum of your Mana stat. When you pay Mana to cast a spell, you must subtract the amount paid from your Mana pool. Your Mana pool can never go below 0. Your [arcane background](spell-rules.html#arcane-backgrounds) determines your Mana stat and describes when your Mana pool replenishes.
 
 All spells have a **cost** in Mana. You must pay this amount of Mana when you cast the spell. If you don't have enough Mana, you can't cast the spell. Some effects reduce the cost of a spell. You must always spend at least 1 Mana when you cast a spell, or at least 0 Mana if the spell has the [[Cantrip]] trait.
-
-Some spells have a **range** in feet. If the spell doesn't list a target or an area, it targets one creature you can see within range.
-
-Some spells have an **area**. If the spell lists a range, the area is centered on a point you can see within range, otherwise the area is centered on you. If the spell doesn't list a target, it targets all creatures in the area.
-
-Some spells have a **duration**. When the duration ends, the spell's effect completely ends. The world returns to its normal state, as if the spell hadn't been cast. Any permanent changes the spell made to the world, such as inflicting or healing damage, don't disappear when the spell ends. You can't end an ongoing spell early unless it specifies that in its duration.
 
 ## Heightening Spells
 
@@ -39,7 +35,7 @@ Trappings shouldn't change how a spell functions in normal circumstances. The GM
 
 ## Arcane Backgrounds
 
-When you first reach Novice tier in any power school that has spells, you gain one arcane background from the list below. Your arcane background determines your Magic and Mana stats, and gives you unique extra bonuses.
+When you learn your first spell, you choose one arcane background from the list below. Your arcane background determines your Magic and Mana stats, and gives you unique extra bonuses.
 
 ### Cleric
 

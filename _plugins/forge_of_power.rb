@@ -15,7 +15,7 @@ module ForgeOfPower
         end
 
       site.data["powers"] =
-        site.data["power_data"].flat_map do |name, school|
+        site.data["talents"].flat_map do |name, school|
           school.map do |name2, power|
             {name2 => power.merge({"school" => name.capitalize()})}
           end
@@ -33,19 +33,34 @@ module ForgeOfPower
         end
       end
 
-      site.data["trait_to_powers"] = {}
-      for school in site.data["power_data"]
+      site.data["trait_to_talents"] = {}
+      for school in site.data["talents"]
         for power in school[1]
           if power[1]["traits"]
             for t in power[1]["traits"]
-              if !site.data["trait_to_powers"].key?(t)
-                site.data["trait_to_powers"][t] = []
+              if !site.data["trait_to_talents"].key?(t)
+                site.data["trait_to_talents"][t] = []
               end
-              site.data["trait_to_powers"][t] << power[0]
+              site.data["trait_to_talents"][t] << power[0]
             end
           end
         end
       end
+
+      site.data["trait_to_feats"] = {}
+      for feat_type in site.data["feats"]
+        for power in feat_type[1]
+          if power[1]["traits"]
+            for t in power[1]["traits"]
+              if !site.data["trait_to_feats"].key?(t)
+                site.data["trait_to_feats"][t] = []
+              end
+              site.data["trait_to_feats"][t] << power[0]
+            end
+          end
+        end
+      end
+
     end
   end
 end

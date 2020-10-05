@@ -1,0 +1,54 @@
+# Bow
+
+Archer's Eyes:
+  tier: Bow
+  type: Passive
+  traits: [Proficiency]
+  tags:
+    requirements: You are wielding a bow
+    proficiency: +1 to bow Strikes
+  effect:
+    You treat bows as having double their normal range.
+
+Double Shot:
+  tier: Bow
+  type: 1-Action
+  traits: [Proficiency]
+  tags:
+    requirements: You are wielding a bow
+    proficiency: +1 to bow Strikes
+  effect:
+    Make a bow Strike. On a critical hit, make another bow Strike against a different target.
+
+# Staff
+
+Staff Bolt:
+  tier: Staff
+  type: 1-Action
+  traits: [Attack, Cantrip, Force, Proficiency, Spell]
+  tags:
+    requirements: You are wielding a staff
+    proficiency: +1 to staff Strikes, +1 to spell attacks
+    cost: 0 Mana
+    range: 120 feet
+  effect: |
+    Make a Magic attack roll against the target's Defense.
+
+    If you know a spell with one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Mental]], [[Positive]], [[Shadow]], or [[Sonic]] traits, you can choose to replace the [[Force]] trait on this spell with the other trait.
+  success: Your target takes 1d6 + Magic damage
+
+Staff Burst:
+  tier: Staff
+  type: 1-Action
+  traits: [Attack, Force, Proficiency, Spell]
+  tags:
+    requirements: You are wielding a staff
+    proficiency: +1 to staff Strikes, +1 to spell attacks
+    cost: 1 Mana
+    range: 120 feet
+    area: 5-foot burst
+  effect: |
+    Make a Magic attack roll against the target's Defense.
+
+    If you know a spell with one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Mental]], [[Positive]], [[Shadow]], or [[Sonic]] traits, you can choose to replace the [[Force]] trait on this spell with the other trait.
+  success: Your target takes 1d6 + Magic damage and is {slowed} until the start of your next turn

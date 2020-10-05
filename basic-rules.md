@@ -44,7 +44,7 @@ To make the die roll, roll 1d20 and add the bonus, and note the result. Your res
 
 ## Difficulty Classes
 
-The DC (Difficulty Class) of a die roll is usually determined by the GM based on how hard the task seems. The GM is encouraged to used the table below to help them decide the DC. Some abilities call for a die roll against a specific DC. For example, the {Strike} power calls for a die roll where the DC is your target's AC.
+The DC (Difficulty Class) of a die roll is usually determined by the GM based on how hard the task seems. The GM is encouraged to used the table below to help them decide the DC. Some abilities call for a die roll against a specific DC. For example, the {Strike} power calls for a die roll where the DC is your target's Defense stat.
 
 ### Sample Difficulties
 <table>
@@ -93,16 +93,12 @@ Some effects let you **reroll** a die roll after it's made. When you do, repeat 
 
 ## Turns in Combat
 
-Characters take turns during combat, as who acts first can be very important. When a fight breaks out, everyone involved makes an Initiative roll. Whoever gets the highest result takes the first turn. On your turn, you can use one {% icon 1-Action %} power and any number of {% icon Free %} powers. After you use a {% icon Free %} power once, it counts as a {% icon 1-Action %} power for you for the rest of your turn.
+Characters take turns during combat, as who acts first can be very important. When a fight breaks out, everyone involved makes an Initiative roll. Whoever gets the highest result takes the first turn. On your turn, you can use one {% icon 1-Action %} power and any number of {% icon Free %} powers. You can't use the same {% icon Free %} power more than once on the same turn.
 
-At the end of your turn, you pick who takes the next turn, ally or enemy. If you attacked a creature, that creature can choose to {Interrupt} your choice and take the next turn instead. No matter what, no one can take multiple turns in the same round. The round ends once everyone has taken a turn. The person who took the last turn in the round chooses who starts the next round.
-
-## Movement and Zones
-
-When the group needs a precise map of an area, usually for combat, the GM divides the game world into **zones**. A zone is an abstract area, usually about 30 feet on a side. Every character is in a zone, and multiple character can be in the same zone. You can use the {Stride} power to move between zones.
+At the end of your turn, you pick who takes the next turn, ally or enemy. If you attacked a creature, that creature can choose to {Interrupt} your choice and take the next turn instead. No matter what, no one can take multiple turns in the same round. The round ends once everyone has taken a turn. The person who took the last turn in the round chooses who starts the next round. If you took the last turn in a round, you can choose yourself to go first the next round.
 
 ## Attacks
 
-Some powers represent offensive effects designed to hurt or impede enemies. These are called [[Attack]] powers, or just **attacks** for short. Attacks always involve a die roll, called the **attack roll**. The attack roll specifies which of the target's scores to use as the DC, usually Defense or an attribute. The attacker makes this die roll only once, no matter how many targets the attack has. Thus, an attack can hit one target but miss another.
+Some powers represent offensive effects designed to hurt or impede enemies. These are called [[Attack]] powers, or just **attacks** for short. Attacks always involve a die roll, called the **attack roll**. The attacker makes the the attack roll only once, no matter how many targets the attack has. The attack roll specifies which of the target's stat to use as the DC, usually Defense or an attribute DC. Since each target can have a different value for this DC, an attack can hit one target but miss another.
 
-For example, the {Strike} power is an attack. Imagine that Alice uses the {Strike} power, slashing at Bob with a longsword. Alice makes a Strength attack roll against Bob's Defense. If the result of Alice's attack roll is equal to or higher than Bob's Defense score, then Alice's attack is a success, and deals damage as described in the {Strike} power.
+For example, the {Strike} power is an attack. Imagine that Alice uses the {Strike} power, slashing at Bob with a sword. Alice makes a Strength attack roll against Bob's Defense. If the result of Alice's attack roll is equal to or higher than Bob's Defense score, then Alice's attack is a success, and deals damage as described in the {Strike} power.

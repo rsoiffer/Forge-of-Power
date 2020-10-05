@@ -3,8 +3,10 @@ main:
     url: /basic-rules.html
   - title: Character
     url: /character-creation.html
-  - title: Powers
+  - title: Talents
     url: /power-schools.html
+  - title: Feats
+    url: /feats-general.html
 
 rules:
   - title: Basic Rules
@@ -17,6 +19,8 @@ rules:
     url: /narrative-rules.html
   - title: Spell Rules
     url: /spell-rules.html
+  - title: Basic Powers
+    url: /basic-powers.html
   - title: Conditions
     url: /conditions.html
   - title: Traits
@@ -29,17 +33,25 @@ character:
     url: /ancestries.html
   - title: Attributes
     url: /attributes.html
+  - title: Equipment
+    url: /equipment.html
   - title: Skills
     url: /skills.html
-  - title: Feats
-    url: /feats.html
 
 powers:
   - title: Power Schools
     url: /power-schools.html
-  - title: Basic Powers
-    url: /basic-powers.html
-  - title: All Powers
+  - title: All Talents
     url: /all-powers.html
-  - title: Power Counts
+  - title: Talent Counts
     url: /power-counts.html
+
+feats:
+  - title: General Feats
+    url: /feats-general.html
+  - title: Ancestry Feats
+    url: /feats-ancestry.html
+  - title: Combat Feats
+    url: /feats-combat.html
+  - title: Skill Feats
+    url: /feats-skill.html

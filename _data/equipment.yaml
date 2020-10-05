@@ -1,0 +1,79 @@
+# Flavor: simple, generic, hard to master
+# Mechanics: long range, rapid shots
+Bow:
+  brief: A classic bow and arrow for long-range sniping
+  traits: [Two-Handed]
+  effect: |
+    A bow is a ranged weapon that deals 1d8 [[Piercing]] damage and has a range of 100 feet.
+    
+    Whenever you make a bow Strike, you can choose to take disadvantage on the attack roll to multiply the range by 4.
+
+# Flavor: complicated, good for low-skill users
+# Mechanics: accurate, single powerful shots
+Crossbow:
+  brief: A mechanical crossbow that fires slow but powerful shots
+  traits: [Two-Handed]
+  effect: |
+    A crossbow is a ranged weapon that deals 1d6 [[Piercing]] damage and has a range of 150 feet.
+    
+    Whenever you make a crossbow Strike, you can choose to take disadvantage on the attack roll to multiply the range by 2. While wielding a crossbow, you can use the **Heavy Draw** power.
+
+    Heavy Draw {% icon 1-Action %} [[Manipulate]]
+    : You ready your crossbow to fire a powerful shot. Your next Strike with this crossbow within 1 minute deals 2d12 damage instead of 1d6 damage.
+  fluff: The crossbows of this world have two triggers, one for fast shots and one for the powerful heavy draw shots.
+
+# Flavor: the weapon of rogues, not warriors
+# Mechanics: easy to hide, quick to draw, throwable
+Dagger:
+  brief: A small bladed weapon that's cheap and easy to conceal
+  traits: [Finesse, One-Handed]
+  effect: |
+    A dagger is a melee weapon that deals 1d6 [[Piercing]] damage.
+
+    You have advantage on die rolls to conceal daggers. You can use the **Quickdraw** power.
+
+    Quickdraw {% icon Free %}
+    : You draw or stow any number of daggers that are secured in easily accessible locations, such as on a belt or a hidden sheath.
+
+Focus:
+  brief: A holy symbol or personal focus that helps focus spells
+  traits: [One-Handed]
+  effect: |
+    While wielding a focus, you have a +2 bonus to your Spirit DC.
+
+# Flavor: slow but powerful, very dangerous
+# Mechanics: exploding die, knockback
+Heavy Weapon:
+  brief: A two-handed greatsword, maul, or axe for heavy strikes
+  traits: [Two-Handed]
+  effect: |
+    A heavy weapon is a melee weapon that deals 1d12 damage. Depending on the weapon, it deals either [[Bludgeoning]] or [[Slashing]] damage.
+
+    When you roll a 12 on the damage die on a heavy weapon Strike, add 12 damage and reroll the die. Continue until the die doesn't roll a 12.
+
+Scepter:
+  brief: A small rod, mace, or wand useful for casting spells
+  traits: [One-Handed]
+  effect: |
+    A scepter is a melee weapon that deals 1d4 [[Bludgeoning]] damage.
+
+    While wielding a scepter, you can use the **Reliable Casting** power.
+
+    Reliable Casting {% icon Reaction %} [[Daily]] [[Fortune]]
+    : When you roll a 1 on the die for a Magic roll, you can reroll the die. You must use the new roll.
+
+Staff:
+  brief: A short staff or quarterstaff, perfect for channeling spells
+  traits: [One-Handed]
+  effect: |
+    A staff is a melee weapon that deals 1d6 [[Bludgeoning]] damage.
+    
+    While you are wielding a staff in two hands, the staff's damage increases to 1d8, and you have a +1 bonus to Defense.
+
+Throwing Weapon:
+  brief: A throwing axe, bola, or other projectile weapon
+  traits: [One-Handed]
+  effect: |
+    A throwing weapon is a melee weapon that deals 1d6 damage. Depending on the weapon, it deals either [[Bludgeoning]] or [[Slashing]] damage.
+    
+    A throwing weapon can also be used as a ranged weapon that deals 1d6 damage and has a range of 40 feet. A ranged Strike with a throwing weapon uses Strength for the attack roll instead of Agility. Whenever you make a ranged throwing weapon Strike, you can choose to take disadvantage on the attack roll to multiply the range by 2.

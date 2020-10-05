@@ -15,9 +15,9 @@ In this step, you should develop these ideas more, working out the details of wh
 
 ## Step 2. Determine Attribute Scores
 
-The next step is to determine your character's attributes. Characters in Forge of Power have 4 attributes: Strength, Agility, Intellect, and Spirit. Your score in each attribute is a single number, which generally ranges from -1 to +5. The average value of an attribute for a normal human is +0. See the {% ref Attributes %} page for a description of each attribute.
+The next step is to determine your character's attributes. Characters in Forge of Power have 4 attributes: Strength, Agility, Intellect, and Spirit. Your score in each attribute is a single number, which can range from -2 to +10. The average value of an attribute for a normal human is +0. See the {% ref Attributes %} page for a description of each attribute.
 
-Your starting score in each attribute is a number between -1 and +3. You can choose any starting scores you want such that your scores sum to a total to 4. Write the final values of your attributes on your character sheet.
+Your starting score in each attribute is a number between -1 and +3. You can choose any starting scores you want such that your scores sum to a total to 4. For example, you could start with +3 Strength, -1 Agility, +2 Intellect, and +0 Spirit, since 3 - 1 + 2 + 0 = 4. Write your score in each attribute on your character sheet.
 
 ## Step 3. Choose your Skills
 

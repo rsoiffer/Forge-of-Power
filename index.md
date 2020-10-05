@@ -7,9 +7,9 @@ Hello, and welcome to the core rulebook of Forge of Power! I assume that if you�
 
 ## Versatile Character Creation
 
-Forge of Power tries to maximize the number of options available in character creation. Unlike D&D or Pathfinder, characters in Forge of Power do not choose a single class that determines what your character does. Instead, whenever a character levels up, they can choose a **power**, a special ability that makes the character much stronger in one way. Powers are organized by theme into collections of related powers, called **power schools**. Characters are free to mix and match powers from different power schools, letting you pick the perfect combination of powers to realize your character’s theme.
+Forge of Power tries to maximize the number of options available in character creation. Unlike D&D or Pathfinder, characters in Forge of Power do not choose a single class that determines what your character does. Instead, whenever a character levels up, they can choose a **talent**, a special ability that makes the character much stronger in one way. Talents are organized by theme into collections of related talents, called **talent schools**. Characters are free to mix and match talents from different talent schools, letting you pick the perfect combination of talents to realize your character’s theme.
 
-To expand your options even further, power schools have minor abilities called ribbons, which make characters more flavorful or thematic, without greatly affecting your combat power. Ribbons separate out combat strength from roleplaying abilities, making it so every character always has unique strengths to offer both in combat and in social interactions.
+To expand your options even further, talent schools have minor abilities called ribbons, which make characters more flavorful or thematic, without greatly affecting your combat power. Ribbons separate out combat strength from roleplaying abilities, making it so every character always has unique strengths to offer both in combat and in social interactions.
 
 ## Tactical Combat
 

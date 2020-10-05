@@ -216,7 +216,7 @@ Confusion:
 Mind Reading:
   tier: Veteran
   type: 1-Action
-  traits: [Detection, Mental, Spell]
+  traits: [Divination, Mental, Spell]
   tags:
     cost: 3 Mana
     range: 30 feet

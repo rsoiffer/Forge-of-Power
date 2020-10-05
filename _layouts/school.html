@@ -36,56 +36,6 @@ sidebar:
 
 {% for power2 in site.data.powers %}
   {% if power2[1].school == page.data[0] %}
-
-    {% assign power = power2[1] %}
-    <h2 id="{{ power2[0] | slugify }}">
-      {{ power2[0] }}
-      {% unless power.type == "Passive" %}
-        {% icon {{ power.type }} %}
-      {% endunless %}
-      <span class="alignright">{{ power.tier }}</span>
-    </h2>
-
-    {% if power.traits %}
-      <ul class="traits">
-        {% for trait in power.traits %}
-          {% trait {{ trait }} %}
-        {% endfor %}
-      </ul>
-    {% endif %}
-
-    {% if power.tags %}
-      <dl class="tags">
-        {% for tag in power.tags %}
-          <dt>{{ tag[0] | capitalize }}</dt>
-          <dd>{{ tag[1] | process_inline }}</dd>
-        {% endfor %}
-      </dl>
-      <hr>
-    {% endif %}
-
-    {{ power.effect | process }}
-
-    {% if power.critical-success or power.success or power.failure or power.critical-failure %}
-      <dl class="tags">
-        {% if power.critical-success %}
-          <dt>Critical Success</dt>
-          <dd>{{ power.critical-success | process_inline }}</dd>
-        {% endif %}
-        {% if power.success %}
-          <dt>Success</dt>
-          <dd>{{ power.success | process_inline }}</dd>
-        {% endif %}
-        {% if power.failure %}
-          <dt>Failure</dt>
-          <dd>{{ power.failure | process_inline }}</dd>
-        {% endif %}
-        {% if power.critical-failure %}
-          <dt>Critical Failure</dt>
-          <dd>{{ power.critical-failure | process_inline }}</dd>
-        {% endif %}
-      </dl>
-    {% endif %}
-
+    {% include power.html power=power2 %}
   {% endif %}
 {% endfor %}

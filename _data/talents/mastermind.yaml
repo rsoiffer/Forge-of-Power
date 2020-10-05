@@ -118,7 +118,7 @@ Soothing Ballad:
   effect: |
     You draw upon your muse to soothe your allies. Choose one of the following three effects:
     * Disrupt all [[Fear]] effects on the targets
-    * Disrupt all effects causing the {paralyzed} condition on the targets
+    * Disrupt all effects causing the {stunned} condition on the targets
     * Restore 7d8 HP to the targets
 
 Fatal Performance:

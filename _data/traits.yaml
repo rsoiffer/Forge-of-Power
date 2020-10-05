@@ -4,6 +4,8 @@ Attack: A power with this trait is called an attack. See [here](basic-rules.html
 
 Auditory: Auditory effects rely on sound. An [[Auditory]] effect can only affect creatures that can hear it.
 
+Bludgeoning: Effects with this trait deal damage by crushing, smashing, or flattening targets.
+
 Cantrip: Spells with this trait can be cast for 0 Mana. Powers with this trait always have the [[Spell]] trait as well.
 
 Cold: Effects with this trait deal cold damage.
@@ -16,7 +18,7 @@ Daily: Once you use a power with this trait, you cannot use that power again unt
 
 Death: An effect with this trait kills you immediately if it reduces you to 0 HP.
 
-Detection: Effects with this trait attempt to determine the presence or location of a creature or object.
+Divination: Effects with this trait reveal knowledge about a creature, object, or location. Effects with this trait might also determine what is likely to happen in the near future. Predictions of the future are never guaranteed to give correct results, only guesses or possible outcomes.
 
 Electricity: Effects with this trait deal electricity damage.
 
@@ -25,6 +27,8 @@ Emotion: This effect alters a creature's emotions. Effects with this trait alway
 Encounter: Once you use a power with this trait, you cannot use that power again until you complete a 5-minute rest.
 
 Fear: This effect evokes the emotion of fear. Effects with this trait always have the [[Mental]] and [[Emotion]] traits as well.
+
+Finesse: A melee weapon with this trait is light, quick, and precise. A creature making a {Strike} with a [[Finesse]] weapon can use either Strength or Agility for the attack roll.
 
 Fire: Effects with this trait deal fire damage or either conjure or manipulate fire.
 
@@ -50,25 +54,49 @@ Misfortune: An effect with this trait detrimentally alters how you roll your dic
 
 Move: A power with this trait involves moving from one space to another.
 
+One-Handed: An item with this trait requires one hand to wield. You cannot use this hand for anything else while wielding this item.
+
 Open: These maneuvers work only as the first salvo on your turn. You can use an [[Open]] power only if you haven't used a power with the [[Attack]] or [[Open]] trait yet this turn.
+
+Piercing: Effects with this trait deal damage by impaling, stabbing, or needling targets.
 
 Polymorph: These effects transform the target into a new form. A target can't be under the effect of more than one [[Polymorph]] effect at a time, later [[Polymorph]] effects disrupt existing ones. While you are polymorphed, your gear is absorbed into you; the passive abilities of your gear still function, but you can't activate or use any items.
 
 Positive: Effects with this trait heal living creatures with positive energy, deal radiant damage to undead, or manipulate positive energy.
 
-Prediction: Effects with this trait determine what is likely to happen in the near future. They are never guaranteed to give correct results, only guesses or possible outcomes.
-
 Press: Powers with this trait allow you to follow up earlier attacks. A power with the [[Press]] trait can be used only if you are currently affected by MAP.
 
-Revelation: Effects with this trait see things as they truly are.
+Proficiency: |
+  Powers with this trait give you a special **Proficiency** bonus to a stat. This bonus applies as long as you meet the requirements of the power, ignoring the power's cost, duration, and other tags. This bonus only stacks with other [[Proficiency]] powers up to a certain amount. The table below lists the maximum number of [[Proficiency]] powers that can give you a bonus to a die roll:
+
+  <table>
+    <tr>
+      <th>Character Level</th>
+      <th>Max Stacking</th>
+    </tr>
+    <tr>
+      <td>4 or less</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>5 ... 10</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>11 ... 16</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>17 or more</td>
+      <td>4</td>
+    </tr>
+  </table>
 
 Ritual: A ritual spell can be cast through a long, complex ritual to save mana. The Mana cost of the spell is reduced by 1 for every 10 minutes you spend performing the ritual. This can reduce the Mana cost of the spell to 0. Powers with this trait always have the [[Spell]] trait as well.
 
-Scrying: A scrying effect lets you see, hear, or otherwise get sensory information from a distance using a sensor or apparatus, rather than your own eyes and ears.
-
-Secret: The GM makes the die roll for this ability in secret.
-
 Shadow: This magic involves shadows.
+
+Slashing: Effects with this trait deal damage by cutting, slicing, or hacking targets.
 
 Sonic: An effect with this trait functions only if it makes sound, meaning it has no effect in an area of silence or in a vacuum. A [[Sonic]] effect might deal sonic damage.
 
@@ -77,5 +105,7 @@ Spell: A power with this trait is called a spell. See [here](spell-rules.html) f
 Stance: A stance is a general combat strategy that you enter by using a power with the [[Stance]] trait, and that you remain in for some time. A stance lasts until you fall {unconscious}, until its requirements (if any) are violated, until the encounter ends, or until you enter a new stance, whichever comes first. You can be in a stance only during combat.
 
 Teleportation: Effects with this trait allow you to instantaneously move from one point in space to another. Teleportation does not usually trigger reactions based on movement.
+
+Two-Handed: An item with this trait requires two hands to wield. You cannot use these hands for anything else while wielding this item.
 
 Visual: An effect with this trait can affect only creatures that can see it.
