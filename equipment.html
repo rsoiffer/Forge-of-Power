@@ -5,24 +5,50 @@ sidebar:
   nav: character
 ---
 
-{% assign powers = site.data.equipment %}
+{% assign items = site.data.equipment.apparel %}
+
+<h2 id="apparel">Apparel</h2>
 
 <table>
   <tr>
     <th>Name</th>
     <th>Description</th>
   </tr>
-  {% for power in powers %}
+  {% for item in items %}
     <tr>
       <td>
-        <a href="basic-powers.html#{{ power[0] | slugify }}">{{ power[0] }}</a>
+        <a href="equipment.html#{{ item[0] | slugify }}">{{ item[0] }}</a>
       </td>
-      <td>{{ power[1].brief | process_inline }}</td>
+      <td>{{ item[1].brief | process_inline }}</td>
     </tr>
   {% endfor %}
 </table>
 
+{% for item2 in items %}
+  {% include item.html item=item2 %}
+{% endfor %}
 
-{% for power2 in powers %}
-  {% include power.html power=power2 %}
+
+
+{% assign items = site.data.equipment.weapons %}
+
+<h2 id="weapons">Weapons</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  {% for item in items %}
+    <tr>
+      <td>
+        <a href="equipment.html#{{ item[0] | slugify }}">{{ item[0] }}</a>
+      </td>
+      <td>{{ item[1].brief | process_inline }}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+{% for item2 in items %}
+  {% include item.html item=item2 %}
 {% endfor %}

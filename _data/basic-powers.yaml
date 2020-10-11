@@ -101,10 +101,12 @@ Strike:
   traits: [Attack]
   tags:
     target: One creature within your reach (for a melee attack) or within your weapon's range (for a ranged attack)
-  effect:
-    Make an attack roll against the target's Defense. The attack roll is a Strength roll for melee weapons or an Agility roll for ranged weapons. Melee weapons with the finesse property let you use Agility instead of Strength for the attack roll.
-  critical-success: You deal damage equal to 2 * the weapon's Damage + the attack roll's attribute
-  success: You deal damage equal to the weapon's Damage + the attack roll's attribute
+  effect: |
+    Make an attack roll against the target's Defense. The attack roll is a Strength roll for melee weapons or an Agility roll for ranged weapons. Weapons with the [[Finesse]] trait let you choose either Strength or Agility for the attack roll.
+
+    When you make a ranged Strike, you can optionally choose to make a long-range Strike to try to hit a distant target. If you do, you have disadvantage on the attack roll, but your Strike has double the range.
+  critical-success: You deal damage equal to 2 * the weapon's base damage + the attack roll's attribute
+  success: You deal damage equal to the weapon's base damage + the attack roll's attribute
 
 Sustain:
   type: Free

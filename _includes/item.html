@@ -1,0 +1,20 @@
+{% assign item_name = include.item[0] %}
+{% assign item_body = include.item[1] %}
+
+<h3 id="{{ item_name | slugify }}">
+    {{ item_name }}
+</h3>
+
+{% if item_body.traits %}
+    <ul class="traits">
+    {% for trait in item_body.traits %}
+        {% trait {{ trait }} %}
+    {% endfor %}
+    </ul>
+{% endif %}
+
+{{ item_body.effect | process }}
+
+{% if item_body.fluff %}
+<p><i>{{ item_body.fluff | process_inline }}</i></p>
+{% endif %}

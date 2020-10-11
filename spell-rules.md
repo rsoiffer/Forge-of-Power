@@ -37,6 +37,26 @@ Trappings shouldn't change how a spell functions in normal circumstances. The GM
 
 When you learn your first spell, you choose one arcane background from the list below. Your arcane background determines your Magic and Mana stats, and gives you unique extra bonuses.
 
+### Artificer
+
+You cast magic spells through building items with magical effects.
+
+***Magic.*** Your Magic stat equals your Intellect.
+
+***Mana.*** Your Mana stat equals 4 + 2 * the number of spells you know, not counting ribbons. Your Mana pool replenishes when you complete an 8-hour rest.
+
+***Bonuses.*** TODO
+
+### Bard
+
+You cast magic spells through performance, stories, or creative art.
+
+***Magic.*** Your Magic stat equals your Spirit.
+
+***Mana.*** Your Mana stat equals 4 + 2 * the number of spells you know, not counting ribbons. Your Mana pool replenishes when you complete an 8-hour rest.
+
+***Bonuses.*** TODO
+
 ### Cleric
 
 You cast magic spells through faith and devotion to your religion.

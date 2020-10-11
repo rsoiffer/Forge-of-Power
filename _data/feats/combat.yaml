@@ -3,20 +3,22 @@
 Archer's Eyes:
   tier: Bow
   type: Passive
+  brief: You can see far away and make incredibly distant shots
   traits: [Proficiency]
   tags:
     requirements: You are wielding a bow
-    proficiency: +1 to bow Strikes
+    proficiency: +1 damage to bow Strikes
   effect:
     You treat bows as having double their normal range.
 
 Double Shot:
   tier: Bow
   type: 1-Action
+  brief: Fire two arrows in quick succession, with a chance of hitting two targets
   traits: [Proficiency]
   tags:
     requirements: You are wielding a bow
-    proficiency: +1 to bow Strikes
+    proficiency: +1 damage to bow Strikes
   effect:
     Make a bow Strike. On a critical hit, make another bow Strike against a different target.
 
@@ -28,7 +30,7 @@ Staff Bolt:
   traits: [Attack, Cantrip, Force, Proficiency, Spell]
   tags:
     requirements: You are wielding a staff
-    proficiency: +1 to staff Strikes, +1 to spell attacks
+    proficiency: +1 damage to staff Strikes, +1 damage to spell attacks
     cost: 0 Mana
     range: 120 feet
   effect: |
@@ -43,7 +45,7 @@ Staff Burst:
   traits: [Attack, Force, Proficiency, Spell]
   tags:
     requirements: You are wielding a staff
-    proficiency: +1 to staff Strikes, +1 to spell attacks
+    proficiency: +1 damage to staff Strikes, +1 damage to spell attacks
     cost: 1 Mana
     range: 120 feet
     area: 5-foot burst

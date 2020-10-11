@@ -116,9 +116,7 @@ You're now almost finished making your character! The only game mechanics task r
 
 ***Health.*** Your Health measures how much damage you can take before falling unconscious. Your Health is equal to 20 + Character Level + 4 * Strength.
 
-***Defense.*** Your Defense measures how well you can avoid, dodge, or parry physical attacks. Your Defense is equal to 8 + Agility.
-
-***Perception.*** Your Perception measures how well you can see, hear, or sense things. Your Perception is equal to your Intellect.
+***Defense.*** Your Defense measures how well you can avoid, dodge, or parry physical attacks. Your Defense is equal to 8 + an attribute determined by your [apparel](equipment.html#apparel).
 
 ***Stat DC.*** You have a DC for each of your attributes and your Perception. This measures how well you can defend against effects targeting that stat. Your DC for a given stat is equal to 10 + the stat.
 
