@@ -20,7 +20,7 @@ sidebar:
     {% if power[1].school == page.data[0] %}
       <tr>
         <td>
-          <a href="{{page.data[0] | slugify}}.html#{{ power[0] | slugify }}">{{ power[0] }}</a>
+          <a href="#{{ power[0] | slugify }}">{{ power[0] }}</a>
         </td>
         <td>{{ power[1].tier }}</td>
         <td>

@@ -14,7 +14,7 @@ sidebar:
   {% for power in site.data.basic-powers %}
     <tr>
       <td>
-        <a href="basic-powers.html#{{ power[0] | slugify }}">{{ power[0] }}</a>
+        <a href="#{{ power[0] | slugify }}">{{ power[0] }}</a>
       </td>
       <td>
         {% unless power[1].type == "Passive" %}

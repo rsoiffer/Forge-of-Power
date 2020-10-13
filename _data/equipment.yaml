@@ -108,7 +108,7 @@ weapons:
       While wielding a shield, you calculate your Defense with Strength, no matter what apparel you're wearing. While wielding a shield and wearing heavy armor, you have a +1 bonus to Defense.
 
   Staff:
-    brief: A short staff or quarterstaff, perfect for channeling spells
+    brief: A walking staff or quarterstaff, perfect for channeling spells
     traits: [One-Handed]
     effect: |
       A staff is a melee weapon that deals 1d6 [[Bludgeoning]] base damage.

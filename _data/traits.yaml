@@ -1,14 +1,14 @@
-Acid: Effects with this trait deal acid damage.
+Acid: Effects with this trait deal acid damage. Effects with this trait implicitly have the [[Elemental]] trait as well.
 
 Attack: A power with this trait is called an attack. See [here](basic-rules.html#attacks) for more information.
 
 Auditory: Auditory effects rely on sound. An [[Auditory]] effect can only affect creatures that can hear it.
 
-Bludgeoning: Effects with this trait deal damage by crushing, smashing, or flattening targets.
+Bludgeoning: Effects with this trait deal damage by crushing, smashing, or flattening targets. Effects with this trait implicitly have the [[Physical]] trait as well.
 
 Cantrip: Spells with this trait can be cast for 0 Mana. Powers with this trait always have the [[Spell]] trait as well.
 
-Cold: Effects with this trait deal cold damage.
+Cold: Effects with this trait deal cold damage. Effects with this trait implicitly have the [[Elemental]] trait as well.
 
 Composition: Powers with this trait involve a type of performance. Depending on what kind of performance you make, the power gains the [[Auditory]] or [[Visual]] traits. You can only have one [[Composition]] power active at a time; if you use a new [[Composition]] power, the previous one ends immediately.
 
@@ -20,7 +20,9 @@ Death: An effect with this trait kills you immediately if it reduces you to 0 HP
 
 Divination: Effects with this trait reveal knowledge about a creature, object, or location. Effects with this trait might also determine what is likely to happen in the near future. Predictions of the future are never guaranteed to give correct results, only guesses or possible outcomes.
 
-Electricity: Effects with this trait deal electricity damage.
+Electricity: Effects with this trait deal electricity damage. Effects with this trait implicitly have the [[Elemental]] trait as well.
+
+Elemental: Effects with this trait deal damage by some kind of interaction with one of the chemical elements or forces that make up the universe.
 
 Emotion: This effect alters a creature's emotions. Effects with this trait always have the [[Mental]] trait as well. Creatures that can't feel emotions are immune to [[Emotion]] effects.
 
@@ -30,7 +32,7 @@ Fear: This effect evokes the emotion of fear. Effects with this trait always hav
 
 Finesse: A melee weapon with this trait is light, quick, and precise. A creature making a {Strike} with a [[Finesse]] weapon can use either Strength or Agility for the attack roll.
 
-Fire: Effects with this trait deal fire damage or either conjure or manipulate fire.
+Fire: Effects with this trait deal fire damage or either conjure or manipulate fire. Effects with this trait implicitly have the [[Elemental]] trait as well.
 
 Flourish: Powers with this trait require too much exertion to perform a large number in a row. You can use only 1 power with the [[Flourish]] trait per turn.
 
@@ -58,7 +60,9 @@ One-Handed: An item with this trait requires one hand to wield. You cannot use t
 
 Open: These maneuvers work only as the first salvo on your turn. You can use an [[Open]] power only if you haven't used a power with the [[Attack]] or [[Open]] trait yet this turn.
 
-Piercing: Effects with this trait deal damage by impaling, stabbing, or needling targets.
+Physical: Effects with this trait deal damage by some kind of collision between physical objects.
+
+Piercing: Effects with this trait deal damage by impaling, stabbing, or needling targets. Effects with this trait implicitly have the [[Physical]] trait as well.
 
 Polymorph: These effects transform the target into a new form. A target can't be under the effect of more than one [[Polymorph]] effect at a time, later [[Polymorph]] effects disrupt existing ones. While you are polymorphed, your gear is absorbed into you; the passive abilities of your gear still function, but you can't activate or use any items.
 
@@ -96,7 +100,7 @@ Ritual: A ritual spell can be cast through a long, complex ritual to save mana. 
 
 Shadow: This magic involves shadows.
 
-Slashing: Effects with this trait deal damage by cutting, slicing, or hacking targets.
+Slashing: Effects with this trait deal damage by cutting, slicing, or hacking targets. Effects with this trait implicitly have the [[Physical]] trait as well.
 
 Sonic: An effect with this trait functions only if it makes sound, meaning it has no effect in an area of silence or in a vacuum. A [[Sonic]] effect might deal sonic damage.
 

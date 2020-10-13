@@ -10,14 +10,16 @@ sidebar:
 <table>
   <tr>
     <th>Name</th>
+    <th>Weapon</th>
     <th>Type</th>
     <th>Description</th>
   </tr>
   {% for power in feats %}
     <tr>
       <td>
-        <a href="basic-powers.html#{{ power[0] | slugify }}">{{ power[0] }}</a>
+        <a href="#{{ power[0] | slugify }}">{{ power[0] }}</a>
       </td>
+      <td>{{ power[1].tier }}</td>
       <td>
         {% unless power[1].type == "Passive" %}
           {% icon {{ power[1].type }} %}
