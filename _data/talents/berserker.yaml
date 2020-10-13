@@ -1,117 +1,178 @@
-Brutish Shove:
+Charge:
   tier: Novice
   type: Free
-  tags:
-    trigger: You hit a creature with a {Strike} with a two-handed melee weapon
-    requirements: The creature is your size or smaller
-  effect:
-    Throwing your weight behind your attack, you hit your opponent hard enough to make them stumble back. You can automatically apply the effects of the {Shove} action (including the critical success effect, if your Strike was a critical hit). If you move to follow the target, your movement doesn't trigger reactions.
-
-Mountain Stance:
-  tier: Novice
-  type: Free
-  traits: [Stance]
-  tags:
-    requirements: You are unarmored and touching the ground
+  brief: You charge aggressively towards an enemy, gaining bonus damage
+  traits: [Encounter]
   effect: |
-    You end the stance of an implacable mountain and strike with the weight of an avalanche. The only Strikes you can make are **falling stone** unarmed attacks. These deal 1d8 bludgeoning damage and have the forceful and unarmed traits.
+    {Stride} in a straight line towards an enemy you can see. If you moved at least 10 feet, your next melee {Strike} against that enemy before the end of this turn deals an extra 1d6 damage on a success.
 
-    While in Mountain Stance, you gain a +2 bonus to Toughness, but you take a -2 penalty to Agility.
+Cleave:
+  tier: Novice
+  type: Reaction
+  brief: You cleave through one foe and into another
+  tags:
+    trigger: Your melee {Strike} reduces a creature to 0 HP, and another foe is adjacent to that creature
+  effect: |
+    You swing clear through one foe and into another. Make a melee {Strike} against the second foe.
+
+Iron Sweep:
+  tier: Novice
+  type: 1-Action
+  brief: You made a wide swing that hits multiple targets at once
+  effect: |
+    Make a melee {Strike}. This strike targets two enemies you can reach that are adjacent to each other.
 
 Power Attack:
   tier: Novice
   type: 1-Action
-  effect:
-    You unleash a particularly powerful attack that clobbers your foe but leaves you a bit unsteady. Make a melee {Strike} at -5 to the attack roll. If this Strike hits, you deal an extra die of weapon damage.
+  brief: You sacrifice the accuracy of your strike for pure power
+  effect: |
+    Make a melee {Strike} with a -5 penalty. If this Strike hits, its base damage is doubled.
 
 Rage:
   tier: Novice
-  type: 1-Action
+  type: Free
   brief: You enter a furious rage, gaining offensive power at the cost of defense
-  traits: [Emotion, Encounter, Mental]
+  traits: [Daily, Emotion, Mental]
   tags:
-    duration:
-      1 minute, until you can't sense any enemies, or until you fall unconscious
+    duration: 1 minute, until you can't sense any enemies, or until you fall {unconscious}
   effect: |
-    You tap into your inner fury and begin raging. You gain temporary HP equal to Berserker Level + Constitution. While raging, you gain the following benefits:
-    * You deal 2 additional damage with melee or thrown weapon Strikes. This additional damage is halved if your weapon or unarmed attack is agile.
-    * You take a -2 penalty to Agility
+    You tap into your inner fury and begin raging. You gain temporary HP equal to Berserker Level + Strength. While raging:
+    * You have +5 damage to Strikes that add Strength to the attack roll
+    * You take a -2 penalty to Defense
     * You can't use [[Concentrate]] powers
 
-Sudden Charge:
-  tier: Novice
-  type: 1-Action
-  traits: [Flourish, Open]
-  effect:
-    With a quick sprint, you dash up to your foe and swing. {Stride} twice. If
-    you end your movement within reach of at least one enemy, you can make a
-    melee {Strike} against that enemy.
-
-Swipe:
-  tier: Novice
-  type: 1-Action
-  traits: [Flourish]
-  effect:
-    You make a wide, arcing swing. Make a single melee {Strike} and compare the attack roll result to the ACs of up to two foes, each of whom must be within your melee reach and adjacent to the other. Roll damage only once and apply it to each creature you hit. A Swipe counts a two attacks for MAP. If you're using a weapon with the sweep trait, its modifier applies to all your Swipe attacks.
-
-Cleave:
+Bloody Retribution:
   tier: Veteran
-  type: Reaction
+  type: Free
+  brief: You turn the pain of your wounds into a powerful strike
+  traits: [Daily]
   tags:
-    trigger: Your melee {Strike} reduces a creature to 0 HP, and another foe is adjacent to that creature
-  effect:
-    You swing clear through one foe and into another. Make a melee {Strike} against the second foe.
+    requirements: You at {bloodied}
+    trigger: You make a melee {Strike} against a creature that has dealt damage to you within the past minute
+  effect: |
+    You have a +10 bonus to the Strike.
 
-Come and Get Me:
-  tier: Veteran
-  type: 1-Action
-  tags:
-    prerequisites: Rage
-    requirements: You are raging
-  effect:
-    You open yourself to attacks so you can respond in turn. Until your rage ends, you are {flat-footed}, and damage rolls against you gain a +2 bonus. If a creature hits you, that creature is {flat-footed} to you until the end of your next turn. If you hit it before the end of your next turn, you gain temporary HP equal to your Constitution, or double that on a critical hit, which last until the end of your rage.
-
-Furious Focus:
-  tier: Veteran
+Environmental Resilience:
+  tier: Ribbon
   type: Passive
-  tags:
-    prerequisites: Power Attack
-  effect:
-    You've learned to maintain your balance even when swinging furiously. When you make a Power Attack with a melee weapon you're wielding in two hands, you only take a -2 penalty to the attack roll instead of -5.
+  brief: You are used to surviving in harsh climates
+  effect: |
+    Moderately harsh environments, such as extreme temperatures or strong winds, have no adverse effect on you. This doesn't apply to environments that are extreme enough to deal damage, such as the heat of a bonfire or the pressure of the deep ocean.
 
-Giant's Stature:
-  tier: Veteran
-  type: 1-Action
-  traits: [Polymorph]
-  tags:
-    prerequisites: Rage
-    requirements: You are raging, and you are Medium size or smaller
-  effect:
-    You grow to incredible size. You become Large, increasing your reach by 5 feet and taking a -1 penalty to Agility until you stop raging. Your equipment grows with you.
-
-Awesome Blow:
-  tier: Master
-  type: 1-Action
-  tags:
-    requirements: Your last action was a successful {Strike}
-  effect:
-    The weight of your swing drives your enemy back. Attempt an {Athletics} roll against your target's Fortitude save.
-  critical-success: You gain the critical success effect of a {Shove}, then the critical success effect of a {Trip} against the target
-  success: You gain the success effect of a {Shove}, then the success effect of a {Trip} against the target
-  failure: You gain the success effect of a {Shove} against the target
-
-Vengeful Strike:
-  tier: Master
-  type: Reaction
-  tags:
-    prerequisites: Come and Get Me
-    trigger: A creature within your reach succeeds or critically succeeds at an attack against you
-    requirements: You're under the effect of Come and Get Me
-  effect:
-    When struck by an enemy, you respond in turn. Make a melee {Strike} against the triggering creature. This Strike doesn't count toward MAP, and MAP doesn't apply to this Strike.
-
-Savage Critical:
-  tier: Epic
+Powerful Build:
+  tier: Ribbon
   type: Passive
-  effect:
-    The wounds you inflict are greivous. When you {Strike}, you critically succeed if you roll a 19 on the die as long as that result is a success.
+  brief: You are bulky and strong, and are accustomed to carrying heavy loads
+  effect: |
+    Your carrying capacity is doubled.
+
+Property Destruction:
+  tier: Ribbon
+  type: Passive
+  brief: You are adept at tearing objects into tiny pieces
+  effect: |
+    Your melee Strikes deal double damage against inanimate objects.
+
+# Brutish Shove:
+#   tier: Novice
+#   type: Free
+#   tags:
+#     trigger: You hit a creature with a {Strike} with a two-handed melee weapon
+#     requirements: The creature is your size or smaller
+#   effect:
+#     Throwing your weight behind your attack, you hit your opponent hard enough to make them stumble back. You can automatically apply the effects of the {Shove} action (including the critical success effect, if your Strike was a critical hit). If you move to follow the target, your movement doesn't trigger reactions.
+
+# Mountain Stance:
+#   tier: Novice
+#   type: Free
+#   traits: [Stance]
+#   tags:
+#     requirements: You are unarmored and touching the ground
+#   effect: |
+#     You end the stance of an implacable mountain and strike with the weight of an avalanche. The only Strikes you can make are **falling stone** unarmed attacks. These deal 1d8 bludgeoning damage and have the forceful and unarmed traits.
+
+#     While in Mountain Stance, you gain a +2 bonus to Toughness, but you take a -2 penalty to Agility.
+
+# Power Attack:
+#   tier: Novice
+#   type: 1-Action
+#   effect:
+#     You unleash a particularly powerful attack that clobbers your foe but leaves you a bit unsteady. Make a melee {Strike} at -5 to the attack roll. If this Strike hits, you deal an extra die of weapon damage.
+
+# Rage:
+#   tier: Novice
+#   type: 1-Action
+#   brief: You enter a furious rage, gaining offensive power at the cost of defense
+#   traits: [Emotion, Encounter, Mental]
+#   tags:
+#     duration:
+#       1 minute, until you can't sense any enemies, or until you fall unconscious
+#   effect: |
+#     You tap into your inner fury and begin raging. You gain temporary HP equal to Berserker Level + Constitution. While raging, you gain the following benefits:
+#     * You deal 2 additional damage with melee or thrown weapon Strikes. This additional damage is halved if your weapon or unarmed attack is agile.
+#     * You take a -2 penalty to Agility
+#     * You can't use [[Concentrate]] powers
+
+# Sudden Charge:
+#   tier: Novice
+#   type: 1-Action
+#   traits: [Flourish, Open]
+#   effect:
+#     With a quick sprint, you dash up to your foe and swing. {Stride} twice. If
+#     you end your movement within reach of at least one enemy, you can make a
+#     melee {Strike} against that enemy.
+
+# Come and Get Me:
+#   tier: Veteran
+#   type: 1-Action
+#   tags:
+#     prerequisites: Rage
+#     requirements: You are raging
+#   effect:
+#     You open yourself to attacks so you can respond in turn. Until your rage ends, you are {flat-footed}, and damage rolls against you gain a +2 bonus. If a creature hits you, that creature is {flat-footed} to you until the end of your next turn. If you hit it before the end of your next turn, you gain temporary HP equal to your Constitution, or double that on a critical hit, which last until the end of your rage.
+
+# Furious Focus:
+#   tier: Veteran
+#   type: Passive
+#   tags:
+#     prerequisites: Power Attack
+#   effect:
+#     You've learned to maintain your balance even when swinging furiously. When you make a Power Attack with a melee weapon you're wielding in two hands, you only take a -2 penalty to the attack roll instead of -5.
+
+# Giant's Stature:
+#   tier: Veteran
+#   type: 1-Action
+#   traits: [Polymorph]
+#   tags:
+#     prerequisites: Rage
+#     requirements: You are raging, and you are Medium size or smaller
+#   effect:
+#     You grow to incredible size. You become Large, increasing your reach by 5 feet and taking a -1 penalty to Agility until you stop raging. Your equipment grows with you.
+
+# Awesome Blow:
+#   tier: Master
+#   type: 1-Action
+#   tags:
+#     requirements: Your last action was a successful {Strike}
+#   effect:
+#     The weight of your swing drives your enemy back. Attempt an {Athletics} roll against your target's Fortitude save.
+#   critical-success: You gain the critical success effect of a {Shove}, then the critical success effect of a {Trip} against the target
+#   success: You gain the success effect of a {Shove}, then the success effect of a {Trip} against the target
+#   failure: You gain the success effect of a {Shove} against the target
+
+# Vengeful Strike:
+#   tier: Master
+#   type: Reaction
+#   tags:
+#     prerequisites: Come and Get Me
+#     trigger: A creature within your reach succeeds or critically succeeds at an attack against you
+#     requirements: You're under the effect of Come and Get Me
+#   effect:
+#     When struck by an enemy, you respond in turn. Make a melee {Strike} against the triggering creature. This Strike doesn't count toward MAP, and MAP doesn't apply to this Strike.
+
+# Savage Critical:
+#   tier: Epic
+#   type: Passive
+#   effect:
+#     The wounds you inflict are greivous. When you {Strike}, you critically succeed if you roll a 19 on the die as long as that result is a success.

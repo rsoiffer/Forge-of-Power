@@ -2,49 +2,95 @@
 
 Berserker:
   brief: You smash enemies with aggressive bursts of murderous rage
-  description:
-    A strong melee dude, who likes being strong and fighting in melee. The dude
-    part is optional, and doesn't signify gender or anything. Strong melee dudes
-    are often found punching things or hitting things, especially when those
-    things are enemies or are getting in the way.
+  description: |
+    Berserkers are aggressive melee fighters who believe that the best defense is a good offense. They charge into enemy lines, lay waste to their opponents, and refuse to give up and die. Berserkers are notoriously angry, and are adept at channeling their rage into combat power.
+
+    Berserker talents give amazing boosts to melee damage. Some of their talents help them resist damage, but others lower their own defense in exchange for damage. Some berserker talents let them resist death or heal when they attack others. Berserker ribbons offer a variety of social and utility effects.
+
+    Examples of berserkers in fiction include Conan the Barbarian, the Hulk from Marvel Comics, and most fictional viking warriors.
 
 Duelist:
   brief: You parry enemy attacks and respond with well-timed ripostes
-  description: ""
+  description: |
+    Duelists are expert melee fighters who rely on their amazing skill with weapons. They excel in the art of the duel, specializing in one-on-one combat. Many duelists come from noble or gladiatorial backgrounds, where skill and elegance in combat are highly valued. Duelists most often wield swords.
+
+    Duelist talents focus on accurate attacks and impenetrable defenses. Many of their talents give them the change to add another attack in a moment of opportunity or weakness in their opponent's defenses. Duelist ribbons let them show off their skill and knowledge of all sorts of weapons.
+
+    Examples of duelists in fiction include Geralt of Rivia from The Witcher, Link from The Legend of Zelda, and Drizzt Do'Urden from The Forgotten Realms.
 
 Guardian:
   brief: You guard yourself and allies from harm with shields and heavy armor
-  description: ""
+  description: |
+    Guardians are defensive fighters who use shields and heavy armor to protect themselves and their allies. They fight in the front lines as vanguards who distract attention from their more vulnerable allies. Many guardians are altruistic and supportive fighters who focus on defending others before themselves.
+
+    Guardian talents greatly increase defense against all attacks and spells. Many guardian talents distract enemies from your allies and force them to attack only you instead. Guardian ribbons increase resilience against environment effects or boost your reputation as a knight.
+
+    Examples of guardians in fiction include Braum from League of Legends, Captain America from Marvel Comics, and all tank characters in MMOs.
 
 Swordsage:
-  brief: You unlock your inner ki to surpass your limits and devastate your foes
-  description: ""
+  brief: You unlock your inner ki to perform supernatural martial techniques
+  description: |
+    Swordsages are mystical fighters who perform supernatural feats of martial ability. They often fight in melee, but many swordsages try to avoid the front lines. Swordsages' supernatural abilities come from their innate ki powers, which they might have unlocked through years of meditation and training.
+
+    Swordsage talents produce a variety of supernatural effects without relying on formal arcane magic. Their talents might create mirages of multiple attacks, turn the swordsage incorporeal as they dodge, or shape their ki into solid objects. Swordsage ribbons use ki for minor utility effects.
+
+    Examples of swordsages in fiction include almost all anime fighters that have supernatural abilities, as well as some high fantasy magic swordsmen and wuxia heroes.
 
 Warblade:
   brief: You develop a unique fighting style full of flashy weapon maneuvers
-  description: ""
+  description: |
+    Warblades are specialist fighters who develop a unique personal fighting style. Every warblade is completely different from every other warblade, as they all develop distinct and specialized weapons and fighting styles. Warblades usually trained at small esoteric martial arts schools with few practitioners.
+
+    Warblade talents use weapons for unique or customizable martial maneuvers. Warblades can specialize in any combination of offense, defense, and utility, depending on what maneuvers they choose. Warblade ribbons represent unique or strange skills associated with their particular fighting style.
+
+    Examples of warblades in fiction include almost all anime fighters that have unique or strange fighting styles, as well as almost all characters from classic arcade fighting games.
 
 # Rogue
 
 Acrobat:
   brief: You dodge and weave across the battlefield, moving with incredible speed
-  description: ""
+  description: |
+    Acrobats are agile combatants who leap and dodge between attacks. They move through the front line with ease, dodging enemy attacks and retaliating with speed and precision. Acrobats are known for their supernatural abilities to move on difficult terrain, running up walls, along water, or even walking on thin air.
+
+    Acrobat talents focus on movement and dodging attacks. The majority of acrobat talents are defensive, though a few give opportunities to disorient enemies or counterattack. Some acrobat talents combine movement and combat, giving stat bonuses for using the environment to your advantage. Acrobat talents give even more ways to move around the world.
+
+    Examples of acrobats in fiction include Ty Lee from Avatar: The Last Airbender, Spiderman from Marvel Comics, all the protagonists of Assassin’s Creed, and most fictional monks and swashbucklers.
 
 Hunter:
   brief: You fire with care and precision to take out enemies at incredible distances
-  description: ""
+  description: |
+    Hunters are ranged warriors who focus on taking down targets with precise, deadly shots. They are unmatched when it comes to chasing and defeating single targets, as enemies can’t flee from their range and accuracy. Most hunters avoid fighting in melee, preferring to use their range to their advantage.
+
+    Hunter talents give a variety of boosts to ranged weapons and single-target attacks. Some talents give buffs to single long-range shots with high accuracy and damage, while others give buffs to attacks against specific targets. Hunter ribbons give them bonuses on tracking down enemies and surviving the wilderness.
+
+    Examples of hunters in fiction include Hawkeye from Marvel Comics, Ashe from League of Legends, and most fictional rangers or snipers.
 
 Inventor:
   brief: You invent novel technological devices for a variety of purposes
-  description: ""
+  description: |
+    Inventors are genius engineers who test their gadgets in the field. They design and build a variety of amazing or technologically impossible devices to fight enemies or accomplish tasks. An inventor’s gadgets might include robot minions, prototype firearms, or electrical circuits. Inventors ignore the normal technological level of the setting.
+
+    Inventor talents let them create gadgets that perform a variety of utility effects. These include everything from potions that heal injured allies to automatic turrets that attack enemies to grappling hooks to fly around. Inventor ribbons give them even more options for building objects with miscellaneous useful effects.
+
+    Examples of inventors in fiction include Iron Man from Marvel Comics, the Engineer from Team Fortress 2, and most fictional scientist or engineer heroes.
 
 Mastermind:
   brief: You guide your party both in and out of battle, with a plan for every situation
-  description: ""
+  description: |
+    Masterminds are leaders who support their team in and out of combat. They might be inspirational warriors who lead from the front, but they can also be noncombatants who lend aid without interfering directly. Masterminds are known for their supernatural planning abilities, staying three steps ahead of their enemies at all times.
+
+    Mastermind talents focus on supporting allies instead of acting directly. Many of these talents give tactical combat bonuses, letting their allies have extra actions, damage, or defense. Masterminds have almost no talents that affect only themselves. Mastermind ribbons give them the social and tactical abilities they need as leaders.
+
+    Examples of masterminds in fiction include Princess Leia from Star Wars, Roy from Order of the Stick, and all the protagonists of JoJo’s Bizarre Adventure.
 
 Scoundrel:
   brief: You chance your way into victory, consistently getting lucky hits or dodges
-  description: ""
+  description: |
+    Scoundrels are sneaky fighters who prefer trickery to fighting fair. They are experts in twisting combats to their advantage, distracting and misdirecting enemies. Most scoundrels favor stealth and surprise attacks over direct combat. Scoundrels have a generally negative reputation as thieves, liars, and assassins.
+
+    Scoundrel talents give many ways to confuse or avoid enemies. They also include ways to exploit a distraction for all it’s worth, with powerful sneak attacks and finishing moves. Scoundrel talents also let them escape danger through luck or stealth. Scoundrel ribbons give more ways to sneak around and avoid getting caught.
+
+    Examples of scoundrels in fiction include Han Solo from Star Wars, Batman from DC Comics, Jack Sparrow from Pirates of the Carribean, and Corvo Attano from Dishonored.
 
 # Mage
 

@@ -4,7 +4,7 @@ main:
   - title: Character
     url: /character-creation.html
   - title: Talents
-    url: /power-schools.html
+    url: /classes.html
   - title: Feats
     url: /feats-general.html
 
@@ -39,9 +39,9 @@ character:
     url: /skills.html
 
 powers:
-  - title: Power Schools
-    url: /power-schools.html
-  - title: All Talents
+  - title: Classes
+    url: /classes.html
+  - title: All Powers
     url: /all-powers.html
   - title: Talent Counts
     url: /power-counts.html

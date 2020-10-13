@@ -1,5 +1,7 @@
 Blinded: You can't see. All normal terrain is difficult terrain to you. You automatically critically fail {Perception} rolls that rely on sight. You are {flat-footed}, and you have disadvantage on {Perception} rolls and attack rolls.
 
+Bloodied: You are significantly injured. You have the {bloodied} condition whenever you at at half Health or below.
+
 Dazzled: Your eyes are overstimulated. You have disadvantage on {Perception} rolls and attack rolls.
 
 Downed: You are severely injured and are barely able to move. You are {incapacitated}, {prone}, and {slowed}, and you cannot stand up.

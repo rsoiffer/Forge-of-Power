@@ -96,6 +96,8 @@ Proficiency: |
     </tr>
   </table>
 
+Reputation: Effect with this trait represent broad changes in how other people view you socially. [[Reputation]] effects don't apply to unintelligent or asocial monsters, or to people who are so separate from society that they haven't heard about you. [[Reputation]] effects can be cancelled out by a conflicting reputation caused by your actions or by other people spreading rumors about you.
+
 Ritual: A ritual spell can be cast through a long, complex ritual to save mana. The Mana cost of the spell is reduced by 1 for every 10 minutes you spend performing the ritual. This can reduce the Mana cost of the spell to 0. Powers with this trait always have the [[Spell]] trait as well.
 
 Shadow: This magic involves shadows.
