@@ -1,165 +1,93 @@
-# Combat
-
-Brawling:
-  attribute: Strength
-  type: Combat
-  brief: Unarmed strikes, grappling, and maneuvers
-  description: ""
-
-Simple Weapons:
-  attribute: Strength
-  type: Combat
-  brief: Everyday weapons, such as daggers, clubs, and staves
-  description: ""
-
-Martial Weapons:
-  attribute: Strength
-  type: Combat
-  brief: Weapons of war, such as swords, spears, and axes
-  description: ""
-
-Great Weapons:
-  attribute: Strength
-  type: Combat
-  brief: Large two-handed weapons, such as polearms and greatswords
-  description: ""
-
-Finesse Weapons:
-  attribute: Dexterity
-  type: Combat
-  brief: Precision weapons, such as rapiers and short swords
-  description: ""
-
-Ranged Weapons:
-  attribute: Dexterity
-  type: Combat
-  brief: Projectile weapons, such as bows, slings, and throwing knives
-  description: ""
-
-Arcane Magic:
-  attribute: Intelligence
-  type: Combat
-  brief: Casting spells through study and knowledge
-  description: ""
-
-Divine Magic:
-  attribute: Wisdom
-  type: Combat
-  brief: Casting spells through a connection to the divine
-  description: ""
-
-Innate Magic:
-  attribute: Charisma
-  type: Combat
-  brief: Casting spells through inherent magical ability
-  description: ""
-
-# General
-
 Athletics:
-  attribute: Strength
   type: General
   brief: Perform deeds of physical prowess
-  description: ""
+  description: |
+    Good with Strength and Agility.
 
-Acrobatics:
-  attribute: Dexterity
+Wrestling:
   type: General
-  brief: Perform tasks requiring concentration and grace
-  description: ""
+  brief: TODO
+  description: |
+    Good with Strength and Agility.
 
 Stealth:
-  attribute: Dexterity
   type: General
   brief: Avoid detection, slip past foes, hide, or conceal an item
-  description: ""
+  description: |
+    Good with Agility and Spirit.
 
 Thievery:
-  attribute: Dexterity
   type: General
   brief: Maneuver vehicles through difficult terrain and dodge enemy fire
-  description: ""
+  description: |
+    Good with Agility and Intellect.
 
 Arcana:
-  attribute: Intelligence
   type: General
   brief: How much you know about arcane magic and creatures
   description: ""
 
 Crafting:
-  attribute: Intelligence
   type: General
   brief: Create, understand, and repair items or structures
-  description: ""
+  description: |
+    Good with Intellect.
 
 Investigation:
-  attribute: Intelligence
   type: General
   brief: Look for clues and make deductions makes on them
   description: ""
 
 Religion:
-  attribute: Intelligence
   type: General
   brief: Know secrets of deities, dogma, faith, and the realms of the divine
   description: ""
 
 Society:
-  attribute: Intelligence
   type: General
   brief: Understand the people and systems that make civilization run
-  description: ""
-
-Insight:
-  attribute: Wisdom
-  type: General
-  brief: Determine the true intentions of a creature
-  description: ""
+  description: |
+    Good with Intellect and Spirit.
 
 Medicine:
-  attribute: Wisdom
   type: General
   brief: Patch up wounds and help people recover from diseases and poisons
   description: ""
 
 Nature:
-  attribute: Wisdom
   type: General
   brief: Know about the natural world, and train animals and magical beasts
   description: ""
 
 Perception:
-  attribute: Wisdom
   type: General
   brief: Spot, hear, or otherwise detect the presence of something
-  description: ""
+  description: |
+    Good with Intellect and Spirit.
 
 Survival:
-  attribute: Wisdom
   type: General
   brief: Live in the wilderness, forage for food, track, and hide your trail
   description: ""
 
 Deception:
-  attribute: Charisma
   type: General
   brief: Trick and mislead others using disguises, lies, and subterfuge
   description: ""
 
 Diplomacy:
-  attribute: Charisma
   type: General
   brief: Influence others through negotiation and flattery
   description: ""
 
 Intimidation:
-  attribute: Charisma
   type: General
   brief: Bend other to your will using threats
-  description: ""
+  description: |
+    Good with Strength and Spirit.
 
 Performance:
-  attribute: Charisma
   type: General
   brief: Use your talents to impress a crowd or make a living
-  description: ""
+  description:  |
+    Good with any stat and Spirit.

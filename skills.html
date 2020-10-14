@@ -5,40 +5,24 @@ sidebar:
   nav: character
 ---
 
-<h2>Combat Skills</h2>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Attribute</th>
-    <th>Description</th>
-  </tr>
-{% for skill in site.data.skills %}
-  {% if skill[1].type == "Combat" %}
-    <tr>
-      <td>{{ skill[0] }}</td>
-      <td>{{ skill[1].attribute }}</td>
-      <td>{{ skill[1].brief }}</td>
-    </tr>
-  {% endif %}
-{% endfor %}
-</table>
-
 <h2>General Skills</h2>
 
 <table>
   <tr>
     <th>Name</th>
-    <th>Attribute</th>
     <th>Description</th>
   </tr>
 {% for skill in site.data.skills %}
   {% if skill[1].type == "General" %}
     <tr>
       <td>{{ skill[0] }}</td>
-      <td>{{ skill[1].attribute }}</td>
       <td>{{ skill[1].brief }}</td>
     </tr>
   {% endif %}
 {% endfor %}
 </table>
+
+{% for skill in site.data.skills %}
+  <h3>{{ skill[0] }}</h3>
+  {{ skill[1].description | process }}
+{% endfor %}

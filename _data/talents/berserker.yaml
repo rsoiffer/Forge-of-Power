@@ -53,6 +53,16 @@ Bloody Retribution:
   effect: |
     You have a +10 bonus to the Strike.
 
+Frequent Rage:
+  tier: Veteran
+  type: Passive
+  brief: You are able to rage much more often
+  tags:
+    prerequisites: Rage
+  effect: |
+    Your Rage power is [[Encounter]] instead of [[Daily]].
+  fluff: That's my secret, Cap. I'm always angry.
+
 Environmental Resilience:
   tier: Ribbon
   type: Passive
