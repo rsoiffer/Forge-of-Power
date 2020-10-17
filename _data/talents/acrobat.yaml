@@ -1,9 +1,33 @@
+Aerial Artistry:
+  tier: Novice
+  type: Passive
+  brief: You easily leap and jump over obstacles and into the air
+  effect: |
+    When you {Stride}, you can choose to make two short leaps instead of moving normally. For each leap, fly a distance through the air equal to half your Speed. You must end each leap on a creature, solid object, or the ground. If you do not, you fall and your Stride ends.
+
+Evasive Dash:
+  tier: Novice
+  type: 1-Action
+  brief: You dash like the wind, becoming impossible to hit
+  tags:
+    duration: Until the start of your next turn
+  effect: |
+    Use the {Stride} power. You gain +1 Defense and Agility DC for each 10 feet you move after using this power. For example, if you use this power and Stride 30 feet, then Stride 30 more feet, then fall 20 feet, you have a total of +8 Defense and Agility DC.
+
 Incredible Movement:
   tier: Novice
   type: Passive
   brief: You can run at incredible, almost superhuman speeds
   effect: |
-    You move like the wind. Whenever you're not wearing armor, you gain a bonus to your Speed equal to 5 feet * your Acrobat level.
+    While you're wearing [light clothing](equipment.html#light-clothing), you gain a bonus to your Speed equal to 5 feet * your Acrobat level.
+
+Leap Attack:
+  tier: Novice
+  type: Free
+  brief: You can leap through the air while attacking
+  traits: [Move]
+  effect: |
+    You jump up to 30 feet in a straight line. You can use other powers in the middle of this jump. You have a +2 bonus to your next melee {Strike} before the end of your turn.
 
 Skirmish:
   tier: Novice
@@ -14,6 +38,15 @@ Skirmish:
   effect: |
     {Stride} at half Speed.
 
+Stunning Strike:
+  tier: Novice
+  type: 1-Action
+  traits: [Encounter]
+  tags:
+    duration: Until the end of your next turn
+  effect:
+    Make a melee {Strike}. On a success, your target is {flat-footed}. On a critical success, your target is {stunned} instead.
+
 Uncanny Dodge:
   tier: Veteran
   type: Reaction
@@ -22,6 +55,29 @@ Uncanny Dodge:
     trigger: You are targeted by an attack
   effect: |
     You take half damage from the triggering attack.
+
+Contortionist:
+  tier: Ribbon
+  type: Passive
+  brief: You can contort your body to squeeze into tiny spaces
+  effect: |
+    You count as a creature half your size when trying to fit into small areas.
+
+Slow Fall:
+  tier: Ribbon
+  type: Reaction
+  brief: You maneuver yourself in midair to reduce the damage of a fall
+  tags:
+    trigger: You fall and hit the ground
+  effect: |
+    You reduce the fall damage you would take by 10 + 5 * your Acrobat level.
+
+Quick Climb:
+  tier: Ribbon
+  type: Passive
+  brief: You can climb up vertical surfaces as fast as you can run
+  effect: |
+    You can climb at your full Speed instead of at half Speed.
 
 # Crane Stance:
 #   tier: Novice
