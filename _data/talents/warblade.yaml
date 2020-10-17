@@ -9,13 +9,13 @@ Combo Move:
 
 Empowered Strike:
   tier: Novice
-  type: Free
+  type: 1-Action
   brief: You empower yourself with a burst of speed and strength
   traits: [Encounter]
-  tags:
-    duration: Until the end of your turn
   effect: |
-    You have a +10 bonus to Speed. Your next Strike deals an extra 1d10 damage on a success.
+    Make a {Strike}. This Strike deals an extra 1d10 damage on a success.
+
+    When you get a critical success on a Strike, this power refreshes, letting you use it again without taking a 5-minute rest.
 
 Exotic Weapon:
   tier: Novice
