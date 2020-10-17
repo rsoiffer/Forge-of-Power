@@ -1,0 +1,85 @@
+Elemental Weapon:
+  tier: Novice
+  type: Free
+  brief: You enhance your weapon with damaging elemental energy
+  traits: [Encounter]
+  tags:
+    duration: Until the end of your next turn
+  effect: |
+    Choose one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], or [[Force]] traits. Your melee Strikes deal an extra 1d6 damage of the chosen trait on a success.
+
+Ki Blast:
+  tier: Novice
+  type: 1-Action
+  brief: You blast enemies with a bolt of concentated ki energy
+  traits: [Attack, Force]
+  tags:
+    range: 120 feet
+  effect: |
+    Make a Spirit attack roll against your target's Defense.
+  critical-success: Your target takes 2d10 + Spirit damage
+  success: Your target takes 1d10 + Spirit damage
+
+Ki Pool:
+  tier: Novice
+  type: Passive
+  brief: You have a pool of ki points that fuel your Swordsage powers
+  tags:
+    prerequisites: Any [[Encounter]] Swordsage talent
+  effect: |
+    You have a Ki Pool that stores up to 3 Ki points. You can spend 1 Ki point at any time to refresh a [[Encounter]] Swordsage talent, letting you use it again without taking a 5-minute rest. Your Ki Pool replenishes when you complete an 8-hour rest.
+
+Mind over Body:
+  tier: Novice
+  type: Reaction
+  brief: You resist a physical attack through pure mental fortitude
+  traits: [Encounter]
+  tags:
+    trigger: An attack targets you
+  effect: |
+    The attack's DC is your Spirit DC + 5.
+
+Spirit Carve:
+  tier: Novice
+  type: 1-Action
+  brief: You strike directly at your enemy's soul, bypassing their defense
+  traits: [Encounter]
+  effect: |
+    Make a melee Strike with a +5 bonus. The DC of this Strike is your target's Spirit DC.
+
+Sword Flight:
+  tier: Veteran
+  type: 1-Action
+  brief: You can levitate above the ground by flying on your sword
+  tags:
+    requirements: You are wielding a melee weapon
+    duration: 1 minute, until you use this power again, until you use any [[Attack]] power, or until you stop riding on the weapon
+  effect: |
+    You ride on your weapon and float into the air. You gain a Fly Speed equal to your Speed. You cannot fly more than 60 feet above the ground.
+
+Battle Aura:
+  tier: Ribbon
+  type: Free
+  brief: You unleash your battle aura, glowing bright with power
+  tags:
+    duration: 1 minute, or until you decide to end this power
+  effect: |
+    You glow bright with power, shedding colorful light as a torch. You have advantage on Intimidate rolls to impress others with physical strength.
+  fluff: The color of your battle aura is specific to you as an individual.
+
+Perfect Meditation:
+  tier: Ribbon
+  type: Passive
+  brief: You can enter a mediatative trance instead of eating or sleeping
+  effect: |
+    You can enter a state of perfect meditation that replaces your need for food and rest. While meditating, you don't need to eat or drink. You can also meditate instead of sleeping, gaining all the benefits of resting while remaining aware of the outside world. You can't use powers while meditating.
+
+Ultimate Technique:
+  tier: Ribbon
+  type: Free
+  brief: You announce the name of your latest ultimate technique
+  traits: [Daily]
+  tags:
+    trigger: You make a die roll
+  effect: |
+    You shout the name of your ultimate technique. You must come up with and declare this name out of character. If the name is at least 5 words, and if your character hasn't used Ultimate Technique with the same name before, you have advantage on the die roll.

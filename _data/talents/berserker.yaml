@@ -60,7 +60,7 @@ Frequent Rage:
   tags:
     prerequisites: Rage
   effect: |
-    Your Rage power is [[Encounter]] instead of [[Daily]].
+    Your {Rage} power is [[Encounter]] instead of [[Daily]].
   fluff: That's my secret, Cap. I'm always angry.
 
 Environmental Resilience:
