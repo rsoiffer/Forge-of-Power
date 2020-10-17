@@ -147,3 +147,21 @@ button {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+
+aside {
+  float: right;
+  width: 45%;
+  border: 1px solid $border-color;
+  margin: .5em;
+  padding: .5em;
+  background-color: rgb(212, 192, 149);
+  font-size: 90%;
+}
+
+aside h2 {
+  margin-top: 0.2em;
+}
+
+h2 h3 {
+  clear: both;
+}

@@ -1,0 +1,101 @@
+Automatic Turret:
+  tier: Novice
+  type: 1-Action
+  brief: You construct a turret that can fire its cannon at enemies
+  traits: [Concentrate, Manipulate]
+  tags:
+    duration: 10 minutes, or until you use this power again
+  effect: |
+    You set up an automatic turret on a flat surface you can reach. The turret is a [[Minion]] creature with (10 * your Inventor level) Health, 15 Defense, and 0 Speed. The turret's Strength and Agility are equal to your Intellect, and it has no Intellect or Spirit stats. The turret can fire its cannon as a ranged weapon that deals 2d8 [[Piercing]] damage and has a range of 150 feet.
+
+Magitech Engine:
+  tier: Novice
+  type: 1-Action
+  brief: You craft a small engine with an elemental effect
+  traits: [Concentrate, Manipulate]
+  tags:
+    duration: 1 minute after the engine is attached to a weapon, or 1 hour otherwise
+  effect: |
+    You craft a small magic device that outputs a stream of elemental energy. Choose the engine's element to be one of [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Force]], or [[Sonic]]. You can set up the engine to perform a minor utility effect related to its element, at the GM's discretion.
+
+    When you use this power, or as a {% icon 1-Action %} power afterwards, you can attach the engine to a weapon you touch. Strikes with that weapon deal an extra 1d6 damage of the chosen trait. A weapon can only have one engine attached to it at a time.
+
+Overload:
+  tier: Novice
+  type: 1-Action
+  brief: You overload one of your creations with power, exploding it
+  traits: [Attack, Fire]
+  tags:
+    requirements: You must center the area of this power on an item you can see within range that is affected by one of your Inventor powers
+    range: 60 feet
+    area: 20-foot burst
+  effect: |
+    Make an Intellect attack roll against your target's Agility DC.
+  success: Your target takes (8d6 + 2 * your Inventor level) damage
+  failure: Your target takes half damage
+
+Shock Net:
+  tier: Novice
+  type: 1-Action
+  brief: You throw an electrified net to restrain an enemy
+  traits: [Attack, Electricity, Encounter]
+  tags:
+    range: 60 feet
+    duration: 1 minute
+  effect: |
+    Make an Intellect attack roll against your target's Defense.
+
+    Critical Success
+    : Your target takes 2d6 damage and is {restrained}
+
+    Success
+    : Your target takes 1d6 damage and is {restrained}
+
+    You can use the **Send Shock** power.
+  aside: |
+    {% smallpower %}
+    Send Shock:
+      type: Free
+      traits: [Electricity]
+      effect: |
+        All targets {restrained} by your Shock Net take 1d6 damage.
+    {% endsmallpower %}
+
+Upgrade Weapon:
+  tier: Novice
+  type: 1-Action
+  brief: You upgrade an existing weapon with an additional effect
+  traits: [Concentrate, Manipulate]
+  tags:
+    target: One weapon you can reach
+    duration: 1 hour, or until you use this power again
+  effect: |
+    Strikes with your target have a +1 bonus. When you use this power, choose one of the following effects.
+
+    Deadly Critical
+    : Critical successes on Strikes with your target deal an extra 2d12 damage
+
+    Extended Reach
+    : Melee Strikes with your target have an extra 5 feet of reach
+
+    Flaming Weapon
+    : Strikes with your target deal an extra 1d6 [[Fire]] damage
+
+    Freezing Weapon
+    : Strikes with your target deal an extra 1d6 [[Cold]] damage
+
+    Heavy Impact
+    : Successes on Strikes with your target push creatures back 5 feet
+
+    Shocking Weapon
+    : Strikes with your target deal an extra 1d6 [[Electricity]] damage
+
+Universal Gadget:
+  tier: Novice
+  type: Free
+  brief: You create a gadget that lets you replicate another talent
+  traits: [Concentrate, Daily, Manipulate]
+  tags:
+    duration: 1 minute
+  effect: |
+    You learn a Novice talent of your choice from any class. This talent cannot have the [[Daily]] trait.

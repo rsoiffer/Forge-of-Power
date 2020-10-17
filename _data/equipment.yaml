@@ -51,9 +51,14 @@ weapons:
       A crossbow is a ranged weapon that deals 1d6 [[Piercing]] base damage and has a range of 150 feet.
       
       While wielding a crossbow, you can use the **Heavy Draw** power.
-
-      Heavy Draw {% icon 1-Action %} [[Manipulate]]
-      : You ready your crossbow to fire a powerful shot. Your next Strike with this crossbow within 1 minute deals 2d12 base damage instead of 1d6 base damage.
+    aside: |
+      {% smallpower %}
+      Heavy Draw:
+        type: 1-Action
+        traits: [[Manipulate]]
+        effect: |
+          You ready your crossbow to fire a powerful shot. Your next Strike with this crossbow within 1 minute deals 2d12 base damage instead of 1d6 base damage.
+      {% endsmallpower %}
     fluff: The crossbows of this world have two triggers, one for fast shots and one for the powerful heavy draw shots.
 
   # Flavor: the weapon of rogues, not warriors
@@ -65,9 +70,13 @@ weapons:
       A dagger is a melee weapon that deals 1d6 [[Piercing]] base damage.
 
       You have advantage on die rolls to conceal daggers. You can use the **Quickdraw** power.
-
-      Quickdraw {% icon Free %}
-      : You draw or stow any number of daggers that are secured in easily accessible locations, such as on a belt or a hidden sheath.
+    aside: |
+      {% smallpower %}
+      Quickdraw:
+        type: Free
+        effect: |
+          You draw or stow any number of daggers that are secured in easily accessible locations, such as on a belt or a hidden sheath.
+      {% endsmallpower %}
 
   # Flavor: defensive, personal, spiritual
   # Mechanics: 

@@ -61,12 +61,27 @@ module CustomTags
     end
   end
 
+  class SmallPowerTag < Liquid::Block
+    def render(context)
+      @context = context
+      text = super
+      myyaml = YAML.load(text)
+      @context["myyaml"] = myyaml.map { |key, value| [key, value] }[0]
+      # puts "\n\n\n\n\n"
+      # pp @context.scopes
+      Liquid::Template
+        .parse("{% include smallpower.html smallpower=myyaml %}")
+        .render(@context)
+    end
+  end
+
 end
 
 Liquid::Template.register_tag("icon", CustomTags::IconTag)
 Liquid::Template.register_tag("ref", CustomTags::ReferenceTag)
 Liquid::Template.register_tag("trait", CustomTags::TraitTag)
 Liquid::Template.register_tag("roll_me_one", CustomTags::RollMeOneTag)
+Liquid::Template.register_tag("smallpower", CustomTags::SmallPowerTag)
 
 
 module CustomFilters

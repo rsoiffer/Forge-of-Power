@@ -5,6 +5,10 @@
     {{ item_name }}
 </h3>
 
+{% if item_body.aside %}
+<aside>{{ item_body.aside | process }}</aside>
+{% endif %}
+
 {% if item_body.traits %}
     <ul class="traits">
     {% for trait in item_body.traits %}

@@ -13,6 +13,10 @@
     {% endif %}
 </h2>
 
+{% if power_body.aside %}
+<aside>{{ power_body.aside | process }}</aside>
+{% endif %}
+
 {% if power_body.traits %}
     <ul class="traits">
     {% for trait in power_body.traits %}
