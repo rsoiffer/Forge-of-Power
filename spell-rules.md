@@ -39,6 +39,18 @@ When you learn your first spell, you choose one arcane background from the list 
 
 ### Artificer
 
+<aside>
+{% smallpower %}
+Infuse Item:
+  type: 1-Action
+  traits: [Concentrate, Manipulate]
+  tags:
+    duration: 8 hours, until you use this power again, or until the spell is expended
+  effect: |
+    Cast a spell. Instead of the spell taking effect, the spell is stored in a small item you touch. Any creature wielding that item can use that spell, expending it. You pay the spell's cost when you use this power, and the spell uses your stats, but the other activating creature chooses the spell's target and other parameters.
+{% endsmallpower %}
+</aside>
+
 You cast magic spells through building items with magical effects.
 
 ***Magic.*** Your Magic stat equals your Intellect.
@@ -47,10 +59,16 @@ You cast magic spells through building items with magical effects.
 
 ***Bonuses.*** You can use the **Infuse Item** power.
 
-Infuse Item {% icon 1-Action %} 
-: *(**Duration** 8 hours, until you use this power again, or until the spell is expended)* Cast a spell. Instead of the spell taking effect, the spell is stored in a small item you touch. Any creature wielding that item can use that spell, expending it. You pay the spell's cost when you use this power, and the spell uses your stats, but the other activating creature chooses the spell's target and other parameters.
-
 ### Bard
+
+<aside>
+{% smallpower %}
+Sustained Performance:
+  type: Free
+  effect: |
+    Use the {Sustain} power to sustain a spell that doesn't have the [[Attack]] trait
+{% endsmallpower %}
+</aside>
 
 You cast magic spells through performance, stories, or creative art.
 
@@ -59,9 +77,6 @@ You cast magic spells through performance, stories, or creative art.
 ***Mana.*** Your Mana stat equals 4 + 2 * the number of spells you know, not counting ribbons. Your Mana pool replenishes when you complete an 8-hour rest.
 
 ***Bonuses.*** You can use the **Sustained Performance** power.
-
-Sustained Performance {% icon Free %}
-: Use the {Sustain} power to sustain a spell that doesn't have the [[Attack]] trait
 
 ### Cleric
 

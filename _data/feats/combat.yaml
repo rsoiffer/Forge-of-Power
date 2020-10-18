@@ -98,10 +98,16 @@ Counter Charge:
     proficiency: +1 damage to polearm Strikes
     duration: Until the start of your next turn
   effect: |
-    When a target enters your reach, you can use the **Intercept** power.
-
-    Intercept {% icon Reaction %}
-    : Make a polearm Strike with advantage against the target that entered your reach
+    You can use the **Intercept** power.
+  aside: |
+    {% smallpower %}
+    Intercept:
+      type: Reaction
+      tags:
+        trigger: A creature enters your reach
+      effect: |
+        Make a polearm Strike with advantage against the creature that entered your reach
+    {% endsmallpower %}
 
 # Shield
 

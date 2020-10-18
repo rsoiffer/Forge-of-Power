@@ -143,9 +143,13 @@ weapons:
       A throwing weapon is a melee weapon that deals 1d6 base damage. Depending on the weapon, it deals either [[Bludgeoning]] or [[Slashing]] damage.
 
       A throwing weapon can be thrown as a ranged weapon with a range of 40 feet. Ranged Strikes with throwing weapons use Strength for the attack roll instead of Agility. When you succeed on a ranged Strike with a throwing weapon, you can use the **Slowing Hit** power.
-
-      Slowing Hit {% icon Free %}
-      : Your target's Speed decreases by 10 feet until the end of your next turn
+    aside: |
+      {% smallpower %}
+      Slowing Hit:
+        type: Free
+        effect: |
+         Your target's Speed decreases by 10 feet until the end of your next turn.
+      {% endsmallpower %}
 
   # Flavor: weak but always available, favored by monks
   # Mechanics: low damage, feats for grappling/tripping/etc
@@ -161,6 +165,13 @@ weapons:
     traits: [One-Handed]
     effect: |
       While wielding a wand, you can use the **Reliable Casting** power.
-
-      Reliable Casting {% icon Reaction %} [[Daily]] [[Fortune]]
-      : When you roll a 1 on the die for a Magic roll, you can reroll the die. You must use the new roll.
+    aside: |
+      {% smallpower %}
+      Reliable Casting:
+        type: Reaction
+        traits: [Daily, Fortune]
+        tags:
+          trigger: You roll a 1 on the die for a Magic roll
+        effect: |
+         Reroll the triggering die. You must use the new roll.
+      {% endsmallpower %}
