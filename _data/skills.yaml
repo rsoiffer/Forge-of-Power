@@ -8,6 +8,7 @@ Arcana:
     * Knowledge about magic creatures
     * Knowledge about magic items
     * Inventing spells
+    * Crafting magic items
     
 Athletics:
   brief: Perform deeds of physical prowess or grace
@@ -21,17 +22,17 @@ Athletics:
     * Jumping
     * Balancing
 
-Crafting:
-  brief: Create, understand, and repair items or structures
+Eloquence:
+  brief: Influence others through negotiation and flattery
   description: |
-    Good with Intellect.
+    Good with Intellect and Spirit.
 
     Includes:
-    * Crafting
-    * Repairing
-    * Alchemy
-    * Construction
-    * Appraising
+    * Convincing
+    * Deceiving
+    * Flattering
+    * Negotiating
+    * Speechwriting
 
 Intimidation:
   brief: Bend other to your will using threats or an imposing presence
@@ -81,18 +82,6 @@ Performance:
     * Party tricks
     * Inspiring
 
-Persuasion:
-  brief: Influence others through negotiation and flattery
-  description: |
-    Good with Intellect and Spirit.
-
-    Includes:
-    * Convincing
-    * Deceiving
-    * Flattering
-    * Negotiating
-    * Speechwriting
-
 Religion:
   brief: Know secrets of deities, dogma, faith, and the realms of the divine
   description: |
@@ -130,7 +119,7 @@ Stealth:
     * Obscuring tracks
 
 Thievery:
-  brief: Maneuver vehicles through difficult terrain and dodge enemy fire
+  brief: Pick locks, disarm traps, and perform feats of manual dexterity
   description: |
     Good with Agility and Intellect.
 
@@ -152,22 +141,3 @@ Wrestling:
     * Tripping
     * Disarming
     * Defending against the above
-
-
-
-
-# Medicine:
-#   brief: Patch up wounds and help people recover from diseases and poisons
-#   description: ""
-
-# Investigation:
-#   brief: Look for clues and make deductions makes on them
-#   description: ""
-
-# Survival:
-#   brief: Live in the wilderness, forage for food, track, and hide your trail
-#   description: ""
-
-# Deception:
-#   brief: Trick and mislead others using disguises, lies, and subterfuge
-#   description: ""
