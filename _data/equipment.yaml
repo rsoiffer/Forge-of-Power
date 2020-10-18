@@ -27,9 +27,10 @@ weapons:
   Bludgeon:
     brief: A one-handed axe, club, or mace for smashing foes
     traits: [One-Handed]
+    tags:
+      type: Melee weapon
+      base damage: 1d8 [[Bludgeoning]] or [[Slashing]], depending on the weapon
     effect: |
-      A bludgeon is a melee weapon that deals 1d8 base damage. Depending on the weapon, it deals either [[Bludgeoning]] or [[Slashing]] damage.
-
       When you make a bludgeon Strike, if your target calculates its Defense with Strength, the bludgeon deals 1d10 base damage instead of 1d8 base damage.
 
   # Flavor: simple, generic, hard to master
@@ -37,9 +38,11 @@ weapons:
   Bow:
     brief: A classic bow and arrow for long-range sniping
     traits: [Two-Handed]
+    tags:
+      type: Ranged weapon
+      base damage: 1d8 [[Piercing]]
+      range: 100 feet
     effect: |
-      A bow is a ranged weapon that deals 1d8 [[Piercing]] base damage and has a range of 100 feet.
-      
       When you make a long-range bow Strike, you multiply the range by 4 instead of 2.
 
   # Flavor: complicated, good for low-skill users
@@ -47,9 +50,11 @@ weapons:
   Crossbow:
     brief: A mechanical crossbow that fires slow but powerful shots
     traits: [Two-Handed]
+    tags:
+      type: Ranged weapon
+      base damage: 1d6 [[Piercing]]
+      range: 150 feet
     effect: |
-      A crossbow is a ranged weapon that deals 1d6 [[Piercing]] base damage and has a range of 150 feet.
-      
       While wielding a crossbow, you can use the **Heavy Draw** power.
     aside: |
       {% smallpower %}
@@ -66,9 +71,10 @@ weapons:
   Dagger:
     brief: A small bladed weapon that's cheap and easy to conceal
     traits: [Finesse, One-Handed]
+    tags:
+      type: Melee weapon
+      base damage: 1d6 [[Piercing]]
     effect: |
-      A dagger is a melee weapon that deals 1d6 [[Piercing]] base damage.
-
       You have advantage on die rolls to conceal daggers. You can use the **Quickdraw** power.
     aside: |
       {% smallpower %}
@@ -91,9 +97,10 @@ weapons:
   Heavy Weapon:
     brief: A two-handed greatsword, maul, or axe for heavy strikes
     traits: [Two-Handed]
+    tags:
+      type: Melee weapon
+      base damage: 1d12 [[Bludgeoning]] or [[Slashing]], depending on the weapon
     effect: |
-      A heavy weapon is a melee weapon that deals 1d12 base damage. Depending on the weapon, it deals either [[Bludgeoning]] or [[Slashing]] damage.
-
       When you roll a 12 on the damage die on a heavy weapon Strike, add 12 damage and reroll the die. Continue until the die doesn't roll a 12.
 
   # Flavor: very effective, great on the battlefield
@@ -101,9 +108,10 @@ weapons:
   Polearm:
     brief: A long polearm, such as a spear, halberd, or glaive
     traits: [Two-Handed]
+    tags:
+      type: Melee weapon
+      base damage: 1d12 [[Piercing]] or [[Slashing]], depending on the weapon
     effect: |
-      A polearm is a melee weapon that deals 1d12 base damage. Depending on the weapon, it deals either [[Piercing]] or [[Slashing]] damage.
-      
       Some polearms, such as short spears or lances, are built for use in one hand. These polearms are [[One-Handed]] instead of [[Two-Handed]] and deal 1d8 base damage instead of 1d12 base damage.
 
       Your reach with a polearm is 5 feet longer than your normal reach. You have disadvantage on polearm Strikes while you are adjacent to multiple walls, such as while standing in the corner of a room or in a 5-foot tunnel.
@@ -119,19 +127,21 @@ weapons:
   Staff:
     brief: A walking staff or quarterstaff, perfect for channeling spells
     traits: [One-Handed]
+    tags:
+      type: Melee weapon
+      base damage: 1d6 [[Bludgeoning]]
     effect: |
-      A staff is a melee weapon that deals 1d6 [[Bludgeoning]] base damage.
-      
-      While you are wielding a staff in two hands, the staff's damage increases to 1d8, and you have a +1 bonus to Defense.
+      While you are wielding a staff in two hands, the staff's base damage increases to 1d8, and you have a +1 bonus to Defense.
 
   # Flavor: simple, versatile, reliable, generic
   # Mechanics: 
   Sword:
     brief: A one-handed sword, good for both slashing and thrusting
     traits: [Finesse, One-Handed]
+    tags:
+      type: Melee weapon
+      base damage: 1d8 [[Slashing]]
     effect: |
-      A sword is a melee weapon that deals 1d8 [[Slashing]] base damage.
-
       When you make a sword Strike, you can choose to make a thrusting attack. If you do, the sword deals 1d6 [[Piercing]] base damage instead of its normal base damage. If the Strike is a critical success, the sword deals 1d12 base damage instead of 1d6 base damage.
 
   # Flavor: secondary weapon, support for before melee
@@ -139,14 +149,17 @@ weapons:
   Throwing Weapon:
     brief: A javelin, throwing axe, bola, or other thrown weapon
     traits: [One-Handed]
+    tags:
+      type: Melee weapon
+      base damage: 1d6 [[Bludgeoning]], [[Piercing]], or [[Slashing]], depending on the weapon
     effect: |
-      A throwing weapon is a melee weapon that deals 1d6 base damage. Depending on the weapon, it deals either [[Bludgeoning]] or [[Slashing]] damage.
-
-      A throwing weapon can be thrown as a ranged weapon with a range of 40 feet. Ranged Strikes with throwing weapons use Strength for the attack roll instead of Agility. When you succeed on a ranged Strike with a throwing weapon, you can use the **Slowing Hit** power.
+      A throwing weapon can be thrown as a ranged weapon with a range of 40 feet. Ranged Strikes with throwing weapons use Strength for the attack roll instead of Agility. You can use the **Slowing Hit** power.
     aside: |
       {% smallpower %}
       Slowing Hit:
         type: Free
+        tags:
+          trigger: You succeed on a ranged Strike with a throwing weapon
         effect: |
          Your target's Speed decreases by 10 feet until the end of your next turn.
       {% endsmallpower %}
@@ -155,9 +168,10 @@ weapons:
   # Mechanics: low damage, feats for grappling/tripping/etc
   Unarmed:
     brief: A punch or kick, weak but available while unarmed
-    effect: |
-      Your punch or kick counts as a melee weapon that deals 1d4 [[Bludgeoning]] base damage.
-      
+    tags:
+      type: Melee weapon
+      base damage: 1d4 [[Bludgeoning]]
+    effect: |      
       While you have no hands free, you have disadvantage on unarmed Strikes.
 
   Wand:
