@@ -1,5 +1,6 @@
 {% assign item_name = include.item[0] %}
 {% assign item_body = include.item[1] %}
+<div>
 
 <h3 id="{{ item_name | slugify }}">
     {{ item_name }}
@@ -7,6 +8,10 @@
 
 {% if item_body.aside %}
 <aside>{{ item_body.aside | process }}</aside>
+{% endif %}
+
+{% if item_body.preface %}
+    {{ item_body.preface | process }}
 {% endif %}
 
 {% if item_body.traits %}
@@ -17,14 +22,13 @@
     </ul>
 {% endif %}
 
-{% if power_body.tags %}
+{% if item_body.tags %}
     <dl class="tags">
-    {% for tag in power_body.tags %}
+    {% for tag in item_body.tags %}
         <dt>{{ tag[0] | capitalize }}</dt>
         <dd>{{ tag[1] | process_inline }}</dd>
     {% endfor %}
     </dl>
-    <hr>
 {% endif %}
 
 {{ item_body.effect | process }}
@@ -32,3 +36,5 @@
 {% if item_body.fluff %}
 <p><i>{{ item_body.fluff | process_inline }}</i></p>
 {% endif %}
+
+</div>

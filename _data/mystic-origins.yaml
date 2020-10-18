@@ -1,0 +1,76 @@
+Artificer:
+  preface: |
+    You cast magic spells through building items with magical effects.
+  tags:
+    magic: Your Magic stat equals your Intellect
+    mana: Your Mana stat equals 4 + 2 * your Caster level
+    rests: Your Mana pool replenishes when you complete an 8-hour rest
+  effect: |
+    You can use the **Infuse Item** power.
+  aside: |
+    {% smallpower %}
+    Infuse Item:
+      type: 1-Action
+      traits: [Concentrate, Manipulate]
+      tags:
+        duration: 8 hours, until you use this power again, or until the spell is expended
+      effect: |
+        Cast a spell. Instead of the spell taking effect, the spell is stored in a small item you touch. Any creature wielding that item can use that spell, expending it. You pay the spell's cost when you use this power, and the spell uses your stats, but the other activating creature chooses the spell's target and other parameters.
+    {% endsmallpower %}
+
+Bard:
+  preface: |
+    You cast magic spells through performance, stories, or creative art.
+  tags:
+    magic: Your Magic stat equals your Spirit
+    mana: Your Mana stat equals 4 + 2 * your Caster level
+    rests: Your Mana pool replenishes when you complete an 8-hour rest
+  effect: |
+    You can use the **Sustained Performance** power.
+  aside: |
+    {% smallpower %}
+    Sustained Performance:
+      type: Free
+      effect: |
+        {Sustain} a spell that doesn't have the [[Attack]] trait.
+    {% endsmallpower %}
+
+Cleric:
+  preface: |
+    You cast magic spells through faith and devotion to your religion.
+  tags:
+    magic: Your Magic stat equals your Spirit
+    mana: Your Mana stat equals 4 + 2 * your Caster level
+    rests: Your Mana pool replenishes when you complete an 8-hour rest
+  effect: |
+    When you reach Novice tier in a Mage or Priest class, choose one [[Spell]] talent in that class as your **domain spell** for that class. The cost of your domain spell is reduced by 1. You can change your domain spell whenever you level up.
+
+Innate:
+  preface: |
+    You cast magic spells through an inborn connection to magic.
+  tags:
+    magic: Your Magic stat equals your Spirit
+    mana: Your Mana stat equals 4 + 2 * your Caster level
+    rests: Your Mana pool replenishes when you complete an 8-hour rest
+  effect: |
+    You don't need an arcane focus to cast or sustain spells. Your spells don't have the [[Manipulate]] trait.
+
+Warlock:
+  preface: |
+    You cast magic spells through a bargain with an extraplanar entity.
+  tags:
+    magic: Your Magic stat equals your Intellect
+    mana: Your Mana stat equals 4 + your Caster level
+    rests: Your Mana pool replenishes when you complete an 1-hour rest
+  effect: |
+    When you finish an 8-hour rest, you can try to bargain with your patron for more power. Make a Spirit roll against DC 15. On a success, your Mana stat increases by 4. On a failure, your Mana stat decreases by 4. Both effects end when you complete another 8-hour rest.
+
+Wizard:
+  preface: |
+    You cast magic spells through intense study and memorization.
+  tags:
+    magic: Your Magic stat equals your Intellect
+    mana: Your Mana stat equals 4 + 2 * your Caster level
+    rests: Your Mana pool replenishes when you complete an 8-hour rest
+  effect: |
+    When you reach Novice tier in a Mage or Priest class, you learn one [[Cantrip]] talent from that class. This talent doesn't count towards the normal limit of talents you know from that class.

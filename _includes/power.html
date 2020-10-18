@@ -1,5 +1,6 @@
 {% assign power_name = include.power[0] %}
 {% assign power_body = include.power[1] %}
+<div>
 
 <h2 id="{{ power_name | slugify }}">
     {{ power_name }}
@@ -65,3 +66,5 @@
 {% if power_body.fluff %}
 <p><i>{{ power_body.fluff | process_inline }}</i></p>
 {% endif %}
+
+</div>
