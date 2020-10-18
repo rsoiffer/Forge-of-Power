@@ -5,7 +5,7 @@ sidebar:
   nav: character
 ---
 
-<h2>General Skills</h2>
+Skills describe types of actions your character might specialize in or out of combat.
 
 <table>
   <tr>
@@ -13,12 +13,10 @@ sidebar:
     <th>Description</th>
   </tr>
 {% for skill in site.data.skills %}
-  {% if skill[1].type == "General" %}
-    <tr>
-      <td>{{ skill[0] }}</td>
-      <td>{{ skill[1].brief }}</td>
-    </tr>
-  {% endif %}
+  <tr>
+    <td>{{ skill[0] }}</td>
+    <td>{{ skill[1].brief }}</td>
+  </tr>
 {% endfor %}
 </table>
 

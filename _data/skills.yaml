@@ -1,93 +1,173 @@
-Athletics:
-  type: General
-  brief: Perform deeds of physical prowess
-  description: |
-    Good with Strength and Agility.
-
-Wrestling:
-  type: General
-  brief: TODO
-  description: |
-    Good with Strength and Agility.
-
-Stealth:
-  type: General
-  brief: Avoid detection, slip past foes, hide, or conceal an item
-  description: |
-    Good with Agility and Spirit.
-
-Thievery:
-  type: General
-  brief: Maneuver vehicles through difficult terrain and dodge enemy fire
-  description: |
-    Good with Agility and Intellect.
-
 Arcana:
-  type: General
   brief: How much you know about arcane magic and creatures
-  description: ""
+  description: |
+    Good with Intellect.
+
+    Includes:
+    * Knowledge about spells
+    * Knowledge about magic creatures
+    * Knowledge about magic items
+    * Inventing spells
+    
+Athletics:
+  brief: Perform deeds of physical prowess or grace
+  description: |
+    Good with Strength and Agility.
+
+    Includes:
+    * Running
+    * Climbing
+    * Swimming
+    * Jumping
+    * Balancing
 
 Crafting:
-  type: General
   brief: Create, understand, and repair items or structures
   description: |
     Good with Intellect.
 
-Investigation:
-  type: General
-  brief: Look for clues and make deductions makes on them
-  description: ""
+    Includes:
+    * Crafting
+    * Repairing
+    * Alchemy
+    * Construction
+    * Appraising
 
-Religion:
-  type: General
-  brief: Know secrets of deities, dogma, faith, and the realms of the divine
-  description: ""
+Intimidation:
+  brief: Bend other to your will using threats or an imposing presence
+  description: |
+    Good with Strength and Spirit.
 
-Society:
-  type: General
-  brief: Understand the people and systems that make civilization run
+    Includes:
+    * Threatening
+    * Blackmailing
+    * Imposing
+    * Scaring
+    * Taunting
+
+Nature:
+  brief: Know about the natural world, and train animals and magical beasts
   description: |
     Good with Intellect and Spirit.
 
-Medicine:
-  type: General
-  brief: Patch up wounds and help people recover from diseases and poisons
-  description: ""
-
-Nature:
-  type: General
-  brief: Know about the natural world, and train animals and magical beasts
-  description: ""
+    Includes:
+    * Knowledge about plants
+    * Knowledge about natural creatures
+    * Navigating
+    * Handling animals
+    * Foraging
 
 Perception:
-  type: General
   brief: Spot, hear, or otherwise detect the presence of something
   description: |
     Good with Intellect and Spirit.
 
-Survival:
-  type: General
-  brief: Live in the wilderness, forage for food, track, and hide your trail
-  description: ""
-
-Deception:
-  type: General
-  brief: Trick and mislead others using disguises, lies, and subterfuge
-  description: ""
-
-Diplomacy:
-  type: General
-  brief: Influence others through negotiation and flattery
-  description: ""
-
-Intimidation:
-  type: General
-  brief: Bend other to your will using threats
-  description: |
-    Good with Strength and Spirit.
+    Includes:
+    * Seeing
+    * Hearing
+    * Reading emotions
+    * Noticing lies
+    * Finding clues
 
 Performance:
-  type: General
   brief: Use your talents to impress a crowd or make a living
   description:  |
-    Good with any stat and Spirit.
+    Good with any Agility and Spirit.
+
+    Includes:
+    * Singing
+    * Dancing
+    * Impressing
+    * Party tricks
+    * Inspiring
+
+Persuasion:
+  brief: Influence others through negotiation and flattery
+  description: |
+    Good with Intellect and Spirit.
+
+    Includes:
+    * Convincing
+    * Deceiving
+    * Flattering
+    * Negotiating
+    * Speechwriting
+
+Religion:
+  brief: Know secrets of deities, dogma, faith, and the realms of the divine
+  description: |
+    Good with Intellect and Spirit.
+
+    Includes:
+    * Knowledge about faiths
+    * Knowledge about planar creatures
+    * Preaching
+    * Converting
+    * Moralizing
+
+Society:
+  brief: Understand the people and systems that make civilization run
+  description: |
+    Good with Intellect and Spirit.
+
+    Includes:
+    * Knowledge about cultures
+    * Knowledge about history
+    * Fitting in
+    * Socializing
+    * Networking
+
+Stealth:
+  brief: Avoid detection, slip past foes, hide, or conceal an item
+  description: |
+    Good with Agility and Spirit.
+
+    Includes:
+    * Hiding
+    * Blending in
+    * Disguising
+    * Concealing objects
+    * Obscuring tracks
+
+Thievery:
+  brief: Maneuver vehicles through difficult terrain and dodge enemy fire
+  description: |
+    Good with Agility and Intellect.
+
+    Includes:
+    * Pickpocketing
+    * Lockpicking
+    * Disarming traps
+    * Knowledge about traps
+    * Knowledge about criminals
+
+Wrestling:
+  brief: Grapple, trip, disarm other creatures, and defend against the same
+  description: |
+    Good with Strength and Agility.
+
+    Includes:
+    * Grappling
+    * Pushing
+    * Tripping
+    * Disarming
+    * Defending against the above
+
+
+
+
+# Medicine:
+#   brief: Patch up wounds and help people recover from diseases and poisons
+#   description: ""
+
+# Investigation:
+#   brief: Look for clues and make deductions makes on them
+#   description: ""
+
+# Survival:
+#   brief: Live in the wilderness, forage for food, track, and hide your trail
+#   description: ""
+
+# Deception:
+#   brief: Trick and mislead others using disguises, lies, and subterfuge
+#   description: ""

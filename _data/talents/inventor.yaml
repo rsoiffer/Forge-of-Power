@@ -24,13 +24,13 @@ Overload:
   tier: Novice
   type: 1-Action
   brief: You overload one of your creations with power, exploding it
-  traits: [Attack, Fire]
+  traits: [Attack, Daily, Fire]
   tags:
-    requirements: You must center the area of this power on an item you can see within range that is affected by one of your Inventor powers
+    requirements: You must center the area of this power on a creature or object that is affected by one of your Inventor powers
     range: 60 feet
     area: 20-foot burst
   effect: |
-    Make an Intellect attack roll against your target's Agility DC.
+    Dispel the chosen Inventor power. Make an Intellect attack roll against your target's Agility DC.
   success: Your target takes (8d6 + 2 * your Inventor level) damage
   failure: Your target takes half damage
 
@@ -41,6 +41,7 @@ Shock Net:
   traits: [Attack, Electricity, Encounter]
   tags:
     range: 60 feet
+    area: 5-foot burst
     duration: 1 minute
   effect: |
     Make an Intellect attack roll against your target's Defense.
@@ -60,6 +61,16 @@ Shock Net:
       effect: |
         All targets {restrained} by your Shock Net take 1d6 damage.
     {% endsmallpower %}
+
+Universal Gadget:
+  tier: Novice
+  type: Free
+  brief: You create a gadget that lets you replicate another talent
+  traits: [Concentrate, Daily, Manipulate]
+  tags:
+    duration: 1 minute
+  effect: |
+    You learn a Novice talent of your choice from any class. This talent cannot have the [[Daily]] trait.
 
 Upgrade Weapon:
   tier: Novice
@@ -89,13 +100,3 @@ Upgrade Weapon:
 
     Shocking Weapon
     : Strikes with your target deal an extra 1d6 [[Electricity]] damage
-
-Universal Gadget:
-  tier: Novice
-  type: Free
-  brief: You create a gadget that lets you replicate another talent
-  traits: [Concentrate, Daily, Manipulate]
-  tags:
-    duration: 1 minute
-  effect: |
-    You learn a Novice talent of your choice from any class. This talent cannot have the [[Daily]] trait.
