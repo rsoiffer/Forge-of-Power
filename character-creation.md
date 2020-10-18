@@ -7,64 +7,39 @@ sidebar:
 
 As in other tabletop RPGs, before beginning character creation, you should talk with your group about the general setting and style of your game. Ask your GM what character level you're starting at, and if they're using any custom rules. Finally, grab a blank sheet of paper to act as a character sheet, where you can record all the choices you make. 
 
-## Step 1. Choose your General Theme
+## Step 1 - General Theme
 
 The first step in making any character is deciding what you generally want your character to be. Will you be a powerful mage, casting arcane spells that reshape reality? A kung-fu master who can somersault and jump between enemies? A hardened soldier with a variety of weapons, who can tough through any situation?
 
 In this step, you should develop these ideas more, working out the details of what you imagine your character will act and feel like. While you don't have to write any of this down, you should keep it in mind as you create the rest of your character. The general theme you have in mind can guide you in choosing what specific powers your character will have, greatly speeding up character creation.
 
-## Step 2. Determine Attribute Scores
+## Step 2 - Attributes
 
 The next step is to determine your character's attributes. Characters in Forge of Power have 4 attributes: Strength, Agility, Intellect, and Spirit. Your score in each attribute is a single number, which can range from -2 to +10. The average value of an attribute for a normal human is +0. See the {% ref Attributes %} page for a description of each attribute.
 
 Your starting score in each attribute is a number between -1 and +3. You can choose any starting scores you want such that your scores sum to a total to 4. For example, you could start with +3 Strength, -1 Agility, +2 Intellect, and +0 Spirit, since 3 - 1 + 2 + 0 = 4. Write your score in each attribute on your character sheet.
 
-## Step 3. Choose your Skills
+### Improving Attributes
 
-You now choose what skills your character specializes in. Skills are divided into two broad categories. Combat skills, which are always used during combat, represent your experience with types of weapons or magic. General skills represent your ability to perform non-combat tasks of all kinds. See the {% ref Skills %} page for a full list of all skills and their purpose in the game.
+If you're making a level 2 or higher character, your attributes are even higher. For every even level (level 2, 4, 6, etc.), choose to either:
+* Increase your highest attribute by 1
+* Increase two attributes lower than your highest attribute by 1 each
 
-Your bonus to each skill is equal to your score in the skill's attribute + your Proficiency in that skill. You start with +0 Proficiency in each skill. Many power schools increase your Proficiency in various *combat skills*. If multiple power schools set your Proficiency in a combat skill, you only take the highest value. You can also get **skill boosts**, which you can apply to a *general skill* to increase your Proficiency in that skill by 2.
+## Step 3 - Ancestry
 
-You start with 4 skill boosts, which you must apply to different general skills. You gain another skill boost at every odd character level. This means that the total number of skill boosts you have is equal to 4 + half your character level, rounded up. No matter how many skill boosts you apply to a general skill, your Proficiency in that skill can't increase beyond the maximum given in the table below:
+Choose one ancestry from the {% ref Ancestries %} page.
 
-<table>
-  <tr>
-    <th>Character Level</th>
-    <th>Max Proficiency</th>
-  </tr>
-  <tr>
-    <td>1 ... 4</td>
-    <td>+4</td>
-  </tr>
-  <tr>
-    <td>5 ... 10</td>
-    <td>+6</td>
-  </tr>
-  <tr>
-    <td>11 ... 16</td>
-    <td>+8</td>
-  </tr>
-  <tr>
-    <td>17 or more</td>
-    <td>+10</td>
-  </tr>
-</table>
+## Step 4 - Class Levels
 
-## Step 4. Choose your Powers
+Your character's main ability come from your class, which is a group of many thematically-similar powers. There are a total of 20 classes in Forge of Power. See the {% ref Classes %} page for a full list of all classes and their descriptions.
 
-Powers are a general term for all the special abilities your character has. They cover everything from basic actions to powerful spells. Most of character customizability comes from picking your character's powers.
-
-**Basic powers** are shared across all characters. Your character can use all the powers listed in the {% ref Basic Powers %} page. **Learned powers** are tied to particular power schools and must be learned before you can use them.
-
-All learned powers are part of a power school, which is a group of many thematically-similar powers. There are a total of 24 power schools in Forge of Power. See the {% ref Power Schools %} page for a full list of all power schools and their descriptions.
-
-When you create your character, you split your character level between the power schools. Write your level in each power school on your character sheet. Your character level and your level in a school determine your tier in the school, as shown in the table below:
+When you create your character, you split your character level between the classes. Write your level in each class on your character sheet. Your character level and your level in a class determine your tier in the class, as shown in the table below:
 
 <table>
   <tr>
     <th>Tier</th>
     <th>Character Level</th>
-    <th>School Level</th>
+    <th>Class Level</th>
   </tr>
   <tr>
     <td>Novice</td>
@@ -88,47 +63,70 @@ When you create your character, you split your character level between the power
   </tr>
 </table>
 
-Your character knows a number of powers from each power school equal to your level in that school. All learned powers have a tier, which is shown next to the power's name. To learn a power, you must be at least that tier in the power's school.
+### Talents
 
-For example, imagine you are creating a level 5 character. You could choose to put 3 levels in Blaster and 2 levels in Duelist. This makes you a Veteran Blaster and a Novice Duelist. You then learn 3 powers from the Blaster school, all of which must be either Novice or Veteran. You also learn 2 powers from the Duelist school, both of which must be Novice.
+Your character knows a number of talents from each class equal to your level in that class. All talents have a tier, which is shown next to the talent's name. To learn a talent, you must be at least that tier in the talent's c;ass.
 
-As another example, imagine you are creating a level 11 character. You could choose to put all 11 levels in the Arcanist school. This makes you a Master Arcanist. You then learn 11 powers from the Arcanist school, all of which must be Novice, Veteran, or Master.
+For example, imagine you are creating a level 5 character. You could choose to put 3 levels in Blaster and 2 levels in Duelist. This makes you a Veteran Blaster and a Novice Duelist. You then learn 3 talents from the Blaster class, all of which must be either Novice or Veteran. You also learn 2 talents from the Duelist class, both of which must be Novice.
 
-## Step 5. Choose your Ribbons
+As another example, imagine you are creating a level 11 character. You could choose to put all 11 levels in the Arcanist class. This makes you a Master Arcanist. You then learn 11 talents from the Arcanist class, all of which must be Novice, Veteran, or Master.
 
-In addition to powers, your character has several abilities called ribbons. Ribbons are associated to power schools, and are very similar to powers, except that they are generally not very useful in combat. Ribbons are a good way to give your character more theme and flavor without impacting your combat capabilities.
+### Ribbons
 
-You learn one ribbon at every odd character level. This means that the total number of ribbons you know is equal to half your character level, rounded up. You can't pick ribbons from a power school that you have no levels in, but there are no other restrictions on which ribbons you can choose.
+In addition to talents, your character has several abilities called ribbons. Ribbons are associated to classes, and are very similar to talents, except that they are generally not very useful in combat. Ribbons are a good way to give your character more theme and flavor without impacting your combat capabilities.
 
-## Step 6. Choose your ASIs/Feats
+You learn one ribbon at every odd character level (1, 3, 5, etc.). This means that the total number of ribbons you know is equal to half your character level, rounded up. You can't pick ribbons from a classes that you have no levels in, but there are no other restrictions on which ribbons you can choose.
 
-Your character becomes stronger in other ways than simply learning more powers. At every even level, you can choose to either get an Attribute Score Improvement (ASI) or a feat. This means that the total number of ASIs or feats you get is equal to half your character level, rounded down. This represents your character becoming stronger generally, in a way that isn't tied to any specific power school.
+## Step 5 - Feats
 
-If you choose to get an ASI, you increase your score in one attribute by 1 point, to a maximum of +5.
+Feats are abilities that represent your character becoming stronger generally, in a way that isn't tied to any specific class. Feats are divided into four categories:
+* **General Feats** give you generally useful abilities that don't fit into the other categories
+* **Ancestry Feats** give you special abilities related to your ancestry, and always have a specific ancestry as a prerequisite
+* **Combat Feats** make you better at combat, giving you damage bonuses to weapons or spells
+* **Skill Feats** make you better at skills, giving you bonuses to die rolls for those skills
 
-If you choose to get a feat, you learn one feat from the {% ref Feats %} page.
+All combat feats and skill feats give [[Proficiency]] bonuses. These bonuses only stack up to a certain amount depending on your character level. This cap limits the amount you can specialize in one area, so after you reach this cap, it's better to choose other types of feats.
 
-## Step 7. Compute Miscellaneous Stats
+### Starting Feats
+
+Your character starts with two combat feats and four skill feats.
+
+### Extra Feats
+
+You learn one additional feat for each character level, which can be from any category.
+
+## Step 6 - Other Stats
 
 You're now almost finished making your character! The only game mechanics task remaining is to write down a few numbers describing various aspects of your character.
-
-***Character Level.*** Your character's level describes your overall strength. Most characters are between levels 1 and 20, but this isn't a hard limit. The GM determines what level your character is.
 
 ***Health.*** Your Health measures how much damage you can take before falling unconscious. Your Health is equal to 20 + Character Level + 4 * Strength.
 
 ***Defense.*** Your Defense measures how well you can avoid, dodge, or parry physical attacks. Your Defense is equal to 8 + an attribute determined by your [apparel](equipment.html#apparel).
 
-***Stat DC.*** You have a DC for each of your attributes and your Perception. This measures how well you can defend against effects targeting that stat. Your DC for a given stat is equal to 10 + the stat.
+***Speed.*** Your Speed determines how far you can move when you {Stride}. Your character has a Speed of 30 feet.
 
-## Step 8. Buy Equipment
+***Stat DC.*** You have a DC for each of your attributes. This measures how well you can defend against effects targeting that attribute. Your DC for a given attribute is equal to 10 + the attribute.
 
-Don't forget to buy equipment to use in your adventures! You start with (100 * your character level) gold pieces (gp). See the {% ref weapons %} and {% ref armor %} pages for stats. More tables for standard adventuring gear and magic items are on the way.
+***Magic & Mana.*** If you can cast spells, you have two special stats, Magic and Mana. Your Magic determines the overall potency of your spells. Your Mana determines how many spells you can cast before running out of magical energy. See the {% ref Mystic Origins %} page for details.
 
-## Step 9. Describe your Personality
+## Step 7 - Equipment
 
-What your character will choose to do is as important as what your character has the power to do. Every player character has a list of **Quirks**, which are unique personality traits or flaws that define them. Your Quirks act as a guide to help you roleplay your character, and are useful for [Setbacks](narrative-rules.html#setbacks).
+Don't forget to buy equipment to use in your adventures! You start with (10 * your character level) gold pieces (gp). You can buy any equipment listed on the {% ref Equipment %} page.
 
-When you make your character, you should write down at least three Quirks that make you stand out. Feel free to add, modify, or remove Quirks at any time as your understanding of your character's personality changes. The categories and random generators below can help give you ideas for your character's Quirks.
+## Step 8 - Proficiencies
+
+You can pick up the 10 proficiencies, which include:
+* Specific areas of knowledge
+* Languages
+* Tools
+* Musical instruments
+* Vehicles
+
+## Step 9 - Aspects
+
+What your character will choose to do is as important as what your character has the power to do. Every player character has a list of **Aspects**, which are unique personality traits or flaws that define them. Your Aspects act as a guide to help you roleplay your character, and are useful for [Setbacks](narrative-rules.html#setbacks). See the {% ref Narrative Rules %} page for details.
+
+When you make your character, you should write down at least three Aspects that make you stand out. Feel free to add, modify, or remove Aspects at any time as your understanding of your character's personality changes. The categories and random generators below can help give you ideas for your character's Aspects.
 
 ***Habits.*** These describe the obvious character actions that makes your character stand out from the average adventurer.
 
@@ -146,9 +144,18 @@ When you make your character, you should write down at least three Quirks that m
 
 {% roll_me_one flaws %}
 
-## Step 10. Write your Backstory
+## Step 10 - Backstory
 
 The final step in making a character is figuring out how you reached the start of the adventure. You should write down some basic notes about where your character was raised, any previous jobs you've held, and how you met the rest of the party. Your backstory is also the perfect place to introduce the NPC contacts that your character knows. The more detail you write, the better your GM will be able to merge this detail with the campaign setting.
 
+## Levelling Up
+
+When you level up, you gain:
+* One talent
+* One feat
+* If it's an odd level, one ribbon
+* If it's an even level, one Attribute Score Improvement
+
+In general, whenever you level up, you can change any character build decisions you made earlier, except what classes you have levels in. You can forget talents and learn new talents in their place, change your feats, and so on. Check with your GM before making especially drastic changes when you level up.
 
 <script type="module" src="{% link assets/js/roll-me-one.js %}"></script>
