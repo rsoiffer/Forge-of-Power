@@ -158,10 +158,14 @@ aside {
   font-size: 90%;
 }
 
-aside h2 {
+aside div:first-child h2 {
   margin-top: 0.2em;
 }
 
-h2, h3 {
-  clear: both;
+aside h2 {
+  margin-top: 1.5em;
 }
+
+// div:not(.heritages) h2 {
+//   clear: both;
+// }

@@ -1,0 +1,41 @@
+brief: The most common and widespread race, highly cross-cultural and adaptable
+traits: [Humanoid]
+effect: |
+  General description.
+
+  ### Origin
+
+  TODO
+
+  ### Physical Description
+
+  TODO
+
+  ### Society
+
+  TODO
+
+  ### Adventurers
+
+  TODO
+
+  ### Feats
+
+  * A bonus feat
+  * OR - A bonus ancestry feat, can take feats from that ancestry
+heritages:
+  Human:
+    traits: [Humanoid]
+    tags:
+      attributes: +0 Strength, +0 Agility, +0 Intellect, +0 Spirit
+      misc stats: 30 feet Speed, +0 Size
+    effect: |
+      You add +1 to an attribute of your choice. You gain a feat of your choice.
+
+  Demi-Human:
+    traits: [Humanoid]
+    tags:
+      attributes: +0 Strength, +0 Agility, +0 Intellect, +0 Spirit
+      misc stats: 30 feet Speed, +0 Size
+    effect: |
+      You add +1 to an attribute of your choice. Choose an ancestry of your choice other than human. You can learn ancestry feats from that ancestry, and you gain an ancestry feat of your choice from that ancestry.

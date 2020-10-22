@@ -1,0 +1,34 @@
+brief: A long-lived and aloof people with innate magical or psionic powers
+traits: [Humanoid]
+effect: |
+  General description.
+
+  ### Origin
+
+  TODO
+
+  ### Physical Description
+
+  TODO
+
+  ### Society
+
+  TODO
+
+  ### Adventurers
+
+  TODO
+
+  ### Feats
+
+  * +4 to resist emotion effect
+  * Can trance instead of sleeping
+  * Mind meld - touch range telepathic links
+heritages:
+  Elf:
+    traits: [Humanoid]
+    tags:
+      attributes: +0 Strength, +1 Agility, +0 Intellect, +0 Spirit
+      misc stats: 30 feet Speed, +0 Size
+    effect: |
+      You gain an ancestry feat of your choice.

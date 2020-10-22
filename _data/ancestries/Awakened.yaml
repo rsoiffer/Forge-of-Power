@@ -1,0 +1,68 @@
+brief: Hyper-intelligent animals with opposable thumbs and humanoid mannerisms
+effect: |
+  Awakened are normal animals that were granted incredible intelligence through magic.
+
+  ### Origin
+
+  Once upon a time, there was a powerful druid who lived in harmony with nature. This druid respected the inherent dignity of animals, but they felt that animals were looked down on by humanoids because of their lesser intelligence. This druid invented the {Awaken} spell to raise animals to the intelligence level of humans. However, this spell worked too well: the awakened animals were even more intelligent than humanoids! The confused and fearful humanoids pushed the awakened away, and the awakened retreated to live solitary lives in their home forests. The Awaken spell was passed down through the generations, so that new animals are slowly being awakened even today.
+
+  ### Physical Description
+
+  Awakened appear almost completely like their original animal forms. The main physical difference between awakened animals and their natural relatives is that awakened animals have opposable thumbs that let them use tools as well as humanoids. Awakened have very sophistical brains compared to normal humanoids. Some awakened can instantly solve complex math puzzles, build incredible technological gadgets, or even channel innate psionic powers. Any type of animal can be awakened: bears, gorillas, raccoons, velociraptors, and cats are common.
+
+  ### Society
+
+  Most awakened live separately from humanoid society. Awakened rarely build settlements, preferring a natural lifestyle in tune with nature. Awakened sometimes live alongside non-awakened animals, which they see as distant relatives that are too stupid to take care of themselves. The awakened are loosely governed by the druidic conclaves that preserve knowledge of the Awaken spell. These druidic conclaves awaken new animals as fast as they can, but the complex Awaken spell can only be cast by the most powerful druids, which greatly limits the rate of growth of the awakened population.
+
+  ### Adventurers
+
+  TODO
+
+  ### Feats
+
+  * Innate climb speed, bonus land speed
+  * Limited telepathy (range 30 feet)
+  * Your unarmed strikes deal 1d4 damage
+
+heritages:
+  Tiny Awakened:
+    traits: [Beast]
+    tags:
+      attributes: -3 Strength, +2 Agility, +1 Intellect, +0 Spirit
+      misc stats: 40 feet Speed, -2 Size
+    effect: |
+      You gain an ancestry feat of your choice. You can use the **Mental Powerhouse** power.
+    fluff: Tiny awakened include cats, raccoons, and hawks.
+    aside: |
+      {% smallpower %}
+      Mental Powerhouse:
+        effect: |
+          Your mind is incredibly sharp and precise. You can complete lengthy mental tasks, such as calculating equations, making plans, or writing essays, 10 times faster than normal.
+      {% endsmallpower %}
+
+  Small Awakened:
+    traits: [Beast]
+    tags:
+      attributes: -1 Strength, +1 Agility, +1 Intellect, +0 Spirit
+      misc stats: 35 feet Speed, -1 Size
+    effect: |
+      You gain an ancestry feat of your choice. You can use the **Mental Powerhouse** power.
+    fluff: Small awakened include dogs, eagles, and velociraptors.
+
+  Medium Awakened:
+    traits: [Beast]
+    tags:
+      attributes: +0 Strength, +0 Agility, +1 Intellect, +0 Spirit
+      misc stats: 30 feet Speed, +0 Size
+    effect: |
+      You gain an ancestry feat of your choice. You can use the **Mental Powerhouse** power.
+    fluff: Medium awakened include wolves, deer, and sharks.
+
+  Large Awakened:
+    traits: [Beast]
+    tags:
+      attributes: +1 Strength, -1 Agility, +1 Intellect, +0 Spirit
+      misc stats: 30 feet Speed, +1 Size
+    effect: |
+      You gain the Natural Weapon ancestry feat. You can use the **Mental Powerhouse** power.
+    fluff: Large awakened include bears, gorrilas, and tigers.

@@ -88,7 +88,7 @@ module CustomFilters
 
   module ProcessFilter
     def process(input)
-      input = Liquid::Template.parse(input).render(@context)
+      input = Liquid::Template.parse(input.to_s).render(@context)
 
       converter = Jekyll::Converters::Markdown::LinkerProcessor.new(@context.registers[:site].config)
       

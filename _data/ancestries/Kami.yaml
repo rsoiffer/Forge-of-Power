@@ -1,0 +1,37 @@
+brief: Divine spirits that represent the natural world, organized in a celestial bureaucracy
+traits: [Spirit]
+effect: |
+  General description.
+
+  ### Origin
+
+  TODO
+
+  ### Physical Description
+
+  TODO
+
+  ### Society
+
+  TODO
+
+  ### Adventurers
+
+  TODO
+
+  ### Feats
+
+  * Resistance to two damage types
+  * +2 to two skills
+  * A bonus Conjurer ribbon
+
+heritages:
+  Kami:
+    traits: [Spirit]
+    tags:
+      attributes: +0 Strength, +0 Agility, +0 Intellect, +1 Spirit
+      misc stats: 30 feet Speed, +0 Size
+    effect: |
+      TODO.
+
+      You gain an ancestry feat of your choice.

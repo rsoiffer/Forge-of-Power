@@ -1,0 +1,37 @@
+brief: Amphibious lizard-people who mutate into dragons by eating monsters
+traits: [Humanoid]
+effect: |
+  General description.
+
+  ### Origin
+
+  TODO
+
+  ### Physical Description
+
+  TODO
+
+  ### Society
+
+  TODO
+
+  ### Adventurers
+
+  TODO
+
+  ### Feats
+
+  * When wearing armor, you gain a +1 bonus to AC
+  * You have a +2 bonus to saving throws against fear effect
+  * Your unarmed strikes deal 1d4 damage
+
+heritages:
+  Lizardfolk:
+    traits: [Monster]
+    tags:
+      attributes: +1 Strength, +1 Agility, -1 Intellect, +0 Spirit
+      misc stats: 30 feet Speed, +0 Size
+    effect: |
+      TODO.
+
+      You gain an ancestry feat of your choice.

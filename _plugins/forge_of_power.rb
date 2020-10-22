@@ -13,6 +13,10 @@ module ForgeOfPower
             end
           }
         end
+      site.data["navigation"]["character"][1]["children"] =
+        site.data["ancestries"].map do |name|
+          {"title" => name[0], "url" => Jekyll::Utils.slugify(name[0]) + ".html"}
+        end
 
       site.data["powers"] =
         site.data["talents"].flat_map do |name, school|

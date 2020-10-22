@@ -1,0 +1,35 @@
+brief: Intelligent and friendly greater undead, with strong attachments to this world
+traits: [Spirit, Undead]
+effect: |
+  General description.
+
+  ### Origin
+
+  TODO
+
+  ### Physical Description
+
+  TODO
+
+  ### Society
+
+  TODO
+
+  ### Adventurers
+
+  TODO
+
+  ### Feats
+
+  * TODO
+
+heritages:
+  Undead:
+    traits: [Spirit]
+    tags:
+      attributes: +0 Strength, +0 Agility, +0 Intellect, +1 Spirit
+      misc stats: 30 feet Speed, +0 Size
+    effect: |
+      TODO.
+
+      You gain an ancestry feat of your choice.

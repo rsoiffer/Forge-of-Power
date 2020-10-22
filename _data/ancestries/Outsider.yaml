@@ -1,0 +1,37 @@
+brief: Angels and devils that survive by feeding on other people's emotions
+traits: [Spirit]
+effect: |
+  General description.
+
+  ### Origin
+
+  TODO
+
+  ### Physical Description
+
+  TODO
+
+  ### Society
+
+  TODO
+
+  ### Adventurers
+
+  TODO
+
+  ### Feats
+
+  * Don't have to eat, drink, sleep, or breathe
+  * +2 to resist poison and mental effect
+  * Expertise in one general skill
+
+heritages:
+  Outsider:
+    traits: [Spirit]
+    tags:
+      attributes: +0 Strength, +0 Agility, +0 Intellect, +1 Spirit
+      misc stats: 30 feet Speed, +0 Size
+    effect: |
+      TODO.
+
+      You gain an ancestry feat of your choice.

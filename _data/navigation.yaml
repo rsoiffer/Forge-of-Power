@@ -31,6 +31,9 @@ character:
     url: /character-creation.html
   - title: Ancestries
     url: /ancestries.html
+    children:
+      - title: Awakened
+        url: /ancestries/awakened.html
   - title: Attributes
     url: /attributes.html
   - title: Mystic Origins
