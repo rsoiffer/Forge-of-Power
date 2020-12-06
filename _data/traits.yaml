@@ -3,9 +3,6 @@
 Acid: |
   Effects with this trait deal acid damage. Effects with this trait implicitly have the [[Elemental]] trait as well.
 
-Auditory: |
-  Auditory effects rely on sound. An [[Auditory]] effect can only affect creatures that can hear it.
-
 Beast: |
   A creature with this trait is an animal.
 
@@ -14,12 +11,6 @@ Bludgeoning: |
 
 Cold: |
   Effects with this trait deal cold damage. Effects with this trait implicitly have the [[Elemental]] trait as well.
-
-Concentrate: |
-  A power with this trait requires a degree of mental concentration and discipline.
-
-Divination: |
-  Effects with this trait reveal knowledge about a creature, object, or location. Effects with this trait might also determine what is likely to happen in the near future. Predictions of the future are never guaranteed to give correct results, only guesses or possible outcomes.
 
 Electricity: |
   Effects with this trait deal electricity damage. Effects with this trait implicitly have the [[Elemental]] trait as well.
@@ -45,20 +36,11 @@ Healing: |
 Humanoid: |
   A creature with this trait is biologically similar to a human, with the same general body shape, limbs, and intellect.
 
-Linguistic: |
-  An effect with this trait depends on language comprehension. A [[Linguistic]] effect that targets a creature works only if the target understands the language you are using.
-
-Manipulate: |
-  You must physically manipulate an item or make gestures to use a power with this trait. Creatures without a suitable appendage can't use powers with this trait.
-
 Mental: |
   An effect with this trait can alter the target's mind. It has no effect on an object or a mindless creature.
 
 Monster: |
   A creature with this trait is an animal infused with magic that significantly alters its form, often granting it supernatural powers.
-
-Move: |
-  A power with this trait involves moving from one space to another.
 
 Physical: |
   Effects with this trait deal damage by some kind of collision between physical objects.
@@ -84,11 +66,31 @@ Sonic: |
 Spirit: |
   A creature with this trait is a supernatural spirit, a magical entity that interacts with the world in an unusual way.
 
-Visual: |
-  An effect with this trait can affect only creatures that can see it.
-
 Undead: |
   A creature with this trait is a soul that persists in the world after its normal death. Creatures with this trait always have the [[Spirit]] trait as well.
+
+# General
+
+Auditory: |
+  Auditory effects rely on sound. An [[Auditory]] effect can only affect creatures that can hear it.
+
+Concentrate: |
+  A power with this trait requires a degree of mental concentration and discipline.
+
+Divination: |
+  Effects with this trait reveal knowledge about a creature, object, or location. Effects with this trait might also determine what is likely to happen in the near future. Predictions of the future are never guaranteed to give correct results, only guesses or possible outcomes.
+
+Linguistic: |
+  An effect with this trait depends on language comprehension. A [[Linguistic]] effect that targets a creature works only if the target understands the language you are using.
+
+Manipulate: |
+  You must physically manipulate an item or make gestures to use a power with this trait. Creatures without a suitable appendage can't use powers with this trait.
+
+Move: |
+  A power with this trait involves moving from one space to another.
+
+Visual: |
+  An effect with this trait can affect only creatures that can see it.
 
 # Mechanical
 
@@ -128,11 +130,8 @@ Misfortune: |
 One-Handed: |
   An item with this trait requires one hand to wield. You cannot use this hand for anything else while wielding this item.
 
-Polymorph: |
-  These effects transform the target into a new form. A target can't be under the effect of more than one [[Polymorph]] effect at a time, later [[Polymorph]] effects disrupt existing ones. While you are polymorphed, your gear is absorbed into you; the passive abilities of your gear still function, but you can't activate or use any items.
-
-Proficiency: |
-  Powers with this trait give you a special **Proficiency** bonus to a stat. This bonus applies as long as you meet the requirements of the power, ignoring the power's cost, duration, and other tags. This bonus only stacks with other [[Proficiency]] powers up to a certain amount. The table below lists the maximum number of [[Proficiency]] powers that can give you a bonus to a die roll:
+Perk: |
+  Powers with this trait give you a special **Perk** bonus to a stat. This bonus applies as long as you meet the requirements of the power, ignoring the power's cost, duration, and other tags. This bonus only stacks with other [[Perk]] powers up to a certain amount. The table below lists the maximum number of [[Perk]] powers that can give you a bonus to a die roll:
 
   <table>
     <tr>
@@ -156,6 +155,9 @@ Proficiency: |
       <td>4</td>
     </tr>
   </table>
+
+Polymorph: |
+  These effects transform the target into a new form. A target can't be under the effect of more than one [[Polymorph]] effect at a time, later [[Polymorph]] effects disrupt existing ones. While you are polymorphed, your gear is absorbed into you; the passive abilities of your gear still function, but you can't activate or use any items.
 
 Reputation: |
   Effect with this trait represent broad changes in how other people view you socially. [[Reputation]] effects don't apply to unintelligent or asocial monsters, or to people who are so separate from society that they haven't heard about you. [[Reputation]] effects can be cancelled out by a conflicting reputation caused by your actions or by other people spreading rumors about you.

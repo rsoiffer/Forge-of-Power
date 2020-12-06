@@ -4,10 +4,10 @@ Copy Spell:
   tier: Arcana
   type: Reaction
   brief: You analyze a spell so well that you can cast it yourself
-  traits: [Daily, Proficiency]
+  traits: [Daily, Perk]
   tags:
-    proficiency: +2 Arcana
-    trigger: You successfully identity a spell
+    perk: +2 Arcana
+    trigger: You successfully identify a spell
     duration: 1 hour
   effect: |
     You learn the triggering spell. If the spell is a talent, you can only cast it if you qualify to learn talents of that tier.
@@ -16,9 +16,9 @@ Spellbook:
   tier: Arcana
   type: Passive
   brief: You store your spells in a book, so you can swap between them as needed
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +2 Arcana
+    perk: +2 Arcana
   effect: |
     When you complete an 8-hour rest, you can swap all your [[Spell]] talents and ribbons for other [[Spell]] talents and ribbons from the same class.
 
@@ -28,9 +28,9 @@ Burst of Power:
   tier: Athletics
   type: Free
   brief: You push past your limits with a sudden surge of adrenaline
-  traits: [Encounter, Proficiency]
+  traits: [Encounter, Perk]
   tags:
-    proficiency: +2 Athletics
+    perk: +2 Athletics
     requirements: You are in combat, or a similar dangerous situation
     trigger: You make an Athletics roll
   effect: |
@@ -40,9 +40,9 @@ Daredevil Acrobat:
   tier: Athletics
   type: Passive
   brief: You are an expert at balancing on moving surfaces, even creatures
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +2 Athletics
+    perk: +2 Athletics
   effect: |
     You can climb and balance on moving surfaces as easily as if those surfaces were completely still. You can climb and balance on creatures that are larger than you, even hostile creatures. You suffer no combat penalties from balancing or climbing.
 
@@ -52,9 +52,9 @@ False Expert:
   tier: Eloquence
   type: Passive
   brief: You are great at pretending to be an expert in topics you know nothing about
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +2 Eloquence
+    perk: +2 Eloquence
   effect: |
     You have a +10 bonus to Eloquence rolls made to convince other people you know a lot about a topic. This bonus doesn't apply if you actually are an expert in that topic.
   fluff: I know three things about tabletop rpgs...
@@ -63,26 +63,11 @@ Moneylender:
   tier: Eloquence
   type: Passive
   brief: You seem very trustworthy to others when it comes to finances
-  traits: [Proficiency, Reputation]
+  traits: [Perk, Reputation]
   tags:
-    proficiency: +2 Eloquence
+    perk: +2 Eloquence
   effect: |
     Other people recognize you as someone who can be trusted with money and financial matters. You have +5 reputation for determining whether someone trusts you enough to borrow money from you or lend money to you.
-
-# Intimidation
-
-Scare to Death:
-  tier: Intimidation
-  type: 1-Action
-  brief: You scare someone so hard they literally die of fright
-  traits: [Attack, Auditory, Fear, Proficiency]
-  tags:
-    proficiency: +2 Intimidation
-    range: 30 feet
-  effect: |
-    Make a Strength (Intimidation) or Spirit (Intimidation) attack roll against your target's Spirit DC.
-  critical-success: Your target takes damage equal to twice the amount your attack roll exceeded the DC
-  success: Your target takes damage equal to the amount your attack roll exceeded the DC
 
 # Nature
 
@@ -90,27 +75,46 @@ Befriend Animal:
   tier: Nature
   type: 1-Action
   brief: You can quickly make friends with all kinds of beasts and monsters
-  traits: [Auditory, Proficiency]
+  traits: [Auditory, Perk]
   tags:
-    proficiency: +2 Nature
+    perk: +2 Nature
     range: 10 feet
     target: A [[Beast]] or [[Monster]] you can see within range that you haven't targeted with this power in the last 24 hours
     duration: 1 hour, or until you or any of your allies are hostile towards your target
   effect: |
-    Make a Spirit (Nature) roll against DC 10 + your target's CR.
+    Make a Spirit+Nature roll against DC 10 + your target's CR.
   critical-success: Your target is helpful towards you and indifferent towards your allies
   success: Your target is friendly towards you and you indifferent towards your allies
   critical-failure: Your target is hostile towards you and your allies
 
-# Perception
+Experienced Tracker:
+  tier: Nature
+  type: Free
+  brief: You can easily follow tracks and learn things about your prey
+  traits: [Perk]
+  tags:
+    perk: +2 Nature
+    trigger: You roll Intellect+Nature to investigate or follow tracks
+    requirements: You haven't used Experience Tracker on these tracks in the last 24 hours
+  effect: |
+    You have a +10 bonus to the triggering roll. Additionally, you notice a hidden bit of information of the DM's choice about the creatures you're tracking. For example, you might notice that the creatures are walking single-file to hide their numbers, that the tracks match a specific style of boot, or that the creatures were moving with unusual haste.
+
+# Notice
+
+Alert:
+  tier: Novice
+  type: Passive
+  brief: You react quickly to attacks and can never be surprised
+  effect: |
+    You have a +5 bonus to intiative rolls. You can never be surprised.
 
 Keen Eye:
-  tier: Perception
+  tier: Notice
   type: Free
   brief: You automatically notice subtle details whenever you enter a room
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +2 Perception
+    perk: +2 Notice
     trigger: You enter a room
     requirements: You haven't used Keen Eye on this room in the last 24 hours
   effect: |
@@ -118,18 +122,57 @@ Keen Eye:
   fluff:
     Use common sense to determine what counts as a room. We all speak English here.
 
-# Performance
+# Perform
+
+Backup Disguise:
+  tier: Perform
+  type: Free
+  brief: You reveal that you've actually been wearing a disguise the whole time
+  traits: [Daily, Perk, Retroactive]
+  tags:
+    perk: +2 Perform
+  effect: |
+    You dramatically tear off a layer of clothing, revealing that this layer was merely a disguise. You choose whether you are now in your normal apperance, or whether you have been wearing another disguise underneath the one you just removed.
 
 Cheerleader:
-  tier: Performance
+  tier: Perform
   type: 1-Action
   brief: You get a crowd of people to chant a phrase of your choice
-  traits: [Auditory, Linguistic, Proficiency]
+  traits: [Auditory, Linguistic, Perk]
   tags:
-    proficiency: +2 Persuasion
+    perk: +2 Perform
     requirements: You are interacting with a crowd of 10 or more people who are not hostile towards you
   effect: |
     Choose a short phrase or cheer. You spread the phrase through the crowd of people, who take up the chant. The duration of this power depends on the chant - an insane or disagreeable chant will die down in seconds, while a popular and agreeable chant might last a long time. This power does not force anyone to agree with the content of the cheer - people are just caught in a wave of mob energy.
+
+# Provoke
+
+Scare to Death:
+  tier: Provoke
+  type: 1-Action
+  brief: You scare someone so hard they literally die of fright
+  traits: [Attack, Auditory, Death, Encounter, Fear, Perk]
+  tags:
+    perk: +2 Provoke
+    range: 30 feet
+    duration: Until the end of your next turn
+  effect: |
+    Make a Strength+Provoke or Spirit+Provoke attack roll against your target's Spirit DC.
+  critical-success: Your target is {frightened}, and if their current health is no higher than the value you rolled, they instantly die
+  success: Your target is {frightened}
+
+Vicious Mockery:
+  tier: Provoke
+  type: 1-Action
+  brief: You insult someone so badly they literally take damage
+  traits: [Attack, Auditory, Emotion, Linguistic, Perk]
+  tags:
+    perk: +2 Provoke
+    range: 30 feet
+  effect: |
+    Make a Spirit+Provoke attack roll against your target's Spirit DC.
+  critical-success: Your target takes 2d8 + Spirit + Provoke damage
+  success: Your target takes 1d8 + Spirit + Provoke damage
 
 # Religion
 
@@ -137,13 +180,24 @@ Bishop:
   tier: Religion
   type: 1-Action
   brief: You reveal a core tenet or rule that everyone in your religion follows
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +2 Religion
+    perk: +2 Religion
   effect: |
     Choose a religous belief, tenet, or rule that people might reasonably believe in. Your character states the rule out loud, explaining its importance to the faith and its origins as a belief. This rule is retroactively one of the core beliefs of your character's religion. If past events in the campaign contradict this rule, then the rule isn't very important to the average practicioner of your religion.
 
     From now on, all believers in your character's religion publicly follow the declared rule. Breaking the rule is considered a terrible taboo. If your character breaks the declared rule, they will lose reputation with other practicioners of their religion.
+
+Holy Symbol:
+  tier: Religion
+  type: Free
+  brief: You present your holy symbol and say a brief prayer for luck
+  traits: [Encounter, Perk]
+  tags:
+    perk: +2 Religion
+    trigger: You make a die roll
+  effect: |
+    Roll a d6 and add your result as a bonus to the triggering roll.
 
 # Society
 
@@ -151,25 +205,45 @@ Forced Error:
   tier: Society
   type: 1-Action
   brief: You can manipulate others into making major social faux pas
-  traits: [Encounter, Linguistic, Proficiency]
+  traits: [Encounter, Linguistic, Perk]
   tags:
-    proficiency: +2 Society
+    perk: +2 Society
     range: 30 feet
   effect: |
-    Make a Spirit (Society) attack roll against your target's Spirit (Society) DC.
+    Make a Spirit+Society attack roll against your target's Spirit+Society DC.
   critical-success: Your target makes a major faux pas, losing roughly 5 reputation with all observers
   success: Your target makes a minor faux pas, losing roughly 2 reputation with all observers
   critical-failure: You make a major faux pas, losing roughly 5 reputation with all observers
 
+Linguist:
+  tier: Society
+  type: 1-Action
+  brief: You develop a new pidgin language to communicate with any creature
+  traits: [Daily, Perk]
+  tags:
+    perk: +2 Society
+  effect: |
+    Choose a language that you don't speak, but that you have seen or heard before. You must have observed at least 1 minute of communication in this language within the past 24 hours. You instantly create and learn a new pidgin language based on your observations. You can use the pidgin language to communicate simple ideas with creatures who speak the language you observed. It is very difficult to use this pidgin language to communicate complex ideas.
+
 # Stealth
+
+Hide in Plain Sight:
+  tier: Stealth
+  type: Passive
+  brief: You can hide even while being observed and without any cover
+  traits: [Perk]
+  tags:
+    perk: +2 Stealth
+  effect: |
+    You can attempt to hide even while being actively observed. You can attempt to hide even without any cover to hide behind.
 
 Just a Box:
   tier: Stealth
   type: Passive
   brief: You are an expert at hiding behind immobile objects, even in the strangest spots
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +2 Stealth
+    perk: +2 Stealth
   effect: |
     You are an expert at placing inanimate objects in the perfect locations. Whenever you hide behind or inside of an inanimate, immobile object, you can slightly adjust this object to perfectly blend into its surroundings. Even if the object would normally be wildly out of place, no one notices the object is strange in any way. This effect ends if the object moves, if the object is a threat or obstacle, or if you are no longer hidden behind or inside of the object.
 
@@ -181,9 +255,9 @@ Mouse Trap:
   tier: Thievery
   type: Passive
   brief: You can disguise traps or machines as collections of seemingly unrelated parts
-  traits: [Proficiency]
+  traits: [Perk]
   tags: 
-    proficiency: +2 Thievery
+    perk: +2 Thievery
   effect: |
     Whenever you set a mechanical trap or build a large device, you can disguise the mechanism as a set of completely mundane objects, which you placed to perfectly trigger a cascading effect. Anyone casually searching the area never realizes the mundane objects have any mechanical effect. Someone who is determinedly searching the area for traps or devices has a -10 penalty to any rolls made to detect the mechanism.
 
@@ -191,13 +265,13 @@ Prior Pickpocketing:
   tier: Thievery
   type: Reaction
   brief: You reveal that you already pickpocketed an item your target attempts to draw
-  traits: [Daily, Proficiency]
+  traits: [Daily, Perk]
   tags:
     profiency: +2 Thievery
     trigger: A creature you can see tries to draw an item
     requirements: You were within 5 feet of that creature within 1 hour, and the creature hasn't used the item since you were last within 5 feet of them
   effect: |
-    Make a Agility (Thievery) roll against your target's Intellect (Perception) DC.
+    Make a Agility+Thievery roll against your target's Intellect+Notice DC.
   success: You reveal you successfully pickpocketed your target, drawing the item and showing it to them, as your target either draws nothing or draws a useless fake copy of the item
 
 # Wrestling
@@ -206,9 +280,19 @@ Rasslin':
   tier: Wrestling
   type: Free
   brief: You get in extra painful hits as you grab and wrestle your target
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +2 Wrestling
+    perk: +2 Wrestling
     trigger: You succeed on a {Grapple}
   effect: |
     Make an unarmed {Strike} against the target of your Grapple.
+
+Titan Wrestler:
+  tier: Wrestling
+  type: Passive
+  brief: You are experienced at wrestling creatures much larger than yourself
+  traits: [Perk]
+  tags:
+    perk: +2 Wrestling
+  effect: |
+    When you {Disarm}, {Grapple}, {Shove}, or {Trip} a creature larger than you, you count as one size larger.

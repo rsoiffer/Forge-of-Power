@@ -34,18 +34,6 @@ Eloquence:
     * Negotiating
     * Speechwriting
 
-Intimidation:
-  brief: Bend other to your will using threats or an imposing presence
-  description: |
-    Good with Strength and Spirit.
-
-    Includes:
-    * Threatening
-    * Blackmailing
-    * Imposing
-    * Scaring
-    * Taunting
-
 Nature:
   brief: Know about the natural world, and train animals and magical beasts
   description: |
@@ -58,7 +46,7 @@ Nature:
     * Handling animals
     * Foraging
 
-Perception:
+Notice:
   brief: Spot, hear, or otherwise detect the presence of something
   description: |
     Good with Intellect and Spirit.
@@ -70,7 +58,7 @@ Perception:
     * Noticing lies
     * Finding clues
 
-Performance:
+Perform:
   brief: Use your talents to impress a crowd or make a living
   description:  |
     Good with any Agility and Spirit.
@@ -81,6 +69,18 @@ Performance:
     * Impressing
     * Party tricks
     * Inspiring
+
+Provoke:
+  brief: Incite rage, fear, sadness, or other negative emotions in others
+  description: |
+    Good with Strength and Spirit.
+
+    Includes:
+    * Threatening
+    * Blackmailing
+    * Imposing
+    * Scaring
+    * Taunting
 
 Religion:
   brief: Know secrets of deities, dogma, faith, and the realms of the divine

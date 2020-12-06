@@ -5,7 +5,7 @@ Amphibious:
   type: Passive
   brief: You live in the ocean, swimming and breathing underwater
   effect: |
-    You can swim at your full speed. You can breathe water as easily as air.
+    You can swim at your full Speed. You can breathe water as easily as air.
 
 Wild Sprint:
   tier: Awakened
@@ -99,9 +99,20 @@ Natural Talent:
   type: Passive
   brief: You have a genius talent in your particular field of study
   effect: |
-    You learn one talent of your choice. You must still meet the normal tier prerequisites for this talent, so it must be from a class that you have at least one level in.
+    You learn one Novice talent of your choice. This talent must be from a class that you have at least one level in.
 
 # Kami
+
+Nature Meld:
+  tier: Kami
+  type: 1-Action
+  brief: You meld with your sacred feature, disappearing from the world
+  traits: [Encounter, Polymorph]
+  tags:
+    target: One of your sacred features you can see within 10 feet
+    duration: Until your target falls to 0 health or you decide to end it
+  effect: |
+    You meld with your target, disappearing and entering your target's space. When this effect ends, you reappear at a space of your choice within 10 feet of the part of your target you entered.
 
 Thoughts and Prayers:
   tier: Kami
@@ -110,3 +121,89 @@ Thoughts and Prayers:
   traits: [Daily]
   effect: |
     You regain 2 Mana, plus 1 Mana for each devotee of your concept within 1 mile.
+
+# Lizardfolk
+
+Dragon's Breath:
+  tier: Lizardfolk
+  type: 1-Action
+  brief: You breathe elemental energy like the breath weapon of a dragon
+  traits: [Attack, Encounter]
+  tags:
+    area: 30-foot line
+  effect: |
+    Make a Strength attack roll against your target's Agility DC.
+  critical-success: Your target takes 4d8 + your character level damage
+  success: Your target takes 2d8 + your character level damage
+  failure: Half damage
+
+Lizard King:
+  tier: Lizardfolk
+  type: Passive
+  brief: You grow much larger and your attacks gain extra reach
+  effect: |
+    Your size increases by 1 and your reach increases by 5 feet.
+
+# Orc
+
+Clan Axe:
+  tier: Orc
+  type: Passive
+  brief: You have a special axe gifted to you by your clan
+  effect: |
+    You have a clan axe, which has the stats of a {bludgeon}, a {heavy weapon}, or a {throwing weapon}. You cannot be disarmed of your clan axe. If you ever lose your clan axe, you always somehow find it again the next day, even if your clan axe was seemingly stolen or destroyed. If you sell or willingly give up your clan axe, you permanently lose this power.
+
+Orc Drop:
+  tier: Orc
+  type: Reaction
+  brief: You stay standing when you would normally be incapacitated
+  traits: [Daily]
+  tags:
+    trigger: You fall to 0 health
+  effect: |
+    You fall to 1 health instead.
+
+# Outsider
+
+Construct Flesh:
+  tier: Outsider
+  type: Passive
+  brief: You fortify your body to resist piercing attacks
+  effect: |
+    You have 10 [[Piercing]] Shield.
+
+Sense Emotions:
+  tier: Outsider
+  type: 1-Action
+  brief: You read all the major emotions in a nearby creature
+  traits: [Attack, Emotion]
+  tags:
+    range: 30 feet
+    requirements: You haven't used Sense Emotions against this target in the last 24 hours
+  effect: |
+    Make a Spirit+Notice attack roll against your target's Spirit DC.
+  critical-success: You learn all the major emotions your target is currently feeling, plus an emotional secret your target is hiding
+  success: You learn all the major emotions your target is currently feeling
+
+# Undead
+
+No Vital Organs:
+  tier: Undead
+  type: 1-Action
+  brief: You take reduced damage from critical hits since you have no weak points
+  effect: |
+    When a [[Physical]] attack critically succeeds against you, you take damage as if that attack had only been a success.
+
+Paralyzing Touch:
+  tier: Undead
+  type: 1-Action
+  brief: You paralyze a creature you touch
+  traits: [Attack, Encounter, Shadow]
+  tags:
+    target: One creature you can reach
+    duration: Until the end of your next turn
+  effect: |
+    Make a Spirit attack roll against your target's Spirit DC.
+  critical-success: Your target is {unconscious}
+  success: Your target is {stunned}
+  failure: Your target is {slowed}

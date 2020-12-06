@@ -4,9 +4,9 @@ Crush Armor:
   tier: Bludgeon
   type: 1-Action
   brief: You crush a foe's armor, weakening them for the future
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +1 damage to bludgeon Strikes
+    perk: +1 damage to bludgeon Strikes
     duration: 1 minute
   effect:
     Make a bludgeon Strike against a target wearing heavy armor. On a critical success, your target has [[Physical]] Weakness equal to your Strength (minimum 1).
@@ -17,9 +17,9 @@ Archer's Eyes:
   tier: Bow
   type: Passive
   brief: You can see far away and make incredibly distant shots
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +1 damage to bow Strikes
+    perk: +1 damage to bow Strikes
   effect:
     You treat bows as having double their normal range.
 
@@ -27,9 +27,9 @@ Double Shot:
   tier: Bow
   type: 1-Action
   brief: Fire two arrows in quick succession, with a chance of hitting two targets
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +1 damage to bow Strikes
+    perk: +1 damage to bow Strikes
   effect:
     Make a bow Strike. On a critical hit, make another bow Strike against a different target.
 
@@ -39,9 +39,9 @@ Point-Blank Shot:
   tier: Crossbow
   type: Passive
   brief: Your powerful bolts pierce through nearby targets
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +1 damage to crossbow Strikes
+    perk: +1 damage to crossbow Strikes
   effect:
     You have a +1 bonus to crossbow Strikes against targets within 30 feet.
 
@@ -51,9 +51,9 @@ Throwing Daggers:
   tier: Dagger
   type: Passive
   brief: You are an expert at throwing daggers
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +1 damage to dagger Strikes
+    perk: +1 damage to dagger Strikes
   effect:
     You can throw a dagger as a ranged weapon with a range of 20 feet.
 
@@ -63,10 +63,10 @@ Ward Ally:
   tier: Focus
   type: 1-Action
   brief: Protect your ally with a shimmering forcefield
-  traits: [Cantrip, Proficiency, Spell]
+  traits: [Cantrip, Perk, Spell]
   tags:
     requirements: You are wielding a focus
-    proficiency: +1 [[Elemental]] Shield
+    perk: +1 [[Elemental]] Shield
     cost: 0 Mana
     range: 30 feet
     duration: Until the end of your next turn
@@ -79,9 +79,9 @@ Knockback:
   tier: Heavy Weapon
   type: Free
   brief: Knock an enemy back after a hit
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +1 damage to heavy weapon Strikes
+    perk: +1 damage to heavy weapon Strikes
     trigger: You hit a Large or smaller creature with a heavy weapon Strike
   effect:
     You push your target back 5 feet. If your Strike was a critical success, you can instead push your target back 10 feet.
@@ -95,7 +95,7 @@ Counter Charge:
   traits: [Manipulate]
   tags:
     requirements: You are wielding a polearm
-    proficiency: +1 damage to polearm Strikes
+    perk: +1 damage to polearm Strikes
     duration: Until the start of your next turn
   effect: |
     You can use the **Intercept** power.
@@ -115,10 +115,10 @@ Covering Shield:
   tier: Shield
   type: Passive
   brief: You can cover yourself with a shield to avoid area attacks
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
     requirements: You are wielding a shield
-    proficiency: +1 [[Physical]] Shield
+    perk: +1 [[Physical]] Shield
   effect:
     You have +2 bonus to Agility DC against powers that affect all targets in an area.
 
@@ -128,10 +128,10 @@ Chromatic Missile:
   tier: Staff
   type: 1-Action
   brief: Fire a long-range missile of any kind of magic you know
-  traits: [Attack, Cantrip, Force, Proficiency, Spell]
+  traits: [Attack, Cantrip, Force, Perk, Spell]
   tags:
     requirements: You are wielding a staff
-    proficiency: +1 damage to staff Strikes, +1 damage to spell attacks
+    perk: +1 damage to staff Strikes, +1 damage to spell attacks
     cost: 0 Mana
     range: 200 feet
   effect: |
@@ -144,10 +144,10 @@ Glacial Burst:
   tier: Staff
   type: 1-Action
   brief: Slow enemies in an area with a burst of elemental ice
-  traits: [Attack, Cold, Proficiency, Spell]
+  traits: [Attack, Cold, Perk, Spell]
   tags:
     requirements: You are wielding a staff
-    proficiency: +1 damage to staff Strikes, +1 damage to spell attacks
+    perk: +1 damage to staff Strikes, +1 damage to spell attacks
     cost: 1 Mana
     range: 150 feet
     area: 5-foot burst
@@ -161,9 +161,9 @@ Lunging Strike:
   tier: Sword
   type: 1-Action
   brief: Lunge forward with a sword for extra reach
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +1 damage to sword Strikes
+    perk: +1 damage to sword Strikes
   effect:
     Make a sword Strike. Your reach increases by 5 feet for this Strike.
 
@@ -173,9 +173,9 @@ Perfect Ricochet:
   tier: Throwing Weapon
   type: Free
   brief: Call a throwing weapon back to your hand after an attack
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +1 damage to throwing weapon Strikes
+    perk: +1 damage to throwing weapon Strikes
     trigger: You finish a throwing weapon Strike
   effect:
     The throwing weapon you just attacked with bounces off of the environment and returns to your hand.
@@ -186,9 +186,9 @@ Kickboxer:
   tier: Unarmed
   type: Passive
   brief: You are effective at making unarmed attacks without your hands
-  traits: [Proficiency]
+  traits: [Perk]
   tags:
-    proficiency: +1 damage to unarmed Strikes
+    perk: +1 damage to unarmed Strikes
   effect:
     You don't have disadvantage on unarmed Strikes from having no hands free.
 
@@ -198,10 +198,10 @@ Eldritch Blast:
   tier: Wand
   type: 1-Action
   brief: Blast a target with a powerful bolt of eldritch force
-  traits: [Attack, Cantrip, Force, Proficiency, Spell]
+  traits: [Attack, Cantrip, Force, Perk, Spell]
   tags:
     requirements: You are wielding a wand
-    proficiency: +2 damage to single-target spell attacks
+    perk: +2 damage to single-target spell attacks
     cost: 0 Mana
     range: 60 feet
   effect: |

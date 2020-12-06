@@ -26,14 +26,7 @@ Bard:
     mana: Your Mana stat equals 4 + 2 * your Caster level
     rests: Your Mana pool replenishes when you complete an 8-hour rest
   effect: |
-    You can use the **Sustained Performance** power.
-  aside: |
-    {% smallpower %}
-    Sustained Performance:
-      type: Free
-      effect: |
-        {Sustain} a spell that doesn't have the [[Attack]] trait.
-    {% endsmallpower %}
+    When you cast or sustain a spell, you can choose to simultaneously play music, dance, tell a story, or perform in another way. If you do, other creatures who are passively observing you don't realize you're casting or sustaining a spell, unless your spell has obvious physical effects. A creature who is actively studying you must successfully roll Intellect+Notice against your Spirit+Performance DC to realize you're casting or sustaining a spell.
 
 Cleric:
   preface: |

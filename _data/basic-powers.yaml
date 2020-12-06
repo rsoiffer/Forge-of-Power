@@ -77,7 +77,7 @@ Seek:
     area: A 15-foot burst you can see
     target: All hidden creatures or objects in the area
   effect:
-    Make a {Perception} roll against your target's {Stealth} DC.
+    Make a Intellect+{Notice} roll against your target's Agility+{Stealth} DC.
   success: Your target is no longer hidden to you
 
 Shove:
