@@ -1,0 +1,112 @@
+# Awakened
+
+Amphibious:
+  tier: Awakened
+  type: Passive
+  brief: You live in the ocean, swimming and breathing underwater
+  effect: |
+    You can swim at your full speed. You can breathe water as easily as air.
+
+Wild Sprint:
+  tier: Awakened
+  type: Free
+  brief: You drop down onto all fours to run at high speed
+  tags:
+    duration: 1 minute
+  effect: |
+    Your Speed increases by 20 feet.
+
+# Dwarf
+
+Cousins Everywhere:
+  tier: Dwarf
+  type: 1-Action
+  brief: You have an enourmous extended family, with relatives everywhere you go
+  traits: [Daily]
+  tags:
+    requirements: You are near a group of 100 or more people
+  effect: |
+    You declare that one of your relatives is nearby. You can choose your relative's general personality, temperament, and profession, subject to the GM's approval. Your relative is friendly towards you and will help you with simple favors, but will not risk their life to help you.
+
+    For example, if you are in a normal town, you can declare that your second cousin works as a blacksmith, and then go visit him to repair your sword. Or if you're in the BBEG's giant volcano lair, you can declare that your father's brother-in-law's niece works in the lair as one of the BBEG's henchmen.
+
+Dwarven Resilience:
+  tier: Dwarf
+  type: Passive
+  brief: You have developed a natural resilience to common hazards
+  effect: |
+    You have 5 [[Poison]] Shield. Choose one of the following:
+    * You have 5 [[Fire]] Shield
+    * You have 5 [[Cold]] Shield
+    * You have 5 [[Bludgeoning]] Shield
+
+# Elf
+
+Logic Purist:
+  tier: Elf
+  type: Passive
+  brief: You hold to logic above emotion, strictly controlling your demeanor
+  effect: |
+    You have a +5 bonus to your DC against [[Emotion]] attacks and against {Notice} rolls to read your intentions or emotions.
+  fluff: |
+    You speak in a perfect monotone.
+
+Mind Meld:
+  tier: Elf
+  type: 1-Action
+  brief: You link minds with another creature, sharing experiences back and forth
+  traits: [Attack, Mental]
+  tags:
+    target: One creature you can reach
+  effect: |
+    Specify the kinds of experiences you're trying to share between you and your target. For example, you could choose to share memories of a certain event, current experiences of emotions, or thoughts on philosophy. The GM determines which exact experiences of this type are shared.
+    
+    Make an Intellect attack roll against your target's Intellect DC. (As with all rolls, you can choose to automatically fail or critically fail this roll.)
+  critical-success: You learn two experiences from your target
+  success: You learn two experiences from your target
+  critical-failure: Your target learns one experience from you
+
+# Goblin
+
+Razor Teeth:
+  tier: Goblin
+  type: 1-Action
+  brief: You can chew your way through solid walls
+  effect: |
+    Make an unarmed {Strike}. The base damage of this strike is 1d4. This strike deals an extra 20 damage against inanimate objects.
+
+    You can efficiently tunnel through walls by repeatedly using this power. As a rough estimate, in one minute of work, you can tunnel through 1 foot of soft material (dirt, sand, plaster) or a few inches of hard material (wood, loose stones, old masonry). You can't tunnel through materials you can't damage, such as solid stone or metal.
+
+Underfoot:
+  tier: Goblin
+  type: Passive
+  brief: You scurry beneath the feet of larger creatures
+  effect: |
+    You can move through other creature's spaces at full speed, even spaces occupied by enemy creatures. You can hide behind creatures that are larger than you.
+
+# Human
+
+Dubious Knowledge:
+  tier: Human
+  type: 1-Action
+  brief: You recount a crazy fact that may or may not be true
+  traits: [Daily, Retroactive]
+  effect: |
+    State a claim or rumor about the world that you have no evidence for but that might plausibly be true. The GM assigns a DC for this claim based on how extreme it is: a reasonble claim would be DC 5-10, a very unusual one might be DC 15, while a crazy or impossible claim would be DC 20 or more. The GM and the player should agree on the DC. Then, the GM rolls a d20 in secret. If this d20 meets or exceeds the DC, then the claim is actually true, otherwise, the claim is actually false.
+
+Natural Talent:
+  tier: Human
+  type: Passive
+  brief: You have a genius talent in your particular field of study
+  effect: |
+    You learn one talent of your choice. You must still meet the normal tier prerequisites for this talent, so it must be from a class that you have at least one level in.
+
+# Kami
+
+Thoughts and Prayers:
+  tier: Kami
+  type: 1-Action
+  brief: You absorb the prayers of nearby devotees to boost your own power
+  traits: [Daily]
+  effect: |
+    You regain 2 Mana, plus 1 Mana for each devotee of your concept within 1 mile.

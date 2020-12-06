@@ -1,0 +1,214 @@
+# Arcana
+
+Copy Spell:
+  tier: Arcana
+  type: Reaction
+  brief: You analyze a spell so well that you can cast it yourself
+  traits: [Daily, Proficiency]
+  tags:
+    proficiency: +2 Arcana
+    trigger: You successfully identity a spell
+    duration: 1 hour
+  effect: |
+    You learn the triggering spell. If the spell is a talent, you can only cast it if you qualify to learn talents of that tier.
+
+Spellbook:
+  tier: Arcana
+  type: Passive
+  brief: You store your spells in a book, so you can swap between them as needed
+  traits: [Proficiency]
+  tags:
+    proficiency: +2 Arcana
+  effect: |
+    When you complete an 8-hour rest, you can swap all your [[Spell]] talents and ribbons for other [[Spell]] talents and ribbons from the same class.
+
+# Athletics
+
+Burst of Power:
+  tier: Athletics
+  type: Free
+  brief: You push past your limits with a sudden surge of adrenaline
+  traits: [Encounter, Proficiency]
+  tags:
+    proficiency: +2 Athletics
+    requirements: You are in combat, or a similar dangerous situation
+    trigger: You make an Athletics roll
+  effect: |
+    You have +10 on the triggering roll.
+
+Daredevil Acrobat:
+  tier: Athletics
+  type: Passive
+  brief: You are an expert at balancing on moving surfaces, even creatures
+  traits: [Proficiency]
+  tags:
+    proficiency: +2 Athletics
+  effect: |
+    You can climb and balance on moving surfaces as easily as if those surfaces were completely still. You can climb and balance on creatures that are larger than you, even hostile creatures. You suffer no combat penalties from balancing or climbing.
+
+# Eloquence
+
+False Expert:
+  tier: Eloquence
+  type: Passive
+  brief: You are great at pretending to be an expert in topics you know nothing about
+  traits: [Proficiency]
+  tags:
+    proficiency: +2 Eloquence
+  effect: |
+    You have a +10 bonus to Eloquence rolls made to convince other people you know a lot about a topic. This bonus doesn't apply if you actually are an expert in that topic.
+  fluff: I know three things about tabletop rpgs...
+
+Moneylender:
+  tier: Eloquence
+  type: Passive
+  brief: You seem very trustworthy to others when it comes to finances
+  traits: [Proficiency, Reputation]
+  tags:
+    proficiency: +2 Eloquence
+  effect: |
+    Other people recognize you as someone who can be trusted with money and financial matters. You have +5 reputation for determining whether someone trusts you enough to borrow money from you or lend money to you.
+
+# Intimidation
+
+Scare to Death:
+  tier: Intimidation
+  type: 1-Action
+  brief: You scare someone so hard they literally die of fright
+  traits: [Attack, Auditory, Fear, Proficiency]
+  tags:
+    proficiency: +2 Intimidation
+    range: 30 feet
+  effect: |
+    Make a Strength (Intimidation) or Spirit (Intimidation) attack roll against your target's Spirit DC.
+  critical-success: Your target takes damage equal to twice the amount your attack roll exceeded the DC
+  success: Your target takes damage equal to the amount your attack roll exceeded the DC
+
+# Nature
+
+Befriend Animal:
+  tier: Nature
+  type: 1-Action
+  brief: You can quickly make friends with all kinds of beasts and monsters
+  traits: [Auditory, Proficiency]
+  tags:
+    proficiency: +2 Nature
+    range: 10 feet
+    target: A [[Beast]] or [[Monster]] you can see within range that you haven't targeted with this power in the last 24 hours
+    duration: 1 hour, or until you or any of your allies are hostile towards your target
+  effect: |
+    Make a Spirit (Nature) roll against DC 10 + your target's CR.
+  critical-success: Your target is helpful towards you and indifferent towards your allies
+  success: Your target is friendly towards you and you indifferent towards your allies
+  critical-failure: Your target is hostile towards you and your allies
+
+# Perception
+
+Keen Eye:
+  tier: Perception
+  type: Free
+  brief: You automatically notice subtle details whenever you enter a room
+  traits: [Proficiency]
+  tags:
+    proficiency: +2 Perception
+    trigger: You enter a room
+    requirements: You haven't used Keen Eye on this room in the last 24 hours
+  effect: |
+    You notice a hidden bit of information of the DM's choice about something in the room. For example, you might notice that one section of a bookcase is suspiciously clear of dust, that an NPC's bearing suggests they are feeling especially anxious, or a unusual footprint on a section of floor.
+  fluff:
+    Use common sense to determine what counts as a room. We all speak English here.
+
+# Performance
+
+Cheerleader:
+  tier: Performance
+  type: 1-Action
+  brief: You get a crowd of people to chant a phrase of your choice
+  traits: [Auditory, Linguistic, Proficiency]
+  tags:
+    proficiency: +2 Persuasion
+    requirements: You are interacting with a crowd of 10 or more people who are not hostile towards you
+  effect: |
+    Choose a short phrase or cheer. You spread the phrase through the crowd of people, who take up the chant. The duration of this power depends on the chant - an insane or disagreeable chant will die down in seconds, while a popular and agreeable chant might last a long time. This power does not force anyone to agree with the content of the cheer - people are just caught in a wave of mob energy.
+
+# Religion
+
+Bishop:
+  tier: Religion
+  type: 1-Action
+  brief: You reveal a core tenet or rule that everyone in your religion follows
+  traits: [Proficiency]
+  tags:
+    proficiency: +2 Religion
+  effect: |
+    Choose a religous belief, tenet, or rule that people might reasonably believe in. Your character states the rule out loud, explaining its importance to the faith and its origins as a belief. This rule is retroactively one of the core beliefs of your character's religion. If past events in the campaign contradict this rule, then the rule isn't very important to the average practicioner of your religion.
+
+    From now on, all believers in your character's religion publicly follow the declared rule. Breaking the rule is considered a terrible taboo. If your character breaks the declared rule, they will lose reputation with other practicioners of their religion.
+
+# Society
+
+Forced Error:
+  tier: Society
+  type: 1-Action
+  brief: You can manipulate others into making major social faux pas
+  traits: [Encounter, Linguistic, Proficiency]
+  tags:
+    proficiency: +2 Society
+    range: 30 feet
+  effect: |
+    Make a Spirit (Society) attack roll against your target's Spirit (Society) DC.
+  critical-success: Your target makes a major faux pas, losing roughly 5 reputation with all observers
+  success: Your target makes a minor faux pas, losing roughly 2 reputation with all observers
+  critical-failure: You make a major faux pas, losing roughly 5 reputation with all observers
+
+# Stealth
+
+Just a Box:
+  tier: Stealth
+  type: Passive
+  brief: You are an expert at hiding behind immobile objects, even in the strangest spots
+  traits: [Proficiency]
+  tags:
+    proficiency: +2 Stealth
+  effect: |
+    You are an expert at placing inanimate objects in the perfect locations. Whenever you hide behind or inside of an inanimate, immobile object, you can slightly adjust this object to perfectly blend into its surroundings. Even if the object would normally be wildly out of place, no one notices the object is strange in any way. This effect ends if the object moves, if the object is a threat or obstacle, or if you are no longer hidden behind or inside of the object.
+
+    For example, you can hide inside of a box in the middle of the floor, and no one will question why the box is there so long as it stays still. You can hide behind a tall potted plant next to a lava lake in the middle of an evil dungeon, and no one will question the plant's existence.
+
+# Thievery
+
+Mouse Trap:
+  tier: Thievery
+  type: Passive
+  brief: You can disguise traps or machines as collections of seemingly unrelated parts
+  traits: [Proficiency]
+  tags: 
+    proficiency: +2 Thievery
+  effect: |
+    Whenever you set a mechanical trap or build a large device, you can disguise the mechanism as a set of completely mundane objects, which you placed to perfectly trigger a cascading effect. Anyone casually searching the area never realizes the mundane objects have any mechanical effect. Someone who is determinedly searching the area for traps or devices has a -10 penalty to any rolls made to detect the mechanism.
+
+Prior Pickpocketing:
+  tier: Thievery
+  type: Reaction
+  brief: You reveal that you already pickpocketed an item your target attempts to draw
+  traits: [Daily, Proficiency]
+  tags:
+    profiency: +2 Thievery
+    trigger: A creature you can see tries to draw an item
+    requirements: You were within 5 feet of that creature within 1 hour, and the creature hasn't used the item since you were last within 5 feet of them
+  effect: |
+    Make a Agility (Thievery) roll against your target's Intellect (Perception) DC.
+  success: You reveal you successfully pickpocketed your target, drawing the item and showing it to them, as your target either draws nothing or draws a useless fake copy of the item
+
+# Wrestling
+
+Rasslin':
+  tier: Wrestling
+  type: Free
+  brief: You get in extra painful hits as you grab and wrestle your target
+  traits: [Proficiency]
+  tags:
+    proficiency: +2 Wrestling
+    trigger: You succeed on a {Grapple}
+  effect: |
+    Make an unarmed {Strike} against the target of your Grapple.

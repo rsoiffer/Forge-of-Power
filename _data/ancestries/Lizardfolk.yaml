@@ -32,6 +32,8 @@ heritages:
       attributes: +1 Strength, +1 Agility, -1 Intellect, +0 Spirit
       misc stats: 30 feet Speed, +0 Size
     effect: |
-      TODO.
+      You are cold-blooded. You only need to eat half as much food, but you get exhausted twice as quickly from cold environments.
+
+      You are amphibious. You can swim at full speed, and you can hold your breath for up to 1 hour.
 
       You gain an ancestry feat of your choice.
