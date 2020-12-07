@@ -85,7 +85,7 @@ Feats are abilities that represent your character becoming stronger generally, i
 * **Combat Feats** make you better at combat, giving you damage bonuses to weapons or spells
 * **Skill Feats** make you better at skills, giving you bonuses to die rolls for those skills
 
-All combat feats and skill feats give [[Proficiency]] bonuses. These bonuses only stack up to a certain amount depending on your character level. This cap limits the amount you can specialize in one area, so after you reach this cap, it's better to choose other types of feats.
+All combat feats and skill feats give [[Perk]] bonuses. Perk bonuses only stack up to a certain amount depending on your character level. This cap limits the amount you can specialize in one area, so after you reach this cap, it's better to choose other types of feats.
 
 ### Starting Feats
 

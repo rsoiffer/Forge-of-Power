@@ -139,19 +139,19 @@ Perk: |
       <th>Max Stacking</th>
     </tr>
     <tr>
-      <td>4 or less</td>
+      <td>6 or less</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>5 ... 10</td>
+      <td>7 ... 12</td>
       <td>2</td>
     </tr>
     <tr>
-      <td>11 ... 16</td>
+      <td>13 ... 18</td>
       <td>3</td>
     </tr>
     <tr>
-      <td>17 or more</td>
+      <td>19 or more</td>
       <td>4</td>
     </tr>
   </table>

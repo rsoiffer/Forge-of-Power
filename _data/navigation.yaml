@@ -34,8 +34,8 @@ character:
     children:
       - title: Awakened
         url: /ancestries/awakened.html
-  - title: Attributes
-    url: /attributes.html
+  - title: Backgrounds
+    url: /backgrounds.html
   - title: Mystic Origins
     url: /mystic-origins.html
   - title: Equipment

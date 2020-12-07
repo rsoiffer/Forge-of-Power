@@ -1,0 +1,73 @@
+Acolyte:
+  effect: |
+    Gain an attribute boost to Intellect or Spirit. Gain a {Religion} skill feat. Gain the *Scribing Lore* proficiency.
+
+    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+
+Acrobat:
+  effect: |
+    Gain an attribute boost to Strength or Agility. Gain an {Athletics} skill feat. Gain the *Circus Lore* proficiency.
+
+    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+
+Animal Whisperer:
+  effect: |
+    Gain an attribute boost to Intellect or Spirit. Gain a {Nature} skill feat. Gain a Lore proficiency related to one terrain inhabited by animals you like (such as *Plains Lore* or *Swamp Lore*).
+
+    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+
+Artisan:
+  effect: |
+    Gain an attribute boost to Strength or Intellect. Gain a {Arcana} skill feat. Gain a tool proficiency.
+
+    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+
+Artist:
+  effect: |
+    Gain an attribute boost to Agility or Spirit. Gain a {Perform} skill feat. Gain the *Art Lore* proficiency.
+
+    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+
+Barkeep:
+  effect: |
+    Gain an attribute boost to Strength or Spirit. Gain an {Eloquence} skill feat. Gain the *Alcohol Lore* proficiency.
+
+    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+
+Barrister:
+  effect: |
+    Gain an attribute boost to Intellect or Spirit. Gain an {Eloquence} skill feat. Gain the *Legal Lore* proficiency.
+
+    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+
+Bounty Hunter:
+  effect: |
+    Gain an attribute boost to Strength or Intellect. Gain a {Nature} skill feat. Gain the *Legal Lore* proficiency.
+
+    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+
+Charlatan:
+  effect: |
+    Gain an attribute boost to Intellect or Spirit. Gain a {Perform} skill feat. Gain the *Disguise Kit* proficiency.
+
+    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+
+Criminal:
+  effect: |
+    Gain an attribute boost to Agility or Intellect. Gain a {Stealth} skill feat. Gain the *Thieves' Cant Language* proficiency.
+
+    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+
+Detective:
+  effect: |
+    Gain an attribute boost to Intellect or Spirit. Gain a {Notice} skill feat. Gain the *Legal Lore* proficiency.
+
+    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+
+
+
+Person:
+  effect: |
+    Gain one fixed attribute boost, one fixed skill feat, and one fixed proficiency.
+
+    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.

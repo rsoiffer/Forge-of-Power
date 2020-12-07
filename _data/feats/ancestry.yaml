@@ -132,6 +132,8 @@ Dragon's Breath:
   tags:
     area: 30-foot line
   effect: |
+    When you first pick this feat, choose one of [[Acid]], [[Cold]], [[Electricity]], [[Fire]], or [[Poison]]. This power permanently gains that trait for you.
+
     Make a Strength attack roll against your target's Agility DC.
   critical-success: Your target takes 4d8 + your character level damage
   success: Your target takes 2d8 + your character level damage
@@ -151,7 +153,7 @@ Clan Axe:
   type: Passive
   brief: You have a special axe gifted to you by your clan
   effect: |
-    You have a clan axe, which has the stats of a {bludgeon}, a {heavy weapon}, or a {throwing weapon}. You cannot be disarmed of your clan axe. If you ever lose your clan axe, you always somehow find it again the next day, even if your clan axe was seemingly stolen or destroyed. If you sell or willingly give up your clan axe, you permanently lose this power.
+    You have a clan axe, which has the stats of a {bludgeon}, a {heavy weapon}, or a {throwing weapon}. When you succeed on a {Strike} with your clan axe, you deal an extra 1 damage. You cannot be disarmed of your clan axe. If you ever lose your clan axe, you always somehow find it again the next day, even if your clan axe was seemingly stolen or destroyed. If you sell or willingly give up your clan axe, you permanently lose this power.
 
 Orc Drop:
   tier: Orc
@@ -189,7 +191,7 @@ Sense Emotions:
 
 No Vital Organs:
   tier: Undead
-  type: 1-Action
+  type: Passive
   brief: You take reduced damage from critical hits since you have no weak points
   effect: |
     When a [[Physical]] attack critically succeeds against you, you take damage as if that attack had only been a success.
