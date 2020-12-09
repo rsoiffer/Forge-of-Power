@@ -113,6 +113,8 @@ Your character's main ability come from your class, which is a group of many the
   </tr>
 </table>
 
+The table above lists the requirements your character must meet in order to reach a tier in a class. For example, to be a Veteran Berserker, you must both have a character level of at least 7 and a Berserker level of at least 3.
+
 Talents are the main abilities your character can use. They define your character's combat abilities. Each class has a list of talents. Your character knows a number of talents from each class equal to your level in that class. All talents have a tier, which is shown next to the talent's name. To learn a talent, you must be at least that tier in the talent's class.
 
 In addition to talents, your character has several abilities called ribbons. Ribbons are very similar to talents, except that they are generally not very useful in combat. Ribbons are a good way to give your character more theme and flavor without impacting your combat capabilities. You learn one ribbon at every odd character level (1, 3, 5, etc.). This means that the total number of ribbons you know is equal to half your character level, rounded up. You can't pick ribbons from a classes that you have no levels in, but there are no other restrictions on which ribbons you can choose.
