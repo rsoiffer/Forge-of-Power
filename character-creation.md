@@ -141,7 +141,7 @@ TODO
 
 ### Building Bruenor
 
-TOOD
+TODO
 
 ## Final Stats
 

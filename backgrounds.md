@@ -18,7 +18,7 @@ Note that the stats below are incomplete.
   {% for item in items %}
     <tr>
       <td>
-        <a href="#{{ item[0] | slugify }}.html">{{ item[0] }}</a>
+        <a href="backgrounds#{{ item[0] | slugify }}">{{ item[0] }}</a>
       </td>
       <td>{{ item[1].brief | process_inline }}</td>
     </tr>

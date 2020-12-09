@@ -102,11 +102,14 @@ Experienced Tracker:
 # Notice
 
 Alert:
-  tier: Novice
+  tier: Notice
   type: Passive
   brief: You react quickly to attacks and can never be surprised
+  traits: [Perk]
+  tags:
+    perk: +2 Notice
   effect: |
-    You have a +5 bonus to intiative rolls. You can never be surprised.
+    You have a +5 bonus to initiative rolls. You can never be surprised.
 
 Keen Eye:
   tier: Notice
