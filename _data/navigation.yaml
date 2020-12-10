@@ -3,10 +3,8 @@ main:
     url: /basic-rules.html
   - title: Character
     url: /character-creation.html
-  - title: Talents
+  - title: Classes
     url: /classes.html
-  - title: Feats
-    url: /feats-general.html
 
 rules:
   - title: Basic Rules
@@ -36,6 +34,18 @@ character:
         url: /ancestries/awakened.html
   - title: Backgrounds
     url: /backgrounds.html
+  - title: Classes
+    url: /classes.html
+  - title: Feats
+    children:
+      - title: General Feats
+        url: /feats-general.html
+      - title: Ancestry Feats
+        url: /feats-ancestry.html
+      - title: Combat Feats
+        url: /feats-combat.html
+      - title: Skill Feats
+        url: /feats-skill.html
   - title: Mystic Origins
     url: /mystic-origins.html
   - title: Equipment
@@ -43,20 +53,10 @@ character:
   - title: Skills
     url: /skills.html
 
-powers:
+classes:
   - title: Classes
     url: /classes.html
   - title: All Powers
     url: /all-powers.html
   - title: Talent Counts
     url: /power-counts.html
-
-feats:
-  - title: General Feats
-    url: /feats-general.html
-  - title: Ancestry Feats
-    url: /feats-ancestry.html
-  - title: Combat Feats
-    url: /feats-combat.html
-  - title: Skill Feats
-    url: /feats-skill.html

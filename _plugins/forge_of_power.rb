@@ -5,7 +5,7 @@ module ForgeOfPower
 
     def generate(site)
 
-      site.data["navigation"]["powers"] +=
+      site.data["navigation"]["classes"] +=
         site.data["categories"].map do |name, schools|
           {"title" => name, "children" =>
             schools.map do |name2|

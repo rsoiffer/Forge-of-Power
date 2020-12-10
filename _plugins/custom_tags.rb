@@ -119,7 +119,7 @@ class Jekyll::Converters::Markdown::LinkerProcessor
       }
 
       m = {}
-      m["skills"] = "[#{text}](skills.html)"
+      m["skills"] = "[#{text}](skills.html##{slug_text})"
       m["conditions"] = "[#{text}](conditions.html##{slug_text})"
       m["basic-powers"] = "[#{text}](basic-powers.html##{slug_text})"
       for school in get_map["talents"]

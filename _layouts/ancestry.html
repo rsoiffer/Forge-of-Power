@@ -17,3 +17,15 @@ sidebar:
 {% for heritage in ancestry.heritages %}
   {% include power.html power=heritage %}
 {% endfor %}
+
+<h3>Ancestry Feats</h3>
+
+<p>
+  These feats are available only to {{ page.data[0] | downcase }} characters.
+</p>
+
+{% for feat in site.data.feats.ancestry %}
+  {% if feat[1].tier == page.data[0] %}
+    {% include power.html power=feat %}
+  {% endif %}
+{% endfor %}
