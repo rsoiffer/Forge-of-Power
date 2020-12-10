@@ -48,7 +48,7 @@ Bloody Retribution:
   brief: You turn the pain of your wounds into a powerful strike
   traits: [Daily]
   tags:
-    requirements: You at {bloodied}
+    requirements: You are {bloodied}
     trigger: You make a melee {Strike} against a creature that has dealt damage to you within the past minute
   effect: |
     You have a +10 bonus to the Strike.

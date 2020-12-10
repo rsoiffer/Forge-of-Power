@@ -3,56 +3,95 @@
 
 @charset "utf-8";
 
+$body-color: green;
+// $body-color, $background-color, $text-color, $link-color, and $masthead-link-color
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-hr {
-  margin: 0.125em 0;
-}
+/* Colors */
+// $dark-gray: #0e2431 !default;
+// $background-color: #e8d5b7 !default;
+// $text-color: #000 !default;
+// $muted-text-color: $dark-gray !default;
+// $primary-color: #fc3a52 !default;
+// $border-color: mix(#000, $background-color, 20%) !default;
+// $code-background-color: mix(#fff, $background-color, 20%) !default;
+// $code-background-color-dark: mix(#000, $background-color, 10%) !default;
+// $form-background-color: mix(#fff, $background-color, 15%) !default;
+// $footer-background-color: #f9b248 !default;
+// $link-color: mix(#000, $primary-color, 10%) !default;
+// $link-color-hover: mix(#fff, $link-color, 25%) !default;
+// $link-color-visited: mix(#000, $link-color, 25%) !default;
+// $masthead-link-color: $text-color !default;
+// $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
+// $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 
-// .page {
-//   padding-right: 20px;
-// }
-// .page__footer {
-//   height: 0;
-//   font-size: 0; // Ugly hack to hide footer
-// }
+$my-dark-red: #5F1616;
+$my-dark-blue: #23395B;
 
 .search__toggle {
   color: $masthead-link-color
 }
-.navicon {
-  color: $masthead-link-color;
-  background-color: $masthead-link-color;
-}
-.navicon::before {
-  color: $masthead-link-color;
-  background-color: $masthead-link-color;
-}
-.navicon::after {
+.navicon, .navicon::before, .navicon::after {
   color: $masthead-link-color;
   background-color: $masthead-link-color;
 }
 
 .page__title {
-  border-bottom: 1px solid $border-color;
-  padding-bottom: 0.5em;
+  border-radius: 5px;
+  background-color: $my-dark-blue;
+  color: white;
+  padding: .4em;
+  padding-top: .3em;
+  // font-size: 2em;
+  font-variant: small-caps;
 }
-.page__content p {
-  margin-bottom: .5em
-}
-.page__content h2 {
-  padding-bottom: .25em
-}
-.page__content dd {
-  font-size: 1em;
+
+.page__content {
+  p {
+    margin-bottom: .5em;
+  }
+  h2 {
+    padding-bottom: .25em;
+    border-radius: 5px;
+    background-color: $my-dark-blue;
+    color: white;
+    padding: .3em;
+    padding-top: .2em;
+    font-size: 1.4em;
+    font-variant: small-caps;
+  }
+  h3 {
+    margin-top: 1em;
+    font-size: 1.25em;
+  }
+  dd {
+    font-size: 1em;
+  }
+  dl {
+    margin: 0;
+  }
+  dl + dl {
+    margin-top: 0.25em;
+  }
+  dl + p {
+    // margin-top: 0.5em;
+  }
+  dt, dd {
+    display: inline;
+  }
+  dd:after {
+    content: "";
+    display: block;
+  }
 }
 
 th {
   border-bottom: 1px solid mix(#000, $border-color, 25%)
 }
 td {
-  border-bottom: 0px solid mix(#000, $border-color, 25%)
+  border-bottom: none
 }
 tr, td, th {
   padding-bottom: 0.2em;
@@ -66,40 +105,6 @@ tr:nth-child(odd) {
   background-color: #e2cba4
 }
 
-.traits {
-  margin: -.5em 0 0 0;
-  padding-left: 0;
-}
-
-.trait {
-  display: inline;
-  background: rgb(95, 22, 22);
-  border: rgb(206, 181, 102) 2px solid;
-  padding: 1px 8px;
-  font-size: 0.75em !important;
-  text-transform: uppercase;
-}
-.trait > a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.page__content dl {
-  margin: 0;
-}
-.page__content dl + dl {
-  margin-top: 0.25em;
-}
-.page__content dl + p {
-  margin-top: 0.5em;
-}
-.page__content dt, dd {
-  display: inline;
-}
-dd:after {
-  content: "";
-  display: block;
-}
 
 ul li, ol li {
   margin-bottom: 0
@@ -113,13 +118,79 @@ body, table {
   font-size: .8em;
 }
 
-h1, h2 + .tags {
-  margin: -.5em 0 0 0;
+// Layout
+
+table {
+  width: auto;
 }
 
-h3 {
-  font-size: 1.1em;
-  margin-top: 1.5em
+aside {
+  float: right;
+  width: 45%;
+  border-left: 1px solid $my-dark-red;
+  margin: 1em;
+  padding: 0 1em;
+  font-size: 90%;
+  color: $my-dark-red;
+  
+  h3 {
+    margin-top: 0;
+  }
+  div:first-child {
+    margin-top: 0;
+  }
+  div:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Special classes
+
+.power {
+  margin: 1.5em 0;
+
+  h3 {
+    margin: 0;
+    border-bottom: 1px solid $border-color;
+    line-height: 24px;
+  }
+  .traits {
+    margin: 0;
+    padding-left: 0;
+  }
+  // .tags {
+  //   border-bottom: 1px solid $border-color;
+  // }
+  hr {
+    margin: 0;
+  }
+}
+
+.item {
+  margin: 1.5em 0;
+
+  h3 {
+    margin: 0;
+    border-bottom: 1px solid $border-color;
+    line-height: 24px;
+  }
+  .traits {
+    margin: 0;
+    padding-left: 0;
+  }
+}
+
+.trait {
+  display: inline;
+  background: $my-dark-red;
+  border: #ceb566 2px solid;
+  padding: 1px 8px;
+  font-size: 0.75em !important;
+  text-transform: uppercase;
+}
+.trait > a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .inline-icon {
@@ -129,6 +200,11 @@ h3 {
 
 .alignright {
 	float: right;
+}
+
+.roll-me-one blockquote {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 button {
@@ -141,31 +217,3 @@ button {
     background: lighten($color: $background, $amount: 5%);
   }
 }
-
-// Roll me one
-.roll-me-one blockquote {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-aside {
-  float: right;
-  width: 45%;
-  border: 1px solid $border-color;
-  margin: .5em;
-  padding: .5em;
-  background-color: #ddc69e;
-  font-size: 90%;
-}
-
-aside div:first-child h2 {
-  margin-top: 0.2em;
-}
-
-aside h2 {
-  margin-top: 1.5em;
-}
-
-// div:not(.heritages) h2 {
-//   clear: both;
-// }

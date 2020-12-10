@@ -46,6 +46,31 @@ The dwarf ancestry gives Bruenor two tool proficiencies and an ancestry feat. Bo
 
 ## Backgrounds
 
+<aside>
+  <h3>Variant Rule</h3>
+  <p>
+    If you're in a hurry, choosing backgrounds can take up a lot of time. Instead of choosing two backgrounds as below, you can use the following simplified rules to pick skills, weapons, and proficiencies.
+
+    Pick any four skills and any two weapons. You gain the <b>Skill Expertise</b> power for each skill, and the <b>Weapon Expertise</b> power for each weapon.
+  </p>
+
+  {% smallpower %}
+  Skill Expertise:
+    tags:
+      perk: +2 to the chosen skill
+    effect: |
+      You have advantage on all die rolls with the chosen skill.
+  {% endsmallpower %}
+
+  {% smallpower %}
+  Weapon Expertise:
+    tags:
+      perk: +1 damage to Strikes with the chosen weapon
+    effect: |
+      You have a +1 bonus on all attack rolls with the chosen weapon.
+  {% endsmallpower %}
+</aside>
+
 Your character's backgrounds describe what your character did before they became an adventurer. This affects your character's skills, proficiencies, and starting feats. You have two backgrounds, representing skills learned at different parts of your life. For example, your first background might represent your life as a child, and your second background might represent your life as an adult.
 
 Your backgrounds always give you several skill feats and combat feats. These are special types of powers that represent your character's training in various skills and weapons. These feats always come with an extra bonus, called a [[Perk]] bonus, that makes you better at rolls involving the skill or weapon. Depending on your character level, you can't stack too many [[Perk]] bonuses on the same stat, as shown in the table below:

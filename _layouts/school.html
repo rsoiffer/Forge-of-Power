@@ -34,8 +34,20 @@ sidebar:
   {% endfor %}
 </table>
 
+<h2>Talents</h2>
 {% for power2 in site.data.powers %}
   {% if power2[1].school == page.data[0] %}
-    {% include power.html power=power2 %}
+    {% if power2[1].tier != "Ribbon" %}
+      {% include power.html power=power2 %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<h2>Ribbons</h2>
+{% for power2 in site.data.powers %}
+  {% if power2[1].school == page.data[0] %}
+    {% if power2[1].tier == "Ribbon" %}
+      {% include power.html power=power2 %}
+    {% endif %}
   {% endif %}
 {% endfor %}

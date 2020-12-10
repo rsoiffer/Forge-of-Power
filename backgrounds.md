@@ -10,7 +10,7 @@ Note that the stats below are incomplete.
 
 {% assign items = site.data.backgrounds %}
 
-<table>
+<!-- <table>
   <tr>
     <th>Name</th>
     <th>Description</th>
@@ -23,7 +23,7 @@ Note that the stats below are incomplete.
       <td>{{ item[1].brief | process_inline }}</td>
     </tr>
   {% endfor %}
-</table>
+</table> -->
 
 {% for item2 in items %}
   {% include item.html item=item2 %}

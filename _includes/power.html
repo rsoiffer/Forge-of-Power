@@ -1,8 +1,8 @@
 {% assign power_name = include.power[0] %}
 {% assign power_body = include.power[1] %}
-<div>
+<div class="power">
 
-<h2 id="{{ power_name | slugify }}">
+<h3 id="{{ power_name | slugify }}">
     {{ power_name }}
     {% if power_body.type %}
     {% unless power_body.type == "Passive" %}
@@ -12,7 +12,7 @@
     {% if power_body.tier %}
     <span class="alignright">{{ power_body.tier }}</span>
     {% endif %}
-</h2>
+</h3>
 
 {% if power_body.aside %}
 <aside>{{ power_body.aside | process }}</aside>
