@@ -11,7 +11,7 @@
 {% endif %}
 
 {% if item_body.preface %}
-    {{ item_body.preface | process }}
+<div class="fluff">{{ item_body.preface | process }}</div>
 {% endif %}
 
 {% if item_body.traits %}
@@ -34,7 +34,7 @@
 {{ item_body.effect | process }}
 
 {% if item_body.fluff %}
-<p><i>{{ item_body.fluff | process_inline }}</i></p>
+<div class="fluff">{{ item_body.fluff | process }}</div>
 {% endif %}
 
 </div>
