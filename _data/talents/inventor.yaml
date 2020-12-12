@@ -20,20 +20,6 @@ Magitech Engine:
 
     When you use this power, or as a {% icon 1-Action %} power afterwards, you can attach the engine to a weapon you touch. Strikes with that weapon deal an extra 1d6 damage of the chosen trait. A weapon can only have one engine attached to it at a time.
 
-Overload:
-  tier: Novice
-  type: 1-Action
-  brief: You overload one of your creations with power, exploding it
-  traits: [Attack, Daily, Fire]
-  tags:
-    requirements: You must center the area of this power on a creature or object that is affected by one of your Inventor powers
-    range: 60 feet
-    area: 20-foot burst
-  effect: |
-    Dispel the chosen Inventor power. Make an Intellect attack roll against your target's Agility DC.
-  success: Your target takes (8d6 + 2 * your Inventor level) damage
-  failure: Your target takes half damage
-
 Shock Net:
   tier: Novice
   type: 1-Action
@@ -100,3 +86,50 @@ Upgrade Weapon:
 
     Shocking Weapon
     : Strikes with your target deal an extra 1d6 [[Electricity]] damage
+
+Overload:
+  tier: Veteran
+  type: 1-Action
+  brief: You overload one of your creations with power, exploding it
+  traits: [Attack, Daily, Fire]
+  tags:
+    requirements: You must center the area of this power on a creature or object that is affected by one of your Inventor powers
+    range: 60 feet
+    area: 20-foot burst
+  effect: |
+    Dispel the chosen Inventor power. Make an Intellect attack roll against your target's Agility DC.
+  success: Your target takes (8d6 + 2 * your Inventor level) damage
+  failure: Your target takes half damage
+
+Mystery Potion:
+  tier: Ribbon
+  type: 1-Action
+  brief: You produce a mysterious potion with a chaotic, unpredictable effect
+  traits: [Encounter]
+  effect: |
+    You produce a mystery potion that you brewed previously. The GM should roll on a random potion table to determine the effect, such as the table [here](https://www.reddit.com/r/DnDBehindTheScreen/comments/4btnkc/random_potions_table/). The potion only contains enough for 1 dose, and it becomes inert after 24 hours.
+
+Robot Servant:
+  tier: Ribbon
+  type: Passive
+  brief: You created a robotic servant that completes simple tasks for you
+  effect: |
+    You have constructed a robotic servant that obeys you commands. Your servant loyally follows orders you give them, even if those orders are insane or suicidal put them in extreme danger. As a robot, your servant is incapable of advanced thought or social interaction, and may interpret orders overly literally. If combat stats are necessary, your servant is a [[Minion]] commoner, except it has no Spirit score and is immune to [[Mental]] effects.
+
+Tinker:
+  tier: Ribbon
+  type: 1-Action
+  brief: You quickly construct a small mechanical device to perform a simple task
+  tags:
+    duration: 1 hour
+  effect: |
+    You construct a small device out of spare parts. The device malfunctions and falls apart when the duration ends. Choose one of the following options.
+
+    Clockwork Toy
+    * This toy is a clockwork animal, monster, or person that slowly clatters along the ground and makes noise that imitates the creature it represents
+
+    Fire Starter
+    * The device produces a miniature flame, which you can use to light a small fire
+
+    Music Box
+    * When opened, this music box plays a single song at a moderate volume

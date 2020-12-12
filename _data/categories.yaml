@@ -5,12 +5,12 @@ Warrior:
   - Swordsage
   - Warblade
 
-Rogue:
+Expert:
   - Acrobat
   - Hunter
   - Inventor
-  - Mastermind
-  - Scoundrel
+  - Rogue
+  - Strategist
 
 Mage:
   - Arcanist

@@ -45,7 +45,7 @@ Warblade:
 
     Examples of warblades in fiction include almost all anime fighters that have unique or strange fighting styles, as well as almost all characters from classic arcade fighting games.
 
-# Rogue
+# Expert
 
 Acrobat:
   brief: You dodge and weave across the battlefield, moving with incredible speed
@@ -74,23 +74,23 @@ Inventor:
 
     Examples of inventors in fiction include Iron Man from Marvel Comics, the Engineer from Team Fortress 2, and most fictional scientist or engineer heroes.
 
-Mastermind:
-  brief: You guide your party both in and out of battle, with a plan for every situation
-  description: |
-    Masterminds are leaders who support their team in and out of combat. They might be inspirational warriors who lead from the front, but they can also be noncombatants who lend aid without interfering directly. Masterminds are known for their supernatural planning abilities, staying three steps ahead of their enemies at all times.
-
-    Mastermind talents focus on supporting allies instead of acting directly. Many of these talents give tactical combat bonuses, letting their allies have extra actions, damage, or defense. Masterminds have almost no talents that affect only themselves. Mastermind ribbons give them the social and tactical abilities they need as leaders.
-
-    Examples of masterminds in fiction include Princess Leia from Star Wars, Roy from Order of the Stick, and all the protagonists of JoJo’s Bizarre Adventure.
-
-Scoundrel:
+Rogue:
   brief: You chance your way into victory, consistently getting lucky hits or dodges
   description: |
-    Scoundrels are sneaky fighters who prefer trickery to fighting fair. They are experts in twisting combats to their advantage, distracting and misdirecting enemies. Most scoundrels favor stealth and surprise attacks over direct combat. Scoundrels have a generally negative reputation as thieves, liars, and assassins.
+    Rogues are sneaky fighters who prefer trickery to fighting fair. They are experts in twisting combats to their advantage, distracting and misdirecting enemies. Most rogues favor stealth and surprise attacks over direct combat. Rogues have a generally negative reputation as thieves, liars, and assassins.
 
-    Scoundrel talents give many ways to confuse or avoid enemies. They also include ways to exploit a distraction for all it’s worth, with powerful sneak attacks and finishing moves. Scoundrel talents also let them escape danger through luck or stealth. Scoundrel ribbons give more ways to sneak around and avoid getting caught.
+    Rogue talents give many ways to confuse or avoid enemies. They also include ways to exploit a distraction for all it’s worth, with powerful sneak attacks and finishing moves. Rogue talents also let them escape danger through luck or stealth. Rogue ribbons give more ways to sneak around and avoid getting caught.
 
-    Examples of scoundrels in fiction include Han Solo from Star Wars, Batman from DC Comics, Jack Sparrow from Pirates of the Carribean, and Corvo Attano from Dishonored.
+    Examples of rogues in fiction include Han Solo from Star Wars, Batman from DC Comics, Jack Sparrow from Pirates of the Carribean, and Corvo Attano from Dishonored.
+
+Strategist:
+  brief: You guide your party both in and out of battle, with a plan for every situation
+  description: |
+    Strategists are leaders who support their team in and out of combat. They might be inspirational warriors who lead from the front, but they can also be noncombatants who lend aid without interfering directly. Strategists are known for their supernatural planning abilities, staying three steps ahead of their enemies at all times.
+
+    Strategist talents focus on supporting allies instead of acting directly. Many of these talents give tactical combat bonuses, letting their allies have extra actions, damage, or defense. Strategists have almost no talents that affect only themselves. Strategist ribbons give them the social and tactical abilities they need as leaders.
+
+    Examples of strategists in fiction include Princess Leia from Star Wars, Roy from Order of the Stick, and all the protagonists of JoJo’s Bizarre Adventure.
 
 # Mage
 

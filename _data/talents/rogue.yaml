@@ -1,0 +1,75 @@
+Lucky:
+  tier: Novice
+  type: Passive
+  brief: You have supernaturally good luck that kicks in when it's needed most
+  traits: [Fortune]
+  effect: |
+    You have three luck points. You can spend a luck point to reroll any die roll that you make, or to reroll any attack roll against you. You regain all your luck points when you finish an 8-hour rest.
+
+Misdirect:
+  tier: Novice
+  type: Reaction
+  brief: You confuse an enemy, causing it to hit its ally instead
+  traits: [Encounter]
+  tags:
+    trigger: You are targeted by a {Strike}
+  effect: |
+    Make a Spirit+Perform roll. If your roll beats the attack roll of the triggering Strike, the triggering Strike targets a creature adjacent to you instead of you.
+
+Poison Blade:
+  tier: Novice
+  type: Free
+  brief: You poison your blade, making your attacks more deadly
+  traits: [Encounter, Poison]
+  tags:
+    target: A weapon you're wielding that deals [[Piercing]] or [[Slashing]] damage
+    duration: 1 minute
+  effect: |
+    The next time you succeed on a {Strike} with the targeted weapon, you deal an extra 4d6 damage.
+
+Smoke Bomb:
+  tier: Novice
+  type: Free
+  brief: You detonate a smoke bomb and run to clear the area
+  traits: [Encounter]
+  tags:
+    duration: 1 minute
+  effect: |
+    A cloud of smoke explodes in a 20-foot burst around you, making it impossible to see through the area. Use the {Stride} power.
+
+Sneak Attack:
+  tier: Novice
+  type: 1-Action
+  brief: You take advantage of your enemy to strike for extra damage
+  effect: |
+    Make a {Strike} against a {flat-footed} creature. The weapon you Strike with must be a [[Finesse]] weapon or a ranged weapon. The base damage of the triggering Strike increases by 2d6.
+
+Death Attack:
+  tier: Veteran
+  type: Passive
+  brief: You deal massive damage against enemies you sneak attack
+  tags:
+    prerequisites: Sneak Attack
+  effect: |
+    The damage bonus of your {Sneak Attack} talent is 4d6 instead of 2d6.
+
+Ambush Master:
+  tier: Ribbon
+  type: Passive
+  brief: You are always ready to jump into fights and surprise enemies
+  effect: |
+    During the first round of combat, all creatures are {flat-footed} to you.
+
+Fast Hands:
+  tier: Ribbon
+  type: Free
+  brief: You can disarm traps or pickpocket others incredibly quickly
+  effect: |
+    Use the {Interact} power to do some task involving an Agility+Thievery roll.
+
+Unreadable:
+  tier: Ribbon
+  type: Passive
+  brief: You can lie without any way to prove you aren't telling the truth
+  effect: |
+    You have advantage on Spirit rolls made to lie to other people. When you're targeted by an effect that reveals whether you're lying, you choose the effect's result.
