@@ -75,7 +75,7 @@ Inventor:
     Examples of inventors in fiction include Iron Man from Marvel Comics, the Engineer from Team Fortress 2, and most fictional scientist or engineer heroes.
 
 Rogue:
-  brief: You chance your way into victory, consistently getting lucky hits or dodges
+  brief: You sneak your way to victory, relying on trickery, distractions, and luck
   description: |
     Rogues are sneaky fighters who prefer trickery to fighting fair. They are experts in twisting combats to their advantage, distracting and misdirecting enemies. Most rogues favor stealth and surprise attacks over direct combat. Rogues have a generally negative reputation as thieves, liars, and assassins.
 
@@ -118,10 +118,7 @@ Sorcerer:
 
 Druid:
   brief: You command nature itself, manipulating wild animals and plants
-  description: |
-    TODO - actually write a description.
-
-    When you reach Novice tier in this power school, you gain an [arcane background](spell-rules.html#arcane-backgrounds) if you don't have one already.
+  description: ""
 
 Elementalist:
   brief: You harness elemental magic to precisely control the natural world
@@ -133,10 +130,7 @@ Healer:
 
 Occultist:
   brief: You wield dark magic to curse enemies and peer outside of reality
-  description: |
-    TODO - actually write a description.
-
-    When you reach Novice tier in this power school, you gain an [arcane background](spell-rules.html#arcane-backgrounds) if you don't have one already.
+  description: ""
 
 Transfigurer:
   brief: You transform yourself or other creatures into animals or monsters
