@@ -78,6 +78,14 @@ apparel:
 
 weapons:
 
+  # Flavor: defensive, personal, spiritual
+  # Mechanics: 
+  Amulet:
+    brief: A holy symbol or talisman that bears protective magic
+    traits: [One-Handed]
+    effect: |
+      While wielding an amulet, you have a +2 bonus to your Spirit DC.
+
   # Flavor: good vs. armor, good for strong warriors
   # Mechanics: bonus vs Strength Defense, feats scale off Strength
   Bludgeon:
@@ -140,14 +148,6 @@ weapons:
           You draw or stow any number of daggers that are secured in easily accessible locations, such as on a belt or a hidden sheath.
       {% endsmallpower %}
 
-  # Flavor: defensive, personal, spiritual
-  # Mechanics: 
-  Focus:
-    brief: A holy symbol or personal focus that helps focus spells
-    traits: [One-Handed]
-    effect: |
-      While wielding a focus, you have a +2 bonus to your Spirit DC.
-
   # Flavor: slow but powerful, very dangerous
   # Mechanics: exploding die, knockback
   Heavy Weapon:
@@ -158,6 +158,12 @@ weapons:
       base damage: 1d12 [[Bludgeoning]] or [[Slashing]], depending on the weapon
     effect: |
       When you roll a 12 on the damage die on a heavy weapon Strike, add 12 damage and reroll the die. Continue until the die doesn't roll a 12.
+
+  Orb:
+    brief: A magical orb or crystal that helps in controlling magic
+    traits: [One-Handed]
+    effect: |
+      Orbs shine with a dim glow, casting dim light out to 10 feet.
 
   # Flavor: very effective, great on the battlefield
   # Mechanics: reach, only good in open spaces
@@ -209,16 +215,24 @@ weapons:
       type: Melee weapon
       base damage: 1d6 [[Bludgeoning]], [[Piercing]], or [[Slashing]], depending on the weapon
     effect: |
-      A throwing weapon can be thrown as a ranged weapon with a range of 40 feet. Ranged Strikes with throwing weapons use Strength for the attack roll instead of Agility. You can use the **Slowing Hit** power.
+      A throwing weapon can be thrown as a ranged weapon with a range of 40 feet. Ranged Strikes with throwing weapons use Strength for the attack roll instead of Agility. You can use the **Draw Another** power.
     aside: |
       {% smallpower %}
-      Slowing Hit:
+      Draw Another:
         type: Free
         tags:
-          trigger: You succeed on a ranged Strike with a throwing weapon
+          trigger: After you make a ranged Strike with a throwing weapon
         effect: |
-         Your target's Speed decreases by 10 feet until the end of your next turn.
+         You draw a weapon that is secured in an easily accessible location, such as a on a belt or in a quiver.
       {% endsmallpower %}
+
+  # Flavor: the scholar's option, full of knowledge, not for combat
+  # Mechanics: boosts rituals, decreases mana usage, lots of versatility
+  Tome:
+    brief: A book of eldritch secrets that holds incantations for spells
+    traits: [One-Handed]
+    effect: |
+      While wielding a tome, if you can currently read the contents of the tome, you have advantage on Intellect+Arcana rolls to identify magic of the type described in the tome.
 
   # Flavor: weak but always available, favored by monks
   # Mechanics: low damage, feats for grappling/tripping/etc

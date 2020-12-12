@@ -1,3 +1,19 @@
+# Amulet
+
+Ward Ally:
+  tier: Amulet
+  type: 1-Action
+  brief: Protect your ally with a shimmering forcefield
+  traits: [Cantrip, Perk, Spell]
+  tags:
+    requirements: You are wielding an amulet
+    perk: +1 [[Elemental]] Shield
+    cost: 0 Mana
+    range: 30 feet
+    duration: Until the end of your next turn
+  effect:
+    Your target has +5 Defense.
+
 # Bludgeon
 
 Crush Armor:
@@ -56,22 +72,6 @@ Throwing Daggers:
     perk: +1 damage to dagger Strikes
   effect:
     You can throw a dagger as a ranged weapon with a range of 20 feet.
-
-# Focus
-
-Ward Ally:
-  tier: Focus
-  type: 1-Action
-  brief: Protect your ally with a shimmering forcefield
-  traits: [Cantrip, Perk, Spell]
-  tags:
-    requirements: You are wielding a focus
-    perk: +1 [[Elemental]] Shield
-    cost: 0 Mana
-    range: 30 feet
-    duration: Until the end of your next turn
-  effect:
-    Your target has +5 Defense.
 
 # Heavy Weapon
 
