@@ -96,23 +96,48 @@ Strategist:
 
 Arcanist:
   brief: You manipulate magic and runes to create or dispel enchantments and wards
-  description: ""
+  description: |
+    Arcanists are expert mages who specialize in manipulating magical forces in complex ways. They are the most academic and formal casters, and are the best at complex rituals, wards, and enchantments. Arcanists are often found in wizard academies and guardian fortresses, where their skill at defensive warding is put to use.
+
+    Arcanist talents give a variety of utility and combat effects, with a focus on defense. These talents give ways to set up wards and runes, dispel other magic effects, and build constructs of magical force. Arcanists have no purely offensive talents. Arcanist ribbons further enhance their knowledge about and ability to manipulate magic.
+
+    Examples of arcanists in fiction include the entire cast of Harry Potter, any D&D caster that specializes in abjuration, as well as most fictional academically-trained wizards or mages.
 
 Blaster:
   brief: You blast enemies away with devastating evocations of elemental energy
-  description: ""
+  description: |
+    Blasters are combat mages who excel in causing massive magical destruction. They blast creatures and structures to pieces with long-range advanced combat magic and elemental explosions. Blasters are often employed as soldiers or warmages, as their explosive area spells can devastate entire formations of mundane soldiers.
+
+    Blaster talents focus entirely on causing damage. Most of these talents are different kinds of magical blast attacks, and the rest buff other magical attacks. Blaster talents include almost no defensive or utility abilities, which can make blasters into glass cannons. Blaster ribbons give them minor utility abilities to support their offense.
+
+    Examples of blasters in fiction include the black mages from Final Fantasy, any D&D caster that specializes in evocation, and most combat-oriented mages and sorcerers from RPGs.
 
 Illusionist:
   brief: You deceive your opponents with conjured illusions and beguiling charms
-  description: ""
+  description: |
+    Illusionists are tricky mages who deceive enemies with clever illusions. Illusionists never fight directly, but instead manipulate other creatures’ senses to make them see things that aren’t there or overlook things that are. Many illusionists work as performers, artists, or technical crew, as their magic opens up new possibilities in the performing arts.
+
+    Illusionist talents include a variety of ways to distract or disable enemies. Many illusionist talents force enemies to waste time attacking things that aren’t really there. Others manipulate creatures’ minds directly, causing confusing or inciting strong emotions. Illusionist ribbons are mostly small-scale illusions useful out of combat.
+
+    Examples of illusionists in fiction include Loki from Marvel Comics, Genjutsu-users from Naruto, and almost every magic-user in real-world mythology.
 
 Necromancer:
   brief: You channel necrotic energy to slay the living, then raise the dead to serve you
-  description: ""
+  description: |
+    Necromancers are dark casters who manipulate death, undeath, and fear. They raise undead minions to do their bidding and cast powerful death spells to slay their enemies. Necromancers are widely feared by the general population for their dark magic, as their spells have a terrible potential to do harm if misused.
+
+    Necromancer talents focus on offensive and utility effects. Some talents channel necrotic energy to harm the living, while others weaken the barrier between life and death and interact with the spirits of the dead. Necromancer ribbons give mostly utility effects related to the necromancer’s unique closeness with death.
+
+    Examples of necromancers in fiction include Nagash from Warhammer Fantasy, the White Walkers from A Song of Ice and Fire, and almost all fictional undead characters.
 
 Sorcerer:
   brief: You alter the fundamental laws of reality, breaking through space and time
-  description: ""
+  description: |
+    Sorcerers are powerful casters who directly manipulate the structure of reality. They bend space and time, move objects with their mind, and conjure objects out of nowhere. Sorcerers are especially known for their command of teleportation magic, as the most powerful sorcerers can cross entire continents in an instant.
+
+    Sorcerer talents include a variety of effects related to manipulating reality. Some of these talents act as direct attacks or defenses through telekinesis. Others warp time to apply unique buffs or debuffs to other creatures. Sorcerer ribbons give them minor utility effects related to their control over space and time.
+
+    Examples of sorcerers in fiction include Dr. Strange from Marvel Comics, the Green Lanterns from DC Comics, and most fictional reality manipulators or grand wizards.
 
 # Priest
 
