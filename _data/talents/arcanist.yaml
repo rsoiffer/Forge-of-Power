@@ -45,10 +45,13 @@ Glyph:
   traits: [Ritual, Spell]
   tags:
     cost: 2 Mana
+    materials: 1 gp of expensive chalk
     target: A flat surface you can reach
     duration: 1 year, until the glyph triggers, or until the glyph is destroyed
   effect: |
-    You inscribe a small glyph that contains a magical effect onto your target. You choose the conditions that trigger the glyph. For example, you could choose for the glyph to trigger when any creature touches or stands on the surface, when an object covering the glyph is removed, or when a creature reads the glyph. You can also specify more complex conditions, such as only triggering when a creature fails to speak a particular password. When the glyph triggers, the **Explosive Runes** effect activates.
+    You inscribe a small magical glyph onto your target. The glyph does nothing until it triggers. When the glyph triggers, the **Explosive Runes** effect activates.
+
+    You choose the conditions that trigger the glyph. For example, you could choose for the glyph to trigger when any creature touches or stands on the surface, when an object covering the glyph is removed, or when a creature reads the glyph. You can also specify more complex conditions, such as only triggering when a creature fails to speak a particular password. If the glyph is damaged, it triggers immediately. If the glyph is moved more than 5 feet, it becomes unable to trigger for 1 minute.
 
     Optionally, you can store a different effect in the glyph instead of **Explosive Runes**. When you cast this spell, also cast another spell of your choice. This other spell doesn't take effect as normal, but is instead stored inside the glyph. This other spell takes effect when the glyph triggers. You must specify all the parameters of the spell (including its target, any heightening, and so on) when you store it in the glyph.
 
