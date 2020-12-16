@@ -106,6 +106,7 @@ Power Bolt:
 Close Combat Mage:
   tier: Veteran
   type: Passive
+  brief: You can cast ranged spells very effectively in close quarters
   effect: |
     When you use an [[Attack]] spell with a range of at least 30 feet, you can decrease the range to Touch to get a +2 bonus to the attack roll.
 
