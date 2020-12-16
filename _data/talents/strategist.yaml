@@ -66,7 +66,7 @@ White Raven Tactics:
   traits: [Auditory, Daily, Linguistic]
   tags:
     range: 30 feet
-    requirement: You must target a creature other than yourself
+    requirements: You must target a creature other than yourself
   effect: |
     Your target immediately takes an extra turn. This turn occurs outside of the normal turn order, and doesn't count as their turn for the round.
 

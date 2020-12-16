@@ -47,8 +47,8 @@ $my-gray: #74776B;
 }
 
 .page__content {
-  p {
-    margin-bottom: .25em;
+  p, dl {
+    margin: 0 0 .25em 0;
   }
   h2 {
     padding-bottom: .25em;
@@ -61,14 +61,14 @@ $my-gray: #74776B;
     font-variant: small-caps;
   }
   h3 {
+    clear: both;
     margin-top: 1em;
     font-size: 1.25em;
   }
-  dl {
-    margin: 0;
-  }
-  dl + p {
-    margin-top: .25em;
+  h4 {
+    margin: 1em 0 .25em 0;
+    font-size: 1em;
+    font-style: italic;
   }
   dd {
     font-size: 1em;
@@ -123,8 +123,8 @@ aside {
   float: right;
   width: 45%;
   border-left: 1px solid $my-dark-red;
-  margin: 1em;
-  padding: 0 1em;
+  margin: .5em 0 .5em 1em;
+  padding: 0 0 0 1em;
   font-size: 90%;
   color: $my-dark-red;
   
@@ -153,9 +153,10 @@ aside {
     margin: 0;
     padding-left: 0;
   }
-  // .tags {
-  //   border-bottom: 1px solid $border-color;
-  // }
+  .tags {
+    margin-bottom: 0;
+    // border-bottom: 1px solid $border-color;
+  }
   hr {
     margin: 0;
   }

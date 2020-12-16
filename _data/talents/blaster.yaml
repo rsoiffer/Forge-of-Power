@@ -1,0 +1,272 @@
+# (3 dice + 10 dice / 2 delay) / 4 base = 2 cost
+Burning Arrow:
+  tier: Novice
+  type: 1-Action
+  brief: You conjure an arrow of acid that continues corroding the target after it hits
+  traits: [Attack, Fire, Spell]
+  tags:
+    cost: 2 Mana
+    range: 120 feet
+    duration: 1 minute
+  effect: |
+    Make a Magic attack roll against your target's Defense.
+
+    Critical Success
+    : Double damage
+
+    Success
+    : Your target takes 3d8 damage
+
+    Failure or Critical Failure
+    : This spell's duration immediately ends
+
+    Starting on your next turn, you can use the **Persistent Burn** power.
+
+    #### Heightened
+
+    For each +2 Mana, this spell's damage increases by 2d8, and the damage of **Persistent Burn** increases by 1d6.
+  aside: |
+    {% smallpower %}
+    Persistent Burn:
+      type: Free
+      traits: [Fire]
+      effect: |
+        The target of your **Burning Arrow** takes 1d6 damage.
+    {% endsmallpower %}
+
+Dangerous Sorcery:
+  tier: Novice
+  type: Free
+  brief:  You boost the magical energy you channeled into a recent spell
+  tags:
+    trigger: You deal damage with a spell you cast this turn
+  effect: |
+    The triggering damage increases by 1d6 (against all of the spell's targets).
+
+Elemental Adept:
+  tier: Novice
+  type: Passive
+  brief: You can bypass your enemies' resistances to particular damage types
+  effect: |
+    Choose one of the following traits: [[Acid]], [[Cold]], [[Electricity]], [[Fire]], or [[Sonic]]. Spells you cast with that trait ignore all Shields.
+
+Lightning Beam:
+  tier: Novice
+  type: Free
+  brief: You begin to emanate a beam of lightning that continuously zaps enemies
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    duration: 1 minute, or until you use **Zap** three times
+  effect: |
+    You can use the **Zap** power.
+
+    #### Heightened
+
+    For each +1 Mana, the damage of **Zap** increases by 2d10.
+  aside: |
+    {% smallpower %}
+    Zap:
+      type: 1-Action
+      traits: [Attack, Electricity]
+      tags:
+        range: 30 feet
+      effect: |
+        Make a Magic attack roll against your target's Defense.
+
+        Success
+        : Your target takes 2d10 damage
+
+        Failure
+        : Half damage
+    {% endsmallpower %}
+
+# 4X dice / 4 base = X cost
+Power Bolt:
+  tier: Novice
+  type: 1-Action
+  brief: You fire a bolt of damaging magical energies that impacts with violent force
+  traits: [Attack, Cantrip, Force, Spell]
+  tags:
+    cost: 0 Mana
+    range: 60 feet
+  effect: |
+    Make a Magic attack roll against the target's Defense.
+
+    Critical Success
+    : Double damage
+
+    Success
+    : Your target takes 2d6 damage
+
+    #### Heightened
+
+    For a total of 1 Mana, the damage increases to 4d6. For each additional +1 Mana, the damage increases by an extra 4d6.
+
+Close Combat Mage:
+  tier: Veteran
+  type: Passive
+  effect: |
+    When you use an [[Attack]] spell with a range of at least 30 feet, you can decrease the range to Touch to get a +2 bonus to the attack roll.
+
+# 6 dice * 2 AOE / 4 base = 3 cost
+Fireball:
+  tier: Veteran
+  type: 1-Action
+  brief: You conjure a mote of fire that explodes into a vast fireball
+  traits: [Attack, Fire, Spell]
+  tags:
+    cost: 3 Mana
+    range: 500 feet
+    area: 20-foot burst
+  effect: |
+    Make a Magic attack roll against your target's Agility DC.
+
+    Success
+    : Your target takes 6d6 damage
+
+    Failure
+    : Half damage
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 2d6.
+
+Awesome Destruction:
+  tier: Ribbon
+  type: Passive
+  brief: Your destructive magic awes and scares everyone who can see it
+  effect: |
+    You have advantage on Spirit+Provoke rolls to intimidate people who have seen you cast a Blaster spell in the past minute.
+
+Minor Blast:
+  tier: Ribbon
+  type: 1-Action
+  brief: You scatter a small amount of power to deal a tiny bit of damage to several targets
+  traits: [Cantrip, Spell]
+  tags:
+    cost: 0 Mana
+    range: 120 feet
+    target: Up to ten targets you can see within range
+  effect: |
+    Choose one of the [[Cold]], [[Electricity]], or [[Fire]] traits. This spell gains that trait. Your target takes 1 damage.
+
+# Magic Missile:
+#   tier: Novice
+#   type: 1-Action
+#   traits: [Force, Spell]
+#   tags:
+#     cost: 1 Mana
+#     range: 30 feet
+#   effect:
+#     You fire an unerring dart of force from your fingertips. It automatically hits and deals 1d4+1 force damage to the target.
+
+# Sound Burst:
+#   tier: Novice
+#   type: 1-Action
+#   traits: [Spell, Sonic]
+#   tags:
+#     cost: 2 Mana
+#     range: 30 feet
+#     area: 10-foot burst
+#     save: Fortitude
+#   effect: |
+#     A cacophonous noise blasts out, dealing 2d10 sonic damage. Each creature must attempt a Fortitude save.
+
+#     Heightened (per +1 Mana)
+#     : The damage increases by 1d10
+#   critical-success: The creature is unaffected
+#   success: The creature takes half damage
+#   failure: The creature takes full damage and is deafened for 1 round
+#   critical-failure: The creature takes double damage and is deafened and slowed 1 for 1 minute
+
+# Cone of Cold:
+#   tier: Veteran
+#   type: 1-Action
+#   traits: [Cold, Spell]
+#   tags:
+#     cost: 5 Mana
+#     area: 60-foot cone
+#     save: Reflex
+#   effect: |
+#     Icy cold rushes forth from your hands. You deal 12d6 cold damage to creatures in the area.
+
+#     Heightened (per +1 Mana)
+#     : The damage increases by 2d6
+
+# Lightning Bolt:
+#   tier: Veteran
+#   type: 1-Action
+#   traits: [Electricity, Spell]
+#   tags:
+#     cost: 3 Mana
+#     area: 120-foot line
+#     save: Reflex
+#   effect: |
+#     A bolt of lightning strikes outward from your hand, dealing 4d12 electricity damage.
+
+#     Heightened (per +1 Mana)
+#     : The damage increases by 1d12
+
+# Chain Lightning:
+#   tier: Master
+#   type: 1-Action
+#   traits: [Electricity, Spell]
+#   tags:
+#     cost: 6 Mana
+#     range: 30 feet
+#     save: Reflex
+#   effect: |
+#     You discharge a powerful bolt of lightning at the target, dealing 8d12 electricity damage. The target must attempt a Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must be able to see all targets. Roll the damage only once, and apply it to each target. The chain ends if any target critical succeeds at its save.
+
+#     Heightened (per +1 Mana)
+#     : The damage increases by 1d12
+
+# Disintegrate:
+#   tier: Master
+#   type: 1-Action
+#   traits: [Attack, Spell]
+#   tags:
+#     cost: 6 Mana
+#     range: 120 feet
+#   effect:
+#     You fire a green ray at your target. Make a spell attack. If you hit, you deal 12d10 damage, or twice as much on a critical hit. A creature reduced to 0 HP is reduced to fine powder. An object you hit is destroyed if it would fit within a 10-foot cube, regardless of its HP, unless it's an artifact or similarly hard to destroy.
+
+# Polar Ray:
+#   tier: Master
+#   type: 1-Action
+#   traits: [Attack, Cold, Spell]
+#   tags:
+#     cost: 8 Mana
+#     range: 120 feet
+#   effect: |
+#     You fire a blue-white ray of freezing air and swirling sleet from your finger that can chill your target to the bones. You must succeed at a spell attack roll to affect the target, which then takes 10d8 damage and is drained 2.
+
+#     Heightened (per +1 Mana)
+#     : The damage increases by 2d8
+
+# Implosion:
+#   tier: Epic
+#   type: 1-Action
+#   traits: [Spell]
+#   tags:
+#     cost: 9 Mana
+#     range: 30 feet
+#     save: Fortitude
+#     duration: Sustained, up to 1 minute
+#   effect:
+#     You crush the target by causing it to collapse in on itself, dealing 75 damage. Each time you {Sustain} the spell, you must choose a new target to be subject to the same effect. You can't target the same creature twice during a single casting of this spell, you can't Sustain this spell multiple times per turn, and you can't target a creature that lacks a solid form.
+
+# Meteor Swarm:
+#   tier: Epic
+#   type: 1-Action
+#   traits: [Spell]
+#   tags: 
+#     cost: 9 Mana
+#     range: 500 feet
+#     save: Reflex
+#   effect: |
+#     You call down four meteors that explode in fiery blasts. Each meteor deals 6d10 bludgeoning damage to all creatures in a 10-foot burst, then explodes, dealing 14d6 fire damage to all creatures in a 40-foot burst. A creature hit by multiple meteors takes damage only once.
+
+#     Heightened (per +1 Mana)
+#     : The bludgeoning damage increases by 1d10, and the fire damage increases by 2d6
