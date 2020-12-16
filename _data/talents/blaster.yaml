@@ -50,6 +50,28 @@ Elemental Adept:
   effect: |
     Choose one of the following traits: [[Acid]], [[Cold]], [[Electricity]], [[Fire]], or [[Sonic]]. Spells you cast with that trait ignore all Shields.
 
+Icy Rebuke:
+  tier: Novice
+  type: Reaction
+  brief: You retaliate against an attack with a pulse of cold energy
+  traits: [Attack, Cold, Spell]
+  tags:
+    trigger: You take damage from an attack
+    cost: 1 Mana
+    target: The creature that made the triggering attack
+  effect: |
+    Make a Magic attack roll against the target's Agility DC.
+
+    Success
+    : Your target takes 3d10 damage
+
+    Failure
+    : Half damage
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 3d10.
+
 Lightning Beam:
   tier: Novice
   type: Free
