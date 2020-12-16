@@ -151,6 +151,21 @@ Minor Blast:
   effect: |
     Choose one of the [[Cold]], [[Electricity]], or [[Fire]] traits. This spell gains that trait. Your target takes 1 damage.
 
+Shatter:
+  tier: Ribbon
+  type: 1-Action
+  brief: You send out powerful sonic waves that shatter an object
+  traits: [Cantrip, Sonic, Spell]
+  tags:
+    cost: 0 Mana
+    range: 30 feet
+  effect: |
+    If your target is an inanimate, unattended object, it takes 1d6 damage.
+
+    #### Heightened
+
+    For a total of 1 Mana, this spell gains an area of a 10-foot burst. For each additional +1 Mana, the burst's radius increases by 10 feet.
+
 # Magic Missile:
 #   tier: Novice
 #   type: 1-Action
