@@ -27,6 +27,7 @@
 $my-dark-red: #5F1616;
 $my-dark-blue: #23395B;
 $my-gray: #74776B;
+$dark-border-color: mix(#000, $border-color, 25%);
 
 .search__toggle {
   color: $masthead-link-color
@@ -83,7 +84,7 @@ $my-gray: #74776B;
 }
 
 th {
-  border-bottom: 1px solid mix(#000, $border-color, 25%)
+  border-bottom: 1px solid $dark-border-color
 }
 td {
   border-bottom: none
@@ -122,12 +123,12 @@ table {
 aside {
   float: right;
   width: 45%;
-  border-left: 1px solid $my-dark-red;
-  margin: .5em 0 .5em 1em;
-  padding: 0 0 0 1em;
+  border: 1px solid $dark-border-color;
+  margin: .5em 0 1em 1em;
+  padding: 1em;
   font-size: 90%;
-  color: $my-dark-red;
-  
+  background-color: #dbc29b;
+
   h3 {
     margin-top: 0;
   }
