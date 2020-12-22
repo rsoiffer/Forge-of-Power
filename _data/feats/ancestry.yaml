@@ -200,7 +200,7 @@ Paralyzing Touch:
   tier: Undead
   type: 1-Action
   brief: You paralyze a creature you touch
-  traits: [Attack, Encounter, Shadow]
+  traits: [Attack, Encounter, Necrotic]
   tags:
     target: One creature you can reach
     duration: Until the end of your next turn

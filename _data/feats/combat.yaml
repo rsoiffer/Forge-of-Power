@@ -137,7 +137,7 @@ Chromatic Missile:
   effect: |
     Make a Magic attack roll against the target's Defense.
 
-    If you know a spell with one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Mental]], [[Positive]], [[Shadow]], or [[Sonic]] traits, you can choose to replace the [[Force]] trait on this spell with the other trait.
+    If you know a spell with one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Mental]], [[Necrotic]], [[Radiant]], or [[Sonic]] traits, you can choose to replace the [[Force]] trait on this spell with the other trait.
   success: Your target takes 1d6 + Magic damage
 
 Glacial Burst:

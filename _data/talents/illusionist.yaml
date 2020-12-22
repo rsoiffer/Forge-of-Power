@@ -2,7 +2,7 @@ Color Spray:
   tier: Novice
   type: 1-Action
   brief: You spray out a burst of colors to disorient and blind your enemies
-  traits: [Spell, Visual]
+  traits: [Attack, Spell, Visual]
   tags:
     cost: 1 Mana
     area: 15-foot cone
@@ -75,7 +75,7 @@ Phantom Pain:
   tier: Novice
   type: 1-Action
   brief: You fill a creature's mind with imaginary crippling pain
-  traits: [Mental, Spell]
+  traits: [Attack, Mental, Spell]
   tags:
     cost: 1 Mana
     range: 30 feet
@@ -121,7 +121,7 @@ Confusion:
   tier: Veteran
   type: 1-Action
   brief: You fill a creature's mind with confusing images, making them act randomly
-  traits: [Emotion, Mental, Spell]
+  traits: [Attack, Emotion, Mental, Spell]
   tags:
     cost: 4 Mana
     range: 30 feet

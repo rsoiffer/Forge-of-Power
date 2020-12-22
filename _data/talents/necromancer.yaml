@@ -1,0 +1,154 @@
+Animate Dead:
+  tier: Novice
+  type: 1-Action
+  brief: You animate a corpse into a mindless undead minion
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    target: A [[Humanoid]] corpse you can see within range
+    duration: 1 hour, or until your minion falls to 0 health
+  effect: |
+    Your target animates as a [[Minion]] zombie or skeleton under your control.
+
+    #### Heightened
+
+    For each +1 Mana, your minion's maximum health increases by 10.
+
+Darkness:
+  tier: Novice
+  type: 1-Action
+  brief: You fill an area with magical darkness that only you can see through
+  traits: [Dark, Spell]
+  tags:
+    cost: 2 Mana
+    range: 120 feet
+    area: 20-foot burst
+    duration: 10 minutes, or until you decide to end it
+  effect: |
+    You fill this spell's area with magical darkness. This darkness completely blocks vision within or through the area. You can see through this darkness as if it wasn't there.
+
+Harm:
+  tier: Novice
+  type: 1-Action
+  brief: You channel pure necrotic energy through your hand to slay a creature
+  traits: [Attack, Necrotic, Spell]
+  tags:
+    cost: 1 Mana
+    range: Touch
+  effect: |
+    Make a Magic attack roll against your target's Spirit DC.
+
+    Critical Success
+    : Double damage
+
+    Success
+    : Your target takes 3d10 damage
+
+    Failure
+    : Half damage
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 3d10.
+
+Vampiric Touch:
+  tier: Novice
+  type: 1-Action
+  brief: You absorb a creature's life force, transferring it to another creature
+  traits: [Attack, Cantrip, Healing, Necrotic, Spell]
+  tags:
+    cost: 0 Mana
+    range: Touch
+  effect: |
+    Make a Magic attack roll against your target's Spirit DC.
+
+    Critical Success
+    : Double damage
+
+    Success
+    : Your target takes 1d8 damage
+
+    Choose a second target within range (you can choose yourself). Your second target heals health equal to the amount of health lost by your first target.
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 1d8.
+
+Vengeful Ghost:
+  tier: Novice
+  type: Free
+  brief: You summon a vengeful spirit that attacks or tracks a target of your choice
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    duration: 1 minute
+  effect: |
+    You can use the **Ghost Punch** power.
+
+    Optionally, when you cast this spell, you can name and describe a specific enemy creature you're seeking revenge on. If there are any ghosts who want to harm specifically this chosen enemy (for example, a ghost seeking revenge against their murderer), you summon an especially powerful vengeful ghost.
+
+    If you summon a vengeful ghost, the damage of **Ghost Punch** increases to 3d6, but it can only target the chosen enemy. In addition, you always know the exact direction towards your chosen enemy.
+  aside: |
+    {% smallpower %}
+    Ghost Punch:
+      type: 1-Action
+      traits: [Attack, Bludgeoning]
+      tags:
+        range: 30 feet
+      effect: |
+        Make a Magic attack roll against your target's Defense.
+
+        Success
+        : Your target takes 2d6 damage
+    {% endsmallpower %}
+
+Terror:
+  tier: Veteran
+  type: 1-Action
+  brief: You frighten a group a creatures, making them flee in terror
+  traits: [Attack, Fear, Spell]
+  tags:
+    cost: 3 Mana
+    area: 30-foot emanation
+    duration: Sustained, up to 1 minute
+  effect: |
+    Make a Magic attack roll against your target's Spirit DC.
+
+    Critical Success
+    : Your target is **terrified** and has -5 to their Spirit DC
+
+    Success
+    : Your target is **terrified**
+  aside: |
+    ### Terrified Condition
+    
+    While you are terrified, you must use the {Stride} power and the {Repeat} ({Stride}) power on each of your turns to move as far away as possible from the source of your terror. This effect doesn't force you to move through obviously dangerous terrain. You has disadvantage on all rolls while you can see the source of your terror.
+
+Grave Sight:
+  tier: Ribbon
+  type: Passive
+  brief: You have a supernatural ability to detect death, corpses, and remains
+  effect: |
+    You see a bright red glow around areas that have seen death. This includes places where a person has died recently (within a week or so), dead bodies, and even [[Undead]] creatures. You can roll Spirit+Notice to detect objects involved in death, such as weapons that have killed creatures or places an [[Undead]] creature has been recently.
+
+Intimidating Presence:
+  tier: Ribbon
+  type: Passive
+  brief: You exude an unnatural aura of fear and darkness
+  effect: |
+    You have advantage on Spirit+Provoke rolls to intimidate or scare creatures.
+
+Speak with Dead:
+  tier: Ribbon
+  type: 1-Action
+  brief: You summon and speak with the spirit of a dead creature
+  traits: [Ritual, Spell]
+  tags:
+    cost: 3 Mana
+    target: A [[Humanoid]] corpse you can reach
+    requirements: Your target died within the last week
+  effect: |
+    You conjure the spirit or ghost of the person. The spirit is only a faint echo of the person, and it can only speak when you ask it questions. You can ask this spirit up to three questions. The spirit may choose to answer or stay silent, and it may choose to tell the truth or lie.
+
+    After you ask the spirit three questions, it passes on fully, and **Speak with Dead** cannot target this person again.
