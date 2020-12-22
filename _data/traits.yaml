@@ -3,9 +3,6 @@
 Acid: |
   Effects with this trait deal acid damage. Effects with this trait implicitly have the [[Elemental]] trait as well.
 
-Beast: |
-  A creature with this trait is an animal.
-
 Bludgeoning: |
   Effects with this trait deal damage by crushing, smashing, or flattening targets. Effects with this trait implicitly have the [[Physical]] trait as well.
 
@@ -33,14 +30,8 @@ Force: |
 Healing: |
   An effect with this trait restores a creature's body, typically by restoring HP, but sometimes by removing diseases or other debilitating effects.
 
-Humanoid: |
-  A creature with this trait is biologically similar to a human, with the same general body shape, limbs, and intellect.
-
 Mental: |
   An effect with this trait can alter the target's mind. It has no effect on an object or a mindless creature.
-
-Monster: |
-  A creature with this trait is an animal infused with magic that significantly alters its form, often granting it supernatural powers.
 
 Physical: |
   Effects with this trait deal damage by some kind of collision between physical objects.
@@ -63,6 +54,17 @@ Slashing: |
 Sonic: |
   An effect with this trait functions only if it makes sound, meaning it has no effect in an area of silence or in a vacuum. A [[Sonic]] effect might deal sonic damage.
 
+# Creature Types
+
+Beast: |
+  A creature with this trait is an animal.
+
+Humanoid: |
+  A creature with this trait is biologically similar to a human, with the same general body shape, limbs, and intellect.
+
+Monster: |
+  A creature with this trait is an animal infused with magic that significantly alters its form, often granting it supernatural powers.
+
 Spirit: |
   A creature with this trait is a supernatural spirit, a magical entity that interacts with the world in an unusual way.
 
@@ -72,7 +74,7 @@ Undead: |
 # General
 
 Auditory: |
-  Auditory effects rely on sound. An [[Auditory]] effect can only affect creatures that can hear it.
+  An effect with this trait can affect only creatures that can hear it.
 
 Concentrate: |
   A power with this trait requires a degree of mental concentration and discipline.
@@ -89,6 +91,12 @@ Manipulate: |
 Move: |
   A power with this trait involves moving from one space to another.
 
+Tactile: |
+  An effect with this trait can affect only creatures that can touch it.
+
+Teleportation: |
+  Effects with this trait allow you to instantaneously move from one point in space to another. Teleportation does not usually trigger reactions based on movement.
+
 Visual: |
   An effect with this trait can affect only creatures that can see it.
 
@@ -100,9 +108,6 @@ Attack: |
 Cantrip: |
   Spells with this trait can be cast for 0 Mana. Powers with this trait always have the [[Spell]] trait as well.
 
-Composition: |
-  Powers with this trait involve a type of performance. Depending on what kind of performance you make, the power gains the [[Auditory]] or [[Visual]] traits. You can only have one [[Composition]] power active at a time; if you use a new [[Composition]] power, the previous one ends immediately.
-
 Daily: |
   Once you use a power with this trait, you cannot use that power again until you complete an 8-hour rest.
 
@@ -112,23 +117,18 @@ Death: |
 Encounter: |
   Once you use a power with this trait, you cannot use that power again until you complete a 5-minute rest.
 
-Finesse: |
-  A melee weapon with this trait is light, quick, and precise. A creature making a {Strike} with a [[Finesse]] weapon can use either Strength or Agility for the attack roll.
-
 Fortune: |
-  Effects with this trait beneficially alter how you roll your dice. You can never have more than one [[Fortune]] effect alter a single roll. If multiple [[Fortune]] effects would apply, you have to pick which to use. If a [[Fortune]] effect and a [[Misfortune]] effect would apply to the same roll, the two cancel each other out, and you roll normally.
+  Effects with this trait alter how you roll your dice. You can never have more than one [[Fortune]] effect alter a single roll. If multiple [[Fortune]] effects would apply, only the last one applies.
 
-Incapacitation: |
-  An ability with this trait can take a character completely out of the fight or even kill them. These abilities are harder to use on more powerful characters, such as player characters and powerful NPC bosses (as determined by the GM). These characters have a +10 bonus to saves, AC, or other defenses against [[Incapacitation]] effects.
+Illusion: |
+  Powers with the [[Illusion]] trait implicitly have the [[Visual]] trait as well.
+
+  A power with this trait conjures an illusion, which is like an image or hologram of an object. You can see illusions, but you cannot hear, smell, or touch them. Unless specified otherwise, illusions are static images that are chosen by the caster. Illusions can perform small natural animations, such as grass waving in the wind, water flowing in a creek, or a person breathing.
+
+  Physical interaction with the illusion reveals it as fake, because things can pass through it. You can also investigate an illusion with the {Seek} power: if you succeed on an Intellect+Notice roll agaisnt the Magic DC of the illusion's creator, you realize the illusion is fake. Even if you know something is an illusion, it still affects your senses normally.
 
 Minion: |
   A creature with this trait is controlled by another creature. [[Minion]] creatures can't uses powers unless their master uses the {Command} power.
-
-Misfortune: |
-  An effect with this trait detrimentally alters how you roll your dice. You can never have more than one [[Misfortune]] effect alter a single roll. If multiple [[Misfortune]] effects would apply, the GM decides which is worse and applies it. If a [[Fortune]] effect and [[Misfortune]] effect would apply to the same roll, the two cancel each other out, and you roll normally.
-
-One-Handed: |
-  An item with this trait requires one hand to wield. You cannot use this hand for anything else while wielding this item.
 
 Perk: |
   Powers with this trait give you a special **Perk** bonus to a stat. This bonus applies as long as you meet the requirements of the power, ignoring the power's cost, duration, and other tags. This bonus only stacks with other [[Perk]] powers up to a certain amount. The table below lists the maximum number of [[Perk]] powers that can give you a bonus to a die roll:
@@ -174,8 +174,13 @@ Spell: |
 Stance: |
   A stance is a general combat strategy that you enter by using a power with the [[Stance]] trait, and that you remain in for some time. A stance lasts until you fall {unconscious}, until its requirements (if any) are violated, until the encounter ends, or until you enter a new stance, whichever comes first. You can be in a stance only during combat.
 
-Teleportation: |
-  Effects with this trait allow you to instantaneously move from one point in space to another. Teleportation does not usually trigger reactions based on movement.
+# Items
+
+Finesse: |
+  A melee weapon with this trait is light, quick, and precise. A creature making a {Strike} with a [[Finesse]] weapon can use either Strength or Agility for the attack roll.
+
+One-Handed: |
+  An item with this trait requires one hand to wield. You cannot use this hand for anything else while wielding this item.
 
 Two-Handed: |
   An item with this trait requires two hands to wield. You cannot use these hands for anything else while wielding this item.

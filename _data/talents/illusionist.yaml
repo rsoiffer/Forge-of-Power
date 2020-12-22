@@ -2,7 +2,7 @@ Color Spray:
   tier: Novice
   type: 1-Action
   brief: You spray out a burst of colors to disorient and blind your enemies
-  traits: [Incapacitation, Spell, Visual]
+  traits: [Spell, Visual]
   tags:
     cost: 1 Mana
     area: 15-foot cone
@@ -23,7 +23,7 @@ Illusory Disguise:
   tier: Novice
   type: 1-Action
   brief: You disguise your target, making them appear as someone else entirely
-  traits: [Illusion, Spell, Visual]
+  traits: [Illusion, Spell]
   tags:
     cost: 1 Mana
     range: 10 feet
@@ -39,7 +39,7 @@ Illusory Object:
   tier: Novice
   type: 1-Action
   brief: You conjure a giant static illusory object or structure
-  traits: [Illusion, Visual, Spell]
+  traits: [Illusion, Spell]
   tags:
     cost: 1 Mana
     range: 500 feet
@@ -55,6 +55,7 @@ Illusory Object:
 Invisibility:
   tier: Novice
   type: 1-Action
+  brief: You turn a creature invisible, completely hiding them from view
   traits: [Spell, Visual]
   tags:
     cost: 2 Mana
@@ -73,6 +74,7 @@ Invisibility:
 Phantom Pain:
   tier: Novice
   type: 1-Action
+  brief: You fill a creature's mind with imaginary crippling pain
   traits: [Mental, Spell]
   tags:
     cost: 1 Mana
@@ -107,14 +109,18 @@ Phantom Pain:
 Tactile Illusions:
   tier: Novice
   type: Passive
+  brief: Your illusions become semi-solid, affecting all the senses, even touch
   tags:
-    prerequesites: Any [[Illusion]] power
+    prerequisites: Any [[Illusion]] power
   effect: |
-    Your [[Illusion]] spells make appropriate sounds, generate normal smells, and feel right to the touch. Your [[Illusion]] spells gain the [[Auditory]] trait. Your illusions are moderately solid, but don't stand up to any significant force. Illusions you make lose their solidity if they take any damage.
+    Your illusions form actual solid objects capable of supporting weight. Your illusions make appropriate sounds, generate normal smells, and feel right to the touch. Your [[Illusion]] powers gain the [[Auditory]] and [[Tactile]] traits.
+
+    Your illusions are moderately solid, but don't stand up to any significant force. Illusions you make lose their solidity if they take any damage. If you conjure a solid illusion on top of another solid object, your illusion loses its solidity immediately.
 
 Confusion:
   tier: Veteran
   type: 1-Action
+  brief: You fill a creature's mind with confusing images, making them act randomly
   traits: [Emotion, Mental, Spell]
   tags:
     cost: 4 Mana
@@ -139,6 +145,7 @@ Confusion:
 Mislead:
   tier: Veteran
   type: Reaction
+  brief: You shatter into pieces and reappear nearby, revealing you were just an illusion
   traits: [Spell, Teleportation]
   tags:
     cost: 3 Mana
@@ -147,23 +154,38 @@ Mislead:
   effect: |
     You teleport to an unoccupied space you can see within range. Instead of targeting you, the triggering {Strike} targets an illusory copy of yourself that shatters into pieces.
 
-Glamour:
-  tier: Novice
-  type: Passive
-  traits: [Illusion, Visual]
+Chameleon:
+  tier: Ribbon
+  type: Free
+  brief: You quickly change part of yourself to look slightly different
+  traits: [Cantrip, Illusion, Spell]
+  tags:
+    cost: 0 Mana
+    duration: 1 hour
   effect: |
-    You are 
+    You conjure an illusion that changes a minor part of your visual appearance. For example, you could change your eye color, your hairstyle, or the pattern on a tattoo. This change isn't large enough to disguise your identity.
+
+Glamour:
+  tier: Ribbon
+  type: Passive
+  brief: You are constantly covered by an illusion to enhance your appearance
+  traits: [Illusion]
+  effect: |
+    You are covered by an illusion that makes you appear striking, glamorous, or beautiful. You have advantage on Spirit+Perform rolls that rely on your visual apperance.
 
 Minor Illusion:
-  tier: Novice
+  tier: Ribbon
   type: 1-Action
-  traits: [Cantrip, Illusion, Spell, Visual]
+  brief: You conjure a small visual illusion or conjure an illusory sound
+  traits: [Cantrip, Illusion, Spell]
   tags:
     cost: 0 Mana
     range: 30 feet
     area: 5-foot cube
   effect: |
     You create an illusory visual image of a stationary object or structure. The entire image must fit within the spell's area.
+
+    Alternatively, you conjure a sound originating from the spell's area. This power loses the [[Illusion]] trait and gains the [[Auditory]] trait.
 
 # Illusory Scene:
 #   tier: Veteran
