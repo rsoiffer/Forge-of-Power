@@ -28,6 +28,29 @@ Darkness:
   effect: |
     You fill this spell's area with magical darkness. This darkness completely blocks vision within or through the area. You can see through this darkness as if it wasn't there.
 
+Drain Touch:
+  tier: Novice
+  type: 1-Action
+  brief: You absorb a creature's life force, transferring it to another creature
+  traits: [Attack, Cantrip, Healing, Necrotic, Spell]
+  tags:
+    cost: 0 Mana
+    target: One creature you can reach
+  effect: |
+    Make a Magic attack roll against your target's Spirit DC.
+
+    Critical Success
+    : Double damage
+
+    Success
+    : Your target takes 1d8 damage
+
+    Choose another creature you can reach as your second target (you can choose yourself). Your second target heals health equal to the amount of health lost by your first target.
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 1d8.
+
 Harm:
   tier: Novice
   type: 1-Action
@@ -50,30 +73,9 @@ Harm:
 
     #### Heightened
 
+    If you add +2 Mana, this spell loses its range and gains an area of a 20-foot emanation.
+
     For each +1 Mana, the damage increases by 3d10.
-
-Vampiric Touch:
-  tier: Novice
-  type: 1-Action
-  brief: You absorb a creature's life force, transferring it to another creature
-  traits: [Attack, Cantrip, Healing, Necrotic, Spell]
-  tags:
-    cost: 0 Mana
-    range: Touch
-  effect: |
-    Make a Magic attack roll against your target's Spirit DC.
-
-    Critical Success
-    : Double damage
-
-    Success
-    : Your target takes 1d8 damage
-
-    Choose a second target within range (you can choose yourself). Your second target heals health equal to the amount of health lost by your first target.
-
-    #### Heightened
-
-    For each +1 Mana, the damage increases by 1d8.
 
 Vengeful Ghost:
   tier: Novice
