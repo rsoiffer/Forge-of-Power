@@ -1,6 +1,7 @@
 Color Spray:
   tier: Novice
   type: 1-Action
+  brief: You spray out a burst of colors to disorient and blind your enemies
   traits: [Incapacitation, Spell, Visual]
   tags:
     cost: 1 Mana
@@ -21,67 +22,148 @@ Color Spray:
 Illusory Disguise:
   tier: Novice
   type: 1-Action
-  traits: [Spell, Visual]
+  brief: You disguise your target, making them appear as someone else entirely
+  traits: [Illusion, Spell, Visual]
   tags:
     cost: 1 Mana
-    range: 30 feet
+    range: 10 feet
     duration: 1 hour
   effect: |
     Your target is covered in a visual illusion that makes them look like another creature of the same body shape, and with roughly similar height and weight as themself. The illusion can change the appearance of your target's clothing and worn items, but held items are unaffected, and any worn item your target removes returns to its true appearance.
 
     #### Heightened
 
-    If you add +1 Mana, this spell also disguises your voice, and it gains the [[Auditory]] trait.
+    For each +1 Mana, you can target another creature within range.
+
+Illusory Object:
+  tier: Novice
+  type: 1-Action
+  brief: You conjure a giant static illusory object or structure
+  traits: [Illusion, Visual, Spell]
+  tags:
+    cost: 1 Mana
+    range: 500 feet
+    area: 20-foot burst
+    duration: 10 minutes
+  effect: |
+    You create an illusory visual image of a stationary object or structure. The entire image must fit within the spell's area.
+
+    #### Heightened
+
+    If you add +1 Mana, this spell's duration changes to 24 hours. If you instead add +3 Mana, this spell's duration changes to Forever.
+
+Invisibility:
+  tier: Novice
+  type: 1-Action
+  traits: [Spell, Visual]
+  tags:
+    cost: 2 Mana
+    range: 10 feet
+    duration: 1 hour, or until your target makes an attack or casts a spell
+  effect: |
+    Your target turns {invisible}, becoming impossible to percieve visually.
+
+    #### Heightened
+
+    If you add +2 Mana, this spell's duration changes to 1 minute, and it doesn't end if the target makes an attack or casts a spell.
 
     For each +1 Mana, you can target another creature within range.
 
-# Illusory Object:
-#   tier: Novice
-#   type: 1-Action
-#   traits: [Visual, Spell]
-#   tags:
-#     cost: 1 Mana
-#     range: 500 feet
-#     area: 20-foot burst
-#     duration: 10 minutes
-#   effect: |
-#     You create an illusory visual image of a stationary object. The entire image must fit within the spell's area. The object appears to animate naturally, but it doesn't make sounds or generate smells. Any creature that touches the image or uses the Seek action to examine it can attempt to disbelieve your illusion.
+# (2 dice + 4 dice / 2 delay) / 4 base = 1 cost
+Phantom Pain:
+  tier: Novice
+  type: 1-Action
+  traits: [Mental, Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    duration: 5 rounds
+  effect: |
+    Make a Magic attack roll against your target's Spirit DC.
 
-#     Heightened (total 2 Mana)
-#     : Your image makes appropriate sounds, generates normal smells, and feels right to the touch. The spell gains the [[Auditory]] trait. The duration increases to 1 hour.
+    Critical Succes
+    : Your target takes 2d4 damage and is {stunned} until the end of their next turn
 
-#     Heightened (total 5 Mana)
-#     : The duration is unlimited.
+    Success
+    : Your target takes 2d4 damage
 
-# Invisibility:
-#   tier: Novice
-#   type: 1-Action
-#   traits: [Spell]
-#   tags:
-#     cost: 2 Mana
-#     range: Touch
-#     duration: 10 minutes
-#   effect: |
-#     Cloaked in illusion, the target becomes invisible. This makes it hidden from all creatures that rely on sight. If the target uses a hostile action, the spell ends after that action is completed.
+    Failure or Critical Failure
+    : This spell's duration immediately ends
 
-#     Heightened (total 4 Mana)
-#     : The spell lasts 1 minute, but it doesn't end if the target uses a hostile action
+    You can use the **Persistent Pain** power.
 
-# Phantom Pain:
-#   tier: Novice
-#   type: 1-Action
-#   traits: [Mental, Spell]
-#   tags:
-#     cost: 1 Mana
-#     range: 30 feet
-#     save: Will
-#     duration: 1 minute
-#   effect:
-#     Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.
-#   critical-success: The target is unaffected
-#   success: The target takes full initial damage but no persistent damage, and the spell ends immediately
-#   failure: The target takes full initial and persistent damage, and the target is sickened 1
-#   critical-failure: As failure, but the target is sickened 2
+    #### Heightened
+
+    For each +1 Mana, this spell's damage increases by 2d4, and the damage of **Persistent Pain** increases by 1d4.
+  aside: |
+    {% smallpower %}
+    Persistent Pain:
+      type: Free
+      traits: [Mental]
+      effect: |
+        The target of your **Phantom Pain** takes 1d4 damage.
+    {% endsmallpower %}
+
+Tactile Illusions:
+  tier: Novice
+  type: Passive
+  tags:
+    prerequesites: Any [[Illusion]] power
+  effect: |
+    Your [[Illusion]] spells make appropriate sounds, generate normal smells, and feel right to the touch. Your [[Illusion]] spells gain the [[Auditory]] trait. Your illusions are moderately solid, but don't stand up to any significant force. Illusions you make lose their solidity if they take any damage.
+
+Confusion:
+  tier: Veteran
+  type: 1-Action
+  traits: [Emotion, Mental, Spell]
+  tags:
+    cost: 4 Mana
+    range: 30 feet
+    duration: Varies
+  effect: |
+    Make a Magic attack roll against your target's Intellect DC.
+
+    Critical Success
+    : Your target is {confused} for 1 minute
+
+    Success
+    : Your target is {confused} until the end of their next turn
+
+    Failure
+    : Your target is {slowed} until the end of their next turn
+
+    #### Heightened
+
+    If you add +4 Mana, this spell targets up to 10 creatures within range.
+
+Mislead:
+  tier: Veteran
+  type: Reaction
+  traits: [Spell, Teleportation]
+  tags:
+    cost: 3 Mana
+    trigger: A {Strike} succeeds against you
+    range: 30 feet
+  effect: |
+    You teleport to an unoccupied space you can see within range. Instead of targeting you, the triggering {Strike} targets an illusory copy of yourself that shatters into pieces.
+
+Glamour:
+  tier: Novice
+  type: Passive
+  traits: [Illusion, Visual]
+  effect: |
+    You are 
+
+Minor Illusion:
+  tier: Novice
+  type: 1-Action
+  traits: [Cantrip, Illusion, Spell, Visual]
+  tags:
+    cost: 0 Mana
+    range: 30 feet
+    area: 5-foot cube
+  effect: |
+    You create an illusory visual image of a stationary object or structure. The entire image must fit within the spell's area.
 
 # Illusory Scene:
 #   tier: Veteran
@@ -196,24 +278,6 @@ Illusory Disguise:
 #   success: The target is frightened 1
 #   failure: The target is frightened 2
 #   critical-failure: The target is frightened 3 for the duration, and is fleeing for 1 round
-
-# Confusion:
-#   tier: Veteran
-#   type: 1-Action
-#   traits: [Emotion, Mental, Spell]
-#   tags:
-#     cost: 4 Mana
-#     range: 30 feet
-#     save: Will
-#   effect: |
-#     You befuddle your target with strange impulses, causing it to act randomly. The effects are determined by the target's Will save. You can Dismiss the spell.
-
-#     Heightened (total 8 Mana)
-#     : You can target up to 10 creatures
-#   critical-success: The target is unaffected
-#   success: The target babbles incoherently and is stunned 1
-#   failure: The target is confused for 1 minute, and can attempt a new save at the end of each of its turns to end the confusion
-#   critical-failure: The target is confused for 1 minute, with no save to end the effect early
 
 # Mind Reading:
 #   tier: Veteran

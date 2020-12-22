@@ -2,7 +2,7 @@
 Burning Arrow:
   tier: Novice
   type: 1-Action
-  brief: You conjure an arrow of acid that continues corroding the target after it hits
+  brief: You conjure a fiery arrow that continues burning after it hits
   traits: [Attack, Fire, Spell]
   tags:
     cost: 2 Mana
