@@ -1,0 +1,111 @@
+Combat Form:
+  tier: Novice
+  type: Free
+  brief: You transform into a powerful animal battle form for a short time
+  traits: [Polymorph, Spell]
+  tags:
+    cost: 2 Mana
+    duration: 10 minutes, or until you decide to end it
+  effect: |
+    You polymorph into a animal of your choice. While in combat form:
+    * You have Size +0.
+    * Your Strength is +2, unless it was already higher. This doesn't affect your health.
+    * You gain the [[Beast]] trait.
+    * You gain low-light vision and imprecise scent.
+    * You cannot speak or use any equipment.
+    * You cannot use [[Manipulate]] powers other than Transfigurer spells.
+
+    Your animal form determines your Speed and the base damage of your {unarmed} Strikes. Following is a table of stats for common animal types. Pick the option that best describes the animal form you chose. Your GM may let you modify the stats below to better fit your form.
+
+    <table>
+      <tr>
+        <th>Animal</th>
+        <th>Speed</th>
+        <th>Unarmed</th>
+        <th>Special</th>
+      </tr>
+      <tr>
+        <td>Ape</td>
+        <td>25 feet (walk, climb)</td>
+        <td>2d6 [[Bludgeoning]]</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Bear</td>
+        <td>30 feet (walk)</td>
+        <td>2d8 [[Slashing]]</td>
+        <td>+1 Defense</td>
+      </tr>
+      <tr>
+        <td>Bull</td>
+        <td>40 feet (walk)</td>
+        <td>2d8 [[Bludgeoning]]</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Canine</td>
+        <td>40 feet (walk)</td>
+        <td>2d8 [[Piercing]]</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Cat</td>
+        <td>40 feet (walk)</td>
+        <td>2d6 [[Slashing]]</td>
+        <td>Advantage on Agility+Atheltics rolls</td>
+      </tr>
+      <tr>
+        <td>Deer</td>
+        <td>50 feet (walk)</td>
+        <td>2d6 [[Piercing]]</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Frog</td>
+        <td>25 feet (walk, swim)</td>
+        <td>2d4 [[Bludgeoning]]</td>
+        <td>Reach 15 feet</td>
+      </tr>
+      <tr>
+        <td>Shark</td>
+        <td>35 feet (swim)</td>
+        <td>2d8 [[Piercing]]</td>
+        <td>Breathe underwater but not air</td>
+      </tr>
+      <tr>
+        <td>Snake</td>
+        <td>20 feet (walk, climb, swim)</td>
+        <td>2d4 [[Piercing]] + 1d6 [[Poison]]</td>
+        <td></td>
+      </tr>
+    </table>
+
+    #### Heightened
+
+    If you add +2 Mana, your animal form gives +1 Size, +5 feet reach, and +2 damage to unarmed Strikes.
+
+    Instead, if you add +4 Mana, your animal form gives +2 Size, +10 feet reach, and +4 damage to unarmed Strikes.
+
+Scout Form:
+  tier: Novice
+  type: 1-Action
+  brief: You tranform into a tiny animal, perfect for scouting or stealth
+  traits: [Polymorph, Spell]
+  tags:
+    cost: 1 Mana
+    duration: 1 hour, or until you decide to end it
+  effect: |
+    You polymorph into a animal of your choice. While in scout form:
+    * You have Size -2 or smaller.
+    * Your Strength is -5. This doesn't affect your health.
+    * You have 5 [[Physical]] Weakness.
+    * Your Speed is 30 feet.
+    * You have a +10 bonus to Agility+Stealth rolls.
+    * You gain the [[Beast]] trait.
+    * You gain low-light vision and imprecise scent.
+    * You cannot speak or use any equipment.
+    * You cannot use [[Manipulate]] powers other than Transfigurer spells.
+
+    #### Heightened
+
+    If you add +3 Mana, you turn into a flying creature, such as a bird. You can fly at your full Speed.
