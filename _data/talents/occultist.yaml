@@ -1,0 +1,234 @@
+Bane:
+  tier: Novice
+  type: 1-Action
+  brief: You curse your enemies with bad luck and weakness
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    target: Up to three creatures you can see within range
+    duration: Sustained, up to 1 minute
+  effect: |
+    Whenever your target makes an attack roll, you can subtract 1d4 from their result. Whenever they are the target of an attack, you can subtract 1d4 from their DC against the attack.
+
+    #### Heightened
+
+    For each +1 Mana, you target one additional creature.
+
+Bestow Curse:
+  tier: Novice
+  type: 1-Action
+  brief: You impose a lasting and debilitating curse on your enemy
+  traits: [Attack, Spell]
+  tags:
+    cost: 2 Mana
+    range: Touch
+    duration: Varies
+  effect: |
+    Choose one of the following effects. Alternatively, the GM may allow you to invent your own curse.
+    * Choose an attribute. Your target has disadvantage on rolls with that attribute.
+    * Your target is {slowed}.
+    * Your target has 5 Weakness to a damage type of your choice.
+    * At the start of each of your target's turns, roll a d6. On a roll of 1, your target cannot use a {% icon 1-Action %} power that turn.
+    * Your target is covered in horrible boils. Other people are disgusted by their hideous appearance.
+
+    Make a Magic attack roll against your target's Spirit DC.
+
+    Critical Success
+    : This spell lasts forever
+
+    Success
+    : This spell lasts 1 hour
+
+    Failure
+    : This spell lasts until the end of your target's next turn
+
+    Critical Failure
+    : This spell ends immediately
+
+Command:
+  tier: Novice
+  type: 1-Action
+  brief: You shout a command that your target is compelled to obey
+  traits: [Attack, Auditory, Linguistic, Mental, Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+  effect: |
+    Make a Magic attack roll against your target's Spirit DC.
+
+    Critical Success
+    : At the start of your target's next turn, you can force them to use a {% icon 1-Action %} power in a way you choose
+
+    Success
+    : At the start of your target's next turn, you can force them to {Stride} in a way you choose
+
+    #### Heightened
+
+    If you add +4 Mana, you can target up to 10 creatures you can see within range.
+
+Portent:
+  tier: Novice
+  type: Passive
+  brief: You can fortell briefs moments in the future, altering the course of fate
+  traits: [Fortune]
+  effect: |
+    When you finish an 8-hour rest, roll two d20s and record the numbers rolled. You can replace any die roll made by you or a creature you can see with one of these foretelling rolls. You must choose to do so before the roll.
+
+    Each foretelling roll can be used only once. When you finish an 8-hour rest, you lose any unused foretelling rolls.
+
+Suggestion:
+  tier: Novice
+  type: 1-Action
+  brief: You magically nudge someone into performing a specific action
+  traits: [Attack, Auditory, Linguistic, Mental, Spell]
+  tags:
+    cost: 2 Mana
+    range: 30 feet
+    duration: 1 hour, until your target has completed your suggestion, or until you or any of your companions damage your target
+  effect: |
+    You suggest a course of activity (limited to a sentence or two) to your target. The suggestion must be phrased to sound reasonable, it can't be obviously harmful to your target or obviously against their self-interest. Make a Magic attack roll against your target's Spirit DC.
+
+    Success
+    : Your target pursues the suggested course of action to the best of its ability
+
+    Failure
+    : Your target is unaffected but doesn't realize you tried to control them
+
+    Critical Failure
+    : Your target is unaffected and knows you tried to control them
+
+    #### Heightened
+
+    If you add +1 Mana, the duration extends to 24 hours. If you add an additional +1 Mana, the duration extends to 1 week.
+
+    If you add +4 Mana, you can target up to 10 creatures you can see within range.
+
+Clairvoyance:
+  tier: Veteran
+  type: 1-Action
+  brief: You conjure a magical eye that lets you see the details of a distant location
+  traits: [Divination, Spell]
+  tags:
+    cost: 4 Mana
+    range: 500 feet
+    duration: 10 minutes
+  effect: |
+    You create an invisible floating eye at a location within range (even if it's outside of your line of sight). The eye can't move, but you can see in all directions from that point as if using your normal visual senses.
+
+Evil Eye:
+  tier: Ribbon
+  type: 1-Action
+  brief: You give someone the evil eye, promising misfortune in their future
+  traits: [Cantrip, Spell]
+  tags:
+    target: One creature you can see
+    duration: Until you cast this spell again
+  effect: |
+    Your target has disadantage on their next die roll.
+
+Friends:
+  tier: Ribbon
+  type: 1-Action
+  brief: You temporarily make a creature friendly towards you
+  traits: [Attack, Cantrip, Emotion, Mental, Spell]
+  tags:
+    range: 30 feet
+    duration: 1 minute
+  effect: |
+    Make a Magic attack roll against your target's Spirit DC.
+
+    Critical Success
+    : As success, and your target considers you a close and trusted friend
+
+    Success
+    : You have advantage on all Spirit+Eloquence rolls to talk to your target
+
+    On a failure or critical failure, or when this spell's duration ends, your target realizes you tried to magically charm them. This usually makes your target unfriendly or hostile towards you.
+
+Read Omens:
+  tier: Ribbon
+  type: 1-Action
+  brief: You peek into the future, learning a clue about what will happen
+  traits: [Daily, Divination]
+  effect: |
+    Choose a particular goal, event, or activity that will occur within 1 week. You learn a cryptic clue or piece of advice that could help with the chosen event, often in the form of a rhyme or omen.
+
+# Mind Reading:
+#   tier: Veteran
+#   type: 1-Action
+#   traits: [Divination, Mental, Spell]
+#   tags:
+#     cost: 3 Mana
+#     range: 30 feet
+#     save: Will
+#     duration: 1 round, or sustained up to 1 minute
+#   effect:
+#     With a cursory mental touch, you attempt to read the target's mind. It must attempt a Will save. The target then becomes temporarily immune to your Mind Reading power for 1 hour.
+#   critical-success: The target perceives vague surface thoughts from you
+#   success: You find out whether the target's Intelligence is higher than, equal to, or lower than yours
+#   failure: You perceive vague surface thoughts from the target, and you find out whether its Intelligence is higher than, equal to, or lower than yours
+#   critical-failure: As failure, and for the duration of the spell, you can Sustain to detect the target's surface throughts again
+
+# Augury:
+#   tier: Novice
+#   type: 1-Action
+#   traits: [Divination]
+#   effect: |
+#     You gain a vague glimpse of the future. When you cast this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveals the GM's best guess among the following outcomes:
+
+#     * Weal
+#       : The results will be good
+#     * Woe
+#       : The results will be bad
+#     * Weal and Woe
+#       : The results will be a mix of good and bad
+#     * Nothing
+#       : There won't be particularly good or bad results
+    
+#     The GM secretly rolls a d4. On a 1, the result is always "nothing". If anyone casts Augury again to ask about the same topic, the GM uses the secret roll result from the first casting, though if circumstances change, it's possible to get a different result.
+
+# True Strike:
+#   tier: Novice
+#   type: 1-Action
+#   traits: [Fortune]
+#   tags:
+#     duration: Until the end of your turn
+#   effect:
+#     A glimpse into the future ensures your next blow strikes true. The next time you make an attack, roll the attack twice and use the better result. The attack ignores any penalties to the roll.
+
+# Greater Portent:
+#   tier: Master
+#   type: Passive
+#   tags:
+#     prerequisites: Portent
+#   effect:
+#     The visions in your dreams intensify and paint a more accurate picture in your mind of what is to come. You roll four d20s for your Portent feature, rather than two.
+
+# True Seeing:
+#   tier: Master
+#   type: 1-Action
+#   traits: [Divination, Spell]
+#   tags:
+#     duration: 10 minutes
+#   effect:
+#     You see things within 60 feet as they actually are. Within that range, you automatically disbelieve all illusions, see invisible creatures, and see the true forms of all polymorphed creatures.
+
+# Foresight:
+#   tier: Epic
+#   type: 1-Action
+#   traits: [Divination, Mental, Spell]
+#   tags:
+#     cost: 9 Mana
+#     duration: 1 hour
+#   effect: |
+#     You gain a sixth sense that warns you of danger that might befall you. You gain a +2 bonus to Initiative rolls and you aren't flat-footed against hidden creatures or when flanked. In addition, you gain the following power.
+
+#     ### Foresight {% icon Reaction %}
+#     ---
+#     Trigger
+#     : You defend against a hostile creature or other danger
+
+#     ---
+#     If the hostile creature or danger forces you to roll dice, you roll twice and uses the higher result, and this power gains the [[Fortune]] trait. But if the hostile creature or danger is rolling against you, that hostile creature or danger rolls twice and uses the lower result, and this power gains the [[Misfortune]] trait.
+
