@@ -1,0 +1,141 @@
+Aid:
+  tier: Novice
+  type: 1-Action
+  brief: You magically bolster your allies' toughness and resolve
+  traits: [Spell]
+  tags:
+    cost: 2 Mana
+    range: 30 feet
+    target: Up to three creatures you can see within range
+    duration: 8 hours
+  effect: |
+    Your target's maximum and current health both increase by 2d6.
+
+    #### Heightened
+    
+    For each +1 Mana, your target's maximum and current health both increase by an additional 1d6.
+
+Bless:
+  tier: Novice
+  type: 1-Action
+  brief: You bless your allies with good fortune and protection
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    target: Up to three creatures you can see within range
+    duration: Sustained, up to 1 minute
+  effect: |
+    Whenever your target makes an attack roll, they can add 1d4 to their result. Whenever they are the target of an attack, they can add 1d4 to their DC against the attack.
+
+    #### Heightened
+
+    For each +1 Mana, you target one additional creature.
+
+Guiding Bolt:
+  tier: Novice
+  type: 1-Action
+  brief: You shoot a bolt of light at an enemy, highlighting their weak points
+  traits: [Attack, Cantrip, Light, Radiant, Spell]
+  tags:
+    cost: 0 Mana
+    range: 120 feet
+    duration: 1 minute
+  effect: |
+    Make a Magic attack roll against your target's Defense.
+
+    Success
+    : Your target takes 1d6 damage
+
+    Whether or not this attack succeeds, your target glitters with light, shining dim light out to 10 feet. The next attack roll against your target has advantage.
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 2d6.
+
+Heal:
+  tier: Novice
+  type: 1-Action
+  brief: You restore a creature's health and cure diseases
+  traits: [Healing, Spell]
+  tags:
+    cost: 1 Mana
+    range: Touch
+  effect: |
+    Your target heals 5 health and is cured of any nonmagical diseases. If your target is an [[Undead]] or an [[Outsider]], they instead take 4d6 damage.
+
+    #### Heightened
+
+    For each +1 Mana, the healing increases by 5 and the damage increases by 2d6.
+
+Smite Evil:
+  tier: Novice
+  type: Free
+  brief: You punish an evil target with powerful radiant energy
+  traits: [Radiant, Spell]
+  tags:
+    cost: 1 Mana
+    trigger: You succeed on a melee {Strike}
+    target: The target of your Strike
+  effect: |
+    Your target takes 2d6 damage. If your target is an [[Undead]] or an [[Outsider]], this damage is doubled.
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 2d6.
+
+Sacred Spell:
+  tier: Veteran
+  type: Free
+  brief: You channel divine energy to greatly buff a spell you cast
+  traits: [Encounter]
+  tags:
+    trigger: You cast a spell
+  effect: |
+    Reduce the cost of the triggering spell by 2.
+
+Blessed Healer:
+  tier: Ribbon
+  type: Passive
+  brief: Healing spells you cast on others heal you as well
+  effect: |
+    When you spend at least 1 Mana on a [[Healing]] spell, you heal health equal to the Mana you spent.
+
+Gentle Affect:
+  tier: Ribbon
+  type: Passive
+  brief: You appear generally peaceful and nonthreatening to others
+  traits: [Reputation]
+  effect: |
+    Other people intially judge you as gentle, peaceful, and kindly. This usually makes people more likely to trust and like you, and less likely to believe you're capable of violence.
+
+Light:
+  tier: Ribbon
+  type: 1-Action
+  brief: You cause an object to shine bright light like a torch
+  traits: [Cantrip, Light, Spell]
+  tags:
+    cost: 0 Mana
+    target: An unattended object you can reach
+    duration: 8 hours
+  effect: |
+    Your target shines bright light in all directions. The light is as bright as a torch, illuminating the area within 30 feet.
+
+    #### Heightened
+    
+    For each +1 Mana, the radius of illumination increases by 30 feet.
+
+Priestly Status:
+  tier: Ribbon
+  type: Passive
+  brief: You're known as an officially-sanctioned priest of a common religion
+  traits: [Reputation]
+  effect: |
+    You are widely known as a priest of a particular religion. Followers of that religion generally respect your moral and religious authority.
+
+Sanctuary:
+  tier: Ribbon
+  type: Passive
+  brief: You're hard to hurt while you don't attack your enemies
+  effect: |
+    You have a +2 bonus to Defense and to your Spirit DC. If you use any [[Attack]] power, you lose this benefit for the next hour.

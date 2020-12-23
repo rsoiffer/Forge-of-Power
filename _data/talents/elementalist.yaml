@@ -62,6 +62,7 @@ Fire Shield:
       tags:
         trigger: A {Strike} succeeds against you
         target: The creature who made the triggering Strike
+        requirements: You can reach your target
       effect: |
         Your target takes 2d4 damage.
     {% endsmallpower %}

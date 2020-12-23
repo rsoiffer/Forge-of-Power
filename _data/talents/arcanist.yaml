@@ -134,3 +134,15 @@ Ritual Expert:
   brief: You can complete rituals much more quickly than normal
   effect: |
     You can complete the optional ritual for [[Ritual]] spells in a tenth of the normal time.
+
+Zone of Truth:
+  tier: Ribbon
+  type: 1-Action
+  brief: Detect whenever anyone in an area tells a lie
+  traits: [Ritual, Spell]
+  tags:
+    cost: 2 Mana
+    area: 30-foot burst
+    duration: 10 minutes
+  effect: |
+    Whenever anyone in this spell's area knowingly speaks a lie, the spell sends you a ping. When you cast **Zone of Truth**, you choose whether the ping is perceptible to only you or to everyone nearby.
