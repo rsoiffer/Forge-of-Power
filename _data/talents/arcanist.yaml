@@ -87,6 +87,9 @@ Hold Creature:
   effect: |
     Make a Magic attack roll against your target's Strength DC.
 
+    Critical Success
+    : Your target is {restrained} and {incapacitated}
+
     Success
     : Your target is {restrained}
 

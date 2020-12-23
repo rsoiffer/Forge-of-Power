@@ -62,15 +62,18 @@ Invisibility:
     range: 10 feet
     duration: 1 hour, or until your target makes an attack or casts a spell
   effect: |
-    Your target turns {invisible}, becoming impossible to percieve visually.
+    Your target turns **invisible**.
 
     #### Heightened
 
     If you add +2 Mana, this spell's duration changes to 1 minute, and it doesn't end if the target makes an attack or casts a spell.
 
     For each +1 Mana, you can target another creature within range.
+  aside: |
+    ### Invisible Condition
 
-# (2 dice + 4 dice / 2 delay) / 4 base = 1 cost
+    If you are invisible, you cannot be seen at all. This is enough to completely hide you from anyone who is not actively searching for you. Other creatures can still try to determine your location through sound clues, puffs of dust, or odd breezes. Creatures have disadvantage on Intellect+Notice rolls made to find you.
+
 Phantom Pain:
   tier: Novice
   type: 1-Action
@@ -79,32 +82,19 @@ Phantom Pain:
   tags:
     cost: 1 Mana
     range: 30 feet
-    duration: 5 rounds
+    duration: Sustained, up to 1 minute
   effect: |
     Make a Magic attack roll against your target's Spirit DC.
 
-    Critical Succes
+    Critical Success
     : Your target takes 2d4 damage and is {stunned} until the end of their next turn
 
     Success
     : Your target takes 2d4 damage
 
-    Failure or Critical Failure
-    : This spell's duration immediately ends
-
-    You can use the **Persistent Pain** power.
-
     #### Heightened
 
-    For each +1 Mana, this spell's damage increases by 2d4, and the damage of **Persistent Pain** increases by 1d4.
-  aside: |
-    {% smallpower %}
-    Persistent Pain:
-      type: Free
-      traits: [Mental]
-      effect: |
-        The target of your **Phantom Pain** takes 1d4 damage.
-    {% endsmallpower %}
+    For each +1 Mana, this spell's damage increases by 1d4.
 
 Tactile Illusions:
   tier: Novice
@@ -125,15 +115,12 @@ Confusion:
   tags:
     cost: 4 Mana
     range: 30 feet
-    duration: Varies
+    duration: Sustained, up to 1 minute
   effect: |
     Make a Magic attack roll against your target's Intellect DC.
 
-    Critical Success
-    : Your target is {confused} for 1 minute
-
     Success
-    : Your target is {confused} until the end of their next turn
+    : Your target is **confused**
 
     Failure
     : Your target is {slowed} until the end of their next turn
@@ -141,6 +128,22 @@ Confusion:
     #### Heightened
 
     If you add +4 Mana, this spell targets up to 10 creatures within range.
+  aside: |
+    ### Confused Condition
+
+    If you are confused, roll 1d6 at the start of each of your turns to determine what you do.
+
+    1
+    : {Strike} a random target, then your turn ends
+
+    2
+    : {Stride} in a random direction, then your turn ends
+
+    3
+    : Babble incoherently, then your turn ends
+
+    4-6
+    : Act normally
 
 Mislead:
   tier: Veteran

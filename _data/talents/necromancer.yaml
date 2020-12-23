@@ -49,7 +49,7 @@ Drain Touch:
 
     #### Heightened
 
-    For each +1 Mana, the damage increases by 1d8.
+    For each +2 Mana, the damage increases by 1d8.
 
 Harm:
   tier: Novice
@@ -75,7 +75,7 @@ Harm:
 
     If you add +2 Mana, this spell loses its range and gains an area of a 20-foot emanation.
 
-    For each +1 Mana, the damage increases by 3d10.
+    For each +2 Mana, the damage increases by 3d10.
 
 Vengeful Ghost:
   tier: Novice
@@ -91,6 +91,10 @@ Vengeful Ghost:
     Optionally, when you cast this spell, you can name and describe a specific enemy creature you're seeking revenge on. If there are any ghosts who want to harm specifically this chosen enemy (for example, a ghost seeking revenge against their murderer), you summon an especially powerful vengeful ghost.
 
     If you summon a vengeful ghost, the damage of **Ghost Punch** increases to 3d6, but it can only target the chosen enemy. In addition, you always know the exact direction towards your chosen enemy.
+
+    #### Heightened
+
+    For each +1 Mana, the damage of **Ghost Punch** increases by 1d6.
   aside: |
     {% smallpower %}
     Ghost Punch:

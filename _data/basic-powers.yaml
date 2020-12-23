@@ -116,7 +116,7 @@ Sustain:
   effect: |
     Choose one spell with a sustained duration you have in effect. The duration of that spell continues until the end of your next turn. Some spells might have slightly different or expanded effects if you sustain them. If your Sustain power is disrupted, the spell immediately ends.
 
-    If the spell you sustain has the [[Attack]] trait, you must repeat the attack roll. If you get a Failure on this roll, you cannot sustain this spell again.
+    If the spell you sustain has the [[Attack]] trait, you must repeat the attack roll. Apply the result of this attack roll as if you had cast the spell again. If you get a Failure on this roll, you cannot sustain this spell again. The spell still continues until the end of your next turn.
 
 Trip:
   type: 1-Action
