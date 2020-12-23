@@ -161,8 +161,8 @@ Scare to Death:
     duration: Until the end of your next turn
   effect: |
     Make a Strength+Provoke or Spirit+Provoke attack roll against your target's Spirit DC.
-  critical-success: Your target is {frightened}, and if their current health is no higher than the value you rolled, they instantly die
-  success: Your target is {frightened}
+  critical-success: Your target is {terrified}, and if their current health is no higher than the value you rolled, they instantly die
+  success: Your target is {terrified}
 
 Vicious Mockery:
   tier: Provoke

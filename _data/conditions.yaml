@@ -22,4 +22,6 @@ Slowed: Your speed is halved.
 
 Stunned: You've become senseless. You are {flat-footed} and can't use any powers.
 
+Terrified: You are overcome with terror. On each of your turns, you must use the {Stride} power and the {Repeat} ({Stride}) power to move as far away as possible from the source of your terror. This effect doesn't force you to move through obviously dangerous terrain. You has disadvantage on all rolls while you can see the source of your terror.
+
 Unconscious: You're sleeping, or you've been knocked out. You have the {blinded}, {prone}, and {stunned} conditions.

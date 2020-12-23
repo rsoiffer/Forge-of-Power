@@ -121,6 +121,8 @@ class Jekyll::Converters::Markdown::LinkerProcessor
       m = {}
       m["skills"] = "[#{text}](skills.html##{slug_text})"
       m["conditions"] = "[#{text}](conditions.html##{slug_text})"
+      m["equipment/apparel"] = "[#{text}](equipment.html##{slug_text})"
+      m["equipment/weapons"] = "[#{text}](equipment.html##{slug_text})"
       m["basic-powers"] = "[#{text}](basic-powers.html##{slug_text})"
       for school in get_map["talents"]
         m["talents/#{school[0]}"] = "[#{text}](#{school[0]}.html##{slug_text})"
