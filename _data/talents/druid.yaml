@@ -1,0 +1,180 @@
+Befriend Animal:
+  tier: Novice
+  type: 1-Action
+  brief: You befriend an animal, making it your trusted companion
+  traits: [Attack, Auditory, Spell]
+  tags:
+    cost: 1 Mana
+    target: A [[Beast]] creature you can reach that has CR no higher than your character level
+    duration: 24 hours, until you decide to end it, or until you or one of your companions harms the target
+  effect: |
+    Make a Magic attack roll against your target's Spirit DC. If your target is already friendly towards you, this attack automatically succeeds.
+
+    Success
+    : Your target becomes totally loyal to you and gains the [[Minion]] trait. Your target obeys any command you give it, even putting itself at risk, unless those directions are obviously suicidal.
+
+Entangle:
+  tier: Novice
+  type: 1-Action
+  brief: You conjure ensnaring vines from the ground to trap your foes
+  traits: [Attack, Spell]
+  tags:
+    cost: 1 Mana
+    range: 60 feet
+    area: 20-foot burst
+    requirements: Your target is on the ground
+    duration: Forever
+  effect: |
+    Make a Magic attack roll against your target's Agility DC
+
+    Critical Success
+    : Your target is {restrained}
+
+    Success
+    : Your target is {immobilized}
+
+    Failure
+    : Your target is {slowed} until the end of its next turn
+
+Goodberry:
+  tier: Novice
+  type: 1-Action
+  brief: You conjure a handful of berries with magical healing properties
+  traits: [Healing, Spell]
+  tags:
+    cost: 1 Mana
+    duration: 1 hour
+  effect: |
+    Up to 10 berries appear in your hand. A creature can eat a berry (or feed it to an ally) with the {Interact} power. Eating a berry heals 1 health and provides enough nourishment to sustain a normal human for one day. Any uneaten berries disappear when the duration ends.
+
+Magic Acorns:
+  tier: Novice
+  type: Free
+  brief: You imbue several small projectiles with the fury of nature
+  traits: [Cantrip, Spell]
+  tags:
+    cost: 0 Mana
+    target: Up to 5 acorns, nuts, pinecones, seeds, or similar objects you can reach
+    duration: 1 minute
+  effect: |
+    The targets are magically enhanced to act as amazing projectiles. These projectiles count as ranged weapons with a base damage of 1d8 [[Bludgeoning]] and a range of 60 feet.
+
+    #### Heightened
+
+    If you add +1 Mana, all the projectiles gain one of the following effects.
+
+    ***Fiery.*** The projectiles explode with a burst of flame when they hit. On a successful {Strike}, all creatures in a 5-foot burst around the target take 1d6 [[Fire]] damage.
+
+    ***Slowing.*** The projectiles cover their target in sticky sap. On a successful {Strike}, the target is {slowed} until the end of its next turn.
+
+Thorn Whip:
+  tier: Novice
+  type: 1-Action
+  brief: You strike at an enemy with writhing thorn-covered vines
+  traits: [Attack, Cantrip, Piercing, Spell]
+  tags:
+    cost: 0 Mana
+    range: 30 feet
+  effect: |
+    Make a Magic attack roll against your target's Agility DC.
+
+    Critical Success
+    : Double damage
+
+    Success
+    : Your target takes 2d6 damage and is pulled up to 10 feet towards you
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 1d6.
+
+Awaken:
+  tier: Veteran
+  type: 1-Action
+  brief: You grant an animal humanoid intelligence and opposable thumbs
+  traits: [Ritual, Spell]
+  tags:
+    cost: 5 Mana
+    target: One [[Beast]] creature you can reach
+  effect: |
+    Your target becomes sentient, gaining intelligence as an [Awakened](awakened.html). Your target's form morphs to become more humanoid: they gain the proper limbs, can breathe air, gain opposable thumbs, can speak humanoid language, and so on.
+
+    After the transformation, your target is usually friendly towards you, though they may be shocked by the sudden change. If your target was loyal to you before the transformation, they act as a [[Minion]] loyal to you for the next hour, after which they become a normal NPC.
+
+Instant Tree:
+  tier: Novice
+  type: 1-Action
+  brief: You cause a tree to appear, growing with explosive force
+  traits: [Attack, Bludgeoning, Spell]
+  tags:
+    cost: 3 Mana
+    range: 60 feet
+    area: 20-foot line
+  effect: |
+    A tree grows almost instantly, starting from the specified point, to fill the spell's area. You choose the species of tree. Once the tree is done growing, it stays around forever as a normal tree.
+
+    Make a Magic attack roll against your target's Agility DC.
+
+    Critical Success
+    : Double damage and double push distance
+
+    Success
+    : Your target takes 4d10 damage and is pushed 20 feet away from the base of the tree
+
+    Failure
+    : Half damage
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 1d10, the area extends by 10 feet, and the push distance increases by 10 feet.
+  fluff: |
+    We can never forget the Treeagle incident of 2015.
+
+Detect Poison:
+  tier: Ribbon
+  type: 1-Action
+  brief: You identify and locate any nearby poisons or diseases
+  traits: [Ritual, Spell]
+  tags:
+    cost: 1 Mana
+    area: 30-foot burst
+  effect: |
+    You detect all poisons, poisonous creatures, diseases, and diseased creatures in the area. You sense the precise location and the exact type of poison or disease.
+
+Friend of Nature:
+  tier: Ribbon
+  type: Passive
+  brief: Animals are naturally friendly towards you
+  effect: |
+    Animals and intelligent plants tend to like you. Unless given reason to act otherwise, they will treat you as a trusted friend or ally. If you have the {Speak with Animals} power, you can usually get animals to perform simple favors for you.
+
+Land's Stride:
+  tier: Ribbon
+  type: Passive
+  brief: You ignore simple natural hazards that impede movement
+  effect: |
+    Moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
+
+Spark of Growth:
+  tier: Ribbon
+  type: 1-Action
+  brief: You encourage a plant to grow magically quickly
+  traits: [Cantrip, Healing, Ritual, Spell]
+  tags:
+    cost: 0 Mana
+    target: A nonmagical plant you can reach
+    requirements: Your target hasn't been affected by **Spark of Growth** in the past week
+  effect: |
+    Your target instantly undergoes up to a year of normal growth. The plant might grow in size, gain or shed leaves, or grow blossoms.
+
+    #### Heightened
+
+    For each +1 Mana, your target heals 1d6 health or recovers from one disease afflicting it.
+
+Speak with Animals:
+  tier: Ribbon
+  type: Passive
+  brief: You can communicate simple concepts with animals
+  traits: [Auditory]
+  effect: |
+    You can let animals can understand your speech, no matter what language you speak in. In turn, you can decipher an animal's intent by interpreting its noises and motions. Most animals lack the intelligence to understand sophisticated concepts.

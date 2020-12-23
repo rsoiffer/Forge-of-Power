@@ -105,11 +105,13 @@ Warped Space:
     area: 20-foot burst
     duration: Sustained, up to 1 minute
   effect: |
-    This spell's area becomes **warped space**. Choose one of the following effects:
-    * All distances through warped space are doubled
-    * All distances through warped space are halved
+    This spell's area becomes **warped space**. Choose one of the following effects.
 
-    When you sustain this spell, you can change your choice above.
+    ***Spherical Warp.*** All distances through this warped space are doubled.
+
+    ***Hyperbolic Warp.*** All distances through this warped space are halved.
+
+    When you {Sustain} this spell, you can change your choice above.
 
     #### Heightened
 
