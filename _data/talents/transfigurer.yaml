@@ -82,9 +82,37 @@ Combat Form:
 
     #### Heightened
 
-    If you add +2 Mana, your animal form gives +1 Size, +5 feet reach, and +2 damage to unarmed Strikes.
+    For each +2 Mana, your animal form gives +1 Size, +5 feet reach, and +2 damage to unarmed Strikes.
 
-    Instead, if you add +4 Mana, your animal form gives +2 Size, +10 feet reach, and +4 damage to unarmed Strikes.
+Enlarge/Reduce:
+  tier: Novice
+  type: 1-Action
+  brief: You change your target's size, making them larger or smaller
+  traits: [Attack, Spell]
+  tags:
+    cost: 2 Mana
+    range: 30 feet
+    duration: Varies
+  effect: |
+    Choose one of the following effects.
+
+    ***Enlarge.*** Your target has +1 Size and has advantage on Strength rolls other than attack rolls. When your target succeeds on a {Strike}, they deal an extra 1d6 damage.
+
+    ***Reduce.*** Your target has -1 Size and has disadvantage on Strength rolls other than attack rolls. When your target succeeds on a {Strike}, they deal 1d6 less damage.
+
+    Make a Magic attack roll against your target's Strength DC.
+
+    Critical Success
+    : This spell lasts 10 minutes
+
+    Success
+    : This spell lasts 1 minute
+
+    Failure
+    : This spell lasts until the end of your target's next turn
+
+    Critical Failure
+    : This spell ends immediately
 
 Scout Form:
   tier: Novice
@@ -108,4 +136,17 @@ Scout Form:
 
     #### Heightened
 
-    If you add +3 Mana, you turn into a flying creature, such as a bird. You can fly at your full Speed.
+    If you add +1 Mana, you turn into a flying creature, such as a bird. You can fly at your full Speed.
+
+Minor Alchemy:
+  tier: Ribbon
+  type: 1-Action
+  brief: You temporarily convert a small amount of one material into another
+  traits: [Cantrip, Ritual, Spell]
+  tags:
+    cost: 1 Mana
+    target: An unattended object you can reach
+    requirements: Your target is made of pure wood, stone, iron, copper, or silver, and your target is no larger than 1 cubic foot
+    duration: Sustained, up to 1 hour
+  effect: |
+    You transform your target into a different material, from among wood, stone, iron, copper or silver.
