@@ -143,8 +143,8 @@ aside {
 
 // Special classes
 
-.power {
-  margin: 1.5em 0;
+.power, .item {
+  margin: 1.5em 0 0 0;
 
   h3 {
     margin: 0;
@@ -161,20 +161,6 @@ aside {
   }
   hr {
     margin: 0;
-  }
-}
-
-.item {
-  margin: 1.5em 0;
-
-  h3 {
-    margin: 0;
-    border-bottom: 1px solid $border-color;
-    line-height: 24px;
-  }
-  .traits {
-    margin: 0;
-    padding-left: 0;
   }
 }
 

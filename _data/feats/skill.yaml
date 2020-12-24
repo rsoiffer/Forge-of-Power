@@ -4,7 +4,7 @@ Copy Spell:
   tier: Arcana
   type: Reaction
   brief: You analyze a spell so well that you can cast it yourself
-  traits: [Daily, Perk]
+  traits: [Daily]
   tags:
     perk: +2 Arcana
     trigger: You successfully identify a spell
@@ -16,7 +16,6 @@ Spellbook:
   tier: Arcana
   type: Passive
   brief: You store your spells in a book, so you can swap between them as needed
-  traits: [Perk]
   tags:
     perk: +2 Arcana
   effect: |
@@ -28,7 +27,7 @@ Burst of Power:
   tier: Athletics
   type: Free
   brief: You push past your limits with a sudden surge of adrenaline
-  traits: [Encounter, Perk]
+  traits: [Encounter]
   tags:
     perk: +2 Athletics
     requirements: You are in combat, or a similar dangerous situation
@@ -40,7 +39,6 @@ Daredevil Acrobat:
   tier: Athletics
   type: Passive
   brief: You are an expert at balancing on moving surfaces, even creatures
-  traits: [Perk]
   tags:
     perk: +2 Athletics
   effect: |
@@ -52,7 +50,6 @@ False Expert:
   tier: Eloquence
   type: Passive
   brief: You are great at pretending to be an expert in topics you know nothing about
-  traits: [Perk]
   tags:
     perk: +2 Eloquence
   effect: |
@@ -63,7 +60,7 @@ Moneylender:
   tier: Eloquence
   type: Passive
   brief: You seem very trustworthy to others when it comes to finances
-  traits: [Perk, Reputation]
+  traits: [Reputation]
   tags:
     perk: +2 Eloquence
   effect: |
@@ -75,7 +72,7 @@ Befriend Animal:
   tier: Nature
   type: 1-Action
   brief: You can quickly make friends with all kinds of beasts and monsters
-  traits: [Auditory, Perk]
+  traits: [Auditory]
   tags:
     perk: +2 Nature
     range: 10 feet
@@ -91,7 +88,6 @@ Experienced Tracker:
   tier: Nature
   type: Free
   brief: You can easily follow tracks and learn things about your prey
-  traits: [Perk]
   tags:
     perk: +2 Nature
     trigger: You roll Intellect+Nature to investigate or follow tracks
@@ -105,7 +101,6 @@ Alert:
   tier: Notice
   type: Passive
   brief: You react quickly to attacks and can never be surprised
-  traits: [Perk]
   tags:
     perk: +2 Notice
   effect: |
@@ -115,7 +110,6 @@ Keen Eye:
   tier: Notice
   type: Free
   brief: You automatically notice subtle details whenever you enter a room
-  traits: [Perk]
   tags:
     perk: +2 Notice
     trigger: You enter a room
@@ -131,7 +125,7 @@ Backup Disguise:
   tier: Perform
   type: Free
   brief: You reveal that you've actually been wearing a disguise the whole time
-  traits: [Daily, Perk, Retroactive]
+  traits: [Daily, Retroactive]
   tags:
     perk: +2 Perform
   effect: |
@@ -141,7 +135,7 @@ Cheerleader:
   tier: Perform
   type: 1-Action
   brief: You get a crowd of people to chant a phrase of your choice
-  traits: [Auditory, Linguistic, Perk]
+  traits: [Auditory, Linguistic]
   tags:
     perk: +2 Perform
     requirements: You are interacting with a crowd of 10 or more people who are not hostile towards you
@@ -154,7 +148,7 @@ Scare to Death:
   tier: Provoke
   type: 1-Action
   brief: You scare someone so hard they literally die of fright
-  traits: [Attack, Auditory, Death, Encounter, Fear, Perk]
+  traits: [Attack, Auditory, Death, Encounter, Fear]
   tags:
     perk: +2 Provoke
     range: 30 feet
@@ -168,7 +162,7 @@ Vicious Mockery:
   tier: Provoke
   type: 1-Action
   brief: You insult someone so badly they literally take damage
-  traits: [Attack, Auditory, Emotion, Linguistic, Perk]
+  traits: [Attack, Auditory, Emotion, Linguistic]
   tags:
     perk: +2 Provoke
     range: 30 feet
@@ -183,7 +177,6 @@ Bishop:
   tier: Religion
   type: 1-Action
   brief: You reveal a core tenet or rule that everyone in your religion follows
-  traits: [Perk]
   tags:
     perk: +2 Religion
   effect: |
@@ -195,7 +188,7 @@ Holy Symbol:
   tier: Religion
   type: Free
   brief: You present your holy symbol and say a brief prayer for luck
-  traits: [Encounter, Perk]
+  traits: [Encounter]
   tags:
     perk: +2 Religion
     trigger: You make a die roll
@@ -208,7 +201,7 @@ Forced Error:
   tier: Society
   type: 1-Action
   brief: You can manipulate others into making major social faux pas
-  traits: [Encounter, Linguistic, Perk]
+  traits: [Encounter, Linguistic]
   tags:
     perk: +2 Society
     range: 30 feet
@@ -222,7 +215,7 @@ Linguist:
   tier: Society
   type: 1-Action
   brief: You develop a new pidgin language to communicate with any creature
-  traits: [Daily, Perk]
+  traits: [Daily]
   tags:
     perk: +2 Society
   effect: |
@@ -234,7 +227,6 @@ Hide in Plain Sight:
   tier: Stealth
   type: Passive
   brief: You can hide even while being observed and without any cover
-  traits: [Perk]
   tags:
     perk: +2 Stealth
   effect: |
@@ -244,7 +236,6 @@ Just a Box:
   tier: Stealth
   type: Passive
   brief: You are an expert at hiding behind immobile objects, even in the strangest spots
-  traits: [Perk]
   tags:
     perk: +2 Stealth
   effect: |
@@ -258,7 +249,6 @@ Mouse Trap:
   tier: Thievery
   type: Passive
   brief: You can disguise traps or machines as collections of seemingly unrelated parts
-  traits: [Perk]
   tags: 
     perk: +2 Thievery
   effect: |
@@ -268,7 +258,7 @@ Prior Pickpocketing:
   tier: Thievery
   type: Reaction
   brief: You reveal that you already pickpocketed an item your target attempts to draw
-  traits: [Daily, Perk]
+  traits: [Daily]
   tags:
     profiency: +2 Thievery
     trigger: A creature you can see tries to draw an item
@@ -283,7 +273,6 @@ Rasslin':
   tier: Wrestling
   type: Free
   brief: You get in extra painful hits as you grab and wrestle your target
-  traits: [Perk]
   tags:
     perk: +2 Wrestling
     trigger: You succeed on a {Grapple}
@@ -294,7 +283,6 @@ Titan Wrestler:
   tier: Wrestling
   type: Passive
   brief: You are experienced at wrestling creatures much larger than yourself
-  traits: [Perk]
   tags:
     perk: +2 Wrestling
   effect: |

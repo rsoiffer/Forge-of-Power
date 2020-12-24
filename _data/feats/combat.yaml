@@ -1,17 +1,41 @@
 # Amulet
 
+Blessed Luck:
+  tier: Amulet
+  type: Reaction
+  brief: You are hard to affect with dangerous spiritual magic spells
+  traits: [Daily, Fortune]
+  tags:
+    requirements: You are wielding an amulet
+    perk: +1 [[Elemental]] Shield
+    trigger: An attack targets your Intellect DC or Spirit DC
+  effect: |
+    You have +10 DC against the triggering attack.
+
+Protective Magic:
+  tier: Amulet
+  type: Free
+  brief: You grant minor protections to an ally you affect with a spell
+  tags:
+    requirements: You are wielding an amulet
+    perk: +1 [[Elemental]] Shield
+    trigger: You target a creature other than yourself with a spell
+    duration: 1 hour, or until you use this power again
+  effect: |
+    The triggering creature gains all the Perk bonuses from your amulet feats.
+
 Ward Ally:
   tier: Amulet
   type: 1-Action
-  brief: Protect your ally with a shimmering forcefield
-  traits: [Cantrip, Perk, Spell]
+  brief: You protect your ally with a shimmering forcefield
+  traits: [Cantrip, Spell]
   tags:
     requirements: You are wielding an amulet
     perk: +1 [[Elemental]] Shield
     cost: 0 Mana
     range: 30 feet
     duration: Until the end of your next turn
-  effect:
+  effect: |
     Your target has +5 Defense.
 
 # Bludgeon
@@ -20,12 +44,30 @@ Crush Armor:
   tier: Bludgeon
   type: 1-Action
   brief: You crush a foe's armor, weakening them for the future
-  traits: [Perk]
   tags:
     perk: +1 damage to bludgeon Strikes
     duration: 1 minute
-  effect:
-    Make a bludgeon Strike against a target wearing heavy armor. On a critical success, your target has [[Physical]] Weakness equal to your Strength (minimum 1).
+  effect: |
+    Make a bludgeon Strike against a target wearing {chain mail} or {plate armor}, or against a monster with hide as tough as metal (as determined by the GM). On a critical success, your target has [[Physical]] Weakness equal to your Strength (minimum 1).
+
+Distracting Blow:
+  tier: Bludgeon
+  type: 1-Action
+  brief: You knock a foe off-balance, making them easier to hit
+  tags:
+    perk: +1 damage to bludgeon Strikes
+    duration: Until the end of your next turn
+  effect: |
+    Make a bludgeon Strike. On a success, your target is {flat-footed}.
+
+Reliable Damage:
+  tier: Bludgeon
+  type: Passive
+  brief: You can reroll 1s and 2s on your bludgeon's base damage
+  tags:
+    perk: +1 damage to bludgeon Strikes
+  effect: |
+    When you roll a 1 or a 2 on the base damage for a bludgeon Strike, you can reroll the die. You must use the new result.
 
 # Bow
 
@@ -33,44 +75,59 @@ Archer's Eyes:
   tier: Bow
   type: Passive
   brief: You can see far away and make incredibly distant shots
-  traits: [Perk]
   tags:
     perk: +1 damage to bow Strikes
-  effect:
+  effect: |
     You treat bows as having double their normal range.
 
 Double Shot:
   tier: Bow
   type: 1-Action
   brief: Fire two arrows in quick succession, with a chance of hitting two targets
-  traits: [Perk]
   tags:
     perk: +1 damage to bow Strikes
-  effect:
+  effect: |
     Make a bow Strike. On a critical hit, make another bow Strike against a different target.
 
 # Crossbow
+
+Heavy Bolts:
+  tier: Crossbow
+  type: Passive
+  brief: Your heavy shot is so powerful that it knocks enemies prone
+  tags:
+    perk: +1 damage to crossbow Strikes
+  effect: |
+    When you succeed on a crossbow Strike benefitting from the **Heavy Draw** power, your target falls {prone}.
 
 Point-Blank Shot:
   tier: Crossbow
   type: Passive
   brief: Your powerful bolts pierce through nearby targets
-  traits: [Perk]
   tags:
     perk: +1 damage to crossbow Strikes
-  effect:
+  effect: |
     You have a +1 bonus to crossbow Strikes against targets within 30 feet.
 
 # Dagger
+
+Opportunist:
+  tier: Dagger
+  type: Reaction
+  brief: You can sneak in hits when your enemies fail to hit you
+  tags:
+    perk: +1 damage to dagger Strikes
+    trigger: A {Strike} against you fails or critically fails
+  effect: |
+    Make a dagger {Strike} against the attacker.
 
 Throwing Daggers:
   tier: Dagger
   type: Passive
   brief: You are an expert at throwing daggers
-  traits: [Perk]
   tags:
     perk: +1 damage to dagger Strikes
-  effect:
+  effect: |
     You can throw a dagger as a ranged weapon with a range of 20 feet.
 
 # Heavy Weapon
@@ -78,13 +135,73 @@ Throwing Daggers:
 Knockback:
   tier: Heavy Weapon
   type: Free
-  brief: Knock an enemy back after a hit
-  traits: [Perk]
+  brief: You knock an enemy back after a powerful hit
   tags:
     perk: +1 damage to heavy weapon Strikes
-    trigger: You hit a Large or smaller creature with a heavy weapon Strike
-  effect:
-    You push your target back 5 feet. If your Strike was a critical success, you can instead push your target back 10 feet.
+    trigger: You succeed on a heavy weapon Strike against a Size +1 or smaller creature
+    target: The target of the triggering Strike
+  effect: |
+    You push your target back 5 feet. If the triggering Strike was a critical success, you can instead push your target back 10 feet.
+
+Monster Hunter:
+  tier: Heavy Weapon
+  type: Free
+  brief: You are an expert at defeating giant monsters with giant weapons
+  tags:
+    perk: +1 damage to heavy weapon Strikes
+    trigger: You make a heavy weapon Strike against a Size +1 or larger creature
+  effect: |
+    The base damage of your Strike increases by 1d12.
+
+# Orb
+
+Mystic Burst:
+  tier: Orb
+  type: Passive
+  brief: You conjure a burst of a particular element in an area
+  traits: [Attack, Cantrip, Specialize, Spell]
+  tags:
+    requirements: You are wielding an orb
+    perk: +1 damage to spell attacks
+    cost: 0 Mana
+    range: 60 feet
+    area: 10-foot burst
+  effect: |
+    Make a Magic attack roll against your target's Defense.
+
+    Success
+    : Your target takes 1d6 damage
+
+    Failure
+    : Half damage
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 1d6.
+  aside: |
+    ### Specializations
+
+    Pick one trait from the following list: [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Mental]], [[Necrotic]], [[Radiant]], or [[Sonic]]. This spell gains that trait.
+
+Reshape Spell:
+  tier: Orb
+  type: Passive
+  brief: You change the area of a spell to be a different line, cone, or burst
+  tags:
+    requirements: You are wielding an orb
+    perk: +1 damage to spell attacks
+  effect: |
+    When you cast a spell with an area that is shaped like a burst, a cone, or a line, you can change the area's shape to another shape from that list. The size of the area changes according to the following rule: burst sizes, cone sizes, and line sizes are proportional like 2, 3, and 4. For example, you could change a 10-foot burst to a 15-foot cone or a 20-foot line.
+
+Sculpt Spell:
+  tier: Orb
+  type: Passive
+  brief: You sculpt the area or your spell to include or exclude specific targets
+  tags:
+    requirements: You are wielding an orb
+    perk: +1 damage to spell attacks
+  effect: |
+    When you cast a spell with an area, you can modify the area to exclude any regions or targets you want.
 
 # Polearm
 
@@ -94,8 +211,8 @@ Counter Charge:
   brief: You prepare to intercept an imminent charge
   traits: [Manipulate]
   tags:
-    requirements: You are wielding a polearm
     perk: +1 damage to polearm Strikes
+    requirements: You are wielding a polearm
     duration: Until the start of your next turn
   effect: |
     You can use the **Intercept** power.
@@ -106,7 +223,7 @@ Counter Charge:
       tags:
         trigger: A creature enters your reach
       effect: |
-        Make a polearm Strike with advantage against the creature that entered your reach
+        Make a polearm Strike with advantage against the triggering creature.
     {% endsmallpower %}
 
 # Shield
@@ -115,56 +232,79 @@ Covering Shield:
   tier: Shield
   type: Passive
   brief: You can cover yourself with a shield to avoid area attacks
-  traits: [Perk]
   tags:
     requirements: You are wielding a shield
     perk: +1 [[Physical]] Shield
-  effect:
+  effect: |
     You have +2 bonus to Agility DC against powers that affect all targets in an area.
 
 # Staff
 
-Chromatic Missile:
+Mystic Bolt:
   tier: Staff
-  type: 1-Action
-  brief: Fire a long-range missile of any kind of magic you know
-  traits: [Attack, Cantrip, Force, Perk, Spell]
+  type: Passive
+  brief: You shoot a powerful bolt of a particular element at a target
+  traits: [Attack, Cantrip, Specialize, Spell]
   tags:
     requirements: You are wielding a staff
-    perk: +1 damage to staff Strikes, +1 damage to spell attacks
+    perk: +1 damage to spell attacks, +1 damage to staff Strikes
     cost: 0 Mana
-    range: 200 feet
+    range: 30 feet
   effect: |
-    Make a Magic attack roll against the target's Defense.
+    Make a Magic attack roll against your target's Defense.
 
-    If you know a spell with one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Mental]], [[Necrotic]], [[Radiant]], or [[Sonic]] traits, you can choose to replace the [[Force]] trait on this spell with the other trait.
-  success: Your target takes 1d6 + Magic damage
+    Success
+    : Your target takes 2d8 damage
 
-Glacial Burst:
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 2d8.
+  aside: |
+    ### Specializations
+
+    Pick one trait from the following list: [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Mental]], [[Necrotic]], [[Radiant]], or [[Sonic]]. This spell gains that trait.
+
+Overchannel:
   tier: Staff
   type: 1-Action
-  brief: Slow enemies in an area with a burst of elemental ice
-  traits: [Attack, Cold, Perk, Spell]
+  brief: You gather power in your staff, preparing for an epic spell
+  traits: [Spell]
   tags:
     requirements: You are wielding a staff
-    perk: +1 damage to staff Strikes, +1 damage to spell attacks
+    perk: +1 damage to spell attacks, +1 damage to staff Strikes
     cost: 1 Mana
-    range: 150 feet
-    area: 5-foot burst
+    duration: 1 minute
   effect: |
-    Make a Magic attack roll against the target's Defense.
-  success: Your target takes 1d6 + Magic damage and is {slowed} until the start of your next turn
+    The next spell you cast other than **Overchannel** has -1 cost.
+
+Staff Fighting:
+  tier: Staff
+  type: Passive
+  brief: You are an expert at fighting with a staff in close quarters
+  tags:
+    requirements: You are wielding a staff
+    perk: +1 damage to spell attacks, +1 damage to staff Strikes
+  effect: |
+    While you are wielding a staff in two hands, the staff's base damage increases to 1d12, and you have another +1 bonus to Defense.
 
 # Sword
+
+Improved Critical:
+  tier: Sword
+  type: Passive
+  brief: You score a critical hit on sword Strikes more often
+  tags:
+    perk: +1 damage to sword Strikes
+  effect: |
+    When you succeed on a sword Strike, you can add +2 to the attack roll. (While this doesn't affect your chance of succeeding on the Strike, it does improve your chance of critically succeeding.)
 
 Lunging Strike:
   tier: Sword
   type: 1-Action
-  brief: Lunge forward with a sword for extra reach
-  traits: [Perk]
+  brief: You lunge forward with a sword for extra reach
   tags:
     perk: +1 damage to sword Strikes
-  effect:
+  effect: |
     Make a sword Strike. Your reach increases by 5 feet for this Strike.
 
 # Throwing Weapon
@@ -173,12 +313,62 @@ Perfect Ricochet:
   tier: Throwing Weapon
   type: Free
   brief: Call a throwing weapon back to your hand after an attack
-  traits: [Perk]
   tags:
     perk: +1 damage to throwing weapon Strikes
     trigger: You finish a throwing weapon Strike
   effect:
     The throwing weapon you just attacked with bounces off of the environment and returns to your hand.
+
+# Tome
+
+Mystic Chain:
+  tier: Tome
+  type: Passive
+  brief: You chain a jolt of a particular element between two targets
+  traits: [Attack, Cantrip, Specialize, Spell]
+  tags:
+    requirements: You are wielding a tome
+    perk: +1 damage to spell attacks
+    cost: 0 Mana
+    range: 60 feet
+    target: Two adjacent targets you can see within range
+  effect: |
+    Make a Magic attack roll against your target's Defense.
+
+    Success
+    : Your target takes 1d12 damage
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 1d12.
+  aside: |
+    ### Specializations
+
+    Pick one trait from the following list: [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Mental]], [[Necrotic]], [[Radiant]], or [[Sonic]]. This spell gains that trait.
+
+Read Incantation:
+  tier: Tome
+  type: 1-Action
+  brief: You read an incantation from your tome, powering up your next speed
+  traits: [Concentrate, Manipulate]
+  tags:
+    requirements: You are wielding a tome
+    perk: +1 damage to spell attacks
+    duration: Until the end of your next turn
+  effect: |
+    The next spell you cast has -2 cost.
+
+Tome of Everything:
+  tier: Tome
+  type: Free
+  brief: Your tome has a bit of information on everything, if you can find it
+  tags:
+    requirements: You are wielding a tome
+    perk: +1 damage to spell attacks
+    trigger: You finish an 8-hour rest
+    duration: Until you use this power again
+  effect: |
+    Choose any [[Spell]] ribbon from any class. You learn that ribbon.
 
 # Unarmed
 
@@ -186,10 +376,9 @@ Kickboxer:
   tier: Unarmed
   type: Passive
   brief: You are effective at making unarmed attacks without your hands
-  traits: [Perk]
   tags:
     perk: +1 damage to unarmed Strikes
-  effect:
+  effect: |
     You don't have disadvantage on unarmed Strikes from having no hands free.
 
 # Wand
@@ -197,13 +386,51 @@ Kickboxer:
 Eldritch Blast:
   tier: Wand
   type: 1-Action
-  brief: Blast a target with a powerful bolt of eldritch force
-  traits: [Attack, Cantrip, Force, Perk, Spell]
+  brief: You blast a target with a powerful bolt of eldritch force
+  traits: [Attack, Cantrip, Force, Spell]
   tags:
     requirements: You are wielding a wand
-    perk: +2 damage to single-target spell attacks
+    perk: +1 damage to spell attacks
     cost: 0 Mana
-    range: 60 feet
+    range: 120 feet
   effect: |
     Make a Magic attack roll against the target's Defense.
-  success: Your target takes 1d12 + Magic damage
+
+    Critical Success
+    : Double damage
+
+    Success
+    : Your target takes 1d12 damage
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 1d12.
+
+Magic Missile:
+  tier: Wand
+  type: 1-Action
+  brief: You fire a magic missile at your target that never missing
+  traits: [Force, Spell]
+  tags:
+    requirements: You are wielding a wand
+    perk: +1 damage to spell attacks
+    cost: 1 Mana
+    range: 120 feet
+  effect: |
+    Your target takes 2d6 damage.
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 1d6.
+
+Reliable Magic:
+  tier: Wand
+  type: Reaction
+  brief: Your wand skills let you easily recover from miscasts
+  traits: [Encounter]
+  tags:
+    requirements: You are wielding a wand
+    perk: +1 damage to spell attacks
+    trigger: You critically fail a Magic roll
+  effect: |
+    Reroll the triggering roll. You must use the new result.

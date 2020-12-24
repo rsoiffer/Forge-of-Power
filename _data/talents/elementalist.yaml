@@ -51,7 +51,7 @@ Elemental Blast:
   tier: Novice
   type: 1-Action
   brief: A blast of a particular element damages everyone in a line
-  traits: [Attack, Bludgeoning, Cantrip, Spell, Varieties]
+  traits: [Attack, Bludgeoning, Cantrip, Specialize, Spell]
   tags:
     cost: 0 Mana
     area: 30-foot line
@@ -65,7 +65,7 @@ Elemental Blast:
 
     For each +1 Mana, the damage increases by 1d10.
   aside: |
-    ### Varieties
+    ### Specializations
 
     #### Air
 
@@ -87,7 +87,7 @@ Elemental Shield:
   tier: Novice
   type: Reaction
   brief: You surround yourself with a shield of a particular element
-  traits: [Spell]
+  traits: [Specialize, Spell]
   tags:
     cost: 1 Mana
     trigger: An attack targets your Defense
@@ -95,7 +95,7 @@ Elemental Shield:
   effect: |
     You gain +2 Defense.
   aside: |
-    ### Varieties
+    ### Specializations
 
     #### Air
 
@@ -140,15 +140,15 @@ Avatar:
   type: Free
   brief: You can use a variety of different elements to adapt to any situation
   tags:
-    prerequisites: Any [[Varieties]] Elementalist power
+    prerequisites: Any [[Specialize]] Elementalist power
   effect: |
-    Choose one [[Varieties]] Elementalist power you know. Change the variety you picked for that power. If the power is currently active, this doesn't apply to that instance of the power.
+    Choose one [[Specialize]] Elementalist power you know. Change the specialization you picked for that power. If the power is currently active, this doesn't apply to that instance of the power.
 
 Elemental Flight:
   tier: Veteran
   type: 1-Action
   brief: You shape a particular element to lift your target into the air
-  traits: [Spell, Varieties]
+  traits: [Specialize, Spell]
   tags:
     cost: 3 Mana
     range: 10 feet
@@ -160,7 +160,7 @@ Elemental Flight:
 
     For each +1 Mana, this spell targets one additional creature within range.
   aside: |
-    ### Varieties
+    ### Specializations
 
     #### Air
     *The wind lifts your target into the sky.*

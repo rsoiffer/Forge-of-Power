@@ -81,6 +81,13 @@ Call Weapon:
 
     You can bond with a new weapon by conducting a 1-hour ritual involving the new weapon. You can only have one bonded weapon at a time.
 
+Damage Mastery:
+  tier: Ribbon
+  type: Passive
+  brief: You can deal any type of damage with any weapon
+  effect: |
+    When your Strike would deal [[Bludgeoning]], [[Piercing]], or [[Slashing]] damage, you can replace that trait with a different one from that list.
+
 Overconfidence:
   tier: Ribbon
   type: Passive

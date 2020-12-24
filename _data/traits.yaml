@@ -145,32 +145,6 @@ Illusion: |
 Minion: |
   A creature with this trait is controlled by another creature. [[Minion]] creatures can't use powers unless their master uses the {Command} power.
 
-Perk: |
-  Powers with this trait give you a special **Perk** bonus to a stat. This bonus applies as long as you meet the requirements of the power, ignoring the power's cost, duration, and other tags. This bonus only stacks with other [[Perk]] powers up to a certain amount. The table below lists the maximum number of [[Perk]] powers that can give you a bonus to a die roll:
-
-  <table>
-    <tr>
-      <th>Character Level</th>
-      <th>Max Stacking</th>
-    </tr>
-    <tr>
-      <td>6 or less</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>7 ... 12</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>13 ... 18</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>19 or more</td>
-      <td>4</td>
-    </tr>
-  </table>
-
 Polymorph: |
   These effects transform the target into a new form. A target can't be under the effect of more than one [[Polymorph]] effect at a time, later [[Polymorph]] effects disrupt existing ones. While you are polymorphed, your gear is absorbed into you; the passive abilities of your gear still function, but you can't activate or use any items.
 
@@ -183,14 +157,14 @@ Retroactive: |
 Ritual: |
   A ritual spell can be cast through a long, complex ritual to save mana. The Mana cost of the spell is reduced by 1 for every 10 minutes you spend performing the ritual. This can reduce the Mana cost of the spell to 0. Powers with this trait always have the [[Spell]] trait as well.
 
+Specialize: |
+  When you learn a power with this trait, you choose one specialization from a list in the power. The power lists the available specializations in the **Specializations** sidebar.
+
 Spell: |
   A power with this trait is called a spell. See [here](spell-rules.html) for more information.
 
 Stance: |
   A stance is a general combat strategy that you enter by using a power with the [[Stance]] trait, and that you remain in for some time. A stance lasts until you fall {unconscious}, until its requirements (if any) are violated, until the encounter ends, or until you enter a new stance, whichever comes first. You can be in a stance only during combat.
-
-Varieties: |
-  When you learn a power with this trait, you choose one variety from a list in the power. The power lists the available varieties in the **Varieties** sidebar.
 
 # Items
 

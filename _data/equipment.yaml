@@ -86,8 +86,6 @@ weapons:
     effect: |
       While wielding an amulet, you have a +2 bonus to your Spirit DC.
 
-      See [here](feats-combat.html#amulet) for the list of combat feats related to amulets.
-
   # Flavor: good vs. armor, good for strong warriors
   # Mechanics: bonus vs Strength Defense, feats scale off Strength
   Bludgeon:
@@ -97,9 +95,10 @@ weapons:
       type: Melee weapon
       base damage: 1d8 [[Bludgeoning]] or [[Slashing]], depending on the weapon
     effect: |
-      When you make a bludgeon Strike, if your target calculates its Defense with Strength, the bludgeon deals 1d10 base damage instead of 1d8 base damage.
+      Bludgeon Strikes gain the following failure effect:
 
-      See [here](feats-combat.html#bludgeon) for the list of combat feats related to bludgeons.
+      Failure
+      : Your target takes damage equal to your Strength (minimum 1)
 
   # Flavor: simple, generic, hard to master
   # Mechanics: long range, rapid shots
@@ -113,8 +112,6 @@ weapons:
     effect: |
       When you make a long-range bow Strike, you multiply the range by 4 instead of 2.
 
-      See [here](feats-combat.html#bow) for the list of combat feats related to bows.
-
   # Flavor: complicated, good for low-skill users
   # Mechanics: accurate, single powerful shots
   Crossbow:
@@ -126,8 +123,6 @@ weapons:
       range: 150 feet
     effect: |
       While wielding a crossbow, you can use the **Heavy Draw** power.
-
-      See [here](feats-combat.html#crossbow) for the list of combat feats related to crossbows.
     aside: |
       {% smallpower %}
       Heavy Draw:
@@ -148,8 +143,6 @@ weapons:
       base damage: 1d6 [[Piercing]]
     effect: |
       You have advantage on die rolls to conceal daggers. You can use the **Quickdraw** power.
-
-      See [here](feats-combat.html#dagger) for the list of combat feats related to daggers.
     aside: |
       {% smallpower %}
       Quickdraw:
@@ -169,15 +162,11 @@ weapons:
     effect: |
       When you roll a 12 on the damage die on a heavy weapon Strike, add 12 damage and reroll the die. Continue until the die doesn't roll a 12.
 
-      See [here](feats-combat.html#heavy-weapon) for the list of combat feats related to heavy weapons.
-
   Orb:
     brief: A magical orb or crystal that helps in controlling magic
     traits: [One-Handed]
     effect: |
       Orbs shine with a dim glow, casting dim light out to 10 feet.
-
-      See [here](feats-combat.html#orb) for the list of combat feats related to orbs.
 
   # Flavor: very effective, great on the battlefield
   # Mechanics: reach, only good in open spaces
@@ -192,8 +181,6 @@ weapons:
 
       Your reach with a polearm is 5 feet longer than your normal reach. You have disadvantage on polearm Strikes while you are adjacent to multiple walls, such as while standing in the corner of a room or in a 5-foot tunnel.
 
-      See [here](feats-combat.html#polearm) for the list of combat feats related to polearms.
-
   # Flavor: good for defense, only for warriors
   # Mechanics: +Defense, feats depend on Strength
   Shield:
@@ -201,8 +188,6 @@ weapons:
     traits: [One-Handed]
     effect: |
       While wielding a shield, you calculate your Defense with Strength, no matter what apparel you're wearing. While wielding a shield and wearing heavy armor, you have a +1 bonus to Defense.
-
-      See [here](feats-combat.html#shield) for the list of combat feats related to shields.
 
   Staff:
     brief: A walking staff or quarterstaff, perfect for channeling spells
@@ -212,8 +197,6 @@ weapons:
       base damage: 1d6 [[Bludgeoning]]
     effect: |
       While you are wielding a staff in two hands, the staff's base damage increases to 1d8, and you have a +1 bonus to Defense.
-
-      See [here](feats-combat.html#staff) for the list of combat feats related to staffs.
 
   # Flavor: simple, versatile, reliable, generic
   # Mechanics: 
@@ -226,8 +209,6 @@ weapons:
     effect: |
       When you make a sword Strike, you can choose to make a thrusting attack. If you do, the sword deals 1d6 [[Piercing]] base damage instead of its normal base damage. If the Strike is a critical success, the sword deals 1d12 base damage instead of 1d6 base damage.
 
-      See [here](feats-combat.html#sword) for the list of combat feats related to swords.
-
   # Flavor: secondary weapon, support for before melee
   # Mechanics: consumable, slow enemies
   Throwing Weapon:
@@ -238,8 +219,6 @@ weapons:
       base damage: 1d6 [[Bludgeoning]], [[Piercing]], or [[Slashing]], depending on the weapon
     effect: |
       A throwing weapon can be thrown as a ranged weapon with a range of 40 feet. Ranged Strikes with throwing weapons use Strength for the attack roll instead of Agility. You can use the **Draw Another** power.
-
-      See [here](feats-combat.html#throwing-weapon) for the list of combat feats related to throwing weapons.
     aside: |
       {% smallpower %}
       Draw Another:
@@ -258,8 +237,6 @@ weapons:
     effect: |
       While wielding a tome, if you can currently read the contents of the tome, you have advantage on Intellect+Arcana rolls to identify magic of the type described in the tome.
 
-      See [here](feats-combat.html#tome) for the list of combat feats related to tomes.
-
   # Flavor: weak but always available, favored by monks
   # Mechanics: low damage, feats for grappling/tripping/etc
   Unarmed:
@@ -270,22 +247,18 @@ weapons:
     effect: |      
       While you have no hands free, you have disadvantage on unarmed Strikes.
 
-      See [here](feats-combat.html#unarmed) for the list of combat feats related to unarmed attacks.
-
   Wand:
     brief: A small wand, scepter, or baton useful for casting spells
     traits: [One-Handed]
     effect: |
-      While wielding a wand, you can use the **Reliable Casting** power.
-
-      See [here](feats-combat.html#wand) for the list of combat feats related to wands.
+      While wielding a wand, you can use the **Magic Sparks** power.
     aside: |
       {% smallpower %}
-      Reliable Casting:
-        type: Reaction
-        traits: [Daily, Fortune]
-        tags:
-          trigger: You roll a 1 on the die for a Magic roll
+      Magic Sparks:
+        type: 1-Action
+        traits: [Light]
         effect: |
-         Reroll the triggering die. You must use the new roll.
+          You conjure a small burst of colorful sparks. These sparks briefly shed dim light out to 10 feet, then dissipate.
+
+          If you do not have a [mystic origin](mystic-origins.html), roll a d20. If you roll a 1, roll on the Wild Magic table.
       {% endsmallpower %}
