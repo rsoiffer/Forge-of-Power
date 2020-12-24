@@ -1,3 +1,10 @@
+Affinity:
+  tier: Novice
+  type: Passive
+  brief: You are well-aligned with a particular element
+  effect: |
+    Choose a damage type. You gain 20 Shield for the chosen trait. When you cast a spell with the chosen trait, you ignore all Shield your opponent has against that trait.
+
 Concealing Fog:
   tier: Novice
   type: 1-Action
@@ -40,32 +47,71 @@ Earth Spikes:
 
     For each +1 Mana, the damage increases by 1d6 and the radius of the burst increases by 10 feet.
 
-Fire Shield:
+Elemental Blast:
   tier: Novice
-  type: Free
-  brief: You surround yourself with a shield of flames that burns attackers
-  traits: [Fire, Spell]
+  type: 1-Action
+  brief: A blast of a particular element damages everyone in a line
+  traits: [Attack, Bludgeoning, Cantrip, Spell, Varieties]
   tags:
-    cost: 1 Mana
-    duration: 10 minutes
+    cost: 0 Mana
+    area: 30-foot line
   effect: |
-    You have 10 [[Cold]] Shield or 10 [[Fire]] Shield. You can use the **Fire Backlash** power.
+    Make a Magic attack roll against your target's Agility DC.
+
+    Success
+    : Your target takes 1d10 damage
 
     #### Heightened
 
-    For each +1 Mana, the Shield increases by 5, and the damage of **Fire Backlash** increases by 1d4.
+    For each +1 Mana, the damage increases by 1d10.
   aside: |
-    {% smallpower %}
-    Fire Backlash:
-      type: Reaction
-      traits: [Fire]
-      tags:
-        trigger: A {Strike} succeeds against you
-        target: The creature who made the triggering Strike
-        requirements: You can reach your target
-      effect: |
-        Your target takes 2d4 damage.
-    {% endsmallpower %}
+    ### Varieties
+
+    #### Air
+
+    You have advantage on the attack roll if your target is airborne. On a success, your target is knocked back 20 feet.
+
+    #### Earth
+
+    The damage dice are d12s instead of d10s. On a critical success, your target takes double damage.
+
+    #### Fire
+
+    This spell is [[Fire]] instead of [[Bludgeoning]]. The damage dice are d12s instead of d10s. On a failure, your target takes half damage.
+
+    #### Water
+
+    You have advantage on the attack roll if your target is underwater. On a success, your target is pushed 10 feet in any direction.
+
+Elemental Shield:
+  tier: Novice
+  type: Reaction
+  brief: You surround yourself with a shield of a particular element
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    trigger: An attack targets your Defense
+    duration: Until the start of your next turn
+  effect: |
+    You gain +2 Defense.
+  aside: |
+    ### Varieties
+
+    #### Air
+
+    You gain an additional +8 Defense against ranged Strikes.
+
+    #### Earth
+
+    You gain 10 [[Physical]] Shield.
+
+    #### Fire
+
+    If your attacker is adjacent to you, they take 2d6 [[Fire]] damage.
+
+    #### Water
+
+    If the triggering attack critically fails against you, it targets your attacker instead (and is automatically a success).
 
 Freeze:
   tier: Novice
@@ -89,30 +135,20 @@ Freeze:
 
     For each +1 Mana, the damage increases by 1d8.
 
-Wind Blast:
-  tier: Novice
-  type: 1-Action
-  brief: A blast of wind damages and knocks back targets in an area
-  traits: [Attack, Bludgeoning, Cantrip, Spell]
+Avatar:
+  tier: Veteran
+  type: Free
+  brief: You can use a variety of different elements to adapt to any situation
   tags:
-    cost: 0 Mana
-    range: 60 feet
-    area: 30-foot line
+    prerequisites: Any [[Varieties]] Elementalist power
   effect: |
-    Make a Magic attack roll against your target's Strength DC. You have advantage on the attack roll if your target is flying.
+    Choose one [[Varieties]] Elementalist power you know. Change the variety you picked for that power. If the power is currently active, this doesn't apply to that instance of the power.
 
-    Success
-    : Your target takes 1d10 damage and is pushed back 10 feet
-
-    #### Heightened
-
-    For each +1 Mana, the damage increases by 1d10 and the knockback increases by 10 feet.
-
-Fly:
+Elemental Flight:
   tier: Veteran
   type: 1-Action
-  brief: You shape air to support your target and lift them, letting them fly
-  traits: [Spell]
+  brief: You shape a particular element to lift your target into the air
+  traits: [Spell, Varieties]
   tags:
     cost: 3 Mana
     range: 10 feet
@@ -122,7 +158,29 @@ Fly:
 
     #### Heightened
 
-    For each +1 Mana, this spells target one additional creature within range.
+    For each +1 Mana, this spell targets one additional creature within range.
+  aside: |
+    ### Varieties
+
+    #### Air
+    *The wind lifts your target into the sky.*
+
+    Your target's Speed is doubled.
+
+    #### Earth
+    *Pillars of earth launch your target through the air.*
+
+    Your target can only fly during their turn, but they are immune to fall damage. Your target can burrow at their normal Speed.
+
+    #### Fire
+    *Jets of fire propel your target forward.*
+
+    Your target has +2 Agility DC.
+
+    #### Water
+    *A spiral of water lifts your target off the ground.*
+
+    Your target can only fly within 30 feet of a solid or liquid surface. Your target can swim at their normal Speed.
 
 Create Water:
   tier: Ribbon

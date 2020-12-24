@@ -52,6 +52,7 @@ $dark-border-color: mix(#000, $border-color, 25%);
     margin: 0 0 .25em 0;
   }
   h2 {
+    clear: both;
     padding-bottom: .25em;
     border-radius: 5px;
     background-color: $my-dark-blue;
@@ -67,7 +68,7 @@ $dark-border-color: mix(#000, $border-color, 25%);
     font-size: 1.25em;
   }
   h4 {
-    margin: 1em 0 .25em 0;
+    margin: .75em 0 .25em 0;
     font-size: 1em;
     font-style: italic;
   }

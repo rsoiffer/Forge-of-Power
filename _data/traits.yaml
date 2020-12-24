@@ -189,6 +189,9 @@ Spell: |
 Stance: |
   A stance is a general combat strategy that you enter by using a power with the [[Stance]] trait, and that you remain in for some time. A stance lasts until you fall {unconscious}, until its requirements (if any) are violated, until the encounter ends, or until you enter a new stance, whichever comes first. You can be in a stance only during combat.
 
+Varieties: |
+  When you learn a power with this trait, you choose one variety from a list in the power. The power lists the available varieties in the **Varieties** sidebar.
+
 # Items
 
 Finesse: |
