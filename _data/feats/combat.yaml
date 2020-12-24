@@ -285,7 +285,7 @@ Staff Fighting:
     requirements: You are wielding a staff
     perk: +1 damage to spell attacks, +1 damage to staff Strikes
   effect: |
-    While you are wielding a staff in two hands, the staff's base damage increases to 1d12, and you have another +1 bonus to Defense.
+    While you are wielding a staff in two hands, the staff's base damage increases to 1d12, you have another +1 bonus to Defense, and you treat the staff as having the [[Finesse]] trait.
 
 # Sword
 
@@ -296,7 +296,7 @@ Improved Critical:
   tags:
     perk: +1 damage to sword Strikes
   effect: |
-    When you succeed on a sword Strike, you can add +2 to the attack roll. (While this doesn't affect your chance of succeeding on the Strike, it does improve your chance of critically succeeding.)
+    When you succeed on a sword Strike, you can add +2 to the attack roll. *(While this doesn't affect your chance of succeeding on the Strike, it does improve your chance of critically succeeding.)*
 
 Lunging Strike:
   tier: Sword
@@ -315,8 +315,8 @@ Perfect Ricochet:
   brief: Call a throwing weapon back to your hand after an attack
   tags:
     perk: +1 damage to throwing weapon Strikes
-    trigger: You finish a throwing weapon Strike
-  effect:
+    trigger: After you make a throwing weapon Strike
+  effect: |
     The throwing weapon you just attacked with bounces off of the environment and returns to your hand.
 
 # Tome
@@ -371,6 +371,16 @@ Tome of Everything:
     Choose any [[Spell]] ribbon from any class. You learn that ribbon.
 
 # Unarmed
+
+Grabbing Fist:
+  tier: Unarmed
+  type: Free
+  brief: You grab an enemy that you get a powerful hit on
+  tags:
+    perk: +1 damage to unarmed Strikes, +2 to [[Wrestling]] attacks
+    trigger: After you critically succeed on an unarmed Strike
+  effect: |
+    You {Grapple} the target of the triggering Strike. This Grapple automatically succeeds.
 
 Kickboxer:
   tier: Unarmed
