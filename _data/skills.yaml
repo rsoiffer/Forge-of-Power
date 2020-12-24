@@ -1,6 +1,6 @@
 Arcana:
   brief: How much you know about arcane magic and creatures
-  description: |
+  effect: |
     Good with Intellect.
 
     Includes:
@@ -12,7 +12,7 @@ Arcana:
     
 Athletics:
   brief: Perform deeds of physical prowess or grace
-  description: |
+  effect: |
     Good with Strength and Agility.
 
     Includes:
@@ -24,7 +24,7 @@ Athletics:
 
 Eloquence:
   brief: Influence others through negotiation and flattery
-  description: |
+  effect: |
     Good with Intellect and Spirit.
 
     Includes:
@@ -36,7 +36,7 @@ Eloquence:
 
 Nature:
   brief: Know about the natural world, and train animals and magical beasts
-  description: |
+  effect: |
     Good with Intellect and Spirit.
 
     Includes:
@@ -48,7 +48,7 @@ Nature:
 
 Notice:
   brief: Spot, hear, or otherwise detect the presence of something
-  description: |
+  effect: |
     Good with Intellect and Spirit.
 
     Includes:
@@ -60,7 +60,7 @@ Notice:
 
 Perform:
   brief: Use your talents to impress a crowd or make a living
-  description:  |
+  effect:  |
     Good with any Agility and Spirit.
 
     Includes:
@@ -72,7 +72,7 @@ Perform:
 
 Provoke:
   brief: Incite rage, fear, sadness, or other negative emotions in others
-  description: |
+  effect: |
     Good with Strength and Spirit.
 
     Includes:
@@ -84,7 +84,7 @@ Provoke:
 
 Religion:
   brief: Know secrets of deities, dogma, faith, and the realms of the divine
-  description: |
+  effect: |
     Good with Intellect and Spirit.
 
     Includes:
@@ -96,7 +96,7 @@ Religion:
 
 Society:
   brief: Understand the people and systems that make civilization run
-  description: |
+  effect: |
     Good with Intellect and Spirit.
 
     Includes:
@@ -108,7 +108,7 @@ Society:
 
 Stealth:
   brief: Avoid detection, slip past foes, hide, or conceal an item
-  description: |
+  effect: |
     Good with Agility and Spirit.
 
     Includes:
@@ -120,7 +120,7 @@ Stealth:
 
 Thievery:
   brief: Pick locks, disarm traps, and perform feats of manual dexterity
-  description: |
+  effect: |
     Good with Agility and Intellect.
 
     Includes:
@@ -132,7 +132,7 @@ Thievery:
 
 Wrestling:
   brief: Grapple, trip, disarm other creatures, and defend against the same
-  description: |
+  effect: |
     Good with Strength and Agility.
 
     Includes:

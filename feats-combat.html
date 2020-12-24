@@ -31,6 +31,11 @@ sidebar:
 </table>
 
 
-{% for power2 in feats %}
-  {% include power.html power=power2 %}
+{% for item2 in site.data.equipment.weapons %}
+  <h2 id={{ item2[0] | slugify }}>{{ item2[0] }}</h2>
+  {% for power2 in feats %}
+    {% if power2[1].tier == item2[0] %}
+      {% include power.html power=power2 %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}
