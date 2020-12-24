@@ -106,6 +106,9 @@ Tactile: |
 Teleportation: |
   Effects with this trait allow you to instantaneously move from one point in space to another. Teleportation does not usually trigger reactions based on movement.
 
+Transfiguration: |
+  An effect with this trait changes the target's physical form in some way.
+
 Visual: |
   An effect with this trait can affect only creatures that can see it.
 

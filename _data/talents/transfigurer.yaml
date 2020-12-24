@@ -1,3 +1,27 @@
+Alter Creature:
+  tier: Novice
+  type: 1-Action
+  brief: You alter a creature's form, granting them a useful bestial trait
+  traits: [Spell, Transfiguration]
+  tags:
+    cost: 2 Mana
+    range: Touch
+    duration: Sustained, up to 1 hour
+  effect: |
+    Choose one of the following effects. You can change your choice whenever you sustain this spell.
+
+    ***Aquatic Adaptation.*** Your target can breathe underwater and can swim at their full Speed.
+
+    ***Barkskin.*** Your target has 14 Defense, unless their Defense was already higher.
+
+    ***Change Appearance.*** Your target's physical features change, making them appear as a different person of roughly the same body shape.
+
+    ***Longstrider.*** Your target has a +10 feet bonus to Speed.
+
+    ***Natural Weapons.*** Your target's unarmed Strikes have 1d10 base damage. You choose whether this damage is [[Bludgeoning]], [[Piercing]], or [[Slashing]].
+
+    ***Spider Climb.*** Your target can climb at their full Speed. Your target can easily climb along walls and ceilings, without any die rolls and without using their hands.
+
 Combat Form:
   tier: Novice
   type: Free
@@ -8,7 +32,7 @@ Combat Form:
     duration: 10 minutes, or until you decide to end it
   effect: |
     You polymorph into a animal of your choice. While in combat form:
-    * You have Size +0.
+    * Your Size is +0.
     * Your Strength is +2, unless it was already higher. This doesn't affect your health.
     * You gain the [[Beast]] trait.
     * You gain low-light vision and imprecise scent.
@@ -88,7 +112,7 @@ Enlarge/Reduce:
   tier: Novice
   type: 1-Action
   brief: You change your target's size, making them larger or smaller
-  traits: [Attack, Spell]
+  traits: [Attack, Spell, Transfiguration]
   tags:
     cost: 2 Mana
     range: 30 feet
@@ -114,6 +138,34 @@ Enlarge/Reduce:
     Critical Failure
     : This spell ends immediately
 
+Grease:
+  tier: Novice
+  type: 1-Action
+  brief: You cover the ground in slick grease that makes creatures fall over
+  traits: [Spell, Transfiguration]
+  tags:
+    cost: 1 Mana
+    range: 60 feet
+    area: 20-foot cube
+    duration: 1 minute
+  effect: |
+    All ground in the spell's area is covered in slick grease. This greased ground is difficult terrain. Whenever a creature tries to use a [[Move]] power over greased ground, it must make an Agility+Athletics roll against your Magic DC.
+
+    Success
+    : The creature is unaffected
+
+    Failure
+    : The creature falls {prone} and its [[Move]] power is disrupted
+
+    Critical Failure
+    : As failure, and the creature takes 1d6 [[Bludgeoning]] damage
+
+    #### Heightened
+
+    If you add +1 Mana, the duration increases to 1 hour.
+
+    For each +1 Mana, the side length of the cube doubles.
+
 Scout Form:
   tier: Novice
   type: 1-Action
@@ -124,7 +176,7 @@ Scout Form:
     duration: 1 hour, or until you decide to end it
   effect: |
     You polymorph into a animal of your choice. While in scout form:
-    * You have Size -2 or smaller.
+    * Your Size is -2 or smaller.
     * Your Strength is -5. This doesn't affect your health.
     * You have 5 [[Physical]] Weakness.
     * Your Speed is 30 feet.
@@ -138,11 +190,43 @@ Scout Form:
 
     If you add +1 Mana, you turn into a flying creature, such as a bird. You can fly at your full Speed.
 
+Polymorph:
+  tier: Veteran
+  type: 1-Action
+  brief: You transform another creature into an animal shape, disabling it
+  traits: [Attack, Polymorph, Spell]
+  tags:
+    cost: 5 Mana
+    range: 60 feet
+    duration: Sustained, up to 1 hour
+  effect: |
+    Choose any animal, which must have CR no higher than your target's CR or level. You can't choose an animal form that would be fatal to your target, such as a fish out of water. Make a Magic attack roll against your target's Spirit DC.
+
+    Critical Success
+    : As success, and you automatically succeed on the attack roll when you sustain this spell in the future
+
+    Success
+    : Your target transforms into the chosen animal, replacing all of their stats except their Intellect, Spirit, and Health
+
+    Failure
+    : Your target partially transforms, becoming {stunned}
+
+    If you sustain this spell for the full hour, this spell lasts forever.
+
+Eye of the Moon:
+  tier: Ribbon
+  type: Free
+  brief: You can detect whether targets have been transformed or not
+  tags:
+    range: 120 feet
+  effect: |
+    You learn whether your target is affected by any [[Transfiguration]] powers, but you don't learn which powers. You can see both your target's current form and your target's true form.
+
 Minor Alchemy:
   tier: Ribbon
   type: 1-Action
   brief: You temporarily convert a small amount of one material into another
-  traits: [Cantrip, Ritual, Spell]
+  traits: [Ritual, Spell, Transfiguration]
   tags:
     cost: 1 Mana
     target: An unattended object you can reach
@@ -150,3 +234,26 @@ Minor Alchemy:
     duration: Sustained, up to 1 hour
   effect: |
     You transform your target into a different material, from among wood, stone, iron, copper or silver.
+
+Revert Transfiguration:
+  tier: Ribbon
+  type: 1-Action
+  brief: You undo the effect of a spell that alters a creature's form
+  traits: [Ritual, Spell]
+  tags:
+    cost: 3 Mana
+    range: Touch
+  effect: |
+    You dispel all [[Transfiguration]] powers affecting your target.
+
+Shillelagh:
+  tier: Ribbon
+  type: Free
+  brief: You enhance a mundane stick to be study and tough, usable as a weapon
+  traits: [Cantrip, Spell, Transfiguration]
+  tags:
+    cost: 0 Mana
+    target: One nonmagical wooden stick you can reach
+    duration: 1 hour
+  effect: |
+    Your target becomes larger and sturdier. Choose whether your target counts as a {bludgeon}, a {staff}, or a {wand}.
