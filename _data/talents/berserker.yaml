@@ -37,8 +37,9 @@ Rage:
   tags:
     duration: 1 minute, until you can't sense any enemies, or until you fall {unconscious}
   effect: |
-    You tap into your inner fury and begin raging. You gain temporary HP equal to Berserker Level + Strength. While raging:
+    You tap into your inner fury and begin raging. While raging:
     * You have +5 damage to Strikes that add Strength to the attack roll
+    * You have 5 [[Physical]] Shield
     * You take a -2 penalty to Defense
     * You can't use [[Concentrate]] powers
 

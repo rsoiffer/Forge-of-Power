@@ -29,10 +29,12 @@ Some environmental features, such as battlements or arrow slits, make it much ha
 
 ## Health
 
-All characters have a Health pool that represents how healthy they currently are. Your Health pool stores a number of points, up to a maximum of your Health stat. When you take damage, you must subtract the damage taken from your Health pool. When you heal, you add the points healed to your Health pool. Your Health pool can never go below 0. While your Health pool is 0, you have the {downed} condition.
+All characters have a Health pool that represents how healthy they currently are. Your Health pool stores a number of points, up to a maximum of your Health stat. When you take damage, you must subtract the damage taken from your Health pool. When you heal, you add the points healed to your Health pool. Your Health pool can never go below 0. While your Health pool is 0, you are {unconscious}. When you fall to 0 health, or when you take damage while at 0 health, you gain 1 fatigue.
 
-Some effects can give you a pool of temporary HP. When you take damage, subtract the damage from your temporary HP first, then subtract any remaining damage from your Health pool. Multiple sources of temporary HP **do not** stack, you only keep the highest.
+## Fatigue
+
+All characters have a Fatigue track that represents how tired, drained, and unhealthy they currently are. Your Fatigue track stores a number of fatigue points, up to a maximum of 5 fatigue. You start at 0 fatigue. While you are at 3 or more fatigue, you are {slowed}. While you are at 4 or more fatigue, you have disadvantage on all rolls. While you are at 5 fatigue, you are {unconscious}.
 
 ## Dying
 
-TODO: Write this section
+You die if you're at 0 health and 5 fatigue. Try to not die.

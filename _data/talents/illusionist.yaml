@@ -26,15 +26,19 @@ Illusory Clone:
   traits: [Illusion, Spell]
   tags:
     cost: 1 Mana
-    duration: 1 hour, or until you decide to end it
+    duration: 1 hour, until the clone falls to 0 health, or until you decide to end it
   effect: |
-    You conjure a illusory clone of yourself. Your clone moves and acts as you choose. You can use your senses as if you were at your clone's location.
+    You conjure a visual illusion that appears as an exact clone of yourself. Your clone is a [[Minion]] creature that you control. Your clone has all the same stats as you, except its Health is equal to your Illusionist level and it shares your Mana pool. Since your clone is an illusion, it cannot physically interact with the world (unless you have the {Tactile Illusions} talent). Your clone cannot use any powers other than {Stride}.
+
+    You have a telepathic link with your clone that lets you communicate instantly and share each others' senses: you can see through each others' eyes and feel everything the other feels. Your clone is perfectly loyal to you and obeys all your commands.
+
+    Your clone has duplicates of all your equipment. However, duplicated magic items lose their magic, and all duplicated equipment fades a few seconds after it is no longer touching your clone.
 
     #### Heightened
 
-    If you add +2 Mana, the clone is a [[Minion]] creature that you control. Your clone has all the same stats as you, except its Health is equal to your Illusionist level and it shares your Mana pool. This spell ends if the clone falls to 0 health. This spell loses the [[Illusion]] trait.
+    If you add +2 Mana, your clone is a real creature made of magical shadow. Your clone is no longer an illusion, and this spell loses the [[Illusion]] trait. Your clone can physically interact with the world, and it can use any power you can. If your clone uses an [[Encounter]] or [[Daily]] power, that power counts as expended for you, and vice versa. Your clone has disadvantage on all attack rolls.
 
-    For each +1 Mana, you conjure an additional clone. You control all clones simultaneously, and you can use all of their senses at once.
+    For each +1 Mana, you conjure an additional clone.
 
 Illusory Disguise:
   tier: Novice
