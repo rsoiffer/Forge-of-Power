@@ -1,29 +1,31 @@
-Alert:
-  type: Passive
-  effect:
-    You have a +5 bonus to Initiative, and you can't be surprised.
-
 Bonus Ribbons:
   type: Passive
-  effect:
-    You have an extra 2 ribbons of your choice. These ribbons can be from any category, even if you don't have points in any power schools in that category.
+  brief: You learn any two ribbons of your choice
+  effect: |
+    You learn any two ribbons of your choice. These ribbons can be from any class, even if you don't have any levels in that class.
 
-Companion:
+Familiar:
   type: Passive
-  effect:
-    You have a loyal companion, who might be a human follower, an animal you befriended, or a monster you tamed. Your companion has the stats of some creature of CR 1/4 or less (CR 1/2 if you're level 5+, CR 1 if you're level 9+, CR 2 if you're level 13+, or CR 4 if you're level 17+). You control your companion's actions both in and out of combat. If your companion dies, you can spend a week of downtime to obtain a replacement.
+  brief: You summon a magical animal spirit that works for you
+  effect: |
+    You are accompanied by a magical familiar animal. Your familiar is a tiny animal (Size -2 or smaller) with the [[Minion]] and [[Spirit]] traits. Your familiar is intelligent, with Intellect +0 and Spirit +0. Your familiar can speak the same languages as you. You can communicate telepathically with your familiar while it is within 60 feet of you. Your familiar loyally follows any orders you give it, unless those orders are obviously suicidal.
 
-Expertise:
-  type: Passive
-  effect:
-    Choose two general skills you are proficient in. When you make a die roll with one of those skills, you add double your Prof instead of your normal Prof.
+    If your familiar dies, you can resummon it with a 1-hour ritual.
 
-Skilled:
-  type: Passive
-  effect:
-    Choose four general skills you are not proficient in. You gain proficiency in those skills.
+Strategem:
+  type: Free
+  brief: You plan your action, with the ability to predict exactly how it will go
+  traits: [Concentrate]
+  tags:
+    duration: Until the end of your turn
+  effect: |
+    Roll a d20. The next time you make an attack roll, use this roll instead of rolling a new d20. If this attack roll is for a {Strike} that would add Agility to the attack roll, you can add Intellect to the attack roll instead.
 
-Versatile Skill:
-  type: Passive
-  effect:
-    Choose one combat skill or two general skills, then choose one attribute. Whenever you make a die roll with one of your chosen skills, you can choose to add your chosen attribute instead of the skill's normal attribute.
+Wild Mage:
+  type: Free
+  brief: When you cast a spell, you can tap into wild magic for a burst of power
+  tags:
+    prerequisites: A mystic origin
+    trigger: You cast a spell
+  effect: |
+    The triggering spell has -1 cost. Roll on the Wild Magic table.

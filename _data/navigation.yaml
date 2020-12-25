@@ -52,6 +52,8 @@ character:
     url: /equipment.html
   - title: Skills
     url: /skills.html
+  - title: Proficiencies
+    url: /proficiencies.html
 
 classes:
   - title: Classes

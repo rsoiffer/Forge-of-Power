@@ -5,7 +5,7 @@ sidebar:
   nav: character
 ---
 
-Skills describe types of actions your character might specialize in or out of combat.
+Skills describe broad types of actions your character might specialize in.
 
 <table>
   <tr>
