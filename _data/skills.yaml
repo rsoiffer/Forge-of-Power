@@ -22,8 +22,20 @@ Athletics:
     * Jumping
     * Balancing
 
+Crafting:
+  brief: Craft, enchant, appraise, or dismantle items, set or disarm traps
+  effect: |
+    Good with Agility and Intellect.
+
+    Includes:
+    * Crafting
+    * Enchanting
+    * Appraisal
+    * Construction
+    * Disarming traps
+
 Eloquence:
-  brief: Influence others through negotiation and flattery
+  brief: Influence others through words, negotiation, and flattery
   effect: |
     Good with Intellect and Spirit.
 
@@ -42,9 +54,9 @@ Nature:
     Includes:
     * Knowledge about plants
     * Knowledge about natural creatures
-    * Navigating
+    * Knowledge about weather and biomes
+    * Knowledge about medicine
     * Handling animals
-    * Foraging
 
 Notice:
   brief: Spot, hear, or otherwise detect the presence of something
@@ -107,37 +119,25 @@ Society:
     * Networking
 
 Stealth:
-  brief: Avoid detection, slip past foes, hide, or conceal an item
+  brief: Avoid detection, slip past foes, pickpocket, or conceal an item
   effect: |
     Good with Agility and Spirit.
 
     Includes:
     * Hiding
-    * Blending in
     * Disguising
+    * Pickpocketing
     * Concealing objects
     * Obscuring tracks
 
-Thievery:
-  brief: Pick locks, disarm traps, and perform feats of manual dexterity
+Travel:
+  brief: Surive outdoors, know about geography, or track creatures
   effect: |
-    Good with Agility and Intellect.
+    Good with Strength and Intellect.
 
     Includes:
-    * Pickpocketing
-    * Lockpicking
-    * Disarming traps
-    * Knowledge about traps
-    * Knowledge about criminals
-
-Wrestling:
-  brief: Grapple, trip, disarm other creatures, and defend against the same
-  effect: |
-    Good with Strength and Agility.
-
-    Includes:
-    * Grappling
-    * Pushing
-    * Tripping
-    * Disarming
-    * Defending against the above
+    * Navigating
+    * Foraging
+    * Tracking
+    * Marching
+    * Knowledge about geography

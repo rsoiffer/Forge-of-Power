@@ -149,6 +149,7 @@ aside {
   h3 {
     margin: 0;
     border-bottom: 1px solid $border-color;
+    // border-bottom: 2px solid $my-dark-red;
     line-height: 24px;
   }
   .traits {
@@ -161,6 +162,7 @@ aside {
   }
   hr {
     margin: 0;
+    // border-top: 2px solid $my-dark-red;
   }
 }
 

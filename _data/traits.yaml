@@ -166,6 +166,9 @@ Spell: |
 Stance: |
   A stance is a general combat strategy that you enter by using a power with the [[Stance]] trait, and that you remain in for some time. A stance lasts until you fall {unconscious}, until its requirements (if any) are violated, until the encounter ends, or until you enter a new stance, whichever comes first. You can be in a stance only during combat.
 
+Wrestling: |
+  A power with this trait involves physically pushing another creature around. Powers with this trait always have the [[Attack]] trait as well. If your target is a larger Size than you, you have a -10 penalty to the attack roll for each point of Size difference.
+
 # Items
 
 Finesse: |

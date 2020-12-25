@@ -7,7 +7,7 @@ Command:
 
 Disarm:
   type: 1-Action
-  traits: [Attack]
+  traits: [Attack, Wrestling]
   tags:
     target: One creature you can reach
   effect:
@@ -24,7 +24,7 @@ Escape:
 
 Grapple:
   type: 1-Action
-  traits: [Attack]
+  traits: [Attack, Wrestling]
   tags:
     requirements: You have at least one free hand
     target: One creature you can reach
@@ -82,7 +82,7 @@ Seek:
 
 Shove:
   type: 1-Action
-  traits: [Attack]
+  traits: [Attack, Wrestling]
   tags:
     target: One creature you can reach
   effect:
@@ -120,7 +120,7 @@ Sustain:
 
 Trip:
   type: 1-Action
-  traits: [Attack]
+  traits: [Attack, Wrestling]
   tags:
     target: One creature you can reach
   effect:

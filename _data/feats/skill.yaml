@@ -44,6 +44,31 @@ Daredevil Acrobat:
   effect: |
     You can climb and balance on moving surfaces as easily as if those surfaces were completely still. You can climb and balance on creatures that are larger than you, even hostile creatures. You suffer no combat penalties from balancing or climbing.
 
+# Crafting
+
+Crazy Prepared:
+  tier: Crafting
+  type: 1-Action
+  brief: You always have exactly the right item prepared for a task
+  traits: [Daily, Retroactive]
+  tags:
+    perk: +2 Crafting
+  effect: |
+    You reveal an item you constructed in the past. You must have reasonably been able to craft this item in the past 24 hours.
+
+    *For example, if you're delving a dungeon, you could pull out a crowbar and reveal you forged one earlier at the local smithy. Alternatively, if you're preparing a meal for a lord, you could reveal that you had already made the lord' favorite food. The GM has final say on whether any item is reasonable.*
+  fluff: |
+    And here's one I prepared earlier...
+
+Mouse Trap:
+  tier: Crafting
+  type: Passive
+  brief: You can disguise traps or machines as collections of seemingly unrelated parts
+  tags: 
+    perk: +2 Crafting
+  effect: |
+    Whenever you set a mechanical trap or build a large device, you can disguise the mechanism as a set of completely mundane objects, which you placed to perfectly trigger a cascading effect. Anyone casually searching the area never realizes the mundane objects have any mechanical effect. Someone who is determinedly searching the area for traps or devices has a -10 penalty to any rolls made to detect the mechanism.
+
 # Eloquence
 
 False Expert:
@@ -76,24 +101,33 @@ Befriend Animal:
   tags:
     perk: +2 Nature
     range: 10 feet
-    target: A [[Beast]] or [[Monster]] you can see within range that you haven't targeted with this power in the last 24 hours
-    duration: 1 hour, or until you or any of your allies are hostile towards your target
+    target: A [[Beast]] creature you can see within range that you haven't targeted with this power in the last 24 hours
+    duration: Until you or any of your allies harm your target
   effect: |
     Make a Spirit+Nature roll against DC 10 + your target's CR.
-  critical-success: Your target is helpful towards you and indifferent towards your allies
-  success: Your target is friendly towards you and you indifferent towards your allies
-  critical-failure: Your target is hostile towards you and your allies
 
-Experienced Tracker:
+    Critical Success
+    : Your target is helpful towards you and indifferent towards your allies
+  
+    Success
+    : Your target is helpful towards you and indifferent towards your allies
+
+    Failure
+    : Your target is unaffected
+
+    Critical Failure
+    : Your target is hostile towards you and your allies
+
+Medical Poultice:
   tier: Nature
-  type: Free
-  brief: You can easily follow tracks and learn things about your prey
+  type: 1-Action
+  brief: You heal an ally with foraged medicinal herbs
+  traits: [Daily, Healing, Manipulate]
   tags:
     perk: +2 Nature
-    trigger: You roll Intellect+Nature to investigate or follow tracks
-    requirements: You haven't used Experience Tracker on these tracks in the last 24 hours
+    target: One ally you can reach
   effect: |
-    You have a +10 bonus to the triggering roll. Additionally, you notice a hidden bit of information of the DM's choice about the creatures you're tracking. For example, you might notice that the creatures are walking single-file to hide their numbers, that the tracks match a specific style of boot, or that the creatures were moving with unusual haste.
+    Your ally heals 1d6 health and recovers 1 fatigue.
 
 # Notice
 
@@ -243,47 +277,39 @@ Just a Box:
 
     For example, you can hide inside of a box in the middle of the floor, and no one will question why the box is there so long as it stays still. You can hide behind a tall potted plant next to a lava lake in the middle of an evil dungeon, and no one will question the plant's existence.
 
-# Thievery
-
-Mouse Trap:
-  tier: Thievery
-  type: Passive
-  brief: You can disguise traps or machines as collections of seemingly unrelated parts
-  tags: 
-    perk: +2 Thievery
-  effect: |
-    Whenever you set a mechanical trap or build a large device, you can disguise the mechanism as a set of completely mundane objects, which you placed to perfectly trigger a cascading effect. Anyone casually searching the area never realizes the mundane objects have any mechanical effect. Someone who is determinedly searching the area for traps or devices has a -10 penalty to any rolls made to detect the mechanism.
-
 Prior Pickpocketing:
-  tier: Thievery
+  tier: Stealth
   type: Reaction
   brief: You reveal that you already pickpocketed an item your target attempts to draw
   traits: [Daily]
   tags:
-    profiency: +2 Thievery
+    profiency: +2 Stealth
     trigger: A creature you can see tries to draw an item
     requirements: You were within 5 feet of that creature within 1 hour, and the creature hasn't used the item since you were last within 5 feet of them
   effect: |
     Make a Agility+Thievery roll against your target's Intellect+Notice DC.
   success: You reveal you successfully pickpocketed your target, drawing the item and showing it to them, as your target either draws nothing or draws a useless fake copy of the item
 
-# Wrestling
+# Travel
 
-Rasslin':
-  tier: Wrestling
+Experienced Tracker:
+  tier: Travel
   type: Free
-  brief: You get in extra painful hits as you grab and wrestle your target
+  brief: You can easily follow tracks and learn things about your prey
   tags:
-    perk: +2 Wrestling
-    trigger: You succeed on a {Grapple}
+    perk: +2 Nature
+    trigger: You roll Intellect+Nature to investigate or follow tracks
+    requirements: You haven't used Experience Tracker on these tracks in the last 24 hours
   effect: |
-    Make an unarmed {Strike} against the target of your Grapple.
+    You have a +10 bonus to the triggering roll. Additionally, you notice a hidden bit of information of the DM's choice about the creatures you're tracking. For example, you might notice that the creatures are walking single-file to hide their numbers, that the tracks match a specific style of boot, or that the creatures were moving with unusual haste.
 
-Titan Wrestler:
-  tier: Wrestling
+Wanderer:
+  tier: Travel
   type: Passive
-  brief: You are experienced at wrestling creatures much larger than yourself
+  brief: You never get lost while travelling outdoors
   tags:
-    perk: +2 Wrestling
+    perk: +2 Travel
   effect: |
-    When you {Disarm}, {Grapple}, {Shove}, or {Trip} a creature larger than you, you count as one size larger.
+    You always know generally where you are in the world, to a precision of roughly 1 mile. You always know a general description of the nearest friendly settlement, and you know the exact distance and direction to it.
+  fluff: |
+    Not all those who wander are lost.

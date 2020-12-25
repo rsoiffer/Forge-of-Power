@@ -226,6 +226,17 @@ Counter Charge:
         Make a polearm Strike with advantage against the triggering creature.
     {% endsmallpower %}
 
+Polearm Hook:
+  tier: Polearm
+  type: Free
+  brief: You trip a creature using the hook on the end of your polearm
+  tags:
+    perk: +1 damage to polearm Strikes
+    trigger: You critically succeed on a polearm Strike
+    target: The target of the triggering Strike
+  effect: |
+    Your target falls {prone}.
+
 # Shield
 
 Covering Shield:
@@ -237,6 +248,37 @@ Covering Shield:
     perk: +1 [[Physical]] Shield
   effect: |
     You have +2 bonus to Agility DC against powers that affect all targets in an area.
+
+Phalanx:
+  tier: Shield
+  type: Reaction
+  brief: You cover your allies with your shield, blocking attacks against them
+  tags:
+    requirements: You are wielding a shield
+    perk: +1 [[Physical]] Shield
+    target: An ally adjacent to you
+    trigger: An attack targets your ally's Defense
+  effect: |
+    The triggering attack has disadvantage.
+
+Shield Bash:
+  tier: Shield
+  type: Passive
+  brief: You can wield your shield as a deadly bludgeoning weapon
+  tags:
+    requirements: You are wielding a shield
+    perk: +1 [[Physical]] Shield
+  effect: |
+    You treat shields as melee weapons with a base damage of 1d6 [[Bludgeoning]]. You can use the **Shield Shove** power.
+  aside: |
+    {% smallpower %}
+    Shield Shove:
+      type: Free
+      tags:
+        trigger: You succeed on a shield Strike
+      effect: |
+        You push your target back 5 feet. If the triggering Strike was a critical success, you can instead push your target back 10 feet.
+    {% endsmallpower %}
 
 # Staff
 
@@ -312,12 +354,24 @@ Lunging Strike:
 Perfect Ricochet:
   tier: Throwing Weapon
   type: Free
-  brief: Call a throwing weapon back to your hand after an attack
+  brief: You call a throwing weapon back to your hand after an attack
   tags:
     perk: +1 damage to throwing weapon Strikes
     trigger: After you make a throwing weapon Strike
   effect: |
     The throwing weapon you just attacked with bounces off of the environment and returns to your hand.
+
+Slowing Hit:
+  tier: Throwing Weapon
+  type: Free
+  brief: Your throwing weapon entangles an enemy, slowing them down
+  tags:
+    perk: +1 damage to throwing weapon Strikes
+    trigger: You succeed on a throwing weapon Strike
+    target: The target of the triggering Strike
+    duration: Until the end of your target's next turn
+  effect: |
+    Your target is {slowed}. If the triggering Strike was a critical success, your target is also {immobilized}.
 
 # Tome
 
@@ -387,9 +441,18 @@ Kickboxer:
   type: Passive
   brief: You are effective at making unarmed attacks without your hands
   tags:
-    perk: +1 damage to unarmed Strikes
+    perk: +1 damage to unarmed Strikes, +2 to [[Wrestling]] attacks
   effect: |
     You don't have disadvantage on unarmed Strikes from having no hands free.
+
+Titan Wrestler:
+  tier: Unarmed
+  type: Passive
+  brief: You are experienced at wrestling creatures much larger than yourself
+  tags:
+    perk: +1 damage to unarmed Strikes, +2 to [[Wrestling]] attacks
+  effect: |
+    When you make a [[Wrestling]] attack against a creature larger than you, you count as +1 Size larger.
 
 # Wand
 
