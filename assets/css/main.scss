@@ -64,8 +64,11 @@ $dark-border-color: mix(#000, $border-color, 25%);
   }
   h3 {
     clear: both;
-    margin-top: 1em;
+    margin: 1em 0 0 0;
     font-size: 1.25em;
+    border-bottom: 1px solid $border-color;
+    // border-bottom: 2px solid $my-dark-red;
+    line-height: 24px;
   }
   h4 {
     margin: .75em 0 .25em 0;
@@ -119,6 +122,9 @@ body, table {
 
 table {
   width: auto;
+  display: table;
+  border: 1px solid $dark-border-color;
+  margin-top: 1em;
 }
 
 aside {
@@ -131,7 +137,7 @@ aside {
   background-color: #dbc29b;
 
   h3 {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
   div:first-child {
     margin-top: 0;
@@ -147,10 +153,7 @@ aside {
   margin: 1.5em 0 0 0;
 
   h3 {
-    margin: 0;
-    border-bottom: 1px solid $border-color;
-    // border-bottom: 2px solid $my-dark-red;
-    line-height: 24px;
+    margin-top: 0;
   }
   .traits {
     margin: 0;

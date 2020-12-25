@@ -32,7 +32,7 @@ Heavy Armor Master:
   type: Passive
   brief: Your heavy armor can absorb a massive amount of punishment
   tags:
-    requirements: You are wearing [heavy armor](equipment.html#heavy-armor)
+    requirements: You are wearing apparel that adds your Strength to Defense
   effect: |
     You have [[Physical]] Shield equal to your Guardian level.
 

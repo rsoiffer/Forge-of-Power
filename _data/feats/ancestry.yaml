@@ -7,6 +7,13 @@ Amphibious:
   effect: |
     You can swim at your full Speed. You can breathe water as easily as air.
 
+Natural Weapon:
+  tier: Awakened
+  type: Passive
+  brief: You have natural claws, teeth, or horns that deal heavy damage
+  effect: |
+    Your unarmed Strikes deal 2d6 base damage. Choose whether this damage is [[Bludgeoning]], [[Piercing]], or [[Slashing]].
+
 Wild Sprint:
   tier: Awakened
   type: Free

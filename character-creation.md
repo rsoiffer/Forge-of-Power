@@ -26,7 +26,7 @@ Once you have a character in mind, you should go through the other steps on this
 
 ### Building Bruenor
 
-In each of the sections below, I give an example of how to build a character. I use the same example character as D&D 5e: the player Bob is creating his character Bruenor Battlehammer, a dwarven warrior-king who longs to rebuild his lost ancestral fortress of Mithril Hall. Bob imagines Bruenor as a tough frontline warrior who protects his friends, so he stays on the lookout for abilities that will boost Bruenor's defense and melee combat skills.
+In each of the sections below, I give an example of how to build a character. I use the same example character as D&D 5e: the player Bob is creating his character Bruenor Battlehammer, a dwarven warrior-king who longs to rebuild his lost ancestral fortress of Mithril Hall. Bob imagines Bruenor as a tough frontline warrior who protects his friends, so he stays on the lookout for abilities that will boost Bruenor's defense and melee combat skills. Bob's GM says that Bruenor starts at level 3.
 
 ## Ancestry
 
@@ -40,9 +40,9 @@ Many ancestries give you additional bonuses or choices. In particular, many ance
 
 ### Building Bruenor
 
-Bruenor is a tough mountain dwarf. Bob says that Bruenor has the dwarf ancestry. This means that Bruenor starts with a +0 Strength, Agility, and Intellect, and +1 Spirit. Bruenor also starts with a Speed of 25 feet and a size of 0. Bob writes all of these stats on Bruenor's character sheet.
+Bruenor is a tough mountain dwarf. Bob says that Bruenor has the {dwarf} ancestry. This means that Bruenor starts with a +0 Strength, Agility, and Intellect, and +1 Spirit. Bruenor also starts with a Speed of 25 feet and a Size of +0. Bob writes all of these stats on Bruenor's character sheet.
 
-The dwarf ancestry gives Bruenor two tool proficiencies and an ancestry feat. Bob chooses for Bruenor to be proficient in miner's tools and blacksmith's tools, and Bob chooses the {Dwarven Resilience} ancestry feat. Bob writes the two tool proficiences on the **Proficiencies** section of Bruenor's character sheet, and he notes the feat on the **Powers** page of Bruenor's sheet. Reading the Dwarven Resilience feat, Bob notes 5 [[Poison]] Shield and 5 [[Bludgeoning]] Shield on the **Shields and Weaknesses** section of Bruenor's character sheet so that he'll remember them later.
+The dwarf ancestry gives Bruenor two tool proficiencies and an ancestry feat. Bob chooses for Bruenor to be proficient in Mason's Tools and Smith's Tools, and Bob chooses the {Dwarven Resilience} ancestry feat. Bob writes the two tool proficiences on the **Proficiencies** section of Bruenor's character sheet, and he notes the feat on the **Powers** page of Bruenor's sheet. Reading the Dwarven Resilience feat, Bob notes 5 [[Poison]] Shield and 5 [[Bludgeoning]] Shield on the **Shields and Weaknesses** section of Bruenor's character sheet so that he'll remember them later.
 
 ## Backgrounds
 
@@ -73,12 +73,44 @@ The dwarf ancestry gives Bruenor two tool proficiencies and an ancestry feat. Bo
 
 Your character's backgrounds describe what your character did before they became an adventurer. This affects your character's skills, proficiencies, and starting feats. You have two backgrounds, representing skills learned at different parts of your life. For example, your first background might represent your life as a child, and your second background might represent your life as an adult.
 
-Your backgrounds always give you several skill feats and combat feats. These are special types of powers that represent your character's training in various skills and weapons. These feats always come with an extra bonus, called a [[Perk]] bonus, that makes you better at rolls involving the skill or weapon. Depending on your character level, you can't stack too many [[Perk]] bonuses on the same stat, as shown in the table below:
+Your backgrounds give you several attribute boosts. For each attribute boost, add +1 to one attribute. You can't increase any attribute above the maximum give in the table below.
+<table>
+  <tr>
+    <th>Character Level</th>
+    <th>Max Attribute Score</th>
+  </tr>
+  <tr>
+    <td>3 or less</td>
+    <td>+3</td>
+  </tr>
+  <tr>
+    <td>4 ... 7</td>
+    <td>+4</td>
+  </tr>
+  <tr>
+    <td>8 ... 11</td>
+    <td>+5</td>
+  </tr>
+  <tr>
+    <td>12 ... 15</td>
+    <td>+6</td>
+  </tr>
+  <tr>
+    <td>16 ... 19</td>
+    <td>+7</td>
+  </tr>
+  <tr>
+    <td>20 or more</td>
+    <td>+8</td>
+  </tr>
+</table>
+
+Your backgrounds always give you several skill feats and combat feats. These are special types of powers that represent your character's training in various skills and weapons. These feats always come with an extra bonus, called a **Perk** bonus, that makes you better at rolls involving the skill or weapon. Depending on your character level, you can't stack too many Perk bonuses on the same stat, as shown in the table below:
 
 <table>
   <tr>
     <th>Character Level</th>
-    <th>Max Stacking</th>
+    <th>Max Perk Stacking</th>
   </tr>
   <tr>
     <td>6 or less</td>
@@ -104,7 +136,13 @@ Your backgrounds also give you a number of proficiencies, which represent specia
 
 ### Building Bruenor
 
-TODO
+Bruenor grew up as a prince, set to be the future king of Mithril Hall. After his home was destroyed, Bruenor led his clansmen as a warrior. Bob says that Bruenor has the Noble and Warrior backgrounds.
+
+Bob first picks the abilities given by the Noble background. It gives Bruenor +1 Spirit, the {Forced Error} skill feat, and the *Geneology Lore* proficiency. It also gives Bruenor +1 Strength, the {Burst of Power} skill feat, the {Shield Bash} combat feat, the *Mining Lore* proficiency, and the *Cave Lore* proficiency.
+
+Bob then picks the abilities given by the Warrior background. It gives Bruenor +1 Strength, the {Scare to Death} skill feat, and the *Warfare Lore* proficiency. It also gives Bruenor +1 Strength, the {Alert} skill feat, the {Distracting Blow} combat feat, the *Mountain Lore* proficiency, and the *Tundra Lore* proficiency.
+
+Bob applies the attribute boosts to Bruenor's attributes, ending up with +3 Strength, +0 Agility, +0 Intellect, and +2 Spirit. Bob verifies these attributes are within the limits given in the table above. Bob notes the four feats he picked on the **Powers** page of Bruenor's sheet. Each of these feats gives a Perk bonus. Bob writes each of these Perk bonuses on the **Perks** section of Bruenor's sheet. Bob notes the six proficiencies he picked on the **Proficiencies** section of Bruenor's sheet.
 
 ## Classes
 
@@ -148,17 +186,91 @@ In addition to talents, your character has several abilities called ribbons. Rib
 
 ### Building Bruenor
 
-TODO
+Bob wants Bruenor to be a defensive melee fighter, who hits like a truck and is tough as nails. Since Bruenor is level 3, Bob has three levels to distribute between the character classes. Bob focuses on the Warrior classes, since he doesn't imagine Bruenor as an expert or a spellcaster. Bob puts 2 levels in Guardian, since Bruenor specializes in defending himself and his allies. Bob puts 1 level in Berserker, since Bruenor is strong and hits hard. Bob writes *Guardian 2 / Berserker 1* on the **Classes** section of Bruenor's character sheet.
 
+Bob now needs to pick two talents from Guardian. Bob picks {Cover Ally} to help him protect his allies, and {Heavy Armor Master} to make Bruenor even tougher. Bob now needs to pick one talent from Berserker. Bob picks {Iron Sweep} to help Bruenor defeat hordes of enemies. Bob writes all three talents on the **Powers** page of Bruenor's sheet.
+
+Bob also needs to pick two ribbons, which can be from either Guardian or Berserker. Bob picks the {Environmental Resilience} Berserker ribbon to represent Bruenor's fortitude, and the {Knight} Guardian ribbon to represent Bruenor's status as a noble warrior. Bob writes both ribbons on the **Powers** page of Bruenor's sheet.
+ 
 ## Development
+<aside>
+  <h3>Reference - Maximums by Level</h3>
+  <p>
+    Remember that your character's Perk bonuses and attributes are limited by your character level. See the tables below for details.
+  </p>
 
-TODO
+  <table>
+    <tr>
+      <th>Character Level</th>
+      <th>Max Attribute Score</th>
+    </tr>
+    <tr>
+      <td>3 or less</td>
+      <td>+3</td>
+    </tr>
+    <tr>
+      <td>4 ... 7</td>
+      <td>+4</td>
+    </tr>
+    <tr>
+      <td>8 ... 11</td>
+      <td>+5</td>
+    </tr>
+    <tr>
+      <td>12 ... 15</td>
+      <td>+6</td>
+    </tr>
+    <tr>
+      <td>16 ... 19</td>
+      <td>+7</td>
+    </tr>
+    <tr>
+      <td>20 or more</td>
+      <td>+8</td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <th>Character Level</th>
+      <th>Max Perk Stacking</th>
+    </tr>
+    <tr>
+      <td>6 or less</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>7 ... 12</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>13 ... 18</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>19 or more</td>
+      <td>4</td>
+    </tr>
+  </table>
+</aside>
+
+As your character levels up, they become generally much stronger. At every level, you gain a feat. This feat can be from any of four categories:
+* **General Feats** are general abilities that could apply to a broad variety of character classes or skills. General feats can help your character fit into a specific archetype that would otherwise be difficult to achieve.
+* **Ancestry Feats** are abilities that are specific to your character's ancestry. These abilities can be either biological or cultural in nature. You can only pick ancestry feats that match your character's ancestry.
+* **Combat Feats** help your character fight with specific weapons or magical focuses. Combat feats always give you a Perk bonus.
+* **Skill Feats** make your character better that using specific skills. Skill feats always give you a Perk bonus.
+
+Besides gaining new abilities, your character slowly grows numerically stronger as well. At every even level (2, 4, 6, etc.), you gain an attribute boost. Remember that your attributes are limited by your character level.
 
 *Choose a number of feats equal to your character level, and write them on your character sheet. Choose a number of attribute boosts equal to half your character level (rounded down), and modify your attributes accordingly.*
 
 ### Building Bruenor
 
-TODO
+Since Bruenor is a level 3 character, Bob needs to pick 3 feats. Bob picks the {Heavy Bolts} crossbow feat in case Bruenor needs to switch to a crossbow for ranged combat. Bob picks the {Reliable Damage} bludgeon feat to help Bruenor's damage against hard-to-hit enemies. Finally, Bob picks the {Phalanx} shield feat to help Bruenor protect his allies even more. Bob notes all three feats on the **Powers** page of Bruenor's character sheet.
+
+Bob also notes the Perk bonus given by the Heavy Bolts feat on the **Perks** section of Bruenor's sheet. Bob **doesn't** add the Perk bonuses of the other feats he just picked: since Bruenor is a level 3 character, he can only stack 1 Perk bonus of the same type. Since Bruenor already has a bludgeon feat and a shield feat that give the same Perk bonuses, these Perk bonuses don't help out. Once Bruenor reaches level 7, these Perk bonuses will add onto his existing ones.
+
+Since Bruenor is a level 3 character, Bob needs to pick one attribute boost. Bob wants Bruenor to be as strong and tough as possible, but Bruenor's Strength score is already at the maximum score of +3 for his character level. Bob instead gives Bruenor +1 Intellect, and writes the new stat on Bruenor's sheet.
 
 ## Equipment
 
@@ -174,7 +286,7 @@ TODO
 
 TODO
 
-*For each attribute, write the attribute DC (equal to your attribute score + 10) on your character sheet. Write your maximum health (equal to 10 + 2 * level + 5 * Strength) on your character sheet. Write your Defense score (given by your armor) on your character sheet.*
+*For each attribute, write the attribute DC (equal to your attribute score + 10) on your character sheet. Write your maximum health (equal to 10 + 2 * level + 5 * Strength) on your character sheet. Write your Defense score (given by your apparel) on your character sheet.*
 
 *If your character knows any spells, also do the following steps. Choose one mystic origin from the {% ref Mystic Origins %} page, and write it on your character sheet. Write your maximum mana (given by your mystic origin) on your character sheet.*
 

@@ -119,6 +119,7 @@ class Jekyll::Converters::Markdown::LinkerProcessor
       }
 
       m = {}
+      m["ancestries"] = "[#{text}](#{slug_text}.html)"
       m["skills"] = "[#{text}](skills.html##{slug_text})"
       m["conditions"] = "[#{text}](conditions.html##{slug_text})"
       m["equipment/apparel"] = "[#{text}](equipment.html##{slug_text})"

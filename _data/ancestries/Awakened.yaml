@@ -12,17 +12,11 @@ effect: |
 
   ### Society
 
-  Most awakened live separately from humanoid society. Awakened rarely build settlements, preferring a natural lifestyle in tune with nature. Awakened sometimes live alongside non-awakened animals, which they see as distant relatives that are too stupid to take care of themselves. The awakened are loosely governed by the druidic conclaves that preserve knowledge of the Awaken spell. These druidic conclaves awaken new animals as fast as they can, but the complex Awaken spell can only be cast by the most powerful druids, which greatly limits the rate of growth of the awakened population.
+  Most awakened live separately from humanoid society. Awakened rarely build settlements, preferring a natural lifestyle in tune with nature. Awakened sometimes live alongside non-awakened animals, which they might see as relatives who haven't yet been given the gift of intelligence. The awakened are loosely governed by the druidic conclaves that spread knowledge of the Awaken spell. These druidic conclaves awaken new animals as fast as they can, but the complex Awaken spell can only be cast by the most powerful druids, which greatly limits the rate of growth of the awakened population.
 
   ### Adventurers
 
   TODO
-
-  ### Feats
-
-  * Innate climb speed, bonus land speed
-  * Limited telepathy (range 30 feet)
-  * Your unarmed strikes deal 1d4 damage
 
 heritages:
   Tiny Awakened:
@@ -64,5 +58,5 @@ heritages:
       attributes: +1 Strength, -1 Agility, +1 Intellect, +0 Spirit
       misc stats: 30 feet Speed, +1 Size
     effect: |
-      You gain the Natural Weapon ancestry feat. You can use the **Mental Powerhouse** power.
-    fluff: Large awakened include bears, gorrilas, and tigers.
+      You gain the {Natural Weapon} ancestry feat. You can use the **Mental Powerhouse** power.
+    fluff: Large awakened include bears, gorillas, and tigers.
