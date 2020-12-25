@@ -29,7 +29,7 @@ Some environmental features, such as battlements or arrow slits, make it much ha
 
 ## Health
 
-All characters have a Health pool that represents how healthy they currently are. Your Health pool stores a number of points, up to a maximum of your Health stat. When you take damage, you must subtract the damage taken from your Health pool. When you heal, you add the points healed to your Health pool. Your Health pool can never go below 0. While your Health pool is 0, you are {unconscious}. When you fall to 0 health, or when you take damage while at 0 health, you gain 1 fatigue.
+All characters have a Health pool that represents how healthy they currently are. Your Health pool stores a number of points, up to a maximum of your Health stat. When you take damage, you must subtract the damage taken from your Health pool. When you heal, you add the points healed to your Health pool. Your Health pool can never go below 0. While your Health pool is 0, you are {downed}. When you fall to 0 health, or when you take damage while at 0 health, you gain 1 fatigue.
 
 ## Fatigue
 
