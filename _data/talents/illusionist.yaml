@@ -19,6 +19,23 @@ Color Spray:
     Failure
     : Your target is {dazzled} until the end of their next turn
 
+Illusory Clone:
+  tier: Novice
+  type: 1-Action
+  brief: You conjure an illusory copy of yourself that acts as a realistic creature
+  traits: [Illusion, Spell]
+  tags:
+    cost: 1 Mana
+    duration: 1 hour, or until you decide to end it
+  effect: |
+    You conjure a illusory clone of yourself. Your clone moves and acts as you choose. You can use your senses as if you were at your clone's location.
+
+    #### Heightened
+
+    If you add +2 Mana, the clone is a [[Minion]] creature that you control. Your clone has all the same stats as you, except its Health is equal to your Illusionist level and it shares your Mana pool. This spell ends if the clone falls to 0 health. This spell loses the [[Illusion]] trait.
+
+    For each +1 Mana, you conjure an additional clone. You control all clones simultaneously, and you can use all of their senses at once.
+
 Illusory Disguise:
   tier: Novice
   type: 1-Action
@@ -27,7 +44,7 @@ Illusory Disguise:
   tags:
     cost: 1 Mana
     range: 10 feet
-    duration: 1 hour
+    duration: 1 hour, or until you decide to end it
   effect: |
     Your target is covered in a visual illusion that makes them look like another creature of the same body shape, and with roughly similar height and weight as themself. The illusion can change the appearance of your target's clothing and worn items, but held items are unaffected, and any worn item your target removes returns to its true appearance.
 
@@ -44,7 +61,7 @@ Illusory Object:
     cost: 1 Mana
     range: 500 feet
     area: 20-foot burst
-    duration: 10 minutes
+    duration: 10 minutes, or until you decide to end it
   effect: |
     You create an illusory visual image of a stationary object or structure. The entire image must fit within the spell's area.
 
@@ -60,7 +77,7 @@ Invisibility:
   tags:
     cost: 2 Mana
     range: 10 feet
-    duration: 1 hour, or until your target makes an attack or casts a spell
+    duration: 1 hour, until your target makes an attack or casts a spell, or until you decide to end it
   effect: |
     Your target turns **invisible**.
 
