@@ -116,6 +116,7 @@ Arcane Sense:
   tier: Ribbon
   type: Free
   brief: You sense all nearby magical auras and magic casters
+  traits: [Divination]
   effect: |
     You learn the number and location of all spellcasters and magical auras within 60 feet. Magical auras usually emanate only from powerful unique artifacts or long-term persistent wards.
 
@@ -123,7 +124,7 @@ Identify Magic:
   tier: Ribbon
   type: 1-Action
   brief: You learn all the spells that are currently affecting a target
-  traits: [Ritual, Spell]
+  traits: [Divination, Ritual, Spell]
   tags:
     cost: 1 Mana
     range: 10 feet
@@ -141,7 +142,7 @@ Zone of Truth:
   tier: Ribbon
   type: 1-Action
   brief: Detect whenever anyone in an area tells a lie
-  traits: [Ritual, Spell]
+  traits: [Divination, Ritual, Spell]
   tags:
     cost: 2 Mana
     area: 30-foot burst

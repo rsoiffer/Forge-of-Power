@@ -110,24 +110,93 @@ Natural Talent:
 
 # Kami
 
-Nature Meld:
-  tier: Kami
-  type: 1-Action
-  brief: You meld with your sacred feature, disappearing from the world
-  traits: [Encounter, Polymorph]
-  tags:
-    target: One of your sacred features you can see within 10 feet
-    duration: Until your target falls to 0 health or you decide to end it
-  effect: |
-    You meld with your target, disappearing and entering your target's space. When this effect ends, you reappear at a space of your choice within 10 feet of the part of your target you entered.
+# Nature Meld:
+#   tier: Kami
+#   type: 1-Action
+#   brief: You meld with your sacred feature, disappearing from the world
+#   traits: [Encounter, Polymorph]
+#   tags:
+#     target: One of your sacred features you can see within 10 feet
+#     duration: Until your target falls to 0 health or you decide to end it
+#   effect: |
+#     You meld with your target, disappearing and entering your target's space. When this effect ends, you reappear at a space of your choice within 10 feet of the part of your target you entered.
 
-Thoughts and Prayers:
+# Thoughts and Prayers:
+#   tier: Kami
+#   type: 1-Action
+#   brief: You absorb the prayers of nearby devotees to boost your own power
+#   traits: [Daily]
+#   effect: |
+#     You regain 2 Mana, plus 1 Mana for each devotee of your concept within 1 mile.
+
+Divine Magic:
+  tier: Kami
+  type: Free
+  brief: You call down the magical power of heaven to fuel your spell
+  traits: [Daily]
+  tags:
+    prerequisites: You have a [mystic origin](mystic-origins.html)
+    trigger: You cast a spell
+  effect: |
+    The triggering spell has -2 cost.
+
+High Status:
   tier: Kami
   type: 1-Action
-  brief: You absorb the prayers of nearby devotees to boost your own power
+  brief: You invoke your status in the celestial bureaucracy to command another kami
   traits: [Daily]
+  tags:
+    target: One kami you can see
+    requirements: You haven't used **High Status** on your target before
   effect: |
-    You regain 2 Mana, plus 1 Mana for each devotee of your concept within 1 mile.
+    Roll a d6.
+
+    1
+    : The other kami is technically your superior
+
+    2-3
+    : No effect
+
+    4-5
+    : You are technically the other kami's superior
+
+    6
+    : You have direct authority over the other kami
+  aside: |
+    ### Authority in Heaven
+
+    Kami are obligated to follow reasonable orders given by their technical superiors. Kami are obligated to follow all orders given by people with direct authority over them, no matter how unreasonable. Flagrant abuses of direct authority may attract the attention of the higher-ups.
+
+    If a kami repeatedly disobeys orders they are obligated to follow, they risk being excommunicated from the celestial bureaucracy. An excommunicated kami is analogous to a fallen angel in Christian mythology. They are viewed as evil, heretical, and flawed, and they are totally unwelcome in Heaven.
+  fluffstart: |
+    You have an elevated status in the celestial bureaucracy, and you have authority over many other kami. Since the celestial bureaucracy is so complex, you often have some kind of authority other any other kami you meet.
+
+Holy Aura:
+  tier: Kami
+  type: Passive
+  brief: You emit a holy aura that harms outsiders and undead
+  effect: |
+    You are immune to [[Divination]] effects, unless you want them to work on you. Divinations involving you just show a bright white light.
+
+    You can use the **Flare Aura** power.
+  aside: |
+    {% smallpower %}
+    Flare Aura:
+      type: Free
+      traits: [Radiant]
+      tags:
+        area: 10-foot emanation
+        target: All [[Outsider]] and [[Undead]] creatures in the area
+      effect: |
+        Your target takes 2d6 damage.
+    {% endsmallpower %}
+
+Immortal:
+  tier: Kami
+  type: Passive
+  brief: You have the gift of immortality, and you can never truly die
+  effect: |
+    When you die, you appear in Heaven unharmed. You can descend to the material world by performing a 1-hour ritual.
 
 # Lizardfolk
 
@@ -195,6 +264,44 @@ Sense Emotions:
   success: You learn all the major emotions your target is currently feeling
 
 # Undead
+
+Detach Body Part:
+  tier: Undead
+  type: Free
+  brief: You can detach your body parts, which continue to function normally
+  tags:
+    duration: 1 hour, until the body part falls to 0 health, or until you reattach the part
+  effect: |
+    Choose one body part, such as a hand, an eye, or so on. This body part detaches from the rest of your body, falling to the ground. While detached, the body part continues to function normally: eyes can still see, fingers can still move, and your head can still send orders to the rest of your body. Your body part has 10 Defense and 10 Health.
+
+    Losing body parts limits what your normal body can do. If you detach a hand or arm, you can't wield items in that hand. If you detach a leg or foot, you are {slowed}. If you detach both your eyes, you can't see from your normal body. If your body part is detached when this power ends, you permanently lose that body part. You regenerate lost body parts over the course of 1 week.
+
+    You instinctively know the distance and direction to all your detached body parts. You can use the **Recall Body Part** power.
+
+    *For example, you could detach your eye and roll it beneath a door to watch events on the other side. You could split your body into a number of small pieces to cram into a tight space. You could detach your hand to have it crawl towards someone to creep them out.*
+  aside: |
+    {% smallpower %}
+    Recall Body Part:
+      type: Free
+      effect: |
+        Choose one body part currently detached from your body. The detached body part moves 5 feet towards your body, stopping if it hits a solid object.
+    {% endsmallpower %}
+
+Incorporeal Move:
+  tier: Undead
+  type: Passive
+  brief: You can walk through walls for a limited distance
+  effect: |
+    When you {Stride}, you can walk through walls and other solid objects. If you end your Stride inside of a solid object, you take 2d6 [[Force]] damage and are ejected to the nearest empty space.
+
+Lifesense:
+  tier: Undead
+  type: Free
+  brief: You sense the number and location of all nearby living creatures
+  tags:
+    range: 120 feet
+  effect: |
+    You sense the approximate location of each living creature within range. You can sense creatures accurately enough to know what square they're in, but not accurately enough to count as seeing them. You learn the Size of each creature you sense.
 
 No Vital Organs:
   tier: Undead
