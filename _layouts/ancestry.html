@@ -8,16 +8,6 @@ sidebar:
 
 {{ ancestry.effect | process }}
 
-<h3>Heritages</h3>
-
-<p>
-  When you make a {{ page.data[0] | downcase }} character, choose one of the following heritages.
-</p>
-
-{% for heritage in ancestry.heritages %}
-  {% include power.html power=heritage %}
-{% endfor %}
-
 <h2>Ancestry Feats</h2>
 
 <p>

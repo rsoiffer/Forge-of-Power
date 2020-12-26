@@ -19,16 +19,22 @@ effect: |
 
   TODO
 
-  ### Feats
+  ## Character Stats
 
-  * +4 to resist emotion effect
-  * Can trance instead of sleeping
-  * Mind meld - touch range telepathic links
-heritages:
-  Elf:
-    traits: [Humanoid]
-    tags:
-      attributes: +0 Strength, +1 Agility, +0 Intellect, +0 Spirit
-      misc stats: 30 feet Speed, +0 Size
-    effect: |
-      You gain an ancestry feat of your choice.
+  Attributes
+  : +0 Strength, +0 Agility, +0 Intellect, +0 Spirit
+
+  Misc Stats
+  : 30 feet Speed, +0 Size
+
+  ***Graceful and Sophisticated.*** You gain an attribute boost to Agility or Intellect.
+
+  ***Humanoid.*** You have the [[Humanoid]] trait.
+
+  ***Trance.*** You can meditate instead of sleeping. You can't use powers while meditating, but you are aware of your surroundings.
+
+  ***Long Memories.*** You gain two Lore proficiencies of your choice.
+
+  ***Elven Ancestry.*** You gain an ancestry feat of your choice.
+
+  *These stats are temporary and may change in the future.*

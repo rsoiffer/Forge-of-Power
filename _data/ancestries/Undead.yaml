@@ -19,17 +19,24 @@ effect: |
 
   TODO
 
-  ### Feats
+  ## Character Stats
 
-  * TODO
+  Attributes
+  : +0 Strength, +0 Agility, +0 Intellect, +0 Spirit
 
-heritages:
-  Undead:
-    traits: [Spirit]
-    tags:
-      attributes: +0 Strength, +0 Agility, +0 Intellect, +1 Spirit
-      misc stats: 30 feet Speed, +0 Size
-    effect: |
-      TODO.
+  Misc Stats
+  : 30 feet Speed, +0 Size
 
-      You gain an ancestry feat of your choice.
+  ***Varied.*** You gain an attribute boost of your choice.
+
+  ***Spirit.*** You have the [[Spirit]] trait. This means you don't age or grow old.
+  
+  ***Undead.*** You have the [[Undead]] trait. This means you don't need to eat, drink, or breathe. You have 20 [[Poison]] Shield and 5 [[Radiant]] Weakness.
+
+  ***Cling to Life.*** When you would reach 5 fatigue, if you haven't taken [[Radiant]] damage in the past minute, you instead go to 4 fatigue.
+
+  ***Necromantic Power.*** You learn a {Necromancer} ribbon of your choice.
+
+  ***Undead Ancestry.*** You gain an ancestry feat of your choice.
+
+  *These stats are temporary and may change in the future.*

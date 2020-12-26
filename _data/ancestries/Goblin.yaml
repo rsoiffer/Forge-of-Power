@@ -19,16 +19,22 @@ effect: |
 
   TODO
 
-  ### Feats
+  ## Character Stats
 
-  * Especially fast
-  * +2 to Engineering, Stealth, Survival
-  * Temporarily repair an item
-heritages:
-  Goblin:
-    traits: [Humanoid]
-    tags:
-      attributes: -1 Strength, +1 Agility, +1 Intellect, +0 Spirit
-      misc stats: 35 feet Speed, -1 Size
-    effect: |
-      You gain an ancestry feat of your choice.
+  Attributes
+  : -1 Strength, +1 Agility, +0 Intellect, +0 Spirit
+
+  Misc Stats
+  : 35 feet Speed, -1 Size
+
+  ***Varied.*** You gain an attribute boost of your choice.
+
+  ***Humanoid.*** You have the [[Humanoid]] trait.
+
+  ***Plant.*** You have the [[Plant]] trait. This means you have 5 [[Fire]] Weakness.
+
+  ***Cave Sight.*** You can see in total darkness as if it was dim light out to a distance of 30 feet.
+
+  ***Goblin Ancestry.*** You gain an ancestry feat of your choice.
+
+  *These stats are temporary and may change in the future.*

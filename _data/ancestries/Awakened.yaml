@@ -14,49 +14,48 @@ effect: |
 
   Most awakened live separately from humanoid society. Awakened rarely build settlements, preferring a natural lifestyle in tune with nature. Awakened sometimes live alongside non-awakened animals, which they might see as relatives who haven't yet been given the gift of intelligence. The awakened are loosely governed by the druidic conclaves that spread knowledge of the Awaken spell. These druidic conclaves awaken new animals as fast as they can, but the complex Awaken spell can only be cast by the most powerful druids, which greatly limits the rate of growth of the awakened population.
 
-  ### Adventurers
+  ## Character Stats
 
-  TODO
+  <aside markdown="1">
+  ### Different Animal Sizes
 
-heritages:
-  Tiny Awakened:
-    traits: [Beast]
-    tags:
-      attributes: -3 Strength, +2 Agility, +1 Intellect, +0 Spirit
-      misc stats: 40 feet Speed, -2 Size
-    effect: |
-      You gain an ancestry feat of your choice. You can use the **Mental Powerhouse** power.
-    fluff: Tiny awakened include cats, raccoons, and hawks.
-    aside: |
-      {% smallpower %}
-      Mental Powerhouse:
-        effect: |
-          Your mind is incredibly sharp and precise. You can complete lengthy mental tasks, such as calculating equations, making plans, or writing essays, 10 times faster than normal.
-      {% endsmallpower %}
+  Not all animals are +0 Size. If you want to play an especially large or small animal, pick one of the options below.
 
-  Small Awakened:
-    traits: [Beast]
-    tags:
-      attributes: -1 Strength, +1 Agility, +1 Intellect, +0 Spirit
-      misc stats: 35 feet Speed, -1 Size
-    effect: |
-      You gain an ancestry feat of your choice. You can use the **Mental Powerhouse** power.
-    fluff: Small awakened include dogs, eagles, and velociraptors.
+  #### Tiny Animal
+  *Tiny awakened include cats, raccoons, and hawks.*
 
-  Medium Awakened:
-    traits: [Beast]
-    tags:
-      attributes: +0 Strength, +0 Agility, +1 Intellect, +0 Spirit
-      misc stats: 30 feet Speed, +0 Size
-    effect: |
-      You gain an ancestry feat of your choice. You can use the **Mental Powerhouse** power.
-    fluff: Medium awakened include wolves, deer, and sharks.
+  You have -2 Strength and +2 Agility. Your Speed is 40 feet and your Size is -2.
 
-  Large Awakened:
-    traits: [Beast]
-    tags:
-      attributes: +1 Strength, -1 Agility, +1 Intellect, +0 Spirit
-      misc stats: 30 feet Speed, +1 Size
-    effect: |
-      You gain the {Natural Weapon} ancestry feat. You can use the **Mental Powerhouse** power.
-    fluff: Large awakened include bears, gorillas, and tigers.
+  #### Small Animal
+  *Small awakened include dogs, eagles, and velociraptors.*
+
+  You have -1 Strength and +1 Agility. Your Speed is 35 feet and your Size is -1.
+
+  #### Medium Animal
+  *Medium awakened include wolves, deer, and sharks.*
+
+  Your stats are unchanged.
+
+  #### Large Animal
+  *Large awakened include bears, gorillas, and tigers.*
+
+  You have +1 Strength and -1 Agility. Your Size is +1. Your Awakened Ancestry ability always gives you the **Natural Weapon** feat, you can't choose a different feat.
+  </aside>
+
+  Attributes
+  : +0 Strength, +0 Agility, +1 Intellect, +0 Spirit
+
+  Misc Stats
+  : 30 feet Speed, +0 Size
+
+  ***Beast.*** You have the [[Beast]] trait.
+
+  ***Humanoid.*** You have the [[Humanoid]] trait.
+
+  ***Keen Senses.*** You have sharp eyesight and a keen sense of smell. You can see in dim light as if it was bright light. You can sense or track creatures through scent alone.
+
+  ***Mental Powerhouse.*** Your mind is incredibly sharp and precise. You can complete lengthy mental tasks, such as calculating equations, making plans, or writing essays, 10 times faster than normal.
+
+  ***Natural Lore.*** You gain a Lore proficiency related to one natural environment that animals like you normally live in (such as *Plains Lore* or *Forest Lore*).
+
+  ***Awakened Ancestry.*** You gain an ancestry feat of your choice.

@@ -19,11 +19,23 @@ effect: |
 
   TODO
 
-  ### Feats
+  ## Character Stats
 
-  * Drop to 1
-  * Ork dash
-  * Bonus briefs/skills?
+  Attributes
+  : +1 Strength, +0 Agility, +0 Intellect, +0 Spirit
+
+  Misc Stats
+  : 30 feet Speed, +0 Size
+
+  ***Humanoid.*** You have the [[Humanoid]] trait.
+
+  ***Physical Power.*** You gain a {Berserker} ribbon of your choice.
+
+  ***Toughness.*** You have +2 maximum Health.
+
+  ***Orcish Ancestry.*** You gain an ancestry feat of your choice.
+
+  *These stats are temporary and may change in the future.*
 
 heritages:
   Orc:

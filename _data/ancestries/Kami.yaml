@@ -19,19 +19,20 @@ effect: |
 
   TODO
 
-  ### Feats
+  ## Character Stats
 
-  * Resistance to two damage types
-  * +2 to two skills
-  * A bonus Conjurer ribbon
+  Attributes
+  : +0 Strength, +0 Agility, +0 Intellect, +1 Spirit
 
-heritages:
-  Kami:
-    traits: [Spirit]
-    tags:
-      attributes: +0 Strength, +0 Agility, +0 Intellect, +1 Spirit
-      misc stats: 30 feet Speed, +0 Size
-    effect: |
-      TODO.
+  Misc Stats
+  : 30 feet Speed, +0 Size
 
-      You gain an ancestry feat of your choice.
+  ***Spirit.*** You have the [[Spirit]] trait. This means you don't age or grow old.
+
+  ***Celestial Background.*** You gain the *Heaven Lore* proficiency.
+
+  ***Divine Power.*** You have 10 [[Radiant]] Shield. You learn a {Druid} or {Healer} ribbon of your choice.
+
+  ***Kami Ancestry.*** You gain an ancestry feat of your choice.
+
+  *These stats are temporary and may change in the future.*

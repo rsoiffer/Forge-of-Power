@@ -19,21 +19,24 @@ effect: |
 
   TODO
 
-  ### Feats
+  ## Character Stats
 
-  * When wearing armor, you gain a +1 bonus to AC
-  * You have a +2 bonus to saving throws against fear effect
-  * Your unarmed strikes deal 1d4 damage
+  Attributes
+  : +1 Strength, +1 Agility, -1 Intellect, +0 Spirit
 
-heritages:
-  Lizardfolk:
-    traits: [Monster]
-    tags:
-      attributes: +1 Strength, +1 Agility, -1 Intellect, +0 Spirit
-      misc stats: 30 feet Speed, +0 Size
-    effect: |
-      You are cold-blooded. You only need to eat half as much food, but you get exhausted twice as quickly from cold environments.
+  Misc Stats
+  : 30 feet Speed, +0 Size
 
-      You are amphibious. You can swim at full speed, and you can hold your breath for up to 1 hour.
+  ***Humanoid.*** You have the [[Humanoid]] trait.
 
-      You gain an ancestry feat of your choice.
+  ***Monster.*** You have the [[Monster]] trait.
+
+  ***Amphibious.*** You can swim at your full Speed, and you can hold your breath for up to 1 hour.
+
+  ***Cold Blooded.*** You only need to eat half as much food, but you get exhausted twice as quickly from cold environments.
+
+  ***Vicious Bite.*** Your unarmed Strikes have 1d6 [[Piercing]] base damage.
+
+  ***Lizardfolk Ancestry.*** You gain an ancestry feat of your choice.
+
+  *These stats are temporary and may change in the future.*
