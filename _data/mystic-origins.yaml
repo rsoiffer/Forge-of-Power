@@ -4,6 +4,7 @@ Artificer:
   tags:
     magic: Your Magic stat equals your Intellect
     mana: Your Mana stat equals 4 + 2 * your Caster level
+    mana limit: Your Mana Limit stat equals 1 + half your Caster level (rounded up)
     rests: Your Mana pool replenishes when you complete an 8-hour rest
   effect: |
     You can use the **Infuse Item** power.
@@ -24,9 +25,10 @@ Bard:
   tags:
     magic: Your Magic stat equals your Spirit
     mana: Your Mana stat equals 4 + 2 * your Caster level
+    mana limit: Your Mana Limit stat equals 1 + half your Caster level (rounded up)
     rests: Your Mana pool replenishes when you complete an 8-hour rest
   effect: |
-    When you cast or sustain a spell, you can choose to simultaneously play music, dance, tell a story, or perform in another way. If you do, other creatures who are passively observing you don't realize you're casting or sustaining a spell, unless your spell has obvious physical effects. A creature who is actively studying you must successfully roll Intellect+Notice against your Spirit+Performance DC to realize you're casting or sustaining a spell.
+    When you cast or sustain a spell, you can choose to simultaneously play music, dance, tell a story, or perform in another way. If you do, other creatures who are passively observing you don't realize you're casting or sustaining a spell, unless your spell has obvious physical effects. A creature who is actively studying you must successfully roll Intellect+Notice against your Spirit+Perform DC to realize you're casting or sustaining a spell.
 
 Cleric:
   preface: |
@@ -34,6 +36,7 @@ Cleric:
   tags:
     magic: Your Magic stat equals your Spirit
     mana: Your Mana stat equals 4 + 2 * your Caster level
+    mana limit: Your Mana Limit stat equals 1 + half your Caster level (rounded up)
     rests: Your Mana pool replenishes when you complete an 8-hour rest
   effect: |
     When you reach Novice tier in a Mage or Priest class, choose one [[Spell]] talent in that class as your **domain spell** for that class. The cost of your domain spell is reduced by 1. You can change your domain spell whenever you level up.
@@ -44,6 +47,7 @@ Innate:
   tags:
     magic: Your Magic stat equals your Spirit
     mana: Your Mana stat equals 4 + 2 * your Caster level
+    mana limit: Your Mana Limit stat equals 1 + half your Caster level (rounded up)
     rests: Your Mana pool replenishes when you complete an 8-hour rest
   effect: |
     You don't need an arcane focus to cast or sustain spells. Your spells don't have the [[Manipulate]] trait.
@@ -54,9 +58,10 @@ Warlock:
   tags:
     magic: Your Magic stat equals your Intellect
     mana: Your Mana stat equals 4 + your Caster level
-    rests: Your Mana pool replenishes when you complete an 1-hour rest
+    mana limit: Your Mana Limit stat equals 1 + half your Caster level (rounded up)
+    rests: Your Mana pool replenishes when you complete a 1-hour rest
   effect: |
-    When you finish an 8-hour rest, you can try to bargain with your patron for more power. Make a Spirit roll against DC 15. On a success, your Mana stat increases by 4. On a failure, your Mana stat decreases by 4. Both effects end when you complete another 8-hour rest.
+    When you finish an 8-hour rest, you can try to bargain with your patron for more power. Make a Spirit+Eloquence roll against DC 15. On a success, your Mana stat increases by 4. On a failure, your Mana stat decreases by 4. Both effects end when you complete another 8-hour rest.
 
 Wizard:
   preface: |
@@ -64,6 +69,7 @@ Wizard:
   tags:
     magic: Your Magic stat equals your Intellect
     mana: Your Mana stat equals 4 + 2 * your Caster level
+    mana limit: Your Mana Limit stat equals 1 + half your Caster level (rounded up)
     rests: Your Mana pool replenishes when you complete an 8-hour rest
   effect: |
     When you reach Novice tier in a Mage or Priest class, you learn one [[Cantrip]] talent from that class. This talent doesn't count towards the normal limit of talents you know from that class.

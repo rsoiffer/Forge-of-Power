@@ -30,26 +30,26 @@ Fighting Style:
   tier: Novice
   type: Passive
   brief: You specialize in a particular style of combat
+  traits: [Specialize]
   effect: |
-    When you learn this power, choose one of the following effects.
+    Since this power has the [[Specialize]] trait, you choose one of the specializations to the right when you learn this power.
+  aside: |
+    ### Specializations
 
-    Aggressor
-    : Your Speed is doubled during the first round of each encounter
+    #### Aggressor
+    Your Speed is doubled during the first round of each encounter.
 
-    Blind Fighter
-    : The {blinded} condition doesn't make you {flat-footed} or impose disadvantage on your attack rolls
+    #### Executioner
+    You have a +2 bonus to attacks against {bloodied} targets.
 
-    Executioner
-    : You have a +2 bonus to attacks against {bloodied} targets
+    #### Mariner
+    You have a Swim Speed equal to your Speed, and you have a +1 bonus to Agility DC.
 
-    Mariner
-    : You have a Swim Speed equal to your Speed, and you have a +1 bonus to Agility DC
+    #### Opportunist
+    You have a +2 bonus to attacks against targets are that {restrained}, {slowed}, or {stunned}.
 
-    Opportunist
-    : You have a +2 bonus to attacks against targets are that {restrained}, {slowed}, or {stunned}
-
-    Weapon Master
-    : Your first Strike each encounter with each weapon type deals an extra +2 damage on a success
+    #### Weapon Master
+    Your first Strike each encounter with each weapon type deals an extra +2 damage on a success.
 
 Versatile Style:
   tier: Novice

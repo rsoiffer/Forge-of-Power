@@ -36,7 +36,7 @@ Skills describe broad types of actions your character might specialize in.
       {% if power[1].tier == skill[0] %}
         <tr>
           <td>
-            <a href="feats-combat.html#{{ power[0] | slugify }}">{{ power[0] }}</a>
+            <a href="feats-skill.html#{{ power[0] | slugify }}">{{ power[0] }}</a>
           </td>
           <td>
             {% unless power[1].type == "Passive" %}

@@ -162,6 +162,9 @@ aside {
   .tags {
     margin-bottom: 0;
     // border-bottom: 1px solid $border-color;
+    dt {
+      text-transform: capitalize;
+    }
   }
   hr {
     margin: 0;

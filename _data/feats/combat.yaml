@@ -193,6 +193,8 @@ Reshape Spell:
   effect: |
     When you cast a spell with an area that is shaped like a burst, a cone, or a line, you can change the area's shape to another shape from that list. The size of the area changes according to the following rule: burst sizes, cone sizes, and line sizes are proportional like 2, 3, and 4. For example, you could change a 10-foot burst to a 15-foot cone or a 20-foot line.
 
+    If you reshape a cone or line without a range into a burst, then the new area is an emanation instead of a burst.
+
 Sculpt Spell:
   tier: Orb
   type: Passive

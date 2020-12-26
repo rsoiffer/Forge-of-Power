@@ -1,3 +1,11 @@
+Blind Fighter:
+  type: Passive
+  brief: You are an effective fighter even when you're unable to see
+  effect: |
+    As long as you can hear and feel, you can sense objects within 30 feet as well as if you could see. The {blinded} condition has no effect on you besides making you critically fail {Notice} rolls that rely on sight.
+  fluff: |
+    The GM should give this as a free feat to all permanently blind player characters.
+
 Bonus Ribbons:
   type: Passive
   brief: You learn any two ribbons of your choice

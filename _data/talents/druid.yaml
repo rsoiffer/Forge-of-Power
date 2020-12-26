@@ -102,7 +102,7 @@ Awaken:
     After the transformation, your target is usually friendly towards you, though they may be shocked by the sudden change. If your target was loyal to you before the transformation, they act as a [[Minion]] loyal to you for the next hour, after which they become a normal NPC.
 
 Instant Tree:
-  tier: Novice
+  tier: Veteran
   type: 1-Action
   brief: You cause a tree to appear, growing with explosive force
   traits: [Attack, Bludgeoning, Spell]

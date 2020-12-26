@@ -21,7 +21,7 @@ All spells have a **cost** in Mana. You must pay this amount of Mana when you ca
 
 ## Heightening Spells
 
-You can **heighten** some spells to increase their effect, at the cost of paying more Mana to use the spell. When you cast a spell, you can choose to pay more Mana than the listed cost, up to a limit of half your character's total Mana.
+You can **heighten** some spells to increase their effect, at the cost of paying more Mana to use the spell. When you cast a spell, you can choose to pay more Mana than the listed cost, up to a limit of your character's **Mana Limit** stat. Your Mana Limit stat is given by your [mystic origin](mystic-origins.html).
 
 If a spell's description has an entry that reads **Heightened (per +X Mana)**, then for each X Mana you pay above the base cost, the effect is modified as listed. If a spell's description has an entry that reads **Heightened (total X Mana)**, then if you pay a total of at least X mana, the effect is modified as listed. If a spell's descriptions has multiple **Heightened** enties, then all of them apply.
 

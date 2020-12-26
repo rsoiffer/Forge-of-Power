@@ -20,9 +20,11 @@ Counterspell:
     range: 120 feet
     trigger: Your target casts a spell
   effect: |
-    Roll 1d6 and add the cost of this spell. If your result is higher than the cost of the triggering spell, the triggering spell doesn't take effect.
+    Roll a d6. If your result is higher than the cost of the triggering spell, the triggering spell doesn't take effect. The cost of the triggering spell is calcuated before any effects that reduce the spell's cost.
 
-    Both costs are calcuated before any effects that reduce the spell's cost.
+    #### Heightened
+
+    For each +1 Mana, add 1 to the result of the d6.
 
 Dispel Magic:
   tier: Novice
