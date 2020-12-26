@@ -77,6 +77,16 @@ Charades:
   effect: |
     You can easily communicate silently with other creatures through rapid hand gestures and signals, and can easily understand them in turn, even if the other creature has no proficiency in any sign language. You can replace the [[Auditory]] trait of any power you use with the [[Visual]] trait.
 
+Scary Shiny Glasses:
+  tier: Ribbon
+  type: Free
+  brief: You adjust your glasses, and they glint in the light to hide your eyes
+  traits: [Encounter]
+  tags:
+    trigger: You make an Intellect roll as part of forming a plot
+  effect: |
+    You have advantage on the triggering roll.
+
 Silver Tongue:
   tier: Ribbon
   type: Free

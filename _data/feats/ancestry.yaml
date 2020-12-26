@@ -196,7 +196,7 @@ Immortal:
   type: Passive
   brief: You have the gift of immortality, and you can never truly die
   effect: |
-    When you die, you appear in Heaven unharmed. You can descend to the material world by performing a 1-hour ritual.
+    When you die, you instantly appear in Heaven with full health and 0 fatigue. You can descend to the material world by performing a 1-hour ritual. You reappear in a safe location within 1 mile of the place you died.
 
 # Lizardfolk
 
