@@ -204,16 +204,24 @@ Dragon's Breath:
   tier: Lizardfolk
   type: 1-Action
   brief: You breathe elemental energy like the breath weapon of a dragon
-  traits: [Attack, Encounter]
+  traits: [Attack, Encounter, Specialize]
   tags:
     area: 30-foot line
   effect: |
-    When you first pick this feat, choose one of [[Acid]], [[Cold]], [[Electricity]], [[Fire]], or [[Poison]]. This power permanently gains that trait for you.
-
     Make a Strength attack roll against your target's Agility DC.
-  critical-success: Your target takes 4d8 + your character level damage
-  success: Your target takes 2d8 + your character level damage
-  failure: Half damage
+
+    Critical Success
+    : Double damage
+
+    Success
+    : Your target takes 2d8 + your Level damage
+
+    Failure
+    : Half damage
+  aside: |
+    ### Specializations
+
+    Choose one of [[Acid]], [[Cold]], [[Electricity]], [[Fire]], or [[Poison]]. This power permanently gains that trait for you.
 
 Lizard King:
   tier: Lizardfolk
