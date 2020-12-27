@@ -1,0 +1,123 @@
+Angry Spirit:
+  traits: [Spirit]
+  tags:
+    attributes: Strength -3, Agilty +2, Intellect +1, Spirit +3
+    other stats: Health 15, Defense 12, Speed 30 feet, Size +0
+  effect: |
+    Claw Strike {% icon 1-Action %}
+    : +2 vs. Defense, 1d10+2 [[Slashing]] damage
+
+    Incorporeal Move
+    : As the {Incorporeal Move} feat
+
+    Scream {% icon 1-Action %}
+    : +3 vs. Spirit DC, range 60, 2d6 [[Fear]] damage
+
+Bear:
+  traits: [Beast]
+  tags:
+    attributes: Strength +6, Agilty +0, Intellect -3, Spirit -1
+    other stats: Health 50, Defense 14, Speed 40 feet, Size +1
+  effect: |
+    Claw Strike {% icon 1-Action %}
+    : +6 vs. Defense, 2d6+6 [[Slashing]] damage
+
+Blowtoad:
+  traits: [Beast, Monster]
+  tags:
+    attributes: Strength -5, Agilty +0, Intellect -4, Spirit -2
+    other stats: Health 2, Defense 10, Speed 20 feet, Size -2
+  effect: |
+    Explode {% icon Reaction %}
+    : 10-foot emanation, +5 vs. Agility DC, 2d6 [[Fire]] damage
+
+Elk:
+  traits: [Beast]
+  tags:
+    attributes: Strength +3, Agilty +0, Intellect -4, Spirit -1
+    other stats: Health 15, Defense 11, Speed 50 feet, Size +1
+  effect: |
+    Antler Strike {% icon 1-Action %}
+    : +3 vs. Defense, 1d6+3 [[Piercing]] damage
+
+    Charge {% icon Free %}
+    : Once/encounter, {Stride}, then **Antler Strike** for an extra 2d6 damage
+
+Giant Squirrel:
+  traits: [Beast, Monster]
+  tags:
+    attributes: Strength +2, Agilty +5, Intellect -4, Spirit -2
+    other stats: Health 30, Defense 15, Speed 40 feet (climb), Size +1
+  effect: |
+    Bite Strike {% icon 1-Action %}
+    : +5 vs. Defense, 2d4+5 [[Piercing]] damage
+
+Griffon (Young):
+  traits: [Beast, Monster]
+  tags:
+    attributes: Strength +5, Agilty +3, Intellect -4, Spirit +2
+    other stats: Health 50, Defense 15, Speed 40 feet (fly), Size +1
+  effect: |
+    Beak Strike {% icon 1-Action %}
+    : +5 vs. Defense, 2d6+5 [[Piercing]] damage
+
+Griffon (Adult):
+  traits: [Beast, Monster]
+  tags:
+    attributes: Strength +6, Agilty +4, Intellect -3, Spirit +3
+    other stats: Health 150, Defense 17, Speed 60 feet (fly), Size +2
+  effect: |
+    Beak Strike {% icon 1-Action %}
+    : +6 vs. Defense, 3d6+6 [[Piercing]] damage
+
+Horse:
+  traits: [Beast]
+  tags:
+    attributes: Strength +4, Agilty +0, Intellect -4, Spirit -1
+    other stats: Health 20, Defense 11, Speed 60 feet, Size +1
+  effect: |
+    Hoof Strike {% icon 1-Action %}
+    : +4 vs. Defense, 1d4+4 [[Piercing]] damage
+
+Skeleton:
+  traits: [Spirit, Undead]
+  tags:
+    attributes: Strength +0, Agilty +2, Intellect -2, Spirit -3
+    other stats: Health 10, Defense 12, Speed 30 feet, Size +0
+  effect: |
+    5 [[Bludgeoning]] Weakness, 5 [[Radiant]] Weakness, 20 [[Poison]] Shield.
+
+    Revives after a day if it hadn't taken [[Radiant]] damage within 1 minute of dying.
+
+    Sword Strike {% icon 1-Action %}
+    : +2 vs. Defense, 1d8+2 [[Bludgeoning]] damage
+
+Wild Tree:
+  traits: [Monster, Plant]
+  tags:
+    attributes: Strength +6, Agilty -1, Intellect -1, Spirit +1
+    other stats: Health 150, Defense 15, Speed 30 feet, Size +2
+  effect: |
+    The Wild Tree has a Reach of 30 feet.
+
+    Entangle {% icon Free %}
+    : {Grapple} someone
+
+    Slam Strike {% icon 1-Action %}
+    : +6 vs. Defense, 3d6+6 [[Bludgeoning]] damage, 5 feet knockback
+
+    Thrown Rock Strike {% icon 1-Action %}
+    : +6 vs. Defense, range 60, 1d10+6 [[Bludgeoning]] damage, roll for Wild Magic
+
+Zombie:
+  traits: [Spirit, Undead]
+  tags:
+    attributes: Strength +1, Agilty -2, Intellect -2, Spirit -3
+    other stats: Health 20, Defense 10, Speed 25 feet, Size +0
+  effect: |
+    5 [[Radiant]] Weakness, 20 [[Poison]] Shield.
+
+    Revives after a day if it hadn't taken [[Radiant]] damage within 1 minute of dying.
+
+    Slam Strike {% icon 1-Action %}
+    : +1 vs. Defense, 1d6+1 [[Bludgeoning]] damage

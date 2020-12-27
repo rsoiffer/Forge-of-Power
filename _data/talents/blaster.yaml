@@ -71,7 +71,7 @@ Lightning Beam:
 
     #### Heightened
 
-    For each +1 Mana, the damage of **Zap** increases by 1d10.
+    For each +1 Mana, the damage of **Zap** increases by 1d6.
   aside: |
     {% smallpower %}
     Zap:
@@ -83,7 +83,7 @@ Lightning Beam:
         Make a Magic attack roll against your target's Defense.
 
         Success
-        : Your target takes 2d10 damage
+        : Your target takes 2d6 damage
 
         Failure
         : Half damage
