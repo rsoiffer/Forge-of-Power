@@ -1,0 +1,47 @@
+Bare-Fisted Monk:
+  base: |
+    Pick an ancestry and a background. Try to get at least +1 Agility.
+
+    Pick the Martial Disciple background. This gives you +2 Agility and the {Daredevil Acrobat}, {Alert}, and {Grabbing Fist} feats. It also gives you the *Warfare Lore*, *Mountain Lore*, and *Calligrapher’s Supplies* proficiencies.
+  levels:
+  - class: "{Acrobat} 1"
+    talent: "{Crane Stance}"
+    feat_asi: "{Kickboxer}"
+    ribbon_perk: "{Slow Fall}"
+  - class: "{Acrobat} 2"
+    talent: "{Stunning Strike}"
+    feat_asi: +1 Strength
+    ribbon_perk: +2 Religion
+  - class: "{Warblade} 1"
+    talent: "{Fighting Style} (Opportunist)"
+    feat_asi: "{Burst of Power}"
+    ribbon_perk: "{Style Master}"
+  - class: "{Acrobat} 3"
+    talent: "{Incredible Movement}"
+    feat_asi: +1 Agility
+    ribbon_perk: +2 Stealth
+  - class: "{Duelist} 1"
+    talent: "{Attack of Opportunity}"
+    feat_asi: "[Ancestry Feat](feats-ancestry.html)"
+    ribbon_perk: "{Quick Climb}"
+  - class: "{Warblade} 2"
+    talent: "{Combo Move}"
+    feat_asi: +1 Spirit
+    ribbon_perk: +2 Notice
+
+Elemental Bender:
+  base: |
+    Pick an ancestry and a background. Try to get at least +1 Spirit.
+
+    Pick the Acolyte background. This gives you +2 Spirit and the {Holy Symbol}, {Mystic Bolt}, and {Befriend Animal} feats. It also gives you the *Scribing Lore*, *Mountain Lore*, and *Weather Lore* proficiencies.
+
+    Pick the Innate mystic origin.
+  levels:
+  - class: "{Elementalist} 1"
+    talent: "{Elemental Blast}"
+    feat_asi: "{Blessed Luck}"
+    ribbon_perk: "{Feather Fall}"
+  - class: "{Blaster} 1"
+    talent: "{Lightning Beam}"
+    feat_asi: +1 Agility
+    ribbon_perk: +2 Athletics

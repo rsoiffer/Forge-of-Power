@@ -227,7 +227,7 @@ Holy Symbol:
     perk: +2 Religion
     trigger: You make a die roll
   effect: |
-    Roll a d6 and add your result as a bonus to the triggering roll.
+    Roll a d4 and add your result as a bonus to the triggering roll.
 
 # Society
 
@@ -299,7 +299,7 @@ Experienced Tracker:
   tags:
     perk: +2 Nature
     trigger: You roll Intellect+Nature to investigate or follow tracks
-    requirements: You haven't used Experience Tracker on these tracks in the last 24 hours
+    requirements: You haven't used **Experienced Tracker** on these tracks in the last 24 hours
   effect: |
     You have a +10 bonus to the triggering roll. Additionally, you notice a hidden bit of information of the DM's choice about the creatures you're tracking. For example, you might notice that the creatures are walking single-file to hide their numbers, that the tracks match a specific style of boot, or that the creatures were moving with unusual haste.
 

@@ -5,6 +5,16 @@ Aerial Artistry:
   effect: |
     When you {Stride}, you can choose to make two short leaps instead of moving normally. For each leap, fly a distance through the air equal to half your Speed. You must end each leap on a creature, solid object, or the ground. If you do not, you fall and your Stride ends.
 
+Crane Stance:
+  tier: Novice
+  type: Free
+  brief: You enter a stance of flowing, defensive motions as you punch opponents
+  traits: [Stance]
+  tags:
+    requirements: Your Defense is calculated with Agility
+  effect: |
+    You have +1 Defense, but the only Strikes you can make are unarmed Strikes. Your unarmed Strikes deal 1d6 [[Bludgeoning]] base damage and have the [[Finesse]] trait. You have a +5 feet bonus to Speed.
+
 Evasive Dash:
   tier: Novice
   type: 1-Action
@@ -19,7 +29,7 @@ Incredible Movement:
   type: Passive
   brief: You can run at incredible, almost superhuman speeds
   effect: |
-    While you're wearing [light clothing](equipment.html#light-clothing), you gain a bonus to your Speed equal to 5 feet * your Acrobat level.
+    While your Defense is calculated with Agility, you gain a bonus to your Speed equal to 5 feet * your Acrobat level.
 
 Leap Attack:
   tier: Novice
