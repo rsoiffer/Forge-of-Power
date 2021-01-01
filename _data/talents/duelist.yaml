@@ -7,15 +7,6 @@ Attack of Opportunity:
   effect: |
     You lash out at a foe that leaves an opening. Make a melee {Strike} against the triggering creature. If your Strike is a critical success and the trigger is a [[Manipulate]] power, you disrupt that power.
 
-Combat Reflexes:
-  tier: Novice
-  type: Passive
-  brief: You can react quickly to multiple events at once
-  tags:
-    prerequisites: Any Duelist {% icon Reaction %} talent 
-  effect: |
-    You can use an extra Duelist {% icon Reaction %} talent each round, bypassing the normal limit of one {% icon Reaction %} power per round.
-
 Dueling Parry:
   tier: Novice
   type: Reaction
@@ -40,6 +31,33 @@ Feint:
   critical-success: You have a +15 bonus to your next melee {Strike} against your target
   success: You have a +10 bonus to your next melee {Strike} against your target
 
+Prepared Defense:
+  tier: Novice
+  type: 1-Action
+  brief: You enter a stance that lets you intercept and counter enemy attacks
+  tags:
+    duration: Until the start of your next turn
+  effect: |
+    You have +5 Defense. You can use the **Prepared Counter** power.
+  aside: |
+    {% smallpower %}
+    Prepared Counter:
+      type: Reaction
+      tags:
+        trigger: A creature makes a melee Strike against you
+      effect: |
+        Make a melee {Strike} against the triggering creature.
+    {% endsmallpower %}
+
+Riposte:
+  tier: Novice
+  type: Reaction
+  brief: You quickly counterattack when an enemy fails to hit you
+  tags:
+    trigger: A creature fails a melee Strike against you
+  effect: |
+    Make a melee {Strike} against the triggering creature.
+
 Singular Focus:
   tier: Novice
   type: 1-Action
@@ -49,6 +67,24 @@ Singular Focus:
     duration: 1 minute, or until you use this power again
   effect: |
     You have a +2 bonus to attacks against your target.
+
+Sudden Lunge:
+  tier: Novice
+  type: Free
+  brief: You surprise your opponent with a sudden burst of speed
+  traits: [Encounter]
+  tags:
+    trigger: You make a melee Strike
+  effect: |
+    The triggering Strike has +5 feet reach and a +5 bonus to the attack roll.
+
+Tiger Stance:
+  tier: Novice
+  type: 1-Action
+  brief: You enter the stance of a tiger, punching with speed and fury
+  traits: [Stance]
+  effect: |
+    Your unarmed Strikes deal 1d8 [[Bludgeoning]] base damage and have the [[Finesse]] trait. You have a +1 bonus to unarmed Strikes.
 
 Counterattack:
   tier: Veteran
@@ -61,6 +97,51 @@ Counterattack:
     target: The creature attacking you
   effect: |
     Make a melee {Strike} against your target. Your attack roll is the DC of your target's Strike, and your target's attack roll is the DC of your Strike.
+
+Combat Reflexes:
+  tier: Veteran
+  type: Passive
+  brief: You can react quickly to multiple events at once
+  tags:
+    prerequisites: Any Duelist {% icon Reaction %} talent 
+  effect: |
+    You can use an extra Duelist {% icon Reaction %} talent each round, bypassing the normal limit of one {% icon Reaction %} power per round.
+
+Dueling Guard:
+  tier: Veteran
+  type: Passive
+  brief: You are even better at parrying attacks from one target
+  tags:
+    prerequisites: Dueling Parry
+  effect: |
+    Your {Dueling Parry} power gives you +4 Defense instead of +2 Defense.
+
+Flurry of Strikes:
+  tier: Veteran
+  type: 1-Action
+  brief: You attack in a blur of movement, striking twice in rapid succession
+  traits: [Encounter]
+  effect: |
+    Make two melee Strikes against the same target.
+
+Penetrating Strike:
+  tier: Veteran
+  type: 1-Action
+  brief: You attack in just the right way to slip past your enemy's shields
+  effect: |
+    Make a melee Strike. This Strike ignores all Shield your target has.
+
+Done Holding Back:
+  tier: Ribbon
+  type: Free
+  brief: You reveal you've actually been holding back this whole time
+  traits: [Daily]
+  tags:
+    duration: Until the end of your turn
+  effect: |
+    You have advantage on the next melee Strike you make.
+  fluff: |
+    I am not left-handed!
 
 Flourish:
   tier: Ribbon
@@ -87,6 +168,15 @@ Renowned Duelist:
   traits: [Reputation]
   effect: |
     You have a reputation as an expert duelist who has defeated many opponents. Other people respect your combat prowess and trust you to fight with honor.
+
+Weapons Expert:
+  tier: Ribbon
+  type: 1-Action
+  brief: You instantly analyze a weapon, learning all its special properties
+  tags:
+    target: One weapon you can see within 10 feet
+  effect: |
+    You learn all the properties of your target: its type, cost, damage, quality, any permanent enchantments on it, and so on. You don't learn whether the weapon has any magical spells affecting it other than permanent enchantments, including curses.
 
 # Deflect Bullet:
 #   tier: Novice

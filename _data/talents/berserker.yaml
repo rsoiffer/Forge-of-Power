@@ -22,6 +22,13 @@ Iron Sweep:
   effect: |
     Make a melee {Strike}. This strike targets two enemies you can reach that are adjacent to each other.
 
+Mindless Fury:
+  tier: Novice
+  type: Passive
+  brief: Your mind is filled with rage instead of thoughts, disrupting mental effects
+  effect: |
+    You have a +5 bonus to your DC against [[Mental]] powers.
+
 Power Attack:
   tier: Novice
   type: 1-Action
@@ -43,6 +50,25 @@ Rage:
     * You take a -2 penalty to Defense
     * You can't use [[Concentrate]] powers
 
+Reckless Attack:
+  tier: Novice
+  type: Free
+  brief: You lash out aggressively, ignoring your own defenses
+  tags:
+    duration: Until the start of your next turn
+  effect: |
+    You have advantage on all melee Strikes, but you are {flat-footed}.
+
+Second Wind:
+  tier: Novice
+  type: Free
+  brief: You find your second wind when most injured, preparing to fight on
+  traits: [Daily, Healing]
+  tags:
+    requirements: You are {bloodied}, and you are currently in combat
+  effect: |
+    You heal 2d6 + 2 * Strength health.
+
 Bloody Retribution:
   tier: Veteran
   type: Free
@@ -52,7 +78,7 @@ Bloody Retribution:
     requirements: You are {bloodied}
     trigger: You make a melee {Strike} against a creature that has dealt damage to you within the past minute
   effect: |
-    You have a +10 bonus to the Strike.
+    You have a +10 bonus to the triggering Strike.
 
 Frequent Rage:
   tier: Veteran
@@ -62,7 +88,53 @@ Frequent Rage:
     prerequisites: Rage
   effect: |
     Your {Rage} power is [[Encounter]] instead of [[Daily]].
-  fluff: That's my secret, Cap. I'm always angry.
+  fluff: |
+    That's my secret, Cap. I'm always angry.
+
+Ground Smash:
+  tier: Veteran
+  type: 1-Action
+  brief: You smash the ground, sending out a shockwave in all directions
+  traits: [Bludgeoning, Encounter]
+  tags:
+    area: 30-foot cone or 20-foot emanation
+  effect: |
+    Make a Strength attack roll against your target's Agility DC.
+
+    Success
+    : Your target takes 3d6 + Strength damage and falls {prone}
+
+    Failure
+    : Half damage
+
+Retaliation:
+  tier: Veteran
+  type: Reaction
+  brief: You immediately strike out in revenge when you get hit
+  tags:
+    trigger: You take damage from a creature you can reach
+  effect: |
+    Make a melee {Strike} against the triggering creature.
+
+Third Wind:
+  tier: Veteran
+  type: Passive
+  brief: You never run out of second winds, and can always recover strength
+  tags:
+    prerequisites: Second Wind
+  effect: |
+    Your {Second Wind} power is [[Encounter]] instead of [[Daily]].
+
+Abs of Steel:
+  tier: Ribbon
+  type: Passive
+  brief: Your bare skin is as tough as others' metal armor
+  tags:
+    requirements: You are not wearing apparel
+  effect: |
+    Your Defense is equal to 10 + Strength.
+  fluff: |
+    It is strongly recommended that your character shows at least some skin in the stomach/torso area while using this power. What's the point of having abs of steel if no one can see them?
 
 Environmental Resilience:
   tier: Ribbon
@@ -70,6 +142,15 @@ Environmental Resilience:
   brief: You are used to surviving in harsh climates
   effect: |
     Moderately harsh environments, such as extreme temperatures or strong winds, have no adverse effect on you. This doesn't apply to environments that are extreme enough to deal damage, such as the heat of a bonfire or the pressure of the deep ocean.
+
+Frenzy:
+  tier: Ribbon
+  type: Free
+  brief: You lash out in a frenzy, recklessly using up all your stamina
+  tags:
+    trigger: You make a melee {Strike}
+  effect: |
+    You have a +5 bonus to the triggering Strike. At the end of your turn, you gain 1 fatigue.
 
 Powerful Build:
   tier: Ribbon

@@ -7,6 +7,26 @@ Combo Move:
   effect: |
     Make a {Strike} against the target of the triggering Strike.
 
+Crippling Strike:
+  tier: Novice
+  type: 1-Action
+  brief: Your strike inflicts a serious status condition on your target
+  traits: [Encounter]
+  tags:
+    duration: Until the end of your next turn
+  effect: |
+    Make a melee {Strike}.
+
+    If your Strike is a success (but not a critical success), choose one of the following effects:
+    * Your target is {dazzled}
+    * Your target is {flat-footed}
+    * Your target is {slowed}
+
+    If your Strike is a critical success, choose one of the following effects:
+    * Your target is {blinded}
+    * Your target is {immobilized}
+    * Your target is {incapacitated}
+
 Empowered Strike:
   tier: Novice
   type: 1-Action
@@ -51,13 +71,54 @@ Fighting Style:
     #### Weapon Master
     Your first Strike each encounter with each weapon type deals an extra +2 damage on a success.
 
+Finishing Blow:
+  tier: Novice
+  type: 1-Action
+  brief: You strike a damaged target with a special move to finish them off
+  traits: [Death, Encounter]
+  effect: |
+    Make a melee {Strike}. If your target is {bloodied}, this Strike deals double damage. If this Strike reduces your target to 0 health, they instantly die.
+
 Versatile Style:
   tier: Novice
   type: Free
   brief: You can instantly master all kinds of weapons
-  traits: [Stance]
+  tags:
+    duration: Until you use this power again
   effect: |
     You learn one combat feat of your choice.
+
+Wolf Stance:
+  tier: Novice
+  type: Free
+  brief: You enter the stance of a wolf, with your hands held with fanged teeth
+  traits: [Stance]
+  effect: |
+    Your unarmed Strikes deal 1d8 [[Piercing]] base damage and have the [[Finesse]] trait.
+
+    When you make an unarmed Strike against a flanked target, you have advantage on the Strike. If this Strike critically succeeds, your target falls {prone}.
+  aside: |
+    ### Flanked Condition
+
+     A target is flanked when you can draw a line between you and an ally that passes through your target's space, and you and your ally are both adjacent to your target.
+
+Avalanche Fist:
+  tier: Veteran
+  type: 1-Action
+  brief: You knock an enemy into a wall and leap to follow up
+  traits: [Attack, Bludgeoning, Encounter]
+  tags:
+    target: One creature you can reach
+  effect: |
+    Make a Strength attack roll against your target's Strength DC.
+
+    Critical Success
+    : Your target takes 4d6 damage and is pushed 40 feet in any direction
+
+    Success
+    : Your target takes 2d6 damage and is pushed 20 feet in any direction
+
+    If you push your target, you can choose to move to a space adjacent to them, and this power gains the [[Move]] trait. If you push your target into a solid object, they take 1d6 damage for each 10 feet they moved.
 
 Iron Heart Surge:
   tier: Veteran
@@ -69,7 +130,43 @@ Iron Heart Surge:
   effect: |
     Choose any number of powers currently affecting you. You are immune to the effects of this use of those powers. Future uses of those powers can still affect you, and those powers can still affect other creatures.
 
-    You can use Iron Heart Surge even when an effect would normally stop you from using it.
+    You can use **Iron Heart Surge** even when an effect would normally stop you from using it.
+
+Lightning Recovery:
+  tier: Veteran
+  type: Reaction
+  brief: You instantly reverse your Strike's direction and attack again
+  traits: [Encounter, Fortune]
+  tags:
+    trigger: You fail a melee Strike
+  effect: |
+    Reroll the triggering Strike.
+
+Raptor Pounce:
+  tier: Veteran
+  type: Free
+  brief: You follow after an enemy you hit previously, continuing your assault
+  traits: [Encounter, Move]
+  tags:
+    range: 30 feet
+    requirements: You succeeded on a Strike against your target in the previous round
+    duration: Until the end of your turn
+  effect: |
+    You move to an empty space adjacent to your target. You have advantage on Strikes against your target.
+
+Steel Wind Strike:
+  tier: Veteran
+  type: 1-Action
+  brief: You flash between a group of enemies, attacking all of them at once
+  traits: [Encounter, Move]
+  tags:
+    range: 30 feet
+    area: 20-foot burst
+    target: Any number of creatures within the area
+  effect: |
+    You move to a space adjacent to your target, then make a melee {Strike} against them.
+  fluff: |
+    You can choose the order in which you Strike each of your targets.
 
 Call Weapon:
   tier: Ribbon
@@ -79,7 +176,7 @@ Call Weapon:
   effect: |
     Your bonded weapon instantly teleports into your hand. This power works no matter the distance between you and your bonded weapon.
 
-    You can bond with a new weapon by conducting a 1-hour ritual involving the new weapon. You can only have one bonded weapon at a time.
+    You can bond with a weapon by conducting a 1-hour ritual involving the new weapon. You can only have one bonded weapon at a time.
 
 Damage Mastery:
   tier: Ribbon
@@ -87,6 +184,13 @@ Damage Mastery:
   brief: You can deal any type of damage with any weapon
   effect: |
     When your Strike would deal [[Bludgeoning]], [[Piercing]], or [[Slashing]] damage, you can replace that trait with a different one from that list.
+
+Improvised Weapon:
+  tier: Ribbon
+  type: Passive
+  brief: You can fight with mundane objects as if they were deadly weapons
+  effect: |
+    When you hold an inanimate object, you can choose to treat it as a weapon it is similar to (as determined by the GM). For example, you could treat a chair leg as a {bludgeon}, a lamppost as a {polearm}, or a fire iron as a {sword}.
 
 Overconfidence:
   tier: Ribbon

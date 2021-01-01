@@ -3,6 +3,7 @@ Brace:
   type: 1-Action
   brief: You ready yourself to defend against a particular damage type
   tags:
+    requirements: You haven't used {Stride} yet this turn
     duration: Until the start of your next turn
   effect: |
     You are {slowed}, but you gain (10 + Strength) Shield against a damage type of your choice.
@@ -34,7 +35,45 @@ Heavy Armor Master:
   tags:
     requirements: You are wearing apparel that adds your Strength to Defense
   effect: |
-    You have [[Physical]] Shield equal to your Guardian level.
+    You have [[Physical]] Shield equal to 2 + your Guardian level.
+
+Knockdown:
+  tier: Novice
+  type: Free
+  brief: You knock enemies to the ground with your strongest hits
+  traits: [Encounter]
+  tags:
+    trigger: You succeed on a melee Strike
+  effect: |
+    The target of the triggering Strike falls {prone}.
+
+Sentinel:
+  tier: Novice
+  type: Reaction
+  brief: You strike at enemies that try to run away from you, blocking them
+  tags:
+    trigger: A creature you can reach uses a [[Move]] power or leaves a square during a [[Move]] power it's using
+  effect: |
+    Make a melee {Strike} against the triggering creature. On a success, you disrupt the triggering [[Move]] power.
+
+Taunting Shout:
+  tier: Novice
+  type: 1-Action
+  brief: You let out a shout that draws the attention of all enemies nearby
+  traits: [Auditory, Attack, Emotion, Encounter]
+  tags:
+    area: 30-foot emanation
+    target: Any number of creatures within the area
+    duration: 1 minute
+  effect: |
+    Make a Spirit+Provoke attack against your target's Spirit DC.
+
+    Success
+    : Your target is **taunted** by you
+  aside: |
+    ### Taunted Condition
+
+    If you are taunted by an enemy, you are entirely focused on that enemy. Whenever you make an attack, you must target that enemy if possible. In addition, you cannot use [[Move]] powers to move away from that enemy.
 
 Tenacity:
   tier: Novice
@@ -52,6 +91,15 @@ Cover Move:
   effect: |
     Your {Cover Ally} power targets an ally you can see within 30 feet. When you use Cover Ally and target an ally not adjacent to you, Cover Ally gains the [[Move]] trait and you move to an empty space adjacent to your ally.
 
+Improved Brace:
+  tier: Veteran
+  type: Passive
+  brief: You are even better at hunkering down to resist incoming damage
+  tags:
+    prerequisites: Brace
+  effect: |
+    Your {Brace} power gives you twice the amount of Shield. You gain this Shield against two damage types of your choice instead of against one damage type.
+
 Magic Resistance:
   tier: Veteran
   type: Passive
@@ -59,15 +107,50 @@ Magic Resistance:
   effect: |
     You have a +5 bonus to your DC against [[Spell]] attacks.
 
+Vigilant Sentinel:
+  tier: Veteran
+  type: Passive
+  brief: You can react quickly to keep a horde of enemies in place
+  tags:
+    prerequisites: Sentinel
+  effect: |
+    When you use your {Sentinel} power, if you succeed on the Strike, you can use another {% icon Reaction %} power this round.
+
+Unwavering Mark:
+  tier: Veteran
+  type: Free
+  brief: You menace a foe, threatening to punish them for harming others
+  tags:
+    target: One creature you can reach
+    duration: Until the end of your next turn
+  effect: |
+    While your target is within your reach, they have disadvantage on attacks against targets other than you. If your target deals damage to any creature other than you, you can use the **Unwavering Punishment** power.
+  aside: |
+    {% smallpower %}
+    Unwavering Punishment:
+      type: Free
+      effect: |
+        Make a melee {Strike} with advantage against the target of your **Unwavering Mark**. On a success, this Strike deals extra damage equal to your Guardian level.
+    {% endsmallpower %}
+
+Cavalier:
+  tier: Ribbon
+  type: Passive
+  brief: You are experienced in riding mounts into battle
+  tags:
+    requirements: You are riding a [[Minion]] creature as a mount
+  effect: |
+    Your mount has a +5 bonus to their DC against all attacks.
+
 Find Armor:
   tier: Ribbon
   type: 1-Action
   brief: You're always able to find an easy replacement for your armor
   traits: [Daily]
   tags:
-    requirements: You do not own a set of heavy armor
+    requirements: You do not own a set of {chain mail} or {plate armor}
   effect: |
-    You acquire a set of [heavy armor](equipment.html#heavy-armor) to replace a set that was lost or broken. This armor might be a set you constructed at a smithy, a gift from an ally, or a lucky find on the battlefield. You cannot use this power to replace heavy armor that you sold for profit.
+    You acquire a set of {chain mail} or {plate armor} to replace a set that was lost or broken. This apparel might be a set you constructed at a smithy, a gift from an ally, or a lucky find on the battlefield. You cannot use this power to replace apparel that you sold for profit.
 
 Knight:
   tier: Ribbon
@@ -83,6 +166,15 @@ Squire Companion:
   brief: You have a loyal squire follower who assists you outside of battle
   effect: |
     You have earned the allegiance of a squire who trains under you. Your squire loyally follows orders you give them, unless those orders go strongly against their personality or would put them in extreme danger. If combat stats are necessary, your squire is a [[Minion]] commoner.
+
+Unflinching:
+  tier: Ribbon
+  type: Reaction
+  brief: You can completely shrug off small amounts of damage
+  tags:
+    trigger: You take exactly 1 damage from an effect
+  effect: |
+    You instead take 0 damage from the triggering effect.
 
 # Cover Ally:
 #   tier: Novice

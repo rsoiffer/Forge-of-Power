@@ -90,10 +90,18 @@ Shove:
   critical-success: You push your target up to 10 feet away from you
   success: You push your target back 5 feet
 
+Stand:
+  type: Free
+  traits: [Move]
+  tags:
+    requirements: You are {prone}
+  effect: |
+    You stand up so that you are no longer {prone}.
+
 Stride:
   type: Free
   traits: [Move]
-  effect:
+  effect: |
     Move a distance up to your Speed. If you move across extremely difficult or hazardous terrain, the GM might ask you make a die roll to determine if your Stride power was successful.
 
 Strike:
