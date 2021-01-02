@@ -65,6 +65,9 @@ Sonic: |
 Beast: |
   A creature with this trait is an animal.
 
+Construct: |
+  A creature with this trait is a clockwork robot or magical golem.
+
 Humanoid: |
   A creature with this trait is biologically similar to a human, with the same general body shape, limbs, and intellect.
 

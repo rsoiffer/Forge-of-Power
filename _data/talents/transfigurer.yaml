@@ -120,7 +120,7 @@ Enlarge/Reduce:
   effect: |
     Choose one of the following effects.
 
-    ***Enlarge.*** Your target has +1 Size and has advantage on Strength rolls other than attack rolls. When your target succeeds on a {Strike}, they deal an extra 1d6 damage.
+    ***Enlarge.*** Your target has +1 Size, +5 feet reach, and advantage on Strength rolls other than attack rolls. When your target succeeds on a {Strike}, they deal an extra 1d6 damage.
 
     ***Reduce.*** Your target has -1 Size and has disadvantage on Strength rolls other than attack rolls. When your target succeeds on a {Strike}, they deal 1d6 less damage.
 

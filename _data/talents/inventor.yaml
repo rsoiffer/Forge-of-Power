@@ -1,12 +1,60 @@
-Automatic Turret:
+Alchemical Bomb:
   tier: Novice
   type: 1-Action
-  brief: You construct a turret that can fire its cannon at enemies
+  brief: You throw an explosive bomb full of unstable chemicals
+  traits: [Attack]
+  tags:
+    range: 60 feet
+    area: 5-foot burst
+  effect: |
+    When you use this power, choose one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Necrotic]], or [[Sonic]] traits. This power gains that trait.
+
+    Make an Intellect attack roll against your target's Agility DC.
+
+    Success
+    : Your target takes 1d12 damage
+
+Brew Elixir:
+  tier: Novice
+  type: 1-Action
+  brief: You craft a potion with a versatile beneficial effect
+  traits: [Daily]
+  effect: |
+    Choose one of the following types of elixir. You produce two doses of that elixir that you brewed previously. A creature can drink a dose of elixir with the {Interact} power to gain the effects of the elixir. Each dose loses its magic when you complete an 8-hour rest.
+
+    ***Boldness.*** The drinker gains +1 to all attacks for 1 minute.
+
+    ***Healing.*** The drinker heals 2d4 + your Intellect health.
+
+    ***Levitate.*** The drinker can fly at half Speed for 10 minutes.
+
+    ***Resilience.*** The drinker gains +1 Defense for 10 minutes.
+
+    ***Swiftness.*** The drinker gains +10 feet Speed for 1 hour.
+
+    ***Transformation.*** The drinker's physical features change for 10 minutes, making them appear as a different person of their choice of roughly the same body shape.
+
+Clockwork Turret:
+  tier: Novice
+  type: 1-Action
+  brief: You construct a turret that can fire its ballista at enemies
   traits: [Concentrate, Manipulate]
   tags:
     duration: 10 minutes, or until you use this power again
   effect: |
-    You set up an automatic turret on a flat surface you can reach. The turret is a [[Minion]] creature with (10 * your Inventor level) Health, 15 Defense, and 0 Speed. The turret's Strength and Agility are equal to your Intellect, and it has no Intellect or Spirit stats. The turret can fire its cannon as a ranged weapon that deals 2d8 [[Piercing]] damage and has a range of 150 feet.
+    You set up a clockwork turret on a flat surface you can reach. The turret's Agility equals your Intellect, and the turret's Health equals 5 times your Inventor level.
+
+    When the duration expires, the clockwork turret deactivates and starts to fall apart into a pile of scraps.
+  aside: |
+    {% smallpower %}
+    Clockwork Turret Stats:
+      traits: [Construct, Minion]
+      tags:
+        attributes: Strength +0, Agilty *varies*, Intellect --, Spirit --
+        other stats: Health *varies*, Defense 15, Speed 0 feet, Size -1
+      effect: |
+        The clockwork turret can fire its ballista as a ranged weapon with 1d6 [[Piercing]] base damage and a range of 150 feet.
+    {% endsmallpower %}
 
 Magitech Engine:
   tier: Novice
@@ -16,9 +64,48 @@ Magitech Engine:
   tags:
     duration: 1 minute after the engine is attached to a weapon, or 1 hour otherwise
   effect: |
-    You craft a small magic device that outputs a stream of elemental energy. Choose the engine's element to be one of [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Force]], or [[Sonic]]. You can set up the engine to perform a minor utility effect related to its element, at the GM's discretion.
+    You craft a small magic device that outputs a stream of elemental energy. Choose the engine's element to be one of [[Acid]], [[Cold]], [[Electricity]], [[Fire]], or [[Sonic]]. The engine continually emits small jet of that element. You can set up the engine to perform a minor utility effect related to its element.
 
-    When you use this power, or as a {% icon 1-Action %} power afterwards, you can attach the engine to a weapon you touch. Strikes with that weapon deal an extra 1d6 damage of the chosen trait. A weapon can only have one engine attached to it at a time.
+    When you use this power, or with the {Interact} power afterwards, you can attach the engine to a weapon you touch. Strikes with that weapon deal an extra 1d6 damage of the chosen trait. A weapon can only have one engine attached to it at a time.
+  aside: |
+    ### Using Magitech Engines
+
+    You can configure your magitech engines to output anything related to their element. This makes the engines incredibly versatile parts, useful for any construction project. Be creative!
+
+    As always, the GM has the final say as to whether any attempt is reasonable. The GM may ask you to make an Intellect+Crafting roll to determine if a more difficult use of the engines works out.
+
+    #### Examples
+
+    You can aim a jet at an enemy you can reach to deal 1 damage to that enemy. You can trace an [[Acid]] engine over a rock surface to etch words into the surface. You can set up a [[Cold]] engine inside of an airtight box to create a portable freezer. You can use an [[Electricity]] engine to power electrical devices, or to fill a metal object with static electricity. You can attach a pair of [[Fire]] engines to the back of a cart to propel it forward like a rocket. You can set up a [[Sonic]] engine to play loud noises you choose, like a powerful speaker.
+
+Mutagen:
+  tier: Novice
+  type: 1-Action
+  brief: You give someone a dangerous mutagen that enhances them at a cost
+  traits: [Manipulate, Poison, Transfiguration]
+  tags:
+    target: One willing ally you can reach (including yourself)
+    duration: 10 minutes
+  effect: |
+    If your target has been affected by **Mutagen** in the past 8 hours, they take 2d6 damage. Choose one of the following effects.
+
+    #### Bestial Mutagen
+    Your target has advantage on {Athletics} rolls, and their unarmed Strikes deal 1d8 [[Slashing]] base damage. Your target has a -1 penalty to Defense.
+
+    #### Cognitive Mutagen
+    Your target has advantage on Intellect rolls made to recall knowledge. Your target has disadvantage on Strikes and on {Athletics} rolls.
+
+    #### Juggernaut Mutagen
+    Your target has a +1 bonus to Defense and a +2 bonus to Strength DC. Your target has a -2 penalty to Spirit DC and disadvantage on {Notice} rolls.
+
+    #### Quicksilver Mutagen
+    Your target has advantage on Agility rolls and has a +10 feet bonus to Speed. Your target takes 3d6 damage and can't heal any health.
+
+    #### Serene Mutagen
+    Your target has advantage on Intellect rolls made to notice things or interact with the world. Your target has disadvantage on attack rolls.
+
+    #### Silvertongue Mutagen
+    Your target has advantage on Spirit rolls made to interact with people. Your target has disadvantage on Intellect rolls.
 
 Shock Net:
   tier: Novice
@@ -87,6 +174,56 @@ Upgrade Weapon:
     Shocking Weapon
     : Strikes with your target deal an extra 1d6 [[Electricity]] damage
 
+Destructive Bomb:
+  tier: Veteran
+  type: Passive
+  brief: Your alchemical bombs cause massive of damage and destruction
+  tags:
+    prerequisites: Alchemical Bomb
+  effect: |
+    Your {Alchemical Bomb} power deals 2d12 damage on a success instead of 1d12.
+
+    Optionally, when you use your Alchemical Bomb power, you can choose to place the bomb on a fuse instead of detonating it instantly. The power loses its range; instead, you place the bomb on a solid surface you can reach. Choose an exact time for the fuse, up to 1 hour. Make the attack roll for this power when the fuse expires.
+
+Double Upgrade:
+  tier: Veteran
+  type: Passive
+  brief: You can apply two upgrades at once, to the same or different weapons
+  tags:
+    prerequisites: Upgrade Weapon
+  effect: |
+    When you use your {Upgrade Weapon} power, choose one of the following:
+    * You target two weapons and apply the same effect to each
+    * You choose two effects from the list
+
+Healing Alchemy:
+  tier: Veteran
+  type: Free
+  brief: Your mutagens and elixirs heal the creatures they affect
+  traits: [Healing]
+  tags:
+    prerequisites: "{Brew Elixir} or {Mutagen}"
+    trigger: A creature drinks a dose of elixir from your Brew Elixir power, or you target a creature with your Mutagen power
+  effect: |
+    The triggering creature heals 2d4 health.
+
+Improved Turret:
+  tier: Veteran
+  type: Passive
+  brief: Your clockwork turret can move and project shields
+  tags:
+    prerequisites: Clockwork Turret
+  effect: |
+    Clockwork turrets you create have a Speed of 20 feet and can climb at their full Speed. You can use the **Clockwork Barrier** power
+  aside: |
+    {% smallpower %}
+    Clockwork Barrier:
+      effect: |
+        All of your allies adjacent to the clockwork turret have [cover](combat-rules.html#cover).
+      fluffstart: |
+        Your clockwork turret extends a metal shield in all directions to cover your allies.
+    {% endsmallpower %}
+
 Overload:
   tier: Veteran
   type: 1-Action
@@ -101,6 +238,48 @@ Overload:
   success: Your target takes (8d6 + 2 * your Inventor level) damage
   failure: Your target takes half damage
 
+Clockwork Tinker:
+  tier: Ribbon
+  type: 1-Action
+  brief: You quickly construct a small mechanical device to perform a simple task
+  tags:
+    duration: 1 hour
+  effect: |
+    You quickly construct one of the following devices out of spare parts. The device malfunctions and falls apart when the duration ends.
+
+    Clockwork Toy
+    : This toy is a clockwork animal, monster, or person that slowly clatters along the ground and makes noise that imitates the creature it represents
+
+    Fire Starter
+    : The device produces a miniature flame, which you can use to light a small fire
+
+    Music Box
+    : When opened, this music box plays a single song at a moderate volume
+
+Magical Tinker:
+  tier: Ribbon
+  type: 1-Action
+  brief: You infuse a small spark of magic into a mundane object, for a variety of effects
+  tags:
+    target: An unattended nonmagical object you can reach
+    requirements: Your target is smaller than 2 feet in every dimension
+    duration: Until you use this power 10 more times
+  effect: |
+    Choose one of the folllowing effects:
+    * The object sheds dim light out to 10 feet
+    * Whenever tapped by a creature, the object emits a short recorded message, which you speak when you use this power
+    * The object continuously emits a faint odor or a soft nonverbal sound ( wind, waves, chirping, or the like)
+    * A static visual effect appears on the object's surface (a picture, a piece of text, a geometric shape, or so on)
+
+Multitool:
+  tier: Ribbon
+  type: Passive
+  brief: You have a special multitool that can do many things at once
+  effect: |
+    You own a multitool, which is a small handheld item that counts as 3 tools of your choice. Your multitool can replicate even tools that would normally be much too heavy to carry around, such as smith's tools (including a forge and anvil) or weaver's tools (including a full loom).
+
+    Only you can use your multitool. If you ever lose your multitool, you can obtain a replacement when you complete an 8-hour rest.
+
 Mystery Potion:
   tier: Ribbon
   type: 1-Action
@@ -114,22 +293,4 @@ Robot Servant:
   type: Passive
   brief: You created a robotic servant that completes simple tasks for you
   effect: |
-    You have constructed a robotic servant that obeys you commands. Your servant loyally follows orders you give them, even if those orders are insane or suicidal put them in extreme danger. As a robot, your servant is incapable of advanced thought or social interaction, and may interpret orders overly literally. If combat stats are necessary, your servant is a [[Minion]] commoner, except it has no Spirit score and is immune to [[Mental]] effects.
-
-Tinker:
-  tier: Ribbon
-  type: 1-Action
-  brief: You quickly construct a small mechanical device to perform a simple task
-  tags:
-    duration: 1 hour
-  effect: |
-    You construct a small device out of spare parts. The device malfunctions and falls apart when the duration ends. Choose one of the following options.
-
-    Clockwork Toy
-    : This toy is a clockwork animal, monster, or person that slowly clatters along the ground and makes noise that imitates the creature it represents
-
-    Fire Starter
-    : The device produces a miniature flame, which you can use to light a small fire
-
-    Music Box
-    : When opened, this music box plays a single song at a moderate volume
+    You have constructed a robotic servant that obeys you commands. Your servant loyally follows orders you give them, even if those orders are insane or suicidal put them in extreme danger. As a robot, your servant is incapable of advanced thought or social interaction, and may interpret orders overly literally. If combat stats are necessary, your servant is a [[Construct]] [[Minion]] commoner.

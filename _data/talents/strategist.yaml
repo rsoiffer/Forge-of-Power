@@ -17,22 +17,35 @@ Expose Weakness:
     range: 60 feet
     duration: 1 minute
   effect: |
-    Your target has 10 Weakness to a damage type of your choice.
+    Your target has 5 Weakness to a damage type of your choice.
 
 Inspire Courage:
   tier: Novice
   type: Reaction
+  brief: You inspire your ally to fight on stronger than ever
   traits: [Auditory, Emotion, Mental]
   tags:
-    target: An ally you can see within 60 feet (other than you)
+    range: 60 feet
+    target: An ally you can see within range (other than you)
     trigger: Your ally makes an attack or is targeted by an attack
   effect: |
     Roll 1d6. Your ally adds the result to their attack roll or to their DC against the attack.
 
+Joint Assault:
+  tier: Novice
+  type: 1-Action
+  brief: You coordinate your attack with an ally, striking simultaneously
+  traits: [Auditory, Encounter, Linguistic]
+  tags:
+    range: 60 feet
+    target: An ally you can see within range (other than you)
+  effect: |
+    Make a Strike. Your ally can immediately make a Strike against the same target.
+
 Motivational Speech:
   tier: Novice
   type: 1-Action
-  brief: You inspire your allies to fight harder for a short time
+  brief: You motivate your allies to fight harder for a short time
   traits: [Auditory, Daily, Emotion, Linguistic, Mental]
   tags:
     area: 30-foot emanation
@@ -51,13 +64,67 @@ Order:
   effect: |
     Your target can immediately use a {% icon 1-Action %} power.
 
+Strategem:
+  tier: Novice
+  type: Free
+  brief: You plan your next attack, predicting exactly how it will go
+  traits: [Concentrate]
+  tags:
+    duration: Until the start of your next turn
+  effect: |
+    Make an Intellect roll. The next time you make an attack roll, use this result instead of making a new roll. If your attack roll would have any bonuses, penalties, advantage, or disadvantage, apply these when you would have made the attack roll.
+
+Warning Shout:
+  tier: Novice
+  type: Reaction
+  brief: You call out before your enemy acts, alerting allies to the danger
+  tags:
+    range: 60 feet
+    trigger: Your target uses a {% icon Reaction %} power
+  effect: |
+    You disrupt the triggering power.
+
+Critical Weakness:
+  tier: Veteran
+  type: 1-Action
+  brief: You can find even more damaging weaknesses in your enemies
+  tags:
+    prerequisites: Expose Weakness
+  effect: |
+    Your {Expose Weakness} power gives your target 10 Weakness to two damage types of your choice instead of its normal effect.
+
 Inspire Heroics:
   tier: Veteran
   type: Passive
+  brief: You inspire your ally to otherwise-impossible heroism
   tags:
     prerequisites: Inspire Courage
   effect: |
     When you use your {Inspire Courage} talent, roll 2d6 instead of 1d6.
+
+Knight's Move:
+  tier: Veteran
+  type: Free
+  brief: You quickly command your target to advance or retreat
+  traits: [Auditory, Linguistic]
+  tags:
+    range: 60 feet
+    requirements: You must target a creature other than yourself
+  effect: |
+    Your target uses the {Stride} power.
+
+Victorious Call:
+  tier: Veteran
+  type: Reaction
+  brief: You shout in victory as an enemy is defeated, bolstering your allies
+  traits: [Auditory, Encounter, Linguistic]
+  tags:
+    trigger: You see an enemy fall to 0 health
+    range: 60 feet
+    target: All allies in range (other than you)
+    duration: Until the end of your target's next turn
+  effect: |
+    Your target has advantage on attack rolls.
 
 White Raven Tactics:
   tier: Veteran
@@ -77,12 +144,25 @@ Charades:
   effect: |
     You can easily communicate silently with other creatures through rapid hand gestures and signals, and can easily understand them in turn, even if the other creature has no proficiency in any sign language. You can replace the [[Auditory]] trait of any power you use with the [[Visual]] trait.
 
+Predict Line:
+  tier: Ribbon
+  type: Free
+  brief: You predict the exact words that a creature will say next
+  traits: [Encounter]
+  tags:
+    range: 30 feet
+  effect: |
+    You predict the the exact words your target will say next. If your target wasn't about to speak, this power in
+  fluff: |
+    Your next line is "Is this a JoJo's reference?"
+
 Scary Shiny Glasses:
   tier: Ribbon
   type: Free
   brief: You adjust your glasses, and they glint in the light to hide your eyes
   traits: [Encounter]
   tags:
+    requirements: You are wearing glasses (or equivalent eyewear)
     trigger: You make an Intellect roll as part of forming a plot
   effect: |
     You have advantage on the triggering roll.
@@ -91,9 +171,9 @@ Silver Tongue:
   tier: Ribbon
   type: Free
   brief: You always know exactly the right words for any situation
-  traits: [Encounter]
+  traits: [Auditory, Encounter, Linguistic]
   tags:
-    trigger: You make a Spirit roll to influence another creature
+    trigger: You make a Spirit roll to influence another creature with words
   effect: |
     You have advantage on triggering roll.
 

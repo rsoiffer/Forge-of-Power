@@ -3,7 +3,7 @@ Aerial Artistry:
   type: Passive
   brief: You easily leap and jump over obstacles and into the air
   effect: |
-    When you {Stride}, you can choose to make two short leaps instead of moving normally. For each leap, fly a distance through the air equal to half your Speed. You must end each leap on a creature, solid object, or the ground. If you do not, you fall and your Stride ends.
+    When you {Stride}, you can choose to make two short leaps instead of moving normally. For each leap, fly a distance through the air equal to half your Speed. You must end each leap on a creature, a solid object, or the ground. If you do not, you fall and your Stride ends.
 
 Crane Stance:
   tier: Novice
@@ -13,7 +13,25 @@ Crane Stance:
   tags:
     requirements: Your Defense is calculated with Agility
   effect: |
-    You have +1 Defense, but the only Strikes you can make are unarmed Strikes. Your unarmed Strikes deal 1d6 [[Bludgeoning]] base damage and have the [[Finesse]] trait. You have a +5 feet bonus to Speed.
+    You have +1 Defense and +10 feet Speed, but the only attacks you can make are unarmed Strikes. Your unarmed Strikes deal 1d6 [[Bludgeoning]] base damage and have the [[Finesse]] trait.
+
+Deflect Missile:
+  tier: Novice
+  type: Reaction
+  brief: You snatch arrows out of the air and throw them at other enemies
+  tags:
+    trigger: You are targeted by a ranged Strike
+  effect: |
+    You have +5 Defense against the triggering Strike. If the triggering Strike fails against you, you can use the **Return Missile** effect.
+  aside: |
+    {% smallpower %}
+    Return Missile:
+      traits: [Attack]
+      tags:
+        range: The range of the triggering Strike
+      effect: |
+        Make an Agility attack roll against your target's Defense. This attack has the same (critical) success/failure effects as the triggering Strike.
+    {% endsmallpower %}
 
 Evasive Dash:
   tier: Novice
@@ -24,38 +42,97 @@ Evasive Dash:
   effect: |
     Use the {Stride} power. You gain +1 Defense and Agility DC for each 10 feet you move after using this power. For example, if you use this power and Stride 30 feet, then Stride 30 more feet, then fall 20 feet, you have a total of +8 Defense and Agility DC.
 
-Incredible Movement:
-  tier: Novice
-  type: Passive
-  brief: You can run at incredible, almost superhuman speeds
-  effect: |
-    While your Defense is calculated with Agility, you gain a bonus to your Speed equal to 5 feet * your Acrobat level.
-
 Leap Attack:
   tier: Novice
   type: Free
   brief: You can leap through the air while attacking
-  traits: [Move]
+  traits: [Encounter, Move]
   effect: |
-    You jump up to 30 feet in a straight line. You can use other powers in the middle of this jump. You have a +2 bonus to your next melee {Strike} before the end of your turn.
+    You jump up to your Speed in a straight line. You can use other powers in the middle of this jump. You have advantage on your next melee {Strike} this turn.
 
-Skirmish:
+Mighty Throw:
   tier: Novice
-  type: Reaction
-  brief: You can evade enemies that try to approach close to you
+  type: 1-Action
+  brief: You throw an enemy, sending them tumbling to the ground
+  traits: [Attack, Bludgeoning, Encounter, Wrestling]
   tags:
-    trigger: A hostile creature uses a [[Move]] power to move to a space adjacent to you
+    target: One creature you can reach
   effect: |
-    {Stride} at half Speed.
+    Make a Strength or Agility attack roll against the higher of your target's Strength DC or Agility DC.
+
+    Critical Success
+    : As success, except you throw your target up to 20 feet
+
+    Success
+    : You throw your target up to 10 feet in any direction, they take 2d6 damage, and they fall {prone}
+
+    Failure
+    : Your target falls {prone}
 
 Stunning Strike:
   tier: Novice
   type: 1-Action
+  brief: You strike at a creature's pressure points, possibly stunning them
   traits: [Encounter]
   tags:
     duration: Until the end of your next turn
-  effect:
+  effect: |
     Make a melee {Strike}. On a success, your target is {flat-footed}. On a critical success, your target is {stunned} instead.
+
+Tumble:
+  tier: Novice
+  type: Free
+  brief: You can tumble through enemies' spaces, disorienting them
+  traits: [Attack, Move]
+  tags:
+    target: One creature adjacent to you
+    duration: Until the start of your next turn
+  effect: |
+    Make an Agility+Atheletics attack roll against your target's Agility DC.
+
+    Critical Success
+    : As success, except your target is {flat-footed} against everyone
+
+    Success
+    : You move through your target's space to any empty space adjacent to them, and your target is {flat-footed} against you
+
+    Using this power doesn't trigger any reactions.
+
+Evasion:
+  tier: Veteran
+  type: Passive
+  brief: You are unnaturally skilled at dodging area attacks
+  effect: |
+    You have +10 Agility DC against effects that target everything in an area.
+
+Incredible Movement:
+  tier: Veteran
+  type: Passive
+  brief: You can move at incredible speeds, running along water and up walls
+  tags:
+    requirements: Your Defense is calculated with Agility
+  effect: |
+    You gain a +20 feet bonus to Speed. On your turn, you can run along water, up walls, or along other surfaces that wouldn't support your weight. At the end of your turn, you fall as normal if not supported by a solid object.
+
+Repeated Stun:
+  tier: Veteran
+  type: Passive
+  brief: You can use Stunning Strike multiple times in the same fight
+  tags:
+    prerequisites: Stunning Strike
+  effect: |
+    When you use your {Stunning Strike} power, roll a d6. On anything but a 1, that power refreshes, letting you use it again without taking a 5-minute rest.
+
+Skirmish:
+  tier: Veteran
+  type: Reaction
+  brief: You can evade enemies that try to approach close to you
+  tags:
+    trigger: After a hostile creature uses a [[Move]] power to move to a space adjacent to you
+  effect: |
+    {Stride} at half Speed.
+  fluff: |
+    Note that this power lets you easily escape melee combat by moving out of your attacker's reach.
 
 Uncanny Dodge:
   tier: Veteran
@@ -65,6 +142,13 @@ Uncanny Dodge:
     trigger: You are targeted by an attack
   effect: |
     You take half damage from the triggering attack.
+
+Backflip:
+  tier: Ribbon
+  type: Passive
+  brief: You can perform impressive feats of acrobatics and agility
+  effect: |
+    You have advantage on Agility+Perform rolls to impress others through acrobatic performances.
 
 Contortionist:
   tier: Ribbon
@@ -81,6 +165,13 @@ Slow Fall:
     trigger: You fall and hit the ground
   effect: |
     You reduce the fall damage you would take by 10 + 5 * your Acrobat level.
+
+Step of the Wind:
+  tier: Ribbon
+  type: Passive
+  brief: You can move at a rapid pace along uneven ground
+  effect: |
+    You move at full Speed along difficult terrain.
 
 Quick Climb:
   tier: Ribbon

@@ -142,7 +142,7 @@ Vengeful Jaunt:
   tier: Veteran
   type: Reaction
   brief: You reappear behind a foe that attacked you
-  traits: [Encounter, Teleport]
+  traits: [Encounter, Teleportation]
   tags:
     trigger: After you are targeted by an attack
     target: The creature that made the triggering attack

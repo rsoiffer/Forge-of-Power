@@ -118,7 +118,14 @@ Avalanche Fist:
     Success
     : Your target takes 2d6 damage and is pushed 20 feet in any direction
 
-    If you push your target, you can choose to move to a space adjacent to them, and this power gains the [[Move]] trait. If you push your target into a solid object, they take 1d6 damage for each 10 feet they moved.
+    If you push your target, you can use the **Avalanche Charge** effect. If you push your target into a solid object, they take 1d6 damage for each 10 feet they moved.
+  aside: |
+    {% smallpower %}
+    Avalanche Leap:
+      traits: [Move]
+      effect: |
+        You jump to a space adjacent to your target.
+    {% endsmallpower %}
 
 Iron Heart Surge:
   tier: Veteran
@@ -162,7 +169,7 @@ Steel Wind Strike:
   tags:
     range: 30 feet
     area: 20-foot burst
-    target: Any number of creatures within the area
+    target: Up to 4 creatures within the area
   effect: |
     You move to a space adjacent to your target, then make a melee {Strike} against them.
   fluff: |

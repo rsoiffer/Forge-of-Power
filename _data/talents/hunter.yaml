@@ -12,10 +12,35 @@ Bear Trap:
   success: Your target takes 2d6 damage and is {immobilized}
   failure: Your target takes 1d6 damage and is {slowed} until the end of your next turn
 
+Called Shot:
+  tier: Novice
+  type: 1-Action
+  brief: You aim for an enemy's weakest point, trading accuracy for power
+  effect: |
+    Make a ranged {Strike} with a -5 penalty. If this Strike hits, its base damage is doubled.
+
+Distracting Fire:
+  tier: Novice
+  type: 1-Action
+  brief: Your rapid shots distract a foe, making it easier for allies to hit them
+  tags:
+    duration: Until the start of your next turn
+  effect: |
+    Make a ranged {Strike} with a -5 penalty. The target of your Strike is {flat-footed}.
+
+Double Shot:
+  tier: Novice
+  type: 1-Action
+  brief: You fire two arrows at one target, with almost no delay
+  traits: [Encounter]
+  effect: |
+    Make two ranged Strikes against the same target.
+
 Focus Aim:
   tier: Novice
   type: 1-Action
   brief: You steady your aim, preparing for a single strike
+  traits: [Concentrate]
   tags:
     duration: 1 minute, or until you use any [[Move]] power
   effect: |
@@ -30,7 +55,7 @@ Hunt Prey:
     target: One creature you can see, or one creature whose trail you're following
     duration: 24 hours, or until you use this power again
   effect: |
-    You have advantage on die rolls made to search for or track your target. Your first {Strike} each round against your target deals an extra 1d6 damage.
+    You have advantage on die rolls made to search for or track your target. Your first successful {Strike} each round against your target deals an extra 1d6 damage.
 
 Sharpshooter:
   tier: Novice
@@ -47,6 +72,16 @@ Sniper's Shot:
   effect: |
     Make a ranged {Strike} with a +5 bonus. This Strike doesn't get disadvantage for being a long-range Strike.
 
+Debilitating Shot:
+  tier: Veteran
+  type: 1-Action
+  brief: You aim for a weak point and cripple your enemy for a time
+  traits: [Encounter]
+  tags:
+    duration: Until the end of your next turn
+  effect: |
+    Make a ranged Strike. On a success, your target is {slowed}. On a critical success, your target is {flat-footed} and {immobilized}.
+
 Feral Senses:
   tier: Veteran
   type: Passive
@@ -54,12 +89,55 @@ Feral Senses:
   effect: |
     You have blindsight to a distance of 30 feet.
 
+Hunter's Vision:
+  tier: Veteran
+  type: 1-Action
+  brief: You can always see your hunted prey in your mind's eye
+  traits: [Concentrate]
+  tags:
+    prerequisites: "{Hunt Prey}"
+    target: The target of your Hunt Prey power
+    duration: Until your Hunt Prey power ends
+  effect: |
+    While your target is within 500 feet, you know their exact position even if you can't see them. Your ranged Strikes against your target have double their normal range and a +2 bonus to the attack roll.
+
+Running Shot:
+  tier: Veteran
+  type: 1-Action
+  brief: You circle around an enemy and fire a shot from an unexpected direction
+  traits: [Encounter]
+  effect: |
+    Use the {Stride} power. At any time during this power, make a ranged {Strike} with advantage against a target within 60 feet.
+
+Triple Shot:
+  tier: Veteran
+  type: Passive
+  brief: You can fire three projectiles at once instead of two
+  tags:
+    prerequisites: Double Shot
+  effect: |
+    When you use {Double Shot}, make three ranged Strikes against the same target instead of two.
+
+Eagle Eyes:
+  tier: Ribbon
+  type: Passive
+  brief: You have incredibly sharp eyesight and can perceive details from a distance
+  effect: |
+    You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you.
+
 Favored Enemy:
   tier: Ribbon
   type: Passive
   brief: You are especially skilled at hunting down a particular kind of creature
   effect: |
-    Choose a type of favored enemy: beasts, demons, dragons, elementals, fey, monstrosities, or undead. You can advantage on die rolls to track or recall information about your favored enemies. You also learn one language of your choice that is spoken by your favored enemies (if they don't speak, you can learn any language of your choice).
+    Choose a type of favored enemy: beasts, demons, dragons, elementals, fey, monstrosities, or undead. You have advantage on die rolls to track or recall information about your favored enemies. You also learn one language of your choice that is spoken by your favored enemies (if they don't speak, you can learn any language of your choice).
+
+Favored Terrain:
+  tier: Ribbon
+  type: Passive
+  brief: You are especially skilled in surviving in a particular terrain
+  effect: |
+    Choose a type of favored terrain: deserts, forests, mountains, plains, swamps, or so on. You have advantage on {Nature} or {Travel} rolls made to know about or survive in your favored terrain.
 
 Find Arrows:
   tier: Ribbon

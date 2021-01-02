@@ -28,15 +28,6 @@ Skilled:
 
     You can pick this feat multiple times. You can select the same or different options each time.
 
-Strategem:
-  type: Free
-  brief: You plan your action, with the ability to predict exactly how it will go
-  traits: [Concentrate]
-  tags:
-    duration: Until the end of your turn
-  effect: |
-    Roll a d20. The next time you make an attack roll, use this roll instead of rolling a new d20. If this attack roll is for a {Strike} that would add Agility to the attack roll, you can add Intellect to the attack roll instead.
-
 Weapon Master:
   type: Passive
   brief: You are highly proficient in a wide variety of weapons

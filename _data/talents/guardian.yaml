@@ -3,7 +3,7 @@ Brace:
   type: 1-Action
   brief: You ready yourself to defend against a particular damage type
   tags:
-    requirements: You haven't used {Stride} yet this turn
+    requirements: You haven't used a [[Move]] power yet this turn
     duration: Until the start of your next turn
   effect: |
     You are {slowed}, but you gain (10 + Strength) Shield against a damage type of your choice.

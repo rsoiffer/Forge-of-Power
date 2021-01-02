@@ -31,6 +31,21 @@ Feint:
   critical-success: You have a +15 bonus to your next melee {Strike} against your target
   success: You have a +10 bonus to your next melee {Strike} against your target
 
+Panache:
+  tier: Novice
+  type: Free
+  brief: You leverage your bravado to perform spectacular, deadly maneuvers
+  traits: [Specialize]
+  tags:
+    trigger: You succeed on a flair roll
+    duration: 1 minute, or until you take damage
+  effect: |
+    You have a +10 bonus to Speed. You have advantage on flair rolls. Your melee Strikes deal an extra 1d6 damage.
+  aside: |
+    ### Specializations
+
+    Choose one of the {Athletics}, {Eloquence}, {Perform}, or {Provoke} skills, or choose [[Wrestling]] attacks. Rolls with the chosen skill or chosen traits are called flair rolls.
+
 Prepared Defense:
   tier: Novice
   type: 1-Action
