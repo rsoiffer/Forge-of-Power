@@ -86,7 +86,7 @@ Warning Shout:
 
 Critical Weakness:
   tier: Veteran
-  type: 1-Action
+  type: Passive
   brief: You can find even more damaging weaknesses in your enemies
   tags:
     prerequisites: Expose Weakness
