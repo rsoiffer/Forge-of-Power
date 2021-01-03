@@ -1,5 +1,17 @@
 # Arcana
 
+Arcane Sense:
+  tier: Arcana
+  type: Free
+  brief: You sense all nearby spells, magical auras, and magic casters
+  traits: [Divination]
+  effect: |
+    You learn the number and location of all magical auras within 120 feet. You vaguely feel the strength of each aura you sense, but you don't learn what is causing each aura. Magical auras emanate from each of the following:
+    * A creature that can cast spells
+    * A creature, object, or space that is affected by a spell
+    * A creature, object, or space that has been affected by powerful spells in the past
+    * A creature or object that has been conjured by a spell
+
 Copy Spell:
   tier: Arcana
   type: Reaction
@@ -12,6 +24,30 @@ Copy Spell:
   effect: |
     You learn the triggering spell. If the spell is a talent, you can only cast it if you qualify to learn talents of that tier.
 
+Dual Origin:
+  tier: Arcana
+  type: Passive
+  brief: Your magic comes from two sources at once, and you have the best of both
+  tags:
+    perk: +2 Arcana
+    prerequisites: A mystic origin
+  effect: |
+    Choose a second mystic origin. You gain the unique effect of the second mystic origin. You choose whether your Magic stat is determined by your first or second mystic origins.
+
+Magical Sage:
+  tier: Arcana
+  type: Free
+  brief: You know everything about magic, or you know someplace to learn it
+  tags:
+    perk: +2 Arcana
+    trigger: You fail (but not critically fail) an Intellect+Arcana roll to learn information about magic
+  effect: |
+    You learn a hint related to the information you were seeking. In addition, you know exactly where you can go or who you can ask to learn the information.
+
+    The GM determines where or from whom the information could be accessed. If the information is a great secret, the GM could make the place or person with the information be almost completely inaccessible. Information on magic is commonly found at libraries, archives, univeristies, magic shops, and with the people who work in those locations.
+
+    *For example, imagine you roll Intellect+Arcana to identify a magical ward around a noble's house. The GM knows that the ward sends the caster a magical ping if anyone breaks into the house. If you fail the roll, you don't learn this, but might instead learn that the ward is intended as a deterent against burglars. You might also learn that Alice the Artificer, who runs a shop down the street, would be able to easily identify the true nature of the ward if she had a chance to analyze it.*
+
 Spellbook:
   tier: Arcana
   type: Passive
@@ -22,6 +58,15 @@ Spellbook:
     When you complete an 8-hour rest, you can swap all your [[Spell]] talents and ribbons for other [[Spell]] talents and ribbons from the same class.
 
 # Athletics
+
+Battering Ram:
+  tier: Athletics
+  type: Passive
+  brief: You can break down windors, doors, and walls with ease
+  tags:
+    perk: +2 Athletics
+  effect: |
+    You have a +10 bonus to Strength+Athletics rolls made to break down or charge through structures.
 
 Burst of Power:
   tier: Athletics
@@ -43,6 +88,28 @@ Daredevil Acrobat:
     perk: +2 Athletics
   effect: |
     You can climb and balance on moving surfaces as easily as if those surfaces were completely still. You can climb and balance on creatures that are larger than you, even hostile creatures. You suffer no combat penalties from balancing or climbing.
+
+Perfect Endurance:
+  tier: Athletics
+  type: Passive
+  brief: You don't tire even after long periods of intense physical activity
+  traits: [Daily]
+  tags:
+    perk: +2 Athletics
+  effect: |
+    You never gain fatigue from performing a physical activity for a long time.
+
+    *For example, you could run a marathon in heavy armor, do pushups all night, or tread water for a whole day.*
+
+Steady Balance:
+  tier: Athletics
+  type: Reaction
+  brief: You can keep your balance even when you would normally fall over
+  tags:
+    perk: +2 Athletics
+    trigger: You fall {prone}
+  effect: |
+    You don't fall prone.
 
 # Crafting
 
@@ -71,6 +138,47 @@ Mouse Trap:
 
 # Eloquence
 
+Bon Mot:
+  tier: Eloquence
+  type: Free
+  brief: You launch an insightful quip at a foe, distracting them
+  traits: [Attack, Auditory, Concentrate, Emotion, Encounter, Linguistic]
+  tags:
+    perk: +2 Eloquence
+    range: 30 feet
+    duration: 1 minute
+  effect: |
+    Make a Spirit+Eloquence attack roll against your target's Spirit DC.
+
+    Success
+    : Your target has a -2 penalty to Notice rolls and Spirit DC
+
+    Critical Failure
+    : You have a -2 penalty to Notice rolls and Spirit DC
+
+Evangelize:
+  tier: Eloquence
+  type: 1-Action
+  brief: You make an argument that incontroveribly supports your claims
+  traits: [Attack, Auditory, Concentrate, Encounter, Linguistic]
+  tags:
+    perk: +2 Eloquence
+    target: One creature who can hear you
+    duration: Until the end of your target's next turn
+  effect: |
+    You make a convincing argument to support a claim, philosophy, or faith that you believe. If your target disagrees with your claim, make an Intellect+Eloquence or Spirit+Eloquence attack roll against the higher of your target's Intellect DC or Spirit DC.
+
+    Critical Success
+    : Your target is {stunned}
+
+    Success
+    : Your target has disadvantage on all rolls
+
+    Critical Failure
+    : You have disadvantage on all rolls
+
+    If you succeed or critically succeed on this power, your argument might succeed in permanently pursuading your target of the truth of your claim. Your target chooses whether or not they are persuaded. If your target is persuaded, this power has no effect on them.
+
 False Expert:
   tier: Eloquence
   type: Passive
@@ -79,17 +187,37 @@ False Expert:
     perk: +2 Eloquence
   effect: |
     You have a +10 bonus to Eloquence rolls made to convince other people you know a lot about a topic. This bonus doesn't apply if you actually are an expert in that topic.
-  fluff: I know three things about tabletop RPGs...
+  fluff: |
+    I know three things about tabletop RPGs...
 
-Moneylender:
+First Impression:
+  tier: Eloquence
+  type: Free
+  brief: You are great at charming people when you try to make an impression
+  tags:
+    perk: +2 Eloquence
+    trigger: You have a conversation with someone for the first time
+  effect: |
+    Make a Spirit+Eloquence roll against DC 15.
+
+    Critical Success
+    : You have +5 Reputation with the other person
+
+    Success
+    : You have +2 Reputation with the other person
+
+    Critical Failure
+    : You have -2 Reputation with the other person
+
+Trustworthy:
   tier: Eloquence
   type: Passive
-  brief: You seem very trustworthy to others when it comes to finances
+  brief: You are seen as generally trustworthy and honorable
   traits: [Reputation]
   tags:
     perk: +2 Eloquence
   effect: |
-    Other people recognize you as someone who can be trusted with money and financial matters. You have +5 reputation for determining whether someone trusts you enough to borrow money from you or lend money to you.
+    You are seen as someone who can be trusted to keep their word. Other people generally believe you will speak the truth and that you will keep promises that you make.
 
 # Nature
 

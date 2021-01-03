@@ -112,14 +112,6 @@ Wall of Force:
 
     The wall is physically solid and is weightless. Each panel has 100 Health and 100 [[Anything]] Shield. You choose whether the wall is free-floating or whether it rests on a solid surface.
 
-Arcane Sense:
-  tier: Ribbon
-  type: Free
-  brief: You sense all nearby magical auras and magic casters
-  traits: [Divination]
-  effect: |
-    You learn the number and location of all spellcasters and magical auras within 60 feet. Magical auras usually emanate only from powerful unique artifacts or long-term persistent wards.
-
 Identify Magic:
   tier: Ribbon
   type: 1-Action
