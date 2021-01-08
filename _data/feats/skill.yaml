@@ -93,7 +93,6 @@ Perfect Endurance:
   tier: Athletics
   type: Passive
   brief: You don't tire even after long periods of intense physical activity
-  traits: [Daily]
   tags:
     perk: +2 Athletics
   effect: |
@@ -121,7 +120,7 @@ Crazy Prepared:
   tags:
     perk: +2 Crafting
   effect: |
-    You reveal an item you constructed in the past. You must have reasonably been able to craft this item in the past 24 hours.
+    You reveal an item you constructed in the past, and use the {Interact} power to draw this item from somewhere you have been storing it. You must have reasonably been able to craft this item in the past 24 hours.
 
     *For example, if you're delving a dungeon, you could pull out a crowbar and reveal you forged one earlier at the local smithy. Alternatively, if you're preparing a meal for a lord, you could reveal that you had already made the lord's favorite food. The GM has final say on whether any item is reasonable.*
   fluff: |
