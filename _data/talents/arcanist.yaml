@@ -98,6 +98,105 @@ Hold Creature:
     Failure
     : Your target is {slowed} until the end of its next turn
 
+Sever Mana:
+  tier: Novice
+  type: 1-Action
+  brief: You disrupt an enemy's internal mana, dealing heavy damage
+  traits: [Attack, Force, Spell]
+  tags:
+    cost: 2 Mana
+    range: 60 feet
+    requirements: Your target has a mystic origin
+  effect: |
+    Make a Magic attack roll against your target's Spirit DC.
+
+    Critical Success
+    : Double damage and double mana loss
+
+    Success
+    : Your target takes 3d12 damage and loses 3d4 mana
+
+    Failure
+    : Half damage and half mana loss
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 1d12 and the mana loss increases by 1d4.
+
+Ward:
+  tier: Novice
+  type: 1-Action
+  brief: You shield a creature with a magical ward, protecting it from hard
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    duration: 8 hours
+  effect: |
+    Your target has 10 Shield against a damage type of your choice.
+
+    #### Heightened
+
+    For each +1 Mana, the amount of Shield increases by 10.
+
+Arcane Hand:
+  tier: Veteran
+  type: Free
+  brief: You conjure a giant hand made of magical force that mimics your own hand
+  traits: [Spell]
+  tags:
+    cost: 5 Mana
+    duration: 1 minute
+  effect: |
+    You conjure a giant hand of shimmering, translucent force. The hand mimics the movements of your own hand, but with extended range and power. You can use the **Grasping Hand**, **Interposing Hand**, and **Punching Hand** powers.
+
+    At the GM's discretion, the hand can perform other useful tasks, such as manipulating objects or carrying items. As a general rule, the hand uses your Magic score instead of Strength or Agility, and it can function out to a range of 60 feet.
+
+    #### Heightened
+
+    For each +1 Mana, the range of each power increases by 10 feet, and the damage of **Punching Hand** increases by 1d6.
+  aside: |
+    {% smallpower %}
+    Grasping Hand:
+      type: 1-Action
+      tags:
+        range: 60 feet
+      effect: |
+        You {Disarm}, {Grapple}, {Shove}, or {Trip} your target. Use your Magic score instead of your Strength score for the attack roll.
+    {% endsmallpower %}
+
+    {% smallpower %}
+    Interposing Hand:
+      type: 1-Action
+      tags:
+        range: 60 feet
+        target: An empty space you can see within range
+      effect: |
+        The target space is occupied by the hand. The space is completely impassable and provides cover.
+    {% endsmallpower %}
+
+    {% smallpower %}
+    Punching Hand:
+      type: 1-Action
+      traits: [Attack, Bludgeoning]
+      tags:
+        range: 60 feet
+      effect: |
+        Make a Magic attack roll against your target's Defense.
+
+        Success
+        : Your target takes 6d6 damage
+    {% endsmallpower %}
+
+Reflect Spell:
+  tier: Veteran
+  type: Passive
+  brief: You counter spells so well that you reflect them onto your enemies
+  tags:
+    prerequisites: Counterspell
+  effect: |
+    When you cast {Counterspell}, you can choose to redirect the triggering spell instead of disrupting it. When you redirect a spell, you choose the target of the spell instead of the original caster.
+
 Wall of Force:
   tier: Veteran
   type: 1-Action
@@ -129,6 +228,17 @@ Ritual Expert:
   brief: You can complete rituals much more quickly than normal
   effect: |
     You can complete the optional ritual for [[Ritual]] spells in a tenth of the normal time.
+
+Unseen Servant:
+  tier: Ribbon
+  type: 1-Action
+  brief: Conjure a helpful invisible servant that acts for you
+  traits: [Ritual, Spell]
+  tags:
+    cost: 1 Mana
+    duration: 8 hours
+  effect: |
+    You conjure an unseen servant, which is an invisible force that obeys your orders. You have a telepathic connect with your unseen servant, and you can order it to perform common household tasks, such as preparing meals, cleaning up, or delivering objects. If combat stats are necessary, your unseen servant is a [[Minion]] [[Spirit]] commoner.
 
 Zone of Truth:
   tier: Ribbon
