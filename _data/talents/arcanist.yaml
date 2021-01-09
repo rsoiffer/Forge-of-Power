@@ -26,6 +26,18 @@ Counterspell:
 
     For each +1 Mana, add 1 to the result of the d6.
 
+Death Ward:
+  tier: Novice
+  type: 1-Action
+  brief: You ward your ally against death with a last-ditch shield
+  traits: [Spell]
+  tags:
+    cost: 2 Mana
+    range: 30 feet
+    duration: 8 hours
+  effect: |
+    When your target would fall to 0 health, they instead fall to 1 health, and this spell ends.
+
 Dispel Magic:
   tier: Novice
   type: 1-Action
@@ -98,6 +110,22 @@ Hold Creature:
     Failure
     : Your target is {slowed} until the end of its next turn
 
+Protector Ward:
+  tier: Novice
+  type: 1-Action
+  brief: You shield a creature with a magical ward, protecting it from hard
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    duration: 8 hours
+  effect: |
+    Your target has 10 Shield against a damage type of your choice.
+
+    #### Heightened
+
+    For each +1 Mana, the amount of Shield increases by 10.
+
 Sever Mana:
   tier: Novice
   type: 1-Action
@@ -122,22 +150,6 @@ Sever Mana:
     #### Heightened
 
     For each +1 Mana, the damage increases by 1d12 and the mana loss increases by 1d4.
-
-Ward:
-  tier: Novice
-  type: 1-Action
-  brief: You shield a creature with a magical ward, protecting it from hard
-  traits: [Spell]
-  tags:
-    cost: 1 Mana
-    range: 30 feet
-    duration: 8 hours
-  effect: |
-    Your target has 10 Shield against a damage type of your choice.
-
-    #### Heightened
-
-    For each +1 Mana, the amount of Shield increases by 10.
 
 Arcane Hand:
   tier: Veteran
@@ -197,6 +209,76 @@ Reflect Spell:
   effect: |
     When you cast {Counterspell}, you can choose to redirect the triggering spell instead of disrupting it. When you redirect a spell, you choose the target of the spell instead of the original caster.
 
+Resilient Sphere:
+  tier: Veteran
+  type: 1-Action
+  brief: You conjure an indestructible sphere around several creatures
+  traits: [Attack, Spell]
+  tags:
+    cost: 4 Mana
+    range: 30 feet
+    requirements: Your target is Size +1 or smaller
+    duration: Varies
+  effect: |
+    You conjure a sphere of magical force around your target. The sphere is translucent, solid, weightless, and completely indestructible. Nothing can pass in or out of the sphere except light. Your target can roll the sphere to move at half Speed, but can't move normally. Your target can use the **Rolling Sphere** power.
+
+    Make a Magic attack roll against your target's Agility DC.
+
+    Critical Success
+    : This spell lasts 10 minutes
+
+    Success
+    : This spell lasts 1 minute
+
+    Failure
+    : This spell lasts until the end of your target's next turn
+
+    Critical Failure
+    : This spell ends immediately
+
+    #### Heightened
+
+    For each +1 Mana, this spell affects one additional target.
+  aside: |
+    {% smallpower %}
+    Rolling Sphere:
+      type: Free
+      traits: [Move]
+      tags:
+        duration: 1 minute, or until you use **Crashing Sphere**
+      effect: |
+        Choose a direction. At the end of each of your turns, you roll 10 feet in that direction. This movement stacks with further uses of this power: if you use Rolling Sphere 10 times, then you move 100 feet at the end of each of your turns. If this movement would carry you into another creature or a solid object, use the **Crashing Sphere** effect on that target.
+    {% endsmallpower %}
+
+    {% smallpower %}
+    Crashing Sphere:
+      traits: [Attack, Bludgeoning]
+      effect: |
+        Make an Agility attack roll against your target's Agility DC.
+
+        Critical Success
+        : Your target takes 1d6 damage for each 10 feet you would move and falls {prone}
+
+        Success
+        : Your target takes 1d6 damage for each 10 feet you would move
+
+        Critical Failure
+        : You take 1d6 damage for each 10 feet you would move
+    {% endsmallpower %}
+
+Stabilized Glyph:
+  tier: Veteran
+  type: Passive
+  brief: Your glyphs are stable and can apply spells multiple times
+  tags:
+    prerequisites: Glyph
+  effect: |
+    Your {Glyph} power gains the following effect.
+
+    #### Heightened
+
+    If you add +2 Mana, this power doesn't end when the glyph triggers. When the glyph triggers, it becomes unable to trigger for 1 hour. If you store a spell in the glyph, you must cast it three times instead of casting it once.
+
 Wall of Force:
   tier: Veteran
   type: 1-Action
@@ -210,6 +292,25 @@ Wall of Force:
     You conjure an invisible wall of force. The wall consists of up to 10 flat, thin square panels, each of which is 10 feet by 10 feet in size. You can choose each panel's position and orientation, so long as all panels are connected and within range. You cannot conjure a panel in a space occupied by a creature or a solid object.
 
     The wall is physically solid and is weightless. Each panel has 100 Health and 100 [[Anything]] Shield. You choose whether the wall is free-floating or whether it rests on a solid surface.
+
+Floating Disk:
+  tier: Ribbon
+  type: 1-Action
+  brief: You conjure a magical disk that can support heavy weights
+  traits: [Ritual, Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    duration: 1 hour
+  effect: |
+    You summon a floating disk of translucent magical force at the target location. The disk is roughly 3 feet wide. The disk can support up to 500 pounds before collapsing. You can use the **Command Disk** power.
+  aside: |
+    {% smallpower %}
+    Command Disk:
+      type: Free
+      effect: |
+        The disk moves 20 feet in a direction of your choice.
+    {% endsmallpower %}
 
 Identify Magic:
   tier: Ribbon
