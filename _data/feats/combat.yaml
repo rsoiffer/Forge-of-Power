@@ -159,7 +159,7 @@ Mystic Burst:
   tier: Orb
   type: Passive
   brief: You conjure a burst of a particular element in an area
-  traits: [Attack, Cantrip, Specialize, Spell]
+  traits: [Attack, Cantrip, Invocation, Spell]
   tags:
     requirements: You are wielding an orb
     perk: +1 damage to spell attacks
@@ -178,10 +178,6 @@ Mystic Burst:
     #### Heightened
 
     For each +1 Mana, the damage increases by 1d6.
-  aside: |
-    ### Specializations
-
-    Pick one trait from the following list: [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Mental]], [[Necrotic]], [[Radiant]], or [[Sonic]]. This spell gains that trait.
 
 Reshape Spell:
   tier: Orb
@@ -288,7 +284,7 @@ Mystic Bolt:
   tier: Staff
   type: Passive
   brief: You shoot a powerful bolt of a particular element at a target
-  traits: [Attack, Cantrip, Specialize, Spell]
+  traits: [Attack, Cantrip, Invocation, Spell]
   tags:
     requirements: You are wielding a staff
     perk: +1 damage to spell attacks, +1 damage to staff Strikes
@@ -303,10 +299,6 @@ Mystic Bolt:
     #### Heightened
 
     For each +1 Mana, the damage increases by 2d8.
-  aside: |
-    ### Specializations
-
-    Pick one trait from the following list: [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Mental]], [[Necrotic]], [[Radiant]], or [[Sonic]]. This spell gains that trait.
 
 Overchannel:
   tier: Staff
@@ -385,7 +377,7 @@ Mystic Chain:
   tier: Tome
   type: Passive
   brief: You chain a jolt of a particular element between two targets
-  traits: [Attack, Cantrip, Specialize, Spell]
+  traits: [Attack, Cantrip, Invocation, Spell]
   tags:
     requirements: You are wielding a tome
     perk: +1 damage to spell attacks
@@ -401,10 +393,6 @@ Mystic Chain:
     #### Heightened
 
     For each +1 Mana, the damage increases by 1d12.
-  aside: |
-    ### Specializations
-
-    Pick one trait from the following list: [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Mental]], [[Necrotic]], [[Radiant]], or [[Sonic]]. This spell gains that trait.
 
 Read Incantation:
   tier: Tome
