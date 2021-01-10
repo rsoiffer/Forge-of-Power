@@ -158,7 +158,7 @@ Elemental Flight:
 
     #### Heightened
 
-    For each +1 Mana, this spell targets one additional creature within range.
+    For each +1 Mana, you can target another creature within range.
   aside: |
     ### Specializations
 
@@ -213,7 +213,7 @@ Feather Fall:
 
     #### Heightened
 
-    For each +1 Mana, you can target one additional creature.
+    For each +1 Mana, you can target another creature within range.
 
 Tinder:
   tier: Ribbon
