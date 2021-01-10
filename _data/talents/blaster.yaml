@@ -1,8 +1,72 @@
-Burning Arrow:
+
+
+Dangerous Sorcery:
+  tier: Novice
+  type: Free
+  brief:  You boost the magical energy you channeled into a recent spell
+  tags:
+    trigger: You cast a spell that deals damage
+  effect: |
+    The spell's damage increases by 1d6 (against all of the spell's targets).
+
+Invoke Beam:
+  tier: Novice
+  type: Free
+  brief: You begin to emanate a beam of energy that continuously zaps enemies
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    duration: 1 minute, or until you use **Channel Beam** three times
+  effect: |
+    You can use the **Channel Beam** power.
+
+    #### Heightened
+
+    For each +1 Mana, the damage of **Channel Beam** increases by 1d6.
+  aside: |
+    {% smallpower %}
+    Channel Beam:
+      type: 1-Action
+      traits: [Attack, Invocation]
+      tags:
+        range: 30 feet
+      effect: |
+        Make a Magic attack roll against your target's Defense.
+
+        Success
+        : Your target takes 2d6 damage
+
+        Failure
+        : Half damage
+    {% endsmallpower %}
+
+# 4X dice / 4 base = X cost
+Invoke Bolt:
   tier: Novice
   type: 1-Action
-  brief: You conjure a fiery arrow that continues burning after it hits
-  traits: [Attack, Fire, Spell]
+  brief: You fire a bolt of damaging magical energies that impacts with violent force
+  traits: [Attack, Cantrip, Invocation, Spell]
+  tags:
+    cost: 0 Mana
+    range: 60 feet
+  effect: |
+    Make a Magic attack roll against the target's Defense.
+
+    Critical Success
+    : Double damage
+
+    Success
+    : Your target takes 2d6 damage
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 2d6.
+
+Invoke Burn:
+  tier: Novice
+  type: 1-Action
+  brief: You conjure an elemental arrow that continues damaging after it hits
+  traits: [Attack, Invocation, Spell]
   tags:
     cost: 2 Mana
     range: 120 feet
@@ -14,33 +78,17 @@ Burning Arrow:
     : Double damage
 
     Success
-    : Your target takes 2d10 damage
+    : Your target takes 3d6 damage
 
     #### Heightened
 
-    For each +2 Mana, this spell's damage increases by 1d10.
+    For each +1 Mana, this spell's damage increases by 1d6.
 
-Dangerous Sorcery:
-  tier: Novice
-  type: Free
-  brief:  You boost the magical energy you channeled into a recent spell
-  tags:
-    trigger: You deal damage with a spell you cast this turn
-  effect: |
-    The triggering damage increases by 1d6 (against all of the spell's targets).
-
-Elemental Adept:
-  tier: Novice
-  type: Passive
-  brief: You can bypass your enemies' resistances to particular damage types
-  effect: |
-    Choose one of the following traits: [[Acid]], [[Cold]], [[Electricity]], [[Fire]], or [[Sonic]]. Spells you cast with that trait ignore all Shields.
-
-Icy Rebuke:
+Invoke Vengeance:
   tier: Novice
   type: Reaction
-  brief: You retaliate against an attack with a pulse of cold energy
-  traits: [Attack, Cold, Spell]
+  brief: You retaliate against an attack with a pulse of elemental energy
+  traits: [Attack, Invocation, Spell]
   tags:
     trigger: You take damage from an attack
     cost: 1 Mana
@@ -58,58 +106,25 @@ Icy Rebuke:
 
     For each +2 Mana, the damage increases by 3d10.
 
-Lightning Beam:
+Trance:
   tier: Novice
   type: Free
-  brief: You begin to emanate a beam of lightning that continuously zaps enemies
-  traits: [Spell]
+  brief: You enter a mystical trance, gaining offensive power at the cost of defense
+  traits: [Daily, Emotion, Mental]
   tags:
-    cost: 1 Mana
-    duration: 1 minute, or until you use **Zap** three times
+    duration: 1 minute, until you fall to 0 Mana, or until you fall {unconscious}
   effect: |
-    You can use the **Zap** power.
+    You enter a meditative state and begin trancing. While trancing:
+    * You have +5 damage to all spells
+    * You take a -2 penalty to Defense
+    * You can't make Strikes
 
-    #### Heightened
-
-    For each +1 Mana, the damage of **Zap** increases by 1d6.
-  aside: |
-    {% smallpower %}
-    Zap:
-      type: 1-Action
-      traits: [Attack, Electricity]
-      tags:
-        range: 30 feet
-      effect: |
-        Make a Magic attack roll against your target's Defense.
-
-        Success
-        : Your target takes 2d6 damage
-
-        Failure
-        : Half damage
-    {% endsmallpower %}
-
-# 4X dice / 4 base = X cost
-Power Bolt:
+Versatile Invoker:
   tier: Novice
-  type: 1-Action
-  brief: You fire a bolt of damaging magical energies that impacts with violent force
-  traits: [Attack, Cantrip, Force, Spell]
-  tags:
-    cost: 0 Mana
-    range: 60 feet
+  type: Passive
+  brief: You can bypass your enemies' resistances to particular damage types
   effect: |
-    Make a Magic attack roll against the target's Defense.
-
-    Critical Success
-    : Double damage
-
-    Success
-    : Your target takes 2d6 damage
-
-    #### Heightened
-
-    For each +1 Mana, the damage increases by 2d6.
+    Whenever you use an [[Invocation]] power, you can change the damage type of the power to be any one of the options given by the [[Invocation]] trait.
 
 Close Combat Mage:
   tier: Veteran
@@ -119,11 +134,11 @@ Close Combat Mage:
     When you use an [[Attack]] spell with a range of at least 30 feet, you can decrease the range to Touch to get a +2 bonus to the attack roll.
 
 # 6 dice * 2 AOE / 4 base = 3 cost
-Fireball:
+Invoke Blast:
   tier: Veteran
   type: 1-Action
-  brief: You conjure a mote of fire that explodes into a vast fireball
-  traits: [Attack, Fire, Spell]
+  brief: You conjure a mote of energy that explodes into a large blast
+  traits: [Attack, Invocation, Spell]
   tags:
     cost: 3 Mana
     range: 500 feet
@@ -141,6 +156,31 @@ Fireball:
 
     For each +1 Mana, the damage increases by 1d6.
 
+Invoke Cloud:
+  tier: Veteran
+  type: 1-Action
+  brief: You conjure a cloud of elemental energy that damages creatures inside
+  traits: [Invocation, Spell]
+  tags:
+    cost: 5 Mana
+    range: 120 feet
+    area: 20-foot burst
+    duration: Sustained, up to 10 minutes
+  effect: |
+    You conjure a cloud of elemental energy in the spell's area. The cloud completely blocks vision inside its area. When you sustain this spell, you can move the cloud up to 30 feet in any direction.
+
+    At the end of each of your turns, make a Magic attack roll against the Agility DC of everything inside the cloud.
+
+    Success
+    : Your target takes 3d6 damage
+
+    Failure
+    : Half damage
+
+    #### Heightened
+
+    For each +2 Mana, the damage increases by 1d6.
+
 Awesome Destruction:
   tier: Ribbon
   type: Passive
@@ -152,13 +192,13 @@ Minor Blast:
   tier: Ribbon
   type: 1-Action
   brief: You scatter a small amount of power to deal a tiny bit of damage to several targets
-  traits: [Cantrip, Spell]
+  traits: [Cantrip, Invocation, Spell]
   tags:
     cost: 0 Mana
     range: 120 feet
     target: Up to ten targets you can see within range
   effect: |
-    Choose one of the [[Cold]], [[Electricity]], or [[Fire]] traits. This spell gains that trait. Your target takes 1 damage.
+    Your target takes 1 damage.
 
 Shatter:
   tier: Ribbon
