@@ -1,3 +1,39 @@
+Catapult:
+  tier: Novice
+  type: 1-Action
+  brief: You launch a creature or object a long distance through the air
+  traits: [Cantrip, Spell]
+  tags:
+    cost: 0 Mana
+    range: 50 feet
+  effect: |
+    Choose a willing creature or unattended object you can see within 10 feet that is Size +0 or smaller. You throw this creature or object as a projectile. Your projectile lands in a square adjacent to your target.
+
+    Optionally, make a Magic attack roll against your target's Agility DC. This spell gains the [[Attack]] and [[Bludgeoning]] traits.
+
+    Success
+    : Your target and your projectile each take 1d10 damage
+
+    #### Heightened
+
+    For each +1 Mana, the range increases by 50 feet and the damage increases by 1d10.
+
+Expedite:
+  tier: Novice
+  type: 1-Action
+  brief: You increase a creature's speed, letting it run much faster
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    duration: 10 minutes
+  effect: |
+    Your target's Speed is doubled.
+
+    #### Heightened
+
+    If you add +1 Mana, this power's duration is 1 hour.
+
 Force Shove:
   tier: Novice
   type: 1-Action
@@ -22,23 +58,22 @@ Force Shove:
 
     #### Heightened
 
-    For each +1 Mana, the damage increases by 1d6, and you can push your target an extra 10 feet.
+    For each +1 Mana, the damage increases by 2d6, and you can push your target an extra 10 feet.
 
-Expedite:
+Future Sight:
   tier: Novice
   type: 1-Action
-  brief: You increase a creature's speed, letting it run much faster
-  traits: [Spell]
+  brief: You see into the future, so you know exactly how an action will play out
+  traits: [Fortune, Spell]
   tags:
     cost: 1 Mana
-    range: 30 feet
-    duration: 10 minutes
+    duration: 1 minute
   effect: |
-    Your target's Speed is doubled.
+    Roll a d20 and record the number rolled. You can replace one die roll made by you or a creature you can see with this fortelling roll, after which the spell ends.
 
     #### Heightened
 
-    If you add +1 Mana, this power's duration is 1 hour.
+    If you add +2 Mana, this power is {% icon Free %} instead of {% icon 1-Action %}.
 
 Misty Step:
   tier: Novice
@@ -94,6 +129,27 @@ Telekinetic Grip:
         You move the target of your **Telekinetic Grip** up to 20 feet in any direction.
     {% endsmallpower %}
 
+Transposition:
+  tier: Novice
+  type: 1-Action
+  brief: You instantly swap the locations of two creatures or objects
+  traits: [Attack, Spell, Teleportation]
+  tags:
+    cost: 2 Mana
+    range: 30 feet
+    target: Two creatures or objects you can see within range (including yourself)
+  effect: |
+    Make a Magic attack roll against the Agility DC of each target. The effect of this spell is determined by the worse result.
+
+    Success
+    : Your targets instantly swap positions
+
+    #### Heightened
+
+    For each +1 Mana, the range increases by 30 feet.
+
+    *Note that you could throw a pebble with the {Interact} power, then cast **Transposition** targeting the pebble and another creature or object, even while the pebble is in midair.*
+
 Warped Space:
   tier: Novice
   type: 1-Action
@@ -117,6 +173,27 @@ Warped Space:
 
     For each +1 Mana, this spell's radius doubles.
 
+    *This spell affects movement, the range and reach of attacks, the size of areas, and everything else that depends on distance. For simplicity, it doesn't affect the squares on a grid map, or what it means for two creatures to be adjacent.*
+
+Banishment:
+  tier: Veteran
+  type: 1-Action
+  brief: You banish a target to a pocket dimension for a brief time
+  traits: [Attack, Spell, Teleportation]
+  tags:
+    cost: 4 Mana
+    range: 60 feet
+    duration: 1 minute
+  effect: |
+    Make a Magic attack roll against your target's Spirit DC.
+
+    Success
+    : Your target teleports to a harmless demiplane and is {stunned}; when the duration ends, your target reappears exactly where it left (or in the nearest empty space if that space is occupied)
+
+    #### Heightened
+
+    For each +1 Mana, you can target another creature within range.
+
 Dimension Door:
   tier: Veteran
   type: 1-Action
@@ -126,7 +203,7 @@ Dimension Door:
     cost: 4 Mana
     range: 500 feet
   effect: |
-    You teleport to an unoccupied space within range you can see.
+    You teleport to the target location. Optionally, you can teleport a willing creature you can reach along with you.
 
     #### Heightened
 
@@ -143,6 +220,10 @@ Haste:
     duration: 1 minute
   effect: |
     Your target can use the **Hasted Action** power.
+
+    #### Heightened
+
+    For each +1 Mana, you can target another creature within range.
   aside: |
     {% smallpower %}
     Hasted Action:
@@ -150,6 +231,78 @@ Haste:
       effect: |
         Use any {% icon 1-Action %} basic power.
     {% endsmallpower %}
+
+Magnify Gravity:
+  tier: Veteran
+  type: 1-Action
+  brief: You greatly increase the force of gravity, crushing creatures in an area
+  traits: [Attack, Bludgeoning, Spell]
+  tags:
+    cost: 4 Mana
+    range: 120 feet
+    area: 20-foot burst
+    duration: Until the end of your target's next turn
+  effect: |
+    Make a Magic attack roll against your target's Strength DC. If your target is midair, you have advantage on the attack roll, and you deal double damage on a success or critical success.
+
+    Critical Success
+    : Your target takes 4d6 damage, falls {prone}, and is {immobilized}
+
+    Success
+    : Your target takes 4d6 damage and is {slowed}
+
+    Failure
+    : Half damage
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 1d6.
+
+Slow:
+  tier: Veteran
+  type: 1-Action
+  brief: You slow down time for all creature in an area, stopping them from acting
+  traits: [Attack, Spell]
+  tags:
+    cost: 3 Mana
+    range: 120 feet
+    area: 20-foot burst
+    duration: Sustained, up to 1 minute
+  effect: |
+    Make a Magic attack roll against your target's Agility DC.
+
+    Critical Success
+    : Your target is {slowed}, {flat-footed}, and {incapacitated}
+
+    Success
+    : Your target is {slowed} and can't use {% icon Reaction %} powers
+
+    Failure
+    : Your target is {slowed}
+
+Augury:
+  tier: Ribbon
+  type: 1-Action
+  brief: You foresee the near future, learning about any imminent dangers
+  traits: [Divination, Ritual, Spell]
+  tags:
+    cost: 2 Mana
+  effect: |
+    You search for the results of a particular course of action, which can last up to 30 minutes in the future. The GM secretly rolls a d4. On a 1, the GM instead gives a random answer. On any other number, the GM tells you their best guess among the following outcomes:
+
+    Weal
+    : The results will be good
+
+    Woe
+    : The results will be bad
+
+    Weal and Woe
+    : The results will be a mix of good and bad
+
+    Nothing
+    : There won't be particularly good or bad results
+
+    If anyone casts **Augury** again to ask about the same topic, the GM gives the same response.
 
 Guidance:
   tier: Ribbon
@@ -163,6 +316,17 @@ Guidance:
     duration: Until the start of your next turn
   effect: |
     Your target has a +1 bonus to the first die roll they make.
+
+Levitate:
+  tier: Ribbon
+  type: Free
+  brief: You use telekinetic force to lift yourself slightly off the ground
+  traits: [Cantrip, Spell]
+  tags:
+    cost: 0 Mana
+    duration: Until the end of your turn
+  effect: |
+    You can fly at half Speed.
 
 Mage Hand:
   tier: Ribbon
