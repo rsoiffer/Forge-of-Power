@@ -41,7 +41,7 @@ Elemental Bender:
     talent: "{Elemental Blast}"
     feat_asi: "{Blessed Luck}"
     ribbon_perk: "{Feather Fall}"
-  - class: "{Blaster} 1"
-    talent: "{Lightning Beam}"
+  - class: "{Evoker} 1"
+    talent: "{Invoke Beam}"
     feat_asi: +1 Agility
     ribbon_perk: +2 Athletics

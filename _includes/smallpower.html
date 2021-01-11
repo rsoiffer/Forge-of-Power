@@ -14,6 +14,10 @@
     {% endif %}
 </h3>
 
+{% if power_body_1.fluffstart %}
+<div class="fluff">{{ power_body_1.fluffstart | process }}</div>
+{% endif %}
+
 {% if power_body_1.traits %}
     <ul class="traits">
     {% for trait in power_body_1.traits %}

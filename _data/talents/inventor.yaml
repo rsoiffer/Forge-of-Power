@@ -53,7 +53,7 @@ Clockwork Turret:
         attributes: Strength +0, Agilty *varies*, Intellect --, Spirit --
         other stats: Health *varies*, Defense 15, Speed 0 feet, Size -1
       effect: |
-        The clockwork turret can fire its ballista as a ranged weapon with 1d6 [[Piercing]] base damage and a range of 150 feet.
+        The clockwork turret can fire its ballista as a {crossbow}.
     {% endsmallpower %}
 
 Magitech Engine:
@@ -214,14 +214,17 @@ Improved Turret:
   tags:
     prerequisites: Clockwork Turret
   effect: |
-    Clockwork turrets you create have a Speed of 20 feet and can climb at their full Speed. You can use the **Clockwork Barrier** power
+    Clockwork turrets you create have a Speed of 20 feet and can climb at their full Speed. Your clockwork turret can use the **Clockwork Barrier** power.
   aside: |
     {% smallpower %}
     Clockwork Barrier:
+      type: 1-Action
+      tags:
+        duration: Until your clockwork turret uses a [[Move]] power
       effect: |
-        All of your allies adjacent to the clockwork turret have [cover](combat-rules.html#cover).
+        All of your allies adjacent to your clockwork turret have [cover](combat-rules.html#cover).
       fluffstart: |
-        Your clockwork turret extends a metal shield in all directions to cover your allies.
+        Your clockwork turret extends a heavy metal shield in all directions.
     {% endsmallpower %}
 
 Overload:

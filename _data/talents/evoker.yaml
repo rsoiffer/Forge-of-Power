@@ -296,11 +296,11 @@ Shatter:
     cost: 0 Mana
     range: 30 feet
   effect: |
-    If your target is an inanimate, unattended object, it takes 1d6 damage.
+    If your target is an inanimate, unattended object, it takes 2d8 damage.
 
     #### Heightened
 
-    For a total of 1 Mana, this spell gains an area of a 10-foot burst. For each additional +1 Mana, the burst's radius increases by 10 feet.
+    If you add +1 Mana, this spell gains an area of a 10-foot burst. For each additional +1 Mana, the burst's radius increases by 10 feet.
 
 Ultimate Destruction:
   tier: Ribbon
