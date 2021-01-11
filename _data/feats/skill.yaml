@@ -235,9 +235,9 @@ Befriend Animal:
 
     Critical Success
     : Your target is helpful towards you and indifferent towards your allies
-  
+
     Success
-    : Your target is helpful towards you and indifferent towards your allies
+    : Your target is friendly towards you and indifferent towards your allies
 
     Failure
     : Your target is unaffected
@@ -245,7 +245,7 @@ Befriend Animal:
     Critical Failure
     : Your target is hostile towards you and your allies
 
-Medical Poultice:
+Invigorating Herbs:
   tier: Nature
   type: 1-Action
   brief: You heal an ally with foraged medicinal herbs

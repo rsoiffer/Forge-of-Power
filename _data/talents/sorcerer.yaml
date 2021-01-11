@@ -288,7 +288,7 @@ Augury:
   tags:
     cost: 2 Mana
   effect: |
-    You search for the results of a particular course of action, which can last up to 30 minutes in the future. The GM secretly rolls a d4. On a 1, the GM instead gives a random answer. On any other number, the GM tells you their best guess among the following outcomes:
+    You search for the results of a particular course of action, which can last up to 30 minutes in the future. The GM secretly rolls a d4. On a 1, the GM gives a random answer. Otherwise, the GM tells you their best guess among the following outcomes:
 
     Weal
     : The results will be good
