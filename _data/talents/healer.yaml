@@ -125,14 +125,6 @@ Light:
     
     For each +1 Mana, the radius of illumination increases by 30 feet.
 
-Priestly Status:
-  tier: Ribbon
-  type: Passive
-  brief: You're known as an officially-sanctioned priest of a common religion
-  traits: [Reputation]
-  effect: |
-    You are widely known as a priest of a particular religion. Followers of that religion generally respect your moral and religious authority.
-
 Sanctuary:
   tier: Ribbon
   type: Passive

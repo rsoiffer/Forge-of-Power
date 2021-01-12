@@ -277,8 +277,17 @@ Keen Eye:
     requirements: You haven't used Keen Eye on this room in the last 24 hours
   effect: |
     You notice a hidden bit of information of the DM's choice about something in the room. For example, you might notice that one section of a bookcase is suspiciously clear of dust, that an NPC's bearing suggests they are feeling especially anxious, or a unusual footprint on a section of floor.
-  fluff:
+  fluff: |
     Use common sense to determine what counts as a room. We all speak English here.
+
+Low-Light Vision:
+  tier: Notice
+  type: Passive
+  brief: You can see in dimly light environments just as well as in bright light
+  tags:
+    perk: +2 Perform
+  effect: |
+    You can see in dim light as if it was bright light.
 
 # Perform
 
@@ -302,6 +311,16 @@ Cheerleader:
     requirements: You are interacting with a crowd of 10 or more people who are not hostile towards you
   effect: |
     Choose a short phrase or cheer. You spread the phrase through the crowd of people, who take up the chant. The duration of this power depends on the chant - an insane or disagreeable chant will die down in seconds, while a popular and agreeable chant might last a long time. This power does not force anyone to agree with the content of the cheer - people are just caught in a wave of mob energy.
+
+Famous Performer:
+  tier: Perform
+  type: Passive
+  brief: You are well-known for your popular performance or art
+  traits: [Reputation]
+  tags:
+    perk: +2 Perform
+  effect: |
+    You have a reputation as a skilled performer. Other people might recognize your name and work, you can easily find venues to perform at, and you have a group of dedicated fans.
 
 # Provoke
 
@@ -343,7 +362,7 @@ Bishop:
   effect: |
     Choose a religous belief, tenet, or rule that people might reasonably believe in. Your character states the rule out loud, explaining its importance to the faith and its origins as a belief. This rule is retroactively one of the core beliefs of your character's religion. If past events in the campaign contradict this rule, then the rule isn't very important to the average practicioner of your religion.
 
-    From now on, all believers in your character's religion publicly follow the declared rule. Breaking the rule is considered a terrible taboo. If your character breaks the declared rule, they will lose reputation with other practicioners of their religion.
+    From now on, all believers in your character's religion publicly follow the declared rule. Breaking the rule is considered a terrible taboo. If your character breaks the declared rule, your character will lose reputation with other practicioners of their religion.
 
 Holy Symbol:
   tier: Religion
@@ -355,32 +374,90 @@ Holy Symbol:
     trigger: You make a die roll
   effect: |
     Roll a d4 and add your result as a bonus to the triggering roll.
+  fluffstart: |
+    You brandish your holy symbol and say a brief prayer for luck.
+
+Favor of the Kami:
+  tier: Religion
+  type: 1-Action
+  brief: You give out religious wisdom that helps someone solve a moral problem
+  tags:
+    perk: +2 Religion
+  effect: |
+    test
+
+Priestly Status:
+  tier: Religion
+  type: Passive
+  brief: You're known as an officially-sanctioned priest of a common religion
+  traits: [Reputation]
+  tags:
+    perk: +2 Religion
+  effect: |
+    You are widely known as a priest of a particular religion. Followers of that religion generally respect your moral and religious authority.
+
+Secret Cult:
+  tier: Religion
+  type: Passive
+  brief: You are a member of a secret religous cult with members hidden everywhere
+  tags:
+    perk: +2 Religion
+  effect: |
+    You are a member of a secret society or a religious cult with significant influence. The cult has members almost everywhere in the world, and cultists can identify each other with a secret sign. You can ask for favors from other cultists, and other cultists may ask favors from you. If you repeatedly refuse to help other cultists or act against the cult's goals, you may be declared an enemy of the cult.
 
 # Society
+
+Connections:
+  tier: Society
+  type: 1-Action
+  brief: You have connections in high places, who you can try to ask for favors
+  traits: [Daily]
+  tags:
+    perk: +2 Society
+  effect: |
+    You announce that you know a noble, a rich merchant, a judge, or another important figure in the local town. This figure has heard of you before and is friendly towards you. You can get an audience with them and can ask them for minor favors.
 
 Forced Error:
   tier: Society
   type: 1-Action
   brief: You can manipulate others into making major social faux pas
-  traits: [Encounter, Linguistic]
+  traits: [Attack, Auditory, Encounter, Linguistic]
   tags:
     perk: +2 Society
     range: 30 feet
   effect: |
     Make a Spirit+Society attack roll against your target's Spirit+Society DC.
-  critical-success: Your target makes a major faux pas, losing roughly 5 reputation with all observers
-  success: Your target makes a minor faux pas, losing roughly 2 reputation with all observers
-  critical-failure: You make a major faux pas, losing roughly 5 reputation with all observers
+
+    Critical Success
+    : Your target makes a major faux pas, losing roughly 5 reputation with all observers
+
+    Success
+    : Your target makes a minor faux pas, losing roughly 2 reputation with all observers
+
+    Critical Failure
+    : You make a minor faux pas, losing roughly 2 reputation with all observers
+
+Historian:
+  tier: Society
+  type: 1-Action
+  brief: You declare a minor historical fact about the game world
+  traits: [Daily, Retroactive]
+  tags:
+    perk: +2 Society
+  effect: |
+    Declare something about the history of the game setting. This retroactively becomes fact. Your declaration should be entirely about events that are years in the past, and should not focus on the current state of affairs.
+
+    *For example, you could state that two nations recently emerged from a brutal war, so there's lingering resentment between the two peoples. Alternatively, you could declare that a city built an elaborate series of underground catacombs a century ago, and those catacombs are still around to this day.*
 
 Linguist:
   tier: Society
   type: 1-Action
-  brief: You develop a new pidgin language to communicate with any creature
+  brief: You very easily learn the basics of any language you see or hear
   traits: [Daily]
   tags:
     perk: +2 Society
   effect: |
-    Choose a language that you don't speak, but that you have seen or heard before. You must have observed at least 1 minute of communication in this language within the past 24 hours. You instantly create and learn a new pidgin language based on your observations. You can use the pidgin language to communicate simple ideas with creatures who speak the language you observed. It is very difficult to use this pidgin language to communicate complex ideas.
+    Choose a language that you don't speak, but that you have seen or heard before. You must have observed a moderate amount of this language within the last 24 hours: at least 1 minute of speech, 1 page of writing, or the equivalent for other forms of communication. You instantly learn to speak or write this language at the level of a young child. You are not proficient enough in this language to communicate complex ideas.
 
 # Stealth
 
@@ -402,20 +479,31 @@ Just a Box:
   effect: |
     You are an expert at placing inanimate objects in the perfect locations. Whenever you hide behind or inside of an inanimate, immobile object, you can slightly adjust this object to perfectly blend into its surroundings. Even if the object would normally be wildly out of place, no one notices the object is strange in any way. This effect ends if the object moves, if the object is a threat or obstacle, or if you are no longer hidden behind or inside of the object.
 
-    For example, you can hide inside of a box in the middle of the floor, and no one will question why the box is there so long as it stays still. You can hide behind a tall potted plant next to a lava lake in the middle of an evil dungeon, and no one will question the plant's existence.
+    *For example, you can hide inside of a box in the middle of the floor, and no one will question why the box is there so long as it stays still. You can hide behind a tall potted plant next to a lava lake in the middle of an evil dungeon, and no one will question the plant's existence.*
+
+No Presence:
+  tier: Stealth
+  type: Passive
+  brief: You have a complete lack of social presence, peoples' eyes gloss over you
+  tags:
+    perk: +2 Stealth
+  effect: |
+    Creatures never notice you unless you do something to draw their attention. This doesn't apply to creatures that are actively searching the area, that are on guard for danger, or that already know you're here.
 
 Prior Pickpocketing:
   tier: Stealth
   type: Reaction
   brief: You reveal that you already pickpocketed an item your target attempts to draw
-  traits: [Daily]
+  traits: [Daily, Retroactive]
   tags:
-    profiency: +2 Stealth
+    perk: +2 Stealth
     trigger: A creature you can see tries to draw an item
     requirements: You were within 5 feet of that creature within 1 hour, and the creature hasn't used the item since you were last within 5 feet of them
   effect: |
     Make a Agility+Thievery roll against your target's Intellect+Notice DC.
-  success: You reveal you successfully pickpocketed your target, drawing the item and showing it to them, as your target either draws nothing or draws a useless fake copy of the item
+
+    Success
+    : You reveal you successfully pickpocketed your target, drawing the item and showing it to them, as your target either draws nothing or draws a useless fake copy of the item
 
 # Travel
 
