@@ -318,12 +318,12 @@ Cheerleader:
   tier: Perform
   type: 1-Action
   brief: You get a crowd of people to chant a phrase of your choice
-  traits: [Auditory, Linguistic]
+  traits: [Auditory, Emotion, Linguistic]
   tags:
     perk: +2 Perform
     requirements: You are interacting with a crowd of 10 or more people who are not hostile towards you
   effect: |
-    Choose a short phrase or cheer. You spread the phrase through the crowd of people, who take up the chant. The duration of this power depends on the chant - an insane or disagreeable chant will die down in seconds, while a popular and agreeable chant might last a long time. This power does not force anyone to agree with the content of the cheer - people are just caught in a wave of mob energy.
+    Choose a short phrase or cheer. You spread the phrase through the crowd of people, who take up the chant. The duration of this power depends on the chant: an insane or disagreeable chant will die down in seconds, while a popular and agreeable chant might last a long time. This power does not force anyone to agree with the content of the cheer; people are just caught in a wave of mob energy.
 
 Famous Performer:
   tier: Perform
@@ -334,6 +334,22 @@ Famous Performer:
     perk: +2 Perform
   effect: |
     You have a reputation as a skilled performer. Other people might recognize your name and work, you can easily find venues to perform at, and you have a group of dedicated fans.
+
+Fascinating Performance:
+  tier: Perform
+  type: 1-Action
+  brief: Your performance draws everyone's attention to it, fascinating them
+  traits: [Attack, Auditory, Emotion]
+  tags:
+    perk: +2 Perform
+    range: 60 feet
+    target: Any number of creatures within range
+    duration: Until the start of your next turn
+  effect: |
+    Make a Spirit+Perform attack roll against your target's Spirit DC. You have disadvantage on this attack roll if your target is currently in combat or a similar dangerous situation.
+
+    Success
+    : Your target is {dazzled}
 
 # Provoke
 
@@ -555,7 +571,7 @@ Scout Terrain:
   tags:
     perk: +2 Travel
   effect: |
-    You declare that a specific terrain feature exists nearby, and that you know the way there. This feature must match the general terrain: you could find a nearby creek if you're in a forest, but not if you're in a desert. The feature is faily close by, maybe 30 minutes of travel outdoors, or 5 minutes of travel in a city.
+    You declare that a specific terrain feature exists nearby, and that you know the way there. This feature must match the general terrain: you could find a nearby creek if you're in a forest, but not if you're in a desert. The feature is fairly close by, maybe 30 minutes of travel outdoors, or 5 minutes of travel in a city.
 
     *For example, if you're in a hilly mountain, you could find a nearby cave, cliff, or ravine. Alternatively, if you're in a dense city, you could find a nearby tavern, guard barracks, or temple.*
 
