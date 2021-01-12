@@ -156,7 +156,7 @@ Shadow Step:
   tier: Novice
   type: Free
   brief: You can teleport between areas of darkness with merely a step
-  traits: [Spell, Teleport]
+  traits: [Spell, Teleportation]
   tags:
     cost: 1 Mana
     range: 60 feet
@@ -341,7 +341,7 @@ Decompose:
   tier: Ribbon
   type: 1-Action
   brief: You cause dead organic material to decompose extremely rapidly
-  traits: [Cantrip, Necroic, Spell]
+  traits: [Cantrip, Necrotic, Spell]
   tags:
     cost: 0 Mana
     range: Touch

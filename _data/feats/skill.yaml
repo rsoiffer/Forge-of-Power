@@ -537,7 +537,7 @@ Experienced Tracker:
 Wanderer:
   tier: Travel
   type: Passive
-  brief: You never get lost while travelling outdoors
+  brief: You never get completely lost while travelling outdoors
   tags:
     perk: +2 Travel
   effect: |
