@@ -256,6 +256,19 @@ Invigorating Herbs:
   effect: |
     Your ally heals 1d6 health and recovers 1 fatigue.
 
+Monster Handler:
+  tier: Nature
+  type: Free
+  brief: You reveal you have an item that attracts or repels a specific monster
+  traits: [Daily, Retroactive]
+  tags:
+    perk: +2 Nature
+    trigger: You succeed on a Nature roll to identify a monster
+  effect: |
+    You have an item in your pack that attracts or repels the type of monster you just identified. You choose whether the item attracts or repels the monster, and the GM describes exactly what the item is.
+
+    *For example, if you want to repel a vampire's ghoul minion, the GM might say you have a few garlic cloves. Alternatively, if you want to attract a griffon, the GM might say that you have a pile of deer guts and griffons love their smell.*
+
 # Notice
 
 Alert:
@@ -533,6 +546,18 @@ Experienced Tracker:
     requirements: You haven't used **Experienced Tracker** on these tracks in the last 24 hours
   effect: |
     You have a +10 bonus to the triggering roll. Additionally, you notice a hidden bit of information of the DM's choice about the creatures you're tracking. For example, you might notice that the creatures are walking single-file to hide their numbers, that the tracks match a specific style of boot, or that the creatures were moving with unusual haste.
+
+Scout Terrain:
+  tier: Travel
+  type: 1-Action
+  brief: You find the location of a nearby terrain feature you're looking for
+  traits: [Daily, Retroactive]
+  tags:
+    perk: +2 Travel
+  effect: |
+    You declare that a specific terrain feature exists nearby, and that you know the way there. This feature must match the general terrain: you could find a nearby creek if you're in a forest, but not if you're in a desert. The feature is faily close by, maybe 30 minutes of travel outdoors, or 5 minutes of travel in a city.
+
+    *For example, if you're in a hilly mountain, you could find a nearby cave, cliff, or ravine. Alternatively, if you're in a dense city, you could find a nearby tavern, guard barracks, or temple.*
 
 Wanderer:
   tier: Travel
