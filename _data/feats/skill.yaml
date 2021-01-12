@@ -353,6 +353,31 @@ Vicious Mockery:
 
 # Religion
 
+Astral Projection:
+  tier: Religion
+  type: 1-Action
+  brief: You lead a group meditation that sends you and everyone nearby to the spirit world
+  tags:
+    perk: +2 Religion
+    range: 10 feet
+    target: Yourself, and up to 5 willing creatures within range
+    duration: Until your target is affected by Astral Projection again
+  effect: |
+    Your target falls {unconscious}, as their spirit exits their body and travels to the spirit world. Your target's spirit shares the same stats as them, except it has the [[Spirit]] trait and it cannot use any talents or ribbons.
+
+    Make a Spirit+Religion roll against DC 15 to determine where your target appears in the spirit world.
+    
+    Success
+    : Your target appears at a location of your choice
+
+    Failure
+    : Your target appears at a random safe location
+
+    Critical Failure
+    : Your target appears at a random dangerous location
+
+    Whatever your result, your targets all appear at the same location in the spirit world. 
+
 Bishop:
   tier: Religion
   type: 1-Action
@@ -376,15 +401,6 @@ Holy Symbol:
     Roll a d4 and add your result as a bonus to the triggering roll.
   fluffstart: |
     You brandish your holy symbol and say a brief prayer for luck.
-
-Favor of the Kami:
-  tier: Religion
-  type: 1-Action
-  brief: You give out religious wisdom that helps someone solve a moral problem
-  tags:
-    perk: +2 Religion
-  effect: |
-    test
 
 Priestly Status:
   tier: Religion
