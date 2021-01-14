@@ -22,6 +22,8 @@ Slowed: Your speed is halved.
 
 Stunned: You've become senseless. You are {flat-footed} and can't use any powers.
 
+Taunted: You are entirely focused on an enemy. Whenever you make an attack, you must target that enemy if possible. In addition, you cannot use [[Move]] powers to move away from that enemy. If you are taunted by a new enemy, you are no longer taunted by the previous enemy.
+
 Terrified: You are overcome with terror. On each of your turns, you must use the {Stride} power and the {Repeat} ({Stride}) power to move as far away as possible from the source of your terror. This effect doesn't force you to move through obviously dangerous terrain. You has disadvantage on all rolls while you can see the source of your terror.
 
 Unconscious: You're sleeping, or you've been knocked out. You have the {blinded}, {prone}, and {stunned} conditions.

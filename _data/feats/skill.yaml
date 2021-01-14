@@ -112,6 +112,20 @@ Steady Balance:
 
 # Crafting
 
+Architectural Weakness:
+  tier: Crafting
+  type: 1-Action
+  brief: You analyze a building, spotting any weaknesses in its construction
+  traits: [Encounter]
+  tags:
+    perk: +2 Crafting
+    target: A building or large structure you can reach, or whose design blueprints you can analyze
+    requirements: You haven't used **Architectural Weakness** on this structure in the last 24 hours
+  effect: |
+    You find an architectural weakness in your target. You and creatures you tell about this weakness can target it instead of targeting the structure as a whole. The weakness has health much less than the original structure, usually 1/10 of the original health, though the GM may change this value. If you destroy the weakness, the entire structure collapses.
+  fluff: |
+    The target area is only two meters wide. It's a small thermal exhaust port, right below the main port. The shaft leads directly to the reactor system.
+
 Crazy Prepared:
   tier: Crafting
   type: 1-Action
@@ -126,6 +140,16 @@ Crazy Prepared:
   fluff: |
     And here's one I prepared earlier...
 
+Jury Rig:
+  tier: Crafting
+  type: 1-Action
+  brief: You instantly craft a crude, fragile item out of common scrap parts
+  tags:
+    perk: +2 Crafting
+    duration: 10 minutes, or until anyone rolls a natural 1 on a die roll to use the item
+  effect: |
+    You build a non-magical, handheld item of your choice out of scrap parts lying around nearby. This item is of very low quality, and it permanently breaks when the duration ends.
+
 Mouse Trap:
   tier: Crafting
   type: Passive
@@ -134,6 +158,17 @@ Mouse Trap:
     perk: +2 Crafting
   effect: |
     Whenever you set a mechanical trap or build a large device, you can disguise the mechanism as a set of completely mundane objects, which you placed to perfectly trigger a cascading effect. Anyone casually searching the area never realizes the mundane objects have any mechanical effect. Someone who is determinedly searching the area for traps or devices has a -10 penalty to any rolls made to detect the mechanism.
+
+Quick Craft:
+  tier: Crafting
+  type: Free
+  brief: You complete a long crafting job with a flurry of activity
+  traits: [Encounter]
+  tags:
+    perk: +2 Crafting
+    duration: 1 minute
+  effect: |
+    You craft at 60 times your normal speed. This means that over the next minute, you can complete the same amount of work you would normally complete in an hour.
 
 # Eloquence
 
@@ -176,7 +211,7 @@ Evangelize:
     Critical Failure
     : You have disadvantage on all rolls
 
-    If you succeed or critically succeed on this power, your argument might succeed in permanently pursuading your target of the truth of your claim. Your target chooses whether or not they are persuaded. If your target is persuaded, this power has no effect on them.
+    If you succeed or critically succeed on this power, your argument might succeed in permanently persuading your target of the truth of your claim. Your target chooses whether or not they are persuaded. If your target is persuaded, this power has no effect on them.
 
 False Expert:
   tier: Eloquence
@@ -353,6 +388,37 @@ Fascinating Performance:
 
 # Provoke
 
+Inflame Hatred:
+  tier: Provoke
+  type: 1-Action
+  brief: You inflame someone's anger and hatred toward another creature
+  traits: [Attack, Auditory, Encounter, Emotion]
+  tags:
+    perk: +2 Provoke
+    target: Any number of creatures who can hear you
+    duration: 1 hour
+  effect: |
+    Make a Spirit+Provoke attack roll against your target's Spirit DC.
+
+    Critical Success
+    : Your target is hostile towards a creature of your choice
+
+    Success
+    : Your target is unfriendly towards a creature of your choice
+
+    Critical Failure
+    : You lose -2 Reputation with your target
+
+Intimidating Reputation:
+  tier: Provoke
+  type: Passive
+  brief: You are known as tough, scary, and definitely not someone to mess with
+  traits: [Reputation]
+  tags:
+    perk: +2 Provoke
+  effect: |
+    You have a reputation as especially tough and harsh. Other people won't dare bother you unless they absolutely have to, letting you dominate social situations or even get away with minor crimes.
+
 Scare to Death:
   tier: Provoke
   type: 1-Action
@@ -364,8 +430,27 @@ Scare to Death:
     duration: Until the end of your next turn
   effect: |
     Make a Strength+Provoke or Spirit+Provoke attack roll against your target's Spirit DC.
-  critical-success: Your target is {terrified}, and if their current health is no higher than the value you rolled, they instantly die
-  success: Your target is {terrified}
+
+    Critical Success
+    : Your target is {terrified}, and if their current health is no higher than the value you rolled, they instantly die
+
+    Success
+    : Your target is {terrified}
+
+Taunt:
+  tier: Provoke
+  type: 1-Action
+  brief: You taunt an enemy, forcing them to focus on only you
+  traits: [Attack, Auditory, Emotion]
+  tags:
+    perk: +2 Provoke
+    range: 30 feet
+    duration: 1 minute
+  effect: |
+    Make a Spirit+Provoke attack roll against your target's Spirit DC.
+
+    Success
+    : Your target is {taunted} by you
 
 Vicious Mockery:
   tier: Provoke

@@ -66,14 +66,10 @@ Taunting Shout:
     target: Any number of creatures within the area
     duration: 1 minute
   effect: |
-    Make a Spirit+Provoke attack against your target's Spirit DC.
+    Make a Spirit+Provoke attack roll against your target's Spirit DC.
 
     Success
-    : Your target is **taunted** by you
-  aside: |
-    ### Taunted Condition
-
-    If you are taunted by an enemy, you are entirely focused on that enemy. Whenever you make an attack, you must target that enemy if possible. In addition, you cannot use [[Move]] powers to move away from that enemy.
+    : Your target is {taunted} by you
 
 Tenacity:
   tier: Novice

@@ -364,7 +364,7 @@ Intimidating Presence:
   type: Passive
   brief: You exude an unnatural aura of fear and darkness
   effect: |
-    You have advantage on Spirit+Provoke rolls to intimidate or scare creatures.
+    You have advantage on Spirit+Provoke rolls to intimidate or scare creatures you can reach.
 
 Speak with Dead:
   tier: Ribbon
