@@ -11,6 +11,7 @@ sidebar:
   <tr>
     <th>Name</th>
     <th>Type</th>
+    <th>Description</th>
   </tr>
   {% for power in site.data.basic-powers %}
     <tr>
@@ -22,9 +23,11 @@ sidebar:
           {% icon {{ power[1].type }} %}
         {% endunless %}
       </td>
+      <td>{{ power[1].brief }}</td>
     </tr>
   {% endfor %}
 </table>
+
 
 <h2>Talents</h2>
 
@@ -34,6 +37,7 @@ sidebar:
     <th>School</th>
     <th>Tier</th>
     <th>Type</th>
+    <th>Description</th>
   </tr>
   {% for power in site.data.powers %}
     <tr>
@@ -47,6 +51,109 @@ sidebar:
           {% icon {{ power[1].type }} %}
         {% endunless %}
       </td>
+      <td>{{ power[1].brief }}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+
+<h2>General Feats</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  {% for power in site.data.feats.general %}
+    <tr>
+      <td>
+          <a href="feats-general.html#{{ power[0] | slugify }}"">{{ power[0] }}</a>
+      </td>
+      <td>
+        {% unless power[1].type == "Passive" %}
+          {% icon {{ power[1].type }} %}
+        {% endunless %}
+      </td>
+      <td>{{ power[1].brief }}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+
+<h2>Ancestry Feats</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Ancestry</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  {% for power in site.data.feats.ancestry %}
+    <tr>
+      <td>
+          <a href="feats-ancestry.html#{{ power[0] | slugify }}"">{{ power[0] }}</a>
+      </td>
+      <td>{{ power[1].tier }}</td>
+      <td>
+        {% unless power[1].type == "Passive" %}
+          {% icon {{ power[1].type }} %}
+        {% endunless %}
+      </td>
+      <td>{{ power[1].brief }}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+
+<h2>Combat Feats</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Combat</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  {% for power in site.data.feats.combat %}
+    <tr>
+      <td>
+          <a href="feats-combat.html#{{ power[0] | slugify }}"">{{ power[0] }}</a>
+      </td>
+      <td>{{ power[1].tier }}</td>
+      <td>
+        {% unless power[1].type == "Passive" %}
+          {% icon {{ power[1].type }} %}
+        {% endunless %}
+      </td>
+      <td>{{ power[1].brief }}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+
+<h2>Skill Feats</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Skill</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  {% for power in site.data.feats.skill %}
+    <tr>
+      <td>
+          <a href="feats-skill.html#{{ power[0] | slugify }}"">{{ power[0] }}</a>
+      </td>
+      <td>{{ power[1].tier }}</td>
+      <td>
+        {% unless power[1].type == "Passive" %}
+          {% icon {{ power[1].type }} %}
+        {% endunless %}
+      </td>
+      <td>{{ power[1].brief }}</td>
     </tr>
   {% endfor %}
 </table>
