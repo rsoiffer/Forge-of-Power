@@ -280,6 +280,20 @@ Befriend Animal:
     Critical Failure
     : Your target is hostile towards you and your allies
 
+Favored Terrain:
+  tier: Nature
+  type: Passive
+  brief: You are incredibly skilled at living or traveling in a particular terrain
+  effect: |
+    You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: Arctic, Caves, Coast, Desert, Forest, Grassland, Mountain, or Swamp. You gain the Lore for this terrain, or if you already had that Lore, you gain another proficiency of your choice. Whenever you make a Nature or Travel roll related to your favored terrain, you have a +10 bonus to the roll.
+
+Friend of Nature:
+  tier: Nature
+  type: Passive
+  brief: You naturally have the friendship and trust of animals
+  effect: |
+    Animals and intelligent plants tend to like you. Unless given reason to act otherwise, they will treat you as a trusted friend or ally, and are helpful towards you. If you have some way to speak with animals, you can usually get them to perform simple favors for you.
+
 Invigorating Herbs:
   tier: Nature
   type: 1-Action
@@ -328,16 +342,49 @@ Keen Eye:
   fluff: |
     Use common sense to determine what counts as a room. We all speak English here.
 
+Lie Detector:
+  tier: Notice
+  type: Reaction
+  brief: You learn whether a creature is telling the truth or lying
+  traits: [Encounter]
+  tags:
+    perk: +2 Notice
+    trigger: A creature you can see and hear makes a statement
+  effect: |
+    You know whether the triggering creature was completely lying. This power doesn't detect half-truths or lies by omission.
+
 Low-Light Vision:
   tier: Notice
   type: Passive
   brief: You can see in dimly light environments just as well as in bright light
   tags:
-    perk: +2 Perform
+    perk: +2 Notice
   effect: |
     You can see in dim light as if it was bright light.
 
+Pursue a Lead:
+  tier: Notice
+  type: 1-Action
+  brief: You examine a clue, focusing your efforts on investigating your target
+  traits: [Encounter]
+  tags:
+    perk: +2 Notice
+    target: One creature, object, or location you know exists
+    requirements: You have some kind of clue about your target
+    duration: Until you use this power again
+  effect: |
+    You have advantage on Intellect rolls made to investigate your target.
+
 # Perform
+
+Actor:
+  tier: Perform
+  type: Passive
+  brief: You are very skilled at impersonating specific other people
+  tags:
+    perk: +2 Perform
+  effect: |
+    You have a +10 bonus to Spirit+Perform rolls made to impersonate a specific person. You must have studied this person's speech and behavior for at least 1 minute.
 
 Backup Disguise:
   tier: Perform
@@ -541,11 +588,20 @@ Connections:
   tier: Society
   type: 1-Action
   brief: You have connections in high places, who you can try to ask for favors
-  traits: [Daily]
+  traits: [Daily, Retroactive]
   tags:
     perk: +2 Society
   effect: |
     You announce that you know a noble, a rich merchant, a judge, or another important figure in the local town. This figure has heard of you before and is friendly towards you. You can get an audience with them and can ask them for minor favors.
+
+Extensive Knowledge:
+  tier: Society
+  type: Passive
+  brief: You are an expert in a huge variety of different areas of knowledge
+  tags:
+    perk: +2 Society
+  effect: |
+    You gain four Lores of your choice. Each Lore must be about history, culture, business, society, or some kind of human activity. When you finish an 8-hour rest, you can change your choice of Lores.
 
 Forced Error:
   tier: Society
@@ -635,6 +691,15 @@ Prior Pickpocketing:
     Success
     : You reveal you successfully pickpocketed your target, drawing the item and showing it to them, as your target either draws nothing or draws a useless fake copy of the item
 
+Stealthy Move:
+  tier: Stealth
+  type: Passive
+  brief: You can move across a creature's field of view without being seen
+  tags:
+    perk: +2 Stealth
+  effect: |
+    When you {Stride}, if you are hidden from a creature at the start of your movement, you are hidden for the entire movement, even if you move directly through a creature's field a view. If you end your Stride in direct view, you are seen as normal.
+
 # Travel
 
 Experienced Tracker:
@@ -648,6 +713,13 @@ Experienced Tracker:
   effect: |
     You have a +10 bonus to the triggering roll. Additionally, you notice a hidden bit of information of the DM's choice about the creatures you're tracking. For example, you might notice that the creatures are walking single-file to hide their numbers, that the tracks match a specific style of boot, or that the creatures were moving with unusual haste.
 
+Land's Stride:
+  tier: Travel
+  type: Passive
+  brief: You ignore simple natural hazards that impede movement
+  effect: |
+    You move at full Speed through difficult terrain. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
+
 Scout Terrain:
   tier: Travel
   type: 1-Action
@@ -659,6 +731,17 @@ Scout Terrain:
     You declare that a specific terrain feature exists nearby, and that you know the way there. This feature must match the general terrain: you could find a nearby creek if you're in a forest, but not if you're in a desert. The feature is fairly close by, maybe 30 minutes of travel outdoors, or 5 minutes of travel in a city.
 
     *For example, if you're in a hilly mountain, you could find a nearby cave, cliff, or ravine. Alternatively, if you're in a dense city, you could find a nearby tavern, guard barracks, or temple.*
+
+Travel Guide:
+  tier: Travel
+  type: 1-Action
+  brief: You know the way to any destination you name, and can easily find the path there
+  traits: [Daily]
+  tags:
+    perk: +2 Travel
+    duration: 8 hours
+  effect: |
+    Name one major landmark, such as a city, mountain, castle, or battlefield. Someone in history must have visited the site and mapped it; this power fails if the landmark appears on no map in existence. You know the exact direction from you to the landmark.
 
 Wanderer:
   tier: Travel

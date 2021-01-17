@@ -168,10 +168,13 @@ Slow Fall:
 
 Step of the Wind:
   tier: Ribbon
-  type: Passive
+  type: Free
   brief: You can move at a rapid pace along uneven ground
+  traits: [Encounter]
+  tags:
+    duration: Until the end of your turn
   effect: |
-    You move at full Speed along difficult terrain.
+    You move at full Speed through difficult terrain.
 
 Quick Climb:
   tier: Ribbon

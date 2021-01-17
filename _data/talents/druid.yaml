@@ -141,20 +141,6 @@ Detect Poison:
   effect: |
     You detect all poisons, poisonous creatures, diseases, and diseased creatures in the area. You sense the precise location and the exact type of poison or disease.
 
-Friend of Nature:
-  tier: Ribbon
-  type: Passive
-  brief: Animals are naturally friendly towards you
-  effect: |
-    Animals and intelligent plants tend to like you. Unless given reason to act otherwise, they will treat you as a trusted friend or ally. If you have the {Speak with Animals} power, you can usually get animals to perform simple favors for you.
-
-Land's Stride:
-  tier: Ribbon
-  type: Passive
-  brief: You ignore simple natural hazards that impede movement
-  effect: |
-    Moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
-
 Spark of Growth:
   tier: Ribbon
   type: 1-Action
