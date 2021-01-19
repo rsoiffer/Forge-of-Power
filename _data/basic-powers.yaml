@@ -1,26 +1,32 @@
 Command:
   type: Free
-  brief: Command a Minion you control to take an action
-  traits: [Auditory, Concentrate]
-  effect:
-    You command a [[Minion]] creature you control to immediately use a {% icon 1-Action %} power.
+  brief: You command a Minion you control to take an action
+  traits: [Auditory]
+  effect: |
+    You command a [[Minion]] creature you control to immediately take a turn. This turn doesn't count as part of the normal turn order. This power can't let a creature take two turns in the same round.
 
 Disarm:
   type: 1-Action
   traits: [Attack, Wrestling]
   tags:
     target: One creature you can reach
-  effect:
+  effect: |
     Pick one item your target is holding. Make a Strength attack roll against the higher of your target's Strength DC or Agility DC.
-  critical-success: You knock the item out of the target's grasp. It falls to the ground in a space of your choice within 15 feet of your target.
-  success: You knock the item out of the target's grasp. It falls to the ground in the target's space.
+
+    Critical Success
+    : You knock the item out of the target's grasp. It falls to the ground in a space of your choice within 15 feet of your target.
+
+    Success
+    : You knock the item out of the target's grasp. It falls to the ground in the target's space.
 
 Escape:
   type: 1-Action
   traits: [Attack]
-  effect:
+  effect: |
     You attempt to escape from being {grabbed}, {immobilized}, or {restrained}. Choose one effect imposing any of these conditions on you. Make a Strength or Agility attack roll against the DC of the effect (such as the Strength DC of a creature grabbing you, or the Magic DC of a spell effect).
-  success: You get free and remove the {grabbed}, {immobilized}, and {restrained} conditions imposed by your chosen target
+
+    Success
+    : You get free and remove the {grabbed}, {immobilized}, and {restrained} conditions imposed by your chosen target
 
 Grapple:
   type: 1-Action
@@ -29,17 +35,25 @@ Grapple:
     requirements: You have at least one free hand
     target: One creature you can reach
     duration: Until the end of your next turn, you move, or your opponent succeeds on an {Escape}
-  effect:
+  effect: |
     Make a Strength attack roll against your target's Strength DC.
-  critical-success: Your target is {restrained}
-  success: Your target is {grabbed}
+
+    Critical Success
+    : Your target is {restrained}
+
+    Success
+    : Your target is {grabbed}
 
 Help:
   type: 1-Action
-  effect:
+  effect: |
     You try to help your ally with a task. The task but be something you could reasonably help with, must involve a die roll, and must be completed before the start of your next turn. You must explain to the GM exactly how you're trying to help, and they determine whether you can Aid your ally. Attempt a die roll (of a type decided by the GM) against DC 20.
-  success: Your ally has advantage on the roll
-  critical-failure: Your ally has disadvantage on the roll
+
+    Success
+    : Your ally has advantage on the roll
+
+    Critical Failure
+    : Your ally has disadvantage on the roll
 
 Interact:
   type: Free
@@ -52,7 +66,7 @@ Interrupt:
   tags:
     trigger: A creature ends its turn
     requirements: That creature targeted you with an [[Attack]] power on its turn, you haven't taken a turn yet this round, and you are not surprised
-  effect:
+  effect: |
     You interrupt the normal turn order. Instead of the triggering creature deciding who takes the next turn, you take the next turn.
 
 Point Out:
@@ -60,7 +74,7 @@ Point Out:
   traits: [Auditory, Manipulate, Visual]
   tags:
     requirements: A creature you can see is hidden to one or more of your allies
-  effect:
+  effect: |
     You indicate a creature that you can see to one or more allies, gesturing in a direction and describing the distance verbally. The target is no longer hidden to your allies.
 
 Repeat:
@@ -76,19 +90,25 @@ Seek:
   tags:
     area: A 15-foot burst you can see
     target: All hidden creatures or objects in the area
-  effect:
+  effect: |
     Make a Intellect+{Notice} roll against your target's Agility+{Stealth} DC.
-  success: Your target is no longer hidden to you
+
+    Success
+    : Your target is no longer hidden to you
 
 Shove:
   type: 1-Action
   traits: [Attack, Wrestling]
   tags:
     target: One creature you can reach
-  effect:
+  effect: |
     Make a Strength attack roll against the higher of your target's Strength DC or Agility DC.
-  critical-success: You push your target up to 10 feet away from you
-  success: You push your target back 5 feet
+
+    Critical Success
+    : You push your target up to 10 feet away from you
+
+    Success
+    : You push your target back 5 feet
 
 Stand:
   type: Free
@@ -113,8 +133,12 @@ Strike:
     Make an attack roll against the target's Defense. The attack roll is a Strength roll for melee weapons or an Agility roll for ranged weapons. Weapons with the [[Finesse]] trait let you choose either Strength or Agility for the attack roll.
 
     When you make a ranged Strike, you can optionally choose to make a long-range Strike to try to hit a distant target. If you do, you have disadvantage on the attack roll, but your Strike has double the range.
-  critical-success: You deal damage equal to 2 * the weapon's base damage + the attack roll's attribute
-  success: You deal damage equal to the weapon's base damage + the attack roll's attribute
+
+    Critical Success
+    : You deal damage equal to 2 * the weapon's base damage + the attack roll's attribute
+
+    Success
+    : You deal damage equal to the weapon's base damage + the attack roll's attribute
 
 Sustain:
   type: Free
@@ -131,6 +155,8 @@ Trip:
   traits: [Attack, Wrestling]
   tags:
     target: One creature you can reach
-  effect:
+  effect: |
     Make a Strength attack roll against the higher of your target's Strength DC or Agility DC.
-  success: The target falls and lands {prone}
+
+    Success
+    : The target falls and lands {prone}

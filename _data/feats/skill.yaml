@@ -287,13 +287,6 @@ Favored Terrain:
   effect: |
     You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: Arctic, Caves, Coast, Desert, Forest, Grassland, Mountain, or Swamp. You gain the Lore for this terrain, or if you already had that Lore, you gain another proficiency of your choice. Whenever you make a Nature or Travel roll related to your favored terrain, you have a +10 bonus to the roll.
 
-Friend of Nature:
-  tier: Nature
-  type: Passive
-  brief: You naturally have the friendship and trust of animals
-  effect: |
-    Animals and intelligent plants tend to like you. Unless given reason to act otherwise, they will treat you as a trusted friend or ally, and are helpful towards you. If you have some way to speak with animals, you can usually get them to perform simple favors for you.
-
 Invigorating Herbs:
   tier: Nature
   type: 1-Action
@@ -304,6 +297,15 @@ Invigorating Herbs:
     target: One ally you can reach
   effect: |
     Your ally heals 1d6 health and recovers 1 fatigue.
+
+Locate Animals or Plants:
+  tier: Nature
+  type: 1-Action
+  brief: You find the nearest animal or plant of a certain type within 5 miles
+  tags:
+    perk: +2 Nature
+  effect: |
+    Name one type of animal or plant. You learn the location of the closest animal or plant of that type within 5 miles, if any.
 
 Monster Handler:
   tier: Nature

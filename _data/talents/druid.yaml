@@ -1,7 +1,7 @@
-Befriend Animal:
+Command Animal:
   tier: Novice
   type: 1-Action
-  brief: You befriend an animal, making it your trusted companion
+  brief: You befriend and command an animal, making it your trusted companion
   traits: [Attack, Auditory, Spell]
   tags:
     cost: 1 Mana
@@ -23,7 +23,7 @@ Entangle:
     range: 60 feet
     area: 20-foot burst
     requirements: Your target is on the ground
-    duration: Forever
+    duration: Sustained, up to 1 hour
   effect: |
     Make a Magic attack roll against your target's Agility DC
 
@@ -34,7 +34,11 @@ Entangle:
     : Your target is {immobilized}
 
     Failure
-    : Your target is {slowed} until the end of its next turn
+    : Your target is {slowed}
+
+    #### Heightened
+
+    For each +1 Mana, the radius increases by 10 feet.
 
 Goodberry:
   tier: Novice
@@ -46,6 +50,10 @@ Goodberry:
     duration: 1 hour
   effect: |
     Up to 10 berries appear in your hand. A creature can eat a berry (or feed it to an ally) with the {Interact} power. Eating a berry heals 1 health and provides enough nourishment to sustain a normal human for one day. Any uneaten berries disappear when the duration ends.
+
+    #### Heightened
+
+    For each +1 Mana, the healing of each berry increases by 1.
 
 Magic Acorns:
   tier: Novice
@@ -67,6 +75,48 @@ Magic Acorns:
 
     ***Slowing.*** The projectiles cover their target in sticky sap. On a successful {Strike}, the target is {slowed} until the end of its next turn.
 
+Summon Animal:
+  tier: Novice
+  type: 1-Action
+  brief: You summon a fey spirit that takes the form of a normal animal
+  traits: [Spell]
+  tags:
+    cost: 2 Mana
+    range: 30 feet
+    duration: 1 hour
+  effect: |
+    You summon a [[Minion]] eagle or wolf at the target point. Your minion loyally follows all your orders, unless those orders are obviously suicidal. When the spell's duration ends, your minion fades back into the spirit world.
+
+    You are free to describe the species of animal you summon as something other than the type listed, as long as you keep the same stats. For example, you could summon a hawk, owl, or raven using the eagle stats, or you could summon a brown bear, deer, or panther using the wolf stats.
+
+    #### Heightened
+
+    For each +1 Mana, your minion's maximum health increases by 10, and its Strength or Agility increases by 1.
+
+    If you add +2 Mana, the duration extends to 24 hours.
+  aside: |
+    {% smallpower %}
+    Eagle Stats:
+      traits: [Beast, Spirit]
+      tags:
+        attributes: Strength -2, Agilty +2, Intellect -4, Spirit +0
+        other stats: Health 5, Defense 12, Speed 60 feet (fly), Size -1
+      effect: |
+        The eagle adds +6 to Notice rolls that rely on sight instead of its normal modifier.
+
+        The eagle can slash with its claws as a [[Finesse]] melee weapon that deals 1d4 [[Slashing]] base damage.
+    {% endsmallpower %}
+
+    {% smallpower %}
+    Wolf Stats:
+      traits: [Beast, Spirit]
+      tags:
+        attributes: Strength +1, Agilty +1, Intellect -4, Spirit -1
+        other stats: Health 15, Defense 12, Speed 40 feet, Size +0
+      effect: |
+        The wolf can bite with its teeth as a melee weapon that deals 1d8 [[Piercing]] base damage.
+    {% endsmallpower %}
+
 Thorn Whip:
   tier: Novice
   type: 1-Action
@@ -74,7 +124,7 @@ Thorn Whip:
   traits: [Attack, Cantrip, Piercing, Spell]
   tags:
     cost: 0 Mana
-    range: 30 feet
+    area: 30-foot cone
   effect: |
     Make a Magic attack roll against your target's Agility DC.
 
@@ -82,7 +132,7 @@ Thorn Whip:
     : Double damage
 
     Success
-    : Your target takes 2d6 damage and is pulled up to 10 feet towards you
+    : Your target takes 1d6 damage and is pulled up to 10 feet towards you
 
     #### Heightened
 
@@ -137,9 +187,16 @@ Detect Poison:
   traits: [Ritual, Spell]
   tags:
     cost: 1 Mana
-    area: 30-foot burst
+    area: 30-foot emanation
   effect: |
     You detect all poisons, poisonous creatures, diseases, and diseased creatures in the area. You sense the precise location and the exact type of poison or disease.
+
+Friend of Nature:
+  tier: Ribbon
+  type: Passive
+  brief: You naturally have the friendship and trust of animals
+  effect: |
+    Animals and intelligent plants tend to like you. Unless given reason to act otherwise, they will treat you as a trusted friend or ally, and are helpful towards you. If you have some way to speak with animals, you can usually get them to perform simple favors for you.
 
 Spark of Growth:
   tier: Ribbon
