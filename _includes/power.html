@@ -42,7 +42,41 @@
 
 {{ power_body.effect | process }}
 
-{% if power_body.critical-success or power_body.success or power_body.failure or power_body.critical-failure %}
+{% if power_body.specialize %}
+<h4>Specializations</h4>
+<table class="specialize">
+    <tr>
+        {% for option in power_body.specialize %}
+        <td>
+            <h4>{{ option[0] }}</h4>
+            {{ option[1] | process }}
+        </td>
+        {% endfor %}
+    </tr>
+</table>
+{% endif %}
+
+{% if power_body.specialize-v2 %}
+<h4>Specializations</h4>
+<table class="specialize-v2">
+    <tr>
+        {% for option in power_body.specialize-v2 %}
+        <th>
+            {{ option[0] }}
+        </th>
+        {% endfor %}
+    </tr>
+    <tr>
+        {% for option in power_body.specialize-v2 %}
+        <td>
+            {{ option[1] | process }}
+        </td>
+        {% endfor %}
+    </tr>
+</table>
+{% endif %}
+
+<!-- {% if power_body.critical-success or power_body.success or power_body.failure or power_body.critical-failure %}
     <dl class="tags">
     {% if power_body.critical-success %}
         <dt>Critical Success</dt>
@@ -65,7 +99,7 @@
 
 {% if power_body.heightened %}
 {{ power_body.heightened | process }}
-{% endif %}
+{% endif %} -->
 
 {% if power_body.fluff %}
 <div class="fluff">{{ power_body.fluff | process }}</div>

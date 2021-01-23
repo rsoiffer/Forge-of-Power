@@ -83,6 +83,42 @@ Elemental Blast:
 
     You have advantage on the attack roll if your target is underwater. On a success, your target is pushed 10 feet in any direction.
 
+Elemental Control:
+  tier: Novice
+  type: 1-Action
+  brief: You hold a creature in place with a prison of a particular element
+  traits: [Attack, Specialize, Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    duration: Until the 
+  effect: |
+    Make a Magic attack roll against your target's Strength DC.
+
+    Critical Success
+    : Your target is {restrained}
+
+    Success
+    : Your target is {immobilized}
+  aside: |
+    ### Specializations
+
+    #### Air
+
+    If you fail the attack, your target is {slowed}.
+
+    #### Earth
+
+    If you critically succeed on the attack, you automatically critically succeed when you sustain the spell. Your target can still try to {Escape} as normal.
+
+    #### Fire
+
+    When you succeed on the attack, you can move your target up to 10 feet in any direction.
+
+    #### Water
+
+    When you succeed on the attack, you can move your target up to 10 feet in any direction.
+
 Elemental Shield:
   tier: Novice
   type: Reaction
@@ -98,20 +134,131 @@ Elemental Shield:
     ### Specializations
 
     #### Air
+    *You deflect attacks with a gust of wind.*
 
     You gain an additional +8 Defense against ranged Strikes.
 
     #### Earth
+    *A shield of solid earth blocks all attacks.*
 
     You gain 10 [[Physical]] Shield.
 
     #### Fire
+    *A wave of fire burns away projectiles.*
 
-    If your attacker is adjacent to you, they take 2d6 [[Fire]] damage.
+    If you can reach the triggering attacker, they take 2d6 [[Fire]] damage.
 
     #### Water
+    *You redirect attacks with a stream of water.*
 
     If the triggering attack critically fails against you, it targets your attacker instead (and is automatically a success).
+
+Elemental Skate 1:
+  tier: Novice
+  type: 1-Action
+  brief: You slide along a slab of a particular element
+  traits: [Specialize, Spell]
+  tags:
+    cost: 1 Mana
+    duration: Sustained, up to 1 minute
+  effect: |
+    You have a +10 feet bonus to Speed.
+
+    #### Heightened
+
+    For each +1 Mana, the bonus increases by 10 feet.
+
+    If you add +1 Mana, the maximum duration increases to 1 hour.
+  aside: |
+    ### Specializations
+
+    #### Air
+    *You zoom over the ground, riding on the wind itself.*
+
+    The bonus increases by 10 feet.
+
+    #### Earth
+    *You skate over any terrain on a slab of rock.*
+
+    You ignore difficult terrain.
+
+    #### Fire
+    *You propel yourself forward with jets of flame.*
+
+    You have +2 Agility DC.
+
+    #### Water
+    *You slide fowards along a path of slick ice.*
+
+    You can walk along water and slippery ice as if they were solid ground.
+
+Elemental Skate 2:
+  tier: Novice
+  type: 1-Action
+  brief: You slide along a slab of a particular element
+  traits: [Specialize, Spell]
+  tags:
+    cost: 1 Mana
+    duration: Sustained, up to 1 minute
+  effect: |
+    You have a +10 feet bonus to Speed.
+
+    #### Heightened
+
+    For each +1 Mana, the bonus increases by 10 feet.
+
+    If you add +1 Mana, the maximum duration increases to 1 hour.
+  specialize-v2:
+    Air: |
+      *You zoom over the ground, riding on the wind itself.*
+
+      The bonus increases by 10 feet.
+    Earth: |
+      *You skate over any terrain on a slab of rock.*
+
+      You ignore difficult terrain.
+    Fire: |
+      *You propel yourself forward with jets of flame.*
+
+      You have +2 Agility DC.
+    Water: |
+      *You slide fowards along a path of slick ice.*
+
+      You can walk along water and slippery ice as if they were solid ground.
+
+Elemental Skate 3:
+  tier: Novice
+  type: 1-Action
+  brief: You slide along a slab of a particular element
+  traits: [Specialize, Spell]
+  tags:
+    cost: 1 Mana
+    duration: Sustained, up to 1 minute
+  effect: |
+    You have a +10 feet bonus to Speed.
+
+    #### Heightened
+
+    For each +1 Mana, the bonus increases by 10 feet.
+
+    If you add +1 Mana, the maximum duration increases to 1 hour.
+  specialize:
+    Air: |
+      *You zoom over the ground, riding on the wind itself.*
+
+      The bonus increases by 10 feet.
+    Earth: |
+      *You skate over any terrain on a slab of rock.*
+
+      You ignore difficult terrain.
+    Fire: |
+      *You propel yourself forward with jets of flame.*
+
+      You have +2 Agility DC.
+    Water: |
+      *You slide fowards along a path of slick ice.*
+
+      You can walk along water and slippery ice as if they were solid ground.
 
 Freeze:
   tier: Novice
