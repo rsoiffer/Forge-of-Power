@@ -32,6 +32,54 @@ Bless:
 
     For each +1 Mana, you target one additional creature.
 
+Enhance Ability:
+  tier: Novice
+  type: 1-Action
+  brief: You enhance your target's attribute, helping them out of combat
+  traits: [Spell]
+  tags:
+    cost: 2 Mana
+    range: 30 feet
+    duration: 1 hour
+  effect: |
+    Choose an attribute. Your target has advantage on die rolls with that attribute other than attack rolls.
+
+    #### Heightened
+
+    For each +1 Mana, you can target another creature within range.
+
+Exorcise:
+  tier: Novice
+  type: 1-Action
+  brief: You rebuke a spirit, damaging it and forcing it to free
+  traits: [Attack, Radiant, Specialize, Spell]
+  tags:
+    cost: 1 Mana
+    range: 60 feet
+    requirements: Your target is a [[Spirit]] creature
+    duration: Varies
+  effect: |
+    Make a Magic attack roll against your target's Spirit DC.
+
+    Critical Success
+    : Your target takes 4d10 damage and is {terrified} for 1 minute
+
+    Success
+    : Your target takes 4d10 damage and is {terrified} until the end of their next turn
+
+    Failure
+    : Half damage
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 2d10.
+
+    If you add +3 Mana, this spell loses its range and gains an area of a 30-foot emanation.
+  aside: |
+    ### Specializations
+
+    Choose one of [[Fey]], [[Outsider]], or [[Undead]]. When you cast **Exorcise** on a creature with that trait, you have advantage on the attack roll.
+
 Guiding Bolt:
   tier: Novice
   type: 1-Action
@@ -62,11 +110,24 @@ Heal:
     cost: 1 Mana
     range: Touch
   effect: |
-    Your target heals 5 health and is cured of any nonmagical diseases. If your target is an [[Undead]] or an [[Outsider]], they instead take 4d6 damage.
+    Your target heals 5 health and is cured of any nonmagical diseases. If your target is  an [[Outsider]] or an [[Undead]], they instead take 4d6 damage.
 
     #### Heightened
 
     For each +1 Mana, the healing increases by 5 and the damage increases by 2d6.
+
+    If you add +3 Mana, this spell loses its range and gains an area of a 30-foot emanation.
+
+Restorative Magic:
+  tier: Novice
+  type: Free
+  brief: You heal a creature that you affect with another spell
+  traits: [Healing]
+  tags:
+    trigger: You cast a spell
+    target: One creature targeted by the triggering spell
+  effect: |
+    Your target heals an amount equal to twice the cost of the triggering spell.
 
 Smite Evil:
   tier: Novice
@@ -75,14 +136,120 @@ Smite Evil:
   traits: [Radiant, Spell]
   tags:
     cost: 1 Mana
-    trigger: You succeed on a melee {Strike}
+    trigger: You succeed on a {Strike}
     target: The target of your Strike
   effect: |
-    Your target takes 2d6 damage. If your target is an [[Undead]] or an [[Outsider]], this damage is doubled.
+    Your target takes 2d6 damage. If your target is an [[Outsider]] or an [[Undead]], this damage is doubled.
+
+    If your Strike was a ranged Strike, the damage dice are d4s instead of d6s.
 
     #### Heightened
 
     For each +1 Mana, the damage increases by 2d6.
+
+Crusader's Mantle:
+  tier: Veteran
+  type: 1-Action
+  brief: You radiate holy power, awakening boldness in your allies
+  traits: [Radiant, Spell]
+  tags:
+    cost: 3 Mana
+    area: 30-foot emanation, which follows you for the duration
+    duration: 1 minute
+  effect: |
+    When a friendly creature other than you in the area makes a {Strike}, it deals an extra 1d6 damage on a success.
+
+Daylight:
+  tier: Veteran
+  type: 1-Action
+  brief: You cover an area in bright light that illuminates and blinds enemies
+  traits: [Light, Spell]
+  tags:
+    cost: 3 Mana
+    range: 120 feet
+    area: 60-foot burst
+    duration: 1 hour, or until you decide to end it
+  effect: |
+    The spell's area is filled with sunlight. It shines bright light out to a distance of 60 feet and dim light out to a distance of 120 feet.
+
+    You can use the **Blinding Light** and **Warding Light** powers.
+
+    #### Heightened
+
+    For each +1 Mana, the radius of the burst increases by 20 feet.
+  aside: |
+    {% smallpower %}
+    Blinding Light:
+      type: Free
+      traits: [Attack, Light]
+      tags:
+        target: One creature in the area of **Daylight**
+        duration: Varies
+      effect: |
+        Make a Magic attack roll against your target's Strength DC.
+
+        Critical Success
+        : Your target is {blinded} for 1 minute
+
+        Success
+        : Your target is {blinded} until the end of their next turn
+
+        Success
+        : Your target is {dazzled} until the end of their next turn
+    {% endsmallpower %}
+
+    {% smallpower %}
+    Warding Light:
+      type: Reaction
+      traits: [Light]
+      tags:
+        target: One creature in the area of **Daylight**
+        trigger: An enemy attacks your target
+      effect: |
+        The triggering attack has disadvantage.
+    {% endsmallpower %}
+
+Healing Spirit:
+  tier: Veteran
+  type: 1-Action
+  brief: You summon a radiant spirit that guards an area for you
+  traits: [Spell]
+  tags:
+    cost: 3 Mana
+    range: 120 feet
+    area: 30-foot burst
+    duration: Sustained, up to 1 minute
+  effect: |
+    You can use the **Healing Wave** power.
+
+    As an optional rule, the **Healing Wave** power can't heal targets to higher health than they were at the start of your last turn. The GM should enforce this rule if players try to abuse Healing Spirit out of combat.
+
+    #### Heightened
+
+    For each +2 Mana, the healing and damage each increase by 1d6.
+  aside: |
+    {% smallpower %}
+    Healing Wave:
+      type: Free
+      traits: [Healing, Radiant]
+      tags:
+        target: All creatures in the area of **Healing Spirit**
+        requirements: Your target took damage since the start of your last turn, or your target is an [[Outsider]] or [[Undead]]
+      effect: |
+        Your target heals 2d6 health. If your target is an [[Outsider]] or [[Undead]], they instead take 2d6 damage.
+    {% endsmallpower %}
+
+Revivify:
+  tier: Veteran
+  type: 1-Action
+  brief: You revive a recently-deceased creature, returning them to life
+  traits: [Healing, Spell]
+  tags:
+    cost: 3 Mana
+    target: One dead creature you can reach
+    requirements: Your target died within the last 10 minutes
+  effect: |
+    Your target returns to life with 0 health and 4 fatigue.
 
 Sacred Spell:
   tier: Veteran
@@ -91,15 +258,31 @@ Sacred Spell:
   traits: [Encounter]
   tags:
     trigger: You cast a spell
+    requirements: Either the triggering spell is a Healer spell or it doesn't deal damage
   effect: |
     Reduce the cost of the triggering spell by 2.
 
 Blessed Healer:
   tier: Ribbon
   type: Passive
-  brief: Healing spells you cast on others heal you as well
+  brief: Your healing spells heal you as well when you cast them on others
   effect: |
     When you spend at least 1 Mana on a [[Healing]] spell, you heal health equal to the Mana you spent.
+
+Ceremony:
+  tier: Ribbon
+  type: Passive
+  brief: You can perform a variety of magical religious ceremonies
+  effect: |
+    You can perform any of the following ceremonies. Each ceremony takes an hour to complete. After a creature benefits from a ceremony, they can't gain the same benefit again for a years.
+
+    ***Bless Water.*** You transform water into holy water. Covering a creature in holy water deals 0 [[Radiant]] damage to it. Thus holy water is safe for normal people, but dangerous for [[Outsider]] and [[Undead]] creatures that have [[Radiant]] Weakness.
+
+    ***Dedication.*** You accept a person who dedicates themselves to your religion. Once in the next week, your target can reroll one die roll they make.
+
+    ***Funeral Rite.*** You bless a soul and send it to heaven. A corpse you target can never become an undead, or an undead you target passes on peacefully to heaven.
+
+    ***Wedding.*** You marry two or more willing adults. For the next week, each target has a +1 bonus to all their attribute DCs.
 
 Gentle Affect:
   tier: Ribbon

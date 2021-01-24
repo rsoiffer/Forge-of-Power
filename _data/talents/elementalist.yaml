@@ -427,7 +427,9 @@ Regulate Temperature:
   tier: Ribbon
   type: 1-Action
   brief: You control the temperature of your body or an object you touch
+  traits: [Cantrip, Spell]
   tags:
+    cost: 0 Mana
     target: Yourself or an object you can reach
   effect: |
     Your target changes to a temperature of your choice between 0 degrees and 150 degrees Fahrenheit.

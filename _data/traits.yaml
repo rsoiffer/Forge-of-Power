@@ -68,6 +68,9 @@ Beast: |
 Construct: |
   A creature with this trait is a clockwork robot or magical golem.
 
+Fey: |
+  A creature with this trait is a wild, chaotic spirit that lives in the feywild. Creatures with this trait always have the [[Spirit]] trait as well.
+
 Humanoid: |
   A creature with this trait is biologically similar to a human, with the same general body shape, limbs, and intellect.
 
