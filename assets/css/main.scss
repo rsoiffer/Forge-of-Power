@@ -196,17 +196,17 @@ aside {
 }
 
 .specialize {
-  border-spacing: .5em 0;
   border-collapse: separate;
+  border-spacing: .5em 0;
   border: none;
-  padding: 0;
-  tr {
-    background-color: #dbc29b;
+  margin-left: -.5em;
+  margin-right: -.5em;
+
+  td, th {
+    border: 1px solid $dark-border-color;
   }
   td {
-    border: 1px solid $dark-border-color;
-    padding-left: .75em;
-    padding-right: .75em;
+    border-top: none;
   }
 }
 

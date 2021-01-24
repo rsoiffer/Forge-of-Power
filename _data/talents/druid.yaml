@@ -325,7 +325,7 @@ Tree Stride:
     {% smallpower %}
     Tree Step:
       type: Free
-      traits: [Teleport]
+      traits: [Teleportation]
       tags:
         requirements: You are adjacent to a tree
       effect: |

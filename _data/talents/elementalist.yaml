@@ -1,51 +1,11 @@
-Affinity:
+Avatar:
   tier: Novice
-  type: Passive
-  brief: You are well-aligned with a particular element
-  effect: |
-    Choose a damage type. You gain 20 Shield for the chosen trait. When you cast a spell with the chosen trait, you ignore all Shield your opponent has against that trait.
-
-Concealing Fog:
-  tier: Novice
-  type: 1-Action
-  brief: You cover an area in dense fog that blocks all vision
-  traits: [Ritual, Spell]
+  type: Free
+  brief: You can use a variety of different elements to adapt to any situation
   tags:
-    cost: 1 Mana
-    range: 120 feet
-    area: 20-foot burst
-    duration: 1 hour, or until you decide to end it
+    prerequisites: Any [[Specialize]] Elementalist power
   effect: |
-    You conjure a cloud of dense fog that fills the area. The fog completely obscures vision, making sight impossible and nullifying [[Visual]] effects. The fog partially obscures sound, imposing disadvantage on [[Auditory]] attacks and die rolls to hear things within the area.
-
-    #### Heightened
-
-    For each +1 Mana, the radius of the burst increases by 20 feet.
-
-Earth Spikes:
-  tier: Novice
-  type: 1-Action
-  brief: You cause a spike of earth to erupt from the ground beneath the enemy
-  traits: [Attack, Piercing, Spell]
-  tags:
-    cost: 1 Mana
-    range: 120 feet
-    area: 20-foot burst
-  effect: |
-    The ground in this spell's area becomes different terrain, as spikes or pillars of earth cover the landscape. Make a Magic attack roll against your target's Agility DC.
-
-    Critical Success
-    : Double damage
-
-    Success
-    : Your target takes 2d6 damage and falls {prone}
-
-    Failure
-    : Half damage
-
-    #### Heightened
-
-    For each +1 Mana, the damage increases by 1d6 and the radius of the burst increases by 10 feet.
+    Choose one [[Specialize]] Elementalist power you know. Change the specialization you picked for that power. If the power is currently active, this doesn't apply to that instance of the power.
 
 Elemental Blast:
   tier: Novice
@@ -64,26 +24,62 @@ Elemental Blast:
     #### Heightened
 
     For each +1 Mana, the damage increases by 1d10.
-  aside: |
-    ### Specializations
-
-    #### Air
-
-    You have advantage on the attack roll if your target is airborne. On a success, your target is knocked back 20 feet.
-
-    #### Earth
-
-    The damage dice are d12s instead of d10s. On a critical success, your target takes double damage.
-
-    #### Fire
-
-    This spell is [[Fire]] instead of [[Bludgeoning]]. The damage dice are d12s instead of d10s. On a failure, your target takes half damage.
-
-    #### Water
-
-    You have advantage on the attack roll if your target is underwater. On a success, your target is pushed 10 feet in any direction.
+  specialize:
+    Air: |
+      You have advantage on the attack roll if your target is airborne. On a success, your target is knocked back 20 feet.
+    Earth: |
+      The damage dice are d12s instead of d10s. On a critical success, your target takes double damage.
+    Fire: |
+      This spell is [[Fire]] instead of [[Bludgeoning]]. The damage dice are d12s instead of d10s. On a failure, your target takes half damage.
+    Water: |
+      You have advantage on the attack roll if your target is underwater. On a success, your target is pushed 10 feet in any direction.
 
 Elemental Control:
+  tier: Novice
+  type: 1-Action
+  brief: You control a particular element, moving it around as you wish
+  traits: [Cantrip, Specialize, Spell]
+  tags:
+    cost: 0 Mana
+    range: 60 feet
+    area: 5-foot burst
+    duration: Sustained, up to 1 minute
+  effect: |
+    Choose one or more objects that are made of the element you specialize in and that are entirely contained in the spell's area. When you cast or sustain this spell, you move those objects to another point within range with perfect accuracy. You can release these objects at speed, throwing objects up to double the normal range of this spell, though not at perfect accuracy.
+
+    These objects can be a small part of a greater whole; for example, you could move a chunk of natural stone even though it is connected to the rest of the planet. By moving many small parts of an object to different positions, you can easily carve or reshape objects.
+
+    You can try to use this power to directly damage a creature, such as by knocking it over with a gust of wind, crushing it with a heavy stone, lighting it on fire, or smashing it with a stream of water. You can use the **Elemental Bolt** power. After you use **Elemental Bolt**, this power ends.
+
+    #### Heightened
+
+    For each +1 Mana, the radius of the burst doubles, the range increases by 20 feet, and the damage of **Elemental Bolt** increases by 2d6.
+  specialize:
+    Air: |
+      Includes pure air and airborne gases. When you move air, you can have the air lift and carry any number of small unattended objects along with it.
+    Earth: |
+      Includes dirt, stone, sand, crude metal, clay, and brick. When you move earth, you also move all objects or creatures resting on the earth.
+    Fire: |
+      Includes flames and heat energy. When you cast this spell, you can create a fire in the spell's area, or put out a fire in the spell's area.
+    Water: |
+      Includes pure water, watery solutions, mist, ice, and snow. When you move water, you can change its phase between mist, water, and ice.
+  aside: |
+    {% smallpower %}
+    Elemental Bolt:
+      type: Free
+      traits: [Attack, Bludgeoning]
+      tags:
+        target: One creature or object you try to damage with **Elemental Control**
+      effect: |
+        Make a Magic attack roll against your target's Defense. You have disadvantage on this attack roll if your target is outside the range of **Elemental Control**.
+
+        Success
+        : Your target takes 2d6 damage
+
+        If the specialization of **Elemental Control** is Fire, this power is [[Fire]] instead of [[Bludgeoning]].
+    {% endsmallpower %}
+
+Elemental Prison:
   tier: Novice
   type: 1-Action
   brief: You hold a creature in place with a prison of a particular element
@@ -91,33 +87,30 @@ Elemental Control:
   tags:
     cost: 1 Mana
     range: 30 feet
-    duration: Until the 
+    duration: Sustained, up to 1 hour
   effect: |
-    Make a Magic attack roll against your target's Strength DC.
+    Make a Magic attack roll against your target's Strength DC. The effect of a successful attack depends on the specialization you chose.
 
-    Critical Success
-    : Your target is {restrained}
+    #### Heightened
 
-    Success
-    : Your target is {immobilized}
-  aside: |
-    ### Specializations
+    For each +1 Mana, you can target another creature within range.
+  specialize:
+    Air: |
+      *A barrage of chaotic winds knock a creature around and hold it in place.*
 
-    #### Air
+      On a success, your target is {slowed} and is pushed up to 20 feet in a direction of your choice. On a critical success, your target is knocked {prone}.
+    Earth: |
+      *The ground surges upwards to surround and imprison your target.*
 
-    If you fail the attack, your target is {slowed}.
+      On a success, your target is {immobilized}. On a critical success, your target is {restrained}.
+    Fire: |
+      *A cage of fire threatens to burn your target if they try to move.*
 
-    #### Earth
+      On a success, your target takes 2d8 [[Fire]] damage whenever they use a [[Move]] power (or an [[Attack]] or [[Manipulate]] power on a critical success).
+    Water: |
+      *A hovering watery sphere traps a creature and lifts them into the air.*
 
-    If you critically succeed on the attack, you automatically critically succeed when you sustain the spell. Your target can still try to {Escape} as normal.
-
-    #### Fire
-
-    When you succeed on the attack, you can move your target up to 10 feet in any direction.
-
-    #### Water
-
-    When you succeed on the attack, you can move your target up to 10 feet in any direction.
+      On a success, your target is {immobilized}. On a critical success, your target is also pushed 20 feet in a direction of your choice.
 
 Elemental Shield:
   tier: Novice
@@ -130,106 +123,28 @@ Elemental Shield:
     duration: Until the start of your next turn
   effect: |
     You gain +2 Defense.
-  aside: |
-    ### Specializations
-
-    #### Air
-    *You deflect attacks with a gust of wind.*
-
-    You gain an additional +8 Defense against ranged Strikes.
-
-    #### Earth
-    *A shield of solid earth blocks all attacks.*
-
-    You gain 10 [[Physical]] Shield.
-
-    #### Fire
-    *A wave of fire burns away projectiles.*
-
-    If you can reach the triggering attacker, they take 2d6 [[Fire]] damage.
-
-    #### Water
-    *You redirect attacks with a stream of water.*
-
-    If the triggering attack critically fails against you, it targets your attacker instead (and is automatically a success).
-
-Elemental Skate 1:
-  tier: Novice
-  type: 1-Action
-  brief: You slide along a slab of a particular element
-  traits: [Specialize, Spell]
-  tags:
-    cost: 1 Mana
-    duration: Sustained, up to 1 minute
-  effect: |
-    You have a +10 feet bonus to Speed.
-
-    #### Heightened
-
-    For each +1 Mana, the bonus increases by 10 feet.
-
-    If you add +1 Mana, the maximum duration increases to 1 hour.
-  aside: |
-    ### Specializations
-
-    #### Air
-    *You zoom over the ground, riding on the wind itself.*
-
-    The bonus increases by 10 feet.
-
-    #### Earth
-    *You skate over any terrain on a slab of rock.*
-
-    You ignore difficult terrain.
-
-    #### Fire
-    *You propel yourself forward with jets of flame.*
-
-    You have +2 Agility DC.
-
-    #### Water
-    *You slide fowards along a path of slick ice.*
-
-    You can walk along water and slippery ice as if they were solid ground.
-
-Elemental Skate 2:
-  tier: Novice
-  type: 1-Action
-  brief: You slide along a slab of a particular element
-  traits: [Specialize, Spell]
-  tags:
-    cost: 1 Mana
-    duration: Sustained, up to 1 minute
-  effect: |
-    You have a +10 feet bonus to Speed.
-
-    #### Heightened
-
-    For each +1 Mana, the bonus increases by 10 feet.
-
-    If you add +1 Mana, the maximum duration increases to 1 hour.
-  specialize-v2:
+  specialize:
     Air: |
-      *You zoom over the ground, riding on the wind itself.*
+      *You deflect attacks with a gust of wind.*
 
-      The bonus increases by 10 feet.
+      You gain an additional +8 Defense against ranged Strikes.
     Earth: |
-      *You skate over any terrain on a slab of rock.*
+      *A shield of solid earth blocks all attacks.*
 
-      You ignore difficult terrain.
+      You gain 10 [[Physical]] Shield.
     Fire: |
-      *You propel yourself forward with jets of flame.*
+      *A wave of fire burns away projectiles.*
 
-      You have +2 Agility DC.
+      If you can reach the triggering attacker, they take 2d6 [[Fire]] damage.
     Water: |
-      *You slide fowards along a path of slick ice.*
+      *You redirect attacks with a stream of water.*
 
-      You can walk along water and slippery ice as if they were solid ground.
+      If the triggering attack critically fails against you, it targets your attacker instead (and is automatically a success).
 
-Elemental Skate 3:
+Elemental Skate:
   tier: Novice
-  type: 1-Action
-  brief: You slide along a slab of a particular element
+  type: Free
+  brief: You slide at high speed along a slab of a particular element
   traits: [Specialize, Spell]
   tags:
     cost: 1 Mana
@@ -260,89 +175,235 @@ Elemental Skate 3:
 
       You can walk along water and slippery ice as if they were solid ground.
 
-Freeze:
+Elemental Terrain:
   tier: Novice
   type: 1-Action
-  brief: You conjure a jet of cold air that freezes all water in the area
-  traits: [Attack, Cold, Spell]
+  brief: You cover an area in dense fog, uneven rocks, burning flames, or slick ice
+  traits: [Attack, Specialize, Spell]
   tags:
     cost: 1 Mana
-    area: 30-foot cone
-    duration: Varies
+    range: 120 feet
+    area: 20-foot burst
+    duration: 10 minutes, or until you decide to end it
   effect: |
-    Make a Magic attack roll against your target's Agility DC. You have advantage on the attack roll if your target is partially surmerged in water.
+    Make a Magic attack roll against your target's Agility DC. The effect of a successful attack depends on the specialization you chose.
 
-    Success
-    : Your target takes 2d8 damage and is {restrained} for 1 minute
-
-    Failure
-    : Half damage, and your target is {slowed} until the end of their next turn
+    A terrain effect persists in the spell's area for the duration. The type of the terrain depends on the specialization you chose.
 
     #### Heightened
 
-    For each +1 Mana, the damage increases by 1d8.
+    For each +1 Mana, the radius of the burst increases by 20 feet.
 
-Avatar:
-  tier: Veteran
+    For each +1 Mana, the initial damage (if any) increases by 1d6.
+  specialize:
+    Air: |
+      *With a gust of wind, you blow in a cloud of dense fog.*
+
+      On a success, your target is pushed 10 feet in any direction. The terrain is heavily obscured, making sight impossible.
+    Earth: |
+      *Spikes of solid earth raise up from the ground.*
+
+      On a success, your target takes 2d6 [[Bludgeoning]] damage and falls {prone}. The terrain becomes difficult terrain.
+    Fire: |
+      *The terrain catches on fire.*
+
+      On a success, your target takes 2d6 [[Fire]] damage. All creatures that end their turn in the terrain take 1d6 [[Fire]] damage.
+    Water: |
+      *You freeze an area with a blast of creeping ice.*
+
+      On a success, your target takes 1d6 [[Cold]] damage and is {immobilized}. The terrain becomes difficult terrain.
+
+Homefield Advantage:
+  tier: Novice
   type: Free
-  brief: You can use a variety of different elements to adapt to any situation
+  brief: You can leverage ambient elements to boost your own elemental magic
+  tags:
+    prerequisites: Any [[Specialize]] Elementalist power
+    trigger: You use a [[Specialize]] Elementalist power
+  effect: |
+    Note the homefield terrain of the triggering power. If you are in the homefield terrain, you gain the following benefits:
+    * If the triggering power is a spell, it has -1 cost
+    * If the triggering power is an attack and your target is also in the homefield terrain, your attack has advantage
+
+    You can often use your other Elementalist powers to modify the terrain to make it your homefield terrain. If you use this power with a weak homefield terrain (eg. a single lit brazier for Fire, or a medium puddle for Water), the GM can rule that the homefield terrain is consumed by this power.
+  aside: |
+    ### Homefield Terrains
+
+    ***Air.*** Your homefield terrain is any space experiencing moderate or heavy winds.
+
+    ***Earth.*** Your homefield terrain is any space on top of dirt or stone.
+
+    ***Fire.*** Your homefield terrain is any space within 10 feet of a fire.
+
+    ***Water.*** Your homefield terrain is any space directly above or inside of water, ice, or snow.
+
+Defensive Shield:
+  tier: Veteran
+  type: Passive
+  brief: You unlock new options in using the elements to protect yourself
+  tags:
+    prerequisites: Elemental Shield
+  effect: |
+    Your {Elemental Shield} power gains the following heightened effect.
+
+    #### Heightened
+
+    If you add +2 Mana, you can use Elemental Shield as a {% icon Free %} power (with no trigger). Replace the normal specialization effect of Elemental Shield with the one below.
+  specialize:
+    Air: |
+      *A cocoon of wind lifts you up and deflects projectiles.*
+
+      You gain an additional +8 Defense against ranged Strikes. All attacks against your Defense or your Agility DC have disadvantage.
+    Earth: |
+      *A suit of hard stone armor blocks all incoming damage.*
+
+      You gain 20 [[Anything]] Shield.
+    Fire: |
+      *Your fiery body makes attacking you a dangerous idea.*
+
+      When an attack targets your Defense, if you can reach the attacker, they take 4d6 [[Fire]] damage.
+    Water: |
+      *Rotating circles of water redirect all incoming attacks.*
+
+      If an attack against your Defense critically fails, it targets your attacker instead (and is automatically a success).
+
+# Note - maybe move this power to Master instead?
+Elemental Finisher:
+  tier: Veteran
+  type: 1-Action
+  brief: You fire a powerful single-target bolt of a particular element
+  traits: [Attack, Specialize, Spell]
+  tags:
+    cost: 4 Mana
+    range: 60 feet
+  effect: |
+    Make a Magic attack roll against your target's Defense. You have a +5 bonus to the attack roll if your target is {bloodied}.
+
+    Success
+    : Your target takes 10d6 damage
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 2d6.
+  specialize:
+    Air: |
+      *You steal the breath out of your target's lungs.*
+
+      This spell is [[Necrotic]]. On a critical success, your target takes 2 fatigue.
+    Earth: |
+      *You pull your target underground and crush them.*
+
+      This spell is [[Bludgeoning]]. On a critical success, your target is {restrained}.
+    Fire: |
+      *You blast your target with a bolt of lightning.*
+
+      This spell is [[Electricity]]. On a critical success, your target takes double damage.
+    Water: |
+      *You freeze your target solid in a block of ice.*
+
+      This spell is [[Cold]]. On a critical success, your target is {restrained}.
+
+Elemental Wall:
+  tier: Veteran
+  type: 1-Action
+  brief: You conjure a large wall made out of a particular element
+  traits: [Specialize, Spell]
+  tags:
+    cost: 5 Mana
+    range: 120 feet
+    duration: Sustained, up to 10 minutes
+  effect: |
+    You conjure a wall made out of the element you specialize in. The wall consists of up to 10 flat, thin square panels, each of which is 10 feet by 10 feet in size. You can choose each panel's position and orientation, so long as all panels are connected and within range. You cannot conjure a panel in a space occupied by a creature or a solid object.
+
+    All walls (except Air) are opaque and block vision. Only Earth walls are solid and block movement.
+  specialize:
+    Air: |
+      *The wall is made of a strong continuous wind.*
+
+      All ranged Strikes made through the wall critically fail. Creatures that pass through the wall are {slowed}.
+    Earth: |
+      *The wall is made of solid stone or tightly-packed dirt.*
+
+      Each panel has 50 Health and 20 [[Anything]] Shield. The wall must rest on a solid surface. When the duration ends, the wall doesn't collapse so long as it is architecturally stable.
+    Fire: |
+      *The wall is made of burning, powerful flames.*
+
+      Creatures that pass through the wall take 6d10 [[Fire]] damage. A creature cannot take this damage more than once per round.
+    Water: |
+      *The wall is made of a gushing wave of water.*
+
+      When a creature tries to pass through the wall, you can make a Magic attack roll against its Strength DC. On a success, you push your target up to 20 feet in any direction.
+
+Mobile Skate:
+  tier: Veteran
+  type: Passive
+  brief: You unlock new options in using the elements to move yourself around
+  tags:
+    prerequisites: Elemental Skate
+  effect: |
+    Your {Elemental Skate} power gains the following effect.
+
+    #### Heightened
+
+    If you add +2 Mana, you gain an effect depending on your chosen specialization.
+  specialize:
+    Air: |
+      *The wind lifts you into the sky.*
+
+      You can fly at your normal Speed.
+    Earth: |
+      *A large wave of earth carries you and all your allies.*
+
+      Choose two creatures you can see within 30 feet. Your targets gain the effect of this spell as well.
+    Fire: |
+      *Powerful jets of fire lift you into the air.*
+
+      You can fly at your normal Speed.
+    Water: |
+      *A spiral of water lifts you off the ground.*
+
+      You can fly at your normal Speed, so long as you stay within 30 feet of a solid or liquid surface. You can swim at your normal Speed.
+
+Versatile Elements:
+  tier: Veteran
+  type: Passive
+  brief: You can apply the elements to attack in a variety of ways
   tags:
     prerequisites: Any [[Specialize]] Elementalist power
   effect: |
-    Choose one [[Specialize]] Elementalist power you know. Change the specialization you picked for that power. If the power is currently active, this doesn't apply to that instance of the power.
+    When you use a [[Specialize]] Elementalist power, you gain new options depending on the specialization of that power.
 
-Elemental Flight:
-  tier: Veteran
-  type: 1-Action
-  brief: You shape a particular element to lift your target into the air
-  traits: [Specialize, Spell]
-  tags:
-    cost: 3 Mana
-    range: 10 feet
-    duration: 10 minutes
-  effect: |
-    Your target can fly at their normal Speed.
+    ***Air.*** You can immediately {Stride} up to 10 feet.
 
-    #### Heightened
+    ***Earth.*** If this power is an attack that deals damage, you can replace its damage type with one of [[Bludgeoning]], [[Piercing]], or [[Slashing]]. On a failure, you deal half damage.
 
-    For each +1 Mana, you can target another creature within range.
-  aside: |
-    ### Specializations
+    ***Fire.*** If this power deals damage, it ignores up to 20 points of your opponent's Shield.
 
-    #### Air
-    *The wind lifts your target into the sky.*
+    ***Water.*** You can choose the effect of the **Earth** specialization instead, as you freeze blocks of ice as hard as stone.
 
-    Your target's Speed is doubled.
-
-    #### Earth
-    *Pillars of earth launch your target through the air.*
-
-    Your target can only fly during their turn, but they are immune to fall damage. Your target can burrow at their normal Speed.
-
-    #### Fire
-    *Jets of fire propel your target forward.*
-
-    Your target has +2 Agility DC.
-
-    #### Water
-    *A spiral of water lifts your target off the ground.*
-
-    Your target can only fly within 30 feet of a solid or liquid surface. Your target can swim at their normal Speed.
-
-Create Water:
+Create Element:
   tier: Ribbon
   type: 1-Action
-  brief: You conjure a small jet of pure water
-  traits: [Cantrip, Spell]
+  brief: You conjure a small amount of a particular element
+  traits: [Cantrip, Specialize, Spell]
   tags:
     cost: 0 Mana
-    range: 5 feet
+    range: 10 feet
   effect: |
-    You conjure a jet of water that arcs towards your target. The water is pure and safe to drink. This spell creates a total of 1 gallon of water.
+    You conjure an elemental substance at the target location.
 
     #### Heightened
 
-    For each +1 Mana (up to +6 Mana), this power's range extends by 10 feet, and you create 10 times as much water.
+    For each +1 Mana, this power's range extends by 10 feet, and you create 10 times as much of the element.
+  specialize:
+    Air: |
+      You conjure a bubble of air, up to 5 cubic feet. The air is pure and safe to breathe.
+    Earth: |
+      You conjure a small chunk of dirt or stone, up to 1 pound. You cannot conjure rare or precious stones.
+    Fire: |
+      You conjure a brief flash of fire, up to 1 cubic foot. This sets fire to flammable objects, but doesn't deal damage.
+    Water: |
+      You conjure a small jet of water, up to 1 gallon. The water is pure and safe to drink.
 
 Feather Fall:
   tier: Ribbon
@@ -362,20 +423,34 @@ Feather Fall:
 
     For each +1 Mana, you can target another creature within range.
 
-Tinder:
+Regulate Temperature:
   tier: Ribbon
   type: 1-Action
-  brief: You conjure a small flame at your fingertip that can easily start fires
-  traits: [Cantrip, Fire, Spell]
+  brief: You control the temperature of your body or an object you touch
+  tags:
+    target: Yourself or an object you can reach
+  effect: |
+    Your target changes to a temperature of your choice between 0 degrees and 150 degrees Fahrenheit.
+
+Shape Item:
+  tier: Ribbon
+  type: Free
+  brief: You shape the elements into a useful handheld tool or weapon
+  traits: [Cantrip, Specialize, Spell]
   tags:
     cost: 0 Mana
-    duration: Sustained, up to 1 minute
+    duration: 10 minutes, until you let go of the item, or until you roll a natural 1 on a die roll to use the item
   effect: |
-    You conjure a small flame at your fingertip or in your hand. The flame doesn't require fuel and doesn't burn you. You can touch an object to rapidly heat it up or to set fire to a flammable object. The flame isn't large enough to be effective as an attack.
-
-    #### Heightened
-
-    If you add +1 Mana, this power gains a range of 30 feet, and targets an unattended object you can see within range. The flame does burn your target, quickly setting fire to a flammable target. If you add an additional +1 Mana, this power gains a range of 60 feet, gains an area of a 20-foot burst, and targets all unattended objects in the area.
+    Pick a melee weapon, a simple tool, or a small solid item. You shape an element to form a duplicate of that item. When the duration ends, the item falls apart.
+  specialize:
+    Air: |
+      The tool is made of partially solidified air. You can create ranged weapons as the wind launches projectiles forward, but not other objects.
+    Earth: |
+      The tool is made of hard clay or stone. It has no special effect.
+    Fire: |
+      The tool is made of flames. You can create melee weapons, but not other objects. Strikes with this item deal [[Fire]] damage instead of their normal damage type.
+    Water: |
+      The tool is made of carefully-frozen ice. It has no special effect.
 
 Tremorsense:
   tier: Ribbon
@@ -383,5 +458,5 @@ Tremorsense:
   brief: You can sense creatures and objects through solid earth
   tags:
     range: 30 feet
-  effect:
+  effect: |
     You perceive all creatures and objects within range that you are connected to by a path of a solid material. If this material is entirely hard earth or stone, then your sense is as accurate as vision or touch. Otherwise, your sense is less accurate, and you have disadvantage on rolls that depend on perceiving a target. Your sense doesn't work at all through soft materials, such as sand or water.

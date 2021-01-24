@@ -47,27 +47,13 @@
 <table class="specialize">
     <tr>
         {% for option in power_body.specialize %}
-        <td>
-            <h4>{{ option[0] }}</h4>
-            {{ option[1] | process }}
-        </td>
-        {% endfor %}
-    </tr>
-</table>
-{% endif %}
-
-{% if power_body.specialize-v2 %}
-<h4>Specializations</h4>
-<table class="specialize-v2">
-    <tr>
-        {% for option in power_body.specialize-v2 %}
         <th>
             {{ option[0] }}
         </th>
         {% endfor %}
     </tr>
     <tr>
-        {% for option in power_body.specialize-v2 %}
+        {% for option in power_body.specialize %}
         <td>
             {{ option[1] | process }}
         </td>
