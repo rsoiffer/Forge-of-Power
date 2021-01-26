@@ -62,16 +62,25 @@ Mind Meld:
   tier: Elf
   type: 1-Action
   brief: You link minds with another creature, sharing experiences back and forth
-  traits: [Attack, Mental]
+  traits: [Attack, Concentrate, Mental]
   tags:
     target: One creature you can reach
   effect: |
     Specify the kinds of experiences you're trying to share between you and your target. For example, you could choose to share memories of a certain event, current experiences of emotions, or thoughts on philosophy. The GM determines which exact experiences of this type are shared.
     
     Make an Intellect attack roll against your target's Intellect DC. (As with all rolls, you can choose to automatically fail or critically fail this roll.)
-  critical-success: You learn two experiences from your target
-  success: You learn two experiences from your target
-  critical-failure: Your target learns one experience from you
+
+    Critical Success
+    : You learn two experiences from your target
+
+    Success
+    : You learn two experiences from your target
+
+    Failure
+    : No effect
+
+    Critical Failure
+    : Your target learns one experience from you
 
 # Goblin
 

@@ -1,3 +1,15 @@
+Bad Luck Charm:
+  tier: Novice
+  type: Reaction
+  brief: You cause another creature to have a minor misfortunate accident or mishaps
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    range: 60 feet
+    trigger: Your target makes a die roll
+  effect: |
+    Your target has disadvantage on the triggering roll.
+
 Bane:
   tier: Novice
   type: 1-Action
@@ -67,6 +79,34 @@ Command:
 
     If you add +4 Mana, you can target up to 10 creatures within range.
 
+Mind Reading:
+  tier: Novice
+  type: 1-Action
+  brief: You link with another creature and attempt to read their mind
+  traits: [Attack, Divination, Mental, Spell]
+  tags:
+    cost: 2 Mana
+    range: 30 feet
+    duration: Sustained, up to 1 minute
+  effect: |
+    Make a Magic attack roll against your target's Spirit DC. Unless you get a critical success, your target knows someone is trying to read their mind.
+
+    Critical Success
+    : As success, except your target doesn't know someone is trying to read their mind
+
+    Success
+    : You can hear your target's surface thoughts, and you learn their Intellect score
+
+    Failure
+    : You learn your target's Intellect score
+
+    Critical Failure
+    : Your target can hear your surface thoughts
+
+    Your target's surface thoughts include phrases and actions they're consciously thinking about. They do not includes subconscious thoughts, memories, or emotions. Words and phrases your target thinks are usually in their native language, which you may or may not understand. Actions your target thinks about are in terms of universal impulses that you always understand.
+
+    If your target is in combat, their surface thoughts always include details on what power they plan to use next. As usual, your target can change what power they plan to use next if the situation changes.
+
 Portent:
   tier: Novice
   type: Passive
@@ -116,6 +156,17 @@ Clairvoyance:
   effect: |
     You create an invisible floating eye at a location within range (even if it's outside of your line of sight). The eye can't move, but you can see in all directions from that point as if using your normal visual senses.
 
+Eldritch Lore:
+  tier: Ribbon
+  type: 1-Action
+  brief: You gain supernatural knowledge of anything topic you want to learn about
+  traits: [Ritual, Spell]
+  tags:
+    cost: 2 Mana
+    duration: Until you cast this spell again
+  effect: |
+    You gain a Lore proficiency of your choice.
+
 Evil Eye:
   tier: Ribbon
   type: 1-Action
@@ -153,22 +204,6 @@ Read Omens:
   traits: [Daily, Divination]
   effect: |
     Choose a particular goal, event, or activity that will occur within 1 week. You learn a cryptic clue or piece of advice that could help with the chosen event, often in the form of a rhyme or omen.
-
-# Mind Reading:
-#   tier: Veteran
-#   type: 1-Action
-#   traits: [Divination, Mental, Spell]
-#   tags:
-#     cost: 3 Mana
-#     range: 30 feet
-#     save: Will
-#     duration: 1 round, or sustained up to 1 minute
-#   effect:
-#     With a cursory mental touch, you attempt to read the target's mind. It must attempt a Will save. The target then becomes temporarily immune to your Mind Reading power for 1 hour.
-#   critical-success: The target perceives vague surface thoughts from you
-#   success: You find out whether the target's Intelligence is higher than, equal to, or lower than yours
-#   failure: You perceive vague surface thoughts from the target, and you find out whether its Intelligence is higher than, equal to, or lower than yours
-#   critical-failure: As failure, and for the duration of the spell, you can Sustain to detect the target's surface throughts again
 
 # Augury:
 #   tier: Novice

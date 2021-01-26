@@ -157,7 +157,11 @@ Crusader's Mantle:
     area: 30-foot emanation, which follows you for the duration
     duration: 1 minute
   effect: |
-    When a friendly creature other than you in the area makes a {Strike}, it deals an extra 1d6 damage on a success.
+    Whenever a friendly creature in the area (including you) succeeds on a {Strike}, they deal an extra 1d6 damage.
+
+    #### Heightened
+
+    For each +3 Mana, the damage bonus increases by 1d6.
 
 Daylight:
   tier: Veteran
@@ -251,6 +255,10 @@ Revivify:
   effect: |
     Your target returns to life with 0 health and 4 fatigue.
 
+    #### Heightened
+
+    For each +1 Mana, the time limit since your target died is doubled.
+
 Sacred Spell:
   tier: Veteran
   type: Free
@@ -267,16 +275,16 @@ Blessed Healer:
   type: Passive
   brief: Your healing spells heal you as well when you cast them on others
   effect: |
-    When you spend at least 1 Mana on a [[Healing]] spell, you heal health equal to the Mana you spent.
+    Whenever you cast a [[Healing]] spell, you heal health equal to the spell's cost.
 
 Ceremony:
   tier: Ribbon
   type: Passive
   brief: You can perform a variety of magical religious ceremonies
   effect: |
-    You can perform any of the following ceremonies. Each ceremony takes an hour to complete. After a creature benefits from a ceremony, they can't gain the same benefit again for a years.
+    You can perform any of the following ceremonies. Each ceremony takes an hour to complete. After a creature benefits from a ceremony, they can't gain the same benefit again for a year.
 
-    ***Bless Water.*** You transform water into holy water. Covering a creature in holy water deals 0 [[Radiant]] damage to it. Thus holy water is safe for normal people, but dangerous for [[Outsider]] and [[Undead]] creatures that have [[Radiant]] Weakness.
+    ***Bless Water.*** You transform water into holy water. Covering a creature in holy water deals 0 [[Radiant]] damage to it. Thus holy water is safe for normal people, but dangerous for creatures that have [[Radiant]] Weakness, like [[Outsider]] and [[Undead]] creatures.
 
     ***Dedication.*** You accept a person who dedicates themselves to your religion. Once in the next week, your target can reroll one die roll they make.
 
