@@ -156,43 +156,28 @@ Tactile Illusions:
 
     Your illusions are moderately solid, but don't stand up to any significant force. Illusions you make lose their solidity if they would deal or take any damage. If you conjure a solid illusion in a space occupied by another solid object, your illusion loses its solidity immediately.
 
-Confusion:
+Hypnotic Pattern:
   tier: Veteran
   type: 1-Action
-  brief: You fill a creature's mind with confusing images, making them act randomly
-  traits: [Attack, Emotion, Mental, Spell]
+  brief: You conjure a twisting pattern of colors that entrances everyone who sees it
+  traits: [Attack, Spell, Visual]
   tags:
-    cost: 4 Mana
-    range: 30 feet
-    duration: Sustained, up to 1 minute
+    cost: 3 Mana
+    range: 120 feet
+    area: 20-foot burst
+    duration: 10 minutes, until your target takes any damage, or until you decide to end it
   effect: |
-    Make a Magic attack roll against your target's Intellect DC.
+    Make a Magic attack roll against your target's Spirit DC.
 
     Success
-    : Your target is **confused**
+    : Your target is {stunned}
 
     Failure
-    : Your target is {slowed} until the end of their next turn
+    : Your target is {dazzled} until the end of their next turn
 
     #### Heightened
 
-    If you add +4 Mana, you can target up to 10 creatures within range.
-  aside: |
-    ### Confused Condition
-
-    If you are confused, roll 1d6 at the start of each of your turns to determine what you do.
-
-    1
-    : {Strike} a random target, then your turn ends
-
-    2
-    : {Stride} in a random direction, then your turn ends
-
-    3
-    : Babble incoherently, then your turn ends
-
-    4-6
-    : Act normally
+    For each +1 Mana, the radius of the burst increases by 10 feet.
 
 Illusory Terrain:
   tier: Veteran

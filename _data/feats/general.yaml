@@ -6,6 +6,15 @@ Blind Fighter:
   fluff: |
     The GM should give this as a free feat to all permanently blind player characters.
 
+Blood Magic:
+  type: Free
+  brief: When you cast a spell, you can tap into blood magic for a burst of power
+  tags:
+    prerequisites: A mystic origin
+    trigger: You cast a spell
+  effect: |
+    The triggering spell has -2 cost. At the end of your turn, you take 1 fatigue.
+
 Bonus Ribbons:
   type: Passive
   brief: You learn any two ribbons of your choice
@@ -20,6 +29,12 @@ Familiar:
 
     If your familiar dies, you can resummon it with a 1-hour ritual.
 
+Resilient:
+  type: Passive
+  brief: You are especially resilient against a particular damage type
+  effect: |
+    Choose one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Necrotic]], [[Radiant]], or [[Sonic]] traits. You have 10 Shield of the chosen trait.
+
 Skilled:
   type: Passive
   brief: You are highly proficient in a wide variety of skills
@@ -27,6 +42,24 @@ Skilled:
     Choose two skills. You have a +2 Perk bonus to each skill.
 
     You can pick this feat multiple times. You can select the same or different options each time.
+
+Squishy Caster:
+  type: Passive
+  brief: You have a lot of magical power, at the cost of your physical toughness
+  effect: |
+    You have +4 Mana and +1 Mana Limit. Your maximum health equals 4 + 2 * level + 2 * Strength.
+
+Sympathetic Mage:
+  type: Passive
+  brief: You can cast magic through totems that represent specific creatures
+  tags:
+    prerequisites: A mystic origin
+  effect: |
+    You can craft a sympathetic totem that represents another creature, much like a voodoo doll or a religious statuette. Crafting such a totem requires 1 hour of work, plus one of the following components:
+    * A small piece of the creature, such as a hair, a toenail, or a drop of blood
+    * A prized possession of the creature, such as a family heirloom or a favorite weapon
+
+    When you target a sympathetic totem with a spell, you can choose for the spell to instead target the creature represented by the totem. If the spell is an attack, and if the attack roll critically fails, the totem breaks.
 
 Weapon Master:
   type: Passive

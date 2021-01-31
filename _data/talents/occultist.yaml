@@ -47,7 +47,7 @@ Bestow Curse:
     Make a Magic attack roll against your target's Spirit DC.
 
     Critical Success
-    : This spell lasts forever
+    : This spell lasts until your target meets some obscure condition you specify (eg. true love's kiss or they pay off a debt)
 
     Success
     : This spell lasts 1 hour
@@ -57,6 +57,10 @@ Bestow Curse:
 
     Critical Failure
     : This spell ends immediately
+
+    #### Heightened
+
+    For each +2 Mana, choose an additional effect from the list.
 
 Command:
   tier: Novice
@@ -78,6 +82,27 @@ Command:
     #### Heightened
 
     If you add +4 Mana, you can target up to 10 creatures within range.
+
+Impending Doom:
+  tier: Novice
+  type: 1-Action
+  brief: You declare that a creature is about to experience a specific kind of doom
+  traits: [Spell]
+  tags:
+    cost: 2 Mana
+    range: 60 feet
+    duration: 1 hour
+  effect: |
+    Choose an [[Attack]] power. You can use the **Arriving Doom** power one time.
+  aside: |
+    {% smallpower %}
+    Arriving Doom:
+      type: Reaction
+      tags:
+        trigger: The chosen power succeeds against the target of **Impending Doom**
+      effect: |
+        The triggering power has a +5 bonus against the target of **Impending Doom**. Note that this can change a success into a critical success.
+    {% endsmallpower %}
 
 Mind Reading:
   tier: Novice
@@ -152,9 +177,131 @@ Clairvoyance:
   tags:
     cost: 4 Mana
     range: 500 feet
+    target: A location within range, even if you can't see the location
     duration: 10 minutes
   effect: |
-    You create an invisible floating eye at a location within range (even if it's outside of your line of sight). The eye can't move, but you can see in all directions from that point as if using your normal visual senses.
+    You create an invisible floating eye at the target location. You can see in all directions from that point as if using your normal visual senses. The eye is a physical object, and you can carry it or move it to new locations.
+
+    While you are within 5 feet of the eye, you automatically see through illusions, you can see invisible creatures and objects, and you can see perfectly even in complete darkness.
+
+Confusion:
+  tier: Veteran
+  type: 1-Action
+  brief: You fill a creature's mind with confusing images, making them act randomly
+  traits: [Attack, Emotion, Mental, Spell]
+  tags:
+    cost: 4 Mana
+    range: 30 feet
+    duration: Sustained, up to 1 minute
+  effect: |
+    Make a Magic attack roll against your target's Intellect DC.
+
+    Failure
+    : Your target is **confused**
+
+    Critical Failure
+    : Your target is unaffected
+
+    #### Heightened
+
+    If you add +4 Mana, you can target up to 10 creatures within range.
+  aside: |
+    ### Confused Condition
+
+    If you are confused, roll 1d6 at the start of each of your turns to determine what you do.
+
+    1
+    : {Strike} a random target, then your turn ends
+
+    2
+    : {Stride} in a random direction, then your turn ends
+
+    3
+    : Babble incoherently, then your turn ends
+
+    4-6
+    : Act normally
+
+Geas:
+  tier: Veteran
+  type: 1-Action
+  brief: You force a creature to perform specific actions over a long period of time
+  traits: [Attack, Auditory, Linguistic, Mental, Spell]
+  tags:
+    cost: 5 Mana
+    range: 60 feet
+    duration: Varies
+  effect: |
+    Declare some activity that your target must carry out or refrain from. You cannot order your target to perform an impossible or obviously suicidal activity. Whenever your target willingly acts against this order, but at most once per round, it takes 3d10 damage.
+
+    Make a Magic attack roll against your target's Spirit DC.
+
+    Critical Success
+    : This spell lasts for 1 month
+
+    Success
+    : This spell lasts for 10 minutes
+
+    Failure
+    : This spell lasts until the end of your target's next turn
+
+    Critical Failure
+    : This spell ends immediately
+
+    #### Heightened
+
+    If you add +1 Mana, the duration on a critical success extends to 1 year. If you add an additional +1 Mana, the spell lasts forever on a critical success.
+
+    For each +2 Mana, the damage increases by 1d10.
+
+Greater Curse:
+  tier: Veteran
+  type: Passive
+  brief: Your curses are more potent and more debilitating
+  tags:
+    prerequisites: Bestow Curse
+  effect: |
+    Your {Bestow Curse} power gains the following effect.
+
+    #### Heightened
+
+    For each +2 Mana, choose one of the following effects in addition to the normal effect.
+    * Your target is {dazzled}.
+    * Your target is {flat-footed}.
+    * Your target takes 1 fatigue. This fatigue cannot be recovered for the duration, and it goes away when the spell ends.
+    * Your target looks and feels 10d6 years older.
+    * Your target has -5 Reputation with everyone.
+
+Prophecy:
+  tier: Veteran
+  type: 1-Action
+  brief: You announce a prophecy that fortells a future magical event 
+  traits: [Daily]
+  tags:
+    duration: Until you use this power again
+  effect: |
+    You declare a condition that could take place in the future, and you announce what will happen when this condition is met.
+
+    Choose a spell from any class that satisfies both the following conditions. You do not have to know this spell.
+    * You know another spell of the same or higher tier
+    * The effect of the spell vaguely matches the event you prophecised
+
+    You cast the chosen spell as part of this power. The chosen spell doesn't take effect as normal, but instead takes effect when you use **Observe Prophecy**. You must specify all the parameters of the chosen spell (including its target, any heightening, and so on) when you make the prophecy. You can use the **Observe Prophecy** power once, after which this power ends.
+
+    Prophecies are strongest when there are many different people nearby to hear them. At the GM's discretion, if you use this power while overheard by two important NPCs who are unfriendly or hostile towards each other, the chosen spell has -2 cost.
+
+    For example, you might prophecise *When things look darkest, a light will shine the way!* Then you could use **Observe Prophecy** any time you are surrounded by darkness, whether by literal physical darkness or by metaphorical forces of darkness. Your chosen spell might be {Light} or {Daylight}.
+
+    As another example, you might prophecise *All creatures who attempt to harm the righteous hero will be slain!* Then you could use **Observe Prophecy** any time a righteous hero or adventurer is attacked. Your chosen spell might be {Harm} or {Invoke Blast}.
+  aside: |
+    {% smallpower %}
+    Observe Prophecy:
+      type: Reaction
+      tags:
+        trigger: Something happens that vaguely matches the condition you prophecised
+      effect: |
+        The chosen spell takes effect.
+    {% endsmallpower %}
 
 Eldritch Lore:
   tier: Ribbon
@@ -196,6 +343,28 @@ Friends:
     : You have advantage on all Spirit+Eloquence rolls to talk to your target
 
     On a failure or critical failure, or when this spell's duration ends, your target realizes you tried to magically charm them. This usually makes your target unfriendly or hostile towards you.
+
+Object Reading:
+  tier: Ribbon
+  type: 1-Action
+  brief: You can see an object's past, and can locate it in the future
+  traits: [Divination, Ritual, Spell]
+  tags:
+    cost: 3 Mana
+    target: One object you can reach
+    duration: 1 hour
+  effect: |
+    You can see your target's past, from its point of view, up to 24 hours in the past. You learn this information all at once when you cast the spell, and you can process it instantly, focusing on important or interesting information as you wish.
+
+    You know the exact distance and direction to your target.
+
+Oracle:
+  tier: Ribbon
+  type: Passive
+  brief: You are known as a sooth-sayer or oracle who perceives the future
+  traits: [Reputation]
+  effect: |
+    You have a reputation as someone who receives accurate visions of the future. Other people are likely to heed your predictions, especially if you make them as part of a dramatic oracular trance.
 
 Read Omens:
   tier: Ribbon

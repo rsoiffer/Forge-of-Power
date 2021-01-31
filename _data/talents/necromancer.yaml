@@ -99,16 +99,16 @@ Drain Touch:
     Make a Magic attack roll against your target's Spirit DC.
 
     Critical Success
-    : Double damage
+    : Double damage and double mana loss
 
     Success
-    : Your target takes 1d8 damage
+    : Your target takes 1d8 damage and loses 1d4 mana
 
-    Choose another creature you can reach as your second target (you can choose yourself). Your second target heals health equal to the amount of health lost by your first target.
+    Choose another creature you can reach as your second target (you can choose yourself). Your second target heals health equal to the amount of health lost by your first target and recovers mana equal to the amount of mana lost by your first target.
 
     #### Heightened
 
-    For each +2 Mana, the damage increases by 1d8.
+    For each +2 Mana, the damage increases by 1d8 and the mana loss increases by 1d4.
 
 Harm:
   tier: Novice
