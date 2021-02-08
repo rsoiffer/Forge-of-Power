@@ -18,10 +18,9 @@ Wild Sprint:
   tier: Awakened
   type: Free
   brief: You drop down onto all fours to run at high speed
-  tags:
-    duration: 1 minute
+  traits: [Encounter]
   effect: |
-    Your Speed increases by 20 feet.
+    Use the {Stride} power twice.
 
 # Dwarf
 
@@ -277,8 +276,12 @@ Sense Emotions:
     requirements: You haven't used Sense Emotions against this target in the last 24 hours
   effect: |
     Make a Spirit+Notice attack roll against your target's Spirit DC.
-  critical-success: You learn all the major emotions your target is currently feeling, plus an emotional secret your target is hiding
-  success: You learn all the major emotions your target is currently feeling
+  
+    Critical Success
+    : You learn all the major emotions your target is currently feeling, plus an emotional secret your target is hiding
+
+    Success
+    : You learn all the major emotions your target is currently feeling
 
 # Undead
 

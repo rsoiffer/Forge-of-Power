@@ -1,23 +1,19 @@
-brief: Extremely energetic but tiny people famed for their crazy inventions
-traits: [Humanoid]
+brief: Tiny, reckless, and mutated fungus-people who live in sewers and caves
+traits: [Humanoid, Plant]
 effect: |
-  General description.
-
-  ### Origin
-
-  TODO
+  Goblins are short, green-skinned humanoids who stand roughly 3 feet tall. While they appear vaguely similar to humans, goblins are actually a type of fungus. Their green skin comes from chlorophyll, they have no biological genders, they reproduce asexually by spreading spores, they are vulnerable to fire, and they can draw some energy from sunlight.
 
   ### Physical Description
 
-  TODO
+  Goblins have oversized heads and misshapen, bulbous torsos. They have very sharp teeth than can chew through almost any material, and tough stomachs that can digest even more. Goblins mutate significantly between generations, so each goblin looks different than its parent. These mutations often manifest as deformed facial features or strange lumps. Most goblins live for a very short time, only 5-30 years.
 
-  ### Society
+  Goblins follow a radically different lifecycle than normal species. An adult goblin's body contains thousands of spores, which they can plant one at a time, or that release all at once upon death. Spores can float on the wind or be carried by unwitting animals for months. Any spore that reaches a suitable environment (low light, rich soil, some water, and geothermal energy) will start to grow. A young goblin that emerges from a spore carries some instinctual memories from its parent and grows to physical adulthood after only a year.
 
-  TODO
+  ### Goblins in Society
 
-  ### Adventurers
+  Most goblins live apart from human society, as their biology gives them a very different set of needs and goals. Goblins are less concerned with social status and wealth than humans, as they aren't driven to marry or provide for children in the same way. It is rare to see a goblin work to cultivate a positive reputation or try to amass material wealth. On the other hand, goblins care much more about creating or protecting the spaces where their spores can grow. Most goblins live in or near these spaces: city sewers, underground cave structures, or dense forest floors.
 
-  TODO
+  Very few non-goblins are aware than goblins are fungi instead of mammals. This misunderstanding has led to discrimination, as some humanoids see goblins as uncivilized, insane, or deformed. This prejudice makes it hard for goblins to succeed as part of human society. Some goblins try anyways, as they work to ensure government and economic institutions respect goblins' unique needs. These reformers are slowly reducing personal and systemic racism against goblins.
 
   ## Character Stats
 
@@ -36,5 +32,3 @@ effect: |
   ***Cave Sight.*** You can see in total darkness as if it was dim light out to a distance of 30 feet.
 
   ***Goblin Ancestry.*** You gain an ancestry feat of your choice.
-
-  *These stats are temporary and may change in the future.*

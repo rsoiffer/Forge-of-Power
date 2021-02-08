@@ -1,23 +1,17 @@
 brief: Intelligent and friendly greater undead, with strong attachments to this world
 traits: [Spirit, Undead]
 effect: |
-  General description.
-
-  ### Origin
-
-  TODO
+  Undead are the partially reanimated bodies or souls of dead creatures. An undead is created when a dead soul is stuck in the material world because of necromantic magic or strong lingering attachments. If only a small part of the soul is still attached to the world, this creates a lesser undead, a mindless corpse powered by a tiny soul fragment. (Lesser undead only know how to destroy and consume, and are not an option for player characters.) However, if the soul manages to stay in the world entirely, it becomes a greater undead, a fully sentient creature animated by the conviction of the dead soul.
 
   ### Physical Description
 
-  TODO
+  Undead are animated humanoid corpses. Their bodies are partially rotting and decayed, but are also preserved through magic. The stronger an undead's attachment to the material world, the stronger this preserving magic, and the healthier their bodies appear. A determined and willful undead might appear indistinguishable from a living humanoid of their race. An older, less attached, or mentally unstable undead would appear extremely decayed or even completely skeletal. Less stable undead may have glowing red eyes, exude an aura of darkness, or be partially ethereal.
 
-  ### Society
+  ### Undead in Society
 
-  TODO
+  Lesser undead are a constant menace to society. They form naturally and easily, as many souls die with moderate lingering attachments to the material world. Any time a person dies, there's a risk of a murderous undead rising from their grave. Thankfully, {Ceremony} spells are common and can easily prevent undead from rising. In most humanoid cultures, priests are responsible for burying all citizens and fighting off the menace of undeath.
 
-  ### Adventurers
-
-  TODO
+  Greater undead are very different from lesser undead, but that doesn't stop some people from conflating the two. Some ignorant humanoids tar all undead with the same brush, labeling greater undead murderers and threats to society. The loudest of these people are often the priests and kami who fight the threat of lesser undead every day. Any greater undead who lives in society will face unfriendly religions. Some hide their race, pretending to be humanoids, while others work to prove their morality and sincerity.
 
   ## Character Stats
 
@@ -38,5 +32,3 @@ effect: |
   ***Necromantic Power.*** You learn a {Necromancer} ribbon of your choice.
 
   ***Undead Ancestry.*** You gain an ancestry feat of your choice.
-
-  *These stats are temporary and may change in the future.*

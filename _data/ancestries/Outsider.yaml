@@ -1,23 +1,19 @@
 brief: Angels and devils that survive by feeding on other people's emotions
 traits: [Spirit]
 effect: |
-  General description.
-
-  ### Origin
-
-  TODO
+  Outsiders are eldritch spirits that feed off of the emotions of humanoids. Each individual outsider feeds on a different emotion. Outsiders are categorized as angels or devils depending on the emotion they absorb: angels eat positive emotions, while devils eat negative emotions. An angel might feed off of *Satisfaction* or *Amusement*, while a devil might feed off of *Shame* or *Disappointment*.
 
   ### Physical Description
 
-  TODO
+  Outsiders are spirits. Like all spirits, they don't age or reproduce. Outsiders' physical bodies are magical constructs made of stone, clay, or similar materials. Over time, an outsider can reshape their body to appear as any form they choose. Most outsiders choose normal humanoid forms in order to blend in to society. When an outsider is hurt, their body starts to disintegrate, as chunks of material fall off of their form.
 
-  ### Society
+  Instead of eating and drinking, outsiders power their bodies by absorbing emotions from nearby humanoids. This absorption affects all humanoids within a few hundred feet. This slightly dampens the emotions of the affected humanoids, but the effect is usually too subtle to notice. An outsider who lives in a town or city can easily survive off the emotions of the other inhabitants.
 
-  TODO
+  ### Outsiders in Society
 
-  ### Adventurers
+  Outsiders almost always live in towns and cities alongside members of other races. Outsiders never live completely apart from others, as isolation means starvation. Most outsiders have specific emotions that they prefer to eat above all others, in the same way most humans prefer sweet cake to stale bread. For example, an angel who eats *Satisfaction* might prefer *The Satisfaction of Eating a Good Pastry*, or a devil who eats *Shame* might prefer *The Shame of Having an Embarassing Secret Exposed*. To get a quality meal, outsiders often try to inspire these specific emotions in nearby humanoids. This can make outsiders come across as manipulative or creepy to members of other races.
 
-  TODO
+  Other races are usually not fond of outsiders. This stems from outsiders' tendency towards emotional manipulation - it's hard to feel comfortable when your neighbor is constantly trying to mess with your emotions. This has led to false depictions of outsiders as murderous shapeshifters and malevolent villains. All major religions condemn outsiders as spiritual abberations, as the kami claim that outsiders violate the normal cycle of life and death. Most outsiders choose to hide from this racism, pretending to be normal humanoids.
 
   ## Character Stats
 
@@ -29,12 +25,12 @@ effect: |
 
   ***Varied.*** You gain an attribute boost of your choice.
 
+  ***Spirit.*** You have the [[Spirit]] trait. This means you don't age or grow old.
+
   ***Outsider.*** You have the [[Outsider]] trait. This means you don't need to eat, drink, or breathe. You have 20 [[Poison]] Shield and 5 [[Radiant]] Weakness.
 
-  ***Regeneration.*** After your body is killed, if your true item form is not destroyed, you can slowly regenerate your body over the course of 1 week.
+  ***Reshape Form.*** With 1 week of work, you can change your body to a new shape. You can choose for your new form to be anything, except it must have the same general size, limbs, and sensory organs as a human. Reshaping your body doesn't affect your stats.
 
   ***Occult Power.*** You gain an {Occultist} ribbon of your choice.
 
   ***Outsider Ancestry.*** You gain an ancestry feat of your choice.
-
-  *These stats are temporary and may change in the future.*

@@ -1,23 +1,19 @@
 brief: Divine spirits that represent the natural world, organized in a celestial bureaucracy
 traits: [Spirit]
 effect: |
-  General description.
+  Kami are divine spirits, the natural rulers of the world. While all kami are gods, some are more powerful than others. The major kami have the power to create and destroy planets, and are worshipped by millions of humanoids around the world. The minor kami described here are mere functionaries or bureaucrats in the celestial bureaucracy, the spirit government that oversees the entire world. Most kami live in Heaven, a giant palace in the spirit world that acts as the seat of the celestial bureaucracy.
 
-  ### Origin
-
-  TODO
+  Each kami holds a specific role in the celestial bureaucracy, called their domain. A major kami might be in charge of all storms and weather, while a minor kami serving them might be in charge of just lightning strikes. A kami's office in Heaven gives them near-total control over their domain: the minor kami of lightning can send bolts of lightning from anywhere they want from inside of a storm cloud. Outside of their office, a kami has little more divine power than anyone else.
 
   ### Physical Description
 
-  TODO
+  Kami are spirits. Like all spirits, they don't age or reproduce. Unlike the wild fey spirits, kami have static humanoid forms. The only thing that distinguishes a kami from a normal human/elf/dwarf/etc. are minor physical features inspired by their domain. A kami of lightning might have sparkling yellow eyes and constantly generate static electricity, while a kami of a water might have blue hair and an exceptional ability to swim.
 
-  ### Society
+  ### Kami in Society
+  
+  Kami are all organized into a strict hierarchy in the celestial bureaucracy. Each kami has a direct superior, who has another direct superior, which extends in a long bureaucratic chain. At the top are the Secretary of Creation (who commands the entire world), and even above them, the Jade Emperor (who rules all of existence). Kami are obligated to follow all orders given by their superiors. This is merely one rule of the massive divine legal code of Natural Law. A kami who disobeys Natural Law will attract the attention of the dreaded *higher-ups*. Major legal violates will cause a kami to be excommunicated from the celestial bureaucracy. An excommunicated kami is analogous to a fallen angel in Christian mythology. They are viewed as evil, heretical, and flawed, and they are totally unwelcome in Heaven.
 
-  TODO
-
-  ### Adventurers
-
-  TODO
+  While most kami live in Heaven, the more adventurous kami might travel to or live in the material world. Since all popular religions worship major kami, a minor kami in the material world might act as an emissary or priest of their a religion. Humanoids generally treat kami with reverence, especially kami who serve a major kami they worship. However, proving you're a kami can be difficult, as kami are physically identical to humanoids.
 
   ## Character Stats
 
@@ -34,5 +30,3 @@ effect: |
   ***Divine Power.*** You have 10 [[Radiant]] Shield. You learn a {Druid} or {Healer} ribbon of your choice.
 
   ***Kami Ancestry.*** You gain an ancestry feat of your choice.
-
-  *These stats are temporary and may change in the future.*

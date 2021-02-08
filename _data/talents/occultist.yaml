@@ -284,21 +284,22 @@ Prophecy:
 
     Choose a spell from any class that satisfies both the following conditions. You do not have to know this spell.
     * You know another spell of the same or higher tier
-    * The effect of the spell vaguely matches the event you prophecised
+    * The effect of the chosen spell vaguely matches the event you prophesied
 
     You cast the chosen spell as part of this power. The chosen spell doesn't take effect as normal, but instead takes effect when you use **Observe Prophecy**. You must specify all the parameters of the chosen spell (including its target, any heightening, and so on) when you make the prophecy. You can use the **Observe Prophecy** power once, after which this power ends.
 
     Prophecies are strongest when there are many different people nearby to hear them. At the GM's discretion, if you use this power while overheard by two important NPCs who are unfriendly or hostile towards each other, the chosen spell has -2 cost.
 
-    For example, you might prophecise *When things look darkest, a light will shine the way!* Then you could use **Observe Prophecy** any time you are surrounded by darkness, whether by literal physical darkness or by metaphorical forces of darkness. Your chosen spell might be {Light} or {Daylight}.
+    *For example, you might prophesy "When things look darkest, a light will shine the way!" Then you could use **Observe Prophecy** any time you are surrounded by darkness, whether by literal physical darkness or by metaphorical forces of darkness. Your chosen spell might be {Light} or {Daylight}.*
 
-    As another example, you might prophecise *All creatures who attempt to harm the righteous hero will be slain!* Then you could use **Observe Prophecy** any time a righteous hero or adventurer is attacked. Your chosen spell might be {Harm} or {Invoke Blast}.
+    *As another example, you might prophesy "All creatures who attempt to harm the righteous hero will be slain!" Then you could use **Observe Prophecy** any time a righteous hero or adventurer is attacked. Your chosen spell might be {Harm} or {Invoke Blast}.*
   aside: |
     {% smallpower %}
     Observe Prophecy:
       type: Reaction
       tags:
-        trigger: Something happens that vaguely matches the condition you prophecised
+        requirements: You haven't used **Prophecy** in the past hour
+        trigger: Something happens that vaguely matches the condition you prophesied
       effect: |
         The chosen spell takes effect.
     {% endsmallpower %}
