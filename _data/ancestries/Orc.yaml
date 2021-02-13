@@ -1,5 +1,4 @@
 brief: Large and strong warriors who thrive in harsh wastes and mountaintops
-traits: [Humanoid]
 effect: |
   General description.
 
@@ -37,13 +36,18 @@ effect: |
 
   *These stats are temporary and may change in the future.*
 
-heritages:
-  Orc:
-    traits: [Humanoid]
-    tags:
-      attributes: +1 Strength, +0 Agility, +0 Intellect, +0 Spirit
-      misc stats: 30 feet Speed, +0 Size
-    effect: |
-      TODO.
+  ## Character Stats
 
-      You gain an ancestry feat of your choice.
+  Attributes
+  : +1 Strength, +0 Agility, +0 Intellect, +0 Spirit
+
+  Misc Stats
+  : 30 feet Speed, +0 Size
+
+  ***Humanoid.*** You have the [[Humanoid]] trait.
+
+  ***Toughness.*** You have +2 maximum Health.
+
+  ***Powerful Build.*** You can lift twice as much weight as normal.
+
+  ***Orcish Ancestry.*** You gain an ancestry feat of your choice.

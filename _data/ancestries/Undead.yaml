@@ -1,5 +1,4 @@
 brief: Intelligent and friendly greater undead, with strong attachments to this world
-traits: [Spirit, Undead]
 effect: |
   Undead are the partially reanimated bodies or souls of dead creatures. An undead is created when a dead soul is stuck in the material world because of necromantic magic or strong lingering attachments. If only a small part of the soul is still attached to the world, this creates a lesser undead, a mindless corpse powered by a tiny soul fragment. (Lesser undead only know how to destroy and consume, and are not an option for player characters.) However, if the soul manages to stay in the world entirely, it becomes a greater undead, a fully sentient creature animated by the conviction of the dead soul.
 
@@ -11,7 +10,7 @@ effect: |
 
   Lesser undead are a constant menace to society. They form naturally and easily, as many souls die with moderate lingering attachments to the material world. Any time a person dies, there's a risk of a murderous undead rising from their grave. Thankfully, {Ceremony} spells are common and can easily prevent undead from rising. In most humanoid cultures, priests are responsible for burying all citizens and fighting off the menace of undeath.
 
-  Greater undead are very different from lesser undead, but that doesn't stop some people from conflating the two. Some ignorant humanoids tar all undead with the same brush, labeling greater undead murderers and threats to society. The loudest of these people are often the priests and kami who fight the threat of lesser undead every day. Any greater undead who lives in society will face unfriendly religions. Some hide their race, pretending to be humanoids, while others work to prove their morality and sincerity.
+  Greater undead are very different from lesser undead, but that doesn't stop some people from conflating the two. Some ignorant humanoids tar all undead with the same brush, labeling greater undead murderers and threats to society. The loudest of these people are often the priests and kami who fight the threat of lesser undead every day. Racist discrimination propagated by organized religion is a fact of life for many undead. Some undead avoid this discrimination by hiding their race, pretending to be humanoids, while others work to prove the stereotypes wrong.
 
   ## Character Stats
 

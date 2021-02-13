@@ -1,10 +1,24 @@
 # Awakened
 
-Amphibious:
+Bestial Mobility:
   tier: Awakened
   type: Passive
-  brief: You live in the ocean, swimming and breathing underwater
+  brief: Your natural environment is in the ocean, the treetops, or the skies
+  traits: [Specialize]
   effect: |
+    Since this power has the [[Specialize]] trait, you choose one of the specializations to the right when you learn this power.
+
+    The specialization you choose should generally match the species of animal you are. An awakened eagle is a **Flier**, not a **Swimmer**. An awakened tiger is a **Climber**, not a **Flier**.
+  aside: |
+    ### Specializations
+
+    #### Climber
+    You can climb at your full Speed. Your Speed increases by 10 feet.
+
+    #### Flier
+    You can fly at your full Speed. While flying, you have disadvantage on Strength rolls and attack rolls.
+
+    #### Swimmer
     You can swim at your full Speed. You can breathe water as easily as air.
 
 Natural Weapon:

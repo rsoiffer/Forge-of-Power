@@ -1,23 +1,14 @@
 brief: Amphibious lizard-people who mutate into dragons by eating monsters
-traits: [Humanoid]
 effect: |
-  General description.
-
-  ### Origin
-
-  TODO
+  Lizardfolk are scaled, reptilian humanoids who can mutate to copy the traits of animals they eat. Normal lizardfolk have minor adaptations that make them strong, fast, and adaptable. The oldest and strongest lizardfolk have mutated to become giant monsters with awesome size and power. Stories of dragons, basilisks, dinosaurs, and the like are usually about powerful lizardfolk.
 
   ### Physical Description
 
-  TODO
+  Lizardfolk are slightly larger than humans, usually standing around 6 feet tall and weighing 150-200 pounds. Lizardfolk are covered in colorful scales, usually green or sometimes blue, grey, or brown. Lizardfolk have softer and paler scales along their chest and stomach, and a ridge of tougher spiky scales down their back. Some lizardfolk (most commonly male lizardfolk) have a large crest along the back of their head and neck, which changes in color as they mutate. All lizardfolk have large and strong tails, which act like a third leg and help them balance.
 
   ### Society
 
-  TODO
-
-  ### Adventurers
-
-  TODO
+  Lizardfolk usually live in rural communities near swamps, coastlines, or rivers. Most prefer living near nature instead of behind high walls. While wandering monsters pose a severe danger, those same monsters give lizardfolk the chance to mutate. In cities, lizardfolk prefer to live near rivers and lakes, where they can swim around and hunt fish. Lizardfolk are sometimes seen as exotic by more insular humans or elves, but in general they're common and well-accepted in cities. Large mutated lizardfolk are rare, but when seen, they can alarm people who are frightened of dragons or other monsters.
 
   ## Character Stats
 
@@ -33,7 +24,7 @@ effect: |
 
   ***Amphibious.*** You can swim at your full Speed, and you can hold your breath for up to 1 hour.
 
-  ***Cold Blooded.*** You only need to eat half as much food, but you get exhausted twice as quickly from cold environments.
+  ***Cold Blooded.*** You only need to eat half as much food, but you gain fatigue twice as quickly from cold environments.
 
   ***Vicious Bite.*** Your unarmed Strikes have 1d6 [[Piercing]] base damage.
 
