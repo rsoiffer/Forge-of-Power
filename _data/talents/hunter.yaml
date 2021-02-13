@@ -8,9 +8,15 @@ Bear Trap:
     duration: Forever
   effect: |
     Make an Agility attack roll against your target's Agility DC.
-  critical-success: Your target takes 3d6 damage and is {restrained}
-  success: Your target takes 2d6 damage and is {immobilized}
-  failure: Your target takes 1d6 damage and is {slowed} until the end of your next turn
+
+    Critical Success
+    : Your target takes 3d6 damage and is {restrained}
+
+    Success
+    : Your target takes 2d6 damage and is {immobilized}
+
+    Failure
+    : Your target takes 1d6 damage and is {slowed} until the end of your next turn
 
 Called Shot:
   tier: Novice

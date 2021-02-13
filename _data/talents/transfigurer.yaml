@@ -190,6 +190,33 @@ Scout Form:
 
     If you add +1 Mana, you turn into a flying creature, such as a bird. You can fly at your full Speed.
 
+Petrify:
+  tier: Veteran
+  type: 1-Action
+  brief: You petrify a creature, transforming its flesh into stone
+  traits: [Attack, Spell, Transfiguration]
+  tags:
+    cost: 4 Mana
+    range: 60 feet
+    duration: Sustained, up to 1 minute
+  effect: |
+    Make a Magic attack roll against your target's Strength DC.
+
+    Critical Success
+    : Your target is {restrained}, but has 20 [[Anything]] Shield as their flesh hardens to stone
+
+    Success
+    : Your target is {flat-footed} and {immobilized}
+
+    Failure
+    : Your target is {slowed}
+
+    If you sustain this spell for the full minute, or if your target dies, this spell lasts forever.
+
+    #### Heightened
+
+    For each +1 Mana, you can target another creature within range.
+
 Polymorph:
   tier: Veteran
   type: 1-Action

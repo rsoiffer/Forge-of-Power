@@ -511,8 +511,12 @@ Vicious Mockery:
     range: 30 feet
   effect: |
     Make a Spirit+Provoke attack roll against your target's Spirit DC.
-  critical-success: Your target takes 2d8 + Spirit + Provoke damage
-  success: Your target takes 1d8 + Spirit + Provoke damage
+
+    Critical Success
+    : Your target takes 2d8 + Spirit + Provoke damage
+
+    Success
+    : Your target takes 1d8 + Spirit + Provoke damage
 
 # Religion
 
@@ -551,6 +555,15 @@ Bishop:
     Choose a religous belief, tenet, or rule that people might reasonably believe in. Your character states the rule out loud, explaining its importance to the faith and its origins as a belief. This rule is retroactively one of the core beliefs of your character's religion. If past events in the campaign contradict this rule, then the rule isn't very important to the average practicioner of your religion.
 
     From now on, all believers in your character's religion publicly follow the declared rule. Breaking the rule is considered a terrible taboo. If your character breaks the declared rule, your character will lose reputation with other practicioners of their religion.
+
+Divine Sense:
+  tier: Religion
+  type: Passive
+  brief: You can sense powerful spirits, like kami, outsiders, and undead
+  tags:
+    perk: +2 Religion
+  effect: |
+    You have a special sense that lets you detect spirits. This sense is similar to a normal human's sense of smell: spirits constantly emanate a vague aura, and this aura sticks to locations they've spent a lot of time at. You can distinguish between different types of spirits by the "smell" of this aura. An unkept graveyard might have a strong smell of undeath, while a church run by a kami might smell vaguely of Heaven.
 
 Holy Symbol:
   tier: Religion

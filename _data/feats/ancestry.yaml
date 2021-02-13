@@ -354,6 +354,12 @@ Paralyzing Touch:
     duration: Until the end of your next turn
   effect: |
     Make a Spirit attack roll against your target's Spirit DC.
-  critical-success: Your target is {unconscious}
-  success: Your target is {stunned}
-  failure: Your target is {slowed}
+
+    Critical Success
+    : Your target is {unconscious}
+
+    Success
+    : Your target is {stunned}
+
+    Failure
+    : Your target is {slowed}

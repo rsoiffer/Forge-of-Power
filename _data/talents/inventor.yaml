@@ -238,8 +238,12 @@ Overload:
     area: 20-foot burst
   effect: |
     Dispel the chosen Inventor power. Make an Intellect attack roll against your target's Agility DC.
-  success: Your target takes (8d6 + 2 * your Inventor level) damage
-  failure: Your target takes half damage
+
+    Success
+    : Your target takes (8d6 + 2 * your Inventor level) damage
+
+    Failure
+    : Your target takes half damage
 
 Clockwork Tinker:
   tier: Ribbon

@@ -28,8 +28,12 @@ Feint:
     duration: Until the end of your next turn
   effect: |
     Make a Strength or Agility attack roll against your target's Defense.
-  critical-success: You have a +15 bonus to your next melee {Strike} against your target
-  success: You have a +10 bonus to your next melee {Strike} against your target
+
+    Critical Success
+    : You have a +15 bonus to your next melee {Strike} against your target
+
+    Success
+    : You have a +10 bonus to your next melee {Strike} against your target
 
 Panache:
   tier: Novice
