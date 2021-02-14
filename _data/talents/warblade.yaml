@@ -213,3 +213,10 @@ Style Master:
   traits: [Reputation]
   effect: |
     You have a reputation as a martial artist who has mastered a particular style. Other people know of your skill and may seek you out for training in this style.
+
+Unusual Finesse:
+  tier: Ribbon
+  type: Passive
+  brief: You wield large weapons with grace and precision instead of brute strength
+  effect: |
+    You treat all weapons as having the [[Finesse]] trait.

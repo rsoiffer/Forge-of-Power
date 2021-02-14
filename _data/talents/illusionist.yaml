@@ -152,7 +152,7 @@ Tactile Illusions:
   tags:
     prerequisites: Any [[Illusion]] power
   effect: |
-    Your illusions form actual solid objects capable of supporting weight. Your illusions make appropriate sounds, generate normal smells, and feel right to the touch. Your [[Illusion]] powers gain the [[Auditory]] and [[Tactile]] traits.
+    You can choose for your illusions to form actual solid objects capable of supporting weight. Your illusions make appropriate sounds, generate normal smells, and feel right to the touch. Your [[Illusion]] powers gain the [[Auditory]] and [[Tactile]] traits.
 
     Your illusions are moderately solid, but don't stand up to any significant force. Illusions you make lose their solidity if they would deal or take any damage. If you conjure a solid illusion in a space occupied by another solid object, your illusion loses its solidity immediately.
 
@@ -294,6 +294,7 @@ Minor Illusion:
     cost: 0 Mana
     range: 30 feet
     area: 5-foot cube
+    duration: 1 minute, or until you decide to end it
   effect: |
     You create an illusory visual image of a stationary object or structure. The entire image must fit within the spell's area.
 

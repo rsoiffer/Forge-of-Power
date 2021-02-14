@@ -12,6 +12,18 @@ effect: |
 
   ## Character Stats
 
+  <aside markdown="1">
+  ### Small Lizardfolk
+
+  One common lizardfolk ethnicity has adapted to be especially small and nimble. These lizardfolk, sometimes called *kobolds* or *sneks*, stand roughly 3 feet tall and lack the powerful muscles of their larger cousins. If you want to play a small lizardfolk, replace the normal lizardfolk attributes and misc stats with the ones below.
+
+  Attributes
+  : +0 Strength, +1 Agility, +0 Intellect, +0 Spirit
+
+  Misc Stats
+  : 30 feet Speed, -1 Size
+  </aside>
+
   Attributes
   : +1 Strength, +1 Agility, -1 Intellect, +0 Spirit
 

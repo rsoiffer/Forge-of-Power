@@ -39,7 +39,7 @@ Cleric:
     mana limit: Your Mana Limit stat equals 1 + half your Caster level (rounded up)
     rests: Your Mana pool replenishes when you complete an 8-hour rest
   effect: |
-    When you reach Novice tier in a Mage or Priest class, choose one [[Spell]] talent in that class as your **domain spell** for that class. The cost of your domain spell is reduced by 1. You can change your domain spell whenever you level up.
+    Choose one spell you know as your **domain spell**. The cost of your domain spell is reduced by 1. You can change your domain spell whenever you level up.
 
 Innate:
   preface: |
@@ -72,4 +72,4 @@ Wizard:
     mana limit: Your Mana Limit stat equals 1 + half your Caster level (rounded up)
     rests: Your Mana pool replenishes when you complete an 8-hour rest
   effect: |
-    When you reach Novice tier in a Mage or Priest class, you learn one [[Cantrip]] talent from that class. This talent doesn't count towards the normal limit of talents you know from that class.
+    When you reach Novice tier in a Mage or Priest class, you learn one ribbon from that class. This ribbon doesn't count towards the normal limit of ribbons you know from that class.
