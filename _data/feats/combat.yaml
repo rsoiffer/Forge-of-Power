@@ -316,6 +316,8 @@ Overchannel:
     #### Heightened
 
     For each +1 Mana, the next spell you cast has another -1 cost.
+  fluff: |
+    Note for GMs: some spells (like {Elemental Control} and {Create Element}) have exponential scaling in the mana cost. Some players may try to combine these spells with Overchannel to reach huge numbers. If they do this, hit them over the head with the PHB.
 
 Staff Fighting:
   tier: Staff

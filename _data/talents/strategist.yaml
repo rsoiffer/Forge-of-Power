@@ -152,7 +152,7 @@ Predict Line:
   tags:
     range: 30 feet
   effect: |
-    You predict the the exact words your target will say next. If your target wasn't about to speak, this power in
+    You predict the the exact words your target will say next. If your target wasn't about to speak, this power has no effect.
   fluff: |
     Your next line is "Is this a JoJo's reference?"
 

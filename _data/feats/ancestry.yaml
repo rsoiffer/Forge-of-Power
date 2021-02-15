@@ -236,7 +236,7 @@ Dragon's Breath:
     : Double damage
 
     Success
-    : Your target takes 2d8 + your Level damage
+    : Your target takes 2d8 + your character level damage
 
     Failure
     : Half damage
@@ -251,6 +251,8 @@ Lizard King:
   brief: You grow much larger and your attacks gain extra reach
   effect: |
     Your size increases by 1 and your reach increases by 5 feet.
+
+    Optionally, when you reach character level 13, your size again increases by 1 and your reach increases by 5 feet.
 
 # Orc
 
