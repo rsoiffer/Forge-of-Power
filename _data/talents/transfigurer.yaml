@@ -5,7 +5,7 @@ Alter Creature:
   traits: [Spell, Transfiguration]
   tags:
     cost: 2 Mana
-    range: Touch
+    target: One creature you can reach
     duration: Sustained, up to 1 hour
   effect: |
     Choose one of the following effects.
@@ -479,7 +479,7 @@ Revert Transfiguration:
   traits: [Ritual, Spell]
   tags:
     cost: 3 Mana
-    range: Touch
+    target: One creature or object you can reach
   effect: |
     You dispel all [[Transfiguration]] powers affecting your target.
 

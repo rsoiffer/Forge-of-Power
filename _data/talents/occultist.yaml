@@ -34,7 +34,7 @@ Bestow Curse:
   traits: [Attack, Spell]
   tags:
     cost: 2 Mana
-    range: Touch
+    target: One creature you can reach
     duration: Varies
   effect: |
     Choose one of the following effects. Alternatively, the GM may allow you to invent your own curse.

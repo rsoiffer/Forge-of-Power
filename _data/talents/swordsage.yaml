@@ -16,9 +16,9 @@ Elemental Weapon:
   brief: You enhance your weapon with damaging elemental energy
   traits: [Encounter]
   tags:
-    duration: Until the end of your next turn
+    trigger: You make a Strike
   effect: |
-    Choose one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Force]], or [[Sonic]] traits. Your Strikes deal an extra 1d6 damage of the chosen trait on a success.
+    Choose one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Force]], or [[Sonic]] traits. The triggering Strike deals an extra 2d6 damage of the chosen trait on a success.
 
 Forbidden Technique:
   tier: Novice

@@ -117,7 +117,7 @@ Harm:
   traits: [Attack, Necrotic, Spell]
   tags:
     cost: 1 Mana
-    range: Touch
+    target: One creature you can reach
   effect: |
     Make a Magic attack roll against your target's Spirit DC.
 
@@ -344,9 +344,9 @@ Decompose:
   traits: [Cantrip, Necrotic, Spell]
   tags:
     cost: 0 Mana
-    range: Touch
+    target: One object you can reach
   effect: |
-    If your target is an object made of organic material (such as a wooden door, a dead creature, or a plate of food), it takes 4d8 damage. This damage causes your target to decompose extremely rapidly: it might sprout moss and flowers, become covered in mold or fungus, or degrade into compost.
+    If your target is made of organic material (such as a wooden door, a dead creature, or a plate of food), it takes 4d8 damage. This damage causes your target to decompose extremely rapidly: it might sprout moss and flowers, become covered in mold or fungus, or degrade into compost.
 
     #### Heightened
 

@@ -154,7 +154,7 @@ Upgrade Weapon:
     target: One weapon you can reach
     duration: 1 hour, or until you use this power again
   effect: |
-    Strikes with your target have a +1 bonus. When you use this power, choose one of the following effects.
+    Choose one of the following effects.
 
     Deadly Critical
     : Critical successes on Strikes with your target deal an extra 2d12 damage
