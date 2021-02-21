@@ -4,7 +4,7 @@ Blessed Luck:
   tier: Amulet
   type: Reaction
   brief: You are hard to affect with dangerous spiritual magic spells
-  traits: [Daily, Fortune]
+  traits: [Daily]
   tags:
     requirements: You are wielding an amulet
     perk: +1 [[Elemental]] Shield
@@ -24,6 +24,30 @@ Protective Magic:
   effect: |
     The triggering creature gains all the Perk bonuses from your amulet feats.
 
+Rebuke Spirits:
+  tier: Amulet
+  type: 1-Action
+  brief: You protect a creature or location from evil spirits
+  traits: [Spell]
+  tags:
+    requirements: You are wielding an amulet
+    perk: +1 [[Elemental]] Shield
+    cost: 1 Mana
+    range: 30 feet
+    duration: 1 hour
+  effect: |
+    Choose one of the following types of spirits: fey, kami, outsiders, or undead. The chosen spirits have a strong aversion to your target, and will not approach your target unless they have a good reason to. This spell has an additional effect depending on your target:
+
+    * If your target is a creature, then the chosen spirits have disadvantage on attacks against your target.
+
+    * If your target is an object, then the chosen spirits cannot willing touch your target.
+
+    * If your target is a location, then the chosen spirits cannot willing approach within 5 feet of your target.
+
+    #### Heightened
+
+    For each +1 Mana, you can target an additional creature, object, or location within range.
+
 Ward Ally:
   tier: Amulet
   type: 1-Action
@@ -37,6 +61,10 @@ Ward Ally:
     duration: Until the end of your next turn
   effect: |
     Your target has +5 Defense.
+
+    #### Heightened
+
+    For each +1 Mana, you can target an additional creature within range.
 
 # Bludgeon
 
@@ -60,6 +88,16 @@ Distracting Blow:
   effect: |
     Make a bludgeon Strike. On a success, your target is {flat-footed}.
 
+Dual Bludgeons:
+  tier: Bludgeon
+  type: Passive
+  brief: You dual-wield bludgeons by striking with a flurry of blows
+  tags:
+    perk: +1 damage to bludgeon Strikes
+    requirements: You are wielding a bludgeon in each hand
+  effect: |
+    You have a +1 bonus to bludgeon Strikes.
+
 Reliable Damage:
   tier: Bludgeon
   type: Passive
@@ -80,14 +118,37 @@ Archer's Eyes:
   effect: |
     You treat bows as having double their normal range.
 
-Double Shot:
+Multishot:
   tier: Bow
   type: 1-Action
-  brief: Fire two arrows in quick succession, with a chance of hitting two targets
+  brief: You load multiple arrows on your bow and fire them all at once
   tags:
     perk: +1 damage to bow Strikes
+    range: The range of your bow
+    area: 5-foot burst
   effect: |
-    Make a bow Strike. On a critical hit, make another bow Strike against a different target.
+    Make a bow Strike with a -5 penalty. This Strike targets any number of creatures in this power's area.
+
+Stable Stance:
+  tier: Bow
+  type: Free
+  brief: You fire more accurately by planting your feet on the ground
+  tags:
+    perk: +1 damage to bow Strikes
+    requirements: You haven't used a [[Move]] power yet this turn
+    duration: Until the start of your next turn
+  effect: |
+    You have a +1 bonus to bow Strikes. You can't use any [[Move]] powers.
+
+Weighty Draw:
+  tier: Bow
+  type: Passive
+  brief: You have a bow with a draw weight that requires extreme strength
+  tags:
+    prerequisites: Strength +2 or higher
+    perk: +1 damage to bow Strikes
+  effect: |
+    You have a special bow that requires extreme strength to draw. Creatures with less Strength than you cannot wield this bow. When you succeed on a Strike with this bow, add half your Strength to the damage.
 
 # Crossbow
 
@@ -100,6 +161,16 @@ Heavy Bolts:
   effect: |
     When you succeed on a crossbow Strike benefitting from the **Heavy Draw** power, your target falls {prone}.
 
+Locked and Loaded:
+  tier: Crossbow
+  type: Free
+  brief: You instantly ready your crossbow at the start of a fight
+  tags:
+    perk: +1 damage to crossbow Strikes
+    requirements: This is the first round of a combat encounter
+  effect: |
+    Immediately use the **Heavy Draw** power.
+
 Point-Blank Shot:
   tier: Crossbow
   type: Passive
@@ -109,22 +180,43 @@ Point-Blank Shot:
   effect: |
     You have a +1 bonus to crossbow Strikes against targets within 30 feet.
 
+Running Reload:
+  tier: Crossbow
+  type: 1-Action
+  brief: You prepare your crossbow to fire while sprinting
+  tags:
+    perk: +1 damage to crossbow Strikes
+  effect: |
+    Immediately use the **Heavy Draw** power and the {Stride} power.
+
 # Dagger
 
 Opportunist:
   tier: Dagger
   type: Reaction
-  brief: You can sneak in hits when your enemies fail to hit you
+  traits: [Encounter]
+  brief: You can sneak in dagger strikes after your enemy gets hit
   tags:
     perk: +1 damage to dagger Strikes
-    trigger: A {Strike} against you fails or critically fails
+    trigger: After a {Strike} succeeds against a creature you can reach
   effect: |
-    Make a dagger {Strike} against the attacker.
+    Make a dagger {Strike} against the triggering creature.
 
-Throwing Daggers:
+Parrying Dagger:
+  tier: Dagger
+  type: Free
+  brief: You can parry attacks with your dagger, using it like a shield
+  tags:
+    perk: +1 damage to dagger Strikes
+    trigger: Your turn starts and you are wielding a dagger
+    duration: Until you are no longer wielding this dagger, or until you make a Strike with this dagger
+  effect: |
+    You have a +1 bonus to Defense.
+
+Throwing Dagger:
   tier: Dagger
   type: Passive
-  brief: You are an expert at throwing daggers
+  brief: You are an expert at throwing daggers a long distance
   tags:
     perk: +1 damage to dagger Strikes
   effect: |
@@ -132,16 +224,25 @@ Throwing Daggers:
 
 # Heavy Weapon
 
+Into the Fray:
+  tier: Heavy Weapon
+  type: Passive
+  brief: Your wide swings leave your enemies no space to gang up on you
+  tags:
+    perk: +1 damage to heavy weapon Strikes
+    requirements: You are wielding a heavy weapon, and you are adjacent to three or more enemies
+  effect: |
+    You have a +1 bonus to Defense.
+
 Knockback:
   tier: Heavy Weapon
   type: Free
-  brief: You knock an enemy back after a powerful hit
+  brief: You make powerful, heavy swings that knock your enemy back
   tags:
     perk: +1 damage to heavy weapon Strikes
     trigger: You succeed on a heavy weapon Strike against a Size +1 or smaller creature
-    target: The target of the triggering Strike
   effect: |
-    You push your target back 5 feet. If the triggering Strike was a critical success, you can instead push your target back 10 feet.
+    Your Strike gains the success and critical success effects of the {Shove} power.
 
 Monster Hunter:
   tier: Heavy Weapon
@@ -152,6 +253,15 @@ Monster Hunter:
     trigger: You make a heavy weapon Strike against a Size +1 or larger creature
   effect: |
     The base damage of your Strike increases by 1d12.
+
+Overhead Swing:
+  tier: Heavy Weapon
+  type: 1-Action
+  brief: You make an overhead swing that drives your enemy into the ground
+  tags:
+    perk: +1 damage to heavy weapon Strikes
+  effect: |
+    Make a heavy weapon Strike. On a success, your target falls {prone}.
 
 # Orb
 
@@ -223,6 +333,15 @@ Counter Charge:
       effect: |
         Make a polearm Strike with advantage against the triggering creature.
     {% endsmallpower %}
+
+Distant Strike:
+  tier: Polearm
+  type: 1-Action
+  brief: You strike with increased accuracy against a enemy that can't reach you
+  tags:
+    perk: +1 damage to polearm Strikes
+  effect: |
+    Make a polearm {Strike}. Your reach increases by 5 feet for this Strike. If the target of this Strike cannot reach you, this Strike has a +1 bonus to hit.
 
 Polearm Hook:
   tier: Polearm
@@ -331,6 +450,16 @@ Staff Fighting:
 
 # Sword
 
+Dueling Sword:
+  tier: Sword
+  type: Passive
+  brief: You score a critical hit on sword Strikes more often
+  tags:
+    perk: +1 damage to sword Strikes
+    requirements: You are wielding a sword and no other weapons
+  effect: |
+    You have a +1 bonus to sword Strikes.
+
 Improved Critical:
   tier: Sword
   type: Passive
@@ -360,6 +489,15 @@ Perfect Ricochet:
     trigger: After you make a throwing weapon Strike
   effect: |
     The throwing weapon you just attacked with bounces off of the environment and returns to your hand.
+
+Quick Throw:
+  tier: Throwing Weapon
+  type: Passive
+  brief: You quickly throw your weapon at the start of a fight, catching opponents off guard
+  tags:
+    perk: +1 damage to throwing weapon Strikes
+  effect: |
+    You have advantage on throwing weapon Strikes during the first round of a combat encounter.
 
 Slowing Hit:
   tier: Throwing Weapon
@@ -496,10 +634,10 @@ Reliable Magic:
   tier: Wand
   type: Reaction
   brief: Your wand skills let you easily recover from miscasts
-  traits: [Encounter]
+  traits: [Encounter, Fortune]
   tags:
     requirements: You are wielding a wand
     perk: +1 damage to spell attacks
     trigger: You critically fail a Magic roll
   effect: |
-    Reroll the triggering roll. You must use the new result.
+    Reroll the triggering roll.

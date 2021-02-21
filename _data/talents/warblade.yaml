@@ -219,4 +219,4 @@ Unusual Finesse:
   type: Passive
   brief: You wield large weapons with grace and precision instead of brute strength
   effect: |
-    You treat all weapons as having the [[Finesse]] trait.
+    You treat all melee weapons as having the [[Finesse]] trait.

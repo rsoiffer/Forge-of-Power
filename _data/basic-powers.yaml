@@ -23,10 +23,10 @@ Escape:
   type: 1-Action
   traits: [Attack]
   effect: |
-    You attempt to escape from being {grabbed}, {immobilized}, or {restrained}. Choose one effect imposing any of these conditions on you. Make a Strength or Agility attack roll against the DC of the effect (such as the Strength DC of a creature grabbing you, or the Magic DC of a spell effect).
+    You attempt to escape from being {immobilized} or {restrained}. Choose one effect imposing any of these conditions on you. Make a Strength or Agility attack roll against the DC of the effect (such as the Strength DC of a creature grabbing you, or the Magic DC of a spell effect).
 
     Success
-    : You get free and remove the {grabbed}, {immobilized}, and {restrained} conditions imposed by your chosen target
+    : You end the chosen effect on yourself
 
 Grapple:
   type: 1-Action
@@ -34,7 +34,7 @@ Grapple:
   tags:
     requirements: You have at least one free hand
     target: One creature you can reach
-    duration: Until the end of your next turn, you move, or your opponent succeeds on an {Escape}
+    duration: Until the end of your next turn, until you can no longer reach your target, or until you decide to end it
   effect: |
     Make a Strength attack roll against your target's Strength DC.
 
@@ -42,7 +42,12 @@ Grapple:
     : Your target is {restrained}
 
     Success
-    : Your target is {grabbed}
+    : Your target is {flat-footed} and {immobilized}
+
+    Failure
+    : This power ends immediately
+
+    You can use the **Maintain Grapple** power. Your Speed is halved, but when you use a [[Move]] power, you can choose to move your target along with you.
 
 Help:
   type: 1-Action

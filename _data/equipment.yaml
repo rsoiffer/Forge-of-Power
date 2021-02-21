@@ -1,80 +1,88 @@
 apparel:
 
   Beast Hide:
+    brief: Thick hides or leathers that insulate and protect
     tags:
       defense: 10 + Strength
     effect: |
       You have advantage on Strength rolls to endure extreme temperatures or weather.
 
   Chain Mail:
+    brief: A heavy outfit made of interlocked metal rings
     tags:
       defense: 11 + Strength
     effect: |
       You have a -5 feet penalty to Speed.
 
   Plate Armor:
-    brief: A set of plate, chain mail, or brigandine
+    brief: A set of armor made of sturdy metal plates
     tags:
       defense: 11 + Strength
     effect: |
       You have disadvantage on Stealth rolls that rely on moving silently.
 
   Leather Armor:
+    brief: Hardened leather that helps to deflect attacks
     tags:
       defense: 10 + Agility
     effect: |
       You have a +2 bonus to Agility DC.
 
   Light Clothing:
-    brief: Normal clothing, leather armor, or monk robes
+    brief: Normal clothing that regular people wear
     tags:
       defense: 10 + Agility
     effect: |
       You're wearing normal clothes, so you don't look suspicious.
 
   Monk Robes:
+    brief: Wrappings or robes that offer complete flexibility
     tags:
       defense: 10 + Agility
     effect: |
       You have advantage on Agility+Athletics rolls to balance and jump.
 
   Mage Armor:
+    brief: Light armor enchanted to better protect the wearer
     tags:
       defense: 9 + Intellect
     effect: |
       You have 10 [[Force]] Shield.
 
   Tinkerer's Vest:
+    brief: A reinforced lab coat or set of overalls for field-testing
     tags:
-      defense: 8 + Intellect
+      defense: 9 + Intellect
     effect: |
-      You have advantage on Intellect rolls to craft or repair things.
+      You have advantage on Intellect+Arcana and Intellect+Crafting rolls to craft or repair things.
 
   Wizard Robes:
-    brief: Arcane robes that conduct magical energy
+    brief: Long arcane robes that conduct magical energy
     tags:
       defense: 7 + Intellect
     effect: |
       You have a +1 bonus to Magic attacks.
 
-  Bard Costume:
-    tags:
-      defense: 8 + Spirit
-    effect: |
-      You have advantage on Spirit+Perform rolls to influence others.
-
   Fine Clothing:
+    brief: Fancy, high-quality clothes meant to impress
     tags:
-      defense: 8 + Spirit
+      defense: 9 + Spirit
     effect: |
-      You have advantage on Spirit+Eloquence rolls to influence others.
+      You have advantage on Spirit+Eloquence and Spirit+Perform rolls to influence others.
 
   Priest Vestments:
-    brief: A religious outfit with a divine blessing
+    brief: A religious outfit imbued with a divine blessing
     tags:
       defense: 9 + Spirit
     effect: |
       You have 10 [[Necrotic]] Shield.
+
+  Sorcerer's Tunic:
+    brief: Light robes that help with channeling magic
+    tags:
+      defense: 7 + Spirit
+    effect: |
+      You have a +1 bonus to Mana Limit.
 
 weapons:
 
@@ -207,7 +215,9 @@ weapons:
       type: Melee weapon
       base damage: 1d8 [[Slashing]]
     effect: |
-      When you make a sword Strike, you can choose to make a thrusting attack. If you do, the sword deals 1d6 [[Piercing]] base damage instead of its normal base damage. If the Strike is a critical success, the sword deals 1d12 base damage instead of 1d6 base damage.
+      When you make a sword Strike, you can choose to make a thrusting attack. If you do, replace the normal base damage as follows:
+      * If the Strike succeeds (but doesn't critically succeed), deal 1d6 [[Piercing]] base damage
+      * If the Strike critically succeeds, deal 1d12 [[Piercing]] base damage
 
   # Flavor: secondary weapon, support for before melee
   # Mechanics: consumable, slow enemies
