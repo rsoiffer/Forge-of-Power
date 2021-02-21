@@ -191,7 +191,7 @@ Bob wants Bruenor to be a defensive melee fighter, who hits like a truck and is 
 Bob now needs to pick two talents from Guardian. Bob picks {Cover Ally} to help him protect his allies, and {Heavy Armor Master} to make Bruenor even tougher. Bob now needs to pick one talent from Berserker. Bob picks {Iron Sweep} to help Bruenor defeat hordes of enemies. Bob writes all three talents on the **Powers** page of Bruenor's sheet.
 
 Bob also needs to pick two ribbons, which can be from either Guardian or Berserker. Bob picks the {Environmental Resilience} Berserker ribbon to represent Bruenor's fortitude, and the {Knight} Guardian ribbon to represent Bruenor's status as a noble warrior. Bob writes both ribbons on the **Powers** page of Bruenor's sheet.
- 
+
 ## Development
 <aside>
   <h3>Reference - Maximums by Level</h3>
@@ -254,27 +254,29 @@ Bob also needs to pick two ribbons, which can be from either Guardian or Berserk
   </table>
 </aside>
 
-As your character levels up, they become generally much stronger. At every level, you gain a feat. This feat can be from any of four categories:
+As your character levels up, they become generally much stronger. At every odd level (1, 3, 5, etc.), you gain a feat. This feat can be from any of four categories:
 * **General Feats** are general abilities that could apply to a broad variety of character classes or skills. General feats can help your character fit into a specific archetype that would otherwise be difficult to achieve.
 * **Ancestry Feats** are abilities that are specific to your character's ancestry. These abilities can be either biological or cultural in nature. You can only pick ancestry feats that match your character's ancestry.
 * **Combat Feats** help your character fight with specific weapons or magical focuses. Combat feats always give you a Perk bonus.
 * **Skill Feats** make your character better that using specific skills. Skill feats always give you a Perk bonus.
 
-Besides gaining new abilities, your character slowly grows numerically stronger as well. At every even level (2, 4, 6, etc.), you gain an attribute boost. Remember that your attributes are limited by your character level.
+Besides gaining new abilities, your character slowly grows numerically stronger as well. At every even level (2, 4, 6, etc.), you gain an attribute boost and a Perk bonus. Remember that your attributes are limited by your character level. Pick each Perk bonus as you would for the {Skilled} or {Weapon Master} feats.
 
-*Choose a number of feats equal to your character level, and write them on your character sheet. Choose a number of attribute boosts equal to half your character level (rounded down), and modify your attributes accordingly.*
+*Choose a number of feats equal to half your character level (rounded up), and write them on your character sheet. Choose a number of attribute boosts equal to half your character level (rounded down), and modify your attributes accordingly. Choose a number of Perk bonuses (as {Skilled} or {Weapon Master}) equal to half your character level (rounded down), and modify your Perk bonuses accordingly.*
 
 ### Building Bruenor
 
-Since Bruenor is a level 3 character, Bob needs to pick 3 feats. Bob picks the {Heavy Bolts} crossbow feat in case Bruenor needs to switch to a crossbow for ranged combat. Bob picks the {Reliable Damage} bludgeon feat to help Bruenor's damage against hard-to-hit enemies. Finally, Bob picks the {Phalanx} shield feat to help Bruenor protect his allies even more. Bob notes all three feats on the **Powers** page of Bruenor's character sheet.
+Since Bruenor is a level 3 character, Bob needs to pick 2 feats. Bob picks the {Heavy Bolts} crossbow feat in case Bruenor needs to switch to a crossbow for ranged combat. Bob also picks the {Reliable Damage} bludgeon feat to help Bruenor's damage against hard-to-hit enemies. Bob notes all three feats on the **Powers** page of Bruenor's character sheet.
 
-Bob also notes the Perk bonus given by the Heavy Bolts feat on the **Perks** section of Bruenor's sheet. Bob **doesn't** add the Perk bonuses of the other feats he just picked: since Bruenor is a level 3 character, he can only stack 1 Perk bonus of the same type. Since Bruenor already has a bludgeon feat and a shield feat that give the same Perk bonuses, these Perk bonuses don't help out. Once Bruenor reaches level 7, these Perk bonuses will add onto his existing ones.
+Bob also notes the Perk bonus given by the Heavy Bolts feat on the **Perks** section of Bruenor's sheet. Bob **doesn't** add the Perk bonuses of {Reliable Damage}: since Bruenor is a level 3 character, he can only stack 1 Perk bonus of the same type. Since Bruenor already has a bludgeon feat that gives the same Perk bonuses, this new Perk bonus doesn't help out. Once Bruenor reaches level 7, this Perk bonus will add onto his existing one.
 
 Since Bruenor is a level 3 character, Bob needs to pick one attribute boost. Bob wants Bruenor to be as strong and tough as possible, but Bruenor's Strength score is already at the maximum score of +3 for his character level. Bob instead gives Bruenor +1 Intellect, and writes the new stat on Bruenor's sheet.
 
+Since Bruenor is a level 3 character, Bob needs to pick one Perk bonus. Bob wants Bruenor to be good at unarmed fighting and wrestling, so he picks the Perk bonus from {Weapon Master} that gives +1 damage to unarmed Strikes and +2 to [[Wrestling]] attacks.
+
 ## Equipment
 
-TODO
+TODO - for now, all items are free
 
 *Spend up to 10 * (your character level) gold on items. Write each item you bought on your character sheet. Write any remaining gold on your character sheet.*
 
