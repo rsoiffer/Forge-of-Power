@@ -383,7 +383,7 @@ Transmute:
   tier: Veteran
   type: 1-Action
   brief: You transmute a creature or object from one material to another material
-  traits: [Attack, Spell, Transfiguration]
+  traits: [Attack, Death, Spell, Transfiguration]
   tags:
     cost: 4 Mana
     range: 30 feet

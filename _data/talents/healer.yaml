@@ -198,7 +198,7 @@ Daylight:
         Success
         : Your target is {blinded} until the end of their next turn
 
-        Success
+        Failure
         : Your target is {dazzled} until the end of their next turn
     {% endsmallpower %}
 

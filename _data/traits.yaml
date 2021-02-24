@@ -141,7 +141,7 @@ Daily: |
   Once you use a power with this trait, you cannot use that power again until you complete an 8-hour rest.
 
 Death: |
-  An effect with this trait kills you immediately if it reduces you to 0 health. This only applies to non-player characters, not to player characters.
+  An effect with this trait kills a non-player character immediately if it reduces them to 0 health. If an effect with this trait reduces a player charcter to 0 health, the player character gains 1 fatigue.
 
 Encounter: |
   Once you use a power with this trait, you cannot use that power again until you complete a 5-minute rest.

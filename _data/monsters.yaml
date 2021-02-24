@@ -31,6 +31,53 @@ Blowtoad:
     Explode {% icon Reaction %}
     : 10-foot emanation, +5 vs. Agility DC, 2d6 [[Fire]] damage
 
+Clockwork Turret:
+  traits: [Construct]
+  tags:
+    attributes: Strength +0, Agilty +3, Intellect --, Spirit --
+    other stats: Health 15, Defense 15, Speed 0 feet, Size -1
+  effect: |
+    The clockwork turret can fire its ballista as a {crossbow}.
+
+Colossal Dreadmaw:
+  traits: [Beast, Monster]
+  tags:
+    attributes: Strength +8, Agilty +3, Intellect -2, Spirit +4
+    other stats: Health 400, Defense 19, Speed 60 feet, Size +4
+  effect: |
+    Bite Strike {% icon 1-Action %}
+    : +8 vs. Defense, 4d10+8 [[Piercing]] damage
+
+    Tail Strike {% icon Free %}
+    : +8 vs. Defense, 2d10+8 [[Bludgeoning]] damage
+
+    Trample {% icon 1-Action %}
+    : Stride and attack everything it moves over, +8 vs. Agility DC, 3d10 [[Bludgeoning]] damage
+
+Drake:
+  traits: [Beast, Monster]
+  tags:
+    attributes: Strength +6, Agilty +4, Intellect -3, Spirit +3
+    other stats: Health 150, Defense 17, Speed 60 feet (fly), Size +2
+  effect: |
+    Bite Strike {% icon 1-Action %}
+    : +6 vs. Defense, 3d6+6 [[Piercing]] damage
+
+    Fire Breath {% icon 1-Action %} (Recharge 5-6)
+    : 30-foot cone, +6 vs. Agility DC, 6d6 [[Fire]] damage (half on miss)
+
+Drone:
+  traits: [Construct]
+  tags:
+    attributes: Strength -2, Agilty +2, Intellect -2, Spirit +0
+    other stats: Health 10, Defense 14, Speed 40 feet (fly), Size -2
+  effect: |
+    20 [[Mental]] Shield, 20 [[Poison]] Shield.
+
+    The drone can slam with its body as a [[Finesse]] melee weapon that deals 1d6 [[Bludgeoning]] base damage.
+  fluffstart: |
+    Drones are small handheld objects, like books or swords, that have been enchanted to be able to fly.
+
 Elk:
   traits: [Beast]
   tags:
@@ -51,6 +98,31 @@ Giant Squirrel:
   effect: |
     Bite Strike {% icon 1-Action %}
     : +5 vs. Defense, 2d4+5 [[Piercing]] damage
+
+Golem:
+  traits: [Construct]
+  tags:
+    attributes: Strength +1, Agilty +0, Intellect -2, Spirit -1
+    other stats: Health 20, Defense 12, Speed 25 feet, Size +0
+  effect: |
+    20 [[Mental]] Shield, 20 [[Poison]] Shield.
+
+    The golem can slam with its fists as a melee weapon that deals 1d8 [[Bludgeoning]] base damage.
+
+    The golem can wield weapons, most commonly a {bludgeon}, a {shield}, or a {sword}.
+  fluffstart: |
+    Golems are human-shaped objects, like suits of armor or scarecrows, that have been enchanted to be able to walk.
+
+Green Wurm:
+  traits: [Beast, Monster]
+  tags:
+    attributes: Strength +7, Agilty +1, Intellect -3, Spirit +0
+    other stats: Health 100, Defense 17, Speed 40 feet (burrow), Size +2
+  effect: |
+    Bite Strike {% icon 1-Action %}
+    : +7 vs. Defense, 3d6+7 [[Piercing]] damage, free grapple on crit
+
+    +6 to [[Wrestling]] rolls
 
 Griffon (Young):
   traits: [Beast, Monster]
@@ -79,6 +151,15 @@ Horse:
     Hoof Strike {% icon 1-Action %}
     : +4 vs. Defense, 1d4+4 [[Piercing]] damage
 
+Molerat:
+  traits: [Beast, Monster]
+  tags:
+    attributes: Strength -1, Agilty +4, Intellect -3, Spirit -2
+    other stats: Health 15, Defense 14, Speed 30 feet (burrow, climb), Size -1
+  effect: |
+    Bite Strike {% icon 1-Action %}
+    : +4 vs. Defense, 1d6+4 [[Piercing]] damage
+
 Skeleton:
   traits: [Spirit, Undead]
   tags:
@@ -91,6 +172,22 @@ Skeleton:
 
     Sword Strike {% icon 1-Action %}
     : +2 vs. Defense, 1d8+2 [[Bludgeoning]] damage
+
+Spider Mech:
+  traits: [Construct]
+  tags:
+    attributes: Strength +8, Agilty +0, Intellect -2, Spirit -1
+    other stats: Health 200, Defense 19, Speed 50 feet (climb), Size +3
+  effect: |
+    50 [[Mental]] Shield, 50 [[Poison]] Shield, 20 [[Anything]] Shield, 20 Water Weakness.
+
+    ***Elemental Absorption.*** After it takes elemental damage, slam strikes deal +3d6 damage of that type next round.
+
+    Slam Strike {% icon 1-Action %}
+    : +8 vs. Defense, 3d6+8 [[Bludgeoning]] damage
+
+    Spell Shield {% icon Reaction %}
+    : Gain +10 to Intellect or Spirit DC against one spell
 
 Wild Tree:
   traits: [Monster, Plant]
