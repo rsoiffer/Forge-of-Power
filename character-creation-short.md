@@ -107,15 +107,15 @@ The following terms are important for character creation.
 
 ***Attribute Boost.*** An attribute boost increases your score in one attribute by one. You can't pick an attribute boost that increases your score in an attribute above the maximum given in the table to the right.
 
-***Class.*** A class is a group of thematically similar abilities. Characters are primarily defined by their classes.
+***Class.*** A [class](classes.html) is a group of thematically similar abilities. Characters are primarily defined by their classes.
 
-***Feat.*** Feats are powerful abilities that don't come from a class. There are four types of feats: General, Ancestry, Combat, and Skill. Some features ask you to pick a feat of a specific type.
+***Feat.*** Feats are powerful abilities that don't come from a class. There are four types of feats: [General](feats-general.html), [Ancestry](feats-ancestry.html), [Combat](feats-combat.html), and [Skill](feats-skill.html). Some features ask you to pick a feat of a specific type.
 
-***Proficiency.*** Proficiencies are specific topics that people might know a lot about. Proficiencies do nothing on their own, they just help describe your character's knowledge.
+***Proficiency.*** [Proficiencies](proficiencies.html) are specific topics that people might know a lot about. Proficiencies do nothing on their own, they just help describe your character's knowledge.
 
 ***Ribbons.*** Ribbons are minor abilities that come from a class. Ribbons are usually more useful for roleplay than combat.
 
-***Skill.*** A skill is a broad activity that characters can be good at. When you make a die roll related to a skill's activity, you add your bonus to the skill.
+***Skill.*** A [skill](skills.html) is a broad activity that characters can be good at. When you make a die roll related to a skill's activity, you add your bonus to the skill.
 
 ***Skill Boost.*** A skill boost gives you a +2 bonus whenever you make a die roll with a particular skill. If you have multiple skill boosts for the same skill, add the +2 for each of them, up to the maximum given in the table to the right.
 
@@ -124,7 +124,7 @@ The following terms are important for character creation.
 ## Pick an Ancestry
 
 An ancestry is a character's species and culture. Your ancestry gives you several unique abilities, and it lets you pick ancestry feats corresponding to that ancestry.
-* Pick an ancestry.
+* Pick an [ancestry](ancestries.html).
 * Note the starting values of your attributes.
 * Note your Speed and Size stats.
 * Note your traits. Some effects work differently on creatures with certain traits.
@@ -135,38 +135,38 @@ An ancestry is a character's species and culture. Your ancestry gives you severa
 ## Pick Two Backgrounds
 
 Backgrounds are a character's past or current professions, other than adventuring. Each background gives you a skill feat and three proficiencies.
-* Pick two backgrounds.
+* Pick two [backgrounds](backgrounds.html).
 * For each, pick a skill feat for the given skill. Note the skill boost given by each feat.
 * For each, note the proficiencies given by the background.
 
 Your life experience also gives you a basic familiarity with several skills and weapons.
 * Pick four attribute boosts.
-* Pick two skill feats. Note the skill boost given by each feat.
-* Pick two combat feats.
-* Pick two proficiencies.
+* Pick two [skill feats](feats-skill.html). Note the skill boost given by each feat.
+* Pick two [combat feats](feats-combat.html).
+* Pick two [proficiencies](proficiencies.html).
 
 ## Level Up
 
 For each character level, you pick a level in one class, which gives you one talent from that class. As your character levels up, they also gain other bonuses, depending on whether it's an odd level or an even level.
 
 For each odd level (1/3/5/etc.):
-* Pick a class to gain a level in.
+* Pick a [class](classes.html) to gain a level in.
 * Pick a talent from that class.
 * Pick a feat. If this feat is a skill feat, note the skill boost given by the feat.
 * Pick a ribbon. This ribbon can be from any class you have at least one level in.
 
 For each even level (2/4/6/etc.):
-* Pick a class to gain a level in.
+* Pick a [class](classes.html) to gain a level in.
 * Pick a talent from that class.
 * Pick an attribute boost.
 * Pick a skill boost.
 
-## Pick a Mystic Origin
+## Pick a Mystic Origin (Spellcasters Only)
 
-The following section only applies to spellcasters. Your character is a spellcaster if you know any spell (a power with the [[Spell]] trait). Spells are common in the Mage and Priest classes, and some combat feats are spells.
+The following section only applies to spellcasters. Your character is a spellcaster if you know any spell (a power with the [[Spell]] trait). Spells are common in the Mage and Priest classes, and some combat feats are spells. See the {% ref spell rules %} page for details.
 
 If you are a spellcaster, you need to pick a mystic origin, which describes the source of your magic power. Also, your **Caster Level** is defined as your total level in all Mage or Priest classes.
-* Pick a mystic origin.
+* Pick a [mystic origin](mystic-origins.html).
 * Note your Magic stat, which is either Intellect or Spirit. You add this attribute whenever you make a Magic roll.
 * Calculate your Mana stat. This is usually equal to 4 + 2 * Caster Level.
 * Calculate your Mana Limit stat. This is equal to 1 + half Caster Level.
@@ -177,8 +177,8 @@ If you are a spellcaster, you need to pick a mystic origin, which describes the 
 
 Your equipment is all the items you own. For adventuers, your most important equipment is the apparel you wear as protection and the weapons you wield in combat.
 * Start with 10gp for each character level. Note that I haven't written prices yet, so feel free to treat all items as free.
-* Buy your apparel. To maximize your Defense, you may want to pick apparel that corresponds to your highest attribute.
-* Buy your weapons. If you have a combat feat for a weapon, you may want to buy that weapon.
+* Buy your [apparel](equipment.html#apparel). To maximize your Defense, you may want to pick apparel that corresponds to your highest attribute.
+* Buy your [weapons](equipment.html#weapons). If you have a combat feat for a weapon, you may want to buy that weapon.
 * Buy any miscellaneous items you want.
 
 ## Calculate your Final Stats
@@ -186,8 +186,8 @@ Your equipment is all the items you own. For adventuers, your most important equ
 Write down all the following values on your character sheet:
 * For each attribute, calculate your DC in that attribute. This is 10 + your score in that attribute.
 * Calculate your Health stat. This is 10 + 5 * Character Level + 5 * Strength.
-* Calculate your Defense. This depends on the apparel you're currently wearing.
-* Note any Shields or Weaknesses you have, if any.
+* Calculate your Defense stat. This is given by the apparel you're currently wearing.
+* Note all the Shields or Weaknesses you have, if any.
 
 ## Describe your Personality
 
