@@ -39,9 +39,9 @@ Skilled:
   type: Passive
   brief: You are highly proficient in a wide variety of skills
   effect: |
-    Choose two skills. You have a +2 Perk bonus to each skill.
+    You gain two skill boosts.
 
-    You can pick this feat multiple times. You can select the same or different options each time.
+    You can pick this feat multiple times.
 
 Squishy Caster:
   type: Passive
@@ -60,19 +60,6 @@ Sympathetic Mage:
     * A prized possession of the creature, such as a family heirloom or a favorite weapon
 
     When you target a sympathetic totem with a spell, you can choose for the spell to instead target the creature represented by the totem. If the spell is an attack, and if the attack roll critically fails, the totem breaks.
-
-Weapon Master:
-  type: Passive
-  brief: You are highly proficient in a wide variety of weapons
-  effect: |
-    Choose two of the following Perk bonuses:
-    * +1 damage to Strikes with one type of weapon
-    * +1 damage to unarmed Strikes and +2 to [[Wrestling]] attacks
-    * +1 damage to spell attacks
-    * +1 [[Physical]] Shield
-    * +1 [[Elemental]] Shield
-
-    You can pick this feat multiple times. You can select the same or different options each time.
 
 Wild Mage:
   type: Free

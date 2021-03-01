@@ -5,6 +5,8 @@ Arcane Sense:
   type: Free
   brief: You sense all nearby spells, magical auras, and magic casters
   traits: [Divination]
+  tags:
+    skill boost: Arcana
   effect: |
     You learn the number and location of all magical auras within 120 feet. You vaguely feel the strength of each aura you sense, but you don't learn what is causing each aura. Magical auras emanate from each of the following:
     * A creature that can cast spells
@@ -18,7 +20,7 @@ Copy Spell:
   brief: You analyze a spell so well that you can cast it yourself
   traits: [Daily]
   tags:
-    perk: +2 Arcana
+    skill boost: Arcana
     trigger: You successfully identify a spell
     duration: 1 hour
   effect: |
@@ -29,7 +31,7 @@ Dual Origin:
   type: Passive
   brief: Your magic comes from two sources at once, and you have the best of both
   tags:
-    perk: +2 Arcana
+    skill boost: Arcana
     prerequisites: A mystic origin
   effect: |
     Choose a second mystic origin. You gain the unique effect of the second mystic origin. You choose whether your Magic stat is determined by your first or second mystic origins.
@@ -39,7 +41,7 @@ Magical Sage:
   type: Free
   brief: You know everything about magic, or you know someplace to learn it
   tags:
-    perk: +2 Arcana
+    skill boost: Arcana
     trigger: You fail (but not critically fail) an Intellect+Arcana roll to learn information about magic
   effect: |
     You learn a hint related to the information you were seeking. In addition, you know exactly where you can go or who you can ask to learn the information.
@@ -53,7 +55,7 @@ Spellbook:
   type: Passive
   brief: You store your spells in a book, so you can swap between them as needed
   tags:
-    perk: +2 Arcana
+    skill boost: Arcana
   effect: |
     When you complete an 8-hour rest, you can swap all your [[Spell]] talents and ribbons for other [[Spell]] talents and ribbons from the same class.
 
@@ -64,7 +66,7 @@ Battering Ram:
   type: Passive
   brief: You can break down windors, doors, and walls with ease
   tags:
-    perk: +2 Athletics
+    skill boost: Athletics
   effect: |
     You have a +10 bonus to Strength+Athletics rolls made to break down or charge through structures.
 
@@ -74,7 +76,7 @@ Burst of Power:
   brief: You push past your limits with a sudden surge of adrenaline
   traits: [Encounter]
   tags:
-    perk: +2 Athletics
+    skill boost: Athletics
     requirements: You are in combat, or a similar dangerous situation
     trigger: You make an Athletics roll
   effect: |
@@ -85,7 +87,7 @@ Daredevil Acrobat:
   type: Passive
   brief: You are an expert at balancing on moving surfaces, even creatures
   tags:
-    perk: +2 Athletics
+    skill boost: Athletics
   effect: |
     You can climb and balance on moving surfaces as easily as if those surfaces were completely still. You can climb and balance on creatures that are larger than you, even hostile creatures. You suffer no combat penalties from balancing or climbing.
 
@@ -94,7 +96,7 @@ Perfect Endurance:
   type: Passive
   brief: You don't tire even after long periods of intense physical activity
   tags:
-    perk: +2 Athletics
+    skill boost: Athletics
   effect: |
     You never gain fatigue from performing a physical activity for a long time.
 
@@ -105,7 +107,7 @@ Steady Balance:
   type: Reaction
   brief: You can keep your balance even when you would normally fall over
   tags:
-    perk: +2 Athletics
+    skill boost: Athletics
     trigger: You fall {prone}
   effect: |
     You don't fall prone.
@@ -118,7 +120,7 @@ Architectural Weakness:
   brief: You analyze a building, spotting any weaknesses in its construction
   traits: [Encounter]
   tags:
-    perk: +2 Crafting
+    skill boost: Crafting
     target: A building or large structure you can reach, or whose design blueprints you can analyze
     requirements: You haven't used **Architectural Weakness** on this structure in the last 24 hours
   effect: |
@@ -132,7 +134,7 @@ Crazy Prepared:
   brief: You always have exactly the right item prepared for a task
   traits: [Daily, Retroactive]
   tags:
-    perk: +2 Crafting
+    skill boost: Crafting
   effect: |
     You reveal an item you constructed in the past, and use the {Interact} power to draw this item from somewhere you have been storing it. You must have reasonably been able to craft this item in the past 24 hours.
 
@@ -145,7 +147,7 @@ Jury Rig:
   type: 1-Action
   brief: You instantly craft a crude, fragile item out of common scrap parts
   tags:
-    perk: +2 Crafting
+    skill boost: Crafting
     duration: 10 minutes, or until anyone rolls a natural 1 on a die roll to use the item
   effect: |
     You build a non-magical, handheld item of your choice out of scrap parts lying around nearby. This item is of very low quality, and it permanently breaks when the duration ends.
@@ -155,7 +157,7 @@ Mouse Trap:
   type: Passive
   brief: You can disguise traps or machines as collections of seemingly unrelated parts
   tags: 
-    perk: +2 Crafting
+    skill boost: Crafting
   effect: |
     Whenever you set a mechanical trap or build a large device, you can disguise the mechanism as a set of completely mundane objects, which you placed to perfectly trigger a cascading effect. Anyone casually searching the area never realizes the mundane objects have any mechanical effect. Someone who is determinedly searching the area for traps or devices has a -10 penalty to any rolls made to detect the mechanism.
 
@@ -165,7 +167,7 @@ Quick Craft:
   brief: You complete a long crafting job with a flurry of activity
   traits: [Encounter]
   tags:
-    perk: +2 Crafting
+    skill boost: Crafting
     duration: 1 minute
   effect: |
     You craft at 60 times your normal speed. This means that over the next minute, you can complete the same amount of work you would normally complete in an hour.
@@ -178,7 +180,7 @@ Bon Mot:
   brief: You launch an insightful quip at a foe, distracting them
   traits: [Attack, Auditory, Concentrate, Emotion, Encounter, Linguistic]
   tags:
-    perk: +2 Eloquence
+    skill boost: Eloquence
     range: 30 feet
     duration: 1 minute
   effect: |
@@ -196,7 +198,7 @@ Evangelize:
   brief: You make an argument that incontroveribly supports your claims
   traits: [Attack, Auditory, Concentrate, Encounter, Linguistic]
   tags:
-    perk: +2 Eloquence
+    skill boost: Eloquence
     target: One creature who can hear you
     duration: Until the end of your target's next turn
   effect: |
@@ -218,7 +220,7 @@ False Expert:
   type: Passive
   brief: You are great at pretending to be an expert in topics you know nothing about
   tags:
-    perk: +2 Eloquence
+    skill boost: Eloquence
   effect: |
     You have a +10 bonus to Eloquence rolls made to convince other people you know a lot about a topic. This bonus doesn't apply if you actually are an expert in that topic.
   fluff: |
@@ -229,7 +231,7 @@ First Impression:
   type: Free
   brief: You are great at charming people when you try to make an impression
   tags:
-    perk: +2 Eloquence
+    skill boost: Eloquence
     trigger: You have a conversation with someone for the first time
   effect: |
     Make a Spirit+Eloquence roll against DC 15.
@@ -249,7 +251,7 @@ Trustworthy:
   brief: You are seen as generally trustworthy and honorable
   traits: [Reputation]
   tags:
-    perk: +2 Eloquence
+    skill boost: Eloquence
   effect: |
     You are seen as someone who can be trusted to keep their word. Other people generally believe you will speak the truth and that you will keep promises that you make.
 
@@ -261,7 +263,7 @@ Befriend Animal:
   brief: You can quickly make friends with all kinds of beasts and monsters
   traits: [Auditory]
   tags:
-    perk: +2 Nature
+    skill boost: Nature
     range: 10 feet
     target: A [[Beast]] creature you can see within range that you haven't targeted with this power in the last 24 hours
     duration: Until you or any of your allies harm your target
@@ -293,7 +295,7 @@ Invigorating Herbs:
   brief: You heal an ally with foraged medicinal herbs
   traits: [Daily, Healing, Manipulate]
   tags:
-    perk: +2 Nature
+    skill boost: Nature
     target: One ally you can reach
   effect: |
     Your ally heals 1d6 health and recovers 1 fatigue.
@@ -303,7 +305,7 @@ Locate Animals or Plants:
   type: 1-Action
   brief: You find the nearest animal or plant of a certain type within 5 miles
   tags:
-    perk: +2 Nature
+    skill boost: Nature
   effect: |
     Name one type of animal or plant. You learn the location of the closest animal or plant of that type within 5 miles, if any.
 
@@ -313,7 +315,7 @@ Monster Handler:
   brief: You reveal you have an item that attracts or repels a specific monster
   traits: [Daily, Retroactive]
   tags:
-    perk: +2 Nature
+    skill boost: Nature
     trigger: You succeed on a Nature roll to identify a monster
   effect: |
     You have an item in your pack that attracts or repels the type of monster you just identified. You choose whether the item attracts or repels the monster, and the GM describes exactly what the item is.
@@ -327,7 +329,7 @@ Alert:
   type: Passive
   brief: You react quickly to attacks and can never be surprised
   tags:
-    perk: +2 Notice
+    skill boost: Notice
   effect: |
     You have a +5 bonus to initiative rolls. You can never be surprised.
 
@@ -336,7 +338,7 @@ Keen Eye:
   type: Free
   brief: You automatically notice subtle details whenever you enter a room
   tags:
-    perk: +2 Notice
+    skill boost: Notice
     trigger: You enter a room
     requirements: You haven't used Keen Eye on this room in the last 24 hours
   effect: |
@@ -350,7 +352,7 @@ Lie Detector:
   brief: You learn whether a creature is telling the truth or lying
   traits: [Encounter]
   tags:
-    perk: +2 Notice
+    skill boost: Notice
     trigger: A creature you can see and hear makes a statement
   effect: |
     You know whether the triggering creature was completely lying. This power doesn't detect half-truths or lies by omission.
@@ -360,7 +362,7 @@ Low-Light Vision:
   type: Passive
   brief: You can see in dimly light environments just as well as in bright light
   tags:
-    perk: +2 Notice
+    skill boost: Notice
   effect: |
     You can see in dim light as if it was bright light.
 
@@ -370,7 +372,7 @@ Pursue a Lead:
   brief: You examine a clue, focusing your efforts on investigating your target
   traits: [Encounter]
   tags:
-    perk: +2 Notice
+    skill boost: Notice
     target: One creature, object, or location you know exists
     requirements: You have some kind of clue about your target
     duration: Until you use this power again
@@ -384,7 +386,7 @@ Actor:
   type: Passive
   brief: You are very skilled at impersonating specific other people
   tags:
-    perk: +2 Perform
+    skill boost: Perform
   effect: |
     You have a +10 bonus to Spirit+Perform rolls made to impersonate a specific person. You must have studied this person's speech and behavior for at least 1 minute.
 
@@ -394,7 +396,7 @@ Backup Disguise:
   brief: You reveal that you've actually been wearing a disguise the whole time
   traits: [Daily, Retroactive]
   tags:
-    perk: +2 Perform
+    skill boost: Perform
   effect: |
     You dramatically tear off a layer of clothing, revealing that this layer was merely a disguise. You choose whether you are now in your normal apperance, or whether you have been wearing another disguise underneath the one you just removed.
 
@@ -404,7 +406,7 @@ Cheerleader:
   brief: You get a crowd of people to chant a phrase of your choice
   traits: [Auditory, Emotion, Linguistic]
   tags:
-    perk: +2 Perform
+    skill boost: Perform
     requirements: You are interacting with a crowd of 10 or more people who are not hostile towards you
   effect: |
     Choose a short phrase or cheer. You spread the phrase through the crowd of people, who take up the chant. The duration of this power depends on the chant: an insane or disagreeable chant will die down in seconds, while a popular and agreeable chant might last a long time. This power does not force anyone to agree with the content of the cheer; people are just caught in a wave of mob energy.
@@ -415,7 +417,7 @@ Famous Performer:
   brief: You are well-known for your popular performance or art
   traits: [Reputation]
   tags:
-    perk: +2 Perform
+    skill boost: Perform
   effect: |
     You have a reputation as a skilled performer. Other people might recognize your name and work, you can easily find venues to perform at, and you have a group of dedicated fans.
 
@@ -425,7 +427,7 @@ Fascinating Performance:
   brief: Your performance draws everyone's attention to it, fascinating them
   traits: [Attack, Auditory, Emotion]
   tags:
-    perk: +2 Perform
+    skill boost: Perform
     range: 60 feet
     target: Any number of creatures within range
     duration: Until the start of your next turn
@@ -443,7 +445,7 @@ Inflame Hatred:
   brief: You inflame someone's anger and hatred toward another creature
   traits: [Attack, Auditory, Encounter, Emotion]
   tags:
-    perk: +2 Provoke
+    skill boost: Provoke
     target: Any number of creatures who can hear you
     duration: 1 hour
   effect: |
@@ -464,7 +466,7 @@ Intimidating Reputation:
   brief: You are known as tough, scary, and definitely not someone to mess with
   traits: [Reputation]
   tags:
-    perk: +2 Provoke
+    skill boost: Provoke
   effect: |
     You have a reputation as especially tough and harsh. Other people won't dare bother you unless they absolutely have to, letting you dominate social situations or even get away with minor crimes.
 
@@ -474,7 +476,7 @@ Scare to Death:
   brief: You scare someone so hard they literally die of fright
   traits: [Attack, Auditory, Death, Encounter, Fear]
   tags:
-    perk: +2 Provoke
+    skill boost: Provoke
     range: 30 feet
     duration: Until the end of your next turn
   effect: |
@@ -492,7 +494,7 @@ Taunt:
   brief: You taunt an enemy, forcing them to focus on only you
   traits: [Attack, Auditory, Emotion]
   tags:
-    perk: +2 Provoke
+    skill boost: Provoke
     range: 30 feet
     duration: 1 minute
   effect: |
@@ -507,7 +509,7 @@ Vicious Mockery:
   brief: You insult someone so badly they literally take damage
   traits: [Attack, Auditory, Emotion, Linguistic]
   tags:
-    perk: +2 Provoke
+    skill boost: Provoke
     range: 30 feet
   effect: |
     Make a Spirit+Provoke attack roll against your target's Spirit DC.
@@ -525,7 +527,7 @@ Astral Projection:
   type: 1-Action
   brief: You lead a group meditation that sends you and everyone nearby to the spirit world
   tags:
-    perk: +2 Religion
+    skill boost: Religion
     range: 10 feet
     target: Yourself, and up to 5 willing creatures within range
     duration: Until your target is affected by Astral Projection again
@@ -550,7 +552,7 @@ Bishop:
   type: 1-Action
   brief: You reveal a core tenet or rule that everyone in your religion follows
   tags:
-    perk: +2 Religion
+    skill boost: Religion
   effect: |
     Choose a religous belief, tenet, or rule that people might reasonably believe in. Your character states the rule out loud, explaining its importance to the faith and its origins as a belief. This rule is retroactively one of the core beliefs of your character's religion. If past events in the campaign contradict this rule, then the rule isn't very important to the average practicioner of your religion.
 
@@ -561,7 +563,7 @@ Divine Sense:
   type: Passive
   brief: You can sense powerful spirits, like kami, outsiders, and undead
   tags:
-    perk: +2 Religion
+    skill boost: Religion
   effect: |
     You have a special sense that lets you detect spirits. This sense is similar to a normal human's sense of smell: spirits constantly emanate a vague aura, and this aura sticks to locations they've spent a lot of time at. You can distinguish between different types of spirits by the "smell" of this aura. An unkept graveyard might have a strong smell of undeath, while a church run by a kami might smell vaguely of Heaven.
 
@@ -571,7 +573,7 @@ Holy Symbol:
   brief: You present your holy symbol and say a brief prayer for luck
   traits: [Encounter]
   tags:
-    perk: +2 Religion
+    skill boost: Religion
     trigger: You make a die roll
   effect: |
     Roll a d4 and add your result as a bonus to the triggering roll.
@@ -584,7 +586,7 @@ Priestly Status:
   brief: You're known as an officially-sanctioned priest of a common religion
   traits: [Reputation]
   tags:
-    perk: +2 Religion
+    skill boost: Religion
   effect: |
     You are widely known as a priest of a particular religion. Followers of that religion generally respect your moral and religious authority.
 
@@ -593,7 +595,7 @@ Secret Cult:
   type: Passive
   brief: You are a member of a secret religous cult with members hidden everywhere
   tags:
-    perk: +2 Religion
+    skill boost: Religion
   effect: |
     You are a member of a secret society or a religious cult with significant influence. The cult has members almost everywhere in the world, and cultists can identify each other with a secret sign. You can ask for favors from other cultists, and other cultists may ask favors from you. If you repeatedly refuse to help other cultists or act against the cult's goals, you may be declared an enemy of the cult.
 
@@ -605,7 +607,7 @@ Connections:
   brief: You have connections in high places, who you can try to ask for favors
   traits: [Daily, Retroactive]
   tags:
-    perk: +2 Society
+    skill boost: Society
   effect: |
     You announce that you know a noble, a rich merchant, a judge, or another important figure in the local town. This figure has heard of you before and is friendly towards you. You can get an audience with them and can ask them for minor favors.
 
@@ -614,7 +616,7 @@ Extensive Knowledge:
   type: Passive
   brief: You are an expert in a huge variety of different areas of knowledge
   tags:
-    perk: +2 Society
+    skill boost: Society
   effect: |
     You gain four Lores of your choice. Each Lore must be about history, culture, business, society, or some kind of human activity. When you finish an 8-hour rest, you can change your choice of Lores.
 
@@ -624,7 +626,7 @@ Forced Error:
   brief: You can manipulate others into making major social faux pas
   traits: [Attack, Auditory, Encounter, Linguistic]
   tags:
-    perk: +2 Society
+    skill boost: Society
     range: 30 feet
   effect: |
     Make a Spirit+Society attack roll against your target's Spirit+Society DC.
@@ -644,7 +646,7 @@ Historian:
   brief: You declare a minor historical fact about the game world
   traits: [Daily, Retroactive]
   tags:
-    perk: +2 Society
+    skill boost: Society
   effect: |
     Declare something about the history of the game setting. This retroactively becomes fact. Your declaration should be entirely about events that are years in the past, and should not focus on the current state of affairs.
 
@@ -656,7 +658,7 @@ Linguist:
   brief: You very easily learn the basics of any language you see or hear
   traits: [Daily]
   tags:
-    perk: +2 Society
+    skill boost: Society
   effect: |
     Choose a language that you don't speak, but that you have seen or heard before. You must have observed a moderate amount of this language within the last 24 hours: at least 1 minute of speech, 1 page of writing, or the equivalent for other forms of communication. You instantly learn to speak or write this language at the level of a young child. You are not proficient enough in this language to communicate complex ideas.
 
@@ -667,7 +669,7 @@ Hide in Plain Sight:
   type: Passive
   brief: You can hide even while being observed and without any cover
   tags:
-    perk: +2 Stealth
+    skill boost: Stealth
   effect: |
     You can attempt to hide even while being actively observed. You can attempt to hide even without any cover to hide behind.
 
@@ -676,7 +678,7 @@ Just a Box:
   type: Passive
   brief: You are an expert at hiding behind immobile objects, even in the strangest spots
   tags:
-    perk: +2 Stealth
+    skill boost: Stealth
   effect: |
     You are an expert at placing inanimate objects in the perfect locations. Whenever you hide behind or inside of an inanimate, immobile object, you can slightly adjust this object to perfectly blend into its surroundings. Even if the object would normally be wildly out of place, no one notices the object is strange in any way. This effect ends if the object moves, if the object is a threat or obstacle, or if you are no longer hidden behind or inside of the object.
 
@@ -687,7 +689,7 @@ No Presence:
   type: Passive
   brief: You have a complete lack of social presence, peoples' eyes gloss over you
   tags:
-    perk: +2 Stealth
+    skill boost: Stealth
   effect: |
     Creatures never notice you unless you do something to draw their attention. This doesn't apply to creatures that are actively searching the area, that are on guard for danger, or that already know you're here.
 
@@ -697,7 +699,7 @@ Prior Pickpocketing:
   brief: You reveal that you already pickpocketed an item your target attempts to draw
   traits: [Daily, Retroactive]
   tags:
-    perk: +2 Stealth
+    skill boost: Stealth
     trigger: A creature you can see tries to draw an item
     requirements: You were within 5 feet of that creature within 1 hour, and the creature hasn't used the item since you were last within 5 feet of them
   effect: |
@@ -711,7 +713,7 @@ Stealthy Move:
   type: Passive
   brief: You can move across a creature's field of view without being seen
   tags:
-    perk: +2 Stealth
+    skill boost: Stealth
   effect: |
     When you {Stride}, if you are hidden from a creature at the start of your movement, you are hidden for the entire movement, even if you move directly through a creature's field a view. If you end your Stride in direct view, you are seen as normal.
 
@@ -722,7 +724,7 @@ Experienced Tracker:
   type: Free
   brief: You can easily follow tracks and learn things about your prey
   tags:
-    perk: +2 Nature
+    skill boost: Nature
     trigger: You roll Intellect+Nature to investigate or follow tracks
     requirements: You haven't used **Experienced Tracker** on these tracks in the last 24 hours
   effect: |
@@ -741,7 +743,7 @@ Scout Terrain:
   brief: You find the location of a nearby terrain feature you're looking for
   traits: [Daily, Retroactive]
   tags:
-    perk: +2 Travel
+    skill boost: Travel
   effect: |
     You declare that a specific terrain feature exists nearby, and that you know the way there. This feature must match the general terrain: you could find a nearby creek if you're in a forest, but not if you're in a desert. The feature is fairly close by, maybe 30 minutes of travel outdoors, or 5 minutes of travel in a city.
 
@@ -753,7 +755,7 @@ Travel Guide:
   brief: You know the way to any destination you name, and can easily find the path there
   traits: [Daily]
   tags:
-    perk: +2 Travel
+    skill boost: Travel
     duration: 8 hours
   effect: |
     Name one major landmark, such as a city, mountain, castle, or battlefield. Someone in history must have visited the site and mapped it; this power fails if the landmark appears on no map in existence. You know the exact direction from you to the landmark.
@@ -763,7 +765,7 @@ Wanderer:
   type: Passive
   brief: You never get completely lost while travelling outdoors
   tags:
-    perk: +2 Travel
+    skill boost: Travel
   effect: |
     You always know generally where you are in the world, to a precision of roughly 1 mile. You always know a general description of the nearest friendly settlement, and you know the exact distance and direction to it.
   fluff: |

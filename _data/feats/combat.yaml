@@ -7,7 +7,6 @@ Blessed Luck:
   traits: [Daily]
   tags:
     requirements: You are wielding an amulet
-    perk: +1 [[Elemental]] Shield
     trigger: An attack targets your Intellect DC or Spirit DC
   effect: |
     You have +10 DC against the triggering attack.
@@ -18,11 +17,10 @@ Protective Magic:
   brief: You grant minor protections to an ally you affect with a spell
   tags:
     requirements: You are wielding an amulet
-    perk: +1 [[Elemental]] Shield
     trigger: You target a creature other than yourself with a spell
     duration: 1 hour, or until you use this power again
   effect: |
-    The triggering creature gains all the Perk bonuses from your amulet feats.
+    The triggering creature gains 2 [[Elemental]] Shield.
 
 Rebuke Spirits:
   tier: Amulet
@@ -31,7 +29,6 @@ Rebuke Spirits:
   traits: [Spell]
   tags:
     requirements: You are wielding an amulet
-    perk: +1 [[Elemental]] Shield
     cost: 1 Mana
     range: 30 feet
     duration: 1 hour
@@ -55,7 +52,6 @@ Ward Ally:
   traits: [Cantrip, Spell]
   tags:
     requirements: You are wielding an amulet
-    perk: +1 [[Elemental]] Shield
     cost: 0 Mana
     range: 30 feet
     duration: Until the end of your next turn
@@ -73,7 +69,6 @@ Crush Armor:
   type: 1-Action
   brief: You crush a foe's armor, weakening them for the future
   tags:
-    perk: +1 damage to bludgeon Strikes
     duration: 1 minute
   effect: |
     Make a bludgeon Strike against a target wearing {chain mail} or {plate armor}, or against a monster with hide as tough as metal (as determined by the GM). On a critical success, your target has [[Physical]] Weakness equal to your Strength (minimum 1).
@@ -83,7 +78,6 @@ Distracting Blow:
   type: 1-Action
   brief: You knock a foe off-balance, making them easier to hit
   tags:
-    perk: +1 damage to bludgeon Strikes
     duration: Until the end of your next turn
   effect: |
     Make a bludgeon Strike. On a success, your target is {flat-footed}.
@@ -93,7 +87,6 @@ Dual Bludgeons:
   type: Passive
   brief: You dual-wield bludgeons by striking with a flurry of blows
   tags:
-    perk: +1 damage to bludgeon Strikes
     requirements: You are wielding a bludgeon in each hand
   effect: |
     You have a +1 bonus to bludgeon Strikes.
@@ -102,8 +95,6 @@ Reliable Damage:
   tier: Bludgeon
   type: Passive
   brief: You can reroll 1s and 2s on your bludgeon's base damage
-  tags:
-    perk: +1 damage to bludgeon Strikes
   effect: |
     When you roll a 1 or a 2 on the base damage for a bludgeon Strike, you can reroll the die. You must use the new result.
 
@@ -113,8 +104,6 @@ Archer's Eyes:
   tier: Bow
   type: Passive
   brief: You can see far away and make incredibly distant shots
-  tags:
-    perk: +1 damage to bow Strikes
   effect: |
     You treat bows as having double their normal range.
 
@@ -123,7 +112,6 @@ Multishot:
   type: 1-Action
   brief: You load multiple arrows on your bow and fire them all at once
   tags:
-    perk: +1 damage to bow Strikes
     range: The range of your bow
     area: 5-foot burst
   effect: |
@@ -134,7 +122,6 @@ Stable Stance:
   type: Free
   brief: You fire more accurately by planting your feet on the ground
   tags:
-    perk: +1 damage to bow Strikes
     requirements: You haven't used a [[Move]] power yet this turn
     duration: Until the start of your next turn
   effect: |
@@ -146,7 +133,6 @@ Weighty Draw:
   brief: You have a bow with a draw weight that requires extreme strength
   tags:
     prerequisites: Strength +2 or higher
-    perk: +1 damage to bow Strikes
   effect: |
     You have a special bow that requires extreme strength to draw. Creatures with less Strength than you cannot wield this bow. When you succeed on a Strike with this bow, add half your Strength to the damage.
 
@@ -156,8 +142,6 @@ Heavy Bolts:
   tier: Crossbow
   type: Passive
   brief: Your heavy shot is so powerful that it knocks enemies prone
-  tags:
-    perk: +1 damage to crossbow Strikes
   effect: |
     When you succeed on a crossbow Strike benefitting from the **Heavy Draw** power, your target falls {prone}.
 
@@ -166,7 +150,6 @@ Locked and Loaded:
   type: Free
   brief: You instantly ready your crossbow at the start of a fight
   tags:
-    perk: +1 damage to crossbow Strikes
     requirements: This is the first round of a combat encounter
   effect: |
     Immediately use the **Heavy Draw** power.
@@ -175,8 +158,6 @@ Point-Blank Shot:
   tier: Crossbow
   type: Passive
   brief: Your powerful bolts pierce through nearby targets
-  tags:
-    perk: +1 damage to crossbow Strikes
   effect: |
     You have a +1 bonus to crossbow Strikes against targets within 30 feet.
 
@@ -184,8 +165,6 @@ Running Reload:
   tier: Crossbow
   type: 1-Action
   brief: You prepare your crossbow to fire while sprinting
-  tags:
-    perk: +1 damage to crossbow Strikes
   effect: |
     Immediately use the **Heavy Draw** power and the {Stride} power.
 
@@ -197,7 +176,6 @@ Opportunist:
   traits: [Encounter]
   brief: You can sneak in dagger strikes after your enemy gets hit
   tags:
-    perk: +1 damage to dagger Strikes
     trigger: After a {Strike} succeeds against a creature you can reach
   effect: |
     Make a dagger {Strike} against the triggering creature.
@@ -207,7 +185,6 @@ Parrying Dagger:
   type: Free
   brief: You can parry attacks with your dagger, using it like a shield
   tags:
-    perk: +1 damage to dagger Strikes
     trigger: Your turn starts and you are wielding a dagger
     duration: Until you are no longer wielding this dagger, or until you make a Strike with this dagger
   effect: |
@@ -217,8 +194,6 @@ Throwing Dagger:
   tier: Dagger
   type: Passive
   brief: You are an expert at throwing daggers a long distance
-  tags:
-    perk: +1 damage to dagger Strikes
   effect: |
     You can throw a dagger as a ranged weapon with a range of 20 feet.
 
@@ -229,7 +204,6 @@ Into the Fray:
   type: Passive
   brief: Your wide swings leave your enemies no space to gang up on you
   tags:
-    perk: +1 damage to heavy weapon Strikes
     requirements: You are wielding a heavy weapon, and you are adjacent to three or more enemies
   effect: |
     You have a +1 bonus to Defense.
@@ -239,7 +213,6 @@ Knockback:
   type: Free
   brief: You make powerful, heavy swings that knock your enemy back
   tags:
-    perk: +1 damage to heavy weapon Strikes
     trigger: You succeed on a heavy weapon Strike against a Size +1 or smaller creature
   effect: |
     Your Strike gains the success and critical success effects of the {Shove} power.
@@ -249,7 +222,6 @@ Monster Hunter:
   type: Free
   brief: You are an expert at defeating giant monsters with giant weapons
   tags:
-    perk: +1 damage to heavy weapon Strikes
     trigger: You make a heavy weapon Strike against a Size +1 or larger creature
   effect: |
     The base damage of your Strike increases by 1d12.
@@ -258,8 +230,6 @@ Overhead Swing:
   tier: Heavy Weapon
   type: 1-Action
   brief: You make an overhead swing that drives your enemy into the ground
-  tags:
-    perk: +1 damage to heavy weapon Strikes
   effect: |
     Make a heavy weapon Strike. On a success, your target falls {prone}.
 
@@ -272,7 +242,6 @@ Mystic Burst:
   traits: [Attack, Cantrip, Invocation, Spell]
   tags:
     requirements: You are wielding an orb
-    perk: +1 damage to spell attacks
     cost: 0 Mana
     range: 60 feet
     area: 10-foot burst
@@ -295,7 +264,6 @@ Reshape Spell:
   brief: You change the area of a spell to be a different line, cone, or burst
   tags:
     requirements: You are wielding an orb
-    perk: +1 damage to spell attacks
   effect: |
     When you cast a spell with an area that is shaped like a burst, a cone, or a line, you can change the area's shape to another shape from that list. The size of the area changes according to the following rule: burst sizes, cone sizes, and line sizes are proportional like 2, 3, and 4. For example, you could change a 10-foot burst to a 15-foot cone or a 20-foot line.
 
@@ -307,7 +275,6 @@ Sculpt Spell:
   brief: You sculpt the area or your spell to include or exclude specific targets
   tags:
     requirements: You are wielding an orb
-    perk: +1 damage to spell attacks
   effect: |
     When you cast a spell with an area, you can modify the area to exclude any regions or targets you want.
 
@@ -319,7 +286,6 @@ Counter Charge:
   brief: You prepare to intercept an imminent charge
   traits: [Manipulate]
   tags:
-    perk: +1 damage to polearm Strikes
     requirements: You are wielding a polearm
     duration: Until the start of your next turn
   effect: |
@@ -338,8 +304,6 @@ Distant Strike:
   tier: Polearm
   type: 1-Action
   brief: You strike with increased accuracy against a enemy that can't reach you
-  tags:
-    perk: +1 damage to polearm Strikes
   effect: |
     Make a polearm {Strike}. Your reach increases by 5 feet for this Strike. If the target of this Strike cannot reach you, this Strike has a +1 bonus to hit.
 
@@ -348,7 +312,6 @@ Polearm Hook:
   type: Free
   brief: You trip a creature using the hook on the end of your polearm
   tags:
-    perk: +1 damage to polearm Strikes
     trigger: You critically succeed on a polearm Strike
     target: The target of the triggering Strike
   effect: |
@@ -362,7 +325,6 @@ Covering Shield:
   brief: You can cover yourself with a shield to avoid area attacks
   tags:
     requirements: You are wielding a shield
-    perk: +1 [[Physical]] Shield
   effect: |
     You have +5 bonus to Agility DC against effects that target everything in an area.
 
@@ -372,7 +334,6 @@ Phalanx:
   brief: You cover your allies with your shield, blocking attacks against them
   tags:
     requirements: You are wielding a shield
-    perk: +1 [[Physical]] Shield
     target: An ally adjacent to you
     trigger: An attack targets your ally's Defense
   effect: |
@@ -382,9 +343,6 @@ Shield Bash:
   tier: Shield
   type: Passive
   brief: You can wield your shield as a deadly bludgeoning weapon
-  tags:
-    requirements: You are wielding a shield
-    perk: +1 [[Physical]] Shield
   effect: |
     You treat shields as melee weapons with a base damage of 1d6 [[Bludgeoning]]. You can use the **Shield Shove** power.
   aside: |
@@ -406,7 +364,6 @@ Mystic Bolt:
   traits: [Attack, Cantrip, Invocation, Spell]
   tags:
     requirements: You are wielding a staff
-    perk: +1 damage to spell attacks, +1 damage to staff Strikes
     cost: 0 Mana
     range: 30 feet
   effect: |
@@ -426,7 +383,6 @@ Overchannel:
   traits: [Spell]
   tags:
     requirements: You are wielding a staff
-    perk: +1 damage to spell attacks, +1 damage to staff Strikes
     cost: 1 Mana
     duration: 1 minute
   effect: |
@@ -444,7 +400,6 @@ Staff Fighting:
   brief: You are an expert at fighting with a staff in close quarters
   tags:
     requirements: You are wielding a staff
-    perk: +1 damage to spell attacks, +1 damage to staff Strikes
   effect: |
     While you are wielding a staff in two hands, the staff's base damage increases to 1d12, you have a +2 bonus to Defense (instead of the normal +1 bonus to Defense from wielding a staff in two hands), and you treat the staff as having the [[Finesse]] trait.
 
@@ -455,7 +410,6 @@ Dueling Sword:
   type: Passive
   brief: You score a critical hit on sword Strikes more often
   tags:
-    perk: +1 damage to sword Strikes
     requirements: You are wielding a sword and no other weapons
   effect: |
     You have a +1 bonus to sword Strikes.
@@ -464,8 +418,6 @@ Improved Critical:
   tier: Sword
   type: Passive
   brief: You score a critical hit on sword Strikes more often
-  tags:
-    perk: +1 damage to sword Strikes
   effect: |
     When you succeed on a sword Strike, you can add +2 to the attack roll. *(While this doesn't affect your chance of succeeding on the Strike, it does improve your chance of critically succeeding.)*
 
@@ -473,8 +425,6 @@ Lunging Strike:
   tier: Sword
   type: 1-Action
   brief: You lunge forward with a sword for extra reach
-  tags:
-    perk: +1 damage to sword Strikes
   effect: |
     Make a sword Strike. Your reach increases by 5 feet for this Strike.
 
@@ -485,7 +435,6 @@ Perfect Ricochet:
   type: Free
   brief: You call a throwing weapon back to your hand after an attack
   tags:
-    perk: +1 damage to throwing weapon Strikes
     trigger: After you make a throwing weapon Strike
   effect: |
     The throwing weapon you just attacked with bounces off of the environment and returns to your hand.
@@ -494,8 +443,6 @@ Quick Throw:
   tier: Throwing Weapon
   type: Passive
   brief: You quickly throw your weapon at the start of a fight, catching opponents off guard
-  tags:
-    perk: +1 damage to throwing weapon Strikes
   effect: |
     You have advantage on throwing weapon Strikes during the first round of a combat encounter.
 
@@ -504,7 +451,6 @@ Slowing Hit:
   type: Free
   brief: Your throwing weapon entangles an enemy, slowing them down
   tags:
-    perk: +1 damage to throwing weapon Strikes
     trigger: You succeed on a throwing weapon Strike
     target: The target of the triggering Strike
     duration: Until the end of your target's next turn
@@ -520,7 +466,6 @@ Mystic Chain:
   traits: [Attack, Cantrip, Invocation, Spell]
   tags:
     requirements: You are wielding a tome
-    perk: +1 damage to spell attacks
     cost: 0 Mana
     range: 60 feet
     target: Two adjacent targets you can see within range
@@ -541,7 +486,6 @@ Read Incantation:
   traits: [Concentrate, Manipulate]
   tags:
     requirements: You are wielding a tome
-    perk: +1 damage to spell attacks
     duration: Until the end of your next turn
   effect: |
     The next spell you cast has -1 cost.
@@ -552,7 +496,6 @@ Tome of Everything:
   brief: Your tome has a bit of information on everything, if you can find it
   tags:
     requirements: You are wielding a tome
-    perk: +1 damage to spell attacks
     trigger: You finish an 8-hour rest
     duration: Until you use this power again
   effect: |
@@ -565,7 +508,6 @@ Grabbing Fist:
   type: Free
   brief: You grab an enemy that you get a powerful hit on
   tags:
-    perk: +1 damage to unarmed Strikes, +2 to [[Wrestling]] attacks
     trigger: After you critically succeed on an unarmed Strike
   effect: |
     You {Grapple} the target of the triggering Strike. This Grapple automatically succeeds.
@@ -574,8 +516,6 @@ Kickboxer:
   tier: Unarmed
   type: Passive
   brief: You are effective at making unarmed attacks without your hands
-  tags:
-    perk: +1 damage to unarmed Strikes, +2 to [[Wrestling]] attacks
   effect: |
     You don't have disadvantage on unarmed Strikes from having no hands free.
 
@@ -583,8 +523,6 @@ Titan Wrestler:
   tier: Unarmed
   type: Passive
   brief: You are experienced at wrestling creatures much larger than yourself
-  tags:
-    perk: +1 damage to unarmed Strikes, +2 to [[Wrestling]] attacks
   effect: |
     When you make a [[Wrestling]] attack against a creature larger than you, you count as +1 Size larger.
 
@@ -597,7 +535,6 @@ Eldritch Blast:
   traits: [Attack, Cantrip, Force, Spell]
   tags:
     requirements: You are wielding a wand
-    perk: +1 damage to spell attacks
     cost: 0 Mana
     range: 120 feet
   effect: |
@@ -620,7 +557,6 @@ Magic Missile:
   traits: [Force, Spell]
   tags:
     requirements: You are wielding a wand
-    perk: +1 damage to spell attacks
     cost: 1 Mana
     range: 120 feet
   effect: |
@@ -637,7 +573,6 @@ Reliable Magic:
   traits: [Encounter, Fortune]
   tags:
     requirements: You are wielding a wand
-    perk: +1 damage to spell attacks
     trigger: You critically fail a Magic roll
   effect: |
     Reroll the triggering roll.
