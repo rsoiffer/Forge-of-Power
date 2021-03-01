@@ -36,7 +36,7 @@ Golgari Agent:
 
 Gruul Anarch:
   effect: |
-    Gain a {Athletics} or {Notice} skill feat.
+    Gain an {Athletics} or {Notice} skill feat.
 
     Gain the following proficiencies:
     * *Gruul Lore*
@@ -45,7 +45,7 @@ Gruul Anarch:
 
 Izzet Engineer:
   effect: |
-    Gain a {Arcana} or {Crafting} skill feat.
+    Gain an {Arcana} or {Crafting} skill feat.
 
     Gain the following proficiencies:
     * *Izzet Lore*

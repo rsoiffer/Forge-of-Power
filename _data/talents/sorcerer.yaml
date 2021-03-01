@@ -346,6 +346,15 @@ Spatiotemporal Precision:
   effect: |
     You always know your current position relative to all locations you've been to before, to a precision of 1 foot. You always know the current time of day, and the amount of time that has elapsed since any past event, to a precision of 1 second.
 
+Time Lord:
+  tier: Ribbon
+  type: Passive
+  brief: You can tell when creatures modify the past with retroactive powers
+  effect: |
+    You know when a creature you can see uses a [[Retroactive]] power, and you know when the circumstances around you change as the result of a [[Retroactive]] power. You remember the original timeline before the [[Retroactive]] power was used. You don't learn which creature used the power, or what exact effect the power had.
+
+    If you know a [[Retroactive]] power, you activate it as an in-character decision instead of an out-of-character decision, as you are aware that you are manipulating the timeline.
+
 # Greater Metamagic:
 #   tier: Veteran
 #   type: Passive

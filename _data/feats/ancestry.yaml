@@ -87,13 +87,40 @@ Mind Meld:
     : You learn two experiences from your target
 
     Success
-    : You learn two experiences from your target
+    : You learn one experience from your target
 
     Failure
     : No effect
 
     Critical Failure
     : Your target learns one experience from you
+
+Telepath:
+  tier: Elf
+  type: Passive
+  brief: You can speak telepathically with all nearby creatures
+  effect: |
+    You can speak telepathically with creatures within 60 feet, forming words or impressions in their mind without sound. Creatures within 60 feet can speak telepathically with you by focusing on a phrase to send.
+
+    By replacing normal conversation with telepathy, you can remove the [[Auditory]] trait from powers you use. Your telepathy doesn't let you communicate with creatures with whom you don't share a language.
+  fluff: |
+    Some telepaths are so used to mental conversation that they forget how to speak normally.
+
+Verdant:
+  tier: Elf
+  type: 1-Action
+  brief: You empathically bond with nearby plants to learn about the local area
+  traits: [Concentrate, Encounter]
+  tags:
+    area: 300-foot emanation
+  effect: |
+    You learn basic information about all the following:
+    * All major terrain features and bodies of water in the area
+    * All powerful magical effects affecting the whole area
+    * The overall health of the plants in the area
+    * What types of plants, animals, and humanoids are common to the area
+
+    In natural outdoor environments, the radius of the emanation increases to 3 miles.
 
 # Goblin
 
@@ -114,6 +141,16 @@ Underfoot:
     You can move through other creature's spaces at full speed, even spaces occupied by enemy creatures. You can hide behind creatures that are larger than you.
 
 # Human
+
+Destined Hero:
+  tier: Human
+  type: Reaction
+  brief: Your destined luck turns great failures into great victories
+  traits: [Daily, Fortune]
+  tags:
+    trigger: You roll a 1 on the d20 for a die roll
+  effect: |
+    Change the triggering d20 to be a 20 instead of a 1.
 
 Dubious Knowledge:
   tier: Human
