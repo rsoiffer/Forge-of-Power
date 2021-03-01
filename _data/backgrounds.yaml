@@ -5,222 +5,427 @@
 # Spirit - 18
 
 
+Azorius Functionary:
+  effect: |
+    Gain a {Religion} or {Society} skill feat.
+
+    Gain the following proficiencies:
+    * *Azorius Lore*
+    * *Legal Lore*
+    * *Scribing Lore*
+
+Boros Legionnaire:
+  effect: |
+    Gain an {Athletics} or {Provoke} skill feat.
+
+    Gain the following proficiencies:
+    * *Boros Lore*
+    * *Warfare Lore*
+    * *Games Lore*
+
+Dimir Operative:
+  effect: |
+    Gain a {Stealth} skill feat.
+
+    Gain the following proficiencies:
+    * *Dimir Lore*
+    * *Disguise Kit*
+    * A lore proficiency for a guild other than the Dimir
+
+Golgari Agent:
+  effect: |
+    Gain a {Nature} or {Travel} skill feat.
+
+    Gain the following proficiencies:
+    * *Golgari Lore*
+    * *Poisoner's Kit*
+    * *Cave Lore*
+
+Gruul Anarch:
+  effect: |
+    Gain a {Athletics} or {Notice} skill feat.
+
+    Gain the following proficiencies:
+    * *Gruul Lore*
+    * *Herbalism Lore*
+    * *Ruins Lore*
+
+Izzet Engineer:
+  effect: |
+    Gain a {Arcana} or {Crafting} skill feat.
+
+    Gain the following proficiencies:
+    * *Izzet Lore*
+    * *Architecture Lore* or *Engineering Lore*
+    * A tool proficiency
+
+Orzhov Representative:
+  effect: |
+    Gain an {Eloquence} or {Provoke} skill feat.
+
+    Gain the following proficiencies:
+    * *Orzhov Lore*
+    * *Mercantile Lore*
+    * A language proficiency
+
+Rakdos Cultist:
+  effect: |
+    Gain an {Athletics} or {Perform} skill feat.
+
+    Gain the following proficiencies:
+    * *Rakdos Lore*
+    * *Circus Lore*
+    * An instrument proficiency
+
+Selesnya Initiate:
+  effect: |
+    Gain an {Eloquence} or {Nature} skill feat.
+
+    Gain the following proficiencies:
+    * *Selesnya Lore*
+    * *Healer's Kit*
+    * An instrument proficiency
+
+Simic Scientist:
+  effect: |
+    Gain an {Arcana} or {Nature} skill feat.
+
+    Gain the following proficiencies:
+    * *Simic Lore*
+    * *Academics Lore*
+    * A language proficiency
+
+
 Acolyte:
   effect: |
-    Gain an attribute boost to Intellect or Spirit. Gain a {Religion} skill feat. Gain the *Scribing Lore* proficiency.
-
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain a {Religion} skill feat.
+    
+    Gain the following proficiencies:
+    * *Scribing Lore*
+    * *Calligrapher's Supplies*
+    * A lore proficiency for a specific diety you studied
 
 Acrobat:
   effect: |
-    Gain an attribute boost to Strength or Agility. Gain an {Athletics} skill feat. Gain the *Circus Lore* proficiency.
+    Gain an {Athletics} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Circus Lore*
+    * *Theater Lore*
+    * An instrument proficiency
 
 Animal Whisperer:
   effect: |
-    Gain an attribute boost to Intellect or Spirit. Gain a {Nature} skill feat. Gain a Lore proficiency related to one terrain inhabited by animals you like (such as *Plains Lore* or *Swamp Lore*).
+    Gain a {Nature} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Stabling Lore*
+    * A lore proficiency for a specific kind of animal you like
+    * A lore proficiency for a specific terrain inhabited by animals you like
 
 Artisan:
   effect: |
-    Gain an attribute boost to Strength or Intellect. Gain a {Crafting} skill feat. Gain a tool proficiency.
+    Gain a {Crafting} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Guild Lore*
+    * *Labor Lore* or *Mercantile Lore*
+    * A tool proficiency
 
 Artist:
   effect: |
-    Gain an attribute boost to Agility or Spirit. Gain a {Crafting} or {Perform} skill feat. Gain the *Art Lore* proficiency.
+    Gain a {Crafting} or {Perform} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Art Lore*
+    * *Architecture Lore* or *Theater Lore*
+    * *Painter's Supplies* or an instrument proficiency
 
 Barkeep:
   effect: |
-    Gain an attribute boost to Strength or Spirit. Gain an {Eloquence} skill feat. Gain the *Alcohol Lore* proficiency.
+    Gain an {Eloquence} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Brewer's Supplies*
+    * *Alcohol Lore*
+    * A language proficiency
 
 Barrister:
   effect: |
-    Gain an attribute boost to Intellect or Spirit. Gain an {Eloquence} skill feat. Gain the *Legal Lore* proficiency.
+    Gain an {Eloquence} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Legal Lore*
+    * *Scribing Lore*
+    * A language proficiency
 
 Bounty Hunter:
   effect: |
-    Gain an attribute boost to Strength or Agility. Gain a {Notice} or {Travel} skill feat. Gain the *Legal Lore* proficiency.
+    Gain a {Notice} or {Travel} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Legal Lore*
+    * *Scouting Lore*
+    * A lore proficiency for a specific terrain you tracked people in
 
 Bureaucrat:
   effect: |
-    Gain an attribute boost to Intellect or Spirit. Gain a {Religion} or {Society} skill feat. Gain the *Legal Lore* proficiency.
+    Gain a {Religion} or {Society} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Accounting Lore*
+    * *Heraldry Lore*
+    * *Legal Lore*
 
 Charlatan:
   effect: |
-    Gain an attribute boost to Intellect or Spirit. Gain a {Perform} skill feat. Gain the *Disguise Kit* proficiency.
+    Gain a {Perform} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Disguise Kit*
+    * *Games Lore*
+    * A language proficiency
 
 Criminal:
   effect: |
-    Gain an attribute boost to Agility or Intellect. Gain a {Stealth} skill feat. Gain the *Thieves' Cant Language* proficiency.
+    Gain a {Perform} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Underworld Lore*
+    * *Lockpicking Kit*
+    * *Thieves' Cant Language*
 
 Detective:
   effect: |
-    Gain an attribute boost to Intellect or Spirit. Gain a {Notice} skill feat. Gain the *Legal Lore* proficiency.
+    Gain a {Notice} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Legal Lore*
+    * *Underworld Lore*
+    * A language proficiency
 
 Emissary:
   effect: |
-    Gain an attribute boost to Intellect or Spirit. Gain a {Society} skill feat. Gain a Lore proficiency related to one city you've visited often.
+    Gain a {Society} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Genealogy Lore*
+    * *Heraldry Lore*
+    * A lore proficiency for a specific city you've visited often
 
 Entertainer:
   effect: |
-    Gain an attribute boost to Agility or Spirit. Gain a {Perform} skill feat. Gain the *Theater Lore* proficiency.
+    Gain a {Perform} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Circus Lore*
+    * *Theater Lore*
+    * An instrument proficiency or a language proficiency
 
 Farmhand:
   effect: |
-    Gain an attribute boost to Strength or Spirit. Gain a {Nature} skill feat. Gain the *Farming Lore* proficiency.
+    Gain a {Nature} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Farming Lore*
+    * *Hunting Lore* or *Milling Lore*
+    * A lore proficiency for a specific terrain where you farmed
 
 Field Medic:
   effect: |
-    Gain an attribute boost to Strength or Intellect. Gain a {Nature} skill feat. Gain the *Healer's Kit* proficiency.
+    Gain a {Nature} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Healer's Kit*
+    * *Warfare Lore*
+    * *Herbalism Lore* or *Midwifery Lore*
 
 Fortune Teller:
   effect: |
-    Gain an attribute boost to Intellect or Spirit. Gain an {Arcana} skill feat. Gain the *Fortune-Telling Lore* proficiency.
+    Gain a {Arcana} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Fortune-Telling Lore*
+    * *Herbalism Lore* or *Midwifery Lore*
+    * A language proficiency
 
 Gambler:
   effect: |
-    Gain an attribute boost to Agility or Spirit. Gain an {Eloquence} skill feat. Gain the *Games Lore* proficiency.
+    Gain an {Eloquence} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Games Lore*
+    * *Disguise Kit* or *Forgery Kit*
+    * A language proficiency
 
 Gladiator:
   effect: |
-    Gain an attribute boost to Strength or Spirit. Gain a {Perform} skill feat. Gain the *Gladiatorial Lore* proficiency.
+    Gain a {Perform} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Gladitorial Lore*
+    * *Circus Lore*
+    * *Games Lore* or *Underworld Lore*
 
 Guard:
   effect: |
+    Gain a {Provoke} skill feat.
+
+    Gain the following proficiencies:
+    * *Legal Lore*
+    * *Warfare Lore*
+    * *Games Lore* or *Scouting Lore*
+  effect-old: |
     Gain an attribute boost to Strength or Spirit. Gain a {Provoke} skill feat. Gain the *Legal Lore* or the *Warfare Lore* proficiency.
 
     Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
 
 Herbalist:
   effect: |
-    Gain an attribute boost to Strength or Intellect. Gain a {Nature} skill feat. Gain the *Herbalism Lore* proficiency.
+    Gain a {Nature} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Herbalism Lore*
+    * *Alchemist's Supplies* or *Cook's Utensils*
+    * A lore proficiency for a specific terrain where you gathered herbs
 
 Hermit:
   effect: |
-    Gain an attribute boost to Strength or Intellect. Gain an {Arcana} or {Nature} skill feat. Gain a Lore proficiency related to the terrain you lived in as a hermit (such as *Cave Lore* or *Desert Lore*).
+    Gain an {Arcana} or {Nature} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Fishing Lore*
+    * *Hunting Lore*
+    * A lore proficiency for a specific terrain where you lived as a hermit
 
 Hunter:
   effect: |
-    Gain an attribute boost to Agility or Intellect. Gain a {Travel} skill feat. Gain the *Tanning Lore* proficiency.
+    Gain a {Travel} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Hunting Lore*
+    * *Tanning Lore*
+    * A lore proficiency for a specific type of animal you hunted
 
 Laborer:
   effect: |
-    Gain an attribute boost to Strength or Agility. Gain an {Athletics} skill feat. Gain the *Labor Lore* proficiency.
+    Gain a {Athletics} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Labor Lore*
+    * A language proficiency
+    * A tool proficiency
 
 Martial Disciple:
   effect: |
-    Gain an attribute boost to Strength or Agility. Gain an {Athletics} skill feat. Gain the *Warfare Lore* proficiency.
+    Gain a {Athletics} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Warfare Lore*
+    * A language proficiency
+    * A tool proficiency
 
 Merchant:
   effect: |
-    Gain an attribute boost to Intellect or Spirit. Gain an {Eloquence} skill feat. Gain the *Mercantile Lore* proficiency.
+    Gain an {Eloquence} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Mercantile Lore*
+    * A language proficiency
+    * A lore proficiency for a specific settlement where you traded
 
 Miner:
   effect: |
-    Gain an attribute boost to Strength or Intellect. Gain a {Crafting} skill feat. Gain the *Mining Lore* proficiency.
+    Gain a {Crafting} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Mining Lore*
+    * *Cave Lore*
+    * *Jeweler's Tools* or *Mason's Tools* or *Smith's Tools*
 
 Noble:
   effect: |
-    Gain an attribute boost to Intellect or Spirit. Gain a {Society} skill feat. Gain the *Genealogy Lore* or *Heraldry Lore* proficiency.
+    Gain a {Society} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Genealogy Lore*
+    * *Heraldry Lore*
+    * A language proficiency
 
 Nomad:
   effect: |
-    Gain an attribute boost to Strength or Agility. Gain a {Travel} skill feat. Gain a Lore proficiency related to one terrain you traveled in (such as Desert Lore or Swamp Lore).
+    Gain a {Travel} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Scouting Lore*
+    * *Herbalism Lore* or *Hunting Lore*
+    * A lore proficiency for a specific terrain you traveled in
 
 Prisoner:
   effect: |
-    Gain an attribute boost to Strength or Agility. Gain a {Stealth} skill feat. Gain the *Underworld Lore* proficiency.
+    Gain a {Stealth} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Thieves' Cant Language*
+    * *Labor Lore*
+    * *Underworld Lore*
 
 Sailor:
   effect: |
-    Gain an attribute boost to Strength or Agility. Gain an {Athletics} skill feat. Gain the *Sailing Lore* skill.
+    Gain an {Athletics} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Sailing Lore*
+    * *Fishing Lore* or *Mercantile Lore*
+    * A lore proficiency for a specific settlement you sailed to
 
 Scholar:
   effect: |
-    Gain an attribute boost to Intellect or Spirit. Gain an {Arcana} or {Religion} skill feat. Gain the *Academia Lore* proficiency.
+    Gain an {Arcana} or {Religion} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Academia Lore*
+    * *Library Lore*
+    * *Scribing Lore*
 
 Scout:
   effect: |
-    Gain an attribute boost to Agility or Intellect. Gain a {Notice} or {Stealth} skill feat. Gain a Lore proficiency related to one terrain you scouted in (such as *Forest Lore* or *Cavern Lore*).
+    Gain a {Notice} or {Stealth} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Scouting Lore*
+    * *Hunting Lore* or *Warfare Lore*
+    * A lore proficiency for a specific terrain you scouted in
 
 Street Urchin:
   effect: |
-    Gain an attribute boost to Strength or Agility. Gain a {Stealth} skill feat. Gain a Lore proficiency for the city you lived in as a street urchin.
+    Gain a {Stealth} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Underworld Lore*
+    * *Labor Lore* or *Lockpicking Kit*
+    * A language proficiency
 
 Tinker:
   effect: |
-    Gain an attribute boost to Agility or Intellect. Gain a {Crafting} skill feat. Gain the *Engineering Lore* proficiency.
+    Gain a {Crafting} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Engineering Lore*
+    * *Tinker's Tools*
+    * A tool proficiency
 
 Warrior:
   effect: |
-    Gain an attribute boost to Strength or Agility. Gain a {Provoke} skill feat. Gain the *Warfare Lore* proficiency.
+    Gain a {Provoke} skill feat.
 
-    Gain one attribute boost, one skill feat, one combat feat, and two proficiencies.
+    Gain the following proficiencies:
+    * *Warfare Lore*
+    * *Games Lores* or *Scouting Lore*
+    * An instrument proficiency
 
 Custom Background:
   effect: |
-    Gain two attribute boosts, two skill feats, one combat feat, and three proficiencies.
+    Gain any skill feat.
+
+    Gain any three proficiencies.

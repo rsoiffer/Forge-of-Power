@@ -32,7 +32,7 @@ Proficiencies describe situational or highly specific areas of knowledge your ch
 * Lore about a specific creature or narrow category of creatures (Demon Lore, Owlbear Lore, Vampire Lore, etc.)
 * Lore about a specific settlement (Absalom Lore, Magnimar Lore, etc.)
 * Lore about a specific terrain (Mountain Lore, River Lore, etc.)
-* Lore of a type of food or drink (Alcohol Lore, Baking Lore, Butchering Lore, Cooking Lore, Tea Lore, etc.)
+* Lore about a specific type of food or drink (Alcohol Lore, Baking Lore, Butchering Lore, Cooking Lore, Tea Lore, etc.)
 * Mercantile Lore
 * Midwifery Lore
 * Milling Lore
@@ -84,6 +84,6 @@ Proficiencies describe situational or highly specific areas of knowledge your ch
 
 * Disguise Kit
 * Forgery Kit
-* Navigator's Tools
+* Healer's Kit
+* Lockpicking Kit
 * Poisoner's Kit
-* Thieves' Tools

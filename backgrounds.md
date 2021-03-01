@@ -6,7 +6,7 @@ sidebar:
 ---
 
 
-Note that the stats below are incomplete.
+See below for the list of all backgrounds.
 
 {% assign items = site.data.backgrounds %}
 

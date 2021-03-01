@@ -45,7 +45,7 @@ You can't use attribute boosts to increase your score in any attribute above the
   </tr>
 </table>
 
-No matter how many skill boosts you have in one skill (as you might get from skill feats), your bonus in the skill can't exceed the maximum below.
+No matter how many skill boosts you have in one skill (even though you might get many from skill feats), your bonus in the skill can't exceed the maximum below.
 
 <table>
   <tr>
@@ -105,17 +105,17 @@ The following terms are important for character creation.
 
 ***Attribute.*** Your character has four attributes: Strength, Agility, Intellect, and Spirit. You add one of these whenever you make a die roll.
 
-***Attribute Boost.*** An attribute boost increases your score in one attribute by one. You can't pick an attribute boost that increases your score in an attribute above the maximum given in the table to the right.
+***Attribute Boost.*** An attribute boost increases your score in one attribute by 1. You can't pick an attribute boost that increases your score in an attribute above the maximum given in the table to the right.
 
 ***Class.*** A [class](classes.html) is a group of thematically similar abilities. Characters are primarily defined by their classes.
 
-***Feat.*** Feats are powerful abilities that don't come from a class. There are four types of feats: [General](feats-general.html), [Ancestry](feats-ancestry.html), [Combat](feats-combat.html), and [Skill](feats-skill.html). Some features ask you to pick a feat of a specific type.
+***Feat.*** Feats are powerful abilities that don't come from a class. There are four types of feats: [General](feats-general.html), [Ancestry](feats-ancestry.html), [Combat](feats-combat.html), and [Skill](feats-skill.html). Some abilities ask you to pick a feat of a specific type.
 
 ***Proficiency.*** [Proficiencies](proficiencies.html) are specific topics that people might know a lot about. Proficiencies do nothing on their own, they just help describe your character's knowledge.
 
 ***Ribbons.*** Ribbons are minor abilities that come from a class. Ribbons are usually more useful for roleplay than combat.
 
-***Skill.*** A [skill](skills.html) is a broad activity that characters can be good at. When you make a die roll related to a skill's activity, you add your bonus to the skill.
+***Skill.*** A [skill](skills.html) is a broad activity that characters can be good at. When you make a die roll related to a skill's activity, you add your bonus to the skill (in addition to the attribute).
 
 ***Skill Boost.*** A skill boost gives you a +2 bonus whenever you make a die roll with a particular skill. If you have multiple skill boosts for the same skill, add the +2 for each of them, up to the maximum given in the table to the right.
 
@@ -123,14 +123,14 @@ The following terms are important for character creation.
 
 ## Pick an Ancestry
 
-An ancestry is a character's species and culture. Your ancestry gives you several unique abilities, and it lets you pick ancestry feats corresponding to that ancestry.
+An ancestry is a character's species and culture. Your ancestry gives you several basic abilities (which are shared by all characters of that ancestry), and it lets you pick ancestry feats corresponding to that ancestry.
 * Pick an [ancestry](ancestries.html).
 * Note the starting values of your attributes.
 * Note your Speed and Size stats.
 * Note your traits. Some effects work differently on creatures with certain traits.
-* Read each of the features given by your ancestry.
-* If a feature asks you to pick a ribbon, pick a ribbon from the given class.
-* If a feature asks you to pick a ancestry feat, pick the feat from the list at the bottom of the ancestry's page.
+* Read each of the basic abilities given by your ancestry.
+* If an ability asks you to pick a ribbon, pick a ribbon from the given class.
+* If an ability asks you to pick an ancestry feat, pick a feat from the list at the bottom of the ancestry's page.
 
 ## Pick Two Backgrounds
 
@@ -143,7 +143,13 @@ Your life experience also gives you a basic familiarity with several skills and 
 * Pick four attribute boosts.
 * Pick two [skill feats](feats-skill.html). Note the skill boost given by each feat.
 * Pick two [combat feats](feats-combat.html).
-* Pick two [proficiencies](proficiencies.html).
+* Pick a lore [proficiency](proficiencies.html) for a specific settlement or terrain you lived in.
+* Pick any one [proficiency](proficiencies.html).
+
+**Optionally**, you can pick an attribute flaw, decreasing one of your attributes to increase another. If you choose to have an attribute flaw:
+* Decrease your score in one attribute by 1.
+* Pick an attribute boost.
+* Make sure that one of your Aspects (see the last section on this page) describes the attribute you decreased.
 
 ## Level Up
 
@@ -171,13 +177,13 @@ If you are a spellcaster, you need to pick a mystic origin, which describes the 
 * Calculate your Mana stat. This is usually equal to 4 + 2 * Caster Level.
 * Calculate your Mana Limit stat. This is equal to 1 + half Caster Level.
 * Note when you replenish your mana. This is usually when you complete an 8-hour rest.
-* Read your mystic origin's special feature.
+* Read your mystic origin's special ability.
 
 ## Pick your Equipment
 
 Your equipment is all the items you own. For adventuers, your most important equipment is the apparel you wear as protection and the weapons you wield in combat.
-* Start with 10gp for each character level. Note that I haven't written prices yet, so feel free to treat all items as free.
-* Buy your [apparel](equipment.html#apparel). To maximize your Defense, you may want to pick apparel that corresponds to your highest attribute.
+* Start with 10gp for each character level. *I haven't written prices yet, so pretend all items are free.*
+* Buy your [apparel](equipment.html#apparel). To maximize your Defense stat, you may want to buy apparel that corresponds to your highest attribute.
 * Buy your [weapons](equipment.html#weapons). If you have a combat feat for a weapon, you may want to buy that weapon.
 * Buy any miscellaneous items you want.
 
