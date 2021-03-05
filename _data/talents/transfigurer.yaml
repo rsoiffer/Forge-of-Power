@@ -47,7 +47,7 @@ Animate Object:
   aside: |
     {% smallpower %}
     Drone Stats:
-      traits: [Construct]
+      traits: [Construct, Unintelligent]
       tags:
         attributes: Strength -2, Agilty +2, Intellect -2, Spirit +0
         other stats: Health 10, Defense 14, Speed 40 feet (fly), Size -2
@@ -61,7 +61,7 @@ Animate Object:
 
     {% smallpower %}
     Golem Stats:
-      traits: [Construct]
+      traits: [Construct, Unintelligent]
       tags:
         attributes: Strength +1, Agilty +0, Intellect -2, Spirit -1
         other stats: Health 20, Defense 12, Speed 25 feet, Size +0

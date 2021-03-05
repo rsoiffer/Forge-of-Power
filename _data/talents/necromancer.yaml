@@ -21,7 +21,7 @@ Animate Dead:
   aside: |
     {% smallpower %}
     Skeleton Stats:
-      traits: [Spirit, Undead]
+      traits: [Spirit, Undead, Unintelligent]
       tags:
         attributes: Strength +0, Agilty +2, Intellect -2, Spirit -3
         other stats: Health 10, Defense 12, Speed 30 feet, Size +0
@@ -35,7 +35,7 @@ Animate Dead:
 
     {% smallpower %}
     Zombie Stats:
-      traits: [Spirit, Undead]
+      traits: [Spirit, Undead, Unintelligent]
       tags:
         attributes: Strength +1, Agilty -2, Intellect -2, Spirit -3
         other stats: Health 20, Defense 10, Speed 25 feet, Size +0

@@ -72,7 +72,7 @@ Fey: |
   A creature with this trait is a wild, chaotic spirit that lives in the feywild. Creatures with this trait always have the [[Spirit]] trait as well.
 
 Humanoid: |
-  A creature with this trait is biologically similar to a human, with the same general body shape, limbs, and intellect.
+  A creature with this trait is biologically similar to a human, with the same general body shape, limbs, and internal biology.
 
 Monster: |
   A creature with this trait is an animal or humanoid infused with magic that significantly alters its form, often granting it supernatural powers.
@@ -124,7 +124,7 @@ Transfiguration: |
   An effect with this trait changes the target's physical form in some way.
 
 Unintelligent: |
-  A creature with this trait doesn't have the mental capacity to understand complex ideas.
+  A creature with this trait doesn't have the mental capacity to understand complex ideas. An unintelligent creature generally can't speak, cast spells, or interact socially.
 
 Visual: |
   An effect with this trait can affect only creatures that can see it.

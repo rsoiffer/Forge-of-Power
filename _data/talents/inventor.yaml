@@ -48,7 +48,7 @@ Clockwork Turret:
   aside: |
     {% smallpower %}
     Clockwork Turret Stats:
-      traits: [Construct, Minion]
+      traits: [Construct, Minion, Unintelligent]
       tags:
         attributes: Strength +0, Agilty *varies*, Intellect --, Spirit --
         other stats: Health *varies*, Defense 15, Speed 0 feet, Size -1
@@ -300,4 +300,4 @@ Robot Servant:
   type: Passive
   brief: You created a robotic servant that completes simple tasks for you
   effect: |
-    You have constructed a robotic servant that obeys you commands. Your servant loyally follows orders you give them, even if those orders are insane or suicidal put them in extreme danger. As a robot, your servant is incapable of advanced thought or social interaction, and may interpret orders overly literally. If combat stats are necessary, your servant is a [[Construct]] [[Minion]] commoner.
+    You have constructed a robotic servant that obeys you commands. Your servant loyally follows orders you give them, even if those orders are insane or suicidal put them in extreme danger. As a robot, your servant is incapable of advanced thought or social interaction, and may interpret orders overly literally. If combat stats are necessary, your servant is a [[Construct]] [[Minion]] [[Unintelligent]] commoner.

@@ -119,7 +119,7 @@ Summon Animal:
   aside: |
     {% smallpower %}
     Eagle Stats:
-      traits: [Animal, Spirit]
+      traits: [Animal, Spirit, Unintelligent]
       tags:
         attributes: Strength -2, Agilty +2, Intellect -4, Spirit +0
         other stats: Health 5, Defense 12, Speed 60 feet (fly), Size -1
@@ -131,7 +131,7 @@ Summon Animal:
 
     {% smallpower %}
     Wolf Stats:
-      traits: [Animal, Spirit]
+      traits: [Animal, Spirit, Unintelligent]
       tags:
         attributes: Strength +1, Agilty +1, Intellect -4, Spirit -1
         other stats: Health 15, Defense 12, Speed 40 feet, Size +0
