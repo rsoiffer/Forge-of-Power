@@ -174,6 +174,19 @@ Quick Craft:
 
 # Eloquence
 
+Always Invited:
+  tier: Eloquence
+  type: 1-Action
+  brief: You reveal an invitation or passcode that marks you as welcome
+  traits: [Daily, Retroactive]
+  tags:
+    skill boost: Eloquence
+    requirements: You're trying to gain access to a restricted area or event
+  effect: |
+    You reveal a formal letter of invitation, a religious amulet, a secret passphrase, or a similar object or code that marks you as welcome. If you could not have reasonably obtained this invitation, you instead reveal a convincing forgery.
+
+    If a person checking this invitation is not suspicious of you, they will likely give you access to the restricted area or event. This invitation easily holds against all casual scrutiny, but a determined check could reveal it as fabricated.
+
 Bon Mot:
   tier: Eloquence
   type: Free
@@ -265,7 +278,7 @@ Befriend Animal:
   tags:
     skill boost: Nature
     range: 10 feet
-    target: A [[Beast]] creature you can see within range that you haven't targeted with this power in the last 24 hours
+    requirements: Your target is an unintelligent animal, and you haven't targeted them with this power in the last 24 hours
     duration: Until you or any of your allies harm your target
   effect: |
     Make a Spirit+Nature roll against DC 10 + your target's CR.
@@ -724,7 +737,7 @@ Experienced Tracker:
   type: Free
   brief: You can easily follow tracks and learn things about your prey
   tags:
-    skill boost: Nature
+    skill boost: Travel
     trigger: You roll Intellect+Nature to investigate or follow tracks
     requirements: You haven't used **Experienced Tracker** on these tracks in the last 24 hours
   effect: |
@@ -734,6 +747,8 @@ Land's Stride:
   tier: Travel
   type: Passive
   brief: You ignore simple natural hazards that impede movement
+  tags:
+    skill boost: Travel
   effect: |
     You move at full Speed through difficult terrain. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
 

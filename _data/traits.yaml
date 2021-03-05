@@ -62,7 +62,7 @@ Sonic: |
 
 # Creature Types
 
-Beast: |
+Animal: |
   A creature with this trait is an animal.
 
 Construct: |
@@ -75,10 +75,10 @@ Humanoid: |
   A creature with this trait is biologically similar to a human, with the same general body shape, limbs, and intellect.
 
 Monster: |
-  A creature with this trait is an animal infused with magic that significantly alters its form, often granting it supernatural powers.
+  A creature with this trait is an animal or humanoid infused with magic that significantly alters its form, often granting it supernatural powers.
 
 Outsider: |
-  A creature with this trait is a strange entity that exists completely outside of the normal cycle of souls.
+  A creature with this trait is a destructive spirit that feeds off of emotions. Creatures with this trait always have the [[Spirit]] trait as well.
 
 Plant: |
   A creature with this trait is a plant.
@@ -122,6 +122,9 @@ Teleportation: |
 
 Transfiguration: |
   An effect with this trait changes the target's physical form in some way.
+
+Unintelligent: |
+  A creature with this trait doesn't have the mental capacity to understand complex ideas.
 
 Visual: |
   An effect with this trait can affect only creatures that can see it.

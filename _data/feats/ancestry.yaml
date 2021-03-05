@@ -21,12 +21,34 @@ Bestial Mobility:
     #### Swimmer
     You can swim at your full Speed. You can breathe water as easily as air.
 
+Camouflage:
+  tier: Awakened
+  type: Passive
+  brief: You are great at blending in with a particular natural terrain feature
+  traits: [Specialize]
+  effect: |
+    You have a +10 bonus to Stealth rolls to hide next to your chosen terrain feature.
+  aside: |
+    ### Specializations
+
+    Choose a specific natural terrain feature, such as tree bark, snow, dense leaves, a river surface, or so on. The chosen feature should generally match the special of animal you are. A polar bear is camouflaged in snow, not mud. A leopard is camouflaged in dry grass, not foliage.
+
 Natural Weapon:
   tier: Awakened
   type: Passive
   brief: You have natural claws, teeth, or horns that deal heavy damage
   effect: |
     Your unarmed Strikes deal 2d6 base damage. Choose whether this damage is [[Bludgeoning]], [[Piercing]], or [[Slashing]].
+
+Speed Chess:
+  tier: Awakened
+  type: Reaction
+  brief: You can instantly revise your plans even as they begin to go wrong
+  traits: [Daily]
+  tags:
+    trigger: After you make an attack, or after an attack targets you
+  effect: |
+    Add your Intellect as a bonus to the triggering attack or to your DC against the triggering attack.
 
 Wild Sprint:
   tier: Awakened
@@ -50,7 +72,33 @@ Cousins Everywhere:
 
     For example, if you are in a normal town, you can declare that your second cousin works as a blacksmith, and then go visit him to repair your sword. Or if you're in the BBEG's giant volcano lair, you can declare that your father's brother-in-law's niece works in the lair as one of the BBEG's henchmen.
 
-Dwarven Resilience:
+Dwarven Luck:
+  tier: Dwarf
+  type: Passive
+  brief: You're naturally lucky, as you breeze right past the troubles of life
+  traits: [Fortune]
+  effect: |
+    When you roll a 1 on the d20 for a die roll, you can reroll the die roll.
+
+Dwarven Spirits:
+  tier: Dwarf
+  type: Free
+  brief: You offer a gift of fine dwarven alcohol, instantly making a new friend
+  traits: [Daily]
+  tags:
+    trigger: You make a Spirit+Eloquence to influence someone you're talking to
+  effect: |
+    You gift your target a flask of fine dwarven alcohol that you've been saving for just this occasion. If your target drinks alcohol, you have a +10 bonus to the triggering roll.
+
+Indomitable:
+  tier: Dwarf
+  type: Free
+  brief: You shrug off fear and fatigue, steeling your will for the future
+  traits: [Daily, Emotion]
+  effect: |
+    End all [[Fear]] effects targeting you. You recover 1 fatigue.
+
+Thick Skin:
   tier: Dwarf
   type: Passive
   brief: You have developed a natural resilience to common hazards
@@ -160,6 +208,15 @@ Dubious Knowledge:
   effect: |
     State a claim or rumor about the world that you have no evidence for but that might plausibly be true. The GM assigns a DC for this claim based on how extreme it is: a reasonble claim would be DC 5-10, a very unusual one might be DC 15, while a crazy or impossible claim would be DC 20 or more. The GM and the player should agree on the DC. Then, the GM rolls a d20 in secret. If this d20 meets or exceeds the DC, then the claim is actually true, otherwise, the claim is actually false.
 
+Faceless Mook:
+  tier: Human
+  type: Passive
+  brief: You're really good at pretending to be one faceless mook out of many
+  effect: |
+    You have a +10 bonus to die rolls to pretend to be a minor, unremarkable member of a large organization.
+
+    *For example, you have a +10 bonus to Agility+Stealth rolls to sneak through an army camp by wearing a military uniform. As another example, you have a +10 bonus to Intellect+Eloquence rolls to forge a letter supposedly from a minor administrator in a large guild.*
+
 Natural Talent:
   tier: Human
   type: Passive
@@ -167,26 +224,19 @@ Natural Talent:
   effect: |
     You learn one Novice talent of your choice. This talent must be from a class that you have at least one level in.
 
+Organized Action:
+  tier: Human
+  type: Free
+  brief: You draw strength from your peers as you speak with the authority of a group
+  traits: [Encounter]
+  tags:
+    trigger: You make a Spirit roll to speak as a representative of a large group
+  effect: |
+    You have a +10 bonus to the triggering roll.
+
+    *As a general rule, this group should have 100 or more members, and most members of the group should agree with your intent as you make the roll. You don't have to be a formally chosen representative or leader of the group, but you do have to be a member.*
+
 # Kami
-
-# Nature Meld:
-#   tier: Kami
-#   type: 1-Action
-#   brief: You meld with your sacred feature, disappearing from the world
-#   traits: [Encounter, Polymorph]
-#   tags:
-#     target: One of your sacred features you can see within 10 feet
-#     duration: Until your target falls to 0 health or you decide to end it
-#   effect: |
-#     You meld with your target, disappearing and entering your target's space. When this effect ends, you reappear at a space of your choice within 10 feet of the part of your target you entered.
-
-# Thoughts and Prayers:
-#   tier: Kami
-#   type: 1-Action
-#   brief: You absorb the prayers of nearby devotees to boost your own power
-#   traits: [Daily]
-#   effect: |
-#     You regain 2 Mana, plus 1 Mana for each devotee of your concept within 1 mile.
 
 Divine Magic:
   tier: Kami
@@ -282,6 +332,17 @@ Dragon's Breath:
 
     Choose one of [[Acid]], [[Cold]], [[Electricity]], [[Fire]], or [[Poison]]. This power permanently gains that trait for you.
 
+Flesh Eater:
+  tier: Lizardfolk
+  type: 1-Action
+  brief: You recover energy by eating the meat of defeated monsters
+  traits: [Encounter, Healing]
+  tags:
+    target: An animal corpse you can reach
+    requirements: Your target died in the last minute
+  effect: |
+    You consume flesh from your target, healing 3d6 health. You can't heal more than the maximum health your target had in life.
+
 Lizard King:
   tier: Lizardfolk
   type: Passive
@@ -291,6 +352,22 @@ Lizard King:
 
     Optionally, when you reach character level 13, your size again increases by 1 and your reach increases by 5 feet.
 
+Monstrous Instincts:
+  tier: Lizardfolk
+  type: Free
+  brief: Your supernatural instincts let you sense all nearby monsters
+  tags:
+    range: 300 feet
+  effect: |
+    You sense the locations of all monsters within range.
+
+Wings:
+  tier: Lizardfolk
+  type: Passive
+  brief: You have a set of scaled wings that let you fly through the air
+  effect: |
+    You can fly at your full Speed. While flying, you have disadvantage on Strength rolls and attack rolls.
+
 # Orc
 
 Clan Axe:
@@ -298,7 +375,22 @@ Clan Axe:
   type: Passive
   brief: You have a special axe gifted to you by your clan
   effect: |
-    You have a clan axe, which has the stats of a {bludgeon}, a {heavy weapon}, or a {throwing weapon}. When you succeed on a {Strike} with your clan axe, you deal an extra 1 damage. You cannot be disarmed of your clan axe. If you ever lose your clan axe, you always somehow find it again the next day, even if your clan axe was seemingly stolen or destroyed. If you sell or willingly give up your clan axe, you permanently lose this power.
+    You have a clan axe, which has the stats of a {bludgeon}, a {heavy weapon}, or a {throwing weapon}. While in combat, you cannot be disarmed of your clan axe. You can show your clan axe to other orcs as a sign of social status, giving you advantage on Spirit rolls to interact with other orcs (except orcs who dislike your clan).
+
+    If you ever lose your clan axe, you always somehow find it again the next day, even if your clan axe was seemingly stolen or destroyed. If you sell or willingly give up your clan axe, you permanently lose this power.
+
+Glory in Victory:
+  tier: Orc
+  type: Free
+  brief: You triumph at your victory, inspiring all your allies
+  traits: [Auditory, Emotion]
+  tags:
+    trigger: You roll a 20 on the d20 for a die roll
+    range: 60 feet
+    target: All allies you can see within range
+    duration: 10 minutes
+  effect: |
+    Your target has advantage on their next die roll.
 
 Orc Drop:
   tier: Orc
@@ -309,6 +401,28 @@ Orc Drop:
     trigger: You fall to 0 health
   effect: |
     You fall to 1 health instead.
+  fluff: |
+    Some orcish youths play a uniquely dangerous game: jump off the highest point you can find, then activate this feat as you hit the ground.
+
+Orcish Inversion:
+  tier: Orc
+  type: Free
+  brief: You defy logic to do even better when the environment fights against you
+  tags:
+    trigger: You make a die roll while in harsh terrain or weather
+  effect: |
+    Any penalties the harsh terrain or weather would apply to the triggering roll become bonuses instead. This changes numerical penalties into bonuses and changes disadvantage into advantage. If the GM was increasing the DC of the roll because of the harsh terrain or weather, the GM should instead decrease the DC of the roll by the same amount.
+
+    *For example, if you make an Intellect+Travel roll to track a creature through a blizzard, the DC of the roll would normally be extremely high, maybe +10 above normal. If you use this power, the DC of the roll is instead -10 less than normal.*
+
+Perfect Physique:
+  tier: Orc
+  type: Free
+  brief: You gain a surge of adrenaline that makes you stronger for a short time
+  tags:
+    duration: 1 minute
+  effect: |
+    You have advantage on Strength rolls other than attack rolls. Your carrying capacity is doubled.
 
 # Outsider
 

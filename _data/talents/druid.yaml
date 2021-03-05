@@ -5,7 +5,7 @@ Command Animal:
   traits: [Attack, Auditory, Spell]
   tags:
     cost: 1 Mana
-    target: A [[Beast]] creature you can reach that has CR no higher than your character level
+    target: An unintelligent animal you can reach that has CR no higher than your character level
     duration: 24 hours, until you decide to end it, or until you or one of your companions harms the target
   effect: |
     Make a Magic attack roll against your target's Spirit DC. If your target is already friendly towards you, this attack automatically succeeds.
@@ -119,7 +119,7 @@ Summon Animal:
   aside: |
     {% smallpower %}
     Eagle Stats:
-      traits: [Beast, Spirit]
+      traits: [Animal, Spirit]
       tags:
         attributes: Strength -2, Agilty +2, Intellect -4, Spirit +0
         other stats: Health 5, Defense 12, Speed 60 feet (fly), Size -1
@@ -131,7 +131,7 @@ Summon Animal:
 
     {% smallpower %}
     Wolf Stats:
-      traits: [Beast, Spirit]
+      traits: [Animal, Spirit]
       tags:
         attributes: Strength +1, Agilty +1, Intellect -4, Spirit -1
         other stats: Health 15, Defense 12, Speed 40 feet, Size +0
@@ -207,7 +207,7 @@ Awaken:
   traits: [Ritual, Spell]
   tags:
     cost: 5 Mana
-    target: One [[Beast]] creature you can reach
+    target: One unintelligent animal you can reach
   effect: |
     Your target becomes sentient, gaining intelligence as an [Awakened](awakened.html). Your target's form morphs to become more humanoid: they gain the proper limbs, can breathe air, gain opposable thumbs, can speak humanoid language, and so on.
 

@@ -14,7 +14,7 @@ Angry Spirit:
     : +3 vs. Spirit DC, range 60, 2d6 [[Fear]] damage
 
 Bear:
-  traits: [Beast]
+  traits: [Animal, Unintelligent]
   tags:
     attributes: Strength +6, Agilty +0, Intellect -3, Spirit -1
     other stats: Health 50, Defense 14, Speed 40 feet, Size +1
@@ -23,7 +23,7 @@ Bear:
     : +6 vs. Defense, 2d6+6 [[Slashing]] damage
 
 Blowtoad:
-  traits: [Beast, Monster]
+  traits: [Animal, Monster]
   tags:
     attributes: Strength -5, Agilty +0, Intellect -4, Spirit -2
     other stats: Health 2, Defense 10, Speed 20 feet, Size -2
@@ -40,7 +40,7 @@ Clockwork Turret:
     The clockwork turret can fire its ballista as a {crossbow}.
 
 Colossal Dreadmaw:
-  traits: [Beast, Monster]
+  traits: [Animal, Monster]
   tags:
     attributes: Strength +8, Agilty +3, Intellect -2, Spirit +4
     other stats: Health 400, Defense 19, Speed 60 feet, Size +4
@@ -55,7 +55,7 @@ Colossal Dreadmaw:
     : Stride and attack everything it moves over, +8 vs. Agility DC, 3d10 [[Bludgeoning]] damage
 
 Drake:
-  traits: [Beast, Monster]
+  traits: [Animal, Monster]
   tags:
     attributes: Strength +6, Agilty +4, Intellect -3, Spirit +3
     other stats: Health 150, Defense 17, Speed 60 feet (fly), Size +2
@@ -79,7 +79,7 @@ Drone:
     Drones are small handheld objects, like books or swords, that have been enchanted to be able to fly.
 
 Elk:
-  traits: [Beast]
+  traits: [Animal]
   tags:
     attributes: Strength +3, Agilty +0, Intellect -4, Spirit -1
     other stats: Health 15, Defense 11, Speed 50 feet, Size +1
@@ -91,7 +91,7 @@ Elk:
     : Once/encounter, {Stride}, then **Antler Strike** for an extra 2d6 damage
 
 Giant Squirrel:
-  traits: [Beast, Monster]
+  traits: [Animal, Monster]
   tags:
     attributes: Strength +2, Agilty +5, Intellect -4, Spirit -2
     other stats: Health 30, Defense 15, Speed 40 feet (climb), Size +1
@@ -114,7 +114,7 @@ Golem:
     Golems are human-shaped objects, like suits of armor or scarecrows, that have been enchanted to be able to walk.
 
 Green Wurm:
-  traits: [Beast, Monster]
+  traits: [Animal, Monster]
   tags:
     attributes: Strength +7, Agilty +1, Intellect -3, Spirit +0
     other stats: Health 100, Defense 17, Speed 40 feet (burrow), Size +2
@@ -125,7 +125,7 @@ Green Wurm:
     +6 to [[Wrestling]] rolls
 
 Griffon (Young):
-  traits: [Beast, Monster]
+  traits: [Animal, Monster]
   tags:
     attributes: Strength +5, Agilty +3, Intellect -4, Spirit +2
     other stats: Health 50, Defense 15, Speed 40 feet (fly), Size +1
@@ -134,7 +134,7 @@ Griffon (Young):
     : +5 vs. Defense, 2d6+5 [[Piercing]] damage
 
 Griffon (Adult):
-  traits: [Beast, Monster]
+  traits: [Animal, Monster]
   tags:
     attributes: Strength +6, Agilty +4, Intellect -3, Spirit +3
     other stats: Health 150, Defense 17, Speed 60 feet (fly), Size +2
@@ -143,7 +143,7 @@ Griffon (Adult):
     : +6 vs. Defense, 3d6+6 [[Piercing]] damage
 
 Horse:
-  traits: [Beast]
+  traits: [Animal]
   tags:
     attributes: Strength +4, Agilty +0, Intellect -4, Spirit -1
     other stats: Health 20, Defense 11, Speed 60 feet, Size +1
@@ -152,7 +152,7 @@ Horse:
     : +4 vs. Defense, 1d4+4 [[Piercing]] damage
 
 Molerat:
-  traits: [Beast, Monster]
+  traits: [Animal, Monster]
   tags:
     attributes: Strength -1, Agilty +4, Intellect -3, Spirit -2
     other stats: Health 15, Defense 14, Speed 30 feet (burrow, climb), Size -1
