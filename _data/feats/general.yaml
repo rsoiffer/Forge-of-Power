@@ -47,7 +47,7 @@ Squishy Caster:
   type: Passive
   brief: You have a lot of magical power, at the cost of your physical toughness
   effect: |
-    You have +4 Mana and +1 Mana Limit. Your maximum health equals 4 + 2 * level + 2 * Strength.
+    You have +4 Mana and +1 Mana Limit. Your maximum health equals 4 + 5 * Character Level + 2 * Strength instead of its normal value.
 
 Sympathetic Mage:
   type: Passive
@@ -59,13 +59,42 @@ Sympathetic Mage:
     * A small piece of the creature, such as a hair, a toenail, or a drop of blood
     * A prized possession of the creature, such as a family heirloom or a favorite weapon
 
-    When you target a sympathetic totem with a spell, you can choose for the spell to instead target the creature represented by the totem. If the spell is an attack, and if the attack roll critically fails, the totem breaks.
+    When you target a sympathetic totem with a spell, you can choose for the spell to instead target the creature represented by the totem. The totem has the [[Fragile]] trait, so if the spell is an attack, and if the attack roll critically fails, the totem breaks.
+
+Toughness:
+  type: Passive
+  brief: You are tougher and more resilient than anyone else
+  effect: |
+    Your maximum health increases by an amount depending on your character level, as given in the following table.
+
+    <table>
+      <tr>
+        <th>Character Level</th>
+        <th>Health Bonus</th>
+      </tr>
+      <tr>
+        <td>6 or less</td>
+        <td>+5</td>
+      </tr>
+      <tr>
+        <td>7 ... 12</td>
+        <td>+10</td>
+      </tr>
+      <tr>
+        <td>13 ... 18</td>
+        <td>+15</td>
+      </tr>
+      <tr>
+        <td>19 or more</td>
+        <td>+20</td>
+      </tr>
+    </table>
 
 Wild Mage:
   type: Free
-  brief: When you cast a spell, you can tap into wild magic for a burst of power
+  brief: You can tap into wild magic for a burst of power when you cast a spell
   tags:
     prerequisites: A mystic origin
     trigger: You cast a spell
   effect: |
-    The triggering spell has -1 cost. Roll on the Wild Magic table.
+    The triggering spell has -1 cost. Roll on the [Wild Magic table](https://hideous.github.io).

@@ -1,3 +1,38 @@
+Adhesive Bog:
+  tier: Novice
+  type: 1-Action
+  brief: You transmute an area into sticky mud that traps enemies
+  traits: [Spell, Transfiguration]
+  tags:
+    cost: 2 Mana
+    range: 120 feet
+    area: 20-foot burst
+    duration: Sustained, up to 1 minute
+  effect: |
+    All ground in the spell's area becomes difficult terrain. You can use the **Deepen Bog** power.
+
+    #### Heightened
+
+    For each +1 Mana, the radius of the burst increases by 10 feet.
+  aside: |
+    {% smallpower %}
+    Deepen Bog:
+      type: Free
+      traits: [Attack]
+      tags:
+        area: The area of **Adhesive Bog**
+      effect: |
+        Make a Magic attack roll against your target's Agility DC.
+
+        Success
+        : Your target is {immobilized}
+
+        Failure
+        : Your target is {slowed}
+    {% endsmallpower %}
+  fluff: |
+    What are you doing in my swamp!?
+
 Alter Creature:
   tier: Novice
   type: 1-Action
@@ -258,8 +293,8 @@ Scout Form:
     cost: 1 Mana
     duration: 1 hour, or until you decide to end it
   effect: |
-    You polymorph into a animal of your choice. While in scout form:
-    * Your Size is -2 or smaller.
+    You polymorph into a tiny animal of your choice. While in scout form:
+    * Your Size is -2.
     * Your Strength is -5. This doesn't affect your health.
     * You have 5 [[Physical]] Weakness.
     * Your Speed is 30 feet.
@@ -272,41 +307,6 @@ Scout Form:
     #### Heightened
 
     If you add +1 Mana, you turn into a flying creature, such as a bird. You can fly at your full Speed.
-
-Transmute Bog:
-  tier: Novice
-  type: 1-Action
-  brief: You transmute an area into sticky mud that traps enemies
-  traits: [Spell, Transfiguration]
-  tags:
-    cost: 2 Mana
-    range: 120 feet
-    area: 20-foot burst
-    duration: Sustained, up to 1 minute
-  effect: |
-    All ground in the spell's area becomes difficult terrain. You can use the **Deepen Bog** power.
-
-    #### Heightened
-
-    For each +1 Mana, the radius of the burst increases by 10 feet.
-  aside: |
-    {% smallpower %}
-    Deepen Bog:
-      type: Free
-      traits: [Attack]
-      tags:
-        area: The area of **Conjure Bog**
-      effect: |
-        Make a Magic attack roll against your target's Agility DC.
-
-        Success
-        : Your target is {immobilized}
-
-        Failure
-        : Your target is {slowed}
-    {% endsmallpower %}
-  fluff: |
-    What are you doing in my swamp!?
 
 Advanced Form:
   tier: Veteran

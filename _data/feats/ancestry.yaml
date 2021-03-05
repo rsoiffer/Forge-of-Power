@@ -172,14 +172,46 @@ Verdant:
 
 # Goblin
 
+Goblin Torch:
+  tier: Goblin
+  type: Free
+  brief: You light yourself on fire, burning enemies who get too close
+  traits: [Encounter, Fire]
+  tags:
+    duration: 1 minute, or until you are completely submerged in water
+  effect: |
+    When you succeed on a melee {Strike} or a [[Wrestling]] attack, or when a melee Strike or a [[Wrestling]] attack succeeds against you, the other creature takes 1d6 damage.
+
+    At the end of each of your turns, you take 1d6 damage. If this damage is completely negated (such as by any [[Fire]] Shield you have), this power immediately ends.
+
 Razor Teeth:
   tier: Goblin
   type: 1-Action
   brief: You can chew your way through solid walls
   effect: |
-    Make an unarmed {Strike}. The base damage of this strike is 1d4. This strike deals an extra 20 damage against inanimate objects.
+    Make an unarmed {Strike}. This Strike deals 1d6 [[Piercing]] base damage, and it deals an extra 20 damage against inanimate objects.
 
     You can efficiently tunnel through walls by repeatedly using this power. As a rough estimate, in one minute of work, you can tunnel through 1 foot of soft material (dirt, sand, plaster) or a few inches of hard material (wood, loose stones, old masonry). You can't tunnel through materials you can't damage, such as solid stone or metal.
+
+Reckless Abandon:
+  tier: Goblin
+  type: Free
+  brief: You somehow survive recklessly charging towards extreme dangers
+  traits: [Daily]
+  tags:
+    duration: Until the end of your next turn
+  effect: |
+    Whenever you take damage, all the damage dice roll the minimum possible values.
+
+Scavenger:
+  tier: Goblin
+  type: Passive
+  brief: You can gather the treasures that humanoids throw away as junk
+  effect: |
+    While in a city, you can earn a comfortable income (roughly 10 gp / week) by  searching through trash heaps and sewers, scavenging for valuable items. In addition, you can spend an hour scavenging in a city to find your choice of one of the following:
+    * Meals for up to 5 people
+    * Simple crafting materials, such as wood or iron
+    * A [[Fragile]] item worth 10 gp or less
 
 Underfoot:
   tier: Goblin
@@ -419,6 +451,7 @@ Perfect Physique:
   tier: Orc
   type: Free
   brief: You gain a surge of adrenaline that makes you stronger for a short time
+  traits: [Daily]
   tags:
     duration: 1 minute
   effect: |
@@ -432,6 +465,39 @@ Construct Flesh:
   brief: You fortify your body to resist piercing attacks
   effect: |
     You have 10 [[Piercing]] Shield.
+
+Devour Emotions:
+  tier: Outsider
+  type: 1-Action
+  brief: You devour all of a creature's emotions, leaving it feeling empty
+  traits: [Attack, Emotion]
+  tags:
+    range: 30 feet
+  effect: |
+    Make a Spirit+Provoke attack roll against your target's Spirit DC.
+
+    Success
+    : Your target's emotions fade, leaving them feeling empty and calm, and all [[Emotion]] powers affecting your target immediately end
+
+    Failure
+    : Your target feels slightly calmer than before
+
+Instant Reshape:
+  tier: Outsider
+  type: 1-Action
+  brief: You discard your old body and instantly make a new one for yourself
+  traits: [Concentrate, Daily, Healing]
+  effect: |
+    You instantly use the **Reshape Form** ability. You heal half your missing health, as your new form doesn't carry all the wounds of your old form.
+
+Phylactery:
+  tier: Outsider
+  type: Passive
+  brief: You store your soul in a physical object, making yourself immortal
+  effect: |
+    You have a phylactery, a magic item that acts as a container for your soul. If your body is killed while your phylactery is intact, you can use the **Reshape Form** ability to form a new body around your phylactery and revive yourself. If your phylactery is destroyed, you die.
+
+    Your phylactery can be any item: an article of clothing, a weapon, a holy symbol, or so on. You must always stay nearby your phylactery. At the end of each of your turns, if you are more than 30 feet away from your phylactery, you take 10d6 [[Necrotic]] damage.
 
 Sense Emotions:
   tier: Outsider

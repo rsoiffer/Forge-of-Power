@@ -148,9 +148,9 @@ Jury Rig:
   brief: You instantly craft a crude, fragile item out of common scrap parts
   tags:
     skill boost: Crafting
-    duration: 10 minutes, or until anyone rolls a natural 1 on a die roll to use the item
+    duration: 10 minutes
   effect: |
-    You build a non-magical, handheld item of your choice out of scrap parts lying around nearby. This item is of very low quality, and it permanently breaks when the duration ends.
+    You build a non-magical, handheld item of your choice out of scrap parts lying around nearby. This item is of very low quality, so it has the [[Fragile]] trait, and it permanently breaks when the duration ends.
 
 Mouse Trap:
   tier: Crafting

@@ -153,7 +153,7 @@ Your life experience also gives you a basic familiarity with several skills and 
 
 ## Level Up
 
-For each character level, you pick a level in one class, which gives you one talent from that class. As your character levels up, they also gain other bonuses, depending on whether it's an odd level or an even level.
+For each character level, you pick a level in one class, which gives you one talent from that class. As your character levels up, you also gain other bonuses, depending on whether it's an odd level or an even level.
 
 For each odd level (1/3/5/etc.):
 * Pick a [class](classes.html) to gain a level in.

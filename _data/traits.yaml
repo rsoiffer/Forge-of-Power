@@ -194,6 +194,9 @@ Wrestling: |
 Finesse: |
   A melee weapon with this trait is light, quick, and precise. A creature making a {Strike} with a [[Finesse]] weapon can use either Strength or Agility for the attack roll.
 
+Fragile: |
+  An item with this trait breaks very easily. Whenever a creature critically fails a die roll involving the item, the item permanently breaks.
+
 One-Handed: |
   An item with this trait requires one hand to wield. You cannot use this hand for anything else while wielding this item.
 
