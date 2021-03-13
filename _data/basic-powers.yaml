@@ -1,12 +1,13 @@
 Command:
   type: Free
-  brief: You command a Minion you control to take an action
+  brief: You command a minion you control to take an action
   traits: [Auditory]
   effect: |
     You command a [[Minion]] creature you control to immediately take a turn. This turn doesn't count as part of the normal turn order. This power can't let a creature take two turns in the same round.
 
 Disarm:
   type: 1-Action
+  brief: You knock an item out of a creature's hand
   traits: [Attack, Wrestling]
   tags:
     target: One creature you can reach
@@ -21,6 +22,7 @@ Disarm:
 
 Escape:
   type: 1-Action
+  brief: You escape for any kind of effect that's immobilizing you
   traits: [Attack]
   effect: |
     You attempt to escape from being {immobilized} or {restrained}. Choose one effect imposing any of these conditions on you. Make a Strength or Agility attack roll against the DC of the effect (such as the Strength DC of a creature grabbing you, or the Magic DC of a spell effect).
@@ -30,6 +32,7 @@ Escape:
 
 Grapple:
   type: 1-Action
+  brief: You grab a creature and hold them in place
   traits: [Attack, Wrestling]
   tags:
     requirements: You have at least one free hand
@@ -51,58 +54,66 @@ Grapple:
 
 Help:
   type: 1-Action
+  brief: You command a Minion you control to take an action
+  duration: Until the start of your next turn
   effect: |
-    You try to help your ally with a task. The task but be something you could reasonably help with, must involve a die roll, and must be completed before the start of your next turn. You must explain to the GM exactly how you're trying to help, and they determine whether you can Aid your ally. Attempt a die roll (of a type decided by the GM) against DC 20.
+    You try to help your ally with a task. The task but be something you could reasonably help with, at the GM's discretion. Your ally has advantage on one die roll related to the task.
+
+Inspire:
+  type: 1-Action
+  brief: You try to inspire a specific emotion in another creature
+  traits: [Auditory, Linguistic]
+  tags:
+    range: 60 feet
+  effect: |
+    Choose an emotion you're trying to inspire in your target. Make a Spirit roll against your target's Spirit DC. You can add a skill to this roll depending on the emotion you're trying to inspire:
+    * {Eloquence} is good for inspiring pride, respect, or trust.
+    * {Perform} is good for inspiring awe, courage, or joy.
+    * {Provoke} is good for inspiring anger, fear, or sadness.
+
+    Critical Success
+    : Your target strong feels the emotion you're trying to inspire
 
     Success
-    : Your ally has advantage on the roll
+    : Your target somewhat feels the emotion you're trying to inspire
 
     Critical Failure
-    : Your ally has disadvantage on the roll
+    : Your target somewhat feels the opposite of the emotion you're trying to inspire
 
 Interact:
   type: Free
+  brief: You interact with an object in the environment in some way
   traits: [Manipulate]
   effect: |
     You use your hand or hands to manipulate an object or the terrain. You draw or stow any number of items that are secured in easily accessible locations, such as a weapon in its holster or a potion in a belt pouch. Alternatively, you can grab an unattended or stored object, open a door, or produce some similar effect. If you're interacting with the external world, you might have to attempt a die roll to determine if your Interact power was successful.
 
 Interrupt:
   type: Reaction
+  brief: You interrupt the turn order, taking the next turn
   tags:
     trigger: A creature ends its turn
     requirements: That creature targeted you with an [[Attack]] power on its turn, you haven't taken a turn yet this round, and you are not surprised
   effect: |
     You interrupt the normal turn order. Instead of the triggering creature deciding who takes the next turn, you take the next turn.
 
-Point Out:
-  type: Free
-  traits: [Auditory, Manipulate, Visual]
-  tags:
-    requirements: A creature you can see is hidden to one or more of your allies
-  effect: |
-    You indicate a creature that you can see to one or more allies, gesturing in a direction and describing the distance verbally. The target is no longer hidden to your allies.
-
 Repeat:
   type: 1-Action
+  brief: You use a Free power a second time on your turn
   effect: |
     Use a {% icon Free %} power of your choice.
 
     This lets you use the same {% icon Free %} power twice in one turn. For instance, you could {Stride} twice to move twice as far, {Interact} twice to interact with more objects, or {Sustain} twice to keep more spells active at once.
 
 Seek:
-  type: 1-Action
+  type: Free
+  brief: You try to gain information about the world in some way
   traits: [Concentrate]
-  tags:
-    area: A 15-foot burst you can see
-    target: All hidden creatures or objects in the area
   effect: |
-    Make a Intellect+{Notice} roll against your target's Agility+{Stealth} DC.
-
-    Success
-    : Your target is no longer hidden to you
+    You seek out a specific piece of information about the world, such as by looking for a creature or trying to recall a fact. If you're trying to do something difficult, such as finding a hidden creature or recalling an obscure bit of knowledge, you ight have to attempt a die roll to determine if your Seek power was successful. This die roll is usually an Intellect roll, such as an Intellect+Notice roll to spot a hidden creature or an Intellect+Society roll to recall information about a culture.
 
 Shove:
   type: 1-Action
+  brief: You push a creature away from you
   traits: [Attack, Wrestling]
   tags:
     target: One creature you can reach
@@ -117,6 +128,7 @@ Shove:
 
 Stand:
   type: Free
+  brief: You stand up, and are no longer prone
   traits: [Move]
   tags:
     requirements: You are {prone}
@@ -125,12 +137,14 @@ Stand:
 
 Stride:
   type: Free
+  brief: You move from one location to another
   traits: [Move]
   effect: |
     Move a distance up to your Speed. If you move across extremely difficult or hazardous terrain, the GM might ask you make a die roll to determine if your Stride power was successful.
 
 Strike:
   type: 1-Action
+  brief: You attack a target with a weapon
   traits: [Attack]
   tags:
     target: One creature within your reach (for a melee attack) or within your weapon's range (for a ranged attack)
@@ -147,6 +161,7 @@ Strike:
 
 Sustain:
   type: Free
+  brief: You concentrate on a spell, extending its duration
   traits: [Concentrate]
   tags:
     requirements: You have at least one spell active with a sustained duration
@@ -157,6 +172,7 @@ Sustain:
 
 Trip:
   type: 1-Action
+  brief: You knock a creature to the ground
   traits: [Attack, Wrestling]
   tags:
     target: One creature you can reach
