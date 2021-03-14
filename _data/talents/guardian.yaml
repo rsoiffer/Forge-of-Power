@@ -28,7 +28,7 @@ Distracting Strike:
   effect: |
     Make a melee {Strike}. Your target has disadvantage on attacks against targets other than you.
 
-Heavy Armor Master:
+Heavy Armor:
   tier: Novice
   type: Passive
   brief: Your heavy armor can absorb a massive amount of punishment
@@ -44,8 +44,10 @@ Knockdown:
   traits: [Encounter]
   tags:
     trigger: You succeed on a melee Strike
+    target: The target of the triggering Strike
+    duration: Until the end of your target's next turn
   effect: |
-    The target of the triggering Strike falls {prone}.
+    Your target falls {prone} and is {slowed}.
 
 Sentinel:
   tier: Novice
@@ -128,6 +130,42 @@ Unwavering Mark:
       effect: |
         Make a melee {Strike} with advantage against the target of your **Unwavering Mark**. On a success, this Strike deals extra damage equal to your Guardian level.
     {% endsmallpower %}
+
+Aura of Protection:
+  tier: Master
+  type: Passive
+  brief: You defend all nearby allies against all incoming attacks
+  tags:
+    area: 15-foot emanation
+  effect: |
+    All attacks have disadvantage against your allies in the area (other than you). You can use the **Expanded Protection** power.
+  aside: |
+    {% smallpower %}
+    Expanded Protection:
+      type: 1-Action
+      tags:
+        duration: Until the end of your next turn
+      effect: |
+        The area of your **Aura of Protection** power increases to a 60-foot emanation.
+    {% endsmallpower %}
+
+Enchanted Armor:
+  tier: Master
+  type: Passive
+  brief: Your heavy armor is enchanted to protect against all kinds of damage
+  tags:
+    prerequisites: Heavy Armor
+  effect: |
+    The Shield from your {Heavy Armor} power is [[Anything]] Shield instead of [[Physical]] Shield.
+
+Roaring Taunt:
+  tier: Master
+  type: Passive
+  brief: You taunt your enemies with louder and faster shouts
+  tags:
+    prerequisites: Taunting Shout
+  effect: |
+    Your {Taunting Shout} power is {% icon Free %} instead of {% icon 1-Action %}, and its area increases to a 60-foot emanation.
 
 Cavalier:
   tier: Ribbon

@@ -14,11 +14,15 @@ Elemental Weapon:
   tier: Novice
   type: Free
   brief: You enhance your weapon with damaging elemental energy
-  traits: [Encounter]
+  traits: [Encounter, Specialize]
   tags:
-    trigger: You make a Strike
+    trigger: You succeed on a Strike
   effect: |
-    Choose one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Force]], or [[Sonic]] traits. The triggering Strike deals an extra 2d6 damage of the chosen trait on a success.
+    The triggering Strike deals an extra 2d6 damage.
+  aside: |
+    ### Specializations
+
+    Choose one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Force]], or [[Sonic]] traits. This power gains that trait.
 
 Forbidden Technique:
   tier: Novice
@@ -152,6 +156,25 @@ Vengeful Jaunt:
     You teleport to an empty space adjacent to your target. You have advantage on the next Strike you make against your target.
   fluff: |
     Nothing personal, kid.
+
+Deadly Techniques:
+  tier: Master
+  type: Passive
+  brief: Your elemental weapon power does more damage
+  tags:
+    prerequisites: Elemental Weapon or Shadow Blade
+  effect: |
+    The extra damage of your {Elemental Weapon} power increases to 4d6.
+
+    The extra damage of your {Shadow Blade} power increases to 8d6.
+
+Quicksilver:
+  tier: Master
+  type: Free
+  brief: You move with incredible speed, taking too many actions
+  traits: [Encounter]
+  effect: |
+    Use any {% icon 1-Action %} Swordsage power or basic power.
 
 Battle Aura:
   tier: Ribbon

@@ -24,7 +24,7 @@ Feint:
   traits: [Attack]
   tags:
     requirements: You are wielding a melee weapon
-    target: One creature within your reach
+    target: One creature you can reach
     duration: Until the end of your next turn
   effect: |
     Make a Strength or Agility attack roll against your target's Defense.
@@ -150,6 +150,34 @@ Penetrating Strike:
   brief: You attack in just the right way to slip past your enemy's shields
   effect: |
     Make a melee Strike. This Strike ignores all Shield your target has.
+
+Defensive Focus:
+  tier: Master
+  type: Passive
+  brief: You focus on your enemy's attacks, improving your defense against them
+  tags:
+    prerequisites: Singular Focus
+  effect: |
+    When you use your {Singular Focus} power, you also gain +2 DC against all of your target's attacks.
+
+Perfect Accuracy:
+  tier: Master
+  type: Free
+  brief: You recover from a close miss, hitting your target anyways
+  traits: [Encounter]
+  tags:
+    trigger: Your Strike fails
+  effect: |
+    The triggering {Strike} succeeds instead.
+
+Spellsplinter:
+  tier: Master
+  type: Passive
+  brief: You are an expert at disrupting spellcasters
+  tags:
+    prerequisites: Attack of Opportunity
+  effect: |
+    When you use {Attack of Opportunity}, if your Strike is a success and the trigger is a [[Spell]] power, you disrupt that power.
 
 Done Holding Back:
   tier: Ribbon

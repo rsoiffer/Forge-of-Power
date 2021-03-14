@@ -20,7 +20,7 @@ Iron Sweep:
   type: 1-Action
   brief: You made a wide swing that hits multiple targets at once
   effect: |
-    Make a melee {Strike}. This strike targets two enemies you can reach that are adjacent to each other.
+    Make a melee {Strike}. This Strike targets two enemies you can reach that are adjacent to each other.
 
 Mindless Fury:
   tier: Novice
@@ -124,6 +124,59 @@ Third Wind:
     prerequisites: Second Wind
   effect: |
     Your {Second Wind} power is [[Encounter]] instead of [[Daily]].
+
+Iron Whirlwind:
+  tier: Master
+  type: Passive
+  brief: You swing all around yourself, targeting many enemies at once
+  tags:
+    prerequisites: Iron Sweep
+  effect: |
+    When you use your {Iron Sweep} power, you can target up to 5 enemies you can reach. These enemies do not have to be adjacent to one another.
+
+Relentless:
+  tier: Master
+  type: Reaction
+  brief: You are almost impossible to take down, as you just keep fighting
+  tags:
+    trigger: You fall to 0 health
+  effect: |
+    Make a Strength roll against DC 10.
+
+    Success
+    : You instead fall to 1 health
+
+Supernatural Rage:
+  tier: Master
+  type: Passive
+  brief: You gain one of a number of magical effects while raging
+  traits: [Specialize]
+  tags:
+    prerequisites: Rage
+  effect: |
+    When you use your {Rage} power, you can choose for it to have an additional magical effect. The effect is determined by the specialization you choose.
+  aside: |
+    ### Specializations
+
+    #### Animal
+    *You transform into semi-humanoid wild beast.*
+
+    You have a +10 foot bonus to Speed. The damage bonus of your Rage power increases to +8.
+
+    #### Dragon
+    *You grow colorful scales and sprout draconic wings.*
+
+    You can fly at your full Speed. You have 20 Shield against one of [[Acid]], [[Cold]], [[Electricity]], [[Fire]], or [[Poison]], and the bonus damage of your Rage power gains that trait.
+
+    #### Giant
+    *You rise to a tremendous size, towering over others.*
+
+    Your Size increases by +2 and your reach increases by 10 feet. The damage bonus of your Rage power increases to +8.
+
+    #### Storm
+    *You are surrounded by the elemental fury of the storm.*
+
+    When another creature starts its turn within 10 feet of you, it takes 2d6 damage. This power gains one of the [[Cold]], [[Electricity]], or [[Fire]] traits.
 
 Abs of Steel:
   tier: Ribbon
