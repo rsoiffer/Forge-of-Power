@@ -157,9 +157,8 @@ Raptor Pounce:
   tags:
     range: 30 feet
     requirements: You succeeded on a Strike against your target in the previous round
-    duration: Until the end of your turn
   effect: |
-    You move to an empty space adjacent to your target. You have advantage on Strikes against your target.
+    You jump to an empty space adjacent to your target, then make a melee Strike against them.
 
 Steel Wind Strike:
   tier: Veteran
@@ -171,7 +170,7 @@ Steel Wind Strike:
     area: 20-foot burst
     target: Up to 4 creatures within the area
   effect: |
-    You move to a space adjacent to your target, then make a melee {Strike} against them.
+    You move to an empty space adjacent to your target, then make a melee {Strike} against them.
   fluff: |
     You can choose the order in which you Strike each of your targets.
 

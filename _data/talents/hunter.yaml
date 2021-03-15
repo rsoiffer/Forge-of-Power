@@ -2,7 +2,7 @@ Bear Trap:
   tier: Novice
   type: 1-Action
   brief: You throw a portable bear trap towards a nearby enemy
-  traits: [Attack, Encounter]
+  traits: [Attack, Encounter, Piercing]
   tags:
     range: 60 feet
     duration: Forever
@@ -17,6 +17,8 @@ Bear Trap:
 
     Failure
     : Your target takes 1d6 damage and is {slowed} until the end of your next turn
+  fluff: |
+    But your leg! Ah! It's caught in a bear trap!
 
 Called Shot:
   tier: Novice
@@ -88,13 +90,6 @@ Debilitating Shot:
   effect: |
     Make a ranged Strike. On a success, your target is {slowed}. On a critical success, your target is {flat-footed} and {immobilized}.
 
-Feral Senses:
-  tier: Veteran
-  type: Passive
-  brief: You can detect and fight nearby enemies even when you can't see
-  effect: |
-    You have blindsight to a distance of 30 feet.
-
 Hunter's Vision:
   tier: Veteran
   type: 1-Action
@@ -113,10 +108,46 @@ Running Shot:
   brief: You circle around an enemy and fire a shot from an unexpected direction
   traits: [Encounter]
   effect: |
-    Use the {Stride} power. At any time during this power, make a ranged {Strike} with advantage against a target within 60 feet.
+    Use the {Stride} power. At any time during this Stride, make a ranged {Strike} with advantage against a target within 60 feet.
+
+Traps Everywhere:
+  tier: Veteran
+  type: Passive
+  brief: You can remotely activate the countless traps that you've placed beforehand
+  effect: |
+    You can fight with remote traps, a special type of ranged weapon that works by triggering a pre-placed trap that happens to be under your target's feet. Making a Strike with a remote trap is a [[Retroactive]] ability, as you are declaring that you happened to hide a trap in that exact spot beforehand.
+
+    Your remote traps are a ranged weapon with 2d6 base damage and 100 range. Whenever you use a remote trap, you choose whether the base damage is [[Bludgeoning]], [[Fire]], [[Piercing]], [[Poison]], or [[Slashing]] (or another trait approved by the GM).
+
+    Strikes with your remote traps have the following rules:
+    * You don't need a clear line to your target
+    * Your target doesn't benefit from cover
+    * Your target must be within 10 feet of a solid surface
+    * Optionally, you can add your Intellect to the attack and damage rolls instead of your Agility
+    * Optionally, you can attack your target's Agility DC instead of their Defense
+
+Volley:
+  tier: Veteran
+  type: 1-Action
+  brief: You fire a rain of shots, targeting everyone in an area
+  traits: [Encounter]
+  tags:
+    range: The range of your weapon
+    area: 20-foot burst
+  effect: |
+    Make a ranged {Strike}. This Strike targets all creatures in this power's area.
+
+Sharpened Focus:
+  tier: Master
+  type: Passive
+  brief: You can focus your aim even better as you prepare a strike
+  tags:
+    prerequisites: Focus Aim
+  effect: |
+    Your {Focus Aim} power gives you a +5 bonus your next Strike, stacking up to +15.
 
 Triple Shot:
-  tier: Veteran
+  tier: Master
   type: Passive
   brief: You can fire three projectiles at once instead of two
   tags:

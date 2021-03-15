@@ -40,7 +40,9 @@ Evasive Dash:
   tags:
     duration: Until the start of your next turn
   effect: |
-    Use the {Stride} power. You gain +1 Defense and Agility DC for each 10 feet you move after using this power. For example, if you use this power and Stride 30 feet, then Stride 30 more feet, then fall 20 feet, you have a total of +8 Defense and Agility DC.
+    Use the {Stride} power. You gain +1 Defense and Agility DC for each 10 feet you move, both during and after this Stride.
+
+    *For example, if you use this power and Stride 30 feet, then Stride 30 more feet, then fall 20 feet, you have a total of +8 Defense and Agility DC.*
 
 Leap Attack:
   tier: Novice
@@ -139,9 +141,42 @@ Uncanny Dodge:
   type: Reaction
   brief: You can evade the worst hurt from potentially deadly attacks
   tags:
-    trigger: You are targeted by an attack
+    trigger: You take damage from an attack
   effect: |
     You take half damage from the triggering attack.
+
+Flash Step:
+  tier: Master
+  type: Free
+  brief: You move so quickly that you seem to disappear and reappear
+  traits: [Move]
+  tags:
+    range: 30 feet
+    target: An enemy you can see within range
+  effect: |
+    You move to an empty space adjacent to your target. This movement doesn't trigger {% icon Reaction %} powers.
+
+Tornado Throw:
+  tier: Master
+  type: 1-Action
+  brief: You move like a tornado, throwing everyone nearby
+  traits: [Encounter]
+  tags:
+    prerequisites: Mighty Throw
+  effect: |
+    Use the {Stride} power. Then, use your {Mighty Throw} power, targeting any number of creatures you were adjacent to at any point during your Stride.
+
+    *This power doesn't expend your Mighty Throw power. You can use this power even if you have already used Mighty Throw this encounter.*
+
+Untouchable:
+  tier: Master
+  type: Reaction
+  brief: You completely evade a power, as if it never happened
+  traits: [Encounter]
+  tags:
+    trigger: A power targets you
+  effect: |
+    The triggering power has no effect on you. If the triggering power involves a die roll, you can use this power after you know the result of the die roll.
 
 Backflip:
   tier: Ribbon
