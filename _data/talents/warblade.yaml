@@ -175,6 +175,37 @@ Steel Wind Strike:
   fluff: |
     You can choose the order in which you Strike each of your targets.
 
+Iaijutsu:
+  tier: Master
+  type: Reaction
+  brief: You slash with incredible speed as you draw your weapon
+  traits: [Encounter]
+  tags:
+    trigger: A creature you can reach attacks you
+    requirements: You aren't wielding a weapon
+  effect: |
+    First {Interact} to draw a weapon, then make a melee {Strike} with that weapon against the triggering enemy. On a success, this Strike deals an extra 4d6 damage.
+
+Infinite Blades:
+  tier: Master
+  type: 1-Action
+  brief: You keep attacking an enemy as long as you keep hitting
+  traits: [Encounter]
+  effect: |
+    Make a melee {Strike}. On a success, you can immediately use Infinite Blades again.
+
+Style Mimicry:
+  tier: Master
+  type: Reaction
+  brief: You copy powers that you see other people use
+  traits: [Daily]
+  tags:
+    trigger: You see a creature use a power
+    requirements: The power doesn't have either the [[Daily]] or [[Spell]] traits
+    duration: 10 minutes
+  effect: |
+    You learn the triggering power.
+
 Call Weapon:
   tier: Ribbon
   type: Free

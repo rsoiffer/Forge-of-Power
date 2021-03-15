@@ -168,13 +168,46 @@ Deadly Techniques:
 
     The extra damage of your {Shadow Blade} power increases to 8d6.
 
-Quicksilver:
+Quivering Palm:
+  tier: Master
+  type: 1-Action
+  brief: You infuse your target with ki, which you can set off like a bomb
+  traits: [Encounter, Necrotic]
+  tags:
+    duration: 1 week
+  effect: |
+    Make a melee {Strike}. On a success, choose one of the following effects:
+    * Your target takes 8d6 damage
+    * You can use the **Quivering Death** power once on your target
+  aside: |
+    {% smallpower %}
+    Quivering Death:
+      type: 1-Action
+      traits: [Necrotic]
+      tags:
+        target: The target of your **Quivering Palm**
+      effect: |
+        Make a Spirit attack roll against your target's Strength DC.
+
+        Critical Success
+        : Double damage
+
+        Success
+        : Your target takes 12d6 damage
+
+        Failure
+        : Half damage
+    {% endsmallpower %}
+
+Strike the Soul:
   tier: Master
   type: Free
-  brief: You move with incredible speed, taking too many actions
+  brief: Your strikes hurt your opponent's spiritual perseverance
   traits: [Encounter]
+  tags:
+    trigger: You succeed on a melee Strike
   effect: |
-    Use any {% icon 1-Action %} Swordsage power or basic power.
+    The target of the triggering Strike takes 1 fatigue.
 
 Battle Aura:
   tier: Ribbon
