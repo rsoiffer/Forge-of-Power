@@ -87,7 +87,9 @@ Mutagen:
     target: One willing ally you can reach (including yourself)
     duration: 10 minutes
   effect: |
-    If your target has been affected by **Mutagen** in the past 8 hours, they take 2d6 damage. Choose one of the following effects.
+    Drinking multiple mutagens in a short time is very dangerous to the body. Your target takes 2d6 damage for each time they've been affected by **Mutagen** in the past 8 hours.
+
+    Choose one of the following effects.
 
     #### Bestial Mutagen
     Your target has advantage on {Athletics} rolls, and their unarmed Strikes deal 1d8 [[Slashing]] base damage. Your target has a -1 penalty to Defense.
@@ -144,6 +146,8 @@ Universal Gadget:
     duration: 1 minute
   effect: |
     You learn a Novice talent of your choice from any class. This talent cannot have the [[Daily]] trait.
+
+    If you learn a [[Spell]] talent, then you gain a [mystic origin](mystic-origins.html) for the duration if you didn't have one already. You must pay mana to cast the spell as normal.
 
 Upgrade Weapon:
   tier: Novice
@@ -244,6 +248,59 @@ Overload:
 
     Failure
     : Your target takes half damage
+
+Grenadier:
+  tier: Master
+  type: Passive
+  brief: You have a special launcher that lets you deliver bombs and potions at range
+  tags:
+    prerequisites: Alchemical Bomb, Brew Elixir, or Mutagen
+  effect: |
+    The range of your {Alchemical Bomb} power increases to 300 feet, and its area increases to a 20-foot burst.
+
+    If you know the {Brew Elixir} power, you can use the {Interact} power to splash a dose of elixir on a willing ally within 120 feet, granting them the effect of the elixir.
+
+    Your {Mutagen} power gains a range of 120 feet. It targets one willing ally within range.
+
+Multiversal Gadget:
+  tier: Master
+  type: Passive
+  brief: You can build gadgets that do just about anything in the world
+  tags:
+    prerequisites: Universal Gadget
+  effect: |
+    When you use your {Universal Gadget} power, you can learn any talent of up to Master tier from any class. This talent cannot have the [[Daily]] trait.
+
+Siege Engineer:
+  tier: Master
+  type: 1-Action
+  brief: You activate a powerful weapon that you constructed earlier
+  traits: [Daily]
+  tags:
+    duration: 1 minute
+  effect: |
+    You can use the **Siege Weapon** power once.
+
+    When you use this power, choose one of the [[Acid]], [[Bludgeoning]], [[Electricity]], [[Fire]], [[Piercing]], or [[Sonic]] traits. The **Siege Weapon** power gains that trait.
+  aside: |
+    {% smallpower %}
+    Siege Weapon:
+      type: 1-Action
+      traits: [Attack]
+      tags:
+        range: 1 mile
+      effect: |
+        Make an Intellect attack roll against your target's Defense. This attack is automatically a critical success if your target is a large, stationary object or structure.
+
+        Critical Success
+        : Double damage
+
+        Success
+        : Your target takes 20d6 damage
+
+        Failure
+        : Half damage
+    {% endsmallpower %}
 
 Clockwork Tinker:
   tier: Ribbon

@@ -137,6 +137,18 @@ Volley:
   effect: |
     Make a ranged {Strike}. This Strike targets all creatures in this power's area.
 
+Hunter's Instincts:
+  tier: Master
+  type: Free
+  brief: You can see enemies through walls, and can track their health and footprints
+  tags:
+    area: 300-foot emanation, which follows you for the duration
+    duration: 1 minute
+  effect: |
+    You can sense all creatures in this power's area as well as if you could see them.
+
+    You have a +10 bonus to Intellect+Travel rolls made to track creatures.
+
 Sharpened Focus:
   tier: Master
   type: Passive

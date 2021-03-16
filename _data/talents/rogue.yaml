@@ -11,7 +11,13 @@ Bleeding Strike:
   brief: You slice your target open, causing them to start bleeding out
   traits: [Encounter]
   effect: | 
-    Make a melee Strike with a weapon that deals [[Piercing]] or [[Slashing]] damage. On a success, the target of your Strike starts bleeding. On a critical success, the bleed damage is doubled.
+    Make a melee Strike with a weapon that deals [[Piercing]] or [[Slashing]] damage. This Strike gains the following effects.
+
+    Critical Success
+    : As success, and the bleed damage is doubled
+
+    Success
+    : Your target starts **bleeding**
   aside: |
     ### Bleeding Condition
 
@@ -123,6 +129,39 @@ Stumbling Steps:
     prerequisites: Sidestep
   effect: |
     Your {Sidestep} power loses the [[Encounter]] trait. You have +2 Defense while adjacent to two or more enemies.
+
+Guess Who's Back:
+  tier: Master
+  type: Passive
+  brief: You can never truly be defeated, as you always find a way back
+  effect: |
+    You cannot be permanently killed, jailed, disabled, or otherwise prevented from acting freely. Whenever you are seemingly killed or disabled, after 1 week or so, the GM should introduce some kind of plot contrivance to let you rejoin the action. This might come at a minor narrative cost, such as losing your equipment, owing a favor to your rescuers, or being targeted by a magical curse.
+
+Night Stalker:
+  tier: Master
+  type: Free
+  brief: You remain hidden even when you would normally be seen
+  tags:
+    trigger: One or more creatures would notice you
+  effect: |
+    Make an Agility+Stealth roll against the Intellect+Notice DC of all creatures trying to notice you.
+
+    Success
+    : The triggering creatures do not notice you, and cannot perceive you for the rest of your turn
+
+    *This power lets you Strike without being seen, sneak through an open room with no cover, or otherwise act brazenly while remaining hidden. Since this power only lasts until the end of your turn, you must end your turn in a hiding spot if you want to stay hidden.*
+
+Poison Expert:
+  tier: Master
+  type: Passive
+  brief: You make use of deadlier poisons that disable your enemies
+  tags:
+    prerequisites: Poison Blade
+  effect: |
+    When you damage a creature with your {Poison Blade} power, choose one of the following effects:
+    * The damage increases to 8d6
+    * Your target is {blinded} until the end of their next turn
+    * Your target is {incapacitated} until the end of their next turn
 
 Ambush Master:
   tier: Ribbon
