@@ -244,7 +244,7 @@ Defensive Shield:
   tags:
     prerequisites: Elemental Shield
   effect: |
-    Your {Elemental Shield} power gains the following heightened effect.
+    Your {Elemental Shield} power gains the following effect.
 
     #### Heightened
 

@@ -90,13 +90,19 @@ Tumble:
     target: One creature adjacent to you
     duration: Until the start of your next turn
   effect: |
-    Make an Agility+Atheletics attack roll against your target's Agility DC.
+    Make an Agility+Athletics attack roll against your target's Agility DC.
 
     Critical Success
     : As success, except your target is {flat-footed} against everyone
 
     Success
     : You move through your target's space to any empty space adjacent to them, and your target is {flat-footed} against you
+
+    Failure
+    : No effect
+
+    Critical Failure
+    : You are {flat-footed} against everyone
 
     Using this power doesn't trigger any reactions.
 

@@ -268,7 +268,7 @@ Sacred Spell:
     trigger: You cast a spell
     requirements: Either the triggering spell is a Healer spell or it doesn't deal damage
   effect: |
-    Reduce the cost of the triggering spell by 2.
+    The triggering spell has -2 cost.
 
 Blessed Healer:
   tier: Ribbon

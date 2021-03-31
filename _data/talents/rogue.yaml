@@ -118,6 +118,7 @@ Opportune Backstab:
   brief: You capitalize upon the distraction when your enemy gets hit
   tags:
     trigger: A Strike suceeds against a creature you can reach
+    requirements: A creature other than you made the triggering Strike
   effect: |
     Make a melee Strike against the triggering creature.
 

@@ -14,7 +14,7 @@ Immobilized: You can't use any power with the [[Move]] trait. If you're immobili
 
 Incapacitated: You are unable to fight. You can't use any {% icon 1-Action %} or {% icon Reaction %} powers.
 
-Prone: You're lying on the ground. You are {flat-footed} and have disadvantage on attack rolls. The only [[Move]] power you can use while prone is {Stride}, and you can only move by crawling. You have [cover](combat-rules.html#cover) from enemies more than 20 feet from you.
+Prone: You're lying on the ground. You are {flat-footed} and have disadvantage on attack rolls. The only [[Move]] powers you can use are {Stand} and {Stride}, and you can only move by crawling, which is normally at half Speed. You have [cover](combat-rules.html#cover) from enemies more than 20 feet from you.
 
 Restrained: You're tied up and can barely move, or a creature has you pinned. You are {flat-footed} and {immobilized}, and you can't use any powers with the [[Attack]] or [[Manipulate]] traits except the {Escape} power.
 

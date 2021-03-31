@@ -8,7 +8,7 @@ Color Spray:
     area: 15-foot cone
     duration: Varies
   effect: |
-    Make a Magic attack roll against your target's Spirit DC.
+    Make a Magic attack roll against your target's Intellect DC.
 
     Critical Success
     : Your target is {blinded} for 1 minute
@@ -48,7 +48,7 @@ Illusory Disguise:
     range: 10 feet
     duration: 1 hour, or until you decide to end it
   effect: |
-    Your target is covered in a visual illusion that makes them look like another creature of the same body shape, and with roughly similar height and weight as themself. The illusion can change the appearance of your target's clothing and worn items, but held items are unaffected, and any worn item your target removes returns to its true appearance.
+    Your target is covered in a visual illusion that makes them look like another creature of the same body shape, and with roughly similar height and weight as themself. The illusion can change the appearance of your target's worn and held items, but any item your target removes or drops returns to its true appearance.
 
     #### Heightened
 
@@ -103,7 +103,7 @@ Phantom Pain:
     range: 30 feet
     duration: Sustained, up to 1 minute
   effect: |
-    Make a Magic attack roll against your target's Spirit DC.
+    Make a Magic attack roll against your target's Intellect DC.
 
     Critical Success
     : Your target takes 2d4 damage and is {stunned} until the end of their next turn
@@ -127,7 +127,7 @@ Phantom Treasure:
   effect: |
     Your target sees a phantasm of the most precious thing imaginable to them, whether that's a pile of items, a deific avatar, or a cherished loved one or hero. Your target is {dazzled} as they are entirely focused on the phantom treasure. Your target doesn't use any powers unless they're in combat or there is an immediate danger.
 
-    Make a Magic attack roll against your target's Spirit DC.
+    Make a Magic attack roll against your target's Intellect DC.
 
     Critical Success
     : This spell lasts 10 minutes
@@ -167,7 +167,7 @@ Hypnotic Pattern:
     area: 20-foot burst
     duration: 10 minutes, until your target takes any damage, or until you decide to end it
   effect: |
-    Make a Magic attack roll against your target's Spirit DC.
+    Make a Magic attack roll against your target's Intellect DC.
 
     Success
     : Your target is {stunned}
@@ -195,6 +195,8 @@ Illusory Terrain:
     #### Heightened
 
     If you add +2 Mana, this spell's duration changes to Forever.
+
+    For each +1 Mana, the radius of the the burst doubles.
 
 Mislead:
   tier: Veteran
@@ -250,6 +252,102 @@ Shadow Clone:
       effect: |
         You reveal that you and a clone actually swapped places in the past, and that you're really somewhere else! You and your clone trade positions, status effects, ongoing powers, and so on. If this power was triggered by you being targeted by a power, the power targets your clone instead.
     {% endsmallpower %}
+
+Alter Illusion:
+  tier: Master
+  type: Free
+  brief: You alter an existing illusion to show something completely different
+  traits: [Concentrate]
+  tags:
+    range: 120 feet
+    requirements: Your target is affected by an ongoing [[Illusion]] spell
+  effect: |
+    You modify the target illusion to show something different. You can modify the illusion in a smooth way so that it appears to animate naturally. If the illusion covers an area, you can move the area up to 30 feet.
+
+    Optionally, as you alter the illusion, you can have it briefly become real for a fraction of a second. This generally has no permanent effect on the world, but an illusory flame could start a fire, or an illusory giant could shake the ground as it steps. To use this effect to deal damage, use the **Painful Illusion** power.
+
+    *For example, if you are disguised by an {Illusory Disguise}, you could alter the disguise to make you look like a different creature. Alternatively, if an enemy cast {Illusory Object} to create a stone wall, you could alter the wall to have a door for you to see or walk through.*
+
+    *As another example, if you cast {Illusory Object} to create an illusory person, you could animate the person to appear to walk naturally. If you have the {Tactile Illusions} power, you could also have the person speak, carry objects, and so on. You could even have this person run up and punch someone, using **Painful Illusion** on the target of the not-so-illusory punch.*
+  aside: |
+    {% smallpower %}
+    Painful Illusion:
+      type: 1-Action
+      traits: [Attack, Cantrip, Spell]
+      tags:
+        cost: 0 Mana
+        target: One creature within 10 feet of the target of **Alter Illusion**
+      effect: |
+        When you use this power, it gains a damage type that matches the content of the illusion. For example, an illusory spike is [[Piercing]], while an illusory lava flow is [[Fire]].
+
+        Make a Magic attack roll against your target's Defense.
+
+        Success
+        : Your target takes 2d6 damage
+
+        #### Heightened
+
+        For each +1 Mana, the damage increases by 2d6.
+    {% endsmallpower %}
+
+Deceitful Fog:
+  tier: Master
+  type: 1-Action
+  brief: You conjure a fog filled with illusions that confuse your enemies
+  traits: [Spell]
+  tags:
+    cost: 6 Mana
+    range: 120 feet
+    area: 20-foot burst
+    duration: 10 minutes, or until you decide to end it
+  effect: |
+    The spell's area is filled with light fog that blocks all vision beyond 10 feet. At the end of each of your turns, you can move the fog up to 60 feet.
+
+    You can use the **Distracting Fog** power.
+
+    #### Heightened
+
+    For each +1 Mana, the radius of the burst increases by 20 feet.
+  aside: |
+    {% smallpower %}
+    Distracting Fog:
+      type: Free
+      tags:
+        target: Any number of creatures in the area of **Deceitful Fog**
+        duration: Until the start of your next turn
+      effect: |
+        Your target is {dazzled} and {slowed}.
+    {% endsmallpower %}
+
+Phantom Prison:
+  tier: Master
+  type: 1-Action
+  brief: You trap a creature in an mental prison that only it can percieve
+  traits: [Attack, Phantasm, Spell]
+  tags:
+    cost: 6 Mana
+    range: 60 feet
+    duration: Varies
+  effect: |
+    Your target is {restrained}, as they imagine they are surrounded by terrible hazards. At any time, your target can choose to act despite these hazards. If they do, this spell immediately ends and your target takes 14d8 damage.
+
+    Make a Magic attack roll against your target's Intellect DC.
+
+    Critical Success
+    : This spell lasts 10 minutes
+
+    Success
+    : This spell lasts 1 minute
+
+    Failure
+    : This spell lasts until the end of your target's next turn
+
+    Critical Failure
+    : This spell ends immediately
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 2d8.
 
 Chameleon:
   tier: Ribbon

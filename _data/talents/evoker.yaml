@@ -254,7 +254,74 @@ Shieldbreaker:
   effect: |
     Your target takes additional damage from the triggering spell equal to half their remaining amount of Shield against the triggering spell.
 
-    *For example, imagine you deal 4 [[Fire]] damage with a spell, and your target has 6 [[Fire]] Shield remaining out of 10 [[Fire]] Shield total. Then the spell deals an extra 6/2 = 3 damage, for a total of 7 [[Fire]] damage. You break through your target's Shield and deal 1 damage to their health.*
+    *For example, imagine you deal 4 [[Fire]] damage with a spell, and your target has 6 [[Fire]] Shield remaining out of 20 [[Fire]] Shield total. Then the spell deals an extra 6/2 = 3 damage, for a total of 7 [[Fire]] damage. You break through your target's Shield and deal 1 damage to their health.*
+
+Eldritch Might:
+  tier: Master
+  type: Free
+  brief: You empower a spell, increasing its damage beyond normal limits
+  traits: [Encounter]
+  tags:
+    trigger: You cast a spell
+    requirements: Either the triggering spell is an Evoker spell or it deals damage
+  effect: |
+    The triggering spell has -2 cost.
+
+Invoke Chain:
+  tier: Master
+  type: 1-Action
+  brief: You send out a chain of energy that can hit an unlimited number of targest
+  traits: [Spell]
+  tags:
+    cost: 6 Mana
+    range: 120 feet
+  effect: |
+    Use the **Leaping Chain** effect on your target. No matter how many times you use **Leaping Chain**, you can't choose the same target twice.
+
+    #### Heightened
+
+    For each +1 Mana, the damage of **Leaping Chain** increases by 1d6.
+  aside: |
+    {% smallpower %}
+    Leaping Chain: 
+      traits: [Attack, Invocation]
+      effect: |
+        Make a Magic attack roll against your target's Agility DC.
+
+        Success
+        : Your target takes 7d6 damage, and you can immediately use **Leaping Chain** again on another target within 30 feet of your target
+
+        Failure
+        : Half damage
+    {% endsmallpower %}
+
+Invoke Disintegrate:
+  tier: Master
+  type: 1-Action
+  brief: You disintegrate a material, turning it entirely to dust
+  traits: [Attack, Death, Invocation, Spell]
+  tags:
+    cost: 6 Mana
+    range: 60 feet
+  effect: |
+    Make a Magic attack roll against your target's Strength DC.
+
+    Critical Success
+    : Double damage
+
+    Success
+    : Your target takes 14d8 damage
+
+    Failure
+    : Half damage
+
+    If your target has the same trait as this spell's damage type, this spell deals double damage.
+
+    *For example, this spell deals double damage if you [[Cold]] Disintegrate a {Elemental Wall} of ice or if you [[Fire]] Disintegrate a Fire Elemental.*
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 2d8.
 
 Awesome Destruction:
   tier: Ribbon

@@ -182,7 +182,10 @@ Vengeful Ghost:
 
     Optionally, when you cast this spell, you can name and describe a specific enemy creature you're seeking revenge on. If there are any ghosts who want to harm specifically this chosen enemy (for example, a ghost seeking revenge against their murderer), you summon an especially powerful vengeful ghost.
 
-    If you summon a vengeful ghost, the damage of **Ghost Punch** increases to 3d6, but it can only target the chosen enemy. In addition, you always know the exact direction towards your chosen enemy.
+    If you summon a vengeful ghost, then:
+    * The damage of **Ghost Punch** increases to 3d6
+    * **Ghost Punch** can only target the chosen enemy
+    * You always know the exact direction towards your chosen enemy
 
     #### Heightened
 
@@ -200,6 +203,31 @@ Vengeful Ghost:
         Success
         : Your target takes 2d6 damage
     {% endsmallpower %}
+
+Circle of Death:
+  tier: Veteran
+  type: 1-Action
+  brief: You unleash a wave of negative energy that desecrates an area of land
+  traits: [Attack, Necrotic, Spell]
+  tags:
+    cost: 4 Mana
+    range: 120 feet
+    area: 20-foot burst
+    duration: 1 week
+  effect: |
+    Make a Magic attack roll against your target's Strength DC.
+
+    Success
+    : Your target takes 5d6 damage
+
+    Failure
+    : Half damage
+
+    All ground in the spell's area is desecrated for the duration. All Veteran Necromancers (and all minions controlled by Veteran Necromancers) have advantage on attacks against enemies standing on desecrated ground.
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 1d6 and the radius of the burst increases by 10 feet.
 
 Dark Aura:
   tier: Veteran
@@ -321,10 +349,74 @@ Terror:
     Make a Magic attack roll against your target's Spirit DC.
 
     Critical Success
-    : Your target is {terrified} and has -5 to their Spirit DC
+    : Your target is {terrified} and has a -5 penalty to their Spirit DC
 
     Success
     : Your target is {terrified}
+
+Blood Drain:
+  tier: Master
+  type: 1-Action
+  brief: You drain the blood out of nearby enemies, using it to heal yourself
+  traits: [Attack, Healing, Necrotic, Spell]
+  tags:
+    cost: 7 Mana
+    range: 30 feet
+    target: Up to 10 creatures you can see within range
+  effect: |
+    Make a Magic attack roll against your target's Strength DC.
+
+    Success
+    : Your target takes 8d6 damage, and you heal 2d6 health
+
+    Failure
+    : Half damage
+
+    #### Heightened
+
+    The damage increases by 1d6 and the maximum number of targets increases by 1.
+
+Create Undead:
+  tier: Master
+  type: 1-Action
+  brief: You reanimate a corpse as a powerful, unique undead
+  traits: [Spell]
+  tags:
+    cost: 6 Mana
+    range: 30 feet
+    target: A corpse you can see within range
+    requirements: In life, the corpse was a creature of CR 6 or less
+  effect: |
+    Your target comes back to life as an undead. If your target was unintelligent in life, it becomes an unintelligent lesser undead. If your target was intelligent in life, the GM decides whether it becomes an unintelligent lesser undead or an intelligent greater undead. Your target has the same stats it had in life, except it gains the [[Undead]] trait. Your target may or may not be friendly towards you.
+
+    #### Heightened
+
+    For each +1 Mana, the maximum CR increases by 1.
+
+Shadow Assassin:
+  tier: Master
+  type: 1-Action
+  brief: You animate a creature's shadow, causing it to attack them
+  traits: [Attack, Necrotic, Spell]
+  tags:
+    cost: 6 Mana
+    range: 60 feet
+    duration: Sustained, up to 10 minutes
+  effect: |
+    Make a Magic attack roll against your target's Spirit DC.
+
+    Critical Success
+    : As success, and your target is {terrified}
+
+    Success
+    : Your target takes 7d6 damage and is {flat-footed}
+
+    Failure
+    : Your target is {flat-footed}
+
+    #### Heightened
+
+    For each +1 Mana, the damage increases by 1d6.
 
 Consume Life:
   tier: Ribbon

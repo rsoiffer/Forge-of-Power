@@ -280,6 +280,52 @@ Slow:
     Failure
     : Your target is {slowed}
 
+Control Gravity:
+  tier: Master
+  type: 1-Action
+  brief: You change the direction of gravity in an area
+  traits: [Attack, Spell]
+  tags:
+    cost: 7 Mana
+    range: 10 feet
+    duration: Sustained, up to 10 minutes
+  effect: |
+    Make a Magic attack roll against your target's Agility DC.
+
+    Success
+    : Your target is no longer affected by normal gravity. Your target immediately falls up to 80 feet in a direction of your choice, taking fall damage as normal if they hit a solid object (1d6 damage per 10 feet they fall).
+
+    #### Heightened
+
+    For each +1 Mana, you can target another creature within range.
+
+    For each +1 Mana, the maximum fall distance increases by 10 feet.
+
+Mass Teleport:
+  tier: Master
+  type: Passive
+  brief: You teleport multiple creatures extremely long distances
+  tags:
+    prerequisites: Dimension Door
+  effect: |
+    When you use your {Dimension Door} power, you can teleport up to 5 willing creatures you can reach along with you. In addition, your Dimension Door power gains the following effect.
+
+    #### Heightened
+
+    For each +1 Mana, the range is multiplied by 20.
+
+Rewind:
+  tier: Master
+  type: 1-Action
+  brief: You travel back from the future, returning to a state when you were less hurt
+  traits: [Healing, Spell]
+  tags:
+    cost: 8 Mana
+  effect: |
+    You heal half your missing health and gain the effect of {Future Sight}. At the GM's discretion, you might also gain knowledge of a major event that will happen in the next few days.
+  fluffstart: |
+    Your future self send aid back to the current time, causing your present injuries to fade and giving you knowledge of the future.
+
 Augury:
   tier: Ribbon
   type: 1-Action

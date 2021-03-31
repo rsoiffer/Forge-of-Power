@@ -293,6 +293,50 @@ Wall of Force:
 
     The wall is physically solid and is weightless. Each panel has 100 Health and 100 [[Anything]] Shield. You choose whether the wall is free-floating or whether it rests on a solid surface.
 
+Antimagic Field:
+  tier: Master
+  type: 1-Action
+  brief: You conjure a field that blocks all magic within an area
+  traits: [Ritual, Spell]
+  tags:
+    cost: 6 Mana
+    range: 120 feet
+    area: 10-foot burst
+    duration: 1 hour
+  effect: |
+    You conjure an antimagic field that fills the spell's area. Creatures within the field cannot cast spells, and new spells cannot target anything within the field. Any existing spell affecting a target within the field is temporarily suppressed on that target. (While suppressed, the spell has no effect on the target, but its duration still counts down.)
+
+    *Antimagic Field does not suppress itself. That would just be silly.*
+
+    #### Heightened
+
+    For each +1 Mana, the radius of the burst doubles.
+
+Forcecage:
+  tier: Master
+  type: 1-Action
+  brief: You trap your target in a conjured cage of magical force
+  traits: [Force, Spell]
+  tags:
+    cost: 7 Mana
+    range: 120 feet
+    duration: 1 hour
+  effect: |
+    Your target is {immobilized}. You have a +10 bonus to Magic DC against any attempts to free or move your target, such as the {Escape} power. This spell ends immediately if your target is moved with a [[Teleportation]] power.
+
+Reactive Ward:
+  tier: Master
+  type: Passive
+  brief: You can conjure wards around your allies right before they're hit
+  tags:
+    prerequisites: Protector Ward
+  effect: |
+    Your {Protector Ward} power gains the following effect.
+
+    #### Heightened
+
+    If you add +1 Mana, this spell is {% icon Reaction %} instead of {% icon 1-Action %}, and it gains a trigger of "Your target takes damage". This spell's duration changes to 1 minute.
+
 Floating Disk:
   tier: Ribbon
   type: 1-Action
