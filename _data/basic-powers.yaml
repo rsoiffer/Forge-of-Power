@@ -50,7 +50,18 @@ Grapple:
     Failure
     : This power ends immediately
 
-    You can use the **Maintain Grapple** power. Your Speed is halved, but when you use a [[Move]] power, you can choose to move your target along with you.
+    You are {slowed}, but when you use a [[Move]] power, you can choose to move your target along with you.
+
+    You can use the **Maintain Grapple** power.
+  aside: |
+    {% smallpower %}
+    Maintain Grapple:
+      type: Free
+      tags:
+        target: The target of {Grapple}
+      effect: |
+        {Grapple} your target again.
+    {% endsmallpower %}
 
 Help:
   type: 1-Action

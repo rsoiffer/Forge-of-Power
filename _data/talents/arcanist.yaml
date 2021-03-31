@@ -175,6 +175,8 @@ Arcane Hand:
         range: 60 feet
       effect: |
         You {Disarm}, {Grapple}, {Shove}, or {Trip} your target. Use your Magic score instead of your Strength score for the attack roll.
+
+        *If you Grapple a creature, you don't need to be able to reach them, you aren't {slowed}, and you can't drag them with you when you move. It's the hand grabbing them, not you.*
     {% endsmallpower %}
 
     {% smallpower %}

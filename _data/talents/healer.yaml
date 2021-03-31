@@ -11,6 +11,8 @@ Aid:
   effect: |
     Your target's maximum and current health both increase by 2d6.
 
+    *When this spell ends, your target's maximum health returns to normal, but their current health doesn't decrease.*
+
     #### Heightened
     
     For each +1 Mana, your target's maximum and current health both increase by an additional 1d6.

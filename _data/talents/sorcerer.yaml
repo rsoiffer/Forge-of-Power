@@ -324,7 +324,7 @@ Rewind:
   effect: |
     You heal half your missing health and gain the effect of {Future Sight}. At the GM's discretion, you might also gain knowledge of a major event that will happen in the next few days.
   fluffstart: |
-    Your future self send aid back to the current time, causing your present injuries to fade and giving you knowledge of the future.
+    Your future selfs send aid back to the current time, causing your present injuries to fade and giving you knowledge of the future.
 
 Augury:
   tier: Ribbon
