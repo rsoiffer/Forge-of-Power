@@ -204,6 +204,8 @@ An aspect is a 2-5 word phrase that describes part of your character's personali
 * If you chose an attribute flaw, an aspect describing the flaw
 * As many additional aspects as you want, up to a maximum of 10
 
+Writing down more aspects is always better. Detailed aspects both help flesh out your character and give you more options to use [Setbacks](narrative-rules#setbacks).
+
 Finally, tell the GM your character's backstory.
 
 <script type="module" src="{% link assets/js/roll-me-one.js %}"></script>
