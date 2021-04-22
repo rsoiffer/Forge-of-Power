@@ -311,7 +311,7 @@ Scout Form:
 Advanced Form:
   tier: Veteran
   type: Passive
-  brief: You can change between many animal forms at a time
+  brief: You can change into a more powerful or versatile animal form
   tags:
     prerequisites: Combat Form or Scout Form
   effect: |
@@ -410,32 +410,112 @@ Transmute:
 
     If you add +1 Mana, the duration of this spell is 24 hours. If you instead add +2 Mana, the duration of this spell is Forever.
 
-# Petrify:
-#   tier: Master
-#   type: 1-Action
-#   brief: You petrify a creature, transforming its flesh into stone
-#   traits: [Attack, Spell, Transfiguration]
-#   tags:
-#     cost: 6 Mana
-#     range: 60 feet
-#     duration: Sustained, up to 1 minute
-#   effect: |
-#     Make a Magic attack roll against your target's Strength DC.
+Petrify:
+  tier: Master
+  type: 1-Action
+  brief: You petrify a creature, transforming its flesh into stone
+  traits: [Attack, Spell, Transfiguration]
+  tags:
+    cost: 6 Mana
+    range: 60 feet
+    duration: Sustained, up to 1 minute
+  effect: |
+    Make a Magic attack roll against your target's Strength DC.
 
-#     Critical Success
-#     : Your target is {restrained}, but has 20 [[Anything]] Shield as their flesh hardens to stone
+    Critical Success
+    : Your target is {restrained}, but has 20 [[Anything]] Shield as their flesh hardens to stone
 
-#     Success
-#     : Your target is {flat-footed} and {immobilized}
+    Success
+    : Your target is {flat-footed} and {immobilized}
 
-#     Failure
-#     : Your target is {slowed}
+    Failure
+    : Your target is {slowed}
 
-#     If you sustain this spell for the full minute, or if your target dies, this spell lasts forever.
+    If you sustain this spell for the full minute, or if your target dies, this spell lasts forever.
 
-#     #### Heightened
+    #### Heightened
 
-#     For each +1 Mana, you can target another creature within range.
+    For each +1 Mana, you can target another creature within range.
+
+Reshape Terrain:
+  tier: Master
+  type: Free
+  brief: You take control over the shape of nearby terrain and structures
+  traits: [Spell]
+  tags:
+    cost: 7 Mana
+    duration: Sustained, up to 10 minutes
+  effect: |
+    You can use the **Carve Surface**, **Liquify**, **Move Terrain**, and **Pillar** powers.
+  tabs:
+    Carve Surface:
+      type: 1-Action
+      tags:
+        range: 120 feet
+        area: 20-foot burst
+      effect: |
+        You manipulate the shape of all terrain surfaces within range. Choose one of the following effects:
+        * You cause shapes and colors to appear on surfaces, spelling words or drawing images
+        * You precisely carve the terrain surface into a specific shape
+        * You cause the ground to go from normal terrain to difficult terrain, or vice versa
+    Liquify:
+      type: 1-Action
+      traits: [Transfiguration]
+      tags:
+        range: 120 feet
+        area: 20-foot burst
+        duration: 1 minute
+      effect: |
+        All terrain in the area liquifies, gaining the consistency of sticky mud. The mud might fall or flow around, and any ground it covers becomes difficult terrain. A creature that ends its turn in the mud is {immobilized} as it sinks into the mud.
+
+        When this power ends, the mud solidifies back to its original consistency. Any creatures in the mud when it solidifies are {restrained}.
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Reshape Terrain**, the radius of the burst increases by 10 feet.
+    Move Terrain:
+      type: 1-Action
+      tags:
+        range: 120 feet
+        area: Up to ten adjacent 5-foot cubes
+        requirements: The area is convex (it doesn't contain any holes)
+      effect: |
+        You move nearby terrain to fill the target area. If the area was already full, you instead empty the area.
+
+        *This power does not create or destroy material. You cannot use this power to empty an area if there is no extra terrain or empty space within range.*
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Reshape Terrain**, you can target an additional two 5-foot cubes.
+    Pillar:
+      type: 1-Action
+      traits: [Attack, Bludgeoning]
+      tags:
+        range: 120 feet
+        area: 20-foot line
+        requirements: The line starts in a solid area
+      effect: |
+        A solid pillar suddenly extends out of the terrain, filling this spell's area. Make a Magic attack roll against your target's Agility DC.
+
+        Success
+        : Your target takes 4d6 damage and is pushed to the end of the pillar. If this pushes your target into a solid structure, they take double damage and are {immobilized}.
+
+        #### Heightened
+
+        For each +2 Mana you spent on **Reshape Terrain**, the damage increases by 1d6.
+
+Supernatural Form:
+  tier: Master
+  type: Passive
+  brief: You can change into the form of a magical beast 
+  tags:
+    prerequisites: Combat Form or Scout Form
+  effect: |
+    When you use your {Combat Form} or {Scout Form} power, you can take on the appearance of a magical beast, a monster, or a mythological animal you invent. You can choose one of the following effects.
+    * You learn a Novice or Veteran spell of your choice from any class. This spell loses the [[Manipulate]] trait.
+    * You have 10 [[Elemental]] Shield.
+    * You can speak and use equipment normally. You can use [[Manipulate]] powers normally.
+    * When another creature starts its turn within 10 feet of you, it takes 2d6 damage. This power gains one of the [[Cold]], [[Electricity]], or [[Fire]] traits.
 
 Eye of the Moon:
   tier: Ribbon

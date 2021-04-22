@@ -283,6 +283,7 @@ Consecrate:
   brief: You imbue an area with sacred magic that affects creatures inside
   traits: [Ritual, Spell]
   tags:
+    cost: 6 Mana
     range: 30 feet
     area: 60-foot burst
     duration: Forever

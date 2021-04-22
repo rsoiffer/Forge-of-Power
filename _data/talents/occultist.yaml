@@ -304,6 +304,61 @@ Prophecy:
         The chosen spell takes effect.
     {% endsmallpower %}
 
+Devil's Luck:
+  tier: Master
+  type: Passive
+  brief: You are an infinite source of bad luck to others
+  tags:
+    prerequisites: Bad Luck Charm
+  effect: |
+    Your {Bad Luck Charm} power is no longer {% icon Reaction %}, you can use it any time the trigger is met.
+
+Dominate:
+  tier: Master
+  type: 1-Action
+  brief: You take control of a target's body, forcing them to act
+  traits: [Attack, Mental, Spell]
+  tags:
+    cost: 8 Mana
+    duration: Sustained, up to 1 hour
+  effect: |
+    Make a Magic attack roll against your target's Spirit DC.
+
+    Critical Success
+    : As success, and you automatically succeed on the attack roll when you sustain this spell in the future
+
+    Success
+    : Your target is **dominated**
+
+    Failure
+    : Your target is {flat-footed}
+
+    If you order your target to do something strongly against their nature, such as attacking an ally, they can try to resist your domination. Your target makes a Spirit roll against your Magic DC. On a success, their turn ends, or on a critical success, this power ends.
+
+    #### Heightened
+
+    If you add +1 Mana, the duration changes to 8 hours.
+  aside: |
+    ### Dominated Condition
+
+    If you are dominated, you are being controlled by another creature. The other creature has a telepathic link to you and can give you orders. If you aren't given any orders, you can act normally.
+
+Forbidden Lore:
+  tier: Master
+  type: 1-Action
+  brief: You learn eldritch information about a topic that overloads the mind
+  traits: [Mental, Spell]
+  tags:
+    cost: 6 Mana
+    range: 30 feet
+    target: Yourself, plus any number of creatures within range
+  effect: |
+    Describe a person, place, or object. Your target learns a brief summary of the significant lore about that thing. The information you learn is accurate but might be couched in figurative language.
+
+    Optionally, you can choose for this spell to give further detail. Your target learns everything there is to know about that thing. However, the overload of information means your target takes 7d10 damage and is {terrified} of that thing until the end of their next turn.
+
+    *You can't exclude yourself from this spell's effect. This means that if you damage an enemy with this spell, you will always take the damage as well.*
+
 Eldritch Lore:
   tier: Ribbon
   type: 1-Action

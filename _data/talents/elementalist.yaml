@@ -181,7 +181,7 @@ Elemental Mobility:
   traits: [Specialize, Spell]
   tags:
     cost: 1 Mana
-    duration: Sustained, up to 1 minute
+    duration: 1 minute
   effect: |
     You have a +10 feet bonus to Speed.
 
@@ -334,7 +334,7 @@ Control Air:
   effect: |
     You can use the **Alter Winds**, **Dancing Leaf**, **Earthbind**, and **Gust** powers.
 
-    If you use any of these powers while another one of these powers is active, the other power immediately ends.
+    If you use any of these powers (other than **Dancing Leaf**) while another one of these powers is active, the other power immediately ends.
   tabs:
     Alter Winds:
       type: 1-Action
