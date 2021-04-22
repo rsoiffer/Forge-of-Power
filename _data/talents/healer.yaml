@@ -139,7 +139,7 @@ Smite Evil:
   tags:
     cost: 1 Mana
     trigger: You succeed on a {Strike}
-    target: The target of your Strike
+    target: One target of your Strike
   effect: |
     Your target takes 2d6 damage. If your target is an [[Outsider]] or an [[Undead]], this damage is doubled.
 

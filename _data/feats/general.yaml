@@ -2,7 +2,9 @@ Blind Fighter:
   type: Passive
   brief: You are an effective fighter even when you're unable to see
   effect: |
-    As long as you can hear and feel, you can sense objects within 30 feet as well as if you could see. The {blinded} condition has no effect on you besides making you critically fail {Notice} rolls that rely on seeing things that are more than 30 feet away.
+    As long as you can hear and feel, you can sense objects within 30 feet as well as if you could see.
+
+    Low [visibility](combat-rules.html#visibility) (including the {dazzled} and {blinded} conditions) has no effect on you. If are {blinded} or have no vision, you still critically fail Notice rolls that rely on seeing objects more than 30 feet from you.
   fluff: |
     The GM should give this as a free feat to all permanently blind player characters.
 
@@ -29,19 +31,29 @@ Familiar:
 
     If your familiar dies, you can resummon it with a 1-hour ritual.
 
+Innate Focus:
+  type: Passive
+  brief: You can cast spells from your body instead of from an arcane focus
+  tags:
+    prerequisites: A mystic origin
+  effect: |
+    You don't need to wield an arcane focus in order to cast spells. Choose one type of magical weapon, such as [orbs](equipment.html#orb) or [staves](equipment.html#staff). You don't need to wield this weapon in order to use combat feats for this weapon.
+
 Master of Many Forms:
   type: Free
   brief: You can use a variety of different forms to adapt to any situation
   tags:
     prerequisites: Any [[Specialize]] power
   effect: |
-    Choose one [[Specialize]] power you know. Change the specialization you picked for that power. If the power is currently active, this doesn't apply to that instance of the power.
+    Choose one [[Specialize]] power you know. Change the specialization you picked for that power. If the power is currently active, this change doesn't apply to that instance of the power.
 
 Resilient:
   type: Passive
   brief: You are especially resilient against a particular damage type
   effect: |
     Choose one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Necrotic]], [[Radiant]], or [[Sonic]] traits. You have 10 Shield of the chosen trait.
+
+    You can pick this feat multiple times. You can pick the same trait or a different trait each time.
 
 Skilled:
   type: Passive

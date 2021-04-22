@@ -15,9 +15,57 @@ Some powers have an **area**. If the power lists a range, the area is centered o
 
 Some powers have a **duration**. When the duration ends, the power's effect completely ends. The world returns to its normal state, as if the power hadn't been used. Any permanent changes the power made to the world, such as inflicting or healing damage, don't disappear when the power ends. You can't end an ongoing power early unless it specifies that in its duration.
 
+## Visibility
+
+When you try to fight while you can't see very well, you take penalties based on how badly you can see.
+
+<table>
+  <tr>
+    <th>Visibility</th>
+    <th>Examples</th>
+    <th>Penalties</th>
+  </tr>
+  <tr>
+    <td>Normal</td>
+    <td>A sunny day, a well-lit room, the area near a torch</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>Poor</td>
+    <td>Dawn or dusk, a light fog, the area near a single candle</td>
+    <td>
+      <p>You have:</p>
+      <ul>
+        <li>Disadvantage on Notice rolls</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Terrible</td>
+    <td>Nighttime, a very heavy fog, the <a href="conditions.html#dazzled">dazzled</a> condition</td>
+    <td>
+      <p>You have all of the above, plus:</p>
+      <ul>
+        <li>Disadvantage on attacks</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>No Vision</td>
+    <td>A lightless space, dense smoke, the <a href="conditions.html#blinded">blinded</a> condition</td>
+    <td>
+      <p>You have all of the above, plus:</p>
+      <ul>
+        <li>You critically fail Notice rolls that rely on sight</li>
+        <li>You are <a href="conditions.html#flat-footed">flat-footed</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
 ## Surprise
 
-If you start combat with a creature that isn't prepared for an imminent attack, that creature is surprised for the first round of combat. Creatures that are surprised, that can't see you, or that otherwise aren't expecting you to attack are {flat-footed} against you.
+If you start combat with a creature that isn't prepared for an imminent attack, that creature is surprised for the first round of combat. Creatures that are surprised don't roll initiative, are {flat-footed}, and can't use {% icon Reaction %} powers.
 
 ## Falling
 
