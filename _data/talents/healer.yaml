@@ -178,13 +178,12 @@ Daylight:
   effect: |
     The spell's area is filled with sunlight. It shines bright light out to a distance of 60 feet and dim light out to a distance of 120 feet.
 
-    You can use the **Blinding Light** and **Warding Light** powers.
+    You can use the **Blinding Light**, **Sunbeam**, and **Warding Light** powers.
 
     #### Heightened
 
     For each +1 Mana, the radius of the burst increases by 20 feet.
-  aside: |
-    {% smallpower %}
+  tabs:
     Blinding Light:
       type: Free
       traits: [Attack, Light]
@@ -202,9 +201,16 @@ Daylight:
 
         Failure
         : Your target is {dazzled} until the end of their next turn
-    {% endsmallpower %}
+    Sunbeam:
+      type: 1-Action
+      traits: [Attack, Light, Radiant]
+      tags:
+        target: One creature in the area of **Daylight**
+      effect: |
+        Make a Magic attack roll against your target's Strength DC.
 
-    {% smallpower %}
+        Success
+        : Your target takes 4d6 damage
     Warding Light:
       type: Reaction
       traits: [Light]
@@ -213,7 +219,6 @@ Daylight:
         trigger: An enemy attacks your target
       effect: |
         The triggering attack has disadvantage.
-    {% endsmallpower %}
 
 Healing Spirit:
   tier: Veteran
@@ -271,6 +276,73 @@ Sacred Spell:
     requirements: Either the triggering spell is a Healer spell or it doesn't deal damage
   effect: |
     The triggering spell has -2 cost.
+
+Consecrate:
+  tier: Master
+  type: 1-Action
+  brief: You imbue an area with sacred magic that affects creatures inside
+  traits: [Ritual, Spell]
+  tags:
+    range: 30 feet
+    area: 60-foot burst
+    duration: Forever
+  effect: |
+    Choose two effects from the list below. You can choose for each effect to include or exclude certain types of creatures, such as creatures that follow a specific diety or creatures of a specific race. Your GM may let you make up your own effects.
+
+    If an effect asks for a roll, a creature can only attempt the roll once per turn. On a success, the creature is immune to that effect for an hour.
+
+    ***Binding.*** Creatures must succeed on a Spirit roll to leave the area.
+
+    ***Courage.*** Creatures in the area are immune to [[Fear]] effects.
+
+    ***Destruction.*** Creatures in the area take 2d6 [[Radiant]] damage at the start of each of their turns.
+
+    ***Exclusion.*** Creatures must succeed on a Spirit roll to enter the area.
+
+    ***Fear.*** Creatures in the area must succeed on a Spirit roll or be {terrified} of the area.
+
+    ***Hinderance.*** Creatures in the area must succeed on a Spirit roll or be {dazzled}.
+
+    ***Protection.*** Creatures in the area have 10 Shield against one damage type.
+
+    ***Vulnerability.*** Creatures in the area have 10 Weakness against one damage type.
+
+    #### Heightened
+
+    For each +2 Mana, you can choose another effect.
+
+Holy Aura:
+  tier: Master
+  type: 1-Action
+  brief: You shine with an aura that protects all your allies from harm
+  traits: [Spell]
+  tags:
+    cost: 8 Mana
+    area: 30-foot emanation, which follows you for the duration
+    duration: Sustained, up to 1 minute
+  effect: |
+    Attacks have disadvantage against your allies in the area (including you).
+
+    When you use this power, choose one of the following effects.
+
+    ***Hope.*** Your allies in the area are immune to harmful [[Emotion]] effects.
+
+    ***Purity.*** Your allies in the area have 10 [[Poison]] Shield and 10 [[Necrotic]] Shield.
+
+    ***Vitality.*** At the start of each of your turns, your allies in the area heal 1d6 health.
+
+    #### Heightened
+
+    For each +2 Mana, you can choose another effect.
+
+Panacea:
+  tier: Master
+  type: Passive
+  brief: Your healing cures a creature of any and all negative conditions
+  tags:
+    prerequisites: Heal
+  effect: |
+    When you use your {Heal} power on a willing creature, you learn all powers currently affecting your target, and you can immediately end any number of those powers.
 
 Blessed Healer:
   tier: Ribbon

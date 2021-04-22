@@ -7,7 +7,7 @@ Control Earth:
     cost: 2 Mana
     duration: Sustained, up to 10 minutes
   effect: |
-    You can use the **Collapse**, **Mold Earth**, **Stone Shape**, and **Tremor** powers.
+    You can use the **Collapse**, **Excavate**, **Mold Earth**, and **Tremor** powers.
   tabs:
     Collapse:
       type: 1-Action
@@ -94,7 +94,7 @@ Control Ice:
         requirements: There are no creatures in the area
         duration: Same as **Control Ice**
       effect: |
-        You alter the phase of all water in the area. For example, you could freeze water into ice, condense water vapor into snow, or sublimate ice to water vapor. The water returns to its natural phase when the duration ends.
+        You alter the phase of all water in the area. For example, you could freeze water into ice, condense water vapor into snow, or sublimate ice to water vapor. The water slowly returns to its natural phase when the duration ends.
 
         #### Heightened
 
@@ -317,7 +317,7 @@ Magic Affinity:
     Fire: |
       *Your target catches on fire.*
 
-      Your target takse 1d6 [[Fire]] damage.
+      Your target takes 1d6 [[Fire]] damage.
     Water: |
       *Creeping frost covers your target.*
 
@@ -550,7 +550,7 @@ Control Lava:
     cost: 7 Mana
     duration: Sustained, up to 10 minutes
   effect: |
-    You can use the **A**, **B**, **C**, and **D** powers.
+    You can use the **Eruption**, **Heat Metal**, **Lava Pool**, and **Transfer Heat** powers.
   tabs:
     Eruption:
       type: 1-Action
@@ -701,7 +701,7 @@ Elemental Tornado:
 Control Fire:
   tier: Ribbon
   type: 1-Action
-  brief: You conjure a small amount of a particular element
+  brief: You light a fire, or control nearby fires
   traits: [Cantrip, Spell]
   tags:
     cost: 0 Mana
@@ -762,6 +762,34 @@ Feather Fall:
     #### Heightened
 
     For each +1 Mana, you can target another creature within range.
+
+Move Element:
+  tier: Ribbon
+  type: 1-Action
+  brief: You control a particular element, moving it around as you wish
+  traits: [Cantrip, Specialize, Spell]
+  tags:
+    cost: 0 Mana
+    range: 60 feet
+    area: 5-foot cube
+    duration: Sustained, up to 1 minute
+  effect: |
+    Choose one or more objects that are made of the element you specialize in and that are entirely contained in the spell's area. When you cast or sustain this spell, you move those objects to another point within range with perfect accuracy. You can release these objects at speed, throwing objects up to double the normal range of this spell, though not at perfect accuracy.
+
+    These objects can be a small part of a greater whole; for example, you could move a chunk of natural stone even though it is connected to the rest of the planet. By moving many small parts of an object to different positions, you can easily carve or reshape objects. You cannot use this power to deal damage.
+
+    #### Heightened
+
+    For each +1 Mana, you can target another 5-foot cube adjacent to the first.
+  specialize:
+    Air: |
+      Includes pure air and airborne gases.
+    Earth: |
+      Includes dirt, stone, sand, crude metal, clay, and brick.
+    Fire: |
+      Includes flames and heat energy.
+    Water: |
+      Includes pure water, watery solutions, mist, ice, and snow.
 
 Regulate Temperature:
   tier: Ribbon
