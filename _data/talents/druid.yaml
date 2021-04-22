@@ -1,17 +1,45 @@
-Command Animal:
+Animal Friendship:
   tier: Novice
   type: 1-Action
-  brief: You befriend and command an animal, making it your trusted companion
-  traits: [Attack, Auditory, Spell]
+  brief: You calm, befriend, or permanently ally with an animal
+  traits: [Auditory, Emotion, Ritual, Spell]
   tags:
     cost: 1 Mana
-    target: An unintelligent animal you can reach that has CR no higher than your character level
-    duration: 24 hours, until you decide to end it, or until you or one of your companions harms the target
+    range: 30 feet
+    requirements: Your target is an unintelligent animal
+    duration: 1 hour, until you or your companions harm your target, or until you cast Animal Friendship on your target again
   effect: |
-    Make a Magic attack roll against your target's Spirit DC. If your target is already friendly towards you, this attack automatically succeeds.
+    If you or your companions are currently fighting your target, this spell gains the [[Attack]] trait, and you must make a Magic attack roll against your target's Spirit DC. On a failure or critical failure, this spell has no effect.
 
-    Success
-    : Your target becomes totally loyal to you and gains the [[Minion]] trait. Your target obeys any command you give it, even putting itself at risk, unless those directions are obviously suicidal.
+    Your target's [attitude](http://localhost:4000/adventuring-rules.html#npc-attitude) towards you improves by two levels, such as from hostile to indifferent, or from indifferent to helpful.
+
+    If your target was already helpful towards you, and if its CR is no more than half your level, then it becomes totally loyal to you and gains the [[Minion]] trait. Your target obeys any command you give it, even putting itself at risk, unless those directions are obviously suicidal.
+
+    #### Heightened
+
+    If you add +1 Mana, this spell's duration changes to 24 hours. If you instead add +2 Mana, this spell's duration changes to Forever.
+
+    If you add +2 Mana, this spell gains an area of a 30-foot emanation, and it targets any number of animals in the area.
+
+Beast Link:
+  tier: Novice
+  type: Free
+  brief: You form a telepathic connection that lets you communicate with an animal
+  traits: [Mental, Spell]
+  tags:
+    cost: 1 Mana
+    target: An animal you can reach
+    duration: 1 hour, or until you decide to end it
+  effect: |
+    You form a telepathic connection with your target. You always know the exact direction and distance to your target, and vice versa. You and your target can choose to mentally share thoughts, senses, emotions, and memories.
+
+    *This spell lets you speak with your target, though most animals lack the intelligence to understand sophisticated concepts. If you and your target continuously share senses, you can effectively see through each others' eyes.*
+
+    #### Heightened
+
+    If you add +1 Mana, this spell's duration changes to 24 hours. If you instead add +2 Mana, this spell's duration changes to Forever.
+
+    If you add +2 Mana, this spell gains an area of a 30-foot emanation, and it targets any number of animals in the area.
 
 Entangle:
   tier: Novice
@@ -21,7 +49,7 @@ Entangle:
   tags:
     cost: 1 Mana
     range: 60 feet
-    area: 20-foot burst
+    area: 10-foot burst
     requirements: Your target is on the ground
     duration: Sustained, up to 1 hour
   effect: |
@@ -53,7 +81,7 @@ Gather Swarm:
 
     #### Heightened
 
-    For each +1 Mana, the damage of **Command Swarm** increases by 1d6.
+    For each +1 Mana, the damage of **Command Swarm** increases by 1d6, and the distance moved increases by 5 feet.
   aside: |
     {% smallpower %}
     Command Swarm:
@@ -82,22 +110,6 @@ Goodberry:
     #### Heightened
 
     For each +1 Mana, the healing of each berry increases by 1.
-
-Hive Mind:
-  tier: Novice
-  type: 1-Action
-  brief: You speak telepathically with all nearby animals of a certain type
-  traits: [Spell]
-  tags:
-    cost: 1 Mana
-    range: 100 feet
-    duration: Sustained, up to 1 hour
-  effect: |
-    Choose a species of animal, such as rats, pigeons, or dogs. You have a telepathic link with all animals of that type within range. You know the location of all animals you are linked with, and you can communicate with and understand each other despite not sharing a language. Most animals lack the intelligence to understand sophistical concepts.
-
-    #### Heightened
-
-    For each +1 Mana, the range doubles.
 
 Summon Animal:
   tier: Novice
@@ -332,6 +344,86 @@ Tree Stride:
         Choose a tree within the range of **Tree Stride**. You teleport to an empty space adjacent to that tree.
     {% endsmallpower %}
 
+Control Plants:
+  tier: Master
+  type: 1-Action
+  brief: You animate and control all plants in a large area
+  traits: [Spell]
+  tags:
+    cost: 6 Mana
+    range: 120 feet
+    area: 60-foot burst
+    target: Any number of unintelligent plants in the area
+    duration: 10 minutes
+  effect: |
+    Your target gains the [[Minion]] trait and is completely loyal to you. If your target's Speed is less than 10 feet, their Speed becomes 10 feet. Your target can use the **Crushing Vine** and **Grasping Vine** powers. Your target uses your Magic score instead of its own for these powers.
+
+    *This spell targets both magical plant creatures and normal immobile plants.*
+
+    #### Heightened
+
+    For each +1 Mana, the damage of **Crushing Vine** increases by 1d6, and the push distance of **Grasping Vine** increases by 10 feet.
+  aside: |
+    {% smallpower %}
+    Crushing Vine:
+      type: 1-Action
+      traits: [Attack, Bludgeoning]
+      tags:
+        range: 30 feet
+      effect: |
+        Make a Magic attack roll against your target's Defense.
+
+        Success
+        : Your target takes 7d6 damage
+    {% endsmallpower %}
+
+    {% smallpower %}
+    Grasping Vine:
+      type: 1-Action
+      traits: [Attack]
+      tags:
+        range: 30 feet
+        duration: Until the end of your next turn
+      effect: |
+        Make a Magic attack roll against your target's Strength DC.
+
+        Critical Success
+        : As success, and your target is {restrained}
+
+        Success
+        : Your target is {immobilized}, and you push your target up to 20 feet
+    {% endsmallpower %}
+
+Permanent Summons:
+  tier: Master
+  type: Passive
+  brief: Your summoned creatures can stay forever
+  tags:
+    prerequisites: Summon Animal or Summon Fey
+  effect: |
+    Your {Summon Animal} and {Summon Fey} powers gain the following effect.
+
+    #### Heightened
+
+    If you add +2 Mana, the duration changes to Forever.
+
+Swarm Body:
+  tier: Master
+  type: Reaction
+  brief: You briefly transform into a swarm of insects, avoiding a hit
+  traits: [Polymorph, Spell]
+  tags:
+    cost: 6 Mana
+    trigger: You are targeted by an attack
+    duration: 10 minutes, or until you decide to end it
+  effect: |
+    The triggering attack no longer targets you, as you transform into a swarm of insects that scatter in every direction. While you are a swarm, you gain the following benefits:
+    * You have a +10 bonus to your DC against all attacks, except against attacks that target all creatures in an area
+    * You have a +20 feet bonus to Speed
+    * You can squeeze through tiny spaces, even ones as small as a few inches wide
+
+    *The real question is whether you were made of bees the whole time.*
+
 Animal Messenger:
   tier: Ribbon
   type: 1-Action
@@ -340,7 +432,7 @@ Animal Messenger:
   tags:
     cost: 2 Mana
     range: 30 feet
-    requirements: Your target is an animal of Size -2 or smaller that is not hostile towards you
+    requirements: Your target is an unintelligent animal of Size -2 or smaller that is not hostile towards you
     duration: 1 day, or until the message is delivered
   effect: |
     Specify a location that you have visited or that you know how to reach, and describe a recipient there. Also speak a short message, up to 25 words. Your target begins to travel to the specified location and searches for the specified recipient. If your target finds someone matching the given description, they deliver your message, replicating the sound of your voice. A flying animal can travel up to 50 miles per day, other animals travel up to 25 miles per day.
@@ -365,7 +457,7 @@ Friend of Nature:
   type: Passive
   brief: You naturally have the friendship and trust of animals
   effect: |
-    Animals and intelligent plants tend to like you. Unless given reason to act otherwise, they will treat you as a trusted friend or ally, and are helpful towards you. If you have some way to speak with animals, you can usually get them to perform simple favors for you.
+    Animals and sapient plants tend to like you. Unless given reason to act otherwise, they will treat you as a trusted friend or ally, and are helpful towards you. If you have some way to speak with animals, you can usually get them to perform simple favors for you.
 
 Spark of Growth:
   tier: Ribbon
@@ -374,7 +466,7 @@ Spark of Growth:
   traits: [Cantrip, Healing, Ritual, Spell]
   tags:
     cost: 0 Mana
-    target: A nonmagical plant you can reach
+    target: An unintelligent plant you can reach
     requirements: Your target hasn't been affected by **Spark of Growth** in the past week
   effect: |
     Your target instantly undergoes up to a year of normal growth. The plant might grow in size, gain or shed leaves, or grow blossoms.

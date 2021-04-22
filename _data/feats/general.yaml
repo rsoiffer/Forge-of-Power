@@ -29,6 +29,14 @@ Familiar:
 
     If your familiar dies, you can resummon it with a 1-hour ritual.
 
+Master of Many Forms:
+  type: Free
+  brief: You can use a variety of different forms to adapt to any situation
+  tags:
+    prerequisites: Any [[Specialize]] power
+  effect: |
+    Choose one [[Specialize]] power you know. Change the specialization you picked for that power. If the power is currently active, this doesn't apply to that instance of the power.
+
 Resilient:
   type: Passive
   brief: You are especially resilient against a particular damage type

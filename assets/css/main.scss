@@ -130,12 +130,12 @@ table {
 aside {
   float: right;
   width: 45%;
-  border: 1px solid $dark-border-color;
-  margin: .5em 0 1em 1em;
-  padding: 1em;
   font-size: 90%;
+  border: 1px solid $dark-border-color;
   background-color: #dbc29b;
+  margin: .5em 0 1em 1em;
 
+  padding: 1em;
   h3 {
     margin-top: 0 !important;
   }
@@ -150,10 +150,36 @@ aside {
 // Special classes
 
 .power, .item {
-  margin: 1.5em 0 0 0;
+  overflow: hidden;
+  margin: .5em 0 0 0;
+
+  summary {
+    padding: 0 .25em;
+    overflow: hidden;
+    list-style: none;
+    ::marker, ::-webkit-details-marker {
+      display: none;
+    }
+    // background-color: #e4cca5;
+    // box-shadow: 0 0 0 1px $border-color inset;
+  }
+  summary:hover {
+    background-color: #ffffff33;
+    box-shadow: 0 0 0 1px $my-dark-red inset;
+  }
+
+  .power-body {
+    // display: flex;
+    // flex-direction: column;
+    // margin-top: .25em;
+    // border: 1px solid $my-dark-red;
+    border-left: 1px solid $my-dark-red;
+    padding-left: .75em;
+    margin: 0 .4em;
+  }
 
   h3 {
-    margin-top: 0;
+    margin-top: .5em;
   }
   .traits {
     margin: 0;
@@ -233,4 +259,89 @@ button {
   &:hover {
     background: lighten($color: $background, $amount: 5%);
   }
+}
+
+
+.tabset {
+  margin: 1em 0 .25em 0;
+}
+
+.tabset > input {
+  display: block; /* "enable" hidden elements in IE/edge */
+  position: absolute; /* then hide them off-screen */
+  left: -100%;
+}
+
+.tabset > ul {
+  padding: 0;
+  position: relative;
+  z-index: 999;
+  list-style: none;
+  display: flex;
+  margin-bottom: -1px;
+}
+
+.tabset > ul label,
+.tabset > div {
+  border: 1px solid $dark-border-color;
+}
+
+.tabset > ul label {
+  display: inline-block;
+  padding: 0 1em;
+  background: mix($background-color, #dbc29b, 70%);
+  border-right-width: 0;
+  margin: 0;
+  font-weight: bold;
+  .subpower-title {
+    font-size: 1.1em;
+    padding: 0.25em 1em;
+  }
+}
+
+.tabset > ul li:first-child label {
+  border-radius: 0.25em 0 0 0;
+}
+
+.tabset > ul li:last-child label {
+  border-right-width: 1px;
+  border-radius: 0 0.25em 0 0;
+}
+
+.tabset > div {
+  position: relative;
+  background: #dbc29b;
+  border-radius: 0 0.25em 0.25em 0.25em;
+}
+
+@for $i from 1 through 10 {
+  .tabset > input:nth-child(#{$i}):checked ~ ul li:nth-child(#{$i}) label {
+    background: #dbc29b;
+    border-bottom-color: #dbc29b;
+  }
+}
+
+.tabset > div > section,
+.tabset > div > section h2 {
+  position: absolute;
+  top: -999em;
+  left: -999em;
+}
+.tabset > div > section {
+  padding: 0 1em;
+}
+
+@for $i from 1 through 10 {
+  .tabset > input:nth-child(#{$i}):checked ~ div > section:nth-child(#{$i}) {
+    position: static;
+  }
+}
+
+.tabset > ul label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

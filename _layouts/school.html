@@ -8,6 +8,7 @@ sidebar:
 
 <p>{{ school.description | process }}</p>
 
+{% if false %}
 <h3>Powers</h3>
 <table>
   <tr>
@@ -33,21 +34,27 @@ sidebar:
     {% endif %}
   {% endfor %}
 </table>
+{% endif %}
 
-<h2>Talents</h2>
-{% for power2 in site.data.powers %}
-  {% if power2[1].school == page.data[0] %}
-    {% if power2[1].tier != "Ribbon" %}
-      {% include power.html power=power2 %}
-    {% endif %}
+
+{% for school2 in site.data.talents %}
+  {% capture school_name %}{{ school2[0] | capitalize }}{% endcapture %}
+  {% if school_name == page.data[0] %}
+    {% assign my_school = school2 %}
   {% endif %}
 {% endfor %}
 
-<h2>Ribbons</h2>
-{% for power2 in site.data.powers %}
-  {% if power2[1].school == page.data[0] %}
-    {% if power2[1].tier == "Ribbon" %}
+{% assign tiers = "Novice, Veteran, Master, Epic, Ribbon" | split: ", " %}
+
+{% for tier2 in tiers %}
+  {% if tier2 == "Ribbon" %}
+    <h2>Ribbons</h2>
+  {% else %}
+    <h2>{{tier2}} Talents</h2>
+  {% endif %}
+  {% for power2 in my_school[1] %}
+    {% if power2[1].tier == tier2 %}
       {% include power.html power=power2 %}
     {% endif %}
-  {% endif %}
+  {% endfor %}
 {% endfor %}

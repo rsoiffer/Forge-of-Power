@@ -1,0 +1,55 @@
+{% assign power_name_1 = include.tabbedpower[0] %}
+{% assign power_body_1 = include.tabbedpower[1] %}
+
+{% if power_body_1.fluffstart %}
+<div class="fluff">{{ power_body_1.fluffstart | process }}</div>
+{% endif %}
+
+{% if power_body_1.traits %}
+    <ul class="traits">
+    {% for trait in power_body_1.traits %}
+        {% trait {{ trait }} %}
+    {% endfor %}
+    </ul>
+{% endif %}
+
+{% if power_body_1.tags %}
+    <dl class="tags">
+    {% for tag in power_body_1.tags %}
+        <dt>{{ tag[0] | capitalize }}</dt>
+        <dd>{{ tag[1] | process_inline }}</dd>
+    {% endfor %}
+    </dl>
+    <hr>
+{% endif %}
+
+{{ power_body_1.effect | process }}
+
+{% if power_body_1.critical-success or power_body_1.success or power_body_1.failure or power_body_1.critical-failure %}
+    <dl class="tags">
+    {% if power_body_1.critical-success %}
+        <dt>Critical Success</dt>
+        <dd>{{ power_body_1.critical-success | process_inline }}</dd>
+    {% endif %}
+    {% if power_body_1.success %}
+        <dt>Success</dt>
+        <dd>{{ power_body_1.success | process_inline }}</dd>
+    {% endif %}
+    {% if power_body_1.failure %}
+        <dt>Failure</dt>
+        <dd>{{ power_body_1.failure | process_inline }}</dd>
+    {% endif %}
+    {% if power_body_1.critical-failure %}
+        <dt>Critical Failure</dt>
+        <dd>{{ power_body_1.critical-failure | process_inline }}</dd>
+    {% endif %}
+    </dl>
+{% endif %}
+
+{% if power_body_1.heightened %}
+{{ power_body_1.heightened | process }}
+{% endif %}
+
+{% if power_body_1.fluff %}
+<div class="fluff">{{ power_body_1.fluff | process }}</div>
+{% endif %}

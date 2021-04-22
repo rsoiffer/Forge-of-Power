@@ -1,11 +1,151 @@
-Avatar:
+Control Earth:
   tier: Novice
   type: Free
-  brief: You can use a variety of different elements to adapt to any situation
+  brief: You control the earth and stone in a large area
+  traits: [Spell]
   tags:
-    prerequisites: Any [[Specialize]] Elementalist power
+    cost: 2 Mana
+    duration: Sustained, up to 10 minutes
   effect: |
-    Choose one [[Specialize]] Elementalist power you know. Change the specialization you picked for that power. If the power is currently active, this doesn't apply to that instance of the power.
+    You can use the **Collapse**, **Mold Earth**, **Stone Shape**, and **Tremor** powers.
+  tabs:
+    Collapse:
+      type: 1-Action
+      traits: [Attack, Bludgeoning]
+      tags:
+        range: 60 feet
+      effect: |
+        Choose a large stone structure you can see within range, such as a brick building or a cave ceiling. This structure partially collapses, and it takes 100 damage, ignoring any Shield it has.
+        
+        Rocks from the structure fall on nearby creatures. This affects a 10-feet emanation around the structure and everywhere below that area. This power targets all creatures in that area.
+        
+        Make a Magic attack roll against your target's Agility DC.
+
+        Success
+        : Your target takes 3d10 damage and falls {prone}
+
+        Failure
+        : Half damage
+
+        After you use this power, **Control Earth** immediately ends.
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Earth**, the damage increases by 1d10.
+    Excavate:
+      type: 1-Action
+      tags:
+        range: 60 feet
+        area: Up to four 5-foot cubes of space
+        requirements: There are no creatures in the target area
+      effect: |
+        You move earth or stone to fill the target area. If the area was already full of earth or stone, you instead empty the area.
+
+        *This power does not create or destroy material. You cannot use this power to fill an area if there is no earth or stone within range.*
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Earth**, you can target another 5-foot cube.
+    Mold Earth:
+      type: 1-Action
+      tags:
+        range: 60 feet
+        area: 5-foot burst
+      effect: |
+        You manipulate the shape of all earth and stone in the area. Choose one of the following effects:
+        * You cause shapes and colors to appear on surfaces, spelling words or drawing images
+        * You precisely carve stone objects into a specific shape
+        * You cause the ground to go from normal terrain to difficult terrain, or vice versa
+    Tremor:
+      type: 1-Action
+      traits: [Attack, Bludgeoning]
+      tags:
+        range: 60 feet
+        area: 10-foot burst
+        target: All creatures standing on the ground in the area
+      effect: |
+        Make a Magic attack roll against your target's Agility DC.
+
+        Success
+        : Your target takes 3d4 damage and falls {prone}
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Earth**, the damage increases by 1d4.
+
+Control Ice:
+  tier: Novice
+  type: Free
+  brief: You control ice and snow in a large area
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    duration: Sustained, up to 10 minutes
+  effect: |
+    You can use the **Alter Phase**, **Frost**, **Icicle Barrage**, and **Sleet Storm** powers.
+
+    If you use any of these powers while another one of these powers is active, the other power immediately ends.
+  tabs:
+    Alter Phase:
+      type: 1-Action
+      tags:
+        range: 60 feet
+        area: 10-foot burst
+        requirements: There are no creatures in the area
+        duration: Same as **Control Ice**
+      effect: |
+        You alter the phase of all water in the area. For example, you could freeze water into ice, condense water vapor into snow, or sublimate ice to water vapor. The water returns to its natural phase when the duration ends.
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Ice**, the radius of the burst increases by 10 feet.
+    Frost:
+      type: 1-Action
+      traits: [Attack, Cold]
+      tags:
+        area: 15-foot cone
+        duration: Same as **Control Ice**
+      effect: |
+        All water in the area is frozen solid.
+
+        Make a Magic attack roll against your target's Strength DC.
+
+        Success
+        : Your target takes 2d4 damage and is {immobilized}
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Ice**, the damage increases by 1d4.
+    Icicle Barrage:
+      type: 1-Action
+      traits: [Attack]
+      tags:
+        range: 60 feet
+      effect: |
+        Make a Magic attack roll against your target's Defense.
+
+        Success
+        : Your target takes 2d6 [[Cold]] damage and 2d6 [[Piercing]] damage
+
+        After you use this power, **Control Ice** immediately ends.
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Ice**, the [[Cold]] damage and the [[Piercing]] damage each increase by 1d6.
+    Sleet Storm:
+      type: 1-Action
+      tags:
+        range: 60 feet
+        area: 20-foot burst
+        duration: Same as **Control Ice**
+      effect: |
+        The area is filled with freezing rain and sleet. Choose one or more of the following effects:
+        * The area is filled with cold fog, completely blocking vision within or through the area
+        * All ground in the area is covered in slick ice and is difficult terrain.
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Ice**, the radius of the burst increases by 20 feet.
 
 Elemental Blast:
   tier: Novice
@@ -34,50 +174,39 @@ Elemental Blast:
     Water: |
       You have advantage on the attack roll if your target is underwater. On a success, your target is pushed 10 feet in any direction.
 
-Elemental Control:
+Elemental Mobility:
   tier: Novice
-  type: 1-Action
-  brief: You control a particular element, moving it around as you wish
-  traits: [Cantrip, Specialize, Spell]
+  type: Free
+  brief: You slide at high speed along a slab of a particular element
+  traits: [Specialize, Spell]
   tags:
-    cost: 0 Mana
-    range: 60 feet
-    area: 5-foot burst
+    cost: 1 Mana
     duration: Sustained, up to 1 minute
   effect: |
-    Choose one or more objects that are made of the element you specialize in and that are entirely contained in the spell's area. When you cast or sustain this spell, you move those objects to another point within range with perfect accuracy. You can release these objects at speed, throwing objects up to double the normal range of this spell, though not at perfect accuracy.
-
-    These objects can be a small part of a greater whole; for example, you could move a chunk of natural stone even though it is connected to the rest of the planet. By moving many small parts of an object to different positions, you can easily carve or reshape objects.
-
-    You can try to use this power to directly damage a creature, such as by knocking it over with a gust of wind, crushing it with a heavy stone, lighting it on fire, or smashing it with a stream of water. You can use the **Elemental Bolt** power. After you use **Elemental Bolt**, this power ends.
+    You have a +10 feet bonus to Speed.
 
     #### Heightened
 
-    For each +1 Mana, the radius of the burst doubles, the range increases by 20 feet, and the damage of **Elemental Bolt** increases by 2d6.
+    For each +1 Mana, the bonus increases by 10 feet.
+
+    If you add +2 Mana, you can fly at your normal Speed.
   specialize:
     Air: |
-      Includes pure air and airborne gases. When you move air, you can have the air lift and carry any number of small unattended objects along with it.
+      *You zoom over the ground, riding on the wind itself.*
+
+      The bonus increases by 10 feet.
     Earth: |
-      Includes dirt, stone, sand, crude metal, clay, and brick. When you move earth, you also move all objects or creatures resting on the earth.
+      *You skate over any terrain on a slab of rock.*
+
+      You ignore difficult terrain.
     Fire: |
-      Includes flames and heat energy. When you cast this spell, you can create a fire in the spell's area, or put out a fire in the spell's area.
+      *You propel yourself forward with jets of flame.*
+
+      You have +2 Agility DC.
     Water: |
-      Includes pure water, watery solutions, mist, ice, and snow. When you move water, you can change its phase between mist, water, and ice.
-  aside: |
-    {% smallpower %}
-    Elemental Bolt:
-      type: Free
-      traits: [Attack, Bludgeoning]
-      tags:
-        target: One creature or object you try to damage with **Elemental Control**
-      effect: |
-        Make a Magic attack roll against your target's Defense. You have disadvantage on this attack roll if your target is outside the range of **Elemental Control**.
+      *You slide fowards along a path of slick ice.*
 
-        Success
-        : Your target takes 2d6 damage
-
-        If the specialization of **Elemental Control** is Fire, this power is [[Fire]] instead of [[Bludgeoning]].
-    {% endsmallpower %}
+      You can walk along water and slippery ice as if they were solid ground. You can swim at your normal Speed.
 
 Elemental Prison:
   tier: Novice
@@ -141,85 +270,12 @@ Elemental Shield:
 
       If the triggering attack critically fails against you, it targets your attacker instead (and is automatically a success).
 
-Elemental Skate:
-  tier: Novice
-  type: Free
-  brief: You slide at high speed along a slab of a particular element
-  traits: [Specialize, Spell]
-  tags:
-    cost: 1 Mana
-    duration: Sustained, up to 1 minute
-  effect: |
-    You have a +10 feet bonus to Speed.
-
-    #### Heightened
-
-    For each +1 Mana, the bonus increases by 10 feet.
-
-    If you add +1 Mana, the maximum duration increases to 1 hour.
-  specialize:
-    Air: |
-      *You zoom over the ground, riding on the wind itself.*
-
-      The bonus increases by 10 feet.
-    Earth: |
-      *You skate over any terrain on a slab of rock.*
-
-      You ignore difficult terrain.
-    Fire: |
-      *You propel yourself forward with jets of flame.*
-
-      You have +2 Agility DC.
-    Water: |
-      *You slide fowards along a path of slick ice.*
-
-      You can walk along water and slippery ice as if they were solid ground.
-
-Elemental Terrain:
-  tier: Novice
-  type: 1-Action
-  brief: You cover an area in dense fog, uneven rocks, burning flames, or slick ice
-  traits: [Attack, Specialize, Spell]
-  tags:
-    cost: 1 Mana
-    range: 120 feet
-    area: 20-foot burst
-    duration: 10 minutes, or until you decide to end it
-  effect: |
-    Make a Magic attack roll against your target's Agility DC. The effect of a successful attack depends on the specialization you chose.
-
-    A terrain effect persists in the spell's area for the duration. The type of the terrain depends on the specialization you chose.
-
-    #### Heightened
-
-    For each +1 Mana, the radius of the burst increases by 20 feet.
-
-    For each +1 Mana, the initial damage (if any) increases by 1d6.
-  specialize:
-    Air: |
-      *With a gust of wind, you blow in a cloud of dense fog.*
-
-      On a success, your target is pushed 10 feet in any direction. The terrain is heavily obscured, making sight impossible.
-    Earth: |
-      *Spikes of solid earth raise up from the ground.*
-
-      On a success, your target takes 2d6 [[Bludgeoning]] damage and falls {prone}. The terrain becomes difficult terrain.
-    Fire: |
-      *The terrain catches on fire.*
-
-      On a success, your target takes 2d6 [[Fire]] damage. All creatures that end their turn in the terrain take 1d6 [[Fire]] damage.
-    Water: |
-      *You freeze an area with a blast of creeping ice.*
-
-      On a success, your target takes 1d6 [[Cold]] damage and is {immobilized}. The terrain becomes difficult terrain.
-
 Homefield Advantage:
   tier: Novice
   type: Free
   brief: You can leverage ambient elements to boost your own elemental magic
   tags:
-    prerequisites: Any [[Specialize]] Elementalist power
-    trigger: You use a [[Specialize]] Elementalist power
+    trigger: You use a power that is themed as using air, earth, fire, or water, as determined by the GM
   effect: |
     Note the homefield terrain of the triggering power. If you are in the homefield terrain, you gain the following benefits:
     * If the triggering power is a spell, it has -1 cost
@@ -237,35 +293,169 @@ Homefield Advantage:
 
     ***Water.*** Your homefield terrain is any space directly above or inside of water, ice, or snow.
 
-Defensive Shield:
-  tier: Veteran
-  type: Passive
-  brief: You unlock new options in using the elements to protect yourself
+Magic Affinity:
+  tier: Novice
+  type: Free
+  traits: [Specialize]
+  brief: You can apply minor elemental effects on top of all your spells
   tags:
-    prerequisites: Elemental Shield
+    trigger: After you cast a spell
+    target: One target of the triggering spell
   effect: |
-    Your {Elemental Shield} power gains the following effect.
+    The effect depends on the specialization you chose.
 
-    #### Heightened
-
-    If you add +2 Mana, you can use Elemental Shield as a {% icon Free %} power (with no trigger). Replace the normal specialization effect of Elemental Shield with the one below.
+    As an [[Encounter]] power, you can instead target all of the targets of the triggering spell.
   specialize:
     Air: |
-      *A cocoon of wind lifts you up and deflects projectiles.*
+      *A gust of wind pushes your target.*
 
-      You gain an additional +8 Defense against ranged Strikes. All attacks against your Defense or your Agility DC have disadvantage.
+      Your target is pushed 5 feet in any direction.
     Earth: |
-      *A suit of hard stone armor blocks all incoming damage.*
+      *The ground breaks apart into jagged boulders.*
 
-      You gain 20 [[Anything]] Shield.
+      Any number of squares of ground within 5 feet of your target become difficult terrain.
     Fire: |
-      *Your fiery body makes attacking you a dangerous idea.*
+      *Your target catches on fire.*
 
-      When an attack targets your Defense, if you can reach the attacker, they take 4d6 [[Fire]] damage.
+      Your target takse 1d6 [[Fire]] damage.
     Water: |
-      *Rotating circles of water redirect all incoming attacks.*
+      *Creeping frost covers your target.*
 
-      If an attack against your Defense critically fails, it targets your attacker instead (and is automatically a success).
+      Your target is {slowed} until the end of their next turn.
+
+Control Air:
+  tier: Veteran
+  type: Free
+  brief: You control the winds in a large area
+  traits: [Spell]
+  tags:
+    cost: 3 Mana
+    duration: Sustained, up to 10 minutes
+  effect: |
+    You can use the **Alter Winds**, **Dancing Leaf**, **Earthbind**, and **Gust** powers.
+
+    If you use any of these powers while another one of these powers is active, the other power immediately ends.
+  tabs:
+    Alter Winds:
+      type: 1-Action
+      tags:
+        range: 300 feet
+        area: 60-foot burst
+        duration: Same as **Control Air**
+      effect: |
+        You change the direction and strength of winds in the area. If you choose to create strong winds in a particular direction, the winds have all the following effects:
+        * Ranged Strikes through the area have disadvantage
+        * The area is difficult terrain for all creatures that are trying to move against the direction of the wind
+        * Creatures flying in the area are {flat-footed}
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Air**, the radius of the burst increases by 20 feet.
+    Dancing Leaf:
+      type: Free
+      traits: [Move]
+      effect: |
+        You immediately fly up to 10 feet.
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Air**, you can fly an extra 5 feet.
+    Earthbind:
+      type: 1-Action
+      traits: [Attack]
+      tags:
+        range: 300 feet
+        duration: Same as **Control Air**
+      effect: |
+        Make a Magic attack roll against your target's Strength DC.
+
+        Success
+        : Your target is unable to fly
+
+        If this power causes a flying creature to fall to the ground, they can try to control their fall. Your target can make a die roll against your Magic DC to avoid taking falling damage.
+    Gust:
+      type: 1-Action
+      traits: [Attack, Bludgeoning]
+      tags:
+        range: 300 feet
+      effect: |
+        Make a Magic attack roll against your target's Strength DC.
+
+        Success
+        : Your target takes 4d6 damage and is pushed 20 feet in a direction of your choice
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Air**, the damage increases by 1d6 and the push distance increases by 5 feet.
+
+Control Water:
+  tier: Veteran
+  type: Free
+  brief: You control all water in a large area, creating floods or whirlpools
+  traits: [Spell]
+  tags:
+    cost: 4 Mana
+    duration: Sustained, up to 10 minutes
+  effect: |
+    You can use the **Flood**, **Part Water**, **Redirect Flow**, and **Whirlpool** powers.
+
+    If you use any of these powers while another one of these powers is active, the other power immediately ends.
+  tabs:
+    Flood:
+      type: 1-Action
+      tags:
+        range: 300 feet
+        area: 20-foot burst
+      effect: |
+        You push all water in the area up to 60 feet in a horizontal direction of your choice. Any creature or object in the path of the water is carried with it (except for large structures that are anchored to the ground).
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Water**, you can push the water an extra 10 feet.
+    Part Water:
+      type: 1-Action
+      tags:
+        range: 300 feet
+        area: Up to ten 10-foot cubes within range
+        duration: Same as **Control Water**
+      effect: |
+        You push all water out of the area. This usually leaves behind a trench of air surrounded by walls of water. When this power ends, the water slowly streams back in to the area.
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Water**, you can target another two cubes.
+    Redirect Flow:
+      type: 1-Action
+      tags:
+        range: 300 feet
+        area: 60-foot burst
+        duration: Same as **Control Water**
+      effect: |
+        You cause all water in the area to flow in a direction of your choice. You can have the water flow in unusual ways, such as up walls or into the air. The water resumes its natural flow when it leaves the area.
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Water**, the radius of the burst increases by 10 feet.
+    Whirlpool:
+      type: 1-Action
+      traits: [Attack, Bludgeoning]
+      tags:
+        range: 300 feet
+        area: 20-foot burst
+        requirements: The center of the burst must be in a large body of water at least 20 feet wide
+        duration: Until the end of your next turn
+      effect: |
+        Make a Magic attack roll against your target's Strength DC.
+
+        Success
+        : Your target takes 5d8 damage, is pulled 10 feet towards the center of the whirlpool, and is {immobilized}
+
+        Failure
+        : Half damage
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Water**, the damage increases by 1d8.
 
 # Note - maybe move this power to Master instead?
 Elemental Finisher:
@@ -334,36 +524,6 @@ Elemental Wall:
 
       When a creature tries to pass through the wall, you can make a Magic attack roll against its Strength DC. On a success, you push your target up to 20 feet in any direction.
 
-Mobile Skate:
-  tier: Veteran
-  type: Passive
-  brief: You unlock new options in using the elements to move yourself around
-  tags:
-    prerequisites: Elemental Skate
-  effect: |
-    Your {Elemental Skate} power gains the following effect.
-
-    #### Heightened
-
-    If you add +2 Mana, you gain an effect depending on your chosen specialization.
-  specialize:
-    Air: |
-      *The wind lifts you into the sky.*
-
-      You can fly at your normal Speed.
-    Earth: |
-      *A large wave of earth carries you and all your allies.*
-
-      Choose two creatures you can see within 30 feet. Your targets gain the effect of this spell as well.
-    Fire: |
-      *Powerful jets of fire lift you into the air.*
-
-      You can fly at your normal Speed.
-    Water: |
-      *A spiral of water lifts you off the ground.*
-
-      You can fly at your normal Speed, so long as you stay within 30 feet of a solid or liquid surface. You can swim at your normal Speed.
-
 Versatile Elements:
   tier: Veteran
   type: Passive
@@ -380,6 +540,186 @@ Versatile Elements:
     ***Fire.*** If this power deals damage, it ignores up to 20 points of your opponent's Shield.
 
     ***Water.*** You can choose the effect of the **Earth** specialization instead, as you freeze blocks of ice as hard as stone. If the power is sustained, you can switch between the two specializations whenever you sustain the power.
+
+Control Lava:
+  tier: Master
+  type: Free
+  brief: You control lava in a large area
+  traits: [Spell]
+  tags:
+    cost: 7 Mana
+    duration: Sustained, up to 10 minutes
+  effect: |
+    You can use the **A**, **B**, **C**, and **D** powers.
+  tabs:
+    Eruption:
+      type: 1-Action
+      traits: [Attack, Fire]
+      tags:
+        range: 300 feet
+        area: 20-foot line
+        requirements: The line starts in an area of earth, stone, or lava
+      effect: |
+        Make a Magic attack roll against your target's Agility DC.
+
+        Success
+        : Your target takes 4d8 damage
+
+        #### Heightened
+
+        For each +2 Mana you spent on **Control Lava**, the damage increases by 1d8.
+    Heat Metal:
+      type: 1-Action
+      traits: [Attack, Fire]
+      tags:
+        range: 300 feet
+        requirements: Your target is made of metal, such as a metal weapon or suit of armor
+        duration: Until the end of your next turn
+      effect: |
+        Your target burns red-hot, becoming almost impossible to touch. If a creature is carrying or wearing your target, make a Magic attack roll against that creature's Strength DC.
+
+        Success
+        : Your target takes 8d6 damage and is {dazzled}
+
+        Failure
+        : Half damage
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Lava**, the damage increases by 1d6.
+    Lava Pool:
+      type: 1-Action
+      traits: [Fire]
+      tags:
+        range: 300 feet
+        area: 20-foot burst
+        duration: Same as **Control Lava**
+      effect: |
+        You melt all earth and stone in the area into lava. The lava is relatively cool, so it is still mostly solid. Any creature that ends its turn within 5 feet of the lava takes 4d8 damage. If the creature ends its turn submerged in the lava, it takes double damage.
+
+        When this power ends, the lava cools back into rock.
+
+        #### Heightened
+
+        For each +2 Mana you spent on **Control Lava**, the damage increases by 1d8.
+    Transfer Heat:
+      type: 1-Action
+      tags:
+        range: 300 feet
+        area: Two 30-foot bursts
+        requirements: The two bursts cannot overlap
+      effect: |
+        You pull all the heat out of the first burst and transfer it to the second burst. Everything in the first burst takes 2d8 [[Cold]] damage. Everything in the second burst takes 2d8 [[Fire]] damage.
+
+        #### Heightened
+
+        For each +1 Mana you spent on **Control Lava**, the radius of each burst increases by 10 feet.
+
+Defensive Shield:
+  tier: Master
+  type: Passive
+  brief: You unlock new options in using the elements to protect yourself
+  tags:
+    prerequisites: Elemental Shield
+  effect: |
+    Your {Elemental Shield} power gains the following effect.
+
+    #### Heightened
+
+    If you add +2 Mana, you can use Elemental Shield as a {% icon Free %} power (with no trigger). Replace the normal specialization effect of Elemental Shield with the one below.
+  specialize:
+    Air: |
+      *A cocoon of wind lifts you up and deflects projectiles.*
+
+      You gain an additional +8 Defense against ranged Strikes. All attacks against your Defense or your Agility DC have disadvantage.
+    Earth: |
+      *A suit of hard stone armor blocks all incoming damage.*
+
+      You gain 20 [[Anything]] Shield.
+    Fire: |
+      *Your fiery body makes attacking you a dangerous idea.*
+
+      When an attack targets your Defense, if you can reach the attacker, they take 4d6 [[Fire]] damage.
+    Water: |
+      *Rotating circles of water redirect all incoming attacks.*
+
+      If an attack against your Defense critically fails, it targets your attacker instead (and is automatically a success).
+
+Elemental Tornado:
+  tier: Master
+  type: 1-Action
+  brief: You conjure a deadly tornado of a particular element
+  traits: [Specialize, Spell]
+  tags:
+    cost: 7 Mana
+    range: 30 feet
+    duration: Sustained, up to 1 minute
+  effect: |
+    You summon a tornado at the target location, which takes the shape of a cylinder 5 feet wide and 30 feet tall.
+
+    You can use the **Command Tornado** power.
+
+    #### Heightened
+
+    For each +1 Mana, the damage of **Command Tornado** increases by 1d6, and it moves the tornado an extra 10 feet.
+  aside: |
+    {% smallpower %}
+    Command Tornado:
+      type: Free
+      traits: [Attack, Bludgeoning]
+      effect: |
+        You move the tornado up to 30 feet in any direction. This power targets all creatures the tornado touches during this movement.
+
+        Make a Magic attack roll against your target's Agility DC.
+
+        Success
+        : Your target takes 8d6 damage, plus another effect given by the specialization of **Elemental Tornado**
+
+        Failure
+        : Half damage
+    {% endsmallpower %}
+  specialize:
+    Air: |
+      *A tornado lifts your target into the sky.*
+
+      On a success, your target is pushed 20 feet upwards.
+    Earth: |
+      *A whirlpool of sand ensnares your target.*
+
+      On a success, your target is {immobilized} until the end of their next turn.
+    Fire: |
+      *A pillar of fire blinds your target.*
+
+      **Command Tornado** is [[Fire]] instead of [[Bludgeoning]].
+
+      On a success, your target is {blinded} until the end of their next turn.
+    Water: |
+      *A spiral of water launches your target away.*
+
+      On a success, your target is pushed 10 feet in a direction of your choice.
+
+Control Fire:
+  tier: Ribbon
+  type: 1-Action
+  brief: You conjure a small amount of a particular element
+  traits: [Cantrip, Spell]
+  tags:
+    cost: 0 Mana
+    range: 60 feet
+    area: 5-foot burst
+    duration: Sustained, up to 1 minute
+  effect: |
+    Choose one of the following effects:
+    * You set the area on fire, which deals 2d6 [[Fire]] damage to any creature that ends its turn in the area
+    * You instantly extinguish any fire in the area
+    * You change the brightness or color of any fire in the area
+    * You cause any fire in the area to animate to form simple shapes
+
+    When this spell ends, any affected fire returns to its natural behavior, color, and shape.
+
+    #### Heightened
+
+    For each +1 Mana, the radius of the burst increases by 5 feet, and the damage of the fire increases by 1d6.
 
 Create Element:
   tier: Ribbon

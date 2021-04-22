@@ -2,25 +2,31 @@
 {% assign power_body = include.power[1] %}
 <div class="power">
 
-<h3 id="{{ power_name | slugify }}">
-    {{ power_name }}
-    {% if power_body.type %}
-    {% unless power_body.type == "Passive" %}
-    {% icon {{ power_body.type }} %}
-    {% endunless %}
-    {% endif %}
-    {% if power_body.tier %}
-    <span class="alignright">{{ power_body.tier }}</span>
-    {% endif %}
-</h3>
+<details>
+<summary>
+    <h3 id="{{ power_name | slugify }}">
+        {{ power_name }}
+        {% if power_body.type %}
+        {% unless power_body.type == "Passive" %}
+        {% icon {{ power_body.type }} %}
+        {% endunless %}
+        {% endif %}
+        {% if power_body.tier %}
+        {% endif %}
+    </h3>
+
+    <div class="fluff">
+        {{ power_body.brief | process }}
+    </div>
+</summary>
 
 {% if power_body.aside %}
-<aside>{{ power_body.aside | process }}</aside>
+<aside>
+    {{ power_body.aside | process }}
+</aside>
 {% endif %}
 
-{% if power_body.fluffstart %}
-<div class="fluff">{{ power_body.fluffstart | process }}</div>
-{% endif %}
+<div class="power-body">
 
 {% if power_body.traits %}
     <ul class="traits">
@@ -62,33 +68,46 @@
 </table>
 {% endif %}
 
-<!-- {% if power_body.critical-success or power_body.success or power_body.failure or power_body.critical-failure %}
-    <dl class="tags">
-    {% if power_body.critical-success %}
-        <dt>Critical Success</dt>
-        <dd>{{ power_body.critical-success | process_inline }}</dd>
-    {% endif %}
-    {% if power_body.success %}
-        <dt>Success</dt>
-        <dd>{{ power_body.success | process_inline }}</dd>
-    {% endif %}
-    {% if power_body.failure %}
-        <dt>Failure</dt>
-        <dd>{{ power_body.failure | process_inline }}</dd>
-    {% endif %}
-    {% if power_body.critical-failure %}
-        <dt>Critical Failure</dt>
-        <dd>{{ power_body.critical-failure | process_inline }}</dd>
-    {% endif %}
-    </dl>
+{% if power_body.tabs %}
+<div class="tabset">
+    {% for tab in power_body.tabs %}
+    <input
+        type="radio"
+        name="{{power_name}} tabs"
+        id="{{power_name}} - {{tab[0]}}"
+        hidden
+        {% if forloop.first %}checked{% endif %}
+    >
+    {% endfor %}
+    <ul hidden aria-hidden="true">
+        {% for tab in power_body.tabs %}
+        <li><label for="{{power_name}} - {{tab[0]}}">
+            <div class="subpower-title">
+                {{ tab[0] }}
+                {% if tab[1].type %}
+                {% unless tab[1].type == "Passive" %}
+                {% icon {{ tab[1].type }} %}
+                {% endunless %}
+                {% endif %}
+            </div>
+        </label></li>
+        {% endfor %}
+    </ul>
+    <div>
+        {% for tab in power_body.tabs %}
+        <section>
+            <h2>{{tab[0]}}</h2>
+            {% include tabbedpower.html tabbedpower=tab %}
+        </section>
+        {% endfor %}
+    </div>
+</div>
 {% endif %}
-
-{% if power_body.heightened %}
-{{ power_body.heightened | process }}
-{% endif %} -->
 
 {% if power_body.fluff %}
 <div class="fluff">{{ power_body.fluff | process }}</div>
 {% endif %}
 
+</div>
+</details>
 </div>
