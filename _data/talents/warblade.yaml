@@ -153,12 +153,12 @@ Raptor Pounce:
   tier: Veteran
   type: Free
   brief: You follow after an enemy you hit previously, continuing your assault
-  traits: [Encounter, Move]
   tags:
-    range: 30 feet
+    target: A creature you can see
     requirements: You succeeded on a Strike against your target in the previous round
+    duration: Until the end of your turn
   effect: |
-    You jump to an empty space adjacent to your target, then make a melee Strike against them.
+    Use the {Stride} power. You must end this Stride closer to your target than you started. If you end this Stride at least 20 feet closer to your target than you started, your next {Strike} against your target deals an extra 1d6 damage.
 
 Steel Wind Strike:
   tier: Veteran

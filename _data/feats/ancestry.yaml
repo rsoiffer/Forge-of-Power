@@ -270,6 +270,26 @@ Organized Action:
 
 # Kami
 
+Divine Light:
+  tier: Kami
+  type: Passive
+  brief: You emit a holy light that harms outsiders and undead
+  effect: |
+    You are immune to [[Divination]] effects, unless you want them to work on you. Divinations involving you just show a bright white light.
+
+    You can use the **Scorching Light** power.
+  aside: |
+    {% smallpower %}
+    Scorching Light:
+      type: Free
+      traits: [Light, Radiant]
+      tags:
+        area: 10-foot emanation
+        target: All [[Outsider]] and [[Undead]] creatures in the area
+      effect: |
+        You emit an aura of light that shines as brightly as a large fire, illuminating the area within 60 feet. Your target takes 2d6 damage.
+    {% endsmallpower %}
+
 Divine Magic:
   tier: Kami
   type: Free
@@ -311,26 +331,6 @@ High Status:
     If a kami repeatedly disobeys orders they are obligated to follow, they risk being excommunicated from the celestial bureaucracy. An excommunicated kami is analogous to a fallen angel in Christian mythology. They are viewed as evil, heretical, and flawed, and they are totally unwelcome in Heaven.
   fluffstart: |
     You have an elevated status in the celestial bureaucracy, and you have authority over many other kami. Since the celestial bureaucracy is so complex, you often have some kind of authority other any other kami you meet.
-
-Holy Aura:
-  tier: Kami
-  type: Passive
-  brief: You emit a holy aura that harms outsiders and undead
-  effect: |
-    You are immune to [[Divination]] effects, unless you want them to work on you. Divinations involving you just show a bright white light.
-
-    You can use the **Flare Aura** power.
-  aside: |
-    {% smallpower %}
-    Flare Aura:
-      type: Free
-      traits: [Radiant]
-      tags:
-        area: 10-foot emanation
-        target: All [[Outsider]] and [[Undead]] creatures in the area
-      effect: |
-        Your target takes 2d6 damage.
-    {% endsmallpower %}
 
 Immortal:
   tier: Kami

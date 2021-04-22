@@ -203,6 +203,13 @@ Pass Without Trace:
   effect: |
     You can hide your trail while travelling in natural environments, giving you a +10 bonus to any die rolls made to avoid being tracked.
 
+Perfect Shot:
+  tier: Ribbon
+  type: Passive
+  brief: You can hit stationary targets perfectly out of combat
+  effect: |
+    Out of combat, when you make a ranged {Strike} against a stationary target, your Strike is automatically a critical success. You must have a minute to prepare for the shot, and your target must be completely stationary.
+
 # Far Shot:
 #   tier: Novice
 #   type: Passive
