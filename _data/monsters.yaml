@@ -160,6 +160,20 @@ Molerat:
     Bite Strike {% icon 1-Action %}
     : +4 vs. Defense, 1d6+4 [[Piercing]] damage
 
+Monadster:
+  traits: [Spirit]
+  tags:
+    attributes: As possessed creature
+    other stats: As possessed creature
+  effect: |
+    ***Fmap.*** The monadster can use all powers of the posessed creature.
+
+    Pure {% icon 1-Action %}
+    : +5 vs. Intellect DC, 4d6 [[Force]] damage. If killed, target is possessed by a new monadster.
+
+    Join {% icon 1-Action %}
+    : Absorb an adjacent monadster. Add your Health together, use the higher of all others stats, and gain all of the target's powers.
+
 Skeleton:
   traits: [Spirit, Undead, Unintelligent]
   tags:

@@ -346,6 +346,15 @@ Alert:
   effect: |
     You have a +5 bonus to initiative rolls. You can never be surprised.
 
+Darkvision:
+  tier: Notice
+  type: Passive
+  brief: You can see in the dark as well as you can in the light
+  tags:
+    skill boost: Notice
+  effect: |
+    You can see in the dark as well as you can in the light, so darkness never decreases your [visibility](combat-rules.html#visibility).
+
 Keen Eye:
   tier: Notice
   type: Free
@@ -369,15 +378,6 @@ Lie Detector:
     trigger: A creature you can see and hear makes a statement
   effect: |
     You know whether the triggering creature was completely lying. This power doesn't detect half-truths or lies by omission.
-
-Low-Light Vision:
-  tier: Notice
-  type: Passive
-  brief: You can see in dimly light environments just as well as in bright light
-  tags:
-    skill boost: Notice
-  effect: |
-    You can see in dim light as if it was bright light.
 
 Pursue a Lead:
   tier: Notice

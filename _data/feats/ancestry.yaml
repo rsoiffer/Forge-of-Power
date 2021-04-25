@@ -6,32 +6,23 @@ Bestial Mobility:
   brief: Your natural environment is in the ocean, the treetops, or the skies
   traits: [Specialize]
   effect: |
-    Since this power has the [[Specialize]] trait, you choose one of the specializations to the right when you learn this power.
-
     The specialization you choose should generally match the species of animal you are. An awakened eagle is a **Flier**, not a **Swimmer**. An awakened tiger is a **Climber**, not a **Flier**.
-  aside: |
-    ### Specializations
-
-    #### Climber
-    You can climb at your full Speed. Your Speed increases by 10 feet.
-
-    #### Flier
-    You can fly at your full Speed. While flying, you have disadvantage on Strength rolls and attack rolls.
-
-    #### Swimmer
-    You can swim at your full Speed. You can breathe water as easily as air.
+  specialize:
+    Climber: |
+      You can climb at your full Speed. Your Speed increases by 10 feet.
+    Flier: |
+      You can fly at your full Speed. While flying, you have disadvantage on Strength rolls and attack rolls.
+    Swimmer: |
+      You can swim at your full Speed. You can breathe water as easily as air.
 
 Camouflage:
   tier: Awakened
   type: Passive
   brief: You are great at blending in with a particular natural terrain feature
-  traits: [Specialize]
   effect: |
-    You have a +10 bonus to Stealth rolls to hide next to your chosen terrain feature.
-  aside: |
-    ### Specializations
+    Choose a specific natural terrain feature, such as tree bark, snow, dense leaves, a river surface, or so on. You have a +10 bonus to Stealth rolls to hide in or next to your chosen terrain feature
 
-    Choose a specific natural terrain feature, such as tree bark, snow, dense leaves, a river surface, or so on. The chosen feature should generally match the special of animal you are. A polar bear is camouflaged in snow, not mud. A leopard is camouflaged in dry grass, not foliage.
+    The chosen feature should generally match the species of animal you are. A polar bear is camouflaged in snow, not mud. A leopard is camouflaged in dry grass, not foliage.
 
 Natural Weapon:
   tier: Awakened
@@ -64,7 +55,7 @@ Cousins Everywhere:
   tier: Dwarf
   type: 1-Action
   brief: You have an enourmous extended family, with relatives everywhere you go
-  traits: [Daily]
+  traits: [Daily, Retroactive]
   tags:
     requirements: You are near a group of 100 or more people
   effect: |
@@ -78,7 +69,7 @@ Dwarven Luck:
   brief: You're naturally lucky, as you breeze right past the troubles of life
   traits: [Fortune]
   effect: |
-    When you roll a 1 on the d20 for a die roll, you can reroll the die roll.
+    Whenever you roll a 1 on the d20 for a die roll, you can reroll the die roll.
 
 Dwarven Spirits:
   tier: Dwarf
@@ -96,7 +87,7 @@ Indomitable:
   brief: You shrug off fear and fatigue, steeling your will for the future
   traits: [Daily, Emotion]
   effect: |
-    End all [[Fear]] effects targeting you. You recover 1 fatigue.
+    End all [[Fear]] powers targeting you. You recover 1 fatigue.
 
 Thick Skin:
   tier: Dwarf
@@ -110,6 +101,14 @@ Thick Skin:
 
 # Elf
 
+Elven Skill:
+  tier: Elf
+  type: 1-Action
+  brief: You reveal you've spent decades mastering a particular obscure skill
+  traits: [Daily, Retroactive]
+  effect: |
+    You reveal that you are a master of a particular obscure and mostly-useless skill, such as *Underwater Basket Weaving*, *Ancient Human Pop Culture*, *Haphazard Flower Arrangement*, *Intricate Hair Braiding*, or so on. You cannot choose a practical or directly useful skill. See [here](https://www.reddit.com/r/d100/comments/afxas7/lets_build_d100_fascinatingly_specific_supremely/) for more skill ideas.
+
 Logic Purist:
   tier: Elf
   type: Passive
@@ -117,7 +116,7 @@ Logic Purist:
   effect: |
     You have a +5 bonus to your DC against [[Emotion]] attacks and against {Notice} rolls to read your intentions or emotions.
   fluff: |
-    You speak in a perfect monotone.
+    You can speak in a perfect monotone.
 
 Mind Meld:
   tier: Elf
@@ -127,7 +126,7 @@ Mind Meld:
   tags:
     target: One creature you can reach
   effect: |
-    Specify the kinds of experiences you're trying to share between you and your target. For example, you could choose to share memories of a certain event, current experiences of emotions, or thoughts on philosophy. The GM determines which exact experiences of this type are shared.
+    You link with your target's mind and share experiences with them. Specify the kinds of experiences you're trying to learn or share. For example, you could choose to share memories of a certain event, current experiences of emotions, or thoughts on philosophy. The GM determines which exact experiences of this type are shared.
 
     Make an Intellect attack roll against your target's Intellect DC. (As with all rolls, you can choose to automatically fail or critically fail this roll.)
 
@@ -147,10 +146,11 @@ Telepath:
   tier: Elf
   type: Passive
   brief: You can speak telepathically with all nearby creatures
+  traits: [Linguistic, Mental]
   effect: |
     You can speak telepathically with creatures within 60 feet, forming words or impressions in their mind without sound. Creatures within 60 feet can speak telepathically with you by focusing on a phrase to send.
 
-    By replacing normal conversation with telepathy, you can remove the [[Auditory]] trait from powers you use. Your telepathy doesn't let you communicate with creatures with whom you don't share a language.
+    By replacing normal speech with telepathy, you can remove the [[Auditory]] trait from powers you use.
   fluff: |
     Some telepaths are so used to mental conversation that they forget how to speak normally.
 
@@ -197,7 +197,7 @@ Reckless Abandon:
   tier: Goblin
   type: Free
   brief: You somehow survive recklessly charging towards extreme dangers
-  traits: [Daily]
+  traits: [Daily, Fortune]
   tags:
     duration: Until the end of your next turn
   effect: |
@@ -218,7 +218,7 @@ Underfoot:
   type: Passive
   brief: You scurry beneath the feet of larger creatures
   effect: |
-    You can move through other creature's spaces at full speed, even spaces occupied by enemy creatures. You can hide behind creatures that are larger than you.
+    You can move through other creature's spaces at full Speed, even spaces occupied by enemy creatures. You can't end your movement in another creature's space. You can hide or take [cover](combat-rules.html#cover) behind creatures that have a larger Size than you.
 
 # Human
 
@@ -301,11 +301,23 @@ Divine Magic:
   effect: |
     The triggering spell has -2 cost.
 
+Hear Prayer:
+  tier: Kami
+  type: Reaction
+  brief: You hear and respond to someone's inner prayer
+  tags:
+    trigger: A person within 1 mile prays to you or to a kami you serve
+    target: The triggering person
+  effect: |
+    You form a weak empathic connection with your target. You learn your target's location, the general content of their prayer, and their current emotions. You can choose to send vague emotions to your target in reply.
+
+    *This power triggers even if you can't see your target or you don't know they're praying. Your target is not aware you can hear their prayer.*
+
 High Status:
   tier: Kami
   type: 1-Action
   brief: You invoke your status in the celestial bureaucracy to command another kami
-  traits: [Daily]
+  traits: [Daily, Retroactive]
   tags:
     target: One kami you can see
     requirements: You haven't used **High Status** on your target before
@@ -327,10 +339,6 @@ High Status:
     ### Authority in Heaven
 
     Kami are obligated to follow reasonable orders given by their technical superiors. Kami are obligated to follow all orders given by people with direct authority over them, no matter how unreasonable. Flagrant abuses of direct authority may attract the attention of the higher-ups.
-
-    If a kami repeatedly disobeys orders they are obligated to follow, they risk being excommunicated from the celestial bureaucracy. An excommunicated kami is analogous to a fallen angel in Christian mythology. They are viewed as evil, heretical, and flawed, and they are totally unwelcome in Heaven.
-  fluffstart: |
-    You have an elevated status in the celestial bureaucracy, and you have authority over many other kami. Since the celestial bureaucracy is so complex, you often have some kind of authority other any other kami you meet.
 
 Immortal:
   tier: Kami
@@ -359,10 +367,10 @@ Dragon's Breath:
 
     Failure
     : Half damage
-  aside: |
-    ### Specializations
 
-    Choose one of [[Acid]], [[Cold]], [[Electricity]], [[Fire]], or [[Poison]]. This power permanently gains that trait for you.
+    #### Specializations
+
+    Choose one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], or [[Poison]] traits. This power gains that trait.
 
 Flesh Eater:
   tier: Lizardfolk
@@ -380,9 +388,9 @@ Lizard King:
   type: Passive
   brief: You grow much larger and your attacks gain extra reach
   effect: |
-    Your size increases by 1 and your reach increases by 5 feet.
+    Your size increases by +1 and your reach increases by 5 feet.
 
-    Optionally, when you reach character level 13, your size again increases by 1 and your reach increases by 5 feet.
+    Optionally, when you reach character level 13, your size again increases by +1 and your reach increases by 5 feet.
 
 Monstrous Instincts:
   tier: Lizardfolk
@@ -554,7 +562,7 @@ Lifesense:
   tags:
     range: 120 feet
   effect: |
-    You sense the approximate location of each living creature within range. You can sense creatures accurately enough to know what square they're in, but not accurately enough to count as seeing them. You learn the Size of each creature you sense.
+    You learn the location and Size of each living creature within range. This power does not show [[Construct]] or [[Undead]] creatures.
 
 No Vital Organs:
   tier: Undead

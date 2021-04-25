@@ -41,7 +41,8 @@ module CustomTags
     def render(context)
       @context = context
       @my_text = Liquid::Template.parse(@text).render(@context)
-      if !@context.registers[:site].data["traits"].key?(@my_text)
+      all_traits = @context.registers[:site].data["traits"].values.reduce(:merge)
+      if !all_traits.key?(@my_text)
         print("Warning: unknown trait \"#{@my_text}\"\n")
       end
       url = relative_url("traits.html##{Jekyll::Utils.slugify(@my_text)}")
@@ -143,7 +144,8 @@ class Jekyll::Converters::Markdown::LinkerProcessor
       end
     }.gsub(/\[\[[^\[\]]*\]\]/) { |s|
       text = s[2..-3].strip
-      if !Jekyll::sites[0].data["traits"].key?(text)
+      all_traits = Jekyll::sites[0].data["traits"].values.reduce(:merge)
+      if !all_traits.key?(text)
         print("Warning: unknown trait \"#{text}\"\n")
       end
       url = "traits.html##{Jekyll::Utils.slugify(text)}"

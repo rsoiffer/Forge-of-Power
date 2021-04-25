@@ -169,16 +169,6 @@ aside {
     box-shadow: 0 0 0 1px $my-dark-red inset;
   }
 
-  .power-body {
-    // display: flex;
-    // flex-direction: column;
-    // margin-top: .25em;
-    // border: 1px solid $my-dark-red;
-    border-left: 1px solid $my-dark-red;
-    padding-left: .75em;
-    margin: 0 .4em;
-  }
-
   h3 {
     margin-top: .5em;
   }
@@ -199,27 +189,37 @@ aside {
   }
 }
 
+.power-body {
+  // display: flex;
+  // flex-direction: column;
+  // margin-top: .25em;
+  // border: 1px solid $my-dark-red;
+  border-left: .25em solid $my-dark-red;
+  padding-left: .75em;
+  margin: .25em .4em;
+}
+
 .fluff {
   font-style: italic;
 }
 
 .trait {
   display: inline;
-  background: $my-dark-red;
-  border: #ceb566 2px solid;
-  padding: 1px 8px;
-  font-size: 0.75em !important;
+  // background: $my-dark-red;
+  // border: #ceb566 2px solid;
+  padding: 0px 6px;
+  font-size: 0.8em !important;
   text-transform: uppercase;
 
-  // background: #dbc29b;
-  // border:  $my-dark-red 2px solid;
-  // font-weight: bold;
+  background: #e7c48b;
+  border:  $my-dark-red 1px solid;
+  font-weight: bold;
 }
 .trait > a {
   text-decoration: none;
-  color: #fff;
+  // color: #fff;
 
-  // color: #000;
+  color: #000;
 }
 
 .specialize {

@@ -1,204 +1,256 @@
-# Descriptive
+Damage Types:
 
-Acid: |
-  Effects with this trait deal acid damage. Effects with this trait implicitly have the [[Elemental]] trait as well.
+  Acid: |
+    Implies
+    : [[Elemental]]
 
-Bludgeoning: |
-  Effects with this trait deal damage by crushing, smashing, or flattening targets. Effects with this trait implicitly have the [[Physical]] trait as well.
+    Effects with this trait deal damage by corroding or dissolving targets.
 
-Cold: |
-  Effects with this trait deal cold damage. Effects with this trait implicitly have the [[Elemental]] trait as well.
+  Bludgeoning: |
+    Implies
+    : [[Physical]]
 
-Dark: |
-  This effect creates or manipulates darkness.
+    Effects with this trait deal damage by crushing, smashing, or flattening targets.
 
-Electricity: |
-  Effects with this trait deal electricity damage. Effects with this trait implicitly have the [[Elemental]] trait as well.
+  Cold: |
+    Implies
+    : [[Elemental]]
 
-Elemental: |
-  Effects with this trait deal damage by some kind of interaction with one of the chemical elements or forces that make up the universe.
+    Effects with this trait deal damage by freezing targets.
 
-Emotion: |
-  This effect alters a creature's emotions. Effects with this trait always have the [[Mental]] trait as well. Creatures that can't feel emotions are immune to [[Emotion]] effects.
+  Electricity: |
+    Implies
+    : [[Elemental]]
 
-Fear: |
-  This effect evokes the emotion of fear. Effects with this trait always have the [[Mental]] and [[Emotion]] traits as well.
+    Effects with this trait deal damage by shocking, zapping, or electrifying targets.
 
-Fire: |
-  Effects with this trait deal fire damage or either conjure or manipulate fire. Effects with this trait implicitly have the [[Elemental]] trait as well.
+  Fire: |
+    Implies
+    : [[Elemental]]
 
-Force: |
-  Effects with this trait deal force damage or create objects made of pure magical force.
+    Effects with this trait deal damage by burning with fire or heat.
 
-Healing: |
-  An effect with this trait restores a creature's body, typically by restoring HP, but sometimes by removing diseases or other debilitating effects.
+  Force: |
+    Effects with this trait deal damage with pure magical force.
 
-Light: |
-  This effect creates or manipulates light.
+  Mental: |
+    An effect with this trait can alter the target's mind. Effects with this trait don't work on objects or mindless creatures.
 
-Mental: |
-  An effect with this trait can alter the target's mind. It has no effect on an object or a mindless creature.
+    Effects with this trait deal damage by directly hurting the target's mind.
 
-Necrotic: |
-  Effects with this trait deal damage by draining a target's life force, withering it away, or attacking its soul.
+  Necrotic: |
+    Effects with this trait deal damage by draining a target's life force, withering it away, or attacking its soul.
 
-Physical: |
-  Effects with this trait deal damage by some kind of collision between physical objects.
+  Piercing: |
+    Implies
+    : [[Physical]]
 
-Piercing: |
-  Effects with this trait deal damage by impaling, stabbing, or needling targets. Effects with this trait implicitly have the [[Physical]] trait as well.
+    Effects with this trait deal damage by impaling, stabbing, or needling targets.
 
-Poison: |
-  Effects with this trait deal damage by interfering with the normal inner biology of a creature. It has no effect on an object or a creature without any biology.
+  Poison: |
+    Effects with this trait deal damage by interfering with the normal inner biology of a creature.
 
-Radiant: |
-  Effects with this trait heal living creatures with positive energy, deal radiant damage to undead, or manipulate positive energy.
+  Radiant: |
+    Effects with this trait deal damage by burning creatures with radiant energy.
 
-Slashing: |
-  Effects with this trait deal damage by cutting, slicing, or hacking targets. Effects with this trait implicitly have the [[Physical]] trait as well.
+  Slashing: |
+    Implies
+    : [[Physical]]
 
-Sonic: |
-  An effect with this trait functions only if it makes sound, meaning it has no effect in an area of silence or in a vacuum. A [[Sonic]] effect might deal sonic damage.
+    Effects with this trait deal damage by cutting, slicing, or hacking targets.
 
-# Creature Types
+  Sonic: |
+    Implies
+    : [[Elemental]]
 
-Animal: |
-  A creature with this trait is an animal.
+    Effects with this trait deal damage with concussive waves of sound. An effect with this trait functions only if it makes sound, meaning it has no effect in an area of silence or in a vacuum.
 
-Construct: |
-  A creature with this trait is a clockwork robot or magical golem.
+Creature Types:
 
-Fey: |
-  A creature with this trait is a wild, chaotic spirit that lives in the feywild. Creatures with this trait always have the [[Spirit]] trait as well.
+  Animal: |
+    A creature with this trait is an animal.
 
-Humanoid: |
-  A creature with this trait is biologically similar to a human, with the same general body shape, limbs, and internal biology.
+  Construct: |
+    A creature with this trait is a clockwork robot or magical golem.
 
-Monster: |
-  A creature with this trait is an animal or humanoid infused with magic that significantly alters its form, often granting it supernatural powers.
+  Fey: |
+    Implies
+    : [[Spirit]]
 
-Outsider: |
-  A creature with this trait is a destructive spirit that feeds off of emotions. Creatures with this trait always have the [[Spirit]] trait as well.
+    A creature with this trait is a wild, chaotic spirit that lives in the feywild.
 
-Plant: |
-  A creature with this trait is a plant.
+  Humanoid: |
+    A creature with this trait is biologically similar to a human, with the same general body shape, limbs, and internal biology.
 
-Spirit: |
-  A creature with this trait is a supernatural spirit, a magical entity that interacts with the world in an unusual way.
+  Monster: |
+    A creature with this trait is an animal or humanoid infused with magic that significantly alters its form, often granting it supernatural powers.
 
-Undead: |
-  A creature with this trait is a soul that persists in the world after its normal death. Creatures with this trait always have the [[Spirit]] trait as well.
+  Outsider: |
+    Implies
+    : [[Spirit]]
 
-# General
+    A creature with this trait is a destructive spirit that feeds off of emotions.
 
-Auditory: |
-  An effect with this trait can affect only creatures that can hear it.
+  Plant: |
+    A creature with this trait is a plant.
 
-Concentrate: |
-  A power with this trait requires a degree of mental concentration and discipline.
+  Spirit: |
+    A creature with this trait is a supernatural spirit, a magical entity that interacts with the world in an unusual way.
 
-Divination: |
-  Effects with this trait reveal knowledge about a creature, object, or location. Effects with this trait might also determine what is likely to happen in the near future. Predictions of the future are never guaranteed to give correct results, only guesses or possible outcomes.
+  Undead: |
+    Implies
+    : [[Spirit]]
 
-Linguistic: |
-  An effect with this trait depends on language comprehension. A [[Linguistic]] effect that targets a creature works only if the target understands the language you are using.
+    A creature with this trait is a soul that persists in the world after its normal death.
 
-Manipulate: |
-  You must physically manipulate an item or make gestures to use a power with this trait. Creatures without a suitable appendage can't use powers with this trait.
+  Unintelligent: |
+    A creature with this trait doesn't have the mental capacity to understand complex ideas. An unintelligent creature generally can't speak, cast spells, or interact socially.
 
-Move: |
-  A power with this trait involves moving from one space to another.
+General:
 
-Phantasm: |
-  Powers with the [[Phantasm]] trait implicitly have the [[Mental]] trait as well.
+  Auditory: |
+    An effect with this trait can affect only creatures that can hear it.
 
-  A power with this trait plants a vision in the target's mind, making them see or hear things that aren't there. Only the target of the phantasm can sense the effect of the power.
+  Concentrate: |
+    A power with this trait requires a degree of mental concentration and discipline.
 
-Tactile: |
-  An effect with this trait can affect only creatures that can touch it.
+  Dark: |
+    This effect creates or manipulates darkness.
 
-Teleportation: |
-  Effects with this trait allow you to instantaneously move from one point in space to another. Teleportation does not usually trigger reactions based on movement.
+  Divination: |
+    Effects with this trait reveal knowledge about a creature, object, or location. Effects with this trait might also determine what is likely to happen in the near future. Predictions of the future are never guaranteed to give correct results, only guesses or possible outcomes.
 
-Transfiguration: |
-  An effect with this trait changes the target's physical form in some way.
+  Elemental: |
+    Effects with this trait deal damage by some kind of interaction with one of the chemical elements or forces that make up the universe.
 
-Unintelligent: |
-  A creature with this trait doesn't have the mental capacity to understand complex ideas. An unintelligent creature generally can't speak, cast spells, or interact socially.
+  Emotion: |
+    Implies
+    : [[Mental]]
 
-Visual: |
-  An effect with this trait can affect only creatures that can see it.
+    Effects with this trait alter a creature's emotions. Creatures that can't feel emotions are immune to effects with this trait.
 
-# Mechanical
+  Fear: |
+    Implies
+    : [[Emotion]], [[Mental]]
 
-Anything: |
-  This trait describes all powers. Every power has the [[Anything]] trait.
+    An effect with this trait evokes the emotion of fear.
 
-Attack: |
-  A power with this trait is called an attack. See [here](basic-rules.html#attacks) for more information.
+  Healing: |
+    An effect with this trait restores a creature's body, typically by restoring HP, but sometimes by removing diseases or other debilitating effects.
 
-Cantrip: |
-  Spells with this trait can be cast for 0 Mana. Powers with this trait always have the [[Spell]] trait as well.
+  Light: |
+    This effect creates or manipulates light.
 
-Daily: |
-  Once you use a power with this trait, you cannot use that power again until you complete an 8-hour rest.
+  Linguistic: |
+    An effect with this trait depends on language comprehension. A [[Linguistic]] effect that targets a creature works only if the target understands the language you are using.
 
-Death: |
-  An effect with this trait kills a non-player character immediately if it reduces them to 0 health. If an effect with this trait reduces a player charcter to 0 health, the player character gains 1 fatigue.
+  Manipulate: |
+    You must physically manipulate an item or make gestures to use a power with this trait. Creatures without a suitable appendage can't use powers with this trait.
 
-Encounter: |
-  Once you use a power with this trait, you cannot use that power again until you complete a 5-minute rest.
+  Move: |
+    A power with this trait involves moving from one space to another.
 
-Fortune: |
-  Effects with this trait alter how you roll your dice. You can never have more than one [[Fortune]] effect alter a single roll. If multiple [[Fortune]] effects would apply, only the last one applies.
+  Phantasm: |
+    Implies
+    : [[Mental]]
 
-Illusion: |
-  Powers with the [[Illusion]] trait implicitly have the [[Visual]] trait as well.
+    A power with this trait plants a vision in the target's mind, making them see or hear things that aren't there. Only the target of the phantasm can sense the effect of the power.
 
-  A power with this trait conjures an illusion, which is like an image or hologram of an object. You can see illusions, but you cannot hear, smell, or touch them. Unless specified otherwise, illusions are static images that are chosen by the caster. Illusions can perform small natural animations, such as grass waving in the wind, water flowing in a creek, or a person breathing.
+  Physical: |
+    Effects with this trait deal damage by some kind of collision between physical objects.
 
-  Physical interaction with the illusion reveals it as fake, because things can pass through it. You can also investigate an illusion with the {Seek} power: if you succeed on an Intellect+Notice roll agaisnt the Magic DC of the illusion's creator, you realize the illusion is fake. Even if you know something is an illusion, it still affects your senses normally.
+  Reputation: |
+    Effect with this trait represent broad changes in how other people view you socially. [[Reputation]] effects don't apply to unintelligent or asocial monsters, or to people who are so separate from society that they haven't heard about you. [[Reputation]] effects can be cancelled out by a conflicting reputation caused by your actions or by other people spreading rumors about you.
 
-Invocation: |
-  When you learn a power with this trait, choose one of the [[Acid]], [[Bludgeoning]], [[Cold]], [[Electricity]], [[Fire]], [[Necrotic]], [[Radiant]], or [[Sonic]] traits. The power gains that trait.
+  Tactile: |
+    An effect with this trait can affect only creatures that can touch it.
 
-Minion: |
-  A creature with this trait is controlled by another creature. [[Minion]] creatures can't use powers unless their master uses the {Command} power.
+  Teleportation: |
+    Effects with this trait allow you to instantaneously move from one point in space to another. Teleportation does not usually trigger reactions based on movement.
 
-Polymorph: |
-  These effects transform the target into a new form. A target can't be under the effect of more than one [[Polymorph]] effect at a time, later [[Polymorph]] effects disrupt existing ones. While you are polymorphed, your gear is absorbed into you; the passive abilities of your gear still function, but you can't activate or use any items.
+  Transfiguration: |
+    An effect with this trait changes the target's physical form in some way.
 
-Reputation: |
-  Effect with this trait represent broad changes in how other people view you socially. [[Reputation]] effects don't apply to unintelligent or asocial monsters, or to people who are so separate from society that they haven't heard about you. [[Reputation]] effects can be cancelled out by a conflicting reputation caused by your actions or by other people spreading rumors about you.
+  Visual: |
+    An effect with this trait can affect only creatures that can see it.
 
-Retroactive: |
-  An power with this trait modifies the past of the campaign setting in some way. The game proceeds as if the world had been that way all along. These powers can't be used in ways that significantly conflict with established setting details. Using a [[Retroactive]] powers is a metagame decision, as the game character isn't aware that their actions are rewriting the past.
+Mechanical:
 
-Ritual: |
-  A ritual spell can be cast through a long, complex ritual to save mana. The Mana cost of the spell is reduced by 1 for every 10 minutes you spend performing the ritual. This can reduce the Mana cost of the spell to 0. Powers with this trait always have the [[Spell]] trait as well.
+  Anything: |
+    This trait describes all powers. Every power has the [[Anything]] trait.
 
-Specialize: |
-  When you learn a power with this trait, you choose one specialization from a list in the power. The power lists the available specializations in the **Specializations** sidebar.
+  Attack: |
+    A power with this trait is called an attack. See [here](basic-rules.html#attacks) for more information.
 
-Spell: |
-  A power with this trait is called a spell. See [here](spell-rules.html) for more information.
+  Cantrip: |
+    Implies
+    : [[Spell]]
 
-Stance: |
-  A stance is a general combat strategy that you enter by using a power with the [[Stance]] trait, and that you remain in for some time. A stance lasts until you fall {unconscious}, until its requirements (if any) are violated, until the encounter ends, or until you enter a new stance, whichever comes first. You can be in a stance only during combat.
+    Spells with this trait can be cast for 0 Mana.
 
-Wrestling: |
-  A power with this trait involves physically pushing another creature around. Powers with this trait always have the [[Attack]] trait as well. If your target is a larger Size than you, you have a -10 penalty to the attack roll for each point of Size difference.
+  Daily: |
+    Once you use a power with this trait, you cannot use that power again until you complete an 8-hour rest.
 
-# Items
+  Death: |
+    An effect with this trait kills a non-player character immediately if it reduces them to 0 health. If an effect with this trait reduces a player charcter to 0 health, the player character gains 1 fatigue.
 
-Finesse: |
-  A melee weapon with this trait is light, quick, and precise. A creature making a {Strike} with a [[Finesse]] weapon can use either Strength or Agility for the attack roll.
+  Encounter: |
+    Once you use a power with this trait, you cannot use that power again until you complete a 5-minute rest.
 
-Fragile: |
-  An item with this trait breaks very easily. Whenever a creature critically fails a die roll involving the item, the item permanently breaks.
+  Fortune: |
+    Effects with this trait alter how you roll your dice. You can never have more than one [[Fortune]] effect alter a single roll. If multiple [[Fortune]] effects would apply, only the last one applies.
 
-One-Handed: |
-  An item with this trait requires one hand to wield. You cannot use this hand for anything else while wielding this item.
+  Illusion: |
+    Implies
+    : [[Visual]]
 
-Two-Handed: |
-  An item with this trait requires two hands to wield. You cannot use these hands for anything else while wielding this item.
+    A power with this trait conjures an illusion, which is like an image or hologram of an object. You can see illusions, but you cannot hear, smell, or touch them. Unless specified otherwise, illusions are static images that are chosen by the caster. Illusions can perform small natural animations, such as grass waving in the wind, water flowing in a creek, or a person breathing.
+
+    Physical interaction with the illusion reveals it as fake, because things can pass through it. You can also investigate an illusion with the {Seek} power: if you succeed on an Intellect+Notice roll agaisnt the Magic DC of the illusion's creator, you realize the illusion is fake. Even if you know something is an illusion, it still affects your senses normally.
+
+  Invocation: |
+    Implies
+    : [[Specialize]]
+
+    When you learn an [[Invocation]] power, choose one of the [[Acid]], [[Bludgeoning]], [[Cold]], [[Electricity]], [[Fire]], [[Necrotic]], [[Radiant]], or [[Sonic]] traits. The power gains that trait.
+
+  Minion: |
+    A creature with the [[Minion]] trait is controlled by another creature. In combat, [[Minion]] creatures can't use powers unless their master uses the {Command} power.
+
+  Polymorph: |
+    These effects transform the target into a new form. A target can't be under the effect of more than one [[Polymorph]] effect at a time, later [[Polymorph]] effects disrupt existing ones. While you are polymorphed, your gear is absorbed into you; the passive abilities of your gear still function, but you can't activate or use any items.
+
+  Retroactive: |
+    An power with this trait modifies the past of the campaign setting in some way. The game proceeds as if the world had been that way all along. These powers can't be used in ways that significantly conflict with established setting details. Using a [[Retroactive]] powers is a metagame decision, as the game character isn't aware that their actions are rewriting the past.
+
+  Ritual: |
+    A ritual spell can be cast through a long, complex ritual to save mana. The Mana cost of the spell is reduced by 1 for every 10 minutes you spend performing the ritual. This can reduce the Mana cost of the spell to 0. Powers with this trait always have the [[Spell]] trait as well.
+
+  Specialize: |
+    When you learn a power with this trait, you choose one specialization from a list in the power. The power lists the available specializations in the **Specializations** sidebar.
+
+  Spell: |
+    A power with this trait is called a spell. See [here](spell-rules.html) for more information.
+
+  Stance: |
+    A stance is a general combat strategy that you enter by using a power with the [[Stance]] trait, and that you remain in for some time. A stance lasts until you fall {unconscious}, until its requirements (if any) are violated, until the encounter ends, or until you enter a new stance, whichever comes first. You can be in a stance only during combat.
+
+  Wrestling: |
+    Implies
+    : [[Attack]]
+
+    A power with this trait involves physically pushing another creature around. If your target is a larger Size than you, you have a -10 penalty to the attack roll for each point of Size difference.
+
+Items:
+
+  Finesse: |
+    A melee weapon with this trait is light, quick, and precise. A creature making a {Strike} with a [[Finesse]] weapon can use either Strength or Agility for the attack roll.
+
+  Fragile: |
+    An item with this trait breaks very easily. Whenever a creature critically fails a die roll involving the item, the item permanently breaks.
+
+  One-Handed: |
+    An item with this trait requires one hand to wield. You cannot use this hand for anything else while wielding this item.
+
+  Two-Handed: |
+    An item with this trait requires two hands to wield. You cannot use these hands for anything else while wielding this item.
