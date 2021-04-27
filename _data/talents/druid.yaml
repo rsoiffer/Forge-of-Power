@@ -405,7 +405,7 @@ Permanent Summons:
 
     #### Heightened
 
-    If you add +2 Mana, the duration changes to Forever.
+    If you add +2 Mana, the duration changes to Forever. However, your maximum Mana decreases by half the cost of this spell (before any reductions to the cost). If you have multiple permanent summons, this penalty only applies to the highest cost summon.
 
 Swarm Body:
   tier: Master

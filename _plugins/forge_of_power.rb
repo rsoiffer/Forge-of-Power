@@ -18,53 +18,62 @@ module ForgeOfPower
           {"title" => name[0], "url" => Jekyll::Utils.slugify(name[0]) + ".html"}
         end
 
-      site.data["powers"] =
-        site.data["talents"].flat_map do |name, school|
-          school.map do |name2, power|
-            {name2 => power.merge({"school" => name.capitalize()})}
-          end
-        end.reduce({}, :merge)
+      site.data["all_powers"] = {}
+      add_powers(site, site.data["basic-powers"], "basic-powers", "basic-powers.html#*")
+      for school in site.data["talents"]
+        add_powers(site, school[1], "talents/" + school[0], school[0] + ".html#*")
+      end
+      for feat_type in site.data["feats"]
+        add_powers(site, feat_type[1], "feats/" + feat_type[0], "feats-" + feat_type[0] + ".html#*")
+      end
 
       site.data["trait_to_basic_powers"] = {}
-      for power in site.data["basic-powers"]
+      site.data["trait_to_talents"] = {
+        "Novice" => {}, "Veteran" => {}, "Master" => {}, "Epic" => {}, "Ribbon" => {}}
+      site.data["trait_to_feats"] = {}
+      site.data["trait_to_other"] = {}
+
+      for power in site.data["all_powers"]
+        map = get_map(site, power)
         if power[1]["traits"]
           for t in power[1]["traits"]
-            if !site.data["trait_to_basic_powers"].key?(t)
-              site.data["trait_to_basic_powers"][t] = []
+            if !map.key?(t)
+              map[t] = []
             end
-            site.data["trait_to_basic_powers"][t] << power[0]
-          end
-        end
-      end
-
-      site.data["trait_to_talents"] = {}
-      for school in site.data["talents"]
-        for power in school[1]
-          if power[1]["traits"]
-            for t in power[1]["traits"]
-              if !site.data["trait_to_talents"].key?(t)
-                site.data["trait_to_talents"][t] = []
-              end
-              site.data["trait_to_talents"][t] << power[0]
-            end
-          end
-        end
-      end
-
-      site.data["trait_to_feats"] = {}
-      for feat_type in site.data["feats"]
-        for power in feat_type[1]
-          if power[1]["traits"]
-            for t in power[1]["traits"]
-              if !site.data["trait_to_feats"].key?(t)
-                site.data["trait_to_feats"][t] = []
-              end
-              site.data["trait_to_feats"][t] << power[0]
-            end
+            map[t] << power[0]
           end
         end
       end
 
     end
+
+    def add_powers(site, powers, source, link)
+      for power in powers
+        if site.data["all_powers"].key?(power[0])
+          print("Warning: already added power #{power[0]}\n")
+        else
+          my_link = link.gsub("*", Jekyll::Utils.slugify(power[0]))
+          site.data["all_powers"][power[0]] =
+            power[1].merge({"source" => source, "link" => my_link})
+          if power[1].key?("tabs")
+            add_powers(site, power[1]["tabs"], "other", my_link)
+          end
+        end
+      end
+    end
+
+    def get_map(site, power)
+      case power[1]["source"]
+        when /^basic-powers/
+          site.data["trait_to_basic_powers"]
+        when /^talents/
+          site.data["trait_to_talents"][power[1]["tier"]]
+        when /^feats/
+          site.data["trait_to_feats"]
+        else
+          site.data["trait_to_other"]
+      end
+    end
+
   end
 end

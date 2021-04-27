@@ -126,19 +126,20 @@ class Jekyll::Converters::Markdown::LinkerProcessor
       m["conditions"] = "[#{text}](conditions.html##{slug_text})"
       m["equipment/apparel"] = "[#{text}](equipment.html##{slug_text})"
       m["equipment/weapons"] = "[#{text}](equipment.html##{slug_text})"
-      m["basic-powers"] = "[#{text}](basic-powers.html##{slug_text})"
-      for school in get_map["talents"]
-        m["talents/#{school[0]}"] = "[#{text}](#{school[0]}.html##{slug_text})"
-      end
-      for feat_type in get_map["feats"]
-        m["feats/#{feat_type[0]}"] = "[#{text}](feats-#{feat_type[0]}.html##{slug_text})"
+
+      matches =
+        m.map { |val|
+          val[1] if get_map[val[0]].find { |k, v|
+            Jekyll::Utils.slugify(k) == slug_text
+          }
+        }.compact
+
+      power_match = begin
+        power = Jekyll::sites[0].data["all_powers"][text]
+        "[#{text}](#{power["link"]})" if power
       end
 
-      m.map { |val|
-        val[1] if get_map[val[0]].find { |k, v|
-          Jekyll::Utils.slugify(k) == slug_text
-        }
-      }.compact.first || begin
+      matches.first || power_match || begin
         print("Warning: could not resolve link to text \"#{text}\"\n")
         "***#{text}***"
       end

@@ -17,13 +17,15 @@ Casting spells requires an **arcane focus**, which is a handheld item you use to
 
 All characters that can cast spells have a Mana pool that represents how much magical energy they have available. Your Mana pool stores a number of points, up to a maximum of your Mana stat. When you pay Mana to cast a spell, you must subtract the amount paid from your Mana pool. Your Mana pool can never go below 0. Your [mystic origin](mystic-origins.html) determines your Mana stat and describes when your Mana pool replenishes.
 
-All spells have a **cost** in Mana. You must pay this amount of Mana when you cast the spell. If you don't have enough Mana, you can't cast the spell. Some effects reduce the cost of a spell. You must always spend at least 1 Mana when you cast a spell, or at least 0 Mana if the spell has the [[Cantrip]] trait.
+All spells have a **cost** in Mana. You must pay this amount of Mana when you cast the spell. If you don't have enough Mana, you can't cast the spell. Some effects increase or decrease the base cost of a spell, as described in the next section.
 
-## Heightening Spells
+## Heightening and Cost Reductions
 
-You can **heighten** some spells to increase their effect, at the cost of paying more Mana to use the spell. When you cast a spell, you can choose to pay more Mana than the listed cost, up to a limit of your character's **Mana Limit** stat. Your Mana Limit stat is given by your [mystic origin](mystic-origins.html).
+You can **heighten** some spells to increase their effect, at the cost of paying more Mana to use the spell. Spells that can be heightened will have a ***Heightened*** block beneath the spell's text, which describes the ways you can heighten the spell. When you heighten a spell, you cannot increase the final cost above your character's **Mana Limit** stat. Your Mana Limit stat is given by your [mystic origin](mystic-origins.html).
 
-If a spell's description has an entry that reads **Heightened (per +X Mana)**, then for each X Mana you pay above the base cost, the effect is modified as listed. If a spell's description has an entry that reads **Heightened (total X Mana)**, then if you pay a total of at least X mana, the effect is modified as listed. If a spell's descriptions has multiple **Heightened** enties, then all of them apply.
+Some effects reduce the cost of a spell. This decreases the amount of mana you have to spend on the spell, but doesn't reduce the effect of the spell. You must always spend at least 1 Mana when you cast a spell, or at least 0 Mana if the spell has the [[Cantrip]] trait.
+
+Some effects depend on the exact cost of a spell. This is measured in two ways. The **cost** of a spell is the amount of Mana you pay to cast it. The cost of a spell includes both heightening the spell and any effects the reduce the cost. The **power** of a spell is the effectiveness of the spell. The power of a spell includes heightening the spell, but *does not* include any effects that reduce the cost.
 
 ## Customizing Spells
 

@@ -22,6 +22,34 @@ Bear:
     Claw Strike {% icon 1-Action %}
     : +6 vs. Defense, 2d6+6 [[Slashing]] damage
 
+Beholder (Greater):
+  traits: [Monster, Spirit]
+  tags:
+    attributes: Strength +0, Agility +5, Intellect +8, Spirit +4
+    other stats: Health 180, Defense 18, Speed 20 feet (fly), Size +1
+    spellcasting: Mana 36, Magic +8, Mana Limit 10
+  effect: |
+    ***Master Illusionist.*** The beholder knows all Illusionist talents of Master tier and below.
+
+    Antimagic Cone {% icon Free %}
+    : As {Antimagic Field}, but it fills a 150-foot cone and lasts one round
+
+    Bite Strike {% icon 1-Action %}
+    : +5 vs. Defense, 3d6+5 [[Piercing]] damage
+
+    Eye Ray {% icon 1-Action %}
+    : 120 foot range, +8 to hit, shoot three random rays, [[Spell]] trait
+    1. Charm Ray vs. Spirit DC, target can't attack the beholder until harmed by the beholder
+    2. Paralyzing Ray vs. Strength DC (sustained), target is {stunned}
+    3. Fear Ray vs. Spirit DC (sustained), target is {terrified}
+    4. Slowing Ray vs. Agility DC (sustained), target is {slowed} and can't use {% icon Reaction %} powers
+    5. Enervation Ray vs. Strength DC, 8d8 [[Necrotic]] damage (half on failure)
+    6. Telekinetic Ray as {Telekinetic Grip}
+    7. Sleep Ray vs. Spirit DC, target is {unconscious} until harmed or awakened as a {% icon 1-Action %} power
+    8. Petrification Ray as {Petrify}
+    9. Disintegration Ray vs. Agility DC, 10d8 [[Force]] damage, [[Death]] trait
+    10. Enervation Ray vs. Agility DC, 10d10 [[Necrotic]] damage, [[Death]] trait
+
 Blowtoad:
   traits: [Animal, Monster, Unintelligent]
   tags:
@@ -174,6 +202,15 @@ Monadster:
     Join {% icon 1-Action %}
     : Absorb an adjacent monadster. Add your Health together, use the higher of all others stats, and gain all of the target's powers.
 
+Ogre:
+  traits: [Humanoid, Monster]
+  tags:
+    attributes: Strength +6, Agilty -1, Intellect -3, Spirit -2
+    other stats: Health 59, Defense 11, Speed 40 feet, Size +1
+  effect: |
+    Greatclub Strike {% icon 1-Action %}
+    : +6 vs. Defense, 1d12+6 [[Bludgeoning]] damage
+
 Skeleton:
   traits: [Spirit, Undead, Unintelligent]
   tags:
@@ -187,7 +224,7 @@ Skeleton:
     Sword Strike {% icon 1-Action %}
     : +2 vs. Defense, 1d8+2 [[Bludgeoning]] damage
 
-Spider Mech:
+Spider Mech v1:
   traits: [Construct, Unintelligent]
   tags:
     attributes: Strength +8, Agilty +0, Intellect -2, Spirit -1
@@ -202,6 +239,53 @@ Spider Mech:
 
     Spell Shield {% icon Reaction %}
     : Gain +10 to Intellect or Spirit DC against one spell
+
+Spider Mech v2:
+  traits: [Construct, Unintelligent]
+  tags:
+    attributes: Strength +13, Agilty +0, Intellect -4, Spirit -1
+    other stats: Health 210, Defense 20, Speed 50 feet (climb), Size +3
+  effect: |
+    50 [[Mental]] Shield, 50 [[Poison]] Shield, 20 [[Anything]] Shield, 20 Water Weakness.
+
+    ***Elemental Absorption.*** After it takes [[Elemental]] damage, slam strikes deal +3d6 damage of that type next round.
+
+    Slam Strike {% icon 1-Action %}
+    : +13 vs. Defense, 3d6+13 [[Bludgeoning]] damage
+
+    Spell Shield {% icon Reaction %}
+    : Gain +10 to Intellect or Spirit DC against one spell
+
+Spy:
+  traits: [Humanoid]
+  tags:
+    attributes: Strength +0, Agilty +4, Intellect +1, Spirit +2
+    other stats: Health 27, Defense 14, Speed 30 feet, Size +0
+    skill boosts: Eloquence +2, Notice +2, Stealth +2
+  effect: |
+    The spy knows {Smoke Bomb} and {Sneak Attack}. The spy carries a {crossbow} and a {dagger}.
+
+Spy Lieutenant:
+  traits: [Humanoid]
+  tags:
+    attributes: Strength +0, Agilty +5, Intellect +1, Spirit +3
+    other stats: Health 54, Defense 15, Speed 30 feet, Size +0
+    skill boosts: Eloquence +4, Notice +4, Stealth +4
+  effect: |
+    The spy lieutenant knows {Smoke Bomb}, {Sneak Attack}, {Debilitation}, and {Improved Sneak Attack}. The spy lieutenant carries a {crossbow} and a {dagger}.
+
+Troll:
+  traits: [Humanoid, Monster]
+  tags:
+    attributes: Strength +7, Agilty +1, Intellect -2, Spirit -2
+    other stats: Health 84, Defense 15, Speed 30 feet, Size +1
+  effect: |
+    10 [[Acid]] Weakness, 10 [[Fire]] Weakness.
+
+    ***Regeneration.*** The troll heals 10 health at the start of each of its turns. If the troll takes [[Acid]] or [[Fire]] damage, it loses this ability for a round. The troll only dies if it doesn't regenerate or if it is killed by a critical success on an attack.
+
+    Claw Strike {% icon 1-Action %}
+    : +7 vs. Defense, 2d6+7 [[Slashing]] damage
 
 Wild Tree:
   traits: [Monster, Plant, Unintelligent]

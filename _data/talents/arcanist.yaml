@@ -275,11 +275,9 @@ Stabilized Glyph:
   tags:
     prerequisites: Glyph
   effect: |
-    Your {Glyph} power gains the following effect.
+    When a glyph created by your {Glyph} spell triggers, you can choose for the glyph to be only temporarily disabled instead of permanently destroyed. Any Novice Arcanist can manually reset a disabled glyph, which lets the glyph trigger again in the future. If the glyph contains **Explosive Runes** or a spell of cost 0, the glyph automatically resets after 1 hour.
 
-    #### Heightened
-
-    If you add +2 Mana, this power doesn't end when the glyph triggers. When the glyph triggers, it becomes unable to trigger for 1 hour. If you store a spell in the glyph, you must cast it three times instead of casting it once.
+    Manually resetting a glyph requires 1 minute of work. If the glyph contains a spell of cost 1 or higher, this work consumes an amount of expensive chalk worth 1 gp times the Mana cost of the spell stored in the glyph.
 
 Wall of Force:
   tier: Veteran
@@ -293,7 +291,7 @@ Wall of Force:
   effect: |
     You conjure an invisible wall of force. The wall consists of up to 10 flat, thin square panels, each of which is 10 feet by 10 feet in size. You can choose each panel's position and orientation, so long as all panels are connected and within range. You cannot conjure a panel in a space occupied by a creature or a solid object.
 
-    The wall is physically solid and is weightless. Each panel has 100 Health and 100 [[Anything]] Shield. You choose whether the wall is free-floating or whether it rests on a solid surface.
+    The wall is physically solid and is weightless. Each panel has 10 Health and 100 [[Anything]] Shield. You choose whether the wall is free-floating or whether it rests on a solid surface.
 
 Antimagic Field:
   tier: Master
@@ -397,4 +395,4 @@ Zone of Truth:
     area: 30-foot burst
     duration: 10 minutes
   effect: |
-    Whenever anyone in this spell's area knowingly speaks a lie, the spell sends you a ping. When you cast **Zone of Truth**, you choose whether the ping is perceptible to only you or to everyone nearby.
+    Whenever anyone in this spell's area knowingly speaks a lie, the spell sends you a ping. This power doesn't detect half-truths or lies by omission. When you cast **Zone of Truth**, you choose whether the ping is perceptible to only you or to everyone nearby.

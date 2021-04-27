@@ -62,7 +62,7 @@ Bestow Curse:
 
     For each +2 Mana, choose an additional effect from the list.
 
-Command:
+Command Person:
   tier: Novice
   type: 1-Action
   brief: You shout a command that your target is compelled to obey

@@ -148,6 +148,23 @@ aside {
   }
 }
 
+summary {
+  overflow: hidden;
+  list-style: none;
+  ::marker, ::-webkit-details-marker {
+    display: none;
+  }
+  // background-color: #e4cca5;
+  // box-shadow: 0 0 0 1px $border-color inset;
+  h4 {
+    margin-top: .25em !important;
+  }
+}
+summary:hover {
+  background-color: #ffffff33;
+  box-shadow: 0 0 0 1px $my-dark-red inset;
+}
+
 // Special classes
 
 .power, .item {
@@ -156,17 +173,6 @@ aside {
 
   summary {
     padding: 0 .25em;
-    overflow: hidden;
-    list-style: none;
-    ::marker, ::-webkit-details-marker {
-      display: none;
-    }
-    // background-color: #e4cca5;
-    // box-shadow: 0 0 0 1px $border-color inset;
-  }
-  summary:hover {
-    background-color: #ffffff33;
-    box-shadow: 0 0 0 1px $my-dark-red inset;
   }
 
   h3 {

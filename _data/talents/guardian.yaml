@@ -33,7 +33,7 @@ Heavy Armor:
   type: Passive
   brief: Your heavy armor can absorb a massive amount of punishment
   tags:
-    requirements: You are wearing apparel that adds your Strength to Defense
+    requirements: You are currently adding your Strength to your Defense
   effect: |
     You have [[Physical]] Shield equal to 2 + your Guardian level.
 

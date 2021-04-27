@@ -18,40 +18,63 @@ sidebar:
     </h4>
     <div class="power-body">
       {{ trait[1] | process }}
+
+      {% assign name = trait[0] %}
+      {% capture occurences %}
+        {% assign my_powers = site.data.trait_to_basic_powers[name] %}
+        {% if my_powers %}
+          <dt>Basic Powers ({{ my_powers | size }})</dt>
+          {% assign br_start = "{" %}
+          {% assign br_end = "}" %}
+          {% assign separator = "}, {" %}
+          {% assign powers_str = my_powers | sort | join: separator | prepend: br_start | append: br_end %}
+          <dd>{{ powers_str | process_inline }}</dd>
+        {% endif %}
+
+        {% assign tiers = "Novice, Veteran, Master, Epic, Ribbon" | split: ", " %}
+        {% for tier2 in tiers %}
+          {% assign my_powers = site.data.trait_to_talents[tier2][name] %}
+          {% if my_powers %}
+            {% if tier2 == "Ribbon" %}
+              <dt>Ribbons ({{ my_powers | size }})</dt>
+            {% else %}
+              <dt>{{ tier2 }} Talents ({{ my_powers | size }})</dt>
+            {% endif %}
+            {% assign br_start = "{" %}
+            {% assign br_end = "}" %}
+            {% assign separator = "}, {" %}
+            {% assign powers_str = my_powers | sort | join: separator | prepend: br_start | append: br_end %}
+            <dd>{{ powers_str | process_inline }}</dd>
+          {% endif %}
+        {% endfor %}
+
+        {% assign my_powers = site.data.trait_to_feats[name] %}
+        {% if my_powers %}
+          <dt>Feats ({{ my_powers | size }})</dt>
+          {% assign br_start = "{" %}
+          {% assign br_end = "}" %}
+          {% assign separator = "}, {" %}
+          {% assign powers_str = my_powers | sort | join: separator | prepend: br_start | append: br_end %}
+          <dd>{{ powers_str | process_inline }}</dd>
+        {% endif %}
+
+        {% assign my_powers = site.data.trait_to_other[name] %}
+        {% if my_powers %}
+          <dt>Other ({{ my_powers | size }})</dt>
+          {% assign br_start = "{" %}
+          {% assign br_end = "}" %}
+          {% assign separator = "}, {" %}
+          {% assign powers_str = my_powers | sort | join: separator | prepend: br_start | append: br_end %}
+          <dd>{{ powers_str | process_inline }}</dd>
+        {% endif %}
+      {% endcapture %}
+
+      {% if occurences.size > 250 %}
+        <details>
+          <summary><h4>See Uses</h4></summary>
+          <dl>{{ occurences }}</dl>
+        </details>
+      {% endif %}
     </div>
-
-    <!-- {% assign name = trait[0] %}
-
-    <dl>
-      {% assign my_powers = site.data.trait_to_basic_powers[name] %}
-      {% if my_powers %}
-        <dt>Basic Powers ({{ my_powers | size }})</dt>
-        {% assign br_start = "{" %}
-        {% assign br_end = "}" %}
-        {% assign separator = "}, {" %}
-        {% assign powers_str = my_powers | sort | join: separator | prepend: br_start | append: br_end %}
-        <dd>{{ powers_str | process_inline }}</dd>
-      {% endif %}
-
-      {% assign my_powers = site.data.trait_to_talents[name] %}
-      {% if my_powers %}
-        <dt>Talents ({{ my_powers | size }})</dt>
-        {% assign br_start = "{" %}
-        {% assign br_end = "}" %}
-        {% assign separator = "}, {" %}
-        {% assign powers_str = my_powers | sort | join: separator | prepend: br_start | append: br_end %}
-        <dd>{{ powers_str | process_inline }}</dd>
-      {% endif %}
-
-      {% assign my_powers = site.data.trait_to_feats[name] %}
-      {% if my_powers %}
-        <dt>Feats ({{ my_powers | size }})</dt>
-        {% assign br_start = "{" %}
-        {% assign br_end = "}" %}
-        {% assign separator = "}, {" %}
-        {% assign powers_str = my_powers | sort | join: separator | prepend: br_start | append: br_end %}
-        <dd>{{ powers_str | process_inline }}</dd>
-      {% endif %}
-    </dl> -->
   {% endfor %}
 {% endfor %}

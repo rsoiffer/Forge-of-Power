@@ -317,6 +317,7 @@ Locate Animals or Plants:
   tier: Nature
   type: 1-Action
   brief: You find the nearest animal or plant of a certain type within 5 miles
+  traits: [Divination]
   tags:
     skill boost: Nature
   effect: |
@@ -372,7 +373,7 @@ Lie Detector:
   tier: Notice
   type: Reaction
   brief: You learn whether a creature is telling the truth or lying
-  traits: [Encounter]
+  traits: [Divination, Encounter]
   tags:
     skill boost: Notice
     trigger: A creature you can see and hear makes a statement
@@ -564,6 +565,7 @@ Bishop:
   tier: Religion
   type: 1-Action
   brief: You reveal a core tenet or rule that everyone in your religion follows
+  traits: [Retroactive]
   tags:
     skill boost: Religion
   effect: |
@@ -575,6 +577,7 @@ Divine Sense:
   tier: Religion
   type: Passive
   brief: You can sense powerful spirits, like kami, outsiders, and undead
+  traits: [Divination]
   tags:
     skill boost: Religion
   effect: |
@@ -768,7 +771,7 @@ Travel Guide:
   tier: Travel
   type: 1-Action
   brief: You know the way to any destination you name, and can easily find the path there
-  traits: [Daily]
+  traits: [Daily, Divination]
   tags:
     skill boost: Travel
     duration: 8 hours
@@ -779,6 +782,7 @@ Wanderer:
   tier: Travel
   type: Passive
   brief: You never get completely lost while travelling outdoors
+  traits: [Divination]
   tags:
     skill boost: Travel
   effect: |

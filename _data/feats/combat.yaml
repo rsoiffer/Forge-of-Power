@@ -384,15 +384,13 @@ Overchannel:
   tags:
     requirements: You are wielding a staff
     cost: 1 Mana
-    duration: 1 minute
+    duration: Until you end your turn without casting Overchannel
   effect: |
-    The next spell you cast has -1 cost.
+    The next spell you cast other than Overchannel has -1 cost. This effect stacks with itself, so if you cast Overchannel multiple times, your next spell has -1 cost for each time you cast Overchannel.
 
-    #### Heightened
-
-    For each +1 Mana, the next spell you cast has another -1 cost.
+    A spell enhanced by Overchannel is less stable than usual. Your next spell has a maximum duration of 1 minute.
   fluff: |
-    Note for GMs: some spells (like {Elemental Control} and {Create Element}) have exponential scaling in the mana cost. Some players may try to combine these spells with Overchannel to reach huge numbers. If they do this, hit them over the head with the PHB.
+    Note for GMs: some spells (like {Create Element}) have exponential scaling in the mana cost. Some players may try to combine these spells with Overchannel to reach huge numbers. If they do this, hit them over the head with the PHB.
 
 Staff Fighting:
   tier: Staff
