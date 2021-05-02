@@ -1,8 +1,11 @@
+
 apparel:
 
   Beast Hide:
     brief: Thick hides or leathers that insulate and protect
     tags:
+      cost: 2 gp
+      weight: 12 lb.
       defense: 10 + Strength
     effect: |
       You have advantage on Strength rolls to endure extreme temperatures or weather.
@@ -10,6 +13,8 @@ apparel:
   Chain Mail:
     brief: A heavy outfit made of interlocked metal rings
     tags:
+      cost: 8 gp
+      weight: 55 lb.
       defense: 11 + Strength
     effect: |
       You have a -5 feet penalty to Speed.
@@ -17,27 +22,35 @@ apparel:
   Plate Armor:
     brief: A set of armor made of sturdy metal plates
     tags:
+      cost: 20 gp
+      weight: 40 lb.
       defense: 11 + Strength
     effect: |
       You have disadvantage on Stealth rolls that rely on moving silently.
 
-  Leather Armor:
-    brief: Hardened leather that helps to deflect attacks
-    tags:
-      defense: 10 + Agility
-    effect: |
-      You have a +2 bonus to Agility DC.
-
-  Light Clothing:
+  Common Clothes:
     brief: Normal clothing that regular people wear
     tags:
+      cost: 5 sp
+      weight: 3 lb.
       defense: 10 + Agility
     effect: |
       You're wearing normal clothes, so you don't look suspicious.
 
+  Leather Armor:
+    brief: Hardened leather that helps to deflect attacks
+    tags:
+      cost: 2 gp
+      weight: 10 lb.
+      defense: 10 + Agility
+    effect: |
+      You have a +2 bonus to Agility DC.
+
   Monk Robes:
     brief: Wrappings or robes that offer complete flexibility
     tags:
+      cost: 2 gp
+      weight: 2 lb.
       defense: 10 + Agility
     effect: |
       You have advantage on Agility+Athletics rolls to balance and jump.
@@ -45,6 +58,8 @@ apparel:
   Mage Armor:
     brief: Light armor enchanted to better protect the wearer
     tags:
+      cost: 10 gp
+      weight: 20 lb.
       defense: 9 + Intellect
     effect: |
       You have 10 [[Force]] Shield.
@@ -52,6 +67,8 @@ apparel:
   Tinkerer's Vest:
     brief: A reinforced lab coat or set of overalls for field-testing
     tags:
+      cost: 2 gp
+      weight: 5 lb.
       defense: 9 + Intellect
     effect: |
       You have advantage on Intellect+Arcana and Intellect+Crafting rolls to craft or repair things.
@@ -59,13 +76,17 @@ apparel:
   Wizard Robes:
     brief: Long arcane robes that conduct magical energy
     tags:
+      cost: 5 gp
+      weight: 10 lb.
       defense: 7 + Intellect
     effect: |
       You have a +1 bonus to Magic attacks.
 
-  Fine Clothing:
+  Fine Clothes:
     brief: Fancy, high-quality clothes meant to impress
     tags:
+      cost: 15 gp
+      weight: 6 lb.
       defense: 9 + Spirit
     effect: |
       You have advantage on Spirit+Eloquence and Spirit+Perform rolls to influence others.
@@ -73,6 +94,8 @@ apparel:
   Priest Vestments:
     brief: A religious outfit imbued with a divine blessing
     tags:
+      cost: 5 gp
+      weight: 10 lb.
       defense: 9 + Spirit
     effect: |
       You have 10 [[Necrotic]] Shield.
@@ -80,6 +103,8 @@ apparel:
   Sorcerer's Tunic:
     brief: Light robes that help with channeling magic
     tags:
+      cost: 2 gp
+      weight: 4 lb.
       defense: 7 + Spirit
     effect: |
       You have a +1 bonus to Mana Limit.
@@ -91,6 +116,9 @@ weapons:
   Amulet:
     brief: A holy symbol or talisman that bears protective magic
     traits: [One-Handed]
+    tags:
+      cost: 5 gp
+      weight: 1 lb.
     effect: |
       While wielding an amulet, you have a +2 bonus to your Spirit DC.
 
@@ -100,6 +128,8 @@ weapons:
     brief: A one-handed axe, club, or mace for smashing foes
     traits: [One-Handed]
     tags:
+      cost: 4 gp
+      weight: 5 lb.
       type: Melee weapon
       base damage: 1d8 [[Bludgeoning]] or [[Slashing]], depending on the weapon
     effect: |
@@ -114,6 +144,8 @@ weapons:
     brief: A classic bow and arrow for long-range sniping
     traits: [Two-Handed]
     tags:
+      cost: 10 gp
+      weight: 3 lb.
       type: Ranged weapon
       base damage: 1d8 [[Piercing]]
       range: 100 feet
@@ -126,6 +158,8 @@ weapons:
     brief: A mechanical crossbow that fires slow but powerful shots
     traits: [Two-Handed]
     tags:
+      cost: 20 gp
+      weight: 5 lb.
       type: Ranged weapon
       base damage: 1d6 [[Piercing]]
       range: 150 feet
@@ -147,6 +181,8 @@ weapons:
     brief: A small bladed weapon that's cheap and easy to conceal
     traits: [Finesse, One-Handed]
     tags:
+      cost: 1 gp
+      weight: 1 lb.
       type: Melee weapon
       base damage: 1d6 [[Piercing]]
     effect: |
@@ -165,6 +201,8 @@ weapons:
     brief: A two-handed greatsword, maul, or axe for heavy strikes
     traits: [Two-Handed]
     tags:
+      cost: 15 gp
+      weight: 10 lb.
       type: Melee weapon
       base damage: 1d12 [[Bludgeoning]] or [[Slashing]], depending on the weapon
     effect: |
@@ -173,6 +211,9 @@ weapons:
   Orb:
     brief: A magical orb or crystal that helps in controlling magic
     traits: [One-Handed]
+    tags:
+      cost: 20 gp
+      weight: 3 lb.
     effect: |
       Orbs shine with a dim glow, casting dim light out to 10 feet.
 
@@ -182,6 +223,8 @@ weapons:
     brief: A long polearm, such as a spear, halberd, or glaive
     traits: [Two-Handed]
     tags:
+      cost: 2 gp
+      weight: 5 lb.
       type: Melee weapon
       base damage: 1d12 [[Piercing]] or [[Slashing]], depending on the weapon
     effect: |
@@ -194,6 +237,9 @@ weapons:
   Shield:
     brief: A kite shield, round shield, or buckler for blocking attacks
     traits: [One-Handed]
+    tags:
+      cost: 10 gp
+      weight: 6 lb.
     effect: |
       While wielding a shield, you calculate your Defense with Strength, no matter what apparel you're wearing. While wielding a shield and wearing heavy armor, you have a +1 bonus to Defense.
 
@@ -201,6 +247,8 @@ weapons:
     brief: A walking staff or quarterstaff, perfect for channeling spells
     traits: [One-Handed]
     tags:
+      cost: 5 gp
+      weight: 4 lb.
       type: Melee weapon
       base damage: 1d6 [[Bludgeoning]]
     effect: |
@@ -212,6 +260,8 @@ weapons:
     brief: A one-handed sword, good for both slashing and thrusting
     traits: [Finesse, One-Handed]
     tags:
+      cost: 10 gp
+      weight: 3 lb.
       type: Melee weapon
       base damage: 1d8 [[Slashing]]
     effect: |
@@ -225,6 +275,8 @@ weapons:
     brief: A javelin, throwing axe, bola, or other thrown weapon
     traits: [One-Handed]
     tags:
+      cost: 1 gp
+      weight: 4 lb.
       type: Melee weapon
       base damage: 1d6 [[Bludgeoning]], [[Piercing]], or [[Slashing]], depending on the weapon
     effect: |
@@ -244,6 +296,9 @@ weapons:
   Tome:
     brief: A book of eldritch secrets that holds incantations for spells
     traits: [One-Handed]
+    tags:
+      cost: 25 gp
+      weight: 5 lb.
     effect: |
       While wielding a tome, if you can currently read the contents of the tome, you have advantage on Intellect+Arcana rolls to identify magic of the type described in the tome.
 
@@ -252,6 +307,8 @@ weapons:
   Unarmed:
     brief: A punch or kick, weak but available while unarmed
     tags:
+      cost: "-"
+      weight: "-"
       type: Melee weapon
       base damage: 1d4 [[Bludgeoning]]
     effect: |      
@@ -260,6 +317,9 @@ weapons:
   Wand:
     brief: A small wand, scepter, or baton useful for casting spells
     traits: [One-Handed]
+    tags:
+      cost: 10 gp
+      weight: 1 lb.
     effect: |
       While wielding a wand, you can use the **Magic Sparks** power.
     aside: |

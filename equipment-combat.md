@@ -1,17 +1,21 @@
 ---
 layout: single
-title: Equipment
+title: Combat Items
 sidebar:
   nav: character
 ---
 
-{% assign items = site.data.equipment.apparel %}
+You can buy low-quality apparel and weapons at half price. Low-quality items have the [[Fragile]] trait. Low-quality apparel breaks if an attack critically succeeds against your defense. Low-quality weapons break if you critically fail a Strike or spell attack using them.
 
-<h2 id="apparel">Apparel</h2>
+{% assign items = site.data.equipment.combat.apparel %}
+
+## Apparel
 
 <table>
   <tr>
     <th>Name</th>
+    <th>Cost</th>
+    <th>Weight</th>
     <th>Description</th>
   </tr>
   {% for item in items %}
@@ -19,6 +23,8 @@ sidebar:
       <td>
         <a href="#{{ item[0] | slugify }}">{{ item[0] }}</a>
       </td>
+      <td>{{ item[1].tags.cost | process_inline }}</td>
+      <td>{{ item[1].tags.weight | process_inline }}</td>
       <td>{{ item[1].brief | process_inline }}</td>
     </tr>
   {% endfor %}
@@ -30,13 +36,15 @@ sidebar:
 
 
 
-{% assign items = site.data.equipment.weapons %}
+{% assign items = site.data.equipment.combat.weapons %}
 
-<h2 id="weapons">Weapons</h2>
+## Weapons
 
 <table>
   <tr>
     <th>Name</th>
+    <th>Cost</th>
+    <th>Weight</th>
     <th>Description</th>
   </tr>
   {% for item in items %}
@@ -44,6 +52,8 @@ sidebar:
       <td>
         <a href="#{{ item[0] | slugify }}">{{ item[0] }}</a>
       </td>
+      <td>{{ item[1].tags.cost | process_inline }}</td>
+      <td>{{ item[1].tags.weight | process_inline }}</td>
       <td>{{ item[1].brief | process_inline }}</td>
     </tr>
   {% endfor %}

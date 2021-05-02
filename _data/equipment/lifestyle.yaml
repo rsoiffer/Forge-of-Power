@@ -1,0 +1,83 @@
+Total Lifestyle Costs / day:
+  Wretched:
+    cost: "-"
+  Squalid:
+    cost: "1 sp"
+  Poor:
+    cost: "2 sp"
+  Modest:
+    cost: "1 gp"
+  Comfortable:
+    cost: "2 gp"
+  Wealthy:
+    cost: "4 gp"
+  Aristocratic:
+    cost: "10 gp minimum"
+
+Food and Drink:
+  Ale: header
+  Gallon:
+    cost: "2 sp"
+  Mug:
+    cost: "4 cp"
+  Food: header
+  Banquet (per person):
+    cost: "10 gp"
+  Bread, loaf:
+    cost: "2 cp"
+  Cheese, hunk:
+    cost: "1 sp"
+  Meat, chunk:
+    cost: "3 sp"
+  Meals (per day): header
+  Squalid:
+    cost: "3 cp"
+  Poor:
+    cost: "6 cp"
+  Modest:
+    cost: "3 sp"
+  Comfortable:
+    cost: "5 sp"
+  Wealthy:
+    cost: "8 sp"
+  Aristocratic:
+    cost: "2 gp"
+  Wine: header
+  Common (pitcher):
+    cost: "2 sp"
+  Fine (bottle):
+    cost: "10 gp"
+
+Lodging:
+  Inn stay (per day): header
+  Squalid:
+    cost: "7 cp"
+  Poor:
+    cost: "1 sp"
+  Modest:
+    cost: "5 sp"
+  Comfortable:
+    cost: "8 sp"
+  Wealthy:
+    cost: "2 gp"
+  Aristocratic:
+    cost: "4 gp"
+
+Services:
+  Coach cab: header
+  Between towns:
+    cost: 3 cp per mile
+  Within a city:
+    cost: 1 cp
+  Hireling: header
+  Skilled: 
+    cost: 3 gp per day
+  Untrained:
+    cost: 5 sp per day
+  Other: header
+  Messenger:
+    cost: 2 cp per mile
+  Road or gate toll:
+    cost: 1 cp
+  Ship's Passage:
+    cost: 1 sp per mile

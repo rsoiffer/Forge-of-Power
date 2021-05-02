@@ -1,0 +1,383 @@
+Arcane Focuses:
+  Sorcerous Focuses: header
+  Crystal:
+    cost: "10 gp"
+    weight: "1 lb."
+  Orb:
+    cost: "20 gp"
+    weight: "3 lb."
+  Rod:
+    cost: "10 gp"
+    weight: "2 lb."
+  Staff:
+    cost: "5 gp"
+    weight: "4 lb."
+  Wand:
+    cost: "10 gp"
+    weight: "1 lb."
+  Druidic Focuses: header
+  Sprig of Mistletoe:
+    cost: "1 gp"
+    weight: "-"
+  Totem:
+    cost: "1 gp"
+    weight: "-"
+  Wooden Staff:
+    cost: "5 gp"
+    weight: "4 lb."
+  Yew Wand:
+    cost: "10 gp"
+    weight: "1 lb."
+  Holy Symbols: header
+  Amulet:
+    cost: "5 gp"
+    weight: "1 lb."
+  Emblem:
+    cost: "5 gp"
+    weight: "-"
+  Reliquary:
+    cost: "5 gp"
+    weight: "2 lb."
+
+Consumable Items:
+  Acid (vial):
+    cost: "25 gp"
+    weight: "1 lb."
+  Alchemist's Fire (flask):
+    cost: "50 gp"
+    weight: "1 lb."
+  Antitoxin (vial):
+    cost: "50 gp"
+    weight: "-"
+  Ball Bearings (bag of 100):
+    cost: "1 gp"
+    weight: "2 lb."
+  Caltrops (bag of 20):
+    cost: "1 gp"
+    weight: "2 lb."
+  Holy Water (flask):
+    cost: "2 gp"
+    weight: "1 lb."
+  Oil (flask):
+    cost: "1 sp"
+    weight: "1 lb."
+  Poison, basic (vial):
+    cost: "100 gp"
+    weight: "-"
+  Potion of Healing:
+    cost: "50 gp"
+    weight: "0.5 lb."
+
+Professional Items:
+  Tools: header
+  Alchemist's supplies:
+    cost: "50 gp"
+    weight: "8 lb."
+  Brewer's supplies:
+    cost: "20 gp"
+    weight: "9 lb."
+  Calligrapher's supplies:
+    cost: "10 gp"
+    weight: "5 lb."
+  Carpenter's tools:
+    cost: "8 gp"
+    weight: "6 lb."
+  Cartographer's tools:
+    cost: "15 gp"
+    weight: "6 lb."
+  Cobbler's tools:
+    cost: "5 gp"
+    weight: "5 lb."
+  Cook's utensils:
+    cost: "1 gp"
+    weight: "8 lb."
+  Glassblower's tools:
+    cost: "30 gp"
+    weight: "5 lb."
+  Jeweler's tools:
+    cost: "25 gp"
+    weight: "2 lb."
+  Leatherworker's tools:
+    cost: "5 gp"
+    weight: "5 lb."
+  Mason's tools:
+    cost: "10 gp"
+    weight: "8 lb."
+  Painter's supplies:
+    cost: "10 gp"
+    weight: "5 lb."
+  Potter's tools:
+    cost: "10 gp"
+    weight: "3 lb."
+  Smith's tools:
+    cost: "20 gp"
+    weight: "8 lb."
+  Tinker's tools:
+    cost: "50 gp"
+    weight: "10 lb."
+  Weaver's tools:
+    cost: "1 gp"
+    weight: "5 lb."
+  Woodcarver's tools:
+    cost: "1 gp"
+    weight: "5 lb."
+  Instruments: header
+  Bagpipes:
+    cost: "30 gp"
+    weight: "6 lb."
+  Drum:
+    cost: "6 gp"
+    weight: "3 lb."
+  Dulcimer:
+    cost: "25 gp"
+    weight: "10 lb."
+  Flute:
+    cost: "2 gp"
+    weight: "1 lb."
+  Lute:
+    cost: "35 gp"
+    weight: "2 lb."
+  Lyre:
+    cost: "30 gp"
+    weight: "2 lb."
+  Horn:
+    cost: "3 gp"
+    weight: "2 lb."
+  Pan flute:
+    cost: "12 gp"
+    weight: "2 lb."
+  Shawm:
+    cost: "2 gp"
+    weight: "1 lb."
+  Viol:
+    cost: "30 gp"
+    weight: "1 lb."
+  Other: header
+  Disguise kit:
+    cost: "25 gp"
+    weight: "3 lb."
+  Forgery kit:
+    cost: "15 gp"
+    weight: "5 lb."
+  Healer's kit:
+    cost: "5 gp"
+    weight: "3 lb."
+  Lockpicking kit:
+    cost: "25 gp"
+    weight: "1 lb."
+  Poisoner's kit:
+    cost: "50 gp"
+    weight: "2 lb."
+
+Clothes:
+  Common Clothes:
+    cost: "5 sp"
+    weight: "3 lb."
+  Costume:
+    cost: "5 gp"
+    weight: "4 lb."
+  Fine Clothes:
+    cost: "15 gp"
+    weight: "6 lb."
+  Robes:
+    cost: "1 gp"
+    weight: "4 lb."
+  Traveler's Clothes:
+    cost: "2 gp"
+    weight: "4 lb."
+
+Containers:
+  Backpack:
+    cost: "2 gp"
+    weight: "5 lb."
+  Barrel:
+    cost: "2 gp"
+    weight: "70 lb."
+  Basket:
+    cost: "4 sp"
+    weight: "2 lb."
+  Bucket:
+    cost: "5 cp"
+    weight: "2 lb."
+  Case, Crossbow Bolt:
+    cost: "1 gp"
+    weight: "1 lb."
+  Case, Map/Scroll:
+    cost: "1 gp"
+    weight: "1 lb."
+  Chest:
+    cost: "5 gp"
+    weight: "25 lb."
+  Flask or Tankard:
+    cost: "2 cp"
+    weight: "1 lb."
+  Glass Bottle:
+    cost: "25 gp"
+    weight: "2 lb."
+  Jug or Pitcher:
+    cost: "2 cp"
+    weight: "4 lb."
+  Pouch:
+    cost: "5 sp"
+    weight: "1 lb."
+  Quiver:
+    cost: "1 gp"
+    weight: "1 lb."
+  Sack:
+    cost: "1 cp"
+    weight: "0.5 lb."
+  Vial:
+    cost: "1 gp"
+    weight: "-"
+  Waterskin:
+    cost: "2 sp"
+    weight: "5 lb.(full)"
+
+Common Items:
+  Abacus:
+    cost: "2 gp"
+    weight: "2 lb."
+  Bedroll:
+    cost: "1 gp"
+    weight: "2 lb."
+  Bell:
+    cost: "1 gp"
+    weight: "-"
+  Blanket:
+    cost: "5 sp"
+    weight: "5 lb."
+  Block and Tackle:
+    cost: "1 gp"
+    weight: "5 lb."
+  Book:
+    cost: "25 gp"
+    weight: "5 lb."
+  Candle:
+    cost: "1 cp"
+    weight: "-"
+  Chain (10 ft):
+    cost: "5 gp"
+    weight: "10 lb."
+  Chalk (1 pc):
+    cost: "1 cp"
+    weight: "-"
+  Component's Pouch:
+    cost: "25 gp"
+    weight: "2 lb."
+  Crowbar:
+    cost: "2 gp"
+    weight: "5 lb."
+  Fishing Tackle:
+    cost: "1 gp"
+    weight: "4 lb."
+  Grappling Hook:
+    cost: "2 gp"
+    weight: "4 lb."
+  Hammer:
+    cost: "1 gp"
+    weight: "3 lb."
+  Hourglass:
+    cost: "25 gp"
+    weight: "1 lb."
+  Hunting Trap:
+    cost: "5 gp"
+    weight: "25 lb."
+  Ink (1 oz):
+    cost: "10 gp"
+    weight: "-"
+  Ink Pen:
+    cost: "2 cp"
+    weight: "-"
+  Ladder (10 ft):
+    cost: "1 sp"
+    weight: "25 lb."
+  Lamp:
+    cost: "5 sp"
+    weight: "1 lb."
+  Lantern - Bullseye:
+    cost: "10 gp"
+    weight: "2 lb."
+  Lantern - Hodded:
+    cost: "5 gp"
+    weight: "2 lb."
+  Lock:
+    cost: "10 gp"
+    weight: "1 lb."
+  Magnifying Glass:
+    cost: "10 gp"
+    weight: "-"
+  Manacles:
+    cost: "2 gp"
+    weight: "6 lb."
+  Miner's Pick:
+    cost: "2 gp"
+    weight: "10 lb."
+  Paper (1 pc):
+    cost: "2 sp"
+    weight: "-"
+  Parchment (1 sheet):
+    cost: "1 sp"
+    weight: "-"
+  Perfume (vial):
+    cost: "5 gp"
+    weight: "-"
+  Piton:
+    cost: "5 cp"
+    weight: "0.25 lb."
+  Pole (10 ft):
+    cost: "5 cp"
+    weight: "7 lb."
+  Pot - Iron:
+    cost: "2 gp"
+    weight: "10 lb"
+  Portable Ram:
+    cost: "4 gp"
+    weight: "35 lb."
+  Rations (1 day):
+    cost: "5 sp"
+    weight: "2 lb."
+  Rope - Hemp (50 ft):
+    cost: "1 gp"
+    weight: "10 lb."
+  Rope - Silk (50 ft):
+    cost: "10 gp"
+    weight: "5 lb."
+  Scale - Merchants:
+    cost: "5 gp"
+    weight: "3 lb."
+  Sealing Wax:
+    cost: "5 sp"
+    weight: "-"
+  Shovel:
+    cost: "2 gp"
+    weight: "5 lb."
+  Signal Whistle:
+    cost: "5 cp"
+    weight: "-"
+  Signet Ring:
+    cost: "5 gp"
+    weight: "-"
+  Sledgehammer:
+    cost: "2 gp"
+    weight: "10 lb."
+  Spellbook:
+    cost: "50 gp"
+    weight: "3 lb."
+  Spikes - Iron (10):
+    cost: "1 gp"
+    weight: "5 lb."
+  Spyglass:
+    cost: "100 gp"
+    weight: "1 lb."
+  Tent - 2 person:
+    cost: "2 gp"
+    weight: "20 lbs."
+  Tinderbox:
+    cost: "5 sp"
+    weight: "1 lb."
+  Torch:
+    cost: "1 cp"
+    weight: "1 lb."
+  Whetstone:
+    cost: "1 cp"
+    weight: "1 lb."

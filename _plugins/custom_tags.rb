@@ -124,8 +124,8 @@ class Jekyll::Converters::Markdown::LinkerProcessor
       m["schools"] = "[#{text}](#{slug_text}.html)"
       m["skills"] = "[#{text}](skills.html##{slug_text})"
       m["conditions"] = "[#{text}](conditions.html##{slug_text})"
-      m["equipment/apparel"] = "[#{text}](equipment.html##{slug_text})"
-      m["equipment/weapons"] = "[#{text}](equipment.html##{slug_text})"
+      m["equipment/combat/apparel"] = "[#{text}](equipment-combat.html##{slug_text})"
+      m["equipment/combat/weapons"] = "[#{text}](equipment-combat.html##{slug_text})"
 
       matches =
         m.map { |val|

@@ -31,7 +31,7 @@ sidebar:
 </table> -->
 
 
-{% for item2 in site.data.equipment.weapons %}
+{% for item2 in site.data.equipment.combat.weapons %}
   <h2 id={{ item2[0] | slugify }}>{{ item2[0] }}</h2>
   {% for power2 in feats %}
     {% if power2[1].tier == item2[0] %}

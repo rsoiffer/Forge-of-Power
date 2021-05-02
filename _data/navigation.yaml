@@ -49,7 +49,13 @@ character:
   - title: Mystic Origins
     url: /mystic-origins.html
   - title: Equipment
-    url: /equipment.html
+    children:
+      - title: Combat Items
+        url: /equipment-combat.html
+      - title: Lifestyle Costs
+        url: /equipment-lifestyle.html
+      - title: Miscellaneous Items
+        url: /equipment-misc.html
   - title: Skills
     url: /skills.html
   - title: Proficiencies

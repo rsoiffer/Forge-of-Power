@@ -322,7 +322,7 @@ Deceitful Fog:
 Phantom Prison:
   tier: Master
   type: 1-Action
-  brief: You trap a creature in an mental prison that only it can percieve
+  brief: You trap a creature in a mental prison that only it can perceive
   traits: [Attack, Phantasm, Spell]
   tags:
     cost: 6 Mana
