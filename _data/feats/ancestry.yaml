@@ -158,7 +158,7 @@ Verdant:
   tier: Elf
   type: 1-Action
   brief: You empathically bond with nearby plants to learn about the local area
-  traits: [Concentrate, Encounter]
+  traits: [Concentrate, Divination, Encounter]
   tags:
     area: 300-foot emanation
   effect: |
@@ -260,7 +260,7 @@ Organized Action:
   tier: Human
   type: Free
   brief: You draw strength from your peers as you speak with the authority of a group
-  traits: [Encounter]
+  traits: [Emotion, Encounter]
   tags:
     trigger: You make a Spirit roll to speak as a representative of a large group
   effect: |
@@ -305,6 +305,7 @@ Hear Prayer:
   tier: Kami
   type: Reaction
   brief: You hear and respond to someone's inner prayer
+  traits: [Divination]
   tags:
     trigger: A person within 1 mile prays to you or to a kami you serve
     target: The triggering person
@@ -396,6 +397,7 @@ Monstrous Instincts:
   tier: Lizardfolk
   type: Free
   brief: Your supernatural instincts let you sense all nearby monsters
+  traits: [Divination]
   tags:
     range: 300 feet
   effect: |
@@ -511,7 +513,7 @@ Sense Emotions:
   tier: Outsider
   type: 1-Action
   brief: You read all the major emotions in a nearby creature
-  traits: [Attack, Emotion]
+  traits: [Attack, Divination, Emotion]
   tags:
     range: 30 feet
     requirements: You haven't used Sense Emotions against this target in the last 24 hours
@@ -559,6 +561,7 @@ Lifesense:
   tier: Undead
   type: Free
   brief: You sense the number and location of all nearby living creatures
+  traits: [Divination]
   tags:
     range: 120 feet
   effect: |

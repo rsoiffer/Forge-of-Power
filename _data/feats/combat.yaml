@@ -400,8 +400,9 @@ Overchannel:
 
 Staff Fighting:
   tier: Staff
-  type: Passive
+  type: Free
   brief: You are an expert at fighting with a staff in close quarters
+  traits: [Stance]
   tags:
     requirements: You are wielding a staff
   effect: |
