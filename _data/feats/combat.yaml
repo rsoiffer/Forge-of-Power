@@ -84,8 +84,9 @@ Distracting Blow:
 
 Dual Bludgeons:
   tier: Bludgeon
-  type: Passive
+  type: Free
   brief: You dual-wield bludgeons by striking with a flurry of blows
+  traits: [Stance]
   tags:
     requirements: You are wielding a bludgeon in each hand
   effect: |
@@ -121,6 +122,7 @@ Stable Stance:
   tier: Bow
   type: Free
   brief: You fire more accurately by planting your feet on the ground
+  traits: [Stance]
   tags:
     requirements: You haven't used a [[Move]] power yet this turn
     duration: Until the start of your next turn
@@ -156,8 +158,9 @@ Locked and Loaded:
 
 Point-Blank Shot:
   tier: Crossbow
-  type: Passive
+  type: Free
   brief: Your powerful bolts pierce through nearby targets
+  traits: [Stance]
   effect: |
     You have a +1 bonus to crossbow Strikes against targets within 30 feet.
 
@@ -183,12 +186,13 @@ Opportunist:
 Parrying Dagger:
   tier: Dagger
   type: Free
-  brief: You can parry attacks with your dagger, using it like a shield
+  brief: You parry attacks with your dagger, using it like a shield
+  traits: [Stance]
   tags:
-    trigger: Your turn starts and you are wielding a dagger
-    duration: Until you are no longer wielding this dagger, or until you make a Strike with this dagger
+    trigger: Your turn starts
+    requirements: You are wielding a dagger
   effect: |
-    You have a +1 bonus to Defense.
+    You have a +1 bonus to Defense. You cannot make Strikes with this dagger.
 
 Throwing Dagger:
   tier: Dagger
@@ -203,6 +207,7 @@ Into the Fray:
   tier: Heavy Weapon
   type: Passive
   brief: Your wide swings leave your enemies no space to gang up on you
+  traits: [Stance]
   tags:
     requirements: You are wielding a heavy weapon, and you are adjacent to three or more enemies
   effect: |
@@ -302,10 +307,11 @@ Counter Charge:
 
 Distant Strike:
   tier: Polearm
-  type: 1-Action
+  type: Free
   brief: You strike with increased accuracy against a enemy that can't reach you
+  traits: [Stance]
   effect: |
-    Make a polearm {Strike}. Your reach increases by 5 feet for this Strike. If the target of this Strike cannot reach you, this Strike has a +1 bonus to hit.
+    When you make a polearm Strike, if the target of this Strike cannot reach you, this Strike has a +1 bonus to hit.
 
 Polearm Hook:
   tier: Polearm
@@ -405,8 +411,9 @@ Staff Fighting:
 
 Dueling Sword:
   tier: Sword
-  type: Passive
-  brief: You score a critical hit on sword Strikes more often
+  type: Free
+  brief: You enter a fencing stance that lets you strike quickly and accurately
+  traits: [Stance]
   tags:
     requirements: You are wielding a sword and no other weapons
   effect: |
@@ -551,7 +558,7 @@ Eldritch Blast:
 Magic Missile:
   tier: Wand
   type: 1-Action
-  brief: You fire a magic missile at your target that never missing
+  brief: You fire a magic missile at your target that never misses
   traits: [Force, Spell]
   tags:
     requirements: You are wielding a wand

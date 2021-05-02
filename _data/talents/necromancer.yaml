@@ -372,6 +372,8 @@ Blood Drain:
     Failure
     : Half damage
 
+    *You heal for each target you succeed against.*
+
     #### Heightened
 
     The damage increases by 1d6 and the maximum number of targets increases by 1.
