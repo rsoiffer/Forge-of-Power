@@ -565,7 +565,7 @@ Lifesense:
   tags:
     range: 120 feet
   effect: |
-    You learn the location and Size of each living creature within range. This power does not show [[Construct]] or [[Undead]] creatures.
+    You learn the location and Size of each biologically living creature within range. This power does not show constructs, outsiders, undead, or other creatures without biological processes.
 
 No Vital Organs:
   tier: Undead

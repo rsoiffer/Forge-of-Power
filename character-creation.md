@@ -182,10 +182,10 @@ The following section only applies to spellcasters. Your character is a spellcas
 ## Pick your Equipment
 
 Your equipment is all the items you own. For adventuers, your most important equipment is the apparel you wear as protection and the weapons you wield in combat.
-* Start with 10gp for each character level. *I haven't written prices yet, so pretend all items are free.*
-* Buy your [apparel](equipment.html#apparel). To maximize your Defense stat, you may want to buy apparel that corresponds to your highest attribute.
-* Buy your [weapons](equipment.html#weapons). If you have a combat feat for a weapon, you may want to buy that weapon.
-* Buy any miscellaneous items you want.
+* Start with 10gp for each character level.
+* Buy your [apparel](equipment-combat.html#apparel). To maximize your Defense stat, you may want to buy apparel that corresponds to your highest attribute.
+* Buy your [weapons](equipment-combat.html#weapons). If you have a combat feat for a weapon, you may want to buy that weapon.
+* Buy any [miscellaneous items](equipment-misc.html) you want.
 
 ## Calculate your Final Stats
 

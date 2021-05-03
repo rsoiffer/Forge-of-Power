@@ -28,9 +28,9 @@ Proficiencies describe situational or highly specific areas of knowledge your ch
 * Labor Lore
 * Legal Lore
 * Library Lore
-* Lore about a specific deity (Abadar Lore, Iomedae Lore, etc.)
-* Lore about a specific creature or narrow category of creatures (Demon Lore, Owlbear Lore, Vampire Lore, etc.)
-* Lore about a specific settlement (Absalom Lore, Magnimar Lore, etc.)
+* Lore about a specific creature or narrow category of creatures (Beholder Lore, Owlbear Lore, Vampire Lore, etc.)
+* Lore about a specific diety (Emir Lore, Mielzas Lore, etc.)
+* Lore about a specific settlement (Mitras Lore, Whiteraven Lore, etc.)
 * Lore about a specific terrain (Mountain Lore, River Lore, etc.)
 * Lore about a specific type of food or drink (Alcohol Lore, Baking Lore, Butchering Lore, Cooking Lore, Tea Lore, etc.)
 * Mercantile Lore
@@ -45,6 +45,17 @@ Proficiencies describe situational or highly specific areas of knowledge your ch
 * Theater Lore
 * Underworld Lore
 * Warfare Lore
+
+### Languages
+* Ancient Rune Language
+* Celestial Legalese Language
+* Dimir Code Language
+* Elvish Language
+* Goblin Language
+* Outsider Language
+* Thieves' Cant Language
+
+*TODO: Add more languages*
 
 ### Tools
 
