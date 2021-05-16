@@ -65,11 +65,23 @@ Illusory Object:
     area: 20-foot burst
     duration: 10 minutes, or until you decide to end it
   effect: |
-    You create an illusory visual image of a stationary object or structure. The entire image must fit within the spell's area.
+    You create an illusory visual image of a stationary object or structure. The entire image must fit within the spell's area when you cast this spell. Other effects, such as **Animate Illusion** or {Tactile Illusions}, can move the image outside of this initial area.
+
+    You can use the **Animate Illusion** power.
 
     #### Heightened
 
     If you add +1 Mana, this spell's duration changes to 24 hours. If you instead add +3 Mana, this spell's duration changes to Forever.
+  aside: |
+    {% smallpower %}
+    Animate Illusion:
+      type: 1-Action
+      traits: [Concentrate]
+      effect: |
+        You animate the image created by **Illusory Object**, causing it to move or act in a way that appears natural for the object it shows. Note that minor animations, such as grass swaying in the wind, don't require this power - see the [[Illusion]] trait.
+
+        *For example, you could cause an illusory human to appear to walk naturally, or you could cause an illusory sword to appear to stay in your hand as you carry it.*
+    {% endsmallpower %}
 
 Invisibility:
   tier: Novice

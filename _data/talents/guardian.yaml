@@ -184,7 +184,9 @@ Find Armor:
   tags:
     requirements: You do not own a set of {chain mail} or {plate armor}
   effect: |
-    You acquire a set of {chain mail} or {plate armor} to replace a set that was lost or broken. This apparel might be a set you constructed at a smithy, a gift from an ally, or a lucky find on the battlefield. You cannot use this power to replace apparel that you sold for profit.
+    You acquire a set of {chain mail} or {plate armor}. This apparel might be a set you constructed at a smithy, a gift from an ally, or a lucky find on the battlefield.
+
+    *You can use this power to gain your first set of armor or to replace a set that was lost or broken. You cannot use this power to replace apparel that you sold for profit.*
 
 Knight:
   tier: Ribbon
