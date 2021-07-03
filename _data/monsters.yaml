@@ -82,6 +82,15 @@ Colossal Dreadmaw:
     Trample {% icon 1-Action %}
     : Stride and attack everything it moves over, +8 vs. Agility DC, 3d10 [[Bludgeoning]] damage
 
+Dog:
+  traits: [Animal, Unintelligent]
+  tags:
+    attributes: Strength +1, Agilty +2, Intellect -4, Spirit -1
+    other stats: Health 5, Defense 12, Speed 40 feet, Size +0
+  effect: |
+    Bite Strike {% icon 1-Action %}
+    : +1 vs. Defense, 1d6+1 [[Piercing]] damage
+
 Drake:
   traits: [Animal, Monster, Unintelligent]
   tags:
@@ -141,6 +150,17 @@ Golem:
   fluffstart: |
     Golems are human-shaped objects, like suits of armor or scarecrows, that have been enchanted to be able to walk.
 
+Guard:
+  traits: [Humanoid]
+  tags:
+    attributes: Strength +1, Agilty +0, Intellect +0, Spirit +0
+    other stats: Health 15, Defense 13, Speed 25 feet, Size +0
+  effect: |
+    The guard wears {chain mail} and wields a short {polearm} and a {shield}.
+
+    Spear Strike {% icon 1-Action %}
+    : +1 vs. Defense, 1d8+1 [[Piercing]] damage
+
 Green Wurm:
   traits: [Animal, Monster, Unintelligent]
   tags:
@@ -177,7 +197,7 @@ Horse:
     other stats: Health 20, Defense 11, Speed 60 feet, Size +1
   effect: |
     Hoof Strike {% icon 1-Action %}
-    : +4 vs. Defense, 1d4+4 [[Piercing]] damage
+    : +4 vs. Defense, 1d4+4 [[Bludgeoning]] damage
 
 Molerat:
   traits: [Animal, Monster, Unintelligent]
@@ -201,6 +221,17 @@ Monadster:
 
     Join {% icon 1-Action %}
     : Absorb an adjacent monadster. Add your Health together, use the higher of all others stats, and gain all of the target's powers.
+
+Nightmare:
+  traits: [Animal, Monster, Unintelligent]
+  tags:
+    attributes: Strength +6, Agilty +2, Intellect +0, Spirit +2
+    other stats: Health 70, Defense 13, Speed 90 feet, Size +1
+  effect: |
+    50 [[Fire]] Shield. Gives its rider 10 [[Fire]] shield.
+
+    Hoof Strike {% icon 1-Action %}
+    : +6 vs. Defense, 2d6+6 [[Bludgeoning]] damage + 2d6 [[Fire]] damage
 
 Ogre:
   traits: [Humanoid, Monster]
