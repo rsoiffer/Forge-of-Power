@@ -54,7 +54,7 @@ Poison Blade:
   tier: Novice
   type: Free
   brief: You poison your blade, making your attacks more deadly
-  traits: [Encounter, Poison]
+  traits: [Encounter, Toxic]
   tags:
     target: A weapon you're wielding that deals [[Piercing]] or [[Slashing]] damage
     duration: 1 minute

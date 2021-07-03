@@ -8,7 +8,7 @@ Dragon Stance:
   aside: |
     ### Specializations
 
-    Choose one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], or [[Poison]] traits. This power's unarmed base damage has that trait, and its Shield protects against that trait.
+    Choose one of the [[Cold]], [[Electricity]], [[Fire]], or [[Toxic]] traits. This power's unarmed base damage has that trait, and its Shield protects against that trait.
 
 Elemental Weapon:
   tier: Novice
@@ -22,7 +22,7 @@ Elemental Weapon:
   aside: |
     ### Specializations
 
-    Choose one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Force]], or [[Sonic]] traits. This power gains that trait.
+    Choose one of the [[Cold]], [[Electricity]], [[Fire]], [[Force]], [[Sonic]] traits. This power gains that trait.
 
 Forbidden Technique:
   tier: Novice
@@ -105,7 +105,7 @@ Blast Strike:
   aside: |
     ### Specializations
 
-    Choose one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Force]], or [[Sonic]] traits. This power gains that trait.
+    Choose one of the [[Cold]], [[Electricity]], [[Fire]], [[Force]], or [[Sonic]] traits. This power gains that trait.
 
 Ki Flight:
   tier: Veteran

@@ -7,7 +7,7 @@ Alchemical Bomb:
     range: 60 feet
     area: 5-foot burst
   effect: |
-    When you use this power, choose one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Necrotic]], or [[Sonic]] traits. This power gains that trait.
+    When you use this power, choose one of the [[Cold]], [[Electricity]], [[Fire]], [[Necrotic]], [[Sonic]], or [[Toxic]] traits. This power gains that trait.
 
     Make an Intellect attack roll against your target's Agility DC.
 
@@ -64,7 +64,7 @@ Magitech Engine:
   tags:
     duration: 1 minute after the engine is attached to a weapon, or 1 hour otherwise
   effect: |
-    You craft a small magic device that outputs a stream of elemental energy. Choose the engine's element to be one of [[Acid]], [[Cold]], [[Electricity]], [[Fire]], or [[Sonic]]. The engine continually emits small jet of that element. You can set up the engine to perform a minor utility effect related to its element.
+    You craft a small magic device that outputs a stream of elemental energy. Choose the engine's element to be one of [[Cold]], [[Electricity]], [[Fire]], [[Sonic]], or [[Toxic]]. The engine continually emits small jet of that element. You can set up the engine to perform a minor utility effect related to its element.
 
     When you use this power, or with the {Interact} power afterwards, you can attach the engine to a weapon you touch. Strikes with that weapon deal an extra 1d6 damage of the chosen trait. A weapon can only have one engine attached to it at a time.
   aside: |
@@ -76,13 +76,13 @@ Magitech Engine:
 
     #### Examples
 
-    You can aim a jet at an enemy you can reach to deal 1 damage to that enemy. You can trace an [[Acid]] engine over a rock surface to etch words into the surface. You can set up a [[Cold]] engine inside of an airtight box to create a portable freezer. You can use an [[Electricity]] engine to power electrical devices, or to fill a metal object with static electricity. You can attach a pair of [[Fire]] engines to the back of a cart to propel it forward like a rocket. You can set up a [[Sonic]] engine to play loud noises you choose, like a powerful speaker.
+    You can aim a jet at an enemy you can reach to deal 1 damage to that enemy. You can set up a [[Cold]] engine inside of an airtight box to create a portable freezer. You can use an [[Electricity]] engine to power electrical devices, or to fill a metal object with static electricity. You can attach a pair of [[Fire]] engines to the back of a cart to propel it forward like a rocket. You can set up a [[Sonic]] engine to play loud noises you choose, like a powerful speaker. You can trace a [[Toxic]] engine over a rock surface to etch words into the surface.
 
 Mutagen:
   tier: Novice
   type: 1-Action
   brief: You give someone a dangerous mutagen that enhances them at a cost
-  traits: [Manipulate, Poison, Transfiguration]
+  traits: [Manipulate, Toxic, Transfiguration]
   tags:
     target: One willing ally you can reach (including yourself)
     duration: 10 minutes
@@ -281,7 +281,7 @@ Siege Engineer:
   effect: |
     You can use the **Siege Weapon** power once.
 
-    When you use this power, choose one of the [[Acid]], [[Bludgeoning]], [[Electricity]], [[Fire]], [[Piercing]], or [[Sonic]] traits. The **Siege Weapon** power gains that trait.
+    When you use this power, choose one of the [[Bludgeoning]], [[Electricity]], [[Fire]], [[Piercing]], [[Sonic]], or [[Toxic]] traits. The **Siege Weapon** power gains that trait.
   aside: |
     {% smallpower %}
     Siege Weapon:

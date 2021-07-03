@@ -1,11 +1,5 @@
 Damage Types:
 
-  Acid: |
-    Implies
-    : [[Elemental]]
-
-    Effects with this trait deal damage by corroding or dissolving targets.
-
   Bludgeoning: |
     Implies
     : [[Physical]]
@@ -47,9 +41,6 @@ Damage Types:
 
     Effects with this trait deal damage by impaling, stabbing, or needling targets.
 
-  Poison: |
-    Effects with this trait deal damage by interfering with the normal inner biology of a creature.
-
   Radiant: |
     Effects with this trait deal damage by burning creatures with radiant energy.
 
@@ -64,6 +55,12 @@ Damage Types:
     : [[Elemental]]
 
     Effects with this trait deal damage with concussive waves of sound. An effect with this trait functions only if it makes sound, meaning it has no effect in an area of silence or in a vacuum.
+
+  Toxic: |
+    Implies
+    : [[Elemental]]
+
+    Effects with this trait deal damage by corroding or poisoning a target.
 
 Creature Types:
 
@@ -212,7 +209,7 @@ Mechanical:
     Implies
     : [[Specialize]]
 
-    When you learn an [[Invocation]] power, choose one of the [[Acid]], [[Bludgeoning]], [[Cold]], [[Electricity]], [[Fire]], [[Necrotic]], [[Radiant]], or [[Sonic]] traits. The power gains that trait.
+    When you learn an [[Invocation]] power, choose one of the [[Bludgeoning]], [[Cold]], [[Electricity]], [[Fire]], [[Necrotic]], [[Radiant]], [[Sonic]], or [[Toxic]] traits. The power gains that trait.
 
   Minion: |
     A creature with the [[Minion]] trait is controlled by another creature. In combat, [[Minion]] creatures can't use powers unless their master uses the {Command} power.

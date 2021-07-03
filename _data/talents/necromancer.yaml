@@ -26,7 +26,7 @@ Animate Dead:
         attributes: Strength +0, Agilty +2, Intellect -2, Spirit -3
         other stats: Health 10, Defense 12, Speed 30 feet, Size +0
       effect: |
-        5 [[Bludgeoning]] Weakness, 5 [[Radiant]] Weakness, 20 [[Poison]] Shield.
+        5 [[Bludgeoning]] Weakness, 5 [[Radiant]] Weakness, 10 [[Toxic]] Shield.
 
         Revives after a day if it hadn't taken [[Radiant]] damage within 1 minute of dying.
 
@@ -40,7 +40,7 @@ Animate Dead:
         attributes: Strength +1, Agilty -2, Intellect -2, Spirit -3
         other stats: Health 20, Defense 10, Speed 25 feet, Size +0
       effect: |
-        5 [[Radiant]] Weakness, 20 [[Poison]] Shield.
+        5 [[Radiant]] Weakness, 10 [[Toxic]] Shield.
 
         Revives after a day if it hadn't taken [[Radiant]] damage within 1 minute of dying.
 

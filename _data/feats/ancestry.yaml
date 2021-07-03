@@ -94,7 +94,7 @@ Thick Skin:
   type: Passive
   brief: You have developed a natural resilience to common hazards
   effect: |
-    You have 5 [[Poison]] Shield. Choose one of the following:
+    You have 5 [[Toxic]] Shield. Choose one of the following:
     * You have 5 [[Fire]] Shield
     * You have 5 [[Cold]] Shield
     * You have 5 [[Bludgeoning]] Shield
@@ -371,7 +371,7 @@ Dragon's Breath:
 
     #### Specializations
 
-    Choose one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], or [[Poison]] traits. This power gains that trait.
+    Choose one of the [[Cold]], [[Electricity]], [[Fire]], or [[Toxic]] traits. This power gains that trait.
 
 Flesh Eater:
   tier: Lizardfolk

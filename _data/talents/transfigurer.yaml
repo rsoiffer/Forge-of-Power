@@ -87,7 +87,7 @@ Animate Object:
         attributes: Strength -2, Agilty +2, Intellect -2, Spirit +0
         other stats: Health 10, Defense 14, Speed 40 feet (fly), Size -2
       effect: |
-        20 [[Mental]] Shield, 20 [[Poison]] Shield.
+        50 [[Mental]] Shield, 10 [[Toxic]] Shield.
 
         The drone can slam with its body as a [[Finesse]] melee weapon that deals 1d6 [[Bludgeoning]] base damage.
       fluffstart: |
@@ -101,7 +101,7 @@ Animate Object:
         attributes: Strength +1, Agilty +0, Intellect -2, Spirit -1
         other stats: Health 20, Defense 12, Speed 25 feet, Size +0
       effect: |
-        20 [[Mental]] Shield, 20 [[Poison]] Shield.
+        50 [[Mental]] Shield, 20 [[Toxic]] Shield.
 
         The golem can slam with its fists as a melee weapon that deals 1d8 [[Bludgeoning]] base damage.
 
@@ -187,7 +187,7 @@ Combat Form:
       <tr>
         <td>Snake</td>
         <td>20 feet (walk, climb, swim)</td>
-        <td>2d4 [[Piercing]] + 1d6 [[Poison]]</td>
+        <td>2d4 [[Piercing]] + 1d6 [[Toxic]]</td>
         <td></td>
       </tr>
     </table>
@@ -342,7 +342,7 @@ Greater Alteration:
 
     ***Keen Senses.*** Your target can sense creatures and objects as if they were 10 times closer to them.
 
-    ***Poisonous.*** Whenever a creature succeeds on a melee {Strike} against you, they take 3d6 [[Poison]] damage.
+    ***Poisonous.*** Whenever a creature succeeds on a melee {Strike} against you, they take 3d6 [[Toxic]] damage.
 
     ***Skilled.*** Your target gains an {Athletics} or {Notice} feat of your choice.
 
@@ -389,7 +389,7 @@ Transmute:
     range: 30 feet
     duration: 1 hour
   effect: |
-    You partially transform your target into a material of your choice. This spell gains a trait based on the material you choose. For example, if you transmute the air next to your target into poison gas, this spell is [[Poison]], or if you turn your target's hair into fire, this spell is [[Fire]].
+    You partially transform your target into a material of your choice. This spell gains a trait based on the material you choose. For example, if you transmute the air next to your target into poison gas, this spell is [[Toxic]], or if you turn your target's hair into fire, this spell is [[Fire]].
 
     Make a Magic attack roll against your target's Strength DC.
 

@@ -51,7 +51,7 @@ Resilient:
   type: Passive
   brief: You are especially resilient against a particular damage type
   effect: |
-    Choose one of the [[Acid]], [[Cold]], [[Electricity]], [[Fire]], [[Necrotic]], [[Radiant]], or [[Sonic]] traits. You have 10 Shield of the chosen trait.
+    Choose one of the [[Cold]], [[Electricity]], [[Fire]], [[Necrotic]], [[Radiant]], [[Sonic]], or [[Toxic]] traits. You have 10 Shield of the chosen trait.
 
     You can pick this feat multiple times. You can pick the same trait or a different trait each time.
 

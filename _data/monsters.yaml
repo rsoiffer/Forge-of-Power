@@ -100,7 +100,7 @@ Drone:
     attributes: Strength -2, Agilty +2, Intellect -2, Spirit +0
     other stats: Health 10, Defense 14, Speed 40 feet (fly), Size -2
   effect: |
-    20 [[Mental]] Shield, 20 [[Poison]] Shield.
+    50 [[Mental]] Shield, 10 [[Toxic]] Shield.
 
     The drone can slam with its body as a [[Finesse]] melee weapon that deals 1d6 [[Bludgeoning]] base damage.
   fluffstart: |
@@ -133,7 +133,7 @@ Golem:
     attributes: Strength +1, Agilty +0, Intellect -2, Spirit -1
     other stats: Health 20, Defense 12, Speed 25 feet, Size +0
   effect: |
-    20 [[Mental]] Shield, 20 [[Poison]] Shield.
+    50 [[Mental]] Shield, 10 [[Toxic]] Shield.
 
     The golem can slam with its fists as a melee weapon that deals 1d8 [[Bludgeoning]] base damage.
 
@@ -217,7 +217,7 @@ Skeleton:
     attributes: Strength +0, Agilty +2, Intellect -2, Spirit -3
     other stats: Health 10, Defense 12, Speed 30 feet, Size +0
   effect: |
-    5 [[Bludgeoning]] Weakness, 5 [[Radiant]] Weakness, 20 [[Poison]] Shield.
+    5 [[Bludgeoning]] Weakness, 5 [[Radiant]] Weakness, 10 [[Toxic]] Shield.
 
     Revives after a day if it hadn't taken [[Radiant]] damage within 1 minute of dying.
 
@@ -230,7 +230,7 @@ Spider Mech v1:
     attributes: Strength +8, Agilty +0, Intellect -2, Spirit -1
     other stats: Health 200, Defense 19, Speed 50 feet (climb), Size +3
   effect: |
-    50 [[Mental]] Shield, 50 [[Poison]] Shield, 20 [[Anything]] Shield, 20 Water Weakness.
+    50 [[Mental]] Shield, 50 [[Toxic]] Shield, 20 [[Anything]] Shield, 20 Water Weakness.
 
     ***Elemental Absorption.*** After it takes elemental damage, slam strikes deal +3d6 damage of that type next round.
 
@@ -246,7 +246,7 @@ Spider Mech v2:
     attributes: Strength +13, Agilty +0, Intellect -4, Spirit -1
     other stats: Health 210, Defense 20, Speed 50 feet (climb), Size +3
   effect: |
-    50 [[Mental]] Shield, 50 [[Poison]] Shield, 20 [[Anything]] Shield, 20 Water Weakness.
+    50 [[Mental]] Shield, 50 [[Toxic]] Shield, 20 [[Anything]] Shield, 20 Water Weakness.
 
     ***Elemental Absorption.*** After it takes [[Elemental]] damage, slam strikes deal +3d6 damage of that type next round.
 
@@ -280,9 +280,9 @@ Troll:
     attributes: Strength +7, Agilty +1, Intellect -2, Spirit -2
     other stats: Health 84, Defense 15, Speed 30 feet, Size +1
   effect: |
-    10 [[Acid]] Weakness, 10 [[Fire]] Weakness.
+    10 [[Fire]] Weakness, 10 [[Toxic]] Weakness.
 
-    ***Regeneration.*** The troll heals 10 health at the start of each of its turns. If the troll takes [[Acid]] or [[Fire]] damage, it loses this ability for a round. The troll only dies if it doesn't regenerate or if it is killed by a critical success on an attack.
+    ***Regeneration.*** The troll heals 10 health at the start of each of its turns. If the troll takes [[Fire]] or [[Toxic]] damage, it loses this ability for a round. The troll only dies if it doesn't regenerate or if it is killed by a critical success on an attack.
 
     Claw Strike {% icon 1-Action %}
     : +7 vs. Defense, 2d6+7 [[Slashing]] damage
@@ -310,7 +310,7 @@ Zombie:
     attributes: Strength +1, Agilty -2, Intellect -2, Spirit -3
     other stats: Health 20, Defense 10, Speed 25 feet, Size +0
   effect: |
-    5 [[Radiant]] Weakness, 20 [[Poison]] Shield.
+    5 [[Radiant]] Weakness, 10 [[Toxic]] Shield.
 
     Revives after a day if it hadn't taken [[Radiant]] damage within 1 minute of dying.
 

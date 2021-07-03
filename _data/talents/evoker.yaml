@@ -5,9 +5,6 @@ Critical Invocations:
   effect: |
     When you critically succeed on an [[Invocation]] attack, you apply an additional effect to your target depending on the attack's element.
 
-    Acid
-    : Your target takes 1d6 [[Acid]] damage at the start of your next turn
-
     Bludgeoning
     : Your target falls {prone}
 
@@ -28,6 +25,9 @@ Critical Invocations:
 
     Sonic
     : Your target can't hear for 1 minute
+
+    Toxic
+    : Your target takes 1d6 [[Toxic]] damage at the start of your next turn
 
 Invoke Beam:
   tier: Novice
