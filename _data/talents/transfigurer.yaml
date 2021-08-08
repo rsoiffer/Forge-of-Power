@@ -264,7 +264,7 @@ Grease:
   tags:
     cost: 1 Mana
     range: 60 feet
-    area: 20-foot cube
+    area: 10-foot burst
     duration: 1 minute
   effect: |
     All ground in the spell's area is covered in slick grease. This greased ground is difficult terrain. Whenever a creature tries to use a [[Move]] power over greased ground, it must make an Agility+Athletics roll against your Magic DC.
@@ -282,7 +282,7 @@ Grease:
 
     If you add +1 Mana, the duration increases to 1 hour.
 
-    For each +1 Mana, the side length of the cube doubles.
+    For each +1 Mana, the radius of the burst doubles.
 
 Scout Form:
   tier: Novice

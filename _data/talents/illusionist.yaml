@@ -22,7 +22,7 @@ Color Spray:
 Distortion:
   tier: Novice
   type: 1-Action
-  brief: You interfere with all sense information in an area
+  brief: You interfere with all sensory information in an area
   traits: [Spell]
   tags:
     cost: 1 Mana
@@ -393,6 +393,18 @@ Chameleon:
   effect: |
     You conjure an illusion that changes a minor part of your visual appearance. For example, you could change your eye color, your hairstyle, or the pattern on a tattoo. This change isn't large enough to disguise your identity.
 
+Dancing Lights:
+  tier: Ribbon
+  type: 1-Action
+  brief: You conjure a group of colorful, moving magical lights
+  traits: [Cantrip, Light, Spell]
+  tags:
+    cost: 0 Mana
+    range: 30 feet
+    duration: Sustained, up to 1 minute
+  effect: |
+    You conjure four balls of colorful magic light at points within range. You control the lights' brightness, shape, and color. When you sustain this spell, you can move the lights to new points within range and you can change the properties of the lights.
+
 Disguise Object:
   tier: Ribbon
   type: 1-Action
@@ -401,12 +413,16 @@ Disguise Object:
   tags:
     cost: 0 Mana
     target: One object you can reach
-    requirements: Your target fits within a 10-foot cube
+    requirements: Your target fits within a 5-foot cube
     duration: 1 hour, or until you decide to end it
   effect: |
     Your target is covered with a visual illusion that makes it appear as another object of the same general shape.
 
     *For example, you could make a sword look like a walking stick, or you could make a small stone look like a valuable gem.*
+
+    #### Heightened
+
+    If you add +1 Mana, this spell's duration changes to 24 hours. If you instead add +3 Mana, this spell's duration changes to Forever.
 
 Glamour:
   tier: Ribbon
@@ -427,7 +443,7 @@ Minor Illusion:
     area: 5-foot cube
     duration: 1 minute, or until you decide to end it
   effect: |
-    You create an illusory visual image of a stationary object or structure. The entire image must fit within the spell's area.
+    You create a silent illusory visual image of a stationary object or structure. The entire image must fit within the spell's area.
 
     Alternatively, you conjure a sound originating from the spell's area. This power loses the [[Illusion]] trait and gains the [[Auditory]] trait.
 
