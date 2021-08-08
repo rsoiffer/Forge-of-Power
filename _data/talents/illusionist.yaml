@@ -19,6 +19,31 @@ Color Spray:
     Failure
     : Your target is {dazzled} until the end of their next turn
 
+Distortion:
+  tier: Novice
+  type: 1-Action
+  brief: You interfere with all sense information in an area
+  traits: [Spell]
+  tags:
+    cost: 1 Mana
+    range: 120 feet
+    area: 10-foot burst
+    duration: 10 minutes, or until you decide to end it
+  effect: |
+    Choose one effect from the list below. At the GM's discretion, you can make up a new effect instead of choosing one from the list.
+
+    ***Blur.*** All creatures have [terrible visibility](combat-rules#visibility) to everything in the area.
+
+    ***Silence.*** Nothing in the area can produce sound.
+
+    ***Stench.*** Creatures that start their turn in the area must succeed on a Strength roll or be {dazzled} until the start of their next turn.
+
+    #### Heightened
+
+    For each +1 Mana, you can choose another effect.
+
+    For each +1 Mana, the radius of the burst doubles.
+
 Illusory Clone:
   tier: Novice
   type: 1-Action
@@ -26,9 +51,10 @@ Illusory Clone:
   traits: [Illusion, Spell]
   tags:
     cost: 1 Mana
+    range: 30 feet
     duration: 1 hour, until the clone falls to 0 health, or until you decide to end it
   effect: |
-    You conjure a visual illusion that appears as an exact clone of yourself. Your clone is a [[Minion]] creature that you control. Your clone has all the same stats as you, except its Health is equal to your Illusionist level and it shares your Mana pool. Since your clone is an illusion, it cannot physically interact with the world (unless you have the {Tactile Illusions} talent). Your clone can only use basic powers, and cannot make attacks.
+    You conjure an illusion that appears as an exact clone of yourself. Your clone apepars at the target point, and is a [[Minion]] creature that you control. Your clone has all the same stats as you, except its maximum Health is 1. Since your clone is an intangible illusion, it cannot physically interact with the world, but it can still be hurt by attacks. Your clone cannot use any powers except for basic powers that don't affect the world, such as {Stride}.
 
     You have a telepathic link with your clone that lets you communicate instantly and share each others' senses: you can see through each others' eyes and feel everything the other feels. Your clone is perfectly loyal to you and obeys all your commands.
 
@@ -36,7 +62,11 @@ Illusory Clone:
 
     #### Heightened
 
-    For each +1 Mana, you conjure an additional clone.
+    For each +1 Mana, you conjure twice as many clones.
+
+    If you add +1 Mana, your clone is a tangible creature and can interact with the world. Your clone can use all basic powers. Your clone's maximum Health is equal to five times your Illusionist level.
+
+    If you add +1 Mana, your clone can cast all spells you know. You and your clone share the same Mana pool.
 
 Illusory Disguise:
   tier: Novice
@@ -48,40 +78,11 @@ Illusory Disguise:
     range: 10 feet
     duration: 1 hour, or until you decide to end it
   effect: |
-    Your target is covered in a visual illusion that makes them look like another creature of the same body shape, and with roughly similar height and weight as themself. The illusion can change the appearance of your target's worn and held items, but any item your target removes or drops returns to its true appearance.
+    Your target is covered in a tangible illusion that makes them seem like another creature of the same body shape, and with roughly similar height and weight as themself. The illusion can change the appearance of your target's worn and held items, but any item your target removes or drops returns to its true appearance.
 
     #### Heightened
 
     For each +1 Mana, you can target another creature within range.
-
-Illusory Object:
-  tier: Novice
-  type: 1-Action
-  brief: You conjure a giant static illusory object or structure
-  traits: [Illusion, Spell]
-  tags:
-    cost: 1 Mana
-    range: 500 feet
-    area: 20-foot burst
-    duration: 10 minutes, or until you decide to end it
-  effect: |
-    You create an illusory visual image of a stationary object or structure. The entire image must fit within the spell's area when you cast this spell. Other effects, such as **Animate Illusion** or {Tactile Illusions}, can move the image outside of this initial area.
-
-    You can use the **Animate Illusion** power.
-
-    #### Heightened
-
-    If you add +1 Mana, this spell's duration changes to 24 hours. If you instead add +3 Mana, this spell's duration changes to Forever.
-  aside: |
-    {% smallpower %}
-    Animate Illusion:
-      type: 1-Action
-      traits: [Concentrate]
-      effect: |
-        You animate the image created by **Illusory Object**, causing it to move or act in a way that appears natural for the object it shows. Note that minor animations, such as grass swaying in the wind, don't require this power - see the [[Illusion]] trait.
-
-        *For example, you could cause an illusory human to appear to walk naturally, or you could cause an illusory sword to appear to stay in your hand as you carry it.*
-    {% endsmallpower %}
 
 Invisibility:
   tier: Novice
@@ -157,16 +158,59 @@ Phantom Treasure:
 
     For each +1 Mana, you can target another creature within range.
 
-Tactile Illusions:
+Static Image:
   tier: Novice
-  type: Passive
-  brief: Your illusions become semi-solid, affecting all the senses, even touch
+  type: 1-Action
+  brief: You conjure a static illuson that changes the appearance of an area
+  traits: [Illusion, Spell]
   tags:
-    prerequisites: Any [[Illusion]] power
+    cost: 1 Mana
+    range: 120 feet
+    area: 20-foot burst
+    duration: 10 minutes, or until you decide to end it
   effect: |
-    You can choose for your illusions to form actual solid objects capable of supporting weight. Your illusions make appropriate sounds, generate normal smells, and feel right to the touch. Your [[Illusion]] powers gain the [[Auditory]] and [[Tactile]] traits.
+    You create an illusion that shows any number of stationary objects or creatures. The illusion must fit entirely within the spell's area. This illusion can also hide any number of stationary creatures or objects you specify, effectively making them invisible. This has no effect on any creatures or objects that move from their initial position.
 
-    Your illusions are moderately solid, but don't stand up to any significant force. Illusions you make lose their solidity if they would deal or take any damage. If you conjure a solid illusion in a space occupied by another solid object, your illusion loses its solidity immediately.
+    #### Heightened
+
+    For each +1 Mana, the radius of the burst doubles.
+
+    If you add +1 Mana, this spell's duration changes to 24 hours. If you instead add +3 Mana, this spell's duration changes to Forever.
+
+Dream:
+  tier: Veteran
+  type: 1-Action
+  brief: You send a creature a dream-like vision that passes in an instant
+  traits: [Phantasm, Spell]
+  tags:
+    cost: 4 Mana
+    range: 60 feet
+  effect: |
+    You send your target a dream-like vision. While the dream occurs in an instant, your target perceives the dream as lasting several minutes. You can observe your target's reactions in the dream and shape it accordingly, so you can use Dream to hold a conversation.
+
+    Optionally, you can choose for the dream to appear as a terrifying nightmare. If you do, use the **Nightmare** effect on your target.
+
+    #### Heightened
+
+    For each +1 Mana, the damage of **Nightmare** increases by 2d6.
+  aside: |
+    {% smallpower %}
+    Nightmare:
+      traits: [Attack, Fear, Phantasm]
+      effect: |
+        Make a Magic attack roll against your target's Spirit DC.
+
+        Critical Success
+        : Double damage and double fatigue
+
+        Success
+        : Your target takes 8d6 damage and gains 1 fatigue
+
+        Failure
+        : Half damage
+
+        If your target knows **Dream** as well, they can attempt to take control of the dream. If you fail or critically fail the attack roll, your target takes no damage and can immediately use **Nightmare** against you.
+    {% endsmallpower %}
 
 Hypnotic Pattern:
   tier: Veteran
@@ -191,79 +235,56 @@ Hypnotic Pattern:
 
     For each +1 Mana, the radius of the burst increases by 10 feet.
 
-Illusory Terrain:
+Major Image:
   tier: Veteran
   type: 1-Action
-  brief: You cover the entire nearby terrain with an illusion, changing its appearance
+  brief: You conjure a giant, animated illuson of a creature or effect
   traits: [Illusion, Spell]
   tags:
-    cost: 4 Mana
+    cost: 3 Mana
     range: 500 feet
-    area: 100-foot burst
-    duration: 24 hours
+    area: 20-foot burst
+    duration: 10 minutes, or until you decide to end it
   effect: |
-    You create an illusion that completely changes the visual appearance of all natural terrain and structures within the spell's area. You can hide existing features or make entirely new ones.
+    You create an illuson of any number of creatures, objects, structures, or other effects. The illusion must fit entirely within the spell's area. You can have the illusion naturally perform simple animations, such as flowing water or a crowd of people talking excitedly.
+
+    You can use the **Animate Image** power.
 
     #### Heightened
 
-    If you add +2 Mana, this spell's duration changes to Forever.
+    If you add +1 Mana, this spell's duration changes to 24 hours. If you instead add +3 Mana, this spell's duration changes to Forever.
+  aside: |
+    {% smallpower %}
+    Animate Image:
+      type: Free
+      traits: [Concentrate]
+      effect: |
+        You change the illusion created by **Major Image**, causing it to move or act in any way you choose. You can move the area of **Major Image** up to 60 feet. You can have the illusion act or move in a way that appears completely natural, or you can change the illusion to depict something completely new.
+    {% endsmallpower %}
 
-    For each +1 Mana, the radius of the the burst doubles.
-
-Mislead:
+Phantom Spell:
   tier: Veteran
-  type: Reaction
-  brief: You shatter into pieces and reappear nearby, revealing you were just an illusion
-  traits: [Spell, Teleportation]
+  type: Free
+  brief: You reform your spell as a phantasm within a target's mind
   tags:
-    cost: 3 Mana
-    trigger: A {Strike} succeeds against you
-    range: 30 feet
+    trigger: You cast a spell
+    range: 120 feet
   effect: |
-    You teleport to an unoccupied space you can see within range. Instead of targeting you, the triggering {Strike} targets an illusory copy of yourself that shatters into pieces.
+    The triggering spell becomes a [[Phantasm]] effect, as you conjure an illusion of the effect inside your target's mind. The spell does not affect any creatures or objects other than your target.
 
-Nightmare:
+    *For example, if you cast {Major Image} with Phantom Spell, then only your target would be able to perceive the illusion. If you cast {Invoke Blast} with Phantom Spell, then only your target would see the effect or take damage.*
+
+Swap with Clone:
   tier: Veteran
   type: 1-Action
-  brief: You send a creature a terrible nightmare that feels entirely real
-  traits: [Attack, Fear, Phantasm, Spell]
-  tags:
-    cost: 4 Mana
-    range: 60 feet
-  effect: |
-    Make a Magic attack roll against your target's Spirit DC.
-
-    Critical Success
-    : Double damage and double fatigue
-
-    Success
-    : Your target takes 8d6 damage and gains 1 fatigue
-
-    Failure
-    : Half damage
-
-    #### Heightened
-
-    For each +1 Mana, the damage increases by 2d6.
-
-Shadow Clone:
-  tier: Veteran
-  type: Passive
-  brief: Your illusory clones are real, corporeal creatures made of magical shadow
+  brief: You reveal that you were actually an illusory clone all along
+  traits: [Retroactive]
   tags:
     prerequisites: Illusory Clone
   effect: |
-    When you use {Illusory Clone}, you can choose for the clone you create to be a real creature instead of an illusion. If you do, the spell loses the [[Illusion]] trait. The clone can physically interact with the world, and it can use any power you can. If your clone uses an [[Encounter]] or [[Daily]] power, that power counts as expended for you, and vice versa. Your clone has disadvantage on all attack rolls. You can use the **Swap with Clone** power.
-  aside: |
-    {% smallpower %}
-    Swap with Clone:
-      type: Reaction
-      traits: [Daily, Retroactive]
-      tags:
-        trigger: You are targeted by a power, or you use a power
-      effect: |
-        You reveal that you and a clone actually swapped places in the past, and that you're really somewhere else! You and your clone trade positions, status effects, ongoing powers, and so on. If this power was triggered by you being targeted by a power, the power targets your clone instead.
-    {% endsmallpower %}
+    You and a clone actually swapped places in the past, so you're really somewhere else! Cast {Illusory Clone} now, and declare how long ago in the past that you actually cast the spell, as well as what your true self has been doing the whole time. You cannot contradict established events, and your true self cannot have taken any actions that rely on a die roll to succeed.
+
+    If you add +2 Mana to the cast of Illusory Clone, you can use this power as a {% icon Reaction %} power that triggers when you are targeted by any power. This powers targets your clone instead.
 
 Alter Illusion:
   tier: Master
@@ -278,9 +299,9 @@ Alter Illusion:
 
     Optionally, as you alter the illusion, you can have it briefly become real for a fraction of a second. This generally has no permanent effect on the world, but an illusory flame could start a fire, or an illusory giant could shake the ground as it steps. To use this effect to deal damage, use the **Painful Illusion** power.
 
-    *For example, if you are disguised by an {Illusory Disguise}, you could alter the disguise to make you look like a different creature. Alternatively, if an enemy cast {Illusory Object} to create a stone wall, you could alter the wall to have a door for you to see or walk through.*
+    *For example, if you are disguised by an {Illusory Disguise}, you could alter the disguise to make you look like a different creature. Alternatively, if an enemy cast {Static Image} to create a stone wall, you could alter the wall to have an opening for you to see or walk through.*
 
-    *As another example, if you cast {Illusory Object} to create an illusory person, you could animate the person to appear to walk naturally. If you have the {Tactile Illusions} power, you could also have the person speak, carry objects, and so on. You could even have this person run up and punch someone, using **Painful Illusion** on the target of the not-so-illusory punch.*
+    *As another example, if you cast {Static Image} or {Major Image} to create an illusory person, you could animate the person to appear to walk naturally, speak, and so on. You could even have this person run up and punch someone, using **Painful Illusion** on the target of the not-so-illusory punch.*
   aside: |
     {% smallpower %}
     Painful Illusion:
