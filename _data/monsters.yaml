@@ -228,7 +228,7 @@ Nightmare:
     attributes: Strength +6, Agilty +2, Intellect +0, Spirit +2
     other stats: Health 70, Defense 13, Speed 90 feet, Size +1
   effect: |
-    50 [[Fire]] Shield. Gives its rider 10 [[Fire]] shield.
+    50 [[Fire]] Shield. Gives its rider 10 [[Fire]] Shield.
 
     Hoof Strike {% icon 1-Action %}
     : +6 vs. Defense, 2d6+6 [[Bludgeoning]] damage + 2d6 [[Fire]] damage
