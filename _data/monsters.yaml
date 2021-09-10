@@ -59,6 +59,22 @@ Blowtoad:
     Explode {% icon Reaction %}
     : 10-foot emanation, +5 vs. Agility DC, 2d6 [[Fire]] damage
 
+Bulette:
+  traits: [Animal, Monster, Unintelligent]
+  tags:
+    attributes: Strength +7, Agilty +0, Intellect -4, Spirit -2
+    other stats: Health 95, Defense 17, Speed 40 feet (burrow), Size +1
+  effect: |
+    ***Standing Leap.*** The bulette can jump up to 30 feet horizontally or 15 feet vertically without a running start.
+
+    ***Tremorsense.*** The bulette can perfectly sense creatures within 60 feet by feeling vibrations through the ground.
+
+    Bite Strike {% icon 1-Action %}
+    : +7 vs. Defense, 4d12+7 [[Piercing]] damage
+
+    Deadly Leap {% icon 1-Action %}
+    : Once/encounter, {Stride} to jump 30 feet, +7 vs. Strength DC, 6d6+7 [[Bludgeoning]] damage and target falls {prone}, half damage on fail
+
 Clockwork Turret:
   traits: [Construct, Unintelligent]
   tags:
@@ -126,6 +142,40 @@ Elk:
 
     Charge {% icon Free %}
     : Once/encounter, {Stride}, then **Antler Strike** for an extra 2d6 damage
+
+Ghost:
+  traits: [Undead]
+  tags:
+    attributes: Strength -2, Agility +1, Intellect +0, Spirit +5
+    other stats: Health 45, Defense 11, Speed 40 feet (fly), Size +0
+  effect: |
+    5 [[Radiant]] Weakness, 20 [[Elemental]] Shield, 20 [[Necrotic]] Shield, 20 [[Physical]] Shield, 20 [[Toxic]] Shield.
+
+    Revives after a day if it hadn't taken [[Radiant]] damage within 1 minute of dying.
+
+    Knows the {Incorporeal Move} power.
+
+    Withering Touch Strike {% icon 1-Action %}
+    : +5 vs. Defense, 4d6+5 [[Necrotic]] damage
+
+    Horrifying Visage {% icon 1-Action %}
+    : Once/day/target, 60-foot emanation, +5 vs. Spirit DC, target is Frightened 2 (Spirit vs. DC 15), on a critical success target ages 1d4 x 10 years
+
+    Posession {% icon 1-Action %} (Recharge 6)
+    : Once/day/target, as the {Dominate} spell, ghost disappears for the duration and can only make the target use basic powers
+
+Ghoul:
+  traits: [Undead, Unintelligent]
+  tags:
+    attributes: Strength +1, Agility +4, Intellect -2, Spirit -2
+    other stats: Health 22, Defense 12, Speed 30 feet, Size +0
+  effect: |
+    5 [[Radiant]] Weakness, 10 [[Toxic]] Shield.
+
+    Revives after a day if it hadn't taken [[Radiant]] damage within 1 minute of dying.
+
+    Claw Strike {% icon 1-Action %}
+    : +4 vs. Defense, 2d4+4 [[Slashing]] damage, and the target is Paralyzed 2 (Strength vs. DC 10)
 
 Giant Squirrel:
   traits: [Animal, Monster, Unintelligent]
